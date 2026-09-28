@@ -1,0 +1,419 @@
+{
+  "schema": 1,
+  "source_type": "imagegen-derived",
+  "upstream": {
+    "file_id": "file_00000000a33c81f59bf8ac533a21cc7f",
+    "generation_id": "9e6f4537-a0a2-4912-bc82-e84a47b9af9c",
+    "sha256": "ff85aae1ce6b117ad597bc5932a4a2f01eacbc61140df3a2860fd1a59ba138ed",
+    "size": [
+      1448,
+      1086
+    ],
+    "review_coordinates": [
+      1408,
+      1056
+    ],
+    "prompt": "Not returned by original tool; not invented"
+  },
+  "intake": {
+    "path": "art_source/reference-scene/intake/approved-intake.webp",
+    "size": [
+      384,
+      256
+    ],
+    "sha256": "84542754221fc40760da5b9d8207afab79d580089232a95c21b4ce42dd85a837",
+    "recipe": "LANCZOS original to review size; crop rect; textures resize64; objects fit60 on64 warm-white; atlas6x4; quantize128 no dither; WebP q75. This normalized intake is the authoritative offline build input, not a lossless archive of the upstream image."
+  },
+  "items": [
+    {
+      "id": "brick",
+      "source_rect": [
+        30,
+        73,
+        134,
+        156
+      ],
+      "cell": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "kind": "texture"
+    },
+    {
+      "id": "paving",
+      "source_rect": [
+        533,
+        48,
+        618,
+        129
+      ],
+      "cell": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "kind": "texture"
+    },
+    {
+      "id": "stone",
+      "source_rect": [
+        532,
+        148,
+        615,
+        173
+      ],
+      "cell": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "kind": "texture"
+    },
+    {
+      "id": "plaster",
+      "source_rect": [
+        319,
+        48,
+        382,
+        174
+      ],
+      "cell": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "kind": "texture"
+    },
+    {
+      "id": "roof",
+      "source_rect": [
+        916,
+        50,
+        1006,
+        141
+      ],
+      "cell": [
+        256,
+        0,
+        64,
+        64
+      ],
+      "kind": "texture"
+    },
+    {
+      "id": "wood",
+      "source_rect": [
+        995,
+        299,
+        1053,
+        380
+      ],
+      "cell": [
+        320,
+        0,
+        64,
+        64
+      ],
+      "kind": "texture"
+    },
+    {
+      "id": "canvas",
+      "source_rect": [
+        1166,
+        176,
+        1240,
+        224
+      ],
+      "cell": [
+        0,
+        64,
+        64,
+        64
+      ],
+      "kind": "texture"
+    },
+    {
+      "id": "green",
+      "source_rect": [
+        342,
+        579,
+        356,
+        634
+      ],
+      "cell": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "kind": "texture"
+    },
+    {
+      "id": "water",
+      "source_rect": [
+        783,
+        302,
+        950,
+        491
+      ],
+      "cell": [
+        128,
+        64,
+        64,
+        64
+      ],
+      "kind": "texture"
+    },
+    {
+      "id": "door_green",
+      "source_rect": [
+        19,
+        552,
+        103,
+        715
+      ],
+      "cell": [
+        192,
+        64,
+        64,
+        64
+      ],
+      "kind": "decal"
+    },
+    {
+      "id": "window_arch",
+      "source_rect": [
+        235,
+        552,
+        316,
+        633
+      ],
+      "cell": [
+        256,
+        64,
+        64,
+        64
+      ],
+      "kind": "decal"
+    },
+    {
+      "id": "window_shutter",
+      "source_rect": [
+        322,
+        554,
+        374,
+        645
+      ],
+      "cell": [
+        320,
+        64,
+        64,
+        64
+      ],
+      "kind": "decal"
+    },
+    {
+      "id": "flowerbox",
+      "source_rect": [
+        244,
+        637,
+        311,
+        678
+      ],
+      "cell": [
+        0,
+        128,
+        64,
+        64
+      ],
+      "kind": "decal"
+    },
+    {
+      "id": "sign_banner",
+      "source_rect": [
+        496,
+        556,
+        566,
+        657
+      ],
+      "cell": [
+        64,
+        128,
+        64,
+        64
+      ],
+      "kind": "decal"
+    },
+    {
+      "id": "sign_menu",
+      "source_rect": [
+        528,
+        663,
+        594,
+        737
+      ],
+      "cell": [
+        128,
+        128,
+        64,
+        64
+      ],
+      "kind": "decal"
+    },
+    {
+      "id": "planter",
+      "source_rect": [
+        1129,
+        650,
+        1229,
+        735
+      ],
+      "cell": [
+        192,
+        128,
+        64,
+        64
+      ],
+      "kind": "decal"
+    },
+    {
+      "id": "lantern",
+      "source_rect": [
+        1344,
+        450,
+        1389,
+        512
+      ],
+      "cell": [
+        256,
+        128,
+        64,
+        64
+      ],
+      "kind": "decal"
+    },
+    {
+      "id": "hero_front",
+      "source_rect": [
+        31,
+        807,
+        87,
+        901
+      ],
+      "cell": [
+        320,
+        128,
+        64,
+        64
+      ],
+      "kind": "actor"
+    },
+    {
+      "id": "hero_back",
+      "source_rect": [
+        100,
+        807,
+        159,
+        901
+      ],
+      "cell": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "kind": "actor"
+    },
+    {
+      "id": "hero_side",
+      "source_rect": [
+        166,
+        807,
+        219,
+        901
+      ],
+      "cell": [
+        64,
+        192,
+        64,
+        64
+      ],
+      "kind": "actor"
+    },
+    {
+      "id": "merchant_front",
+      "source_rect": [
+        267,
+        814,
+        311,
+        901
+      ],
+      "cell": [
+        128,
+        192,
+        64,
+        64
+      ],
+      "kind": "actor"
+    },
+    {
+      "id": "keeper_front",
+      "source_rect": [
+        393,
+        814,
+        444,
+        901
+      ],
+      "cell": [
+        192,
+        192,
+        64,
+        64
+      ],
+      "kind": "actor"
+    },
+    {
+      "id": "baker_front",
+      "source_rect": [
+        513,
+        814,
+        563,
+        901
+      ],
+      "cell": [
+        256,
+        192,
+        64,
+        64
+      ],
+      "kind": "actor"
+    },
+    {
+      "id": "noble_front",
+      "source_rect": [
+        628,
+        813,
+        672,
+        901
+      ],
+      "cell": [
+        320,
+        192,
+        64,
+        64
+      ],
+      "kind": "actor"
+    }
+  ],
+  "reference": {
+    "file_id": "file_000000006af4820c83f91393610efd2a",
+    "sha256": "cb294b1cf9d36bcb5886d52db83b5945844adb9699c3a670633bdc25bdee020a",
+    "purpose": "visual reference only; no pixels sampled into runtime assets"
+  },
+  "upstream_archive_scope": "Full-size originals retained in conversation companion source archive; normalized intake and all derived assets archived in remote project."
+}

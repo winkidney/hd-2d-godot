@@ -1,4 +1,6 @@
 extends Node3D
+@export_file("*.json") var layout_path := "res://resources/world_layout.json"
+@export var preferences_path := "user://settings/parallax.cfg"
 const Actor = preload("res://scripts/pixel_actor.gd")
 const Lighting = preload("res://scripts/lighting_controller.gd")
 const Hud = preload("res://scripts/hud.gd")
@@ -28,7 +30,7 @@ var settings_load_attempted := false
 
 func _ready() -> void:
     configure_input()
-    layout = JSON.parse_string(FileAccess.get_file_as_string("res://resources/world_layout.json"))
+    layout = JSON.parse_string(FileAccess.get_file_as_string(layout_path))
     camera = $Camera3D
     camera_home = to_vector(layout.camera.position)
     camera_target = to_vector(layout.camera.target)
@@ -42,7 +44,7 @@ func _ready() -> void:
     dof.configure(camera, camera_target)
     add_child(background)
     background.configure(lighting.environment)
-    parallax.configure(camera,rig,background,FileAccess.get_file_as_string("res://resources/world_layout.json"))
+    parallax.configure(camera,rig,background,FileAccess.get_file_as_string(layout_path))
     lighting.preset_changed.connect(background.apply_preset)
     lighting.effects_changed.connect(func(value): dof.master_enabled = value; dof.apply())
     player.position = to_vector(layout.player_spawn)
@@ -57,6 +59,7 @@ func _ready() -> void:
     dof_panel.configure(dof)
     hud.container.add_child(parallax_panel)
     parallax_panel.configure(self)
+    parallax_store.path = preferences_path
     if should_load_preferences():
         settings_load_attempted = true
         parallax_store.load_settings(parallax)

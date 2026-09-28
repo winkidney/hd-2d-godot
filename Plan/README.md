@@ -1,5 +1,9 @@
 # Plan · HD-2D 河畔驿站
 
+## P9 接续实施
+
+[参考场景重建计划](features/reference-scene-rebuild.md) 已有独立场景和模块化素材，正在完成 [P9 验收](../docs/validation/p9/README.md)。完整 ImageGen 上游源图归档仍缺失；不能标为全部完成。
+
 状态：执行中。用户已接受视觉和交付范围；视觉定稿仍需用户验收。
 
 ## 目标与边界

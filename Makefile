@@ -1,4 +1,19 @@
 PYTHON ?= python3
+
+.PHONY: p9-run p9-test p9-visual p9-export p9-rebuild p9-package
+p9-run:
+	$(PYTHON) -c 'import sys,subprocess;sys.path.insert(0,"tools");from project import engine,ROOT,desktop_environment;subprocess.run([engine(),"--path",str(ROOT),"scenes/reference_scene.tscn"],env=desktop_environment(),check=True)'
+p9-test:
+	$(PYTHON) tools/p9/accept.py assets
+	$(PYTHON) tools/p9/accept.py headless
+p9-visual:
+	$(PYTHON) tools/p9/accept.py gpu
+p9-export:
+	$(PYTHON) tools/p9/accept.py export
+p9-rebuild:
+	$(PYTHON) tools/p9/accept.py rebuild
+p9-package:
+	$(PYTHON) tools/p9/package.py
 BLENDER ?= blender
 .DEFAULT_GOAL := help
 .PHONY: help run editor import bake test visual export record assets models rebuild templates docs package reproduce

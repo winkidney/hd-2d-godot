@@ -1,0 +1,373 @@
+{
+  "schema": 1,
+  "scene_id": "lantern-canal-v1",
+  "seed": 290928,
+  "camera": {
+    "position": [
+      16,
+      21,
+      32
+    ],
+    "target": [
+      0,
+      2,
+      1
+    ],
+    "fov": 35,
+    "far": 1400,
+    "follow_gain": 0.45,
+    "dead_zone": 0.8,
+    "smoothing": 4.0,
+    "follow_max": [
+      7.5,
+      4.5
+    ]
+  },
+  "player_spawn": [
+    3.0,
+    1.5,
+    6.7
+  ],
+  "bridge_center": [
+    -7,
+    1.2,
+    3.5
+  ],
+  "walkway": {
+    "center": [
+      0,
+      1.2,
+      3.5
+    ],
+    "direction": [
+      1,
+      0,
+      0
+    ],
+    "length": 46,
+    "width": 3.2,
+    "camera_travel_target_m": [
+      6,
+      15
+    ]
+  },
+  "platforms": [
+    {
+      "id": "EastQuay",
+      "center": [
+        10.925,
+        -0.8,
+        2
+      ],
+      "size": [
+        26.15,
+        4,
+        32
+      ]
+    },
+    {
+      "id": "EastEdgeNorth",
+      "center": [
+        -2.575,
+        -0.8,
+        -1.5
+      ],
+      "size": [
+        0.85,
+        4,
+        25
+      ]
+    },
+    {
+      "id": "EastEdgeSouth",
+      "center": [
+        -2.575,
+        -0.8,
+        15.5
+      ],
+      "size": [
+        0.85,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "WestQuay",
+      "center": [
+        -18,
+        -0.8,
+        0
+      ],
+      "size": [
+        14,
+        4,
+        38
+      ]
+    },
+    {
+      "id": "UpperSquare",
+      "center": [
+        9.5,
+        2.6,
+        -9.5
+      ],
+      "size": [
+        23,
+        2.8,
+        9
+      ]
+    },
+    {
+      "id": "UpperWing",
+      "center": [
+        17.5,
+        2.6,
+        -3.5
+      ],
+      "size": [
+        7,
+        2.8,
+        3
+      ]
+    }
+  ],
+  "buildings": [
+    {
+      "model": "palazzo",
+      "position": [
+        13,
+        4,
+        -10.5
+      ],
+      "scale": 1.0
+    },
+    {
+      "model": "townhouse",
+      "position": [
+        3.5,
+        4,
+        -12
+      ],
+      "scale": 1.0
+    },
+    {
+      "model": "townhouse",
+      "position": [
+        -20,
+        1.2,
+        -5
+      ],
+      "scale": 1.1
+    },
+    {
+      "model": "townhouse",
+      "position": [
+        -19,
+        1.2,
+        -15
+      ],
+      "scale": 1.0
+    },
+    {
+      "model": "townhouse",
+      "position": [
+        23,
+        1.2,
+        -8
+      ],
+      "scale": 1.0
+    }
+  ],
+  "stairs": [
+    {
+      "id": "CentralStair",
+      "bottom": [
+        2,
+        1.2,
+        -0.8
+      ],
+      "width": 3.6,
+      "run": 4.2,
+      "rise": 2.8,
+      "yaw": 0
+    },
+    {
+      "id": "MarketStair",
+      "bottom": [
+        17.5,
+        1.2,
+        2.2
+      ],
+      "width": 3.6,
+      "run": 4.2,
+      "rise": 2.8,
+      "yaw": 0
+    },
+    {
+      "id": "DockStair",
+      "bottom": [
+        -4.4,
+        -0.3,
+        12
+      ],
+      "width": 2.0,
+      "run": 2.25,
+      "rise": 1.5,
+      "yaw": -90
+    }
+  ],
+  "lamps": [
+    [
+      -10.7,
+      1.2,
+      5.6
+    ],
+    [
+      -3.6,
+      1.2,
+      5.6
+    ],
+    [
+      4.4,
+      1.2,
+      3.6
+    ],
+    [
+      11.5,
+      1.2,
+      7.5
+    ],
+    [
+      2.8,
+      4,
+      -6.4
+    ],
+    [
+      18.9,
+      4,
+      -3.8
+    ],
+    [
+      -16,
+      1.2,
+      1.5
+    ],
+    [
+      19,
+      1.2,
+      12
+    ]
+  ],
+  "interactions": [
+    {
+      "id": "merchant",
+      "position": [
+        8.0,
+        1.2,
+        -0.25
+      ],
+      "radius": 2.3,
+      "title": "Market Keeper",
+      "text": "The canal gate is closed to boats. The bridge above it remains open.\nYou can climb either staircase to the upper square."
+    },
+    {
+      "id": "baker",
+      "position": [
+        -14.2,
+        1.2,
+        3.2
+      ],
+      "radius": 2.3,
+      "title": "Canal Baker",
+      "text": "The west promenade continues beyond these houses.\nFollow the lanterns back across the bridge."
+    },
+    {
+      "id": "noble",
+      "position": [
+        5.2,
+        4,
+        -7.2
+      ],
+      "radius": 2.5,
+      "title": "Upper Square",
+      "text": "A good view of the harbor. F6 adjusts depth of field; F8 adjusts parallax."
+    },
+    {
+      "id": "dock_sign",
+      "position": [
+        -0.8,
+        1.2,
+        12.3
+      ],
+      "radius": 2.1,
+      "title": "Harbor Steps",
+      "text": "The steps lead down to the landing. Stay inside the dock railings."
+    }
+  ],
+  "npcs": [
+    {
+      "sprite": "merchant",
+      "position": [
+        8,
+        1.2,
+        -0.25
+      ]
+    },
+    {
+      "sprite": "baker",
+      "position": [
+        -14.2,
+        1.2,
+        3.2
+      ]
+    },
+    {
+      "sprite": "noble",
+      "position": [
+        5.2,
+        4,
+        -7.2
+      ]
+    },
+    {
+      "sprite": "keeper",
+      "position": [
+        13.5,
+        1.2,
+        5
+      ]
+    },
+    {
+      "sprite": "baker",
+      "position": [
+        -8.5,
+        1.2,
+        3.2
+      ]
+    },
+    {
+      "sprite": "noble",
+      "position": [
+        -6,
+        1.2,
+        3.0
+      ]
+    },
+    {
+      "sprite": "merchant",
+      "position": [
+        17.8,
+        4,
+        -4
+      ]
+    },
+    {
+      "sprite": "keeper",
+      "position": [
+        10,
+        1.2,
+        12.5
+      ]
+    }
+  ]
+}

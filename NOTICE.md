@@ -2,7 +2,11 @@
 
 本项目的场景代码、程序化像素图和模型生成器为本次项目编写；不包含从《八方旅人》游戏中提取的角色、纹理、模型、音乐、关卡或商标。原作仅作为视觉研究参考，项目与其权利方无官方关联。
 
-当前源美术类型为 `procedural-original`。来源与 SHA-256 见 `art_source/generated/manifest.json`；模型源与生成记录见 `art_source/blender/manifest.json`。ImageGen/Blender MCP 未接入，不将未执行的生成过程写成素材来源。
+旧场景源美术类型为 `procedural-original`。来源与 SHA-256 见 `art_source/generated/manifest.json`；模型源与生成记录见 `art_source/blender/manifest.json`。
+
+P9 使用已有 `imagegen-derived` 归一化输入，来源与处理配方见 `art_source/reference-scene/manifests/`。两张上游 ImageGen 原图尚未归档，不能宣称来源验收完整。本轮未重新生成这些素材，也未启用 Blender MCP。
+
+本地 `art_source/reference-scene/research/` 中的用户原作截图仅用于视觉与结构研究，不进入运行包，P9 源码交付 ZIP 也排除此研究截图。项目许可不覆盖该截图。
 
 项目代码与原创美术的公开发布许可由项目所有者选择。本交付不替所有者自动设置 MIT、CC0 或其他公开许可证；引擎许可不等于本项目自身已采用同一许可。
 

@@ -1,5 +1,7 @@
 # Domain model · 场景样板而非完整 RPG
 
+P9 的独立场景、模块与来源契约见 [参考场景模型](reference-scene.md)。概念参考、原始生成图、归一化输入和运行资产必须分别登记，不能将派生输入称为完整源图。
+
 ## 统一语言
 | 概念 | 责任 | 不负责 |
 |---|---|---|
@@ -34,6 +36,6 @@ ValidationRun 引用工程版本、资源散列与运行条件；不写入运行
 ## P6/P7 更新
 新增背景、步道、相机和景深模型见 [领域扩展](background-and-focus.md)。CameraRig 提供最终姿态；DofController 拥有相机属性；BackgroundRig 不负责角色移动。
 
-## P8 提案 · 可调视差
-[视差控制契约](parallax-control.md) 为待实施扩展，定义ParallaxProfile、LayerState、CameraOverrides、CloudPhase、设置保存与验证快照。
-当前P6/P7仍按既有自然视差运行；不能从提案文档推断F8、倍率或本机保存已经可用。
+## P8 已实施 · 可调视差
+[视差控制契约](parallax-control.md) 定义ParallaxProfile、LayerState、CameraOverrides、CloudPhase、设置保存与验证快照。
+实现与证据见 [P8验收](../docs/validation/p8/README.md)；P9 复用控制器并隔离场景设置路径。

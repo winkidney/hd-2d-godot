@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "reference": {
+    "path": "art_source/reference-scene/research/otc-path-traveler.png",
+    "sha256": "cb294b1cf9d36bcb5886d52db83b5945844adb9699c3a670633bdc25bdee020a",
+    "role": "copyrighted screenshot, structural and visual research only",
+    "runtime_usage": false
+  },
+  "imagegen_asset_board": {
+    "original_archived": false,
+    "expected_sha256": "ff85aae1ce6b117ad597bc5932a4a2f01eacbc61140df3a2860fd1a59ba138ed",
+    "retained_derivative": "art_source/reference-scene/intake/approved-intake.webp",
+    "recipe_manifest": "art_source/reference-scene/manifests/intake.json",
+    "status": "original file unavailable through retrieved conversation and local image cache"
+  },
+  "imagegen_extension_concept": {
+    "original_archived": false,
+    "runtime_usage": false,
+    "status": "referenced by user; original image not returned by conversation retrieval"
+  },
+  "anchors": {
+    "coordinates": "Approximate normalized screen coordinates from visual inspection; world positions are authored design, not reconstructed survey data",
+    "bridge_arch": {"reference_uv": [0.29, 0.69], "world_bridge_center": [-7, 1.2, 3.5]},
+    "player": {"reference_uv": [0.50, 0.55], "world_spawn": [3, 1.5, 6.7]},
+    "central_stair": {"reference_uv": [0.48, 0.39], "world_bottom": [2, 1.2, 0.3]},
+    "market": {"reference_uv": [0.63, 0.34], "world_interaction_approach": [8, 1.2, 0.8]},
+    "right_stair": {"reference_uv": [0.73, 0.41], "world_bottom": [17.5, 1.2, 3.2]},
+    "camera": {"position": [16, 21, 32], "target": [0, 2, 1], "fov_degrees": 35}
+  },
+  "acceptance": "incomplete until both original generated images are archived and linked"
+}
