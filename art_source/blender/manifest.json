@@ -1,0 +1,63 @@
+{
+  "generator": "tools/build_models.py",
+  "source_type": "procedural-original",
+  "blender": "5.2.2 LTS",
+  "models": [
+    {
+      "name": "inn",
+      "objects": 8,
+      "vertices": 574,
+      "blend": "art_source/blender/inn.blend",
+      "glb": "assets/models/inn.glb"
+    },
+    {
+      "name": "cottage",
+      "objects": 7,
+      "vertices": 470,
+      "blend": "art_source/blender/cottage.blend",
+      "glb": "assets/models/cottage.glb"
+    },
+    {
+      "name": "bridge",
+      "objects": 2,
+      "vertices": 792,
+      "blend": "art_source/blender/bridge.blend",
+      "glb": "assets/models/bridge.glb"
+    },
+    {
+      "name": "lantern",
+      "objects": 4,
+      "vertices": 80,
+      "blend": "art_source/blender/lantern.blend",
+      "glb": "assets/models/lantern.glb"
+    },
+    {
+      "name": "barrel",
+      "objects": 2,
+      "vertices": 120,
+      "blend": "art_source/blender/barrel.blend",
+      "glb": "assets/models/barrel.glb"
+    },
+    {
+      "name": "crate",
+      "objects": 1,
+      "vertices": 56,
+      "blend": "art_source/blender/crate.blend",
+      "glb": "assets/models/crate.glb"
+    },
+    {
+      "name": "dock",
+      "objects": 1,
+      "vertices": 160,
+      "blend": "art_source/blender/dock.blend",
+      "glb": "assets/models/dock.glb"
+    },
+    {
+      "name": "tree_trunk",
+      "objects": 1,
+      "vertices": 40,
+      "blend": "art_source/blender/tree_trunk.blend",
+      "glb": "assets/models/tree_trunk.glb"
+    }
+  ]
+}

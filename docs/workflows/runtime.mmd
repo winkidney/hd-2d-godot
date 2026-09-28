@@ -1,0 +1,18 @@
+flowchart TD
+    layout["WorldLayout<br/>坐标 / 种子 / 交互数据"]
+    scene["WaystationScene<br/>组合世界，不生成美术"]
+    input["键盘输入<br/>移动 / 交互 / 预设 / 捕获"]
+    world["World + Physics<br/>静态网格 / 河岸 / 桥 / 碰撞"]
+    actor["PixelActor<br/>脚底原点 / 朝向 / 帧动画"]
+    presentation["Camera + Lighting + HUD<br/>不修改物理实体身份"]
+    frame["Forward+ 真实渲染<br/>像素材质 / 受光 / 水面"]
+    capture["ValidationRun<br/>完成绘制后截图与计时"]
+    layout --> scene
+    input --> scene
+    scene --> world
+    scene --> actor
+    scene --> presentation
+    world --> frame
+    actor --> frame
+    presentation --> frame
+    frame --> capture

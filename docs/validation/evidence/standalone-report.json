@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "binary_sha256": "444dad494764fbf3ac564f95c1ef30e01287141d5c95e1c52103b16d67f3e42c",
+  "runs": [
+    {
+      "mode": "headless",
+      "passed": true,
+      "checks": 22,
+      "report": "build/validation/standalone-headless/runtime-report.json"
+    },
+    {
+      "mode": "gpu",
+      "passed": true,
+      "checks": 28,
+      "report": "build/validation/standalone-gpu/runtime-report.json"
+    }
+  ],
+  "scope": "embedded PCK; isolated executable directory, no project assets copied"
+}

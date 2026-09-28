@@ -1,0 +1,18 @@
+flowchart TD
+    spec["视觉规格 + AssetRecipe<br/>原创基线；记录种子与散列"]
+    pixel["Python / Pillow<br/>14 张确定性像素素材"]
+    blender["Blender CLI<br/>8 类模型 / 打包贴图"]
+    optional["可选外部美术入口<br/>ImageGen / MCP 尚未接入"]
+    source["原料与可编辑源归档<br/>PNG / blend / 生成脚本"]
+    glb["GLB + Godot 导入<br/>统一 Y-up / 运行不依赖 Blender"]
+    bake["bake_scene.gd<br/>扁平化模型，保存可编辑节点"]
+    world["scenes/world.tscn<br/>模型变更后重新烘焙"]
+    spec --> pixel
+    spec --> blender
+    spec --> optional
+    pixel --> source
+    blender --> source
+    blender --> glb
+    glb --> bake
+    source --> bake
+    bake --> world

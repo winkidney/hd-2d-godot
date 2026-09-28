@@ -1,0 +1,102 @@
+{
+  "checks": [
+    {
+      "name": "baked_world_loaded",
+      "passed": true
+    },
+    {
+      "name": "actor_starts_on_floor",
+      "passed": true
+    },
+    {
+      "name": "four_direction_atlas",
+      "passed": true
+    },
+    {
+      "name": "diagonal_input_normalized",
+      "passed": true
+    },
+    {
+      "name": "bridge_north_to_south",
+      "passed": true
+    },
+    {
+      "name": "bridge_south_to_north",
+      "passed": true
+    },
+    {
+      "name": "river_is_not_walkable",
+      "passed": true
+    },
+    {
+      "name": "bridge_parapet_blocks_actor",
+      "passed": true
+    },
+    {
+      "name": "inn_walls_block_actor",
+      "passed": true
+    },
+    {
+      "name": "nearest_npc_selected",
+      "passed": true
+    },
+    {
+      "name": "dialogue_opens_and_locks_movement",
+      "passed": true
+    },
+    {
+      "name": "dialogue_prevents_movement",
+      "passed": true
+    },
+    {
+      "name": "dialogue_closes_and_unlocks",
+      "passed": true
+    },
+    {
+      "name": "sign_can_be_investigated",
+      "passed": true
+    },
+    {
+      "name": "out_of_range_interaction_rejected",
+      "passed": true
+    },
+    {
+      "name": "night_preset_applies_atomically",
+      "passed": true
+    },
+    {
+      "name": "preset_preserves_actor_identity",
+      "passed": true
+    },
+    {
+      "name": "effects_comparison_switch",
+      "passed": true
+    },
+    {
+      "name": "bindings_move_left",
+      "passed": true
+    },
+    {
+      "name": "bindings_move_right",
+      "passed": true
+    },
+    {
+      "name": "bindings_move_up",
+      "passed": true
+    },
+    {
+      "name": "bindings_move_down",
+      "passed": true
+    }
+  ],
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "passed": true,
+  "real_gpu": false,
+  "renderer": "forward_plus",
+  "utc": "2026-09-28T09:35:50",
+  "viewport": [
+    64,
+    64
+  ]
+}

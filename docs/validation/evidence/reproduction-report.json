@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "clean_copy": "build/reproduction/clean-o2imjpaf",
+  "steps": [
+    {
+      "step": "assets",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "step": "models",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "step": "import",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "step": "bake",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "step": "test",
+      "passed": true,
+      "returncode": 0
+    }
+  ],
+  "scope": "fresh source-copy; PNG regeneration; Blender save/GLB export; fresh Godot import and baking; static/headless tests; no GPU acceptance inferred"
+}

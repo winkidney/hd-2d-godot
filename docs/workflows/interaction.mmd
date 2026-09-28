@@ -1,0 +1,15 @@
+flowchart TD
+    input["输入事件<br/>WASD / E / T / F2 / F3 / Tab"]
+    move["移动请求<br/>相机相对向量 / 归一化"]
+    interact["E 交互请求<br/>搜索范围内最近 InteractionPoint"]
+    preset["表现请求<br/>预设 / 展示 / FX / HUD"]
+    physics["CharacterBody3D<br/>碰撞与落地；对话时锁定"]
+    dialogue["对话开关<br/>纯文本；关闭后恢复控制"]
+    visual["原子更新表现<br/>不重建玩家 / 不重建静态世界"]
+    input --> move
+    input --> interact
+    input --> preset
+    move --> physics
+    interact --> dialogue
+    dialogue --> physics
+    preset --> visual

@@ -1,0 +1,8 @@
+.godot/
+build/
+.venv/
+__pycache__/
+*.blend1
+*.blend2
+.env
+.DS_Store

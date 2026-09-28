@@ -1,0 +1,31 @@
+{
+  "godot": "4.7.2.stable.official.ed1daf0bf",
+  "blender": "5.2.2 LTS",
+  "templates": {
+    "name": "Godot_v4.7.2-stable_export_templates.tpz",
+    "size": 1281349702,
+    "url": "https://github.com/godotengine/godot-builds/releases/download/4.7.2-stable/Godot_v4.7.2-stable_export_templates.tpz",
+    "digest": "sha256:f298490b8d44d934be425a5a65a51bf15f422428b229a06a6e11d9ffea248011"
+  },
+  "scope": "project-local build/templates; no global installation",
+  "blender_mcp": "not installed; approval required",
+  "python_tested": "3.14.4",
+  "pillow_tested": "11.3.0",
+  "template_outputs": [
+    {
+      "path": "build/templates/linux_debug.x86_64",
+      "sha256": "1a291d3d15e4180b60b0af96cf6458f11fe143636d76575ddf1e23d1a3f24f2e",
+      "size": 73703800
+    },
+    {
+      "path": "build/templates/linux_release.x86_64",
+      "sha256": "d9f79ab89b5ae369aeed11c6052d402e8218cd503bf85b4a235f9c30c46a7c63",
+      "size": 73519416
+    },
+    {
+      "path": "build/templates/version.txt",
+      "sha256": "38885c88f75abbc797a1db7559719800279a00cfb9fa8b2e2868a7f6f84bad2e",
+      "size": 13
+    }
+  ]
+}

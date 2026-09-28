@@ -1,0 +1,16 @@
+flowchart TD
+    source["源码与资产来源链<br/>固定版本 / 模型源 / 相对路径"]
+    static["静态与功能测试<br/>散列 / 再生成 / 链接 / 碰撞"]
+    gpu["真实 GPU 验收<br/>截图 / 绘制帧 / GPU 时间"]
+    review["用户视觉 Review<br/>风格认可独立于工程测试"]
+    clean["干净副本重建<br/>无缓存导入 / Blender 再导出"]
+    binary["Linux 导出包<br/>包外启动与功能测试"]
+    release["交付候选<br/>源码 / 可执行包 / 文档 / 校验和"]
+    source --> static
+    source --> gpu
+    gpu --> review
+    static --> clean
+    gpu --> binary
+    clean --> release
+    binary --> release
+    review --> release

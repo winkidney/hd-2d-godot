@@ -1,0 +1,128 @@
+{
+  "source_type": "procedural-original",
+  "seed": 290928,
+  "generator": "tools/generate_assets.py",
+  "attribution": "Original procedural assets authored for this project; no extracted game content.",
+  "sprite_frame": [
+    32,
+    48
+  ],
+  "sprite_grid": [
+    4,
+    4
+  ],
+  "assets": [
+    {
+      "path": "assets/sprites/autumn.png",
+      "size": [
+        128,
+        128
+      ],
+      "sha256": "d5a0d19e4d9af3c0282769f491e3e906caf99a7159c59c6de39933c4e9746b9d"
+    },
+    {
+      "path": "assets/sprites/contact_shadow.png",
+      "size": [
+        64,
+        24
+      ],
+      "sha256": "52b8e5b86cffc04f8076fb8146b96c7bf16a7e30a0d2491d4e2b828482c8efb2"
+    },
+    {
+      "path": "assets/sprites/flowers.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "f19955a2ed9a3e6b8dd3d11e8b663ac245b9907f94f3098d301f4ceb58d02861"
+    },
+    {
+      "path": "assets/sprites/keeper.png",
+      "size": [
+        128,
+        192
+      ],
+      "sha256": "952a38df621713294af2c0c194ee2c3b8025dadab30fa656443affb6d205e285"
+    },
+    {
+      "path": "assets/sprites/oak.png",
+      "size": [
+        128,
+        128
+      ],
+      "sha256": "63b0c7cf5a02735330a174ea7f9e60524b2620f4a29fcb23b9951dbd488020c6"
+    },
+    {
+      "path": "assets/sprites/reeds.png",
+      "size": [
+        48,
+        64
+      ],
+      "sha256": "a27796d357aa81bfc3998738a7480e5d70897411ab92f49593eb6c49d73a1f27"
+    },
+    {
+      "path": "assets/sprites/traveler.png",
+      "size": [
+        128,
+        192
+      ],
+      "sha256": "003cbb42f564f47f1e7d4db0198e8ffc571f1583ca1eb2fa82bc29f327c5d7aa"
+    },
+    {
+      "path": "assets/textures/brick.png",
+      "size": [
+        128,
+        128
+      ],
+      "sha256": "5bcf74946cf64de9f2f0f93a70c4a826708a6c67831f6f238ac9abd835fb3f0e"
+    },
+    {
+      "path": "assets/textures/grass.png",
+      "size": [
+        128,
+        128
+      ],
+      "sha256": "b2cf0c044b760ac36f188b01b87422a6b124f1951f95229680a5291da39fa198"
+    },
+    {
+      "path": "assets/textures/plaster.png",
+      "size": [
+        128,
+        128
+      ],
+      "sha256": "b734ef851d8d7a3e1060cf3bf9d31114ba6d1c2776e5417516287eeba84a902c"
+    },
+    {
+      "path": "assets/textures/roof.png",
+      "size": [
+        128,
+        128
+      ],
+      "sha256": "2ae51e1e8a11a05d3698cc0024b2d694b05b42607390dd908d4e50d78ee92fbe"
+    },
+    {
+      "path": "assets/textures/soil.png",
+      "size": [
+        128,
+        128
+      ],
+      "sha256": "a71bb4eb32d0b9b396c3428cd45f851d60c42c081e1448ab478823f11e6e5027"
+    },
+    {
+      "path": "assets/textures/stone.png",
+      "size": [
+        128,
+        128
+      ],
+      "sha256": "b92eee64673005f30c5256e17a9a9ed3b2cb1d72571240503ecdebc8932c9796"
+    },
+    {
+      "path": "assets/textures/wood.png",
+      "size": [
+        128,
+        128
+      ],
+      "sha256": "0772f30fb4fefd215efbf5fc492107ef746a9e826ee064006337ca6326fec02f"
+    }
+  ]
+}

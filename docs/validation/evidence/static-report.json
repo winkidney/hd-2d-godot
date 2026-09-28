@@ -1,0 +1,285 @@
+{
+  "checks": [
+    {
+      "name": "fourteen_source_images",
+      "passed": true
+    },
+    {
+      "name": "hash:assets/sprites/autumn.png",
+      "passed": true
+    },
+    {
+      "name": "dimensions:assets/sprites/autumn.png",
+      "passed": true
+    },
+    {
+      "name": "hash:assets/sprites/contact_shadow.png",
+      "passed": true
+    },
+    {
+      "name": "dimensions:assets/sprites/contact_shadow.png",
+      "passed": true
+    },
+    {
+      "name": "hash:assets/sprites/flowers.png",
+      "passed": true
+    },
+    {
+      "name": "dimensions:assets/sprites/flowers.png",
+      "passed": true
+    },
+    {
+      "name": "hash:assets/sprites/keeper.png",
+      "passed": true
+    },
+    {
+      "name": "dimensions:assets/sprites/keeper.png",
+      "passed": true
+    },
+    {
+      "name": "actor_atlas:keeper",
+      "passed": true
+    },
+    {
+      "name": "actor_alpha:keeper",
+      "passed": true
+    },
+    {
+      "name": "hash:assets/sprites/oak.png",
+      "passed": true
+    },
+    {
+      "name": "dimensions:assets/sprites/oak.png",
+      "passed": true
+    },
+    {
+      "name": "hash:assets/sprites/reeds.png",
+      "passed": true
+    },
+    {
+      "name": "dimensions:assets/sprites/reeds.png",
+      "passed": true
+    },
+    {
+      "name": "hash:assets/sprites/traveler.png",
+      "passed": true
+    },
+    {
+      "name": "dimensions:assets/sprites/traveler.png",
+      "passed": true
+    },
+    {
+      "name": "actor_atlas:traveler",
+      "passed": true
+    },
+    {
+      "name": "actor_alpha:traveler",
+      "passed": true
+    },
+    {
+      "name": "hash:assets/textures/brick.png",
+      "passed": true
+    },
+    {
+      "name": "dimensions:assets/textures/brick.png",
+      "passed": true
+    },
+    {
+      "name": "hash:assets/textures/grass.png",
+      "passed": true
+    },
+    {
+      "name": "dimensions:assets/textures/grass.png",
+      "passed": true
+    },
+    {
+      "name": "hash:assets/textures/plaster.png",
+      "passed": true
+    },
+    {
+      "name": "dimensions:assets/textures/plaster.png",
+      "passed": true
+    },
+    {
+      "name": "hash:assets/textures/roof.png",
+      "passed": true
+    },
+    {
+      "name": "dimensions:assets/textures/roof.png",
+      "passed": true
+    },
+    {
+      "name": "hash:assets/textures/soil.png",
+      "passed": true
+    },
+    {
+      "name": "dimensions:assets/textures/soil.png",
+      "passed": true
+    },
+    {
+      "name": "hash:assets/textures/stone.png",
+      "passed": true
+    },
+    {
+      "name": "dimensions:assets/textures/stone.png",
+      "passed": true
+    },
+    {
+      "name": "hash:assets/textures/wood.png",
+      "passed": true
+    },
+    {
+      "name": "dimensions:assets/textures/wood.png",
+      "passed": true
+    },
+    {
+      "name": "glb:barrel",
+      "passed": true
+    },
+    {
+      "name": "blend_source:barrel",
+      "passed": true
+    },
+    {
+      "name": "glb:bridge",
+      "passed": true
+    },
+    {
+      "name": "blend_source:bridge",
+      "passed": true
+    },
+    {
+      "name": "glb:cottage",
+      "passed": true
+    },
+    {
+      "name": "blend_source:cottage",
+      "passed": true
+    },
+    {
+      "name": "glb:crate",
+      "passed": true
+    },
+    {
+      "name": "blend_source:crate",
+      "passed": true
+    },
+    {
+      "name": "glb:dock",
+      "passed": true
+    },
+    {
+      "name": "blend_source:dock",
+      "passed": true
+    },
+    {
+      "name": "glb:inn",
+      "passed": true
+    },
+    {
+      "name": "blend_source:inn",
+      "passed": true
+    },
+    {
+      "name": "glb:lantern",
+      "passed": true
+    },
+    {
+      "name": "blend_source:lantern",
+      "passed": true
+    },
+    {
+      "name": "glb:tree_trunk",
+      "passed": true
+    },
+    {
+      "name": "blend_source:tree_trunk",
+      "passed": true
+    },
+    {
+      "name": "python_parse:verify_release.py",
+      "passed": true
+    },
+    {
+      "name": "python_parse:project.py",
+      "passed": true
+    },
+    {
+      "name": "python_parse:prepare_templates.py",
+      "passed": true
+    },
+    {
+      "name": "python_parse:generate_assets.py",
+      "passed": true
+    },
+    {
+      "name": "python_parse:render_diagrams.py",
+      "passed": true
+    },
+    {
+      "name": "python_parse:reproduce.py",
+      "passed": true
+    },
+    {
+      "name": "python_parse:package.py",
+      "passed": true
+    },
+    {
+      "name": "python_parse:source_files.py",
+      "passed": true
+    },
+    {
+      "name": "python_parse:build_models.py",
+      "passed": true
+    },
+    {
+      "name": "python_parse:check_project.py",
+      "passed": true
+    },
+    {
+      "name": "deterministic_image_regeneration_in_memory",
+      "passed": true
+    },
+    {
+      "name": "entry:README.md",
+      "passed": true
+    },
+    {
+      "name": "entry:Plan/README.md",
+      "passed": true
+    },
+    {
+      "name": "entry:ADR/README.md",
+      "passed": true
+    },
+    {
+      "name": "entry:domain-model/README.md",
+      "passed": true
+    },
+    {
+      "name": "entry:docs/workflows/README.md",
+      "passed": true
+    },
+    {
+      "name": "entry:scenes/waystation.tscn",
+      "passed": true
+    },
+    {
+      "name": "entry:scenes/world.tscn",
+      "passed": true
+    },
+    {
+      "name": "markdown_links:[]",
+      "passed": true
+    },
+    {
+      "name": "no_private_host_paths_in_docs:[]",
+      "passed": true
+    },
+    {
+      "name": "baked_models_do_not_retain_duplicate_instance_state",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

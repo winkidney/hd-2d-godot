@@ -1,0 +1,40 @@
+[
+  {"id":"runtime","title":"运行时领域边界","nodes":[
+    ["layout",["WorldLayout","坐标 / 种子 / 交互数据"],0,0],
+    ["scene",["WaystationScene","组合世界，不生成美术"],1,0],
+    ["input",["键盘输入","移动 / 交互 / 预设 / 捕获"],2,0],
+    ["world",["World + Physics","静态网格 / 河岸 / 桥 / 碰撞"],0,1],
+    ["actor",["PixelActor","脚底原点 / 朝向 / 帧动画"],1,1],
+    ["presentation",["Camera + Lighting + HUD","不修改物理实体身份"],2,1],
+    ["frame",["Forward+ 真实渲染","像素材质 / 受光 / 水面"],1,2],
+    ["capture",["ValidationRun","完成绘制后截图与计时"],1,3]],
+    "edges":[["layout","scene"],["input","scene"],["scene","world"],["scene","actor"],["scene","presentation"],["world","frame"],["actor","frame"],["presentation","frame"],["frame","capture"]]},
+  {"id":"assets","title":"美术生产与静态场景烘焙","nodes":[
+    ["spec",["视觉规格 + AssetRecipe","原创基线；记录种子与散列"],1,0],
+    ["pixel",["Python / Pillow","14 张确定性像素素材"],0,1],
+    ["blender",["Blender CLI","8 类模型 / 打包贴图"],1,1],
+    ["optional",["可选外部美术入口","ImageGen / MCP 尚未接入"],2,1],
+    ["source",["原料与可编辑源归档","PNG / blend / 生成脚本"],0,2],
+    ["glb",["GLB + Godot 导入","统一 Y-up / 运行不依赖 Blender"],1,2],
+    ["bake",["bake_scene.gd","扁平化模型，保存可编辑节点"],1,3],
+    ["world",["scenes/world.tscn","模型变更后重新烘焙"],1,4]],
+    "edges":[["spec","pixel"],["spec","blender"],["spec","optional"],["pixel","source"],["blender","source"],["blender","glb"],["glb","bake"],["source","bake"],["bake","world"]]},
+  {"id":"interaction","title":"角色交互与表现切换","nodes":[
+    ["input",["输入事件","WASD / E / T / F2 / F3 / Tab"],1,0],
+    ["move",["移动请求","相机相对向量 / 归一化"],0,1],
+    ["interact",["E 交互请求","搜索范围内最近 InteractionPoint"],1,1],
+    ["preset",["表现请求","预设 / 展示 / FX / HUD"],2,1],
+    ["physics",["CharacterBody3D","碰撞与落地；对话时锁定"],0,2],
+    ["dialogue",["对话开关","纯文本；关闭后恢复控制"],1,2],
+    ["visual",["原子更新表现","不重建玩家 / 不重建静态世界"],2,2]],
+    "edges":[["input","move"],["input","interact"],["input","preset"],["move","physics"],["interact","dialogue"],["dialogue","physics"],["preset","visual"]]},
+  {"id":"delivery","title":"验证、审阅与交付","nodes":[
+    ["source",["源码与资产来源链","固定版本 / 模型源 / 相对路径"],1,0],
+    ["static",["静态与功能测试","散列 / 再生成 / 链接 / 碰撞"],0,1],
+    ["gpu",["真实 GPU 验收","截图 / 绘制帧 / GPU 时间"],1,1],
+    ["review",["用户视觉 Review","风格认可独立于工程测试"],2,1],
+    ["clean",["干净副本重建","无缓存导入 / Blender 再导出"],0,2],
+    ["binary",["Linux 导出包","包外启动与功能测试"],1,2],
+    ["release",["交付候选","源码 / 可执行包 / 文档 / 校验和"],1,3]],
+    "edges":[["source","static"],["source","gpu"],["gpu","review"],["static","clean"],["gpu","binary"],["clean","release"],["binary","release"],["review","release"]]}
+]
