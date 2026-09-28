@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "runtime_fingerprint": "538e8f1e482e68f61ea5b76c3d961740bdc8f78535f688caa8c8cecade10177f",
+  "metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "30/1",
+        "nb_frames": "1080"
+      }
+    ],
+    "format": {
+      "duration": "36.000000"
+    }
+  },
+  "sha256": "fe0dd0fe1ed7e605f8c66d41b1d282c44235b5c015f3dcbed118544eb23fddf3",
+  "scope": "Three matched 12s one-way walks; soft/natural/enhanced, frozen wind, explicit cuts between passes."
+}

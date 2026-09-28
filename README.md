@@ -1,5 +1,10 @@
 # HD-2D · Riverside Waystation
 
+**当前版本：P8 可调视差。F8打开视差面板，F6仍为景深面板。**
+[操作](docs/operation/parallax.md) · [P8验收](docs/validation/p8/README.md) · [规划与ADR](Plan/features/adjustable-parallax.md)
+
+自然/柔和/增强与五层独立倍率、相机横向参数、云风和本机保存已实现；旧场景与素材保持不变。
+
 原创河畔驿站：**三维场景 × 二维像素角色 × 三时段远山天空 × 双端景深**。这是可交互、可重建的技术与视觉样板，不是《八方旅人》的素材移植，也不是完整 RPG。
 
 ![P6/P7 实际 Godot GPU 渲染：晴昼步道](docs/validation/p6p7/captures/day-center-dof-on.png)
@@ -34,11 +39,11 @@ make rebuild   # Pillow 原创素材 → Blender → GLB 导入 → 静态场景
 make docs      # 同一份图结构生成 Mermaid 与 SVG，无额外依赖
 make reproduce # 干净副本重建，保留独立日志和报告
 make templates # 校验已有模板；缺失时下载锁定的官方版本（约 1.28 GB）
-make export    # build/linux/waystation.x86_64
+make export    # build/p8/linux/waystation.x86_64
 make verify-release # 独立二进制功能、GPU与图像验证
 make reproduce-visual # 干净副本重建并实际渲染
-make record    # 24秒往返视频，输出到 build/p6p7/media/
-make package   # build/delivery/p6p7/ 中的新交付与校验和
+make record    # 36秒三档对比视频，输出到 build/p8/media/
+make package   # build/delivery/p8/ 中的新交付与校验和
 ```
 
 运行只需要 Godot；重建需要 Blender、Python 与 Pillow。实际测试版本保存在 `dependencies.lock.json`，不会自动升级宿主软件。正式打包前阅读[交付指南](docs/delivery/README.md)；测试与限制见[验收报告](docs/validation/baseline-report.md)。

@@ -23,3 +23,6 @@
 
 ## P6/P7 当前功能
 [开阔探索设计](design/open-exploration.md) · [景深与背景领域模型](../domain-model/background-and-focus.md) · [本轮验证与证据](validation/p6p7/README.md)
+
+## P8 可调视差
+[操作](operation/parallax.md) · [验收与实拍](validation/p8/README.md) · [运行关系图](workflows/parallax-control.svg)。

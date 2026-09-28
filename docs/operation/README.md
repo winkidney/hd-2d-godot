@@ -33,3 +33,7 @@ F12 存入应用 `user://captures/`，终端输出实际路径。自动验收截
 F5 与 F3 独立：先关景深再全局关开 FX，景深仍保持关闭；时段切换也不重置景深。
 运行时面板值只保存在当前会话；长期调整编辑 `resources/dof/*.tres`，不是自动覆盖资源文件。
 新增验收命令与截图位于 `make features-visual` 和 `build/p6p7/`，旧 `build/visual/` 只作基线流程。
+
+## P8 新增视差调节
+F8打开视差面板；F6继续调整景深。保存后可在下次启动恢复，关闭面板不自动保存。
+详细入口：[P8操作](parallax.md)；保存、恢复和配置边界也列于[P8计划](../../Plan/features/adjustable-parallax.md)。

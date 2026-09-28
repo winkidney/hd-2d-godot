@@ -1,0 +1,214 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "implementation:parallax_profile",
+      "passed": true
+    },
+    {
+      "name": "implementation:parallax_controller",
+      "passed": true
+    },
+    {
+      "name": "implementation:parallax_preview",
+      "passed": true
+    },
+    {
+      "name": "implementation:parallax_settings_store",
+      "passed": true
+    },
+    {
+      "name": "implementation:parallax_panel",
+      "passed": true
+    },
+    {
+      "name": "implementation:parallax_recording",
+      "passed": true
+    },
+    {
+      "name": "validation:parallax_validation",
+      "passed": true
+    },
+    {
+      "name": "validation:parallax_pixel_fixture",
+      "passed": true
+    },
+    {
+      "name": "validation:parallax_coverage",
+      "passed": true
+    },
+    {
+      "name": "validation:parallax_benchmark",
+      "passed": true
+    },
+    {
+      "name": "preset:natural",
+      "passed": true
+    },
+    {
+      "name": "preset:soft",
+      "passed": true
+    },
+    {
+      "name": "preset:enhanced",
+      "passed": true
+    },
+    {
+      "name": "project_camera_defaults_preserved",
+      "passed": true
+    },
+    {
+      "name": "walkway_geometry_preserved",
+      "passed": true
+    },
+    {
+      "name": "absolute_world_transform_contract",
+      "passed": true
+    },
+    {
+      "name": "no_input_driven_background_scroll",
+      "passed": true
+    },
+    {
+      "name": "explicit_local_preferences_and_replace",
+      "passed": true
+    },
+    {
+      "name": "bounded_versioned_settings",
+      "passed": true
+    },
+    {
+      "name": "isolated_mode:--ignore-user-settings",
+      "passed": true
+    },
+    {
+      "name": "isolated_mode:--self-test",
+      "passed": true
+    },
+    {
+      "name": "isolated_mode:--p6p7-test",
+      "passed": true
+    },
+    {
+      "name": "isolated_mode:--p8-test",
+      "passed": true
+    },
+    {
+      "name": "isolated_mode:--p8-recording",
+      "passed": true
+    },
+    {
+      "name": "isolated_mode:--walk-recording",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tools/build_background.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tools/build_models.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tools/check_background_blends.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tools/feature_fingerprint.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tools/features.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tools/generate_assets.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tools/generate_background_assets.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tools/package.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tools/package_features.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tools/package_parallax.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tools/parallax.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tools/prepare_templates.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tools/project.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tools/render_diagrams.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tools/reproduce.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tools/reproduce_parallax.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tools/source_files.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tools/verify_features.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tools/verify_release.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tests/check_feature_images.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tests/check_features.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tests/check_parallax.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tests/check_parallax_images.py",
+      "passed": true
+    },
+    {
+      "name": "python_syntax:tests/check_project.py",
+      "passed": true
+    },
+    {
+      "name": "design:Plan/features/adjustable-parallax.md",
+      "passed": true
+    },
+    {
+      "name": "design:ADR/16-adjustable-parallax.md",
+      "passed": true
+    },
+    {
+      "name": "design:domain-model/parallax-control.md",
+      "passed": true
+    }
+  ],
+  "scope": "Offline contracts only; GPU results reported separately."
+}

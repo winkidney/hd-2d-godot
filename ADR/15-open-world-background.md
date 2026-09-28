@@ -26,3 +26,6 @@ CameraRig 提供唯一最终姿态，默认平滑受限跟随；相机位置和�
 7 个路线采样位置、双向走通、相机行程与旋转不变量、固定几何的投影位移和复位、云独立风速。
 18 张三位置／三时段／景深双态实拍和完整往返视频，补充碰撞之外的植被卡片视觉检查。
 参考：[Camera3D](https://docs.godotengine.org/en/stable/classes/class_camera3d.html)、[Sky Shader](https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/sky_shader.html)。
+
+## P8兼容说明
+自然模式继续保持山脉世界变换；美术调节模式按[ADR-16](16-adjustable-parallax.md)对五个装饰层应用横向相机补偿。地形和游戏世界不随倍率移动。

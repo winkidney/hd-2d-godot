@@ -1,9 +1,12 @@
 extends Node3D
-## Mountains stay in world space. Only clouds have independent wind motion.
+## Natural mode keeps mountains fixed; ParallaxController alone offsets decorative roots.
 var sky_material: ShaderMaterial
 var layer_materials: Dictionary = {}
 var layers: Dictionary = {}
 var clouds: Array[Dictionary] = []
+var cloud_roots: Dictionary = {}
+var wind_speeds: Array[float] = [0.6,0.25]
+var wind_phases: Array[float] = [0.0,0.0]
 var wind_enabled := true
 var cloud_time := 0.0
 var visible_background := true
@@ -35,7 +38,13 @@ func configure(env: Environment) -> void:
         layer_materials[id] = material
         dress(item, material)
     build_tree_line()
+    wind_speeds.assign(config.cloud_wind_speeds)
     for layer in range(2):
+        var group := Node3D.new()
+        var id := "clouds_near" if layer == 0 else "clouds_far"
+        group.name = id
+        add_child(group)
+        cloud_roots[id] = group
         for index in range(int(config.cloud_count_per_layer)):
             var card := MeshInstance3D.new()
             card.name = "Cloud_%d_%d" % [layer, index]
@@ -53,8 +62,8 @@ func configure(env: Environment) -> void:
             card.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
             var pos := Vector3((index-4)*65, 29+(index%3)*5, -240-(index%2)*25) if layer == 0 else Vector3((index-4)*180, 87+(index%3)*10, -760)
             card.position = pos
-            add_child(card)
-            clouds.append({"node":card,"origin":pos,"speed":float(config.cloud_wind_speeds[layer]),"span":585.0 if layer == 0 else 1620.0})
+            group.add_child(card)
+            clouds.append({"node":card,"origin":pos,"layer":layer,"span":585.0 if layer == 0 else 1620.0})
     apply_preset("day")
 
 func dress(node: Node, material: Material) -> void:
@@ -82,9 +91,11 @@ func apply_preset(id: String) -> void:
 func advance(delta: float) -> void:
     if wind_enabled:
         cloud_time += delta
+        for i in range(2):
+            wind_phases[i] = fposmod(wind_phases[i] + wind_speeds[i] * delta,585.0 if i == 0 else 1620.0)
     for cloud in clouds:
         var p: Vector3 = cloud.origin
-        p.x = wrapf(p.x + cloud_time * float(cloud.speed), -float(cloud.span)*0.5, float(cloud.span)*0.5)
+        p.x = wrapf(p.x + wind_phases[int(cloud.layer)], -float(cloud.span)*0.5, float(cloud.span)*0.5)
         cloud.node.position = p
 
 func terrain_material() -> ShaderMaterial:

@@ -1,0 +1,17 @@
+flowchart TD
+    camera["CameraRig<br/>最终相机姿态 / 固定参考轴"]
+    settings["F8 / Local settings<br/>白名单校验 / 显式保存"]
+    origin["LayerState<br/>原始世界变换 / 无累积漂移"]
+    profile["ParallaxProfile<br/>Natural / Artistic / 有效倍率"]
+    controller["ParallaxController<br/>B0 + (1-k) × R × camera_dx"]
+    cloud["CloudPhase<br/>风速积分 / 不重算历史位移"]
+    render["单一 Forward+ 视口<br/>五层装饰补偿 / 近场不移动"]
+    tests["独立验收与发布门禁<br/>像素位移 / 设置恢复 / 运行指纹"]
+    camera --> controller
+    origin --> controller
+    settings --> profile
+    profile --> controller
+    settings --> cloud
+    controller --> render
+    cloud --> render
+    render --> tests

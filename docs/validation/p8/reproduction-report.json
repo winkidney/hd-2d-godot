@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "origin_runtime_fingerprint": "538e8f1e482e68f61ea5b76c3d961740bdc8f78535f688caa8c8cecade10177f",
+  "real_gpu_checked": true,
+  "steps": [
+    {
+      "step": "assets",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "step": "background-assets",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "step": "models",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "step": "background-models",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "step": "import",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "step": "bake",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "step": "p8-test",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "step": "p8-gpu",
+      "passed": true,
+      "returncode": 0
+    }
+  ],
+  "clean_copy": "build/p8/reproduction/clean-0rwm20nq",
+  "scope": "Fresh source copy; 17 images and 12 Blender models rebuilt; new imports/bake; P8 default/custom, actual GPU, pixels and preferences process tests."
+}

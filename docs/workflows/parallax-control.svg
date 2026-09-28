@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="750" viewBox="0 0 1120 750" role="img">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#657d8b"/></marker></defs>
+<rect width="1120" height="750" fill="#f4f6f5"/>
+<text x="40" y="46" font-size="26" font-family="sans-serif" fill="#183747">P8 可调视差与本机配置</text>
+<text x="40" y="77" font-size="13" font-family="sans-serif" fill="#526873">HD-2D Waystation / editable source: diagrams.json / generated with make docs</text>
+<path d="M200 190 V280.0 H560 V370" fill="none" stroke="#657d8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M200 320 V345.0 H560 V370" fill="none" stroke="#657d8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M920 190 V215.0 H920 V240" fill="none" stroke="#657d8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M920 320 V345.0 H560 V370" fill="none" stroke="#657d8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M920 190 V280.0 H920 V370" fill="none" stroke="#657d8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M560 450 V475.0 H560 V500" fill="none" stroke="#657d8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M920 450 V475.0 H560 V500" fill="none" stroke="#657d8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M560 580 V605.0 H560 V630" fill="none" stroke="#657d8b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="40" y="110" width="320" height="80" rx="8" fill="#ffffff" stroke="#a9bbc0"/>
+<text x="200" y="141" text-anchor="middle" font-size="17" font-family="sans-serif" fill="#183747">CameraRig</text>
+<text x="200" y="167" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">最终相机姿态 / 固定参考轴</text>
+<rect x="760" y="110" width="320" height="80" rx="8" fill="#ffffff" stroke="#a9bbc0"/>
+<text x="920" y="141" text-anchor="middle" font-size="17" font-family="sans-serif" fill="#183747">F8 / Local settings</text>
+<text x="920" y="167" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">白名单校验 / 显式保存</text>
+<rect x="40" y="240" width="320" height="80" rx="8" fill="#ffffff" stroke="#a9bbc0"/>
+<text x="200" y="271" text-anchor="middle" font-size="17" font-family="sans-serif" fill="#183747">LayerState</text>
+<text x="200" y="297" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">原始世界变换 / 无累积漂移</text>
+<rect x="760" y="240" width="320" height="80" rx="8" fill="#ffffff" stroke="#a9bbc0"/>
+<text x="920" y="271" text-anchor="middle" font-size="17" font-family="sans-serif" fill="#183747">ParallaxProfile</text>
+<text x="920" y="297" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">Natural / Artistic / 有效倍率</text>
+<rect x="400" y="370" width="320" height="80" rx="8" fill="#ffffff" stroke="#a9bbc0"/>
+<text x="560" y="401" text-anchor="middle" font-size="17" font-family="sans-serif" fill="#183747">ParallaxController</text>
+<text x="560" y="427" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">B0 + (1-k) × R × camera_dx</text>
+<rect x="760" y="370" width="320" height="80" rx="8" fill="#ffffff" stroke="#a9bbc0"/>
+<text x="920" y="401" text-anchor="middle" font-size="17" font-family="sans-serif" fill="#183747">CloudPhase</text>
+<text x="920" y="427" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">风速积分 / 不重算历史位移</text>
+<rect x="400" y="500" width="320" height="80" rx="8" fill="#ffffff" stroke="#a9bbc0"/>
+<text x="560" y="531" text-anchor="middle" font-size="17" font-family="sans-serif" fill="#183747">单一 Forward+ 视口</text>
+<text x="560" y="557" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">五层装饰补偿 / 近场不移动</text>
+<rect x="400" y="630" width="320" height="80" rx="8" fill="#ffffff" stroke="#a9bbc0"/>
+<text x="560" y="661" text-anchor="middle" font-size="17" font-family="sans-serif" fill="#183747">独立验收与发布门禁</text>
+<text x="560" y="687" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">像素位移 / 设置恢复 / 运行指纹</text>
+</svg>

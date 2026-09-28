@@ -28,7 +28,7 @@ func _ready() -> void:
     label_at("HD-2D SCENE STUDY   /   ORIGINAL PROCEDURAL ART", Vector2(48, 82), Vector2(1000, 32), 16)
     status = label_at("", Vector2(1320, 40), Vector2(550, 70), 20)
     status.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
-    var footer := label_at("WASD / ARROWS  Walk    E  Interact    T  Time of day    F2  Tour    F3  Effects    F4  Follow    F5  DOF    F6  Tune    TAB  Hide UI    F12  Capture", Vector2(46, 1016), Vector2(1830, 40), 16)
+    var footer := label_at("WASD / ARROWS  Walk    E  Interact    T  Time of day    F2  Tour    F3  Effects    F4  Follow    F5  DOF    F6  DOF    F8  Parallax    TAB  Hide UI    F12  Capture", Vector2(46, 1016), Vector2(1830, 40), 16)
     footer.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
     prompt = label_at("", Vector2(450, 948), Vector2(1020, 48), 25)
     prompt.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER

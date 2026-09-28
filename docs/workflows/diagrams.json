@@ -664,5 +664,117 @@
         "bundle"
       ]
     ]
+  },
+  {
+    "id": "parallax-control",
+    "title": "P8 可调视差与本机配置",
+    "nodes": [
+      [
+        "camera",
+        [
+          "CameraRig",
+          "最终相机姿态 / 固定参考轴"
+        ],
+        0,
+        0
+      ],
+      [
+        "settings",
+        [
+          "F8 / Local settings",
+          "白名单校验 / 显式保存"
+        ],
+        2,
+        0
+      ],
+      [
+        "origin",
+        [
+          "LayerState",
+          "原始世界变换 / 无累积漂移"
+        ],
+        0,
+        1
+      ],
+      [
+        "profile",
+        [
+          "ParallaxProfile",
+          "Natural / Artistic / 有效倍率"
+        ],
+        2,
+        1
+      ],
+      [
+        "controller",
+        [
+          "ParallaxController",
+          "B0 + (1-k) × R × camera_dx"
+        ],
+        1,
+        2
+      ],
+      [
+        "cloud",
+        [
+          "CloudPhase",
+          "风速积分 / 不重算历史位移"
+        ],
+        2,
+        2
+      ],
+      [
+        "render",
+        [
+          "单一 Forward+ 视口",
+          "五层装饰补偿 / 近场不移动"
+        ],
+        1,
+        3
+      ],
+      [
+        "tests",
+        [
+          "独立验收与发布门禁",
+          "像素位移 / 设置恢复 / 运行指纹"
+        ],
+        1,
+        4
+      ]
+    ],
+    "edges": [
+      [
+        "camera",
+        "controller"
+      ],
+      [
+        "origin",
+        "controller"
+      ],
+      [
+        "settings",
+        "profile"
+      ],
+      [
+        "profile",
+        "controller"
+      ],
+      [
+        "settings",
+        "cloud"
+      ],
+      [
+        "controller",
+        "render"
+      ],
+      [
+        "cloud",
+        "render"
+      ],
+      [
+        "render",
+        "tests"
+      ]
+    ]
   }
 ]

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "runtime_fingerprint": "538e8f1e482e68f61ea5b76c3d961740bdc8f78535f688caa8c8cecade10177f",
+  "binary_sha256": "1a75c08fa9b85ba11e16cd97fe31c3d992b20b241cce3855bd2eada5a1ab1d72",
+  "runs": {
+    "headless": {
+      "passed": true,
+      "checks": 410
+    },
+    "gpu": {
+      "passed": true,
+      "checks": 437
+    }
+  },
+  "settings_restart_passed": true,
+  "scope": "Embedded-PCK executable alone; no project assets copied; isolated preferences."
+}

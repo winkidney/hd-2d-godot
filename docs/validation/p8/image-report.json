@@ -1,0 +1,683 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "pixel_ratio:markers-k0-dx-2.png:ridge_near",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k0-dx-2.png:ridge_mid",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k0-dx-2.png:ridge_far",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k0-dx-2.png:clouds_near",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k0-dx-2.png:clouds_far",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k0-dx2.png:ridge_near",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k0-dx2.png:ridge_mid",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k0-dx2.png:ridge_far",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k0-dx2.png:clouds_near",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k0-dx2.png:clouds_far",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k50-dx-2.png:ridge_near",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k50-dx-2.png:ridge_mid",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k50-dx-2.png:ridge_far",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k50-dx-2.png:clouds_near",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k50-dx-2.png:clouds_far",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k50-dx2.png:ridge_near",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k50-dx2.png:ridge_mid",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k50-dx2.png:ridge_far",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k50-dx2.png:clouds_near",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k50-dx2.png:clouds_far",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k100-dx-2.png:ridge_near",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k100-dx-2.png:ridge_mid",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k100-dx-2.png:ridge_far",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k100-dx-2.png:clouds_near",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k100-dx-2.png:clouds_far",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k100-dx2.png:ridge_near",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k100-dx2.png:ridge_mid",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k100-dx2.png:ridge_far",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k100-dx2.png:clouds_near",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k100-dx2.png:clouds_far",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k150-dx-2.png:ridge_near",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k150-dx-2.png:ridge_mid",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k150-dx-2.png:ridge_far",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k150-dx-2.png:clouds_near",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k150-dx-2.png:clouds_far",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k150-dx2.png:ridge_near",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k150-dx2.png:ridge_mid",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k150-dx2.png:ridge_far",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k150-dx2.png:clouds_near",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k150-dx2.png:clouds_far",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k200-dx-2.png:ridge_near",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k200-dx-2.png:ridge_mid",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k200-dx-2.png:ridge_far",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k200-dx-2.png:clouds_near",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k200-dx-2.png:clouds_far",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k200-dx2.png:ridge_near",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k200-dx2.png:ridge_mid",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k200-dx2.png:ridge_far",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k200-dx2.png:clouds_near",
+      "passed": true
+    },
+    {
+      "name": "pixel_ratio:markers-k200-dx2.png:clouds_far",
+      "passed": true
+    },
+    {
+      "name": "resolution:day:natural",
+      "passed": true
+    },
+    {
+      "name": "anchor_has_no_compensation:day:natural",
+      "passed": true
+    },
+    {
+      "name": "resolution:day:soft",
+      "passed": true
+    },
+    {
+      "name": "anchor_has_no_compensation:day:soft",
+      "passed": true
+    },
+    {
+      "name": "resolution:day:enhanced",
+      "passed": true
+    },
+    {
+      "name": "anchor_has_no_compensation:day:enhanced",
+      "passed": true
+    },
+    {
+      "name": "artistic_gain_changes_scene_pixels:day",
+      "passed": true
+    },
+    {
+      "name": "resolution:dusk:natural",
+      "passed": true
+    },
+    {
+      "name": "anchor_has_no_compensation:dusk:natural",
+      "passed": true
+    },
+    {
+      "name": "resolution:dusk:soft",
+      "passed": true
+    },
+    {
+      "name": "anchor_has_no_compensation:dusk:soft",
+      "passed": true
+    },
+    {
+      "name": "resolution:dusk:enhanced",
+      "passed": true
+    },
+    {
+      "name": "anchor_has_no_compensation:dusk:enhanced",
+      "passed": true
+    },
+    {
+      "name": "artistic_gain_changes_scene_pixels:dusk",
+      "passed": true
+    },
+    {
+      "name": "resolution:night:natural",
+      "passed": true
+    },
+    {
+      "name": "anchor_has_no_compensation:night:natural",
+      "passed": true
+    },
+    {
+      "name": "resolution:night:soft",
+      "passed": true
+    },
+    {
+      "name": "anchor_has_no_compensation:night:soft",
+      "passed": true
+    },
+    {
+      "name": "resolution:night:enhanced",
+      "passed": true
+    },
+    {
+      "name": "anchor_has_no_compensation:night:enhanced",
+      "passed": true
+    },
+    {
+      "name": "artistic_gain_changes_scene_pixels:night",
+      "passed": true
+    }
+  ],
+  "pixel_measurements": [
+    {
+      "case": "markers-k0-dx-2.png",
+      "layer": "ridge_near",
+      "expected_dx": 0.0,
+      "measured_dx": 0.0,
+      "error_px": 0.0
+    },
+    {
+      "case": "markers-k0-dx-2.png",
+      "layer": "ridge_mid",
+      "expected_dx": 0.0,
+      "measured_dx": 0.0,
+      "error_px": 0.0
+    },
+    {
+      "case": "markers-k0-dx-2.png",
+      "layer": "ridge_far",
+      "expected_dx": 0.0,
+      "measured_dx": 0.0,
+      "error_px": 0.0
+    },
+    {
+      "case": "markers-k0-dx-2.png",
+      "layer": "clouds_near",
+      "expected_dx": 0.0,
+      "measured_dx": 0.0,
+      "error_px": 0.0
+    },
+    {
+      "case": "markers-k0-dx-2.png",
+      "layer": "clouds_far",
+      "expected_dx": 0.0,
+      "measured_dx": 0.0,
+      "error_px": 0.0
+    },
+    {
+      "case": "markers-k0-dx2.png",
+      "layer": "ridge_near",
+      "expected_dx": -0.0,
+      "measured_dx": 0.0,
+      "error_px": 0.0
+    },
+    {
+      "case": "markers-k0-dx2.png",
+      "layer": "ridge_mid",
+      "expected_dx": -0.0,
+      "measured_dx": 0.0,
+      "error_px": 0.0
+    },
+    {
+      "case": "markers-k0-dx2.png",
+      "layer": "ridge_far",
+      "expected_dx": -0.0,
+      "measured_dx": 0.0,
+      "error_px": 0.0
+    },
+    {
+      "case": "markers-k0-dx2.png",
+      "layer": "clouds_near",
+      "expected_dx": -0.0,
+      "measured_dx": 0.0,
+      "error_px": 0.0
+    },
+    {
+      "case": "markers-k0-dx2.png",
+      "layer": "clouds_far",
+      "expected_dx": -0.0,
+      "measured_dx": 0.0,
+      "error_px": 0.0
+    },
+    {
+      "case": "markers-k50-dx-2.png",
+      "layer": "ridge_near",
+      "expected_dx": 11.7007450716873,
+      "measured_dx": 11.5,
+      "error_px": 0.20074507168729916
+    },
+    {
+      "case": "markers-k50-dx-2.png",
+      "layer": "ridge_mid",
+      "expected_dx": 5.155831413846922,
+      "measured_dx": 5.0,
+      "error_px": 0.15583141384692212
+    },
+    {
+      "case": "markers-k50-dx-2.png",
+      "layer": "ridge_far",
+      "expected_dx": 2.102122829891485,
+      "measured_dx": 2.0,
+      "error_px": 0.10212282989148491
+    },
+    {
+      "case": "markers-k50-dx-2.png",
+      "layer": "clouds_near",
+      "expected_dx": 6.420192556072682,
+      "measured_dx": 6.5,
+      "error_px": 0.07980744392731776
+    },
+    {
+      "case": "markers-k50-dx-2.png",
+      "layer": "clouds_far",
+      "expected_dx": 2.26864625641013,
+      "measured_dx": 2.5,
+      "error_px": 0.23135374358987004
+    },
+    {
+      "case": "markers-k50-dx2.png",
+      "layer": "ridge_near",
+      "expected_dx": -11.7007450716873,
+      "measured_dx": -11.5,
+      "error_px": 0.20074507168729916
+    },
+    {
+      "case": "markers-k50-dx2.png",
+      "layer": "ridge_mid",
+      "expected_dx": -5.155831413846922,
+      "measured_dx": -5.0,
+      "error_px": 0.15583141384692212
+    },
+    {
+      "case": "markers-k50-dx2.png",
+      "layer": "ridge_far",
+      "expected_dx": -2.102122829891485,
+      "measured_dx": -2.0,
+      "error_px": 0.10212282989148491
+    },
+    {
+      "case": "markers-k50-dx2.png",
+      "layer": "clouds_near",
+      "expected_dx": -6.420192556072682,
+      "measured_dx": -6.5,
+      "error_px": 0.07980744392731776
+    },
+    {
+      "case": "markers-k50-dx2.png",
+      "layer": "clouds_far",
+      "expected_dx": -2.26864625641013,
+      "measured_dx": -2.5,
+      "error_px": 0.23135374358987004
+    },
+    {
+      "case": "markers-k100-dx-2.png",
+      "layer": "ridge_near",
+      "expected_dx": 23.4014901433746,
+      "measured_dx": 23.5,
+      "error_px": 0.09850985662540168
+    },
+    {
+      "case": "markers-k100-dx-2.png",
+      "layer": "ridge_mid",
+      "expected_dx": 10.311662827693844,
+      "measured_dx": 10.5,
+      "error_px": 0.18833717230615576
+    },
+    {
+      "case": "markers-k100-dx-2.png",
+      "layer": "ridge_far",
+      "expected_dx": 4.20424565978297,
+      "measured_dx": 4.0,
+      "error_px": 0.20424565978296982
+    },
+    {
+      "case": "markers-k100-dx-2.png",
+      "layer": "clouds_near",
+      "expected_dx": 12.840385112145364,
+      "measured_dx": 13.0,
+      "error_px": 0.1596148878546355
+    },
+    {
+      "case": "markers-k100-dx-2.png",
+      "layer": "clouds_far",
+      "expected_dx": 4.53729251282026,
+      "measured_dx": 4.5,
+      "error_px": 0.037292512820259915
+    },
+    {
+      "case": "markers-k100-dx2.png",
+      "layer": "ridge_near",
+      "expected_dx": -23.4014901433746,
+      "measured_dx": -23.5,
+      "error_px": 0.09850985662540168
+    },
+    {
+      "case": "markers-k100-dx2.png",
+      "layer": "ridge_mid",
+      "expected_dx": -10.311662827693844,
+      "measured_dx": -10.5,
+      "error_px": 0.18833717230615576
+    },
+    {
+      "case": "markers-k100-dx2.png",
+      "layer": "ridge_far",
+      "expected_dx": -4.20424565978297,
+      "measured_dx": -4.0,
+      "error_px": 0.20424565978296982
+    },
+    {
+      "case": "markers-k100-dx2.png",
+      "layer": "clouds_near",
+      "expected_dx": -12.840385112145364,
+      "measured_dx": -13.0,
+      "error_px": 0.1596148878546355
+    },
+    {
+      "case": "markers-k100-dx2.png",
+      "layer": "clouds_far",
+      "expected_dx": -4.53729251282026,
+      "measured_dx": -4.5,
+      "error_px": 0.037292512820259915
+    },
+    {
+      "case": "markers-k150-dx-2.png",
+      "layer": "ridge_near",
+      "expected_dx": 35.1022352150619,
+      "measured_dx": 35.0,
+      "error_px": 0.1022352150619028
+    },
+    {
+      "case": "markers-k150-dx-2.png",
+      "layer": "ridge_mid",
+      "expected_dx": 15.467494241540768,
+      "measured_dx": 15.5,
+      "error_px": 0.03250575845923187
+    },
+    {
+      "case": "markers-k150-dx-2.png",
+      "layer": "ridge_far",
+      "expected_dx": 6.306368489674455,
+      "measured_dx": 6.5,
+      "error_px": 0.19363151032554526
+    },
+    {
+      "case": "markers-k150-dx-2.png",
+      "layer": "clouds_near",
+      "expected_dx": 19.260577668218048,
+      "measured_dx": 19.5,
+      "error_px": 0.23942233178195238
+    },
+    {
+      "case": "markers-k150-dx-2.png",
+      "layer": "clouds_far",
+      "expected_dx": 6.805938769230391,
+      "measured_dx": 7.0,
+      "error_px": 0.19406123076960924
+    },
+    {
+      "case": "markers-k150-dx2.png",
+      "layer": "ridge_near",
+      "expected_dx": -35.1022352150619,
+      "measured_dx": -35.0,
+      "error_px": 0.1022352150619028
+    },
+    {
+      "case": "markers-k150-dx2.png",
+      "layer": "ridge_mid",
+      "expected_dx": -15.467494241540768,
+      "measured_dx": -15.5,
+      "error_px": 0.03250575845923187
+    },
+    {
+      "case": "markers-k150-dx2.png",
+      "layer": "ridge_far",
+      "expected_dx": -6.306368489674455,
+      "measured_dx": -6.5,
+      "error_px": 0.19363151032554526
+    },
+    {
+      "case": "markers-k150-dx2.png",
+      "layer": "clouds_near",
+      "expected_dx": -19.260577668218048,
+      "measured_dx": -19.5,
+      "error_px": 0.23942233178195238
+    },
+    {
+      "case": "markers-k150-dx2.png",
+      "layer": "clouds_far",
+      "expected_dx": -6.805938769230391,
+      "measured_dx": -7.0,
+      "error_px": 0.19406123076960924
+    },
+    {
+      "case": "markers-k200-dx-2.png",
+      "layer": "ridge_near",
+      "expected_dx": 46.8029802867492,
+      "measured_dx": 47.0,
+      "error_px": 0.19701971325080336
+    },
+    {
+      "case": "markers-k200-dx-2.png",
+      "layer": "ridge_mid",
+      "expected_dx": 20.62332565538769,
+      "measured_dx": 20.5,
+      "error_px": 0.12332565538768847
+    },
+    {
+      "case": "markers-k200-dx-2.png",
+      "layer": "ridge_far",
+      "expected_dx": 8.40849131956594,
+      "measured_dx": 8.5,
+      "error_px": 0.09150868043406035
+    },
+    {
+      "case": "markers-k200-dx-2.png",
+      "layer": "clouds_near",
+      "expected_dx": 25.68077022429073,
+      "measured_dx": 25.5,
+      "error_px": 0.18077022429072898
+    },
+    {
+      "case": "markers-k200-dx-2.png",
+      "layer": "clouds_far",
+      "expected_dx": 9.07458502564052,
+      "measured_dx": 9.0,
+      "error_px": 0.07458502564051983
+    },
+    {
+      "case": "markers-k200-dx2.png",
+      "layer": "ridge_near",
+      "expected_dx": -46.8029802867492,
+      "measured_dx": -47.0,
+      "error_px": 0.19701971325080336
+    },
+    {
+      "case": "markers-k200-dx2.png",
+      "layer": "ridge_mid",
+      "expected_dx": -20.62332565538769,
+      "measured_dx": -20.5,
+      "error_px": 0.12332565538768847
+    },
+    {
+      "case": "markers-k200-dx2.png",
+      "layer": "ridge_far",
+      "expected_dx": -8.40849131956594,
+      "measured_dx": -8.5,
+      "error_px": 0.09150868043406035
+    },
+    {
+      "case": "markers-k200-dx2.png",
+      "layer": "clouds_near",
+      "expected_dx": -25.68077022429073,
+      "measured_dx": -25.5,
+      "error_px": 0.18077022429072898
+    },
+    {
+      "case": "markers-k200-dx2.png",
+      "layer": "clouds_far",
+      "expected_dx": -9.07458502564052,
+      "measured_dx": -9.0,
+      "error_px": 0.07458502564051983
+    }
+  ],
+  "tolerance_px": 0.8,
+  "scope": "Intensity-weighted centroids of real GPU markers; scene matrix checked separately.",
+  "runtime_fingerprint": "538e8f1e482e68f61ea5b76c3d961740bdc8f78535f688caa8c8cecade10177f",
+  "capture_sha256": {
+    "panel-basic.png": "e90afdc0b229fb104f229a91a8213e0f45ba368991b0aed3a644390e346b7257",
+    "markers-k150-dx-2.png": "93a6df49be1cb4316f42422311b01da46cafe5a3999fcb3ba5fc1e8ebb1d21b4",
+    "markers-k0-dx-2.png": "182aeb313363ab79728477b1855179553c9ebe29f3055aaf0f3b5ff18e750eb0",
+    "markers-base.png": "182aeb313363ab79728477b1855179553c9ebe29f3055aaf0f3b5ff18e750eb0",
+    "extreme-zero-1.png": "8e17863fe7fcfa0d82e961ca898f7f50cb8f59786d25bfed8e4590019b598bf3",
+    "markers-k200-dx-2.png": "7e5181173311310ca9ffc068eabb2fd6feb4351718d4b2f768e8061ee8c24006",
+    "dusk-natural-x2.png": "c414d3294ac7fa12281e49380edca962550530595552cc69ee12fb7fcd85d201",
+    "extreme-inverted-1.png": "52db2f2fe19663a4edd2756de9939eab9ec9794a38e646ab82aba515f7a57cf7",
+    "markers-k0-dx2.png": "182aeb313363ab79728477b1855179553c9ebe29f3055aaf0f3b5ff18e750eb0",
+    "night-enhanced-x2.png": "f9fda7f1bbf599884f2187770d889d3b5c02288b50caa1f6fdfd7ee1a5b8ce80",
+    "markers-k200-dx2.png": "10d223cac1ab97d73728eeab4666074ec341a7da43b5b741893f7fb3a040d689",
+    "markers-k100-dx2.png": "379c34c8788429f2b2da5b07e8a79e530b4aa8d5a25907df1311f7c1a1123051",
+    "day-soft-x2.png": "ca24d6ccaf15ed75ece2afdcefafb97d4b41251deb75b6e8df7df2e7ba55144e",
+    "day-soft-x0.png": "37e073f924499c8eb3c62181c9f0f985d6adec433459ab18c8a0052a2d52c3d8",
+    "night-natural-x2.png": "7a9d9af218b3055c1b6444ca3fc7b5017e067fb196c780717b334aa417dd3919",
+    "night-natural-x0.png": "5e7991073da8cb54b3ffd737fbdec0c6d9fd7e9f22293a1a1ba69410af888392",
+    "extreme-inverted--1.png": "4121893f4be57f66fdb8f691a3a7473e1fd8eae36bf2362909b9ef8f1856b42b",
+    "night-soft-x2.png": "da075bf7d5ecd55317fdf137a8b2c211e34af4ddd2c393e13e0d086dd6bc9067",
+    "day-enhanced-x2.png": "638b75d0f013389d8429f27e467f10198155f15e49fbf94104af70ec3eaa0f7d",
+    "markers-k100-dx-2.png": "41a31de7ddc139d97ba621ff760e6e800df1a9903437f36c7e535500ada53d70",
+    "extreme-zero--1.png": "e58f6f7c47d952035498607fa04a6fb18f30f977c8b2ae47c12fab3dc8026dbf",
+    "dusk-soft-x0.png": "4d0b29633c2b7d495e31b0b58a5051c44fe085905b6977a0772501843a348b9b",
+    "day-natural-x0.png": "48782962995c347a8b8964d6198bed0af91b29859b90c1515bf6252f585e2675",
+    "night-soft-x0.png": "f560bb3ac01d670d2322b52b5fc1ef0399cf1fe82974379bcd162b970a1bc192",
+    "night-enhanced-x0.png": "5801d1d8f4c1311f2a72f8940500a6441ecaa709640a1e4817f47f7bf2945124",
+    "dusk-soft-x2.png": "192822e47fb40d351ba0d48977c1bd20e7dc0b8766b716c46ec14e1c3df5206f",
+    "dusk-natural-x0.png": "bb39b3f07258f637bb19250c45677560c1cca3d634eb784de262e4ba87ea12db",
+    "markers-k150-dx2.png": "10964397de6be1bded4c6a401f6767dfdc69dd95cbe9d3a38a38309e9f5792c7",
+    "extreme-maximum--1.png": "f1fafc7aac268d7dba4d200c77a29bc01fce0bbc69263e52b52a9f6d97b4eb99",
+    "markers-k50-dx-2.png": "1d7666c6887d8c1ab4f68e19e3a1f6d9930a9b9cac208d61ad58fedf875042f0",
+    "dusk-enhanced-x0.png": "885a16f1754a145048cfd201b1bf88f654805742022bb9c369d2cee381f5b0d9",
+    "extreme-maximum-1.png": "e18cae5950b743f4d64fbffdd188b5fba248b7d9c8cda1818864d95436808831",
+    "dusk-enhanced-x2.png": "e49dddff42d0fcde745cc586c2025709f1e7d67636e2c4488c4f7b130d14dbbb",
+    "markers-k50-dx2.png": "ead78c47f09c7190c79c14bac10562ded4f75957f967495edae7a4d56dddc087",
+    "day-enhanced-x0.png": "9fe1219da48bd2af9c829c72d907b10790cc3aeef75a1855382f21e37419a8fb",
+    "panel-advanced.png": "ce0cf4a9e95a11c6a1b3bbce983e1a0f977d5d57ac964aca3aff153427d41c5d",
+    "day-natural-x2.png": "18eb23fb1eb9a44557e577bb4748bceb30c899b4690998e81ee2b04ba832a295"
+  }
+}

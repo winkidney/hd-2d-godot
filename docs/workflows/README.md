@@ -27,3 +27,7 @@ ImageGen/MCP 明确标记为未接入的可选入口；图中实线表示设计�
 [Mermaid 源码](background-focus.mmd)
 ![新功能验收闭环](feature-validation.svg)
 [Mermaid 源码](feature-validation.mmd)
+
+## P8 五层可调视差与设置
+![可调视差](parallax-control.svg)
+[Mermaid源](parallax-control.mmd)。自然基线、倍率、云相位与最终视口分别建模。

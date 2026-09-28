@@ -4,7 +4,7 @@ BLENDER ?= blender
 .PHONY: help run editor import bake test visual export record assets models rebuild templates docs package reproduce
 help:
 	@printf '%s\n' 'run / editor: preview or edit' 'test / visual: offline tests or real GPU evidence' 'rebuild: regenerate assets, models, imports, baked scene' 'templates / export / package: Linux delivery' 'docs / reproduce: diagrams and clean-copy validation'
-run editor import bake export:
+run editor import bake:
 	$(PYTHON) tools/project.py $@
 assets:
 	$(PYTHON) tools/generate_assets.py
@@ -22,18 +22,17 @@ templates:
 docs:
 	$(PYTHON) tools/render_diagrams.py
 package:
-	$(PYTHON) tools/package_features.py
+	$(PYTHON) tools/package_parallax.py
 reproduce:
-	$(PYTHON) tools/reproduce.py
+	$(PYTHON) tools/reproduce_parallax.py --headless-only
 
 .PHONY: verify-release
 verify-release:
-	$(PYTHON) tools/verify_features.py
+	$(PYTHON) tools/parallax.py verify
 
 .PHONY: features-test features-visual features-quick features-record verify-features package-features
 test:
-	$(PYTHON) tools/project.py test
-	$(PYTHON) tools/features.py test
+	$(PYTHON) tools/parallax.py test
 features-test:
 	$(PYTHON) tools/features.py test
 features-visual:
@@ -49,8 +48,14 @@ package-features:
 
 .PHONY: reproduce-visual
 visual:
-	$(PYTHON) tools/features.py visual
+	$(PYTHON) tools/parallax.py visual
 record:
-	$(PYTHON) tools/features.py record
+	$(PYTHON) tools/parallax.py record
 reproduce-visual:
-	$(PYTHON) tools/reproduce.py --visual
+	$(PYTHON) tools/reproduce_parallax.py
+
+.PHONY: parallax-quick
+export:
+	$(PYTHON) tools/parallax.py export
+parallax-quick:
+	$(PYTHON) tools/parallax.py quick-visual

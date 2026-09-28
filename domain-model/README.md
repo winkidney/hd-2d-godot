@@ -33,3 +33,7 @@ ValidationRun 引用工程版本、资源散列与运行条件；不写入运行
 
 ## P6/P7 更新
 新增背景、步道、相机和景深模型见 [领域扩展](background-and-focus.md)。CameraRig 提供最终姿态；DofController 拥有相机属性；BackgroundRig 不负责角色移动。
+
+## P8 提案 · 可调视差
+[视差控制契约](parallax-control.md) 为待实施扩展，定义ParallaxProfile、LayerState、CameraOverrides、CloudPhase、设置保存与验证快照。
+当前P6/P7仍按既有自然视差运行；不能从提案文档推断F8、倍率或本机保存已经可用。

@@ -1,29 +1,29 @@
-HD-2D / Riverside Waystation — P6/P7 Linux preview
+HD-2D / Riverside Waystation — P8 adjustable parallax
 
-Run ./waystation.x86_64 from this directory.
-After extraction, chmod +x waystation.x86_64 if executable permission was lost.
-No Godot editor or Blender installation is needed to run this bundle.
-Tested on Fedora 43 KDE, RTX 4070 SUPER with Vulkan / Forward+.
-Other platforms and hardware are not claimed as tested.
+Run ./waystation.x86_64. After extraction, restore its executable permission if necessary.
+No Godot editor or Blender is needed. Tested on Linux x86_64, Fedora 43,
+RTX 4070 SUPER, Vulkan / Forward+. Other platforms are not validated.
 
-Route: start in the village, walk south across the bridge, then left/right
-along the 30m stone path. Camera following is ON by default.
-Mountains have true finite-depth parallax; clouds also drift with wind.
+Walk south across the bridge and left/right on the 30m stone path.
+Camera following starts enabled. Natural mode preserves the original parallax.
 
-Controls:
-WASD / arrows: walk. E: interact or close dialogue.
-T: cycle day/dusk/night. 1: dusk. 2: night. 3: day.
-F2: camera showcase (walking disabled). F3: global post-effects bypass.
-F4: camera follow. F5: independent depth of field. F6: DOF tuning panel.
-F7: finite-background comparison. Tab/H: hide interface.
-Esc: close tuning panel, then dialogue; otherwise quit.
-F12: screenshot to the application's user://captures/ directory.
-Tuning changes last for this session only. Global bypass preserves DOF choices.
+WASD / arrows: walk. E: interact. T: cycle day/dusk/night.
+1/2/3: dusk/night/day. F2: camera tour. F3: post-effects bypass.
+F4: camera follow. F5: DOF toggle. F6: DOF settings. F7: background visibility.
+F8: parallax panel. Basic: presets and overall multiplier.
+Advanced: three mountain layers, two cloud layers, horizontal camera settings and wind.
+Sliders and numeric fields are linked. Applied ratios and warnings are displayed.
+1.0 is each layer's natural motion; 0.0 cancels only its horizontal camera parallax.
+Wind is independent. Ground, buildings, player and collision are not compensated.
 
-Original procedural scene study, not extracted or official Octopath Traveler art.
-No combat, inventory, quests, indoor world, audio, or real reflected water.
-ImageGen and Blender MCP are not connected or required.
-Godot and bundled dependency notices are in licenses/. See NOTICE.md.
-The project owner has not selected a public source/art license.
-Source, Plan, ADR, domain-model, assets and tests are delivered separately
-in hd-2d-godot-p6p7-source.zip. Recorded walkthrough is 24 seconds at 30 fps.
+Save explicitly with the panel button to restore preferences next time.
+Load retrieves saved preferences. Natural only preserves camera/wind choices;
+Reset all restores project defaults. Close does not save automatically.
+Tab/H hides the interface and closes tuning. Esc stops comparison first,
+then closes the panel or dialogue, otherwise exits. F12 captures a screenshot.
+
+The comparison video repeats the same path with soft, natural and enhanced ratios.
+It is 36 seconds, 1280x720 at 30 fps, with explicit cuts between the three passes.
+This is original procedural art, not official or extracted Octopath Traveler art.
+See NOTICE.md and licenses/. No combat, audio or real water reflections.
+Full source, tests, editable assets and documentation are delivered separately.

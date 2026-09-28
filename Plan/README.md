@@ -46,3 +46,8 @@ P7 已确认采用默认探索可见远山与天空，并新增连接既有石�
 [P6 双端景深](features/near-far-dof.md)：独立开关、三档、平滑人物保护、调参面板。
 [P7 开阔探索与横向步道](features/distant-background-parallax.md)：默认见山见天、30m横路、三层山脉、独立云风、三时段。
 阶段状态与证据统一见[本轮验收](../docs/validation/p6p7/README.md)，原P0–P5历史证据不覆盖。
+
+## P8 已实施 · 可调视差
+[可调视差计划](features/adjustable-parallax.md)：自然模式回归基线、逐层美术倍率、独立F8面板、横向镜头参数、连续云风及本机保存。
+调节只影响三层山脉和两层云组；不以移动道路或改变角色控制实现视差。参数范围和极限构图须通过新验收。
+[ADR-16](../ADR/16-adjustable-parallax.md) 与 [领域契约](../domain-model/parallax-control.md) 已实施；P6/P7历史证据保持不变。结果见[验收报告](../docs/validation/p8/README.md)。

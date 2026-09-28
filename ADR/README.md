@@ -23,3 +23,6 @@ Accepted 表示采用该架构，不代表所有代码/视觉已验收；Propose
 
 [ADR-14：原生双端景深](14-native-dof-control.md) — Accepted。
 [ADR-15：默认开阔构图与背景](15-open-world-background.md) — Accepted。
+
+## P8 可调视差
+[ADR-16：自然基线与可调视差倍率](16-adjustable-parallax.md) — Accepted；细化ADR-13/15，natural保持固定世界，artistic使用明确的横向相机补偿。

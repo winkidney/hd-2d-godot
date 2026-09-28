@@ -8,6 +8,8 @@ var gain := 0.45
 var dead_zone := 0.8
 var smoothing := 4.0
 var max_offset := Vector2(7.5, 4.5)
+var horizontal_gain := 0.45
+var horizontal_dead_zone := 0.8
 var enabled := true
 var frozen := false
 
@@ -22,6 +24,8 @@ func configure(value: Camera3D, config: Dictionary, player_spawn: Vector3) -> vo
     max_offset = Vector2(config.follow_max[0], config.follow_max[1])
     camera.fov = float(config.fov)
     camera.far = float(config.far)
+    horizontal_gain = gain
+    horizontal_dead_zone = dead_zone
     set_offset(Vector3.ZERO)
 
 static func vec(data: Array) -> Vector3:
@@ -36,7 +40,7 @@ func desired_offset(player_position: Vector3) -> Vector3:
     var delta := player_position - anchor
     var right := horizontal_right()
     var back := Vector3(-right.z, 0, right.x)
-    var x := signf(delta.dot(right)) * maxf(absf(delta.dot(right)) - dead_zone, 0.0) * gain
+    var x := signf(delta.dot(right)) * maxf(absf(delta.dot(right)) - horizontal_dead_zone, 0.0) * horizontal_gain
     var z := signf(delta.dot(back)) * maxf(absf(delta.dot(back)) - dead_zone, 0.0) * gain
     return right * clampf(x, -max_offset.x, max_offset.x) + back * clampf(z, -max_offset.y, max_offset.y)
 
