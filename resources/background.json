@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "palettes": {
+    "day": ["397ab8", "b5d3dc", "a2b5a6", "87a8a8", "a6c0d4", "d0dce8", "ffffff"],
+    "dusk": ["425478", "d7ad8c", "aaa392", "b3aaa3", "baafb2", "c7b2ad", "ffe0c1"],
+    "night": ["050d26", "203350", "354a62", "4c6186", "647a9c", "8496b3", "6d80a2"]
+  },
+  "cloud_wind_speeds": [0.6, 0.25],
+  "cloud_count_per_layer": 9,
+  "note": "Palette order: zenith, horizon, valley, near, middle, far, clouds. Geometry recipe: tools/build_background.py."
+}

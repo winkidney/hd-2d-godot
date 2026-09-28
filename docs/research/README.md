@@ -17,3 +17,7 @@
 
 - [RenderingServer GPU 计时](https://docs.godotengine.org/en/stable/classes/class_renderingserver.html)：独立记录视口 GPU 时间和完成绘制帧间隔。
 - [Godot 许可声明](https://docs.godotengine.org/en/stable/about/complying_with_licenses.html)：从匹配引擎导出随包声明。
+
+## P6/P7 使用的原生接口
+[原生景深属性](https://docs.godotengine.org/en/stable/classes/class_cameraattributespractical.html)、[相机投影](https://docs.godotengine.org/en/stable/classes/class_camera3d.html)、[天空Shader](https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/sky_shader.html)、[RenderingServer枚举](https://docs.godotengine.org/en/stable/classes/class_renderingserver.html)。
+本项目采样质量为DOF_BLUR_QUALITY_MEDIUM=2，六边形采样=1，关闭jitter。实际效果以本轮GPU校准图为证，不推断原作使用相同参数。

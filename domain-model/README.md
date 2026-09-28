@@ -30,3 +30,6 @@ Input -> movement_requested / interaction_requested / preset_changed / capture_r
 ValidationRun 引用工程版本、资源散列与运行条件；不写入运行状态。
 
 见 [状态与数据契约](contracts.md)、[需求追踪](traceability.md)、[流程图](../docs/workflows/README.md)。
+
+## P6/P7 更新
+新增背景、步道、相机和景深模型见 [领域扩展](background-and-focus.md)。CameraRig 提供最终姿态；DofController 拥有相机属性；BackgroundRig 不负责角色移动。

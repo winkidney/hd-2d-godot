@@ -15,7 +15,7 @@ def save(im, relative):
     path.parent.mkdir(parents=True, exist_ok=True)
     im.save(path)
     # Explicit import contract; do not rely on editor-wide defaults.
-    sprite = relative.startswith('sprites/')
+    sprite = relative in ('sprites/traveler.png','sprites/keeper.png','sprites/contact_shadow.png')
     config = """[remap]
 importer="texture"
 type="CompressedTexture2D"
@@ -25,6 +25,7 @@ source_file="res://assets/{relative}"
 
 [params]
 compress/mode=0
+detect_3d/compress_to=0
 mipmaps/generate={mips}
 process/fix_alpha_border=true
 process/premult_alpha=false

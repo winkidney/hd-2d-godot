@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "models": [
+    {
+      "id": "valley",
+      "passed": true,
+      "mesh_count": 1,
+      "vertices": 1539,
+      "unpacked_images": []
+    },
+    {
+      "id": "ridge_near",
+      "passed": true,
+      "mesh_count": 1,
+      "vertices": 729,
+      "unpacked_images": []
+    },
+    {
+      "id": "ridge_mid",
+      "passed": true,
+      "mesh_count": 1,
+      "vertices": 801,
+      "unpacked_images": []
+    },
+    {
+      "id": "ridge_far",
+      "passed": true,
+      "mesh_count": 1,
+      "vertices": 873,
+      "unpacked_images": []
+    }
+  ]
+}

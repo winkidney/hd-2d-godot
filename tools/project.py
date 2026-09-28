@@ -69,7 +69,17 @@ def main():
     elif action == 'export':
         destination = ROOT / 'build/linux'
         destination.mkdir(parents=True, exist_ok=True)
-        execute(base + ['--headless', '--export-release', 'Linux', str(destination / 'waystation.x86_64')], 'linux-export', timeout=240)
+        binary_path = destination / 'waystation.x86_64'
+        prior = ROOT / 'build/pre-p6p7/waystation.x86_64'
+        if binary_path.exists() and not prior.exists():
+            prior.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(binary_path, prior)
+        execute(base + ['--headless', '--export-release', 'Linux', str(binary_path)], 'linux-export', timeout=240)
+        import hashlib
+        from feature_fingerprint import fingerprint
+        manifest = {'runtime_fingerprint': fingerprint(ROOT)['sha256'], 'binary_sha256': hashlib.sha256(binary_path.read_bytes()).hexdigest()}
+        (ROOT/'build/p6p7').mkdir(parents=True, exist_ok=True)
+        (ROOT/'build/p6p7/export-manifest.json').write_text(json.dumps(manifest, indent=2)+chr(10))
     elif action == 'record':
         destination = ROOT / 'build/media'
         destination.mkdir(parents=True, exist_ok=True)

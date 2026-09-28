@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+[ext_resource type="Script" path="res://scripts/dof_profile.gd" id="1"]
+[resource]
+script = ExtResource("1")
+profile_id = "standard"
+amount = 0.105
+near_clear = 6
+far_clear = 10
+near_transition = 5
+far_transition = 18

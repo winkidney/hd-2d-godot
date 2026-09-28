@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620" role="img">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#657d8b"/></marker></defs>
+<rect width="1120" height="620" fill="#f4f6f5"/>
+<text x="40" y="46" font-size="26" font-family="sans-serif" fill="#183747">P6/P7 验收与交付门禁</text>
+<text x="40" y="77" font-size="13" font-family="sans-serif" fill="#526873">HD-2D Waystation / editable source: diagrams.json / generated with make docs</text>
+<path d="M560 190 V215.0 H200 V240" fill="none" stroke="#657d8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M560 190 V215.0 H560 V240" fill="none" stroke="#657d8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M560 190 V215.0 H920 V240" fill="none" stroke="#657d8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M200 320 V345.0 H200 V370" fill="none" stroke="#657d8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M560 320 V345.0 H560 V370" fill="none" stroke="#657d8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M560 320 V345.0 H920 V370" fill="none" stroke="#657d8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M920 320 V345.0 H920 V370" fill="none" stroke="#657d8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M200 450 V475.0 H560 V500" fill="none" stroke="#657d8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M560 450 V475.0 H560 V500" fill="none" stroke="#657d8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M920 450 V475.0 H560 V500" fill="none" stroke="#657d8b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="400" y="110" width="320" height="80" rx="8" fill="#ffffff" stroke="#a9bbc0"/>
+<text x="560" y="141" text-anchor="middle" font-size="17" font-family="sans-serif" fill="#183747">运行资源指纹</text>
+<text x="560" y="167" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">源文件和配置必须匹配</text>
+<rect x="40" y="240" width="320" height="80" rx="8" fill="#ffffff" stroke="#a9bbc0"/>
+<text x="200" y="271" text-anchor="middle" font-size="17" font-family="sans-serif" fill="#183747">功能与来源检查</text>
+<text x="200" y="297" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">路线往返 / 焦点 / 投影</text>
+<rect x="400" y="240" width="320" height="80" rx="8" fill="#ffffff" stroke="#a9bbc0"/>
+<text x="560" y="271" text-anchor="middle" font-size="17" font-family="sans-serif" fill="#183747">真实 GPU</text>
+<text x="560" y="297" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">24 场景图 / 4 棋盘图</text>
+<rect x="760" y="240" width="320" height="80" rx="8" fill="#ffffff" stroke="#a9bbc0"/>
+<text x="920" y="271" text-anchor="middle" font-size="17" font-family="sans-serif" fill="#183747">持续性能样本</text>
+<text x="920" y="297" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">5 条件各 30 秒</text>
+<rect x="400" y="370" width="320" height="80" rx="8" fill="#ffffff" stroke="#a9bbc0"/>
+<text x="560" y="401" text-anchor="middle" font-size="17" font-family="sans-serif" fill="#183747">像素检查</text>
+<text x="560" y="427" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">单端选择性失焦 / 焦内清晰</text>
+<rect x="40" y="370" width="320" height="80" rx="8" fill="#ffffff" stroke="#a9bbc0"/>
+<text x="200" y="401" text-anchor="middle" font-size="17" font-family="sans-serif" fill="#183747">干净副本</text>
+<text x="200" y="427" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">重建模型、图像、场景与测试</text>
+<rect x="760" y="370" width="320" height="80" rx="8" fill="#ffffff" stroke="#a9bbc0"/>
+<text x="920" y="401" text-anchor="middle" font-size="17" font-family="sans-serif" fill="#183747">独立运行包</text>
+<text x="920" y="427" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">无工程资源 / GPU 再验收</text>
+<rect x="400" y="500" width="320" height="80" rx="8" fill="#ffffff" stroke="#a9bbc0"/>
+<text x="560" y="531" text-anchor="middle" font-size="17" font-family="sans-serif" fill="#183747">带校验的交付候选</text>
+<text x="560" y="557" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">源码 / Linux 包 / 往返视频</text>
+</svg>

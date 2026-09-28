@@ -2,21 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dflvmpr6deogf"
-path.s3tc="res://.godot/imported/flowers.png-189ab163ccc28751ce78d61dbccf8084.s3tc.ctex"
+uid="uid://7cx3iyqxitks"
+path="res://.godot/imported/flowers.png-189ab163ccc28751ce78d61dbccf8084.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://assets/sprites/flowers.png"
-dest_files=["res://.godot/imported/flowers.png-189ab163ccc28751ce78d61dbccf8084.s3tc.ctex"]
+dest_files=["res://.godot/imported/flowers.png-189ab163ccc28751ce78d61dbccf8084.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

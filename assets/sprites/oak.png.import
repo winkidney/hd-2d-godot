@@ -2,21 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyx7fk78qxwu1"
-path.s3tc="res://.godot/imported/oak.png-7fbe15ea4738fa67b8298e3d566f857d.s3tc.ctex"
+uid="uid://msylmgjma5he"
+path="res://.godot/imported/oak.png-7fbe15ea4738fa67b8298e3d566f857d.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://assets/sprites/oak.png"
-dest_files=["res://.godot/imported/oak.png-7fbe15ea4738fa67b8298e3d566f857d.s3tc.ctex"]
+dest_files=["res://.godot/imported/oak.png-7fbe15ea4738fa67b8298e3d566f857d.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

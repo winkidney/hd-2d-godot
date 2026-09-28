@@ -26,7 +26,7 @@ func drive(scene, direction: Vector2, frames: int) -> void:
     scene.player.scripted_direction = Vector2.ZERO
     await settle(3)
 
-func run(scene) -> void:
+func run_core(scene) -> void:
     reparent(get_tree().root)
     scene.player.scripted_input = true
     scene.tour = false
@@ -52,7 +52,7 @@ func run(scene) -> void:
     await drive(scene, Vector2(0, -1), 70)
     check(scene.player.position.z > -2.3, "inn_walls_block_actor")
     await test_interactions(scene)
-    await finish(scene)
+
 
 func test_interactions(scene) -> void:
     await place(scene, Vector3(-2.3, 0.25, -0.45))
@@ -74,7 +74,7 @@ func test_interactions(scene) -> void:
     scene.lighting.apply_preset("dusk")
     check(actor_id == scene.player.get_instance_id(), "preset_preserves_actor_identity")
     scene.lighting.set_effects(false)
-    check(not scene.lighting.environment.glow_enabled and not scene.lighting.camera_attributes.dof_blur_far_enabled, "effects_comparison_switch")
+    check(not scene.lighting.environment.glow_enabled and not scene.dof.attributes.dof_blur_far_enabled, "effects_comparison_switch")
     scene.lighting.set_effects(true)
     for action in ["move_left", "move_right", "move_up", "move_down"]:
         check(InputMap.action_get_events(action).size() >= 2, "bindings_" + action)
@@ -137,3 +137,7 @@ func capture_evidence(scene, output_dir: String) -> void:
 
 func measure_frames() -> Dictionary:
     return await preload("res://tests/render_benchmark.gd").measure(get_viewport())
+
+func run(scene) -> void:
+    await run_core(scene)
+    await finish(scene)

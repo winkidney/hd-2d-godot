@@ -21,3 +21,13 @@ PNG 在固定工具版本下应精确匹配散列；`.blend` 和 Godot 烘焙文
 ## 发布前人工确认
 查看两套灯光截图与夜晚无后处理对照，确认角色比例、植被、镜头和场景边缘；确认是否需要更精细的 ImageGen/人工美术，再批准视觉方向。
 确认项目自己的公开许可证、名称与资源来源；引擎/第三方声明随包保留。没有自动 Git 提交、推送、上传、跨平台保证或外部服务配置。
+
+## P6/P7 当前交付流程
+默认 `make visual`、`make record`、`make verify-release`、`make package` 已切换到新功能流程。
+顺序：`make test && make visual && make export && make verify-release && make reproduce-visual && make record && make package`。
+输出独立保存在 `build/delivery/p6p7/`，不覆盖旧版ZIP和视频。
+源码包为 `hd-2d-godot-p6p7-source.zip`，独立包为 `hd-2d-waystation-p6p7-linux-x86_64.zip`。
+`walkthrough.mp4` 是24秒真实往返录像，附 `SHA256SUMS` 和 `delivery-report.json`。
+工具会拒绝运行指纹、二进制、图像或视频不匹配的旧证据。`make reproduce` 只有无图形流程，不替代发布所需的 `make reproduce-visual`。
+背景与新素材进入干净副本后会从源代码重新生成，不使用已有 `.godot` 缓存。
+新验证入口：[P6/P7验收](../validation/p6p7/README.md)。

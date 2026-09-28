@@ -2,21 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cw5832x3i62t4"
-path.s3tc="res://.godot/imported/wood.png-eeb3ea6fc91501562e05b28492ed90b0.s3tc.ctex"
+uid="uid://08debyswa1t4"
+path="res://.godot/imported/wood.png-eeb3ea6fc91501562e05b28492ed90b0.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://assets/textures/wood.png"
-dest_files=["res://.godot/imported/wood.png-eeb3ea6fc91501562e05b28492ed90b0.s3tc.ctex"]
+dest_files=["res://.godot/imported/wood.png-eeb3ea6fc91501562e05b28492ed90b0.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

@@ -2,7 +2,7 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://y6skobepfhif"
+uid="uid://db6yjbwum1xyl"
 path="res://.godot/imported/contact_shadow.png-f01f440522d0d769eb18e82e6776cb19.ctex"
 metadata={
 "vram_texture": false
@@ -37,4 +37,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

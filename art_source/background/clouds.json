@@ -1,0 +1,31 @@
+{
+  "source_type": "procedural-original",
+  "seed": 290928,
+  "generator": "tools/generate_background_assets.py",
+  "assets": [
+    {
+      "path": "assets/background/cloud-0.png",
+      "size": [
+        256,
+        96
+      ],
+      "sha256": "d9decb9a561d5585224b419cda1257472a81d916167fba324851425a14968fe2"
+    },
+    {
+      "path": "assets/background/cloud-1.png",
+      "size": [
+        256,
+        96
+      ],
+      "sha256": "d1dc3c53c307a594828e72b8023aa942ab5fc707cc42d13c781d32fd9f094676"
+    },
+    {
+      "path": "assets/background/cloud-2.png",
+      "size": [
+        256,
+        96
+      ],
+      "sha256": "218a1ef39081226a84d0d4aee056797f8cf41510cc114c76751559758b574f1e"
+    }
+  ]
+}

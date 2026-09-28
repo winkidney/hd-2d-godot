@@ -1,0 +1,17 @@
+flowchart TD
+    input["玩家输入 / 路线<br/>普通探索与真实角色移动"]
+    actor["PixelActor<br/>碰撞与位置，脚底原点"]
+    camera["CameraRig<br/>死区 / 平滑 / 固定朝向"]
+    dof["DofController<br/>最终相机深度 / 近远清晰区"]
+    background["BackgroundRig<br/>世界固定山脉 / 独立云风"]
+    light["Time-of-day preset<br/>day / dusk / night"]
+    sky["Sky + Lighting<br/>天空与山色、雾、窗灯同步"]
+    render["单个 Forward+ 视口<br/>真实遮挡、视差与景深"]
+    input --> actor
+    actor --> camera
+    camera --> dof
+    light --> sky
+    light --> background
+    dof --> render
+    background --> render
+    sky --> render

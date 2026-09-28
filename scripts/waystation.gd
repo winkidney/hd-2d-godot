@@ -10,10 +10,16 @@ var camera: Camera3D
 var camera_home := Vector3.ZERO
 var camera_target := Vector3.ZERO
 var tour := false
-var follow := false
+var follow := true
 var elapsed := 0.0
 var showcase := false
 var nearest: Dictionary = {}
+var rig := preload("res://scripts/camera_rig.gd").new()
+var dof := preload("res://scripts/dof_controller.gd").new()
+var background := preload("res://scripts/background_rig.gd").new()
+var dof_panel := preload("res://scripts/dof_panel.gd").new()
+var record_walk := false
+var clock_frozen := false
 
 func _ready() -> void:
     configure_input()
@@ -27,6 +33,12 @@ func _ready() -> void:
     camera.current = true
     add_child(lighting)
     lighting.configure(camera, $World, layout)
+    rig.configure(camera, layout.camera, to_vector(layout.player_spawn))
+    dof.configure(camera, camera_target)
+    add_child(background)
+    background.configure(lighting.environment)
+    lighting.preset_changed.connect(background.apply_preset)
+    lighting.effects_changed.connect(func(value): dof.master_enabled = value; dof.apply())
     player.position = to_vector(layout.player_spawn)
     player.camera = camera
     add_child(player)
@@ -35,11 +47,18 @@ func _ready() -> void:
     keeper.position += to_vector(layout.interactions[0].position)
     add_child(keeper)
     add_child(hud)
+    hud.container.add_child(dof_panel)
+    dof_panel.configure(dof)
     showcase = "--showcase" in OS.get_cmdline_user_args()
     if showcase:
         tour = true
         hud.container.hide()
-    if "--self-test" in OS.get_cmdline_user_args():
+    record_walk = "--walk-recording" in OS.get_cmdline_user_args()
+    if record_walk:
+        setup_walk_recording()
+    if "--p6p7-test" in OS.get_cmdline_user_args():
+        call_deferred("run_feature_validation")
+    elif "--self-test" in OS.get_cmdline_user_args():
         call_deferred("run_validation")
     print("WAYSTATION_READY renderer=", RenderingServer.get_current_rendering_method())
 
@@ -73,24 +92,22 @@ func interact() -> void:
         nearest = nearest_interaction()
         if not nearest.is_empty() and not tour:
             hud.show_dialogue(nearest)
-    player.controls_enabled = not tour and not hud.dialogue.visible
+    player.controls_enabled = not tour and not hud.dialogue.visible and not dof_panel.visible
 
 func _process(delta: float) -> void:
-    elapsed += delta
+    if not clock_frozen: elapsed += delta
     if showcase and elapsed > 4.0 and lighting.preset_id == "dusk":
         lighting.apply_preset("night")
     nearest = nearest_interaction()
-    player.controls_enabled = not tour and not hud.dialogue.visible
+    player.controls_enabled = not tour and not hud.dialogue.visible and not dof_panel.visible
     hud.prompt.text = "E   " + str(nearest.title) if not nearest.is_empty() and not hud.dialogue.visible and not tour else ""
     hud.update_status(lighting.preset_id, tour, lighting.effects_enabled, follow)
-    var offset := Vector3.ZERO
-    if tour:
-        offset = Vector3(sin(elapsed * 0.14) * 1.1, sin(elapsed * 0.11) * 0.3, 0)
-    elif follow:
-        offset = (player.position - to_vector(layout.player_spawn)).limit_length(8.0) * 0.24
-        offset.y = 0.0
-    camera.position = camera.position.lerp(camera_home + offset, 1.0 - exp(-delta * 3.0))
-    camera.look_at(camera_target + offset * 0.65)
+    rig.enabled = follow
+    rig.update(delta, player.global_position, tour, elapsed)
+    dof.update(delta, player.global_position + Vector3.UP, tour)
+    background.advance(0.0 if clock_frozen else delta)
+    if record_walk:
+        update_walk_recording()
 
 func _unhandled_key_input(event: InputEvent) -> void:
     if not event is InputEventKey or not event.pressed or event.echo:
@@ -99,11 +116,13 @@ func _unhandled_key_input(event: InputEvent) -> void:
         KEY_E:
             interact()
         KEY_T:
-            lighting.apply_preset("night" if lighting.preset_id == "dusk" else "dusk")
+            lighting.apply_preset({"day":"dusk", "dusk":"night", "night":"day"}[lighting.preset_id])
         KEY_1:
             lighting.apply_preset("dusk")
         KEY_2:
             lighting.apply_preset("night")
+        KEY_3:
+            lighting.apply_preset("day")
         KEY_F2:
             tour = not tour
             hud.close_dialogue()
@@ -111,12 +130,21 @@ func _unhandled_key_input(event: InputEvent) -> void:
             lighting.set_effects(not lighting.effects_enabled)
         KEY_F4:
             follow = not follow
+        KEY_F5:
+            dof.enabled = not dof.enabled
+            dof.apply()
+        KEY_F6:
+            dof_panel.visible = not dof_panel.visible
+        KEY_F7:
+            background.visible = not background.visible
         KEY_TAB, KEY_H:
             hud.container.visible = not hud.container.visible
         KEY_F12:
             capture("user://captures/waystation-%s-%d.png" % [lighting.preset_id, Time.get_ticks_msec()])
         KEY_ESCAPE:
-            if hud.dialogue.visible:
+            if dof_panel.visible:
+                dof_panel.hide()
+            elif hud.dialogue.visible:
                 interact()
             else:
                 get_tree().quit()
@@ -146,3 +174,30 @@ func run_validation() -> void:
     var runner = load("res://tests/runtime_validation.gd").new()
     add_child(runner)
     await runner.run(self)
+
+func run_feature_validation() -> void:
+    var runner = load("res://tests/p6p7_validation.gd").new()
+    add_child(runner)
+    await runner.run(self)
+
+func setup_walk_recording() -> void:
+    tour = false
+    follow = true
+    hud.container.hide()
+    player.scripted_input = true
+    player.position = to_vector(layout.walkway.center) - to_vector(layout.walkway.direction) * 14.5 + Vector3(0,0.2,0)
+    rig.set_offset(rig.desired_offset(player.position))
+    dof.focus_depth = dof.depth(player.position + Vector3.UP)
+
+func update_walk_recording() -> void:
+    var direction := to_vector(layout.walkway.direction)
+    var coordinate := (player.position-to_vector(layout.walkway.center)).dot(direction)
+    var move := 0.0
+    if elapsed > 1.0 and elapsed < 11.0 and coordinate < 14.5:
+        move = 1.0
+    elif elapsed >= 12.0 and coordinate > -14.5:
+        move = -1.0
+    player.scripted_direction = Vector2(direction.x,direction.z)*move
+    var id := "day" if elapsed < 8 else ("dusk" if elapsed < 16 else "night")
+    if lighting.preset_id != id:
+        lighting.apply_preset(id)

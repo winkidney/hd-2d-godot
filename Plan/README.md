@@ -33,3 +33,16 @@ Blender MCP 为第三方任意 Python 执行入口；默认不安装、不启用
 P3 的用户视觉批准独立于 P5 工程自动测试；脚本成功不能证明像原作。
 进度、问题和实际结果记录在 [执行记录](execution-log.md)，未完成事项保留。
 参考 [ADR 索引](../ADR/README.md)、[领域模型](../domain-model/README.md)、[验收策略](../docs/validation/README.md)。
+
+## 已实施范围 · P6／P7
+P6 为独立可调的近景／远景景深增强；先拆分控制边界，最终参数在新镜头和背景稳定后联合校准。
+P7 已确认采用默认探索可见远山与天空，并新增连接既有石桥、可双向左右行走的河岸视差步道。
+默认跟随应在步道主展示段产生持续有效横向平移；不能仅用自动展示镜头或背景自身动画代替。
+详见 [P7：远景、默认探索与横向视差步道](features/distant-background-parallax.md) 及 [ADR-13](../ADR/13-walkable-parallax-route.md)。
+实施顺序：新镜头＋步道灰盒 → 跟随与视差验证 → 分层山脉与云 → 三时段与 P6 联合调校 → 多点构图、往返视频及交付回归。
+不改变 P0–P5 历史状态；P6/P7 的代码、资源、测试与独立交付已形成新证据，见后文。
+
+## P6/P7 已实施增强
+[P6 双端景深](features/near-far-dof.md)：独立开关、三档、平滑人物保护、调参面板。
+[P7 开阔探索与横向步道](features/distant-background-parallax.md)：默认见山见天、30m横路、三层山脉、独立云风、三时段。
+阶段状态与证据统一见[本轮验收](../docs/validation/p6p7/README.md)，原P0–P5历史证据不覆盖。

@@ -1,0 +1,162 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "cloud_source_contract",
+      "passed": true
+    },
+    {
+      "name": "cloud_hash:cloud-0.png",
+      "passed": true
+    },
+    {
+      "name": "cloud_deterministic:cloud-0.png",
+      "passed": true
+    },
+    {
+      "name": "cloud_hash:cloud-1.png",
+      "passed": true
+    },
+    {
+      "name": "cloud_deterministic:cloud-1.png",
+      "passed": true
+    },
+    {
+      "name": "cloud_hash:cloud-2.png",
+      "passed": true
+    },
+    {
+      "name": "cloud_deterministic:cloud-2.png",
+      "passed": true
+    },
+    {
+      "name": "four_background_sources",
+      "passed": true
+    },
+    {
+      "name": "background_glb:valley",
+      "passed": true
+    },
+    {
+      "name": "background_hash:valley",
+      "passed": true
+    },
+    {
+      "name": "background_blend:valley",
+      "passed": true
+    },
+    {
+      "name": "background_glb:ridge_near",
+      "passed": true
+    },
+    {
+      "name": "background_hash:ridge_near",
+      "passed": true
+    },
+    {
+      "name": "background_blend:ridge_near",
+      "passed": true
+    },
+    {
+      "name": "background_glb:ridge_mid",
+      "passed": true
+    },
+    {
+      "name": "background_hash:ridge_mid",
+      "passed": true
+    },
+    {
+      "name": "background_blend:ridge_mid",
+      "passed": true
+    },
+    {
+      "name": "background_glb:ridge_far",
+      "passed": true
+    },
+    {
+      "name": "background_hash:ridge_far",
+      "passed": true
+    },
+    {
+      "name": "background_blend:ridge_far",
+      "passed": true
+    },
+    {
+      "name": "route_dimensions",
+      "passed": true
+    },
+    {
+      "name": "route_horizontal_unit_direction",
+      "passed": true
+    },
+    {
+      "name": "route_aligned_screen_right",
+      "passed": true
+    },
+    {
+      "name": "default_camera_sees_horizon",
+      "passed": true
+    },
+    {
+      "name": "far_clip_and_follow_contract",
+      "passed": true
+    },
+    {
+      "name": "background_three_periods",
+      "passed": true
+    },
+    {
+      "name": "two_independent_cloud_layers",
+      "passed": true
+    },
+    {
+      "name": "dof_resource:soft",
+      "passed": true
+    },
+    {
+      "name": "dof_resource:standard",
+      "passed": true
+    },
+    {
+      "name": "dof_resource:strong",
+      "passed": true
+    },
+    {
+      "name": "pixel_actor_import:traveler",
+      "passed": true
+    },
+    {
+      "name": "pixel_actor_import:keeper",
+      "passed": true
+    },
+    {
+      "name": "feature_entry:scripts/camera_rig.gd",
+      "passed": true
+    },
+    {
+      "name": "feature_entry:scripts/dof_controller.gd",
+      "passed": true
+    },
+    {
+      "name": "feature_entry:scripts/background_rig.gd",
+      "passed": true
+    },
+    {
+      "name": "feature_entry:shaders/waystation_sky.gdshader",
+      "passed": true
+    },
+    {
+      "name": "feature_entry:Plan/features/near-far-dof.md",
+      "passed": true
+    },
+    {
+      "name": "feature_entry:Plan/features/distant-background-parallax.md",
+      "passed": true
+    },
+    {
+      "name": "feature_python_syntax",
+      "passed": true
+    }
+  ],
+  "scope": "Offline contracts and provenance; not GPU or visual acceptance"
+}

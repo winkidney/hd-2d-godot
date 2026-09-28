@@ -25,3 +25,6 @@ Y 为上，单位按米处理。玩家节点原点在脚底，胶囊半径 0.26�
 对话和展示模式锁定输入；灯光切换不重建 actor。截图只在实际完成绘制后读取 Viewport，headless 明确拒绝截图。
 
 运行关系图见[流程图](../workflows/README.md)，约束见[领域契约](../../domain-model/contracts.md)。
+
+## P6/P7 更新
+P6/P7：最终相机由 camera_rig.gd 统一，景深由 dof_controller.gd 拥有；background_rig.gd 组装固定山体和独立云。参见 [扩展领域模型](../../domain-model/background-and-focus.md)。

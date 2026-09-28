@@ -2,16 +2,24 @@
   "seed": 290928,
   "camera": {
     "position": [
-      13,
-      20,
-      33
+      7.02,
+      9.5,
+      40.8
     ],
     "target": [
       0,
       1,
-      0
+      1
     ],
-    "fov": 35
+    "fov": 35,
+    "far": 1400,
+    "follow_gain": 0.45,
+    "dead_zone": 0.8,
+    "follow_max": [
+      7.5,
+      4.5
+    ],
+    "smoothing": 4.0
   },
   "player_spawn": [
     0,
@@ -120,5 +128,23 @@
       "title": "Riverside Waystation",
       "text": "North: the old inn. South: the forest road.\nThis is an original HD-2D scene study, not a scene from Octopath Traveler."
     }
-  ]
+  ],
+  "walkway": {
+    "center": [
+      1.2,
+      0.08,
+      12.0
+    ],
+    "direction": [
+      0.98480775,
+      0,
+      -0.17364818
+    ],
+    "length": 30.0,
+    "width": 3.2,
+    "camera_travel_target_m": [
+      6,
+      14
+    ]
+  }
 }

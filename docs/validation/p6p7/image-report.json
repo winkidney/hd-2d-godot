@@ -1,0 +1,202 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "native_gpu_report_passed",
+      "passed": true
+    },
+    {
+      "name": "resolution:day-left-dof-off.png",
+      "passed": true
+    },
+    {
+      "name": "resolution:day-left-dof-on.png",
+      "passed": true
+    },
+    {
+      "name": "scene_dof_changes_pixels:day:left",
+      "passed": true
+    },
+    {
+      "name": "resolution:day-center-dof-off.png",
+      "passed": true
+    },
+    {
+      "name": "resolution:day-center-dof-on.png",
+      "passed": true
+    },
+    {
+      "name": "scene_dof_changes_pixels:day:center",
+      "passed": true
+    },
+    {
+      "name": "resolution:day-right-dof-off.png",
+      "passed": true
+    },
+    {
+      "name": "resolution:day-right-dof-on.png",
+      "passed": true
+    },
+    {
+      "name": "scene_dof_changes_pixels:day:right",
+      "passed": true
+    },
+    {
+      "name": "resolution:dusk-left-dof-off.png",
+      "passed": true
+    },
+    {
+      "name": "resolution:dusk-left-dof-on.png",
+      "passed": true
+    },
+    {
+      "name": "scene_dof_changes_pixels:dusk:left",
+      "passed": true
+    },
+    {
+      "name": "resolution:dusk-center-dof-off.png",
+      "passed": true
+    },
+    {
+      "name": "resolution:dusk-center-dof-on.png",
+      "passed": true
+    },
+    {
+      "name": "scene_dof_changes_pixels:dusk:center",
+      "passed": true
+    },
+    {
+      "name": "resolution:dusk-right-dof-off.png",
+      "passed": true
+    },
+    {
+      "name": "resolution:dusk-right-dof-on.png",
+      "passed": true
+    },
+    {
+      "name": "scene_dof_changes_pixels:dusk:right",
+      "passed": true
+    },
+    {
+      "name": "resolution:night-left-dof-off.png",
+      "passed": true
+    },
+    {
+      "name": "resolution:night-left-dof-on.png",
+      "passed": true
+    },
+    {
+      "name": "scene_dof_changes_pixels:night:left",
+      "passed": true
+    },
+    {
+      "name": "resolution:night-center-dof-off.png",
+      "passed": true
+    },
+    {
+      "name": "resolution:night-center-dof-on.png",
+      "passed": true
+    },
+    {
+      "name": "scene_dof_changes_pixels:night:center",
+      "passed": true
+    },
+    {
+      "name": "resolution:night-right-dof-off.png",
+      "passed": true
+    },
+    {
+      "name": "resolution:night-right-dof-on.png",
+      "passed": true
+    },
+    {
+      "name": "scene_dof_changes_pixels:night:right",
+      "passed": true
+    },
+    {
+      "name": "fixture_has_detail:near",
+      "passed": true
+    },
+    {
+      "name": "selective_blur:near",
+      "passed": true
+    },
+    {
+      "name": "both_ends_blur:near",
+      "passed": true
+    },
+    {
+      "name": "opposite_end_not_blurred:near",
+      "passed": true
+    },
+    {
+      "name": "fixture_has_detail:focus",
+      "passed": true
+    },
+    {
+      "name": "focus_region_preserves_detail",
+      "passed": true
+    },
+    {
+      "name": "fixture_has_detail:far",
+      "passed": true
+    },
+    {
+      "name": "selective_blur:far",
+      "passed": true
+    },
+    {
+      "name": "both_ends_blur:far",
+      "passed": true
+    },
+    {
+      "name": "opposite_end_not_blurred:far",
+      "passed": true
+    }
+  ],
+  "fixture_metrics": {
+    "near": {
+      "edge_energy": {
+        "off": 41.247853798126954,
+        "near": 5.856139438085328,
+        "far": 41.247853798126954,
+        "both": 5.856139438085328
+      },
+      "mean_absolute_delta": {
+        "off": 0.0,
+        "near": 85.7342529296875,
+        "far": 0.0,
+        "both": 85.7342529296875
+      }
+    },
+    "focus": {
+      "edge_energy": {
+        "off": 41.26716961498439,
+        "near": 41.26716961498439,
+        "far": 41.26716961498439,
+        "both": 41.26716961498439
+      },
+      "mean_absolute_delta": {
+        "off": 0.0,
+        "near": 0.0,
+        "far": 0.0,
+        "both": 0.0
+      }
+    },
+    "far": {
+      "edge_energy": {
+        "off": 41.22853798126951,
+        "near": 41.22853798126951,
+        "far": 5.855228928199792,
+        "both": 5.855228928199792
+      },
+      "mean_absolute_delta": {
+        "off": 0.0,
+        "near": 0.0,
+        "far": 85.75018310546875,
+        "both": 85.75018310546875
+      }
+    }
+  },
+  "scope": "Pixel measurements from native GPU test fixtures plus 18 scene captures; no artistic approval inferred"
+}

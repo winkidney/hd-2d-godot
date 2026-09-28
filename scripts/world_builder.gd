@@ -32,6 +32,8 @@ func collider(label: String, pos: Vector3, size: Vector3) -> StaticBody3D:
     var body := StaticBody3D.new()
     body.name = label + "_Collision_" + str(get_child_count())
     body.position = pos
+    if label in ["WorldEdge", "RiverWest", "RiverEast"]:
+        body.add_to_group("movement_only_barrier", true)
     var shape := CollisionShape3D.new()
     var box := BoxShape3D.new()
     box.size = size
@@ -99,29 +101,30 @@ func build(data: Dictionary) -> void:
     layout = data
     rng.seed = int(data.seed)
     name = "World"
-    block("NorthEarth", Vector3(0, -1.2, -6.5), Vector3(36, 2.4, 17), "soil", true)
-    block("NorthGrass", Vector3(0, -0.015, -6.5), Vector3(36, 0.06, 17), "grass")
-    block("SouthEarth", Vector3(0, -1.2, 11.9), Vector3(36, 2.4, 10.2), "soil", true)
-    block("SouthGrass", Vector3(0, -0.015, 11.9), Vector3(36, 0.06, 10.2), "grass")
+    block("NorthEarth", Vector3(0, -1.2, -10), Vector3(800, 2.4, 24), "soil", true)
+    block("NorthGrass", Vector3(0, -0.015, -10), Vector3(800, 0.06, 24), "grass")
+    block("SouthEarth", Vector3(0, -1.2, 46.8), Vector3(800, 2.4, 80), "soil", true)
+    block("SouthGrass", Vector3(0, -0.015, 46.8), Vector3(800, 0.06, 80), "grass")
     block("Courtyard", Vector3(-2, 0.025, -0.45), Vector3(15.5, 0.08, 4.5), "stone")
     block("ForestRoad", Vector3(1.2, 0.025, 11.8), Vector3(3.2, 0.08, 10), "stone")
-    block("RiverBed", Vector3(0, -1.6, 4.4), Vector3(36, 0.2, 5), "stone")
+    block("RiverBed", Vector3(0, -1.6, 4.4), Vector3(800, 0.2, 5), "stone")
     build_bridge()
     build_buildings()
     build_decoration()
     build_water()
+    build_walkway()
 
 func build_bridge() -> void:
     model("bridge", vector(layout.bridge_center))
     collider("BridgeDeck", Vector3(1.2, -0.07, 4.3), Vector3(2.65, 0.24, 6.0))
     for x in [-0.19, 2.59]:
         collider("Parapet", Vector3(x, 0.43, 4.3), Vector3(0.30, 0.96, 6.25))
-    collider("RiverWest", Vector3(-9.1, 1.0, 4.4), Vector3(17.85, 3, 4.8))
-    collider("RiverEast", Vector3(10.3, 1.0, 4.4), Vector3(15.5, 3, 4.8))
-    for x in [-17.6, 17.6]:
-        collider("WorldEdge", Vector3(x, 2, 0), Vector3(1, 6, 36))
-    for z in [-14.5, 16.6]:
-        collider("WorldEdge", Vector3(0, 2, z), Vector3(36, 6, 1))
+    collider("RiverWest", Vector3(-15.1, 1.0, 4.4), Vector3(29.85, 3, 4.8))
+    collider("RiverEast", Vector3(16.3, 1.0, 4.4), Vector3(27.5, 3, 4.8))
+    for x in [-23.7, 23.7]:
+        collider("WorldEdge", Vector3(x, 2, 0), Vector3(1, 6, 100))
+    for z in [-14.5, 29.7]:
+        collider("WorldEdge", Vector3(0, 2, z), Vector3(48, 6, 1))
     for i in range(45):
         var x := -17.7 + i * 0.8
         if x > -0.7 and x < 3.0:
@@ -152,7 +155,7 @@ func build_decoration() -> void:
     for i in range(19):
         var x := -17.0 + i * 1.9
         plant_tree(Vector3(x, 0, -12.8 + rng.randf_range(-1, 1.2)), rng.randf_range(0.9, 1.3), i % 4 == 0)
-    for p in [Vector3(-14, 0, -3), Vector3(15, 0, -0.8), Vector3(-12, 0, 10), Vector3(13, 0, 12), Vector3(-5.6, 0, 14.5), Vector3(8.4, 0, 15.2)]:
+    for p in [Vector3(-14, 0, -3), Vector3(15, 0, -0.8), Vector3(-23, 0, 20), Vector3(24, 0, 16), Vector3(-17, 0, 27), Vector3(18, 0, 26)]:
         plant_tree(p, rng.randf_range(1.0, 1.25), true)
     for i in range(65):
         var x := rng.randf_range(-17, 17)
@@ -177,7 +180,7 @@ func build_water() -> void:
     var water := MeshInstance3D.new()
     water.name = "WaterSurface"
     var mesh := PlaneMesh.new()
-    mesh.size = Vector2(36, 4.8)
+    mesh.size = Vector2(800, 4.8)
     water.mesh = mesh
     water.position = Vector3(0, -0.72, 4.4)
     var mat := ShaderMaterial.new()
@@ -191,3 +194,30 @@ func mark_owners(node: Node) -> void:
         child.scene_file_path = ""
         child.owner = self
         mark_owners(child)
+
+func build_walkway() -> void:
+    var route: Dictionary = layout.walkway
+    var center := vector(route.center)
+    var direction := vector(route.direction).normalized()
+    var angle := atan2(-direction.z, direction.x)
+    var length := float(route.length)
+    var width := float(route.width)
+    var path := block("ParallaxWalkway", center, Vector3(length,0.09,width), "stone")
+    path.rotation.y = angle
+    var floor_body := collider("Walkway", Vector3(center.x,-0.09,center.z), Vector3(length,0.18,width))
+    floor_body.rotation.y = angle
+    var normal := Vector3(-direction.z,0,direction.x)
+    for i in range(39):
+        var p: Vector3 = center + direction * (-length*0.5 + i*length/38.0)
+        for side in [-1,1]:
+            if absf(p.x-1.2) < 1.9:
+                continue
+            var curb := block("WalkwayCurb", p + normal * (width*.5+.12)*side, Vector3(.73,.19,.22), "brick")
+            curb.rotation.y = angle
+    for coordinate in [-length*.5,length*.5]:
+        var p: Vector3 = center + direction*coordinate + normal*(width*.5+.65)
+        var marker := block("WalkwayMarker", p+Vector3(0,.40,0),Vector3(.30,.80,.30),"stone")
+        marker.rotation.y = angle
+
+    for p in [Vector3(-6,0.6,25),Vector3(0,0.6,26),Vector3(8,0.6,25),Vector3(15,0.6,24)]:
+        foliage("oak", p, 0.013)

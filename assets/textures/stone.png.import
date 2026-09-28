@@ -2,21 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qhx55swwe40w"
-path.s3tc="res://.godot/imported/stone.png-005a59f14bd4c49707ae6ded67307167.s3tc.ctex"
+uid="uid://bu1rsxslimo82"
+path="res://.godot/imported/stone.png-005a59f14bd4c49707ae6ded67307167.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://assets/textures/stone.png"
-dest_files=["res://.godot/imported/stone.png-005a59f14bd4c49707ae6ded67307167.s3tc.ctex"]
+dest_files=["res://.godot/imported/stone.png-005a59f14bd4c49707ae6ded67307167.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

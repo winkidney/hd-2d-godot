@@ -1,0 +1,21 @@
+{
+  "runtime_fingerprint": "5ba879a1dd99b9ff539c4d71704c3297bd98939d38ee8326c75789abc34b62b7",
+  "sha256": "6ebc1fa51217a4d51881fc0c47a5d125427587d7bf76304fa98337ec6ee625b5",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "30/1",
+        "nb_frames": "720"
+      }
+    ],
+    "format": {
+      "duration": "24.000000",
+      "size": "15030762"
+    }
+  },
+  "passed": true
+}

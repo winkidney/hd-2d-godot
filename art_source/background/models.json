@@ -1,0 +1,43 @@
+{
+  "source_type": "procedural-original",
+  "generator": "tools/build_background.py",
+  "blender": "5.2.2 LTS",
+  "models": [
+    {
+      "id": "valley",
+      "seed": 290928,
+      "vertices": 1539,
+      "triangles": 2880,
+      "glb": "assets/background/valley.glb",
+      "blend": "art_source/background/valley.blend",
+      "sha256": "33916c55eaaae498d278d9e834a5461dc8086a6129655301245649de43090cfc"
+    },
+    {
+      "id": "ridge_near",
+      "seed": 290928,
+      "vertices": 729,
+      "triangles": 1280,
+      "glb": "assets/background/ridge_near.glb",
+      "blend": "art_source/background/ridge_near.blend",
+      "sha256": "c9fbf3dc58393f67b6373c8f4038a922da31b2005ff6e3db287335fe3d3cc3a5"
+    },
+    {
+      "id": "ridge_mid",
+      "seed": 290928,
+      "vertices": 801,
+      "triangles": 1408,
+      "glb": "assets/background/ridge_mid.glb",
+      "blend": "art_source/background/ridge_mid.blend",
+      "sha256": "483621d0a448ddc01a45789b1e3ef41fbb3107567f882150b3841076d8697e7d"
+    },
+    {
+      "id": "ridge_far",
+      "seed": 290928,
+      "vertices": 873,
+      "triangles": 1536,
+      "glb": "assets/background/ridge_far.glb",
+      "blend": "art_source/background/ridge_far.blend",
+      "sha256": "4291a696a61f4f93cbdf04558583e314516b2df90f4009b38b6d898c1d1eb12d"
+    }
+  ]
+}

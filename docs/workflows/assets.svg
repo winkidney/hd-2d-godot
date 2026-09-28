@@ -17,10 +17,10 @@
 <text x="560" y="167" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">原创基线；记录种子与散列</text>
 <rect x="40" y="240" width="320" height="80" rx="8" fill="#ffffff" stroke="#a9bbc0"/>
 <text x="200" y="271" text-anchor="middle" font-size="17" font-family="sans-serif" fill="#183747">Python / Pillow</text>
-<text x="200" y="297" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">14 张确定性像素素材</text>
+<text x="200" y="297" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">17 张确定性像素与云图</text>
 <rect x="400" y="240" width="320" height="80" rx="8" fill="#ffffff" stroke="#a9bbc0"/>
 <text x="560" y="271" text-anchor="middle" font-size="17" font-family="sans-serif" fill="#183747">Blender CLI</text>
-<text x="560" y="297" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">8 类模型 / 打包贴图</text>
+<text x="560" y="297" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">12 套模型 / 可重建源</text>
 <rect x="760" y="240" width="320" height="80" rx="8" fill="#ffffff" stroke="#a9bbc0"/>
 <text x="920" y="271" text-anchor="middle" font-size="17" font-family="sans-serif" fill="#183747">可选外部美术入口</text>
 <text x="920" y="297" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#183747">ImageGen / MCP 尚未接入</text>

@@ -20,3 +20,6 @@
 ## 维护方式
 改交互时同步领域契约、操作手册和运行测试；改素材生成时同步 manifest 与重建证据；改渲染时重新生成固定机位对照图。
 运行日志只在 `build/`，已审阅的基线截图与 JSON 放在 `docs/media/`、`docs/validation/evidence/`。文档必须使用相对链接；`make test` 检查链接和常见私有主机路径。
+
+## P6/P7 当前功能
+[开阔探索设计](design/open-exploration.md) · [景深与背景领域模型](../domain-model/background-and-focus.md) · [本轮验证与证据](validation/p6p7/README.md)

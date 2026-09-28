@@ -11,7 +11,16 @@
 | R07 | Plan/ADR/domain-model | P0 | 根 README 与三个顶层目录 | 静态文档链接/私有路径检查 |
 | R08 | 可交付、可复现 | ADR 09/10/12 | Makefile、tools/reproduce.py、verify_release.py、package.py | 干净重建、独立二进制测试、归档散列 |
 | R09 | 高风险依赖确认 | ADR 11 | dependencies.lock.json、docs/delivery | MCP 未启用；已有 CLI 制作链可用 |
-| R10 | 可编辑流程图 | P0/P5 | docs/workflows/diagrams.json、tools/render_diagrams.py | 四份 Mermaid 与四份 SVG；make docs 重建 |
+| R10 | 可编辑流程图 | P0/P5 | docs/workflows/diagrams.json、tools/render_diagrams.py | 六份 Mermaid 与六份 SVG；make docs 重建 |
 
 统一功能断言在 `tests/runtime_validation.gd`，素材/来源/文档检查在 `tests/check_project.py`，真实 GPU 计时在 `tests/render_benchmark.gd`。结果与限制见[验收报告](../docs/validation/baseline-report.md)。
 未实现的 ImageGen/MCP 接入、音频、战斗和高级水面不得从本矩阵推断为已完成。
+
+## P6/P7 已实现追踪
+| ID | 需求 | 实现 | 验收 |
+|---|---|---|---|
+| R11 | 独立双端景深与调参 | dof_controller / dof_profile / dof_panel | 状态断言、棋盘近远选择性像素检查 |
+| R12 | 默认探索见山见天 | camera_rig / background_rig / background.json | 18张构图、7处路线样本 |
+| R13 | 横向路径与自然视差 | world_layout.walkway / world_builder | 连通、完整往返、相机行程、三层投影 |
+| R14 | 独立云风与三时段 | background_rig / lighting_controller | 云与相机独立、时段身份保持 |
+| R15 | 新功能交付闭环 | features / verify_features / reproduce / package_features | 指纹、独立包、干净重建、校验和 |

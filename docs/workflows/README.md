@@ -21,3 +21,9 @@ ImageGen/MCP 明确标记为未接入的可选入口；图中实线表示设计�
 交付候选可在工程验收通过后提供；最终视觉批准仍须用户确认，不因截图/性能自动测试通过而跳过。
 
 领域术语以 [domain-model](../../domain-model/README.md) 为准，架构决定见 [ADR](../../ADR/README.md)。
+
+## P6/P7 扩展
+![最终相机与背景景深](background-focus.svg)
+[Mermaid 源码](background-focus.mmd)
+![新功能验收闭环](feature-validation.svg)
+[Mermaid 源码](feature-validation.mmd)

@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "clean_copy": "build/reproduction/clean-0c6yi_xp",
+  "steps": [
+    {
+      "step": "assets",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "step": "background-assets",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "step": "models",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "step": "background-models",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "step": "import",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "step": "bake",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "step": "test",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "step": "features",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "step": "features-gpu",
+      "passed": true,
+      "returncode": 0
+    }
+  ],
+  "origin_runtime_fingerprint": "5ba879a1dd99b9ff539c4d71704c3297bd98939d38ee8326c75789abc34b62b7",
+  "real_gpu_checked": true,
+  "scope": "fresh source-copy; 17 images, 12 Blender sources/GLBs regenerated; fresh import/bake; static/native features; optional real GPU when --visual is present"
+}

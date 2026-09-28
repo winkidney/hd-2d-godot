@@ -1,0 +1,19 @@
+flowchart TD
+    source["运行资源指纹<br/>源文件和配置必须匹配"]
+    headless["功能与来源检查<br/>路线往返 / 焦点 / 投影"]
+    gpu["真实 GPU<br/>24 场景图 / 4 棋盘图"]
+    perf["持续性能样本<br/>5 条件各 30 秒"]
+    image["像素检查<br/>单端选择性失焦 / 焦内清晰"]
+    clean["干净副本<br/>重建模型、图像、场景与测试"]
+    binary["独立运行包<br/>无工程资源 / GPU 再验收"]
+    bundle["带校验的交付候选<br/>源码 / Linux 包 / 往返视频"]
+    source --> headless
+    source --> gpu
+    source --> perf
+    headless --> clean
+    gpu --> image
+    gpu --> binary
+    perf --> binary
+    clean --> bundle
+    image --> bundle
+    binary --> bundle
