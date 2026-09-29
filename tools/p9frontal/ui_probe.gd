@@ -1,5 +1,5 @@
 extends SceneTree
-## Actual viewport UI evidence; no runtime source edits or test-node dependency.
+## Rendered UI and synthesized viewport-input evidence, not native-window delivery.
 ## --script res://tools/p9frontal/ui_probe.gd -- --ignore-user-settings
 var scene: Node3D
 var output := "res://build/p9-frontal/ui"
@@ -24,8 +24,20 @@ func press_key(key: Key) -> void:
     event.keycode = key
     event.physical_keycode = key
     event.pressed = true
-    # Use the real scene input handler; do not call panel toggle helpers.
-    scene._input(event)
+    Input.parse_input_event(event)
+    await process_frame
+    event = event.duplicate()
+    event.pressed = false
+    Input.parse_input_event(event)
+    await process_frame
+
+func close_preview_now() -> void:
+    # Logic-only: observe complete pose restoration before another frame advances it.
+    var event := InputEventKey.new()
+    event.keycode = KEY_P
+    event.physical_keycode = KEY_P
+    event.pressed = true
+    scene._unhandled_key_input(event)
 
 func equal_value(a: Variant, b: Variant) -> bool:
     if typeof(a)!=typeof(b):
@@ -69,15 +81,15 @@ func run_probe() -> void:
         check(scene.select_variant(id),"select "+id)
         scene.reset_variant()
         scene.close_tuning()
-        press_key(KEY_F9)
-        check(scene.variant_panel.visible and not scene.player.controls_enabled,id+" F9 opens and locks movement")
-        check(not scene.parallax_panel.visible and not scene.dof_panel.visible,id+" F9 exclusive panel")
+        await press_key(KEY_C)
+        check(scene.variant_panel.visible and not scene.player.controls_enabled,id+" C opens and locks movement")
+        check(not scene.parallax_panel.visible and not scene.dof_panel.visible,id+" C exclusive panel")
         for frame in range(4):
             await process_frame
         var path := output.path_join(id+"-F9.png")
-        check(await scene.capture(path),id+" F9 GPU capture")
-        press_key(KEY_F8)
-        check(scene.parallax_panel.visible and not scene.variant_panel.visible,id+" F8 switches from F9")
+        check(await scene.capture(path),id+" C GPU capture, historical filename retained")
+        await press_key(KEY_P)
+        check(scene.parallax_panel.visible and not scene.variant_panel.visible,id+" P switches from C")
         var before: Dictionary = scene.rig.pose_snapshot()
         var state := {"frozen":scene.rig.frozen,"clock":scene.clock_frozen,
             "follow":scene.follow,"tour":scene.tour,"focus_mode":scene.dof.mode,
@@ -90,7 +102,7 @@ func run_probe() -> void:
         scene.parallax.update(0.0,true)
         check(not scene.camera.global_transform.is_equal_approx(before.transform),id+" preview actually moves camera")
         check(scene.rig.frozen and scene.clock_frozen and scene.dof.mode=="manual",id+" preview owns camera clock focus")
-        press_key(KEY_F8)
+        close_preview_now()
         # Compare synchronously, before a normal frame legitimately advances focus.
         var after: Dictionary = scene.rig.pose_snapshot()
         check(before.size()==after.size(),id+" pose field set retained")
@@ -102,15 +114,16 @@ func run_probe() -> void:
         check(equal_value(scene.lighting.water.get_shader_parameter("motion"),state.water_motion),id+" water motion restored")
         check(scene.player.global_position.is_equal_approx(state.actor),id+" actor not moved by preview")
         check(not scene.parallax_preview.active and scene.parallax_preview.saved.is_empty() and scene.parallax_preview.saved_pose.is_empty(),id+" preview state cleared")
-        check(not scene.panels_open() and scene.player.controls_enabled,id+" F8 close releases input")
+        check(not scene.panels_open() and scene.player.controls_enabled,id+" P close releases input")
         check(scene.parallax.compatible,id+" restored camera compatible with parallax")
         records[id] = {"capture":id+"-F9.png","capture_sha256":FileAccess.get_sha256(path),
             "pose_fields_checked":before.keys(),"camera":scene.rig.pose_diagnostics(),
-            "input_path":"Synthesized InputEventKey passed to scene._input; preview uses the F8 button signal."}
+            "input_path":"C/P opening uses Input.parse_input_event through the viewport. Preview uses its button signal; synchronous P close checks the shortcut handler before another frame. This is logic-layer coverage, not native-window/editor shortcut evidence."}
     await finish()
 
 func finish() -> void:
-    var report := {"schema":1,"passed":failures.is_empty(),"checks":checks,
+    var report := {"schema":2,"passed":failures.is_empty(),"checks":checks,
+        "input_scope":"Synthesized viewport input and synchronous state restoration; native-window/editor reserved-key behavior needs the separate native runner.",
         "failures":failures,"variants":records,"real_gpu":DisplayServer.get_name()!="headless",
         "engine":Engine.get_version_info().string,"utc":Time.get_datetime_string_from_system(true)}
     var file := FileAccess.open(output.path_join("report.json"),FileAccess.WRITE)

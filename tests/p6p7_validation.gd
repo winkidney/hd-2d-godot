@@ -1,5 +1,6 @@
 extends "res://tests/runtime_validation.gd"
 ## Assertions, analytic projection measurements and real rendered evidence are separate.
+## Shortcut calls below are synchronous logic checks, not native-window key evidence.
 var output := "res://build/p6p7/validation"
 var route_samples: Array[Dictionary] = []
 var scene_ref: Node3D
@@ -212,6 +213,7 @@ func benchmark(scene) -> void:
         check(report.performance[id].target_60fps_p95_met,"frame_budget_"+id)
 
 func finish_features(scene) -> void:
+    report["input_scope"] = "Synchronous shortcut-handler logic regression. This does not verify native-window delivery or editor-reserved shortcuts."
     report["engine"] = Engine.get_version_info().string
     report["renderer"] = RenderingServer.get_current_rendering_method()
     report["real_gpu"] = real_gpu
@@ -236,18 +238,19 @@ func finish_features(scene) -> void:
     get_tree().quit(0 if failures.is_empty() else 1)
 
 func press(scene, code: Key) -> void:
+    # Keep state restoration assertions in one frame. Native input has a separate runner.
     var event := InputEventKey.new()
     event.pressed = true
     event.keycode = code
     scene._unhandled_key_input(event)
 
 func test_controls(scene) -> void:
-    press(scene,KEY_F5)
-    check(not scene.dof.enabled,"F5_toggles_dof")
-    press(scene,KEY_F5)
-    press(scene,KEY_F6)
+    press(scene,KEY_B)
+    check(not scene.dof.enabled,"B_toggles_dof")
+    press(scene,KEY_B)
+    press(scene,KEY_O)
     scene._process(0.016)
-    check(scene.dof_panel.visible and not scene.player.controls_enabled,"F6_opens_panel_and_locks_walk")
+    check(scene.dof_panel.visible and not scene.player.controls_enabled,"O_opens_panel_and_locks_walk")
     scene.dof_panel.fields.amount.value = 0.12
     check(absf(scene.dof.attributes.dof_blur_amount-0.12) < 0.001,"slider_updates_native_dof")
     scene.dof_panel.box.get_node("DofPreset").item_selected.emit(2)

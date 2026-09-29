@@ -1,5 +1,6 @@
 extends Node
 ## Geometry, physical traversal and GPU evidence are reported separately.
+## Synthesized viewport input checks do not prove native-window/editor key delivery.
 const Route = preload("res://tests/p9frontal/route.gd")
 const IDS := ["ridge_near","ridge_mid","ridge_far","clouds_near","clouds_far"]
 var scene: Node3D
@@ -43,7 +44,7 @@ func run(value: Node3D) -> void:
         await finish()
         return
     check(not scene.settings_load_attempted,"ignore_user_preferences")
-    state_tests()
+    await state_tests()
     report.variants = {}
     for id in ["F","W","O"]:
         check(scene.select_variant(id),"select_"+id)
@@ -135,9 +136,17 @@ func state_tests() -> void:
     check(not scene.select_variant("F"),"route_prevents_variant_switch")
     var event := InputEventKey.new()
     event.keycode = KEY_ESCAPE
+    event.physical_keycode = KEY_ESCAPE
     event.pressed = true
-    scene._input(event)
+    Input.parse_input_event(event)
+    # This check starts from physics_frame. The next process_frame signal can
+    # precede input delivery, so keep the route active through a full idle frame.
+    for frame in range(2): await get_tree().process_frame
     check(scene.route_cancelled,"route_escape_requests_cancel")
+    event = event.duplicate()
+    event.pressed = false
+    Input.parse_input_event(event)
+    for frame in range(2): await get_tree().process_frame
     scene.route_running = false
     scene.route_cancelled = false
 
@@ -548,7 +557,7 @@ func finish() -> void:
         "engine":Engine.get_version_info().string,"renderer":RenderingServer.get_current_rendering_method(),
         "gpu":RenderingServer.get_video_adapter_name() if real_gpu else "none","viewport":[get_viewport().size.x,get_viewport().size.y],
         "checks":checks,"failures":failures,"passed":failures.is_empty(),"visual_review_pending":true,
-        "scope":"Automated geometry, state, physics and GPU fixture results. Artistic match and transparent/visual occlusion need a separate image review.",
+        "scope":"Automated geometry, state, physics and GPU fixture results. Synthesized viewport input is logic-layer evidence, not native-window/editor shortcut evidence. Artistic match and transparent/visual occlusion need a separate image review.",
         "utc":Time.get_datetime_string_from_system(true)})
     var file := FileAccess.open(output.path_join("report.json"),FileAccess.WRITE)
     if file: file.store_string(JSON.stringify(report,"  ")+"\n"); file.close()

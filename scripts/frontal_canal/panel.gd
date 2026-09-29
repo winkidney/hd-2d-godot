@@ -1,5 +1,5 @@
 extends PanelContainer
-## F9 is dispatched by the frontal scene. F8 keeps independent live parameters.
+## C uses the shared camera-panel dispatcher. P keeps independent live parameters.
 const IDS := ["F", "W", "O"]
 const TITLES := ["F  Frontal / stable perspective", "W  Wider lens / stronger depth", "O  Frontal / gentle orbit"]
 var scene: Node3D
@@ -76,7 +76,7 @@ func configure(value: Node3D) -> void:
     var box := VBoxContainer.new()
     box.add_theme_constant_override("separation", 8)
     add_child(box)
-    text_line(box, "FRONTAL CANAL  /  CAMERA STUDIES  /  F9")
+    text_line(box, "FRONTAL CANAL  /  CAMERA STUDIES  /  C")
     selector = OptionButton.new()
     for title in TITLES:
         selector.add_item(title)
@@ -109,7 +109,7 @@ func configure(value: Node3D) -> void:
         scene.reset_lens()
         status.text = "Lens defaults restored. Save to keep them."
         refresh()))
-    text_line(box, "Save / Load: this camera only. F8: follow. F6: focus. T: time.\nThe route temporarily uses this camera's default lens.\nYour lens returns on completion or cancellation.")
+    text_line(box, "Save / Load: this camera only. P: follow. O: focus. T: time.\nThe route temporarily uses this camera's default lens.\nYour lens returns on completion or cancellation.")
     adjustment_buttons.append(button(box, "Reset this camera", func():
         if scene.route_running: return
         scene.reset_variant()
@@ -124,7 +124,7 @@ func configure(value: Node3D) -> void:
         refresh())
     status = text_line(box, "Select a camera, then compare the same route and time of day.")
     button(box, "Close", func(): scene.close_tuning())
-    # Resize the existing F8 Range objects locally; the shared script is intact.
+    # Resize the existing parallax Range objects locally; shared limits stay intact.
     for key in scene.parallax.CAMERA_RANGES:
         if scene.parallax_panel.fields.has(key):
             var control: Range = scene.parallax_panel.fields[key]

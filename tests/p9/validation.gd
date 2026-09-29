@@ -1,5 +1,6 @@
 extends Node
 ## Routes use real physics. Teleports are only for named image fixtures.
+## Direct panel calls below are logic checks, not native-window key evidence.
 var scene: Node3D
 var checks: Array[Dictionary] = []
 var failures: Array[String] = []
@@ -46,7 +47,9 @@ func run(value: Node3D) -> void:
     scene.tour=false;scene.follow=true
     await settle(30)
     check(scene.layout.scene_id=="lantern-canal-v1","independent_layout")
-    check(scene.preferences_path=="user://settings/lantern-canal-parallax.cfg","isolated_preferences")
+    # Four-method P9 already replaced the original single-scene file at checkpoint
+    # 171e632. This legacy runner now enters default A; do not require the old path.
+    check(scene.experiment_id=="A" and scene.preferences_path=="user://settings/lantern-canal-A-parallax.cfg","isolated_default_A_preferences")
     check(not scene.settings_load_attempted,"tests_ignore_preferences")
     check(scene.player.sprite.texture.resource_path.ends_with("reference-scene/sprites/hero.png"),"imagegen_hero_connected")
     check(scene.player.sprite.texture.get_size()==Vector2(192,256),"hero_atlas_contract")
@@ -224,6 +227,7 @@ func performance() -> void:
     report["performance"]=results
 
 func finish() -> void:
+    report["input_scope"] = "Direct panel calls verify state and input locks, not native-window/editor shortcut delivery."
     report["schema"]=1
     report["scene"]="lantern-canal-v1"
     report["engine"]=Engine.get_version_info().string

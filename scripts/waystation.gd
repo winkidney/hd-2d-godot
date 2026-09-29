@@ -59,6 +59,9 @@ func _ready() -> void:
     dof_panel.configure(dof)
     hud.container.add_child(parallax_panel)
     parallax_panel.configure(self)
+    hud.configure_toolbar(self)
+    get_tree().auto_accept_quit = false
+    get_tree().root.close_requested.connect(request_quit)
     parallax_store.path = preferences_path
     if should_load_preferences():
         settings_load_attempted = true
@@ -138,6 +141,19 @@ func _process(delta: float) -> void:
 func _unhandled_key_input(event: InputEvent) -> void:
     if not event is InputEventKey or not event.pressed or event.echo:
         return
+    if event.ctrl_pressed or event.alt_pressed or event.meta_pressed or event.shift_pressed:
+        return
+    if shortcut_route_running():
+        if event.keycode == KEY_ESCAPE:
+            cancel_shortcut_route()
+            get_viewport().set_input_as_handled()
+        return
+    # GUI sees the event before this method. Never turn typing into scene actions.
+    if text_edit_has_focus() and event.keycode != KEY_ESCAPE:
+        return
+    if popup_open() and event.keycode != KEY_ESCAPE:
+        return
+    var handled := true
     match event.keycode:
         KEY_E:
             interact()
@@ -149,40 +165,51 @@ func _unhandled_key_input(event: InputEvent) -> void:
             lighting.apply_preset("night")
         KEY_3:
             lighting.apply_preset("day")
-        KEY_F2:
+        KEY_G:
             close_tuning()
             tour = not tour
             hud.close_dialogue()
-        KEY_F3:
+        KEY_V:
             lighting.set_effects(not lighting.effects_enabled)
-        KEY_F4:
+        KEY_F:
             parallax_preview.stop()
             follow = not follow
-        KEY_F5:
+        KEY_B:
             dof.enabled = not dof.enabled
             dof.apply()
-        KEY_F6:
+        KEY_O:
             toggle_tuning("dof")
-        KEY_F8:
+        KEY_P:
             toggle_tuning("parallax")
-        KEY_F7:
+        KEY_K:
             background.visible = not background.visible
-        KEY_TAB, KEY_H:
+        KEY_C:
+            if camera_tuning_panel() != null: toggle_camera_panel()
+            else: handled = false
+        KEY_H:
             close_tuning()
             hud.close_dialogue()
             hud.container.visible = not hud.container.visible
             sync_input_lock()
-        KEY_F12:
+        KEY_J:
             capture("user://captures/waystation-%s-%d.png" % [lighting.preset_id, Time.get_ticks_msec()])
         KEY_ESCAPE:
-            if parallax_preview.active:
+            if close_visible_popup():
+                pass
+            elif parallax_preview.active:
                 parallax_preview.stop()
             elif panels_open():
                 close_tuning()
             elif hud.dialogue.visible:
-                interact()
+                hud.close_dialogue()
+                sync_input_lock()
             else:
-                get_tree().quit()
+                request_quit()
+        _:
+            handled = false
+    if handled:
+        sync_input_lock()
+        get_viewport().set_input_as_handled()
 
 func capture(path: String) -> bool:
     if DisplayServer.get_name() == "headless":
@@ -238,18 +265,23 @@ func update_walk_recording() -> void:
         lighting.apply_preset(id)
 
 func panels_open() -> bool:
-    return dof_panel.visible or parallax_panel.visible
+    var camera_panel := camera_tuning_panel()
+    return dof_panel.visible or parallax_panel.visible or (camera_panel != null and camera_panel.visible)
 
 func sync_input_lock() -> void:
-    player.controls_enabled = not tour and not hud.dialogue.visible and not panels_open()
+    player.controls_enabled = not tour and not hud.dialogue.visible and not panels_open() and not popup_open() and not text_edit_has_focus()
+    hud.refresh_toolbar(shortcut_route_running())
 
 func close_tuning() -> void:
     parallax_preview.stop()
     dof_panel.hide()
     parallax_panel.hide()
+    var camera_panel := camera_tuning_panel()
+    if camera_panel != null: camera_panel.hide()
     sync_input_lock()
 
 func toggle_tuning(kind: String) -> void:
+    if shortcut_route_running() or popup_open(): return
     var target: Control = dof_panel if kind == "dof" else parallax_panel
     var was_open := target.visible
     close_tuning()
@@ -260,17 +292,65 @@ func toggle_tuning(kind: String) -> void:
         target.show()
     sync_input_lock()
 
+func camera_tuning_panel() -> Control:
+    return null
+
+func toggle_camera_panel() -> void:
+    var panel := camera_tuning_panel()
+    if panel == null or shortcut_route_running() or popup_open(): return
+    var was_open := panel.visible
+    close_tuning()
+    hud.close_dialogue()
+    if not was_open:
+        hud.container.show()
+        panel.refresh()
+        panel.show()
+    sync_input_lock()
+
+func shortcut_route_running() -> bool:
+    return false
+
+func cancel_shortcut_route() -> void:
+    pass
+
+func text_edit_has_focus() -> bool:
+    var focus := get_viewport().gui_get_focus_owner()
+    return focus is LineEdit or focus is TextEdit
+
+func visible_popups() -> Array[Window]:
+    var result: Array[Window] = []
+    # Include internal OptionButton menus, scoped to this scene, not the editor.
+    collect_visible_popups(hud,result)
+    return result
+
+func collect_visible_popups(node: Node, result: Array[Window]) -> void:
+    for child in node.get_children(true):
+        if child is Window and child.visible:
+            result.append(child)
+        collect_visible_popups(child,result)
+
+func popup_open() -> bool:
+    return not visible_popups().is_empty()
+
+func close_visible_popup() -> bool:
+    var popups := visible_popups()
+    if popups.is_empty(): return false
+    popups.back().hide()
+    sync_input_lock()
+    return true
+
+func request_quit() -> void:
+    if shortcut_route_running() or hud.quit_dialog.visible: return
+    parallax_preview.stop()
+    hud.quit_dialog.popup_centered(Vector2i(580,180))
+    hud.quit_dialog.get_cancel_button().grab_focus()
+    sync_input_lock()
+
 func should_load_preferences() -> bool:
     var flags := ["--ignore-user-settings","--self-test","--p6p7-test","--p8-test","--walk-recording","--showcase","--p8-recording"]
     for flag in flags:
         if flag in OS.get_cmdline_user_args(): return false
     return true
-
-func _input(event: InputEvent) -> void:
-    if event is InputEventKey and event.pressed and not event.echo:
-        if event.keycode in [KEY_F2,KEY_F3,KEY_F4,KEY_F5,KEY_F6,KEY_F7,KEY_F8,KEY_F12,KEY_ESCAPE,KEY_TAB]:
-            _unhandled_key_input(event)
-            get_viewport().set_input_as_handled()
 
 func run_parallax_validation() -> void:
     var runner = load("res://tests/parallax_validation.gd").new()

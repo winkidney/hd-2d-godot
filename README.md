@@ -1,7 +1,7 @@
 # HD-2D · Riverside Waystation
 
-**当前版本：P8 可调视差。F8打开视差面板，F6仍为景深面板。**
-[操作](docs/operation/parallax.md) · [P8验收](docs/validation/p8/README.md) · [规划与ADR](Plan/features/adjustable-parallax.md)
+当前工程保留驿站、参考场景、灰盒和正面运河四个入口。游戏内按 P 调视差、O 调景深、C 调相机，也可点击左上方按钮。F8/F9 留给 Godot 编辑器的停止/暂停功能，不再作为场景快捷键。
+[启动与操作](docs/operation/README.md) · [输入安全修复](docs/validation/input-safety/README.md) · [P8验收](docs/validation/p8/README.md)
 
 自然/柔和/增强与五层独立倍率、相机横向参数、云风和本机保存已实现；旧场景与素材保持不变。
 
@@ -15,6 +15,8 @@
 
 ```bash
 make run       # 运行场景；需要已有图形桌面
+make frontal-run # 正面运河场景，C 打开镜距/FOV与F/W/O面板
+make p9-run    # 参考场景，C 打开A/B/C/D对照
 make editor    # 打开 Godot；F5 运行
 make test      # 素材、来源链、文档和无图形功能测试
 make visual    # 1920×1080 真 GPU 图像、功能、5种配置各30秒计时
@@ -24,7 +26,9 @@ make visual    # 1920×1080 真 GPU 图像、功能、5种配置各30秒计时
 
 ## 操作
 
-WASD/方向键行走，E 调查或关闭对话，T 切换晴昼/黄昏/夜晚（1/2/3 选择黄昏/夜晚/晴昼），F2 展示模式，F3 后处理对照，F4 有限跟随（默认开），F5 景深，F6 调参面板，F7 远景对照，Tab/H 隐藏界面，F12 截图，Esc 关闭对话或退出。
+WASD/方向键行走，E 调查或关闭对话，T 切时段，1/2/3 选择黄昏/夜晚/晴昼。G 展示，V 后处理，F 跟随，B 景深开关，O 景深面板，P 视差面板，C 相机面板，K 远景，H 隐藏界面，J 截图。Tab 只切换界面焦点。Esc 逐层返回，无面板或对话时先询问是否退出。
+
+输入框获得焦点时，字母和数字只用于编辑；Ctrl/Alt/Shift/Meta 组合不触发裸键场景操作。编辑器启动用 F5/F6，进入游戏后请使用上面的游戏键位。历史运行包仍使用打包时的旧键位，不因当前源码修复而自动更新。
 
 截图保存到 Godot 的本应用 `user://captures/`，保存后的实际路径会打印到终端。展示模式禁用角色行走；隐藏 HUD 不暂停模拟。
 
@@ -60,6 +64,6 @@ make package   # build/delivery/p8/ 中的新交付与校验和
 
 ## P6/P7 新增玩法
 从出生点经石桥向南走，进入30m横向步道，再左右完整往返。默认跟随即可看到近、中、超远山的不同位移，无需进入展示模式。
-F5只切换景深；F6提供三档、单端开关、范围、过渡与焦点模式。F3或时段切换不会重置景深选择。
+B只切换景深；O提供三档、单端开关、范围、过渡与焦点模式。V或时段切换不会重置景深选择。
 详见[验收与限制](docs/validation/p6p7/README.md)、[构图设计](docs/design/open-exploration.md)、[领域扩展](domain-model/background-and-focus.md)。
 旧P0–P5截图保留，不作为新增功能的验收证据。首次打包前请先完成 `make record`。

@@ -1,4 +1,12 @@
 PYTHON ?= python3
+INPUT_PYTHON ?= /usr/bin/python3
+
+.PHONY: input-test input-window-test
+input-test:
+	$(INPUT_PYTHON) tools/input_window_test.py --headless
+	$(INPUT_PYTHON) tests/test_input_window_cleanup.py -v
+input-window-test:
+	$(INPUT_PYTHON) tools/input_window_test.py
 
 .PHONY: frontal-run frontal-import frontal-bake frontal-test frontal-quick frontal-visual frontal-record frontal-export frontal-rebuild frontal-package
 frontal-run:

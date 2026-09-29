@@ -37,7 +37,7 @@ func configure(value: Node3D) -> void:
     var box := VBoxContainer.new()
     box.add_theme_constant_override("separation", 14)
     add_child(box)
-    label(box, "CAMERA EXPERIMENTS  /  F9")
+    label(box, "CAMERA EXPERIMENTS  /  C")
     selector = OptionButton.new()
     for title in NAMES: selector.add_item(title)
     selector.item_selected.connect(func(index):
@@ -47,7 +47,7 @@ func configure(value: Node3D) -> void:
         refresh())
     box.add_child(selector)
     readout = label(box, "")
-    label(box, "F8 adjusts each mode's own background settings.\nF6 adjusts focus. T changes the time of day.")
+    label(box, "P adjusts each mode's own background settings.\nO adjusts focus. T changes the time of day.")
     label(box, "D uses 7 captured views of the main palace. It keeps the same collision, but its picture has one flat depth plane.")
     button(box, "Reset this variant", func(): scene.reset_experiment(); status.text = "Current variant reset."; refresh())
     route_button = button(box, "Run the same walking route", func():

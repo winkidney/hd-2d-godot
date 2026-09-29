@@ -168,15 +168,15 @@ func test_settings(scene) -> void:
 
 func test_panel(scene) -> void:
     scene.rig.set_offset(Vector3.ZERO)
-    press(scene,KEY_F8)
-    check(scene.parallax_panel.visible and not scene.player.controls_enabled,"F8_opens_and_locks_walk")
+    press(scene,KEY_P)
+    check(scene.parallax_panel.visible and not scene.player.controls_enabled,"P_opens_and_locks_walk")
     scene.parallax_panel.fields.global_strength.value = 1.5
     check(scene.parallax.profile.mode=="artistic" and scene.parallax.profile.global_strength==1.5,"slider_selects_artistic_mode")
     scene.parallax_panel.fields.ridge_far.value = 2.0
     scene.parallax.update(0,true)
     check(scene.parallax.diagnostics().ridge_far.capped,"panel_displays_effective_cap")
     var parameters: Dictionary = scene.parallax.snapshot()
-    for key in [KEY_T,KEY_F3,KEY_F3,KEY_F7,KEY_F7,KEY_F4,KEY_F4]: press(scene,key)
+    for key in [KEY_T,KEY_V,KEY_V,KEY_K,KEY_K,KEY_F,KEY_F]: press(scene,key)
     check(scene.parallax.snapshot()==parameters,"unrelated_shortcuts_preserve_parameters")
     var pose: Transform3D = scene.camera.global_transform
     var player_position: Vector3 = scene.player.position
@@ -191,12 +191,12 @@ func test_panel(scene) -> void:
     check(scene.camera.global_transform.is_equal_approx(pose),"preview_restores_camera")
     press(scene,KEY_ESCAPE)
     check(not scene.panels_open() and scene.player.controls_enabled,"second_escape_releases_panel_lock")
-    press(scene,KEY_F8)
-    press(scene,KEY_F6)
+    press(scene,KEY_P)
+    press(scene,KEY_O)
     check(scene.dof_panel.visible and not scene.parallax_panel.visible,"tuning_panels_are_exclusive")
-    press(scene,KEY_F8)
-    check(scene.parallax_panel.visible and not scene.dof_panel.visible,"F8_replaces_dof_panel")
-    press(scene,KEY_TAB)
+    press(scene,KEY_P)
+    check(scene.parallax_panel.visible and not scene.dof_panel.visible,"P_replaces_dof_panel")
+    press(scene,KEY_H)
     check(not scene.hud.container.visible and not scene.panels_open() and scene.player.controls_enabled,"hide_HUD_releases_invisible_lock")
     scene.hud.container.show()
     scene.parallax.reset_all()
@@ -288,15 +288,15 @@ func test_extended(scene) -> void:
     check(c.warnings().contains("inverted"),"layer_speed_inversion_warning")
     c.reset_all()
     scene.rig.set_offset(Vector3.ZERO)
-    press(scene,KEY_F8)
+    press(scene,KEY_P)
     var event := InputEventKey.new()
-    event.keycode = KEY_F8
+    event.keycode = KEY_P
     event.pressed = true
-    scene._input(event)
+    scene._unhandled_key_input(event)
     check(not scene.panels_open() and scene.player.controls_enabled,"global_shortcut_closes_focused_panel")
-    press(scene,KEY_F8)
+    press(scene,KEY_P)
     scene.parallax_preview.start(scene)
-    press(scene,KEY_F6)
+    press(scene,KEY_O)
     check(not scene.parallax_preview.active and scene.dof_panel.visible,"panel_switch_stops_preview")
     scene.close_tuning()
     var store = preload("res://scripts/parallax_settings_store.gd").new()

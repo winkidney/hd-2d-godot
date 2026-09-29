@@ -99,34 +99,17 @@ func reset_experiment() -> void:
     parallax_panel.refresh()
     experiment_panel.refresh()
 
-func panels_open() -> bool:
-    return super.panels_open() or experiment_panel.visible
-
-func close_tuning() -> void:
-    experiment_panel.hide()
-    super.close_tuning()
+func camera_tuning_panel() -> Control:
+    return experiment_panel
 
 func toggle_experiments() -> void:
-    var was_open := experiment_panel.visible
-    close_tuning()
-    hud.close_dialogue()
-    if not was_open:
-        hud.container.show()
-        experiment_panel.refresh()
-        experiment_panel.show()
-    sync_input_lock()
+    toggle_camera_panel()
 
-func _input(event: InputEvent) -> void:
-    if experiment_route_running and event is InputEventKey:
-        if event.pressed and not event.echo and event.keycode == KEY_ESCAPE:
-            experiment_route_cancelled = true
-        get_viewport().set_input_as_handled()
-        return
-    if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_F9:
-        if not experiment_route_running: toggle_experiments()
-        get_viewport().set_input_as_handled()
-        return
-    super._input(event)
+func shortcut_route_running() -> bool:
+    return experiment_route_running
+
+func cancel_shortcut_route() -> void:
+    experiment_route_cancelled = true
 
 func run_experiment_route() -> Dictionary:
     if experiment_route_running: return {"passed":false, "reason":"Already running."}

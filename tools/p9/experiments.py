@@ -166,7 +166,7 @@ def package():
     with zipfile.ZipFile(folder/'p9-four-experiments-linux.zip','w',zipfile.ZIP_DEFLATED) as z:
         z.write(binary,binary.name)
         z.write(ROOT/'NOTICE.md','NOTICE.md')
-        z.writestr('README.txt','P9 four camera experiments. Run ./lantern-canal-four-experiments.x86_64\nF9: A/B/C/D, reset and physical route. WASD/arrows: walk; E: interact; T: time; F6: DOF; F8: parallax.\nAll four methods retained. D is a visual simulation, not volumetric geometry. Read comparison report for limitations.\n')
+        z.writestr('README.txt','P9 four camera experiments. Run ./lantern-canal-four-experiments.x86_64\nC: A/B/C/D, reset and physical route. WASD/arrows: walk; E: interact; T: time; O: DOF; P: parallax; H: hide HUD. Click the toolbar for panels and confirmed Quit. F8 remains the editor Stop shortcut.\nAll four methods retained. D is a visual simulation, not volumetric geometry. Read comparison report for limitations.\n')
         for p in (ROOT/'licenses').rglob('*'):
             if p.is_file():z.write(p,p.relative_to(ROOT))
     with zipfile.ZipFile(folder/'p9-complete-project.zip','w',zipfile.ZIP_DEFLATED) as z:

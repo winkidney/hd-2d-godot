@@ -1,4 +1,5 @@
 extends Node
+## Panel calls and Input actions here test logic, not native-window key delivery.
 var scene: Node3D
 var output := "res://build/p9-experiments/gpu"
 var checks: Array[Dictionary] = []
@@ -100,9 +101,9 @@ func state_tests() -> void:
         check(scene.rig.follow_offset.distance_to(scene.rig.desired_offset(pos))<.001 and absf(scene.rig.yaw_degrees-scene.rig.desired_yaw(pos))<.001,"stop_converges_"+id)
         scene.reset_experiment()
     scene.toggle_experiments()
-    check(scene.experiment_panel.visible and not scene.player.controls_enabled,"F9_input_lock")
+    check(scene.experiment_panel.visible and not scene.player.controls_enabled,"C_input_lock")
     scene.toggle_tuning("dof")
-    check(not scene.experiment_panel.visible and scene.dof_panel.visible,"exclusive_F6_F9")
+    check(not scene.experiment_panel.visible and scene.dof_panel.visible,"exclusive_O_C")
     scene.close_tuning()
     check(not scene.panels_open() and scene.player.controls_enabled,"close_releases_controls")
     scene.dof.near_enabled=true;scene.dof.apply()
@@ -162,6 +163,7 @@ func performance(id: String) -> Dictionary:
     return results
 
 func finish() -> void:
+    report["input_scope"] = "Direct panel calls and Input actions are logic-layer regression; native-window/editor shortcut handling needs the separate native runner."
     report.merge({"schema":1,"real_gpu":real_gpu,"engine":Engine.get_version_info().string,"renderer":RenderingServer.get_current_rendering_method(),"gpu":RenderingServer.get_video_adapter_name() if real_gpu else "none","viewport":[get_viewport().size.x,get_viewport().size.y],"checks":checks,"failures":failures,"passed":failures.is_empty(),"utc":Time.get_datetime_string_from_system(true)})
     var file:=FileAccess.open(output.path_join("report.json"),FileAccess.WRITE)
     if file: file.store_string(JSON.stringify(report,"  ")+"\n");file.close()

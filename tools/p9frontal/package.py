@@ -40,7 +40,7 @@ def report():
 
 ## 打开与对比
 
-解压 `frontal-canal-linux.zip` 后运行 `./frontal-canal.x86_64`。F9切换F/W/O、恢复本组默认值或运行共同路线。WASD/方向键行走，E交互，T切时段，F6景深，F8视差，Esc关闭面板或取消路线。
+解压 `frontal-canal-linux.zip` 后运行 `./frontal-canal.x86_64`。C切换F/W/O、恢复本组默认值或运行共同路线。WASD/方向键行走，E交互，T切时段，O景深，P视差，H隐藏界面，Esc关闭面板或取消路线。工具栏也可打开面板，退出需要确认。F8保留为编辑器停止键，不是游戏快捷键。
 
 先看 `three-way.mp4`，三段同路线同步横向对照。`F.mp4`、`W.mp4`、`O.mp4`保留完整1080p画面。比较入口默认为F，不替用户选定最终方案。
 
@@ -128,7 +128,7 @@ def package():
     assert sha(binary)==load(OUT/'export-report.json')['binary_sha256']
     with zipfile.ZipFile(folder/'frontal-canal-linux.zip','w',zipfile.ZIP_DEFLATED) as z:
         z.write(binary,binary.name);z.write(ROOT/'NOTICE.md','NOTICE.md')
-        z.writestr('README.txt','Run ./frontal-canal.x86_64\nF9: F/W/O cameras and common physical route. WASD: walk. E: interact. T: time. F6: DOF. F8: parallax.\nAll three use real perspective and real building geometry. See comparison.md for limitations.\n')
+        z.writestr('README.txt','Run ./frontal-canal.x86_64\nC: F/W/O cameras and common physical route. WASD: walk. E: interact. T: time. O: DOF. P: parallax. H: hide HUD. Click the toolbar for panels and confirmed Quit. F8 remains the editor Stop shortcut.\nAll three use real perspective and real building geometry. See comparison.md for limitations.\n')
         for p in (ROOT/'licenses').rglob('*'):
             if p.is_file():z.write(p,p.relative_to(ROOT))
     with zipfile.ZipFile(folder/'frontal-complete-project.zip','w',zipfile.ZIP_DEFLATED) as z:

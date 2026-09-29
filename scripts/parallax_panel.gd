@@ -44,7 +44,7 @@ func configure(value: Node3D) -> void:
     add_child(box)
     var header := HBoxContainer.new()
     box.add_child(header)
-    var title := text(header,"PARALLAX  /  F8")
+    var title := text(header,"PARALLAX  /  P")
     title.size_flags_horizontal = Control.SIZE_EXPAND_FILL
     button(header,"Close",func(): scene.close_tuning())
     tabs = TabContainer.new()

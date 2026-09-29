@@ -1,5 +1,6 @@
 extends SceneTree
 ## Real-scene lens checks. The caller owns isolated XDG and serial GPU execution.
+## Synthesized viewport input is logic-layer coverage, not native-window key evidence.
 ## --probe-mode=save|load|headless|gpu --probe-output=res://build/...
 ## Save/load require normal preferences; headless/gpu require --ignore-user-settings.
 const IDS := ["F","W","O"]
@@ -59,12 +60,25 @@ func equal_value(a: Variant, b: Variant) -> bool:
 func wait_frames(count: int) -> void:
     for frame in range(count): await process_frame
 
-func key_now(key: Key) -> void:
+func press_key(key: Key) -> void:
     var event := InputEventKey.new()
     event.keycode = key
     event.physical_keycode = key
     event.pressed = true
-    scene._input(event)
+    Input.parse_input_event(event)
+    await process_frame
+    event = event.duplicate()
+    event.pressed = false
+    Input.parse_input_event(event)
+    await process_frame
+
+func close_preview_now() -> void:
+    # Logic-only: compare complete restoration before normal frame processing resumes.
+    var event := InputEventKey.new()
+    event.keycode = KEY_P
+    event.physical_keycode = KEY_P
+    event.pressed = true
+    scene._unhandled_key_input(event)
 
 func wheel(up: bool, amount := 1.0) -> void:
     var event := InputEventMouseButton.new()
@@ -125,7 +139,7 @@ func run_probe() -> void:
     await wait_frames(30)
     if mode in ["save","load"]:
         check(scene.should_load_preferences(),"normal preference loading enabled")
-        check(scene.settings_load_attempted,"normal F8 startup path attempted")
+        check(scene.settings_load_attempted,"normal parallax preference startup path attempted")
         if scene.should_load_preferences(): await settings_checks()
     else:
         check(not scene.should_load_preferences(),"runtime probe ignores user preferences")
@@ -146,19 +160,20 @@ func run_probe() -> void:
         await runtime_checks()
         if mode=="headless": await route_checks()
         else: records["route_scope"] = "Full and cancelled physical routes are exercised by the separate headless probe."
-    check(equal_value(f8_files(),original_f8),"lens operations leave existing F8 preference files unchanged")
+    check(equal_value(f8_files(),original_f8),"lens operations leave existing parallax preference files unchanged")
+    records["input_scope"] = "Synthesized Input.parse_input_event viewport checks. P preview close is a synchronous handler-level restoration check. Neither proves native-window/editor shortcut behavior."
     records["f8_before"] = original_f8
     records["f8_after"] = f8_files()
     await finish()
 
 func settings_checks() -> void:
     if mode=="save":
-        # Real F8 files make unchanged-file checks meaningful in an empty test home.
+        # Real parallax preference files make unchanged-file checks meaningful in an empty test home.
         # This fixture setup happens before the lens-write baseline is captured.
         for id in IDS:
-            check(scene.select_variant(id),"F8 fixture select "+id)
+            check(scene.select_variant(id),"parallax fixture select "+id)
             if not FileAccess.file_exists(scene.preferences_path):
-                check(scene.parallax_store.save_settings(scene.parallax),"seed absent isolated F8 fixture "+id)
+                check(scene.parallax_store.save_settings(scene.parallax),"seed absent isolated parallax fixture "+id)
         original_f8 = f8_files()
         scene.select_variant("F")
     else:
@@ -215,8 +230,8 @@ func runtime_checks() -> void:
         check(scene.player.global_position.is_equal_approx(actor),id+" switch preserves actor")
         check(scene.lighting.preset_id==period and scene.dof.mode==focus_mode and is_equal_approx(scene.dof.focus_depth,focus_depth),id+" switch preserves time and focus")
         scene.reset_variant()
-        key_now(KEY_F9)
-        check(scene.variant_panel.visible,id+" F9 opens")
+        await press_key(KEY_C)
+        check(scene.variant_panel.visible,id+" C opens")
         var slider: HSlider = scene.variant_panel.lens_sliders.radius
         var spin: SpinBox = scene.variant_panel.lens_spins.fov
         slider.value = RADII[index]
@@ -256,7 +271,7 @@ func runtime_checks() -> void:
 func wheel_guards(id: String) -> void:
     var before: Dictionary = scene.rig.lens_snapshot()
     await wheel(true)
-    check(equal_value(before,scene.rig.lens_snapshot()),id+" F9 blocks wheel zoom")
+    check(equal_value(before,scene.rig.lens_snapshot()),id+" C panel blocks wheel zoom")
     scene.close_tuning()
     await wheel(true)
     check_lens(float(before.radius)-0.5,float(before.fov),id+" gameplay wheel zooms distance only")
@@ -267,10 +282,10 @@ func wheel_guards(id: String) -> void:
     check(is_equal_approx(scene.variant_panel.lens_sliders.radius.value,float(before.radius)-0.5) and is_equal_approx(scene.variant_panel.lens_spins.radius.value,float(before.radius)-0.5),id+" fractional wheel keeps slider and spin synchronized")
     await wheel(false,0.25)
     check(equal_value(before,scene.rig.lens_snapshot()),id+" inverse fractional wheel restores lens")
-    for state in ["F6","F8","dialogue","route","tour","scripted"]:
+    for state in ["O","P","dialogue","route","tour","scripted"]:
         match state:
-            "F6": key_now(KEY_F6)
-            "F8": key_now(KEY_F8)
+            "O": await press_key(KEY_O)
+            "P": await press_key(KEY_P)
             "dialogue": scene.hud.show_dialogue({"title":"Lens probe","text":"Wheel zoom must stay locked during dialogue."})
             "route":
                 scene.route_running = true
@@ -298,20 +313,20 @@ func wheel_guards(id: String) -> void:
     scene.variant_panel.refresh()
 
 func preview_checks(id: String) -> void:
-    key_now(KEY_F8)
+    await press_key(KEY_P)
     var before: Dictionary = scene.rig.pose_snapshot()
     var state := {"actor":scene.player.global_position,"frozen":scene.rig.frozen,"clock":scene.clock_frozen,
         "follow":scene.follow,"tour":scene.tour,"mode":scene.dof.mode,"manual":scene.dof.manual_depth,
         "focus":scene.dof.focus_depth,"motion":scene.lighting.water.get_shader_parameter("motion")}
     scene.parallax_panel.preview_button.pressed.emit()
-    check(scene.parallax_preview.active,id+" F8 preview button starts")
+    check(scene.parallax_preview.active,id+" P preview button starts")
     scene.parallax_preview.update(0.65)
     check(not scene.camera.global_transform.is_equal_approx(before.transform),id+" preview moves actual camera")
     var lens_before: Dictionary = scene.rig.lens_snapshot()
     await wheel(true)
-    check(equal_value(lens_before,scene.rig.lens_snapshot()),id+" F8 preview blocks wheel")
-    key_now(KEY_F8)
-    check(equal_value(before,scene.rig.pose_snapshot()),id+" F8 close restores complete pose and all lens profiles")
+    check(equal_value(lens_before,scene.rig.lens_snapshot()),id+" P preview blocks wheel")
+    close_preview_now()
+    check(equal_value(before,scene.rig.pose_snapshot()),id+" P close restores complete pose and all lens profiles")
     check(scene.player.global_position.is_equal_approx(state.actor) and scene.rig.frozen==state.frozen and scene.clock_frozen==state.clock,id+" preview restores actor and freeze states")
     check(scene.follow==state.follow and scene.tour==state.tour and scene.dof.mode==state.mode and is_equal_approx(scene.dof.manual_depth,state.manual) and is_equal_approx(scene.dof.focus_depth,state.focus),id+" preview restores follow and focus")
     check(equal_value(scene.lighting.water.get_shader_parameter("motion"),state.motion),id+" preview restores water")
@@ -359,11 +374,11 @@ func capture_variant(id: String, index: int) -> void:
     scene.dof.mode = "protected"
     scene.dof.focus_depth = scene.dof.depth(scene.player.global_position+Vector3.UP)
     scene.dof.apply()
-    key_now(KEY_F9)
+    await press_key(KEY_C)
     await wait_frames(6)
     var rect: Rect2 = scene.variant_panel.get_global_rect()
     var viewport: Rect2 = scene.get_viewport().get_visible_rect()
-    check(viewport.encloses(rect),id+" F9 complete panel is inside viewport")
+    check(viewport.encloses(rect),id+" C complete panel is inside viewport")
     await capture_image(id+"-F9-custom.png",{"panel_rect":[rect.position.x,rect.position.y,rect.size.x,rect.size.y]})
     scene.close_tuning()
     scene.hud.container.hide()
@@ -452,10 +467,10 @@ func route_checks() -> void:
     records["routes"] = route_records
 
 func finish() -> void:
-    var report := {"schema":1,"mode":mode,"passed":failures.is_empty(),"checks":checks,"failures":failures,
+    var report := {"schema":2,"mode":mode,"passed":failures.is_empty(),"checks":checks,"failures":failures,
         "variants":records,"captures":captures,"real_gpu":mode=="gpu" and DisplayServer.get_name()!="headless",
         "engine":Engine.get_version_info().string,"utc":Time.get_datetime_string_from_system(true),
-        "scope":"Actual frontal scene and native controls; wheel input uses Input.parse_input_event. Headless runs physical full/cancelled routes. Save/load use normal automatic preferences in separate processes."}
+        "scope":"Actual frontal scene and Godot control signals. Synthesized viewport input and synchronous restoration checks are logic-layer evidence, not native-window/editor shortcut validation. Headless runs physical full/cancelled routes. Save/load use normal automatic preferences in separate processes."}
     var file := FileAccess.open(output.path_join("report.json"),FileAccess.WRITE)
     if file==null:
         failures.append("report write failed")

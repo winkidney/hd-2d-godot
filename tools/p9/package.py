@@ -30,7 +30,7 @@ def main():
         z.write(ROOT/'NOTICE.md','NOTICE.md')
         for p in (ROOT/'licenses').rglob('*'):
             if p.is_file(): z.write(p,p.relative_to(ROOT))
-        z.writestr('README.txt','P9 engineering preview. Run ./lantern-canal.x86_64\nWASD/arrows: movement; E: interact; T: time; F6: DOF; F8: parallax.\nOriginal ImageGen source archive remains incomplete. Visual approval pending.\n')
+        z.writestr('README.txt','P9 engineering preview. Run ./lantern-canal.x86_64\nWASD/arrows: movement; E: interact; T: time; O: DOF; P: parallax; C: cameras; H: hide HUD. Click the toolbar for panels and confirmed Quit. F8 remains the editor Stop shortcut.\nOriginal ImageGen source archive remains incomplete. Visual approval pending.\n')
     with zipfile.ZipFile(OUT/'p9-project-source.zip','w',zipfile.ZIP_DEFLATED) as z:
         for p in source_files(ROOT):
             if 'research' in p.parts: continue

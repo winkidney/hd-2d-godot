@@ -40,7 +40,7 @@ func _ready() -> void:
         add_child(npc)
     for label in hud.container.find_children("*","Label",true,false):
         if label.text.begins_with("R I V E R"): label.text = "C A N A L   F R O N T"
-        elif label.text.begins_with("HD-2D SCENE"): label.text = "P9R2  /  FRONTAL PERSPECTIVE  /  F9 COMPARE F · W · O"
+        elif label.text.begins_with("HD-2D SCENE"): label.text = "P9R2  /  FRONTAL PERSPECTIVE  /  C COMPARE F · W · O"
     lighting.apply_preset("dusk")
     for arg in OS.get_cmdline_user_args():
         if arg.begins_with("--frontal-variant="): select_variant(arg.get_slice("=",1))
@@ -123,7 +123,8 @@ func _unhandled_input(event: InputEvent) -> void:
     # GUI gets first refusal; scrolling a slider/menu never zooms the world.
     if not event is InputEventMouseButton or not event.pressed: return
     if event.button_index not in [MOUSE_BUTTON_WHEEL_UP,MOUSE_BUTTON_WHEEL_DOWN]: return
-    if route_running or panels_open() or hud.dialogue.visible or tour or player.scripted_input or parallax_preview.active: return
+    if event.ctrl_pressed or event.alt_pressed or event.meta_pressed or event.shift_pressed: return
+    if route_running or panels_open() or popup_open() or text_edit_has_focus() or hud.dialogue.visible or tour or player.scripted_input or parallax_preview.active: return
     var direction := -1.0 if event.button_index==MOUSE_BUTTON_WHEEL_UP else 1.0
     var amount := absf(event.factor) if is_finite(event.factor) and event.factor!=0.0 else 1.0
     var limits: Vector2 = rig.LENS_LIMITS.radius
@@ -133,30 +134,14 @@ func _unhandled_input(event: InputEvent) -> void:
     set_lens("radius",radius)
     get_viewport().set_input_as_handled()
 
-func panels_open() -> bool:
-    return super.panels_open() or variant_panel.visible
+func camera_tuning_panel() -> Control:
+    return variant_panel
 
-func close_tuning() -> void:
-    variant_panel.hide()
-    super.close_tuning()
+func shortcut_route_running() -> bool:
+    return route_running
 
-func _input(event: InputEvent) -> void:
-    if event is InputEventKey and route_running:
-        if event.pressed and not event.echo and event.keycode == KEY_ESCAPE: route_cancelled = true
-        get_viewport().set_input_as_handled()
-        return
-    if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_F9:
-        var was_open := variant_panel.visible
-        close_tuning()
-        hud.close_dialogue()
-        if not was_open:
-            hud.container.show()
-            variant_panel.refresh()
-            variant_panel.show()
-        sync_input_lock()
-        get_viewport().set_input_as_handled()
-        return
-    super._input(event)
+func cancel_shortcut_route() -> void:
+    route_cancelled = true
 
 func run_route() -> Dictionary:
     if route_running: return {"passed":false,"reason":"Route already running"}

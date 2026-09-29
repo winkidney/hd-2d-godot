@@ -55,7 +55,7 @@ def main():
 
 ## 先看什么
 
-交付目录中的 `four-way.mp4` 为四段同路线、同速度录像的同步四宫格。`A.mp4` 至 `D.mp4` 保留各自1080p画面。运行 `lantern-canal-four-experiments.x86_64` 后按 F9 切换；A 为默认入口。F6 景深、F8 视差，T 切时段，WASD／方向键行走，E 交互。共同路线可由 F9 面板启动，Esc 取消。
+交付目录中的 `four-way.mp4` 为四段同路线、同速度录像的同步四宫格。`A.mp4` 至 `D.mp4` 保留各自1080p画面。运行 `lantern-canal-four-experiments.x86_64` 后按 C 切换；A 为默认入口。O 景深、P 视差，T 切时段，WASD／方向键行走，E 交互，H 隐藏界面。共同路线可由 C 面板启动，Esc 取消。面板也可通过工具栏打开；退出需要确认。F8 保留为编辑器停止键，不是游戏快捷键。
 
 ![四方案同条件](four-way.png)
 

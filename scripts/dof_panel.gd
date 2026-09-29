@@ -21,7 +21,7 @@ func configure(controller: RefCounted) -> void:
     box.add_theme_constant_override("separation",8)
     add_child(box)
     var title := Label.new()
-    title.text = "DEPTH OF FIELD   /   F6 CLOSE"
+    title.text = "DEPTH OF FIELD   /   O CLOSE"
     box.add_child(title)
     var presets := OptionButton.new()
     presets.name = "DofPreset"
