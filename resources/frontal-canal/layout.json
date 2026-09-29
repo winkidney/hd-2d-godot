@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "scene_id": "frontal-canal-r2",
+  "seed": 290929,
+  "camera": {
+    "position": [4,11.257657,30.108871], "target": [4,4,1], "fov": 35,
+    "far": 1400, "pitch_degrees": 14, "radius": 30,
+    "follow_gain": 0.7, "dead_zone": 1.0, "smoothing": 4,
+    "follow_max": [22,3]
+  },
+  "player_spawn": [4,1.2,5.8],
+  "bridge_center": [-5,1.2,3],
+  "bridge_scale": [1,1,1.1],
+  "walkway": {"center":[-1,1.2,3],"direction":[1,0,0],"length":38,"width":3.2,"camera_travel_target_m":[14,24]},
+  "river": {"center_x":-5,"width":6,"surface_y":-1.65,"bed_y":-2.75,"near_z":22,"far_z":-600},
+  "visual_aprons": [
+    {"id":"WestVisualApron","center":[-56,-0.7,5.5],"size":[68,3.8,59]},
+    {"id":"EastVisualApron","center":[55,-0.7,5.5],"size":[70,3.8,59]}
+  ],
+  "edge_buildings": [
+    {"id":"WestEdgeHouse","position":[-28,1.2,-15.5],"scale":1.05,"yaw":8},
+    {"id":"EastEdgeHouse","position":[27,1.2,-14.5],"scale":0.95,"yaw":-9}
+  ],
+  "edge_trees": [
+    {"id":"WestEdgeOak","position":[-26,1.2,-4.5],"scale":0.9},
+    {"id":"EastEdgeOak","position":[25,1.2,-5.5],"scale":0.95}
+  ],
+  "platforms": [
+    {"id":"EastQuayMain","center":[9.675,-0.7,-1.5],"size":[20.65,3.8,29]},
+    {"id":"EastQuayNorthLip","center":[-1.325,-0.7,-3.625],"size":[1.35,3.8,24.75]},
+    {"id":"EastQuaySouthLip","center":[-1.325,-0.7,12.125],"size":[1.35,3.8,1.75]},
+    {"id":"WestQuay","center":[-15,-0.7,-3.5],"size":[14,3.8,33]},
+    {"id":"UpperTerrace","center":[5.5,2.0,-11.5],"size":[13,1.6,11]}
+  ],
+  "buildings": [
+    {"id":"MainPalazzo","model":"palazzo","position":[4,2.8,-10],"scale":1.1,"yaw":0},
+    {"id":"WestBakeryHouse","model":"townhouse","position":[-18,1.2,-10.8],"scale":1.05,"yaw":0},
+    {"id":"WestCanalHouse","model":"townhouse","position":[-10.8,1.2,-15.5],"scale":0.95,"yaw":0},
+    {"id":"EastMerchantHouse","model":"townhouse","position":[17.1,1.2,-8.8],"scale":1.05,"yaw":0},
+    {"id":"WestRearHouse","model":"townhouse","position":[-19.2,1.2,-17.5],"scale":0.85,"yaw":0}
+  ],
+  "stairs": [
+    {"id":"MainTerraceStair","bottom":[10,1.2,0],"width":3.2,"run":6,"rise":1.6,"yaw":0},
+    {"id":"DockStair","bottom":[-3.4,0.03,10],"width":2.4,"run":2.75,"rise":1.17,"yaw":-90}
+  ],
+  "dock": {"position":[-3.8,-0.10,10],"scale":0.72,"deck_center":[-3.8,-0.03,10],"deck_size":[2.88,0.12,3.46]},
+  "lamps": [
+    [-9.45,1.2,5.1],[-0.55,1.2,5.1],[-14.2,1.2,-0.7],
+    [13.6,1.2,1.4],[11.7,2.8,-6.3],[0,2.8,-6.4],
+    [15.2,1.2,10.7],[-1.8,1.2,12.4]
+  ],
+  "rail_runs": [
+    [[-8.06,1.2,-19.8],[-8.06,1.2,0.64]],
+    [[-8.06,1.2,5.36],[-8.06,1.2,12.8]],
+    [[-1.94,1.2,-15.8],[-1.94,1.2,0.64]],
+    [[-1.94,1.2,5.36],[-1.94,1.2,8.65]],
+    [[-1.94,1.2,11.35],[-1.94,1.2,12.8]],
+    [[-21.8,1.2,12.85],[-8.1,1.2,12.85]],
+    [[-1.9,1.2,12.85],[19.8,1.2,12.85]],
+    [[-0.85,2.8,-5.93],[8.16,2.8,-5.93]],
+    [[11.84,2.8,-5.93],[11.9,2.8,-5.93]],
+    [[11.9,2.8,-6],[11.9,2.8,-16.85]],
+    [[-0.9,2.8,-6],[-0.9,2.8,-16.85]],
+    [[-0.9,2.8,-16.85],[11.9,2.8,-16.85]],
+    [[-5.18,0.03,8.28],[-5.18,0.03,11.72]],
+    [[-5.18,0.03,8.28],[-2.42,0.03,8.28]],
+    [[-5.18,0.03,11.72],[-2.42,0.03,11.72]]
+  ],
+  "pillars": [
+    [-8.06,1.2,0.62],[-8.06,1.2,5.38],[-1.94,1.2,0.62],[-1.94,1.2,5.38],
+    [-0.85,2.8,-5.93],[8.1,2.8,-5.93],[11.9,2.8,-5.93]
+  ],
+  "props": [
+    {"id":"WestMarket","model":"market","position":[-16.9,1.2,-3.8],"scale":0.9,"yaw":0,"solid_size":[3.45,1.6,1.9]},
+    {"id":"EastMarket","model":"market","position":[17.25,1.2,-1.4],"scale":0.86,"yaw":0,"solid_size":[3.3,1.6,1.8]},
+    {"id":"WestStockBarrel","model":"barrel","position":[-19.3,1.2,-2.4],"scale":1,"solid_size":[0.86,0.95,0.86]},
+    {"id":"WestStockCrate","model":"crate","position":[-20.15,1.2,-2.8],"scale":1,"solid_size":[0.9,0.88,0.9]},
+    {"id":"EastStockBarrel","model":"barrel","position":[19.3,1.2,-0.6],"scale":0.9,"solid_size":[0.78,0.87,0.78]},
+    {"id":"EastStockCrate","model":"crate","position":[19.2,1.2,-2.2],"scale":0.9,"solid_size":[0.82,0.8,0.82]},
+    {"id":"WestBench","model":"bench","position":[-18.8,1.2,8.7],"scale":1,"yaw":0,"solid_size":[2.25,0.65,0.75]},
+    {"id":"EastBench","model":"bench","position":[15.4,1.2,9.4],"scale":1,"yaw":0,"solid_size":[2.25,0.65,0.75]},
+    {"id":"WestFlowers","model":"planter","position":[-14.8,1.2,9.2],"scale":1,"solid_size":[1.7,0.6,0.65]},
+    {"id":"EastFlowers","model":"planter","position":[13.4,1.2,8.1],"scale":1,"solid_size":[1.7,0.6,0.65]},
+    {"id":"EastEntryFlowers","model":"planter","position":[18.8,1.2,6.8],"scale":1,"solid_size":[1.7,0.6,0.65]},
+    {"id":"TerraceWestFlowers","model":"planter","position":[0.7,2.8,-6.35],"scale":0.75},
+    {"id":"CanalBoat","model":"boat","position":[-6.8,-1.58,9.4],"scale":0.65,"yaw":-8}
+  ],
+  "wires": [
+    [[-20,5.9,-3.9],[-8.7,5.8,-4.2]],
+    [[12.8,5.6,-2.6],[19.4,5.9,-3.0]],
+    [[-10.6,6.0,0.2],[0.2,6.2,-0.8]]
+  ],
+  "interactions": [
+    {"id":"merchant","position":[16.3,1.2,0.1],"radius":2.3,"title":"Canal Market","text":"This market opens onto the canal promenade. Walk left and right to see the palazzo's actual side walls."},
+    {"id":"baker","position":[-13,1.2,1.5],"radius":2.3,"title":"West Bank Bakery","text":"The broad bridge leads back to the east bank. The terrace stair stands to the right of the palazzo."},
+    {"id":"noble","position":[5.5,2.8,-6.55],"radius":2.5,"title":"Palazzo Terrace","text":"The building keeps its own depth. Your moving viewpoint reveals its two sides without turning the building."},
+    {"id":"dock_sign","position":[0.3,1.2,11.25],"radius":2.1,"title":"Canal Landing","text":"The inset stone stair descends to the lower landing. Stay within the dock rails."}
+  ],
+  "npcs": [
+    {"sprite":"merchant","position":[16.3,1.2,0.1]},
+    {"sprite":"baker","position":[-13,1.2,1.5]},
+    {"sprite":"noble","position":[5.5,2.8,-6.55]},
+    {"sprite":"keeper","position":[12.7,1.2,6.1]},
+    {"sprite":"baker","position":[-11.1,1.2,6.6]}
+  ],
+  "view_anchors": {
+    "building_id":"MainPalazzo", "left":[-16,1.2,3], "center":[4,1.2,5.8], "right":[17,1.2,3],
+    "left_wall_center":[0.15,6.54,-10], "front_wall_center":[4,6.54,-7.25], "right_wall_center":[7.85,6.54,-10]
+  },
+  "route_stops": [
+    {"id":"spawn","position":[4,1.2,5.8],"kind":"view_center"},
+    {"id":"bridge_east","position":[0.4,1.2,3],"kind":"bridge"},
+    {"id":"bridge_west","position":[-10.5,1.2,3],"kind":"bridge"},
+    {"id":"observe_left","position":[-16,1.2,3],"kind":"view_left"},
+    {"id":"bakery_talk","position":[-13,1.2,2.7],"kind":"interaction","interaction_id":"baker"},
+    {"id":"bridge_return_west","position":[-10.5,1.2,3],"kind":"bridge"},
+    {"id":"bridge_return_east","position":[0.4,1.2,3],"kind":"bridge"},
+    {"id":"observe_right","position":[17,1.2,3],"kind":"view_right"},
+    {"id":"stair_approach","position":[10,1.2,2],"kind":"walk"},
+    {"id":"stair_bottom","position":[10,1.2,0.5],"kind":"stairs"},
+    {"id":"stair_top","position":[10,2.8,-6.6],"kind":"stairs"},
+    {"id":"terrace_talk","position":[7,2.8,-6.55],"kind":"interaction","interaction_id":"noble"},
+    {"id":"terrace_return","position":[10,2.8,-6.6],"kind":"walk"},
+    {"id":"upper_side","position":[10,2.8,-10],"kind":"upper"},
+    {"id":"upper_return","position":[10,2.8,-6.6],"kind":"walk"},
+    {"id":"stair_descend","position":[10,1.2,0.5],"kind":"stairs"},
+    {"id":"dock_approach_east","position":[10,1.2,6.5],"kind":"walk"},
+    {"id":"dock_sign_read","position":[1,1.2,10],"kind":"interaction","interaction_id":"dock_sign"},
+    {"id":"dock_stair_top","position":[-0.5,1.2,10],"kind":"stairs"},
+    {"id":"dock_stair_bottom","position":[-3.4,0.03,10],"kind":"stairs"},
+    {"id":"landing","position":[-4.4,0.03,10.4],"kind":"dock"},
+    {"id":"dock_return_bottom","position":[-3.4,0.03,10],"kind":"stairs"},
+    {"id":"dock_return_top","position":[-0.5,1.2,10],"kind":"stairs"},
+    {"id":"return_bank","position":[1,1.2,10],"kind":"walk"},
+    {"id":"return_spawn","position":[4,1.2,5.8],"kind":"view_center"}
+  ]
+}

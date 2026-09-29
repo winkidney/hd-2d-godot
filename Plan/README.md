@@ -1,5 +1,11 @@
 # Plan · HD-2D 河畔驿站
 
+## P9R2 正面重建
+
+旧四方案结果已提交为 `171e632`，未推送。按用户新要求另建[正面运河场景](features/p9-frontal-rebuild.md)，取消斜向鸟瞰构图，保留F/W/O三组真实透视观察。旧A/B/C/D及证据不覆盖，新验收独立记录于 `docs/validation/p9-frontal`。新工作不自动提交。
+
+镜距与FOV调节见[操作与验收](../docs/validation/p9-frontal-zoom/README.md)。用户随后明确要求本地提交现有结果，包含38份现有纹理压缩导入变更，当前校验与历史交付的边界见[提交前校验](../docs/validation/p9-frontal-zoom/commit-check.md)，不推送。
+
 ## P9 接续实施
 
 [参考场景重建计划](features/reference-scene-rebuild.md) 已有独立场景和模块化素材。两张用户重新上传的ImageGen原PNG已归档，素材板与历史散列的差异保留在来源记录中。[四方案实验计划](features/p9-four-experiments.md) 正在实现原图直接生产链、透视/正交/绕转/多视图比较；旧 [P9 验收](../docs/validation/p9/README.md) 不作为新实验已通过的证据。

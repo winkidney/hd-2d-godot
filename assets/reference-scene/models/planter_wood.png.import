@@ -3,9 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://il3uyqpomo12"
-path="res://.godot/imported/planter_wood.png-c8a35031c0ef02a89bdc67e4605ee887.ctex"
+path.s3tc="res://.godot/imported/planter_wood.png-c8a35031c0ef02a89bdc67e4605ee887.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "e24e664c23d47e061b755533df897f50"
@@ -14,11 +15,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/reference-scene/models/planter_wood.png"
-dest_files=["res://.godot/imported/planter_wood.png-c8a35031c0ef02a89bdc67e4605ee887.ctex"]
+dest_files=["res://.godot/imported/planter_wood.png-c8a35031c0ef02a89bdc67e4605ee887.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -40,4 +41,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

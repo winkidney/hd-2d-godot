@@ -3,9 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://boygf0k1lax8m"
-path="res://.godot/imported/dock_canvas.png-b0c626a11e946149ba27ef453c05895d.ctex"
+path.s3tc="res://.godot/imported/dock_canvas.png-b0c626a11e946149ba27ef453c05895d.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "bd9ac5e51def4d58753afb61428aa416"
@@ -14,11 +15,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/reference-scene/models/dock_canvas.png"
-dest_files=["res://.godot/imported/dock_canvas.png-b0c626a11e946149ba27ef453c05895d.ctex"]
+dest_files=["res://.godot/imported/dock_canvas.png-b0c626a11e946149ba27ef453c05895d.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -40,4 +41,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

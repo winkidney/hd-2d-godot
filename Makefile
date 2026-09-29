@@ -1,5 +1,20 @@
 PYTHON ?= python3
 
+.PHONY: frontal-run frontal-import frontal-bake frontal-test frontal-quick frontal-visual frontal-record frontal-export frontal-rebuild frontal-package
+frontal-run:
+	$(PYTHON) -c 'import sys,subprocess;sys.path.insert(0,"tools");from project import engine,ROOT,desktop_environment;subprocess.run([engine(),"--path",str(ROOT),"scenes/frontal_canal.tscn"],env=desktop_environment(),check=True)'
+frontal-import frontal-bake frontal-quick frontal-record frontal-export frontal-rebuild:
+	$(PYTHON) tools/p9frontal/run.py $(patsubst frontal-%,%,$@)
+frontal-test:
+	$(PYTHON) tests/p9/check_assets.py
+	$(PYTHON) -c 'import sys,subprocess;sys.path.insert(0,"tools");from project import engine;subprocess.run([engine(),"--headless","--path",".","--script","res://tests/p9frontal/camera_unit.gd"],check=True)'
+	$(PYTHON) -c 'import sys,subprocess;sys.path.insert(0,"tools");from project import engine;subprocess.run([engine(),"--headless","--path",".","--script","res://tests/p9frontal/lens_unit.gd"],check=True)'
+	$(PYTHON) tools/p9frontal/run.py headless
+frontal-visual:
+	$(PYTHON) tools/p9frontal/run.py gpu
+frontal-package:
+	$(PYTHON) tools/p9frontal/package.py
+
 .PHONY: p9-run p9-test p9-visual p9-export p9-rebuild p9-package
 p9-run:
 	$(PYTHON) -c 'import sys,subprocess;sys.path.insert(0,"tools");from project import engine,ROOT,desktop_environment;subprocess.run([engine(),"--path",str(ROOT),"scenes/reference_scene.tscn"],env=desktop_environment(),check=True)'

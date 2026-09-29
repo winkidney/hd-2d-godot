@@ -3,9 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c82gry3p13wjq"
-path="res://.godot/imported/palazzo_plaster.png-f0a468485539062273c23bb4f1f0929e.ctex"
+path.s3tc="res://.godot/imported/palazzo_plaster.png-f0a468485539062273c23bb4f1f0929e.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "bb3f03795842472e2b96bf93d130ba54"
@@ -14,11 +15,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/reference-scene/models/palazzo_plaster.png"
-dest_files=["res://.godot/imported/palazzo_plaster.png-f0a468485539062273c23bb4f1f0929e.ctex"]
+dest_files=["res://.godot/imported/palazzo_plaster.png-f0a468485539062273c23bb4f1f0929e.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -40,4 +41,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

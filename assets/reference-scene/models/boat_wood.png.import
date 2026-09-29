@@ -3,9 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsg5rmbhsen4y"
-path="res://.godot/imported/boat_wood.png-fe426f304e47917634e4fb7e6630c2b7.ctex"
+path.s3tc="res://.godot/imported/boat_wood.png-fe426f304e47917634e4fb7e6630c2b7.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "e24e664c23d47e061b755533df897f50"
@@ -14,11 +15,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/reference-scene/models/boat_wood.png"
-dest_files=["res://.godot/imported/boat_wood.png-fe426f304e47917634e4fb7e6630c2b7.ctex"]
+dest_files=["res://.godot/imported/boat_wood.png-fe426f304e47917634e4fb7e6630c2b7.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -40,4 +41,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0
