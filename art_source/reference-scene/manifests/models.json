@@ -1,9 +1,10 @@
 {
-  "schema": 1,
-  "source_type": "authored-blender-with-imagegen-derived-textures",
+  "schema": 2,
+  "source_type": "authored-blender-with-imagegen-original-derived-textures",
   "blender": "5.2.2 LTS",
   "generator": "tools/p9/build_models.py",
-  "input_manifest_sha256": "be35363ce392fc7e1dc2f833308e3d5f665b90b566379845b690fa8a09ab9980",
+  "house_surfaces": "Front and rear belts; both X side walls have outward-facing UV decals, thick window frames, sills, flowerboxes, eaves, corner quoins and rain pipes.",
+  "input_manifest_sha256": "a8f14d47609d47ce9f84d7f21db6dbc0fdc719e9f5d47313c9b787bdee226707",
   "models": [
     {
       "id": "arch_bridge",
@@ -11,7 +12,8 @@
       "glb": "assets/reference-scene/models/arch_bridge.glb",
       "vertices": 1736,
       "objects": 4,
-      "glb_sha256": "1bc5640f880fb6419849248281b84fedc1f5ebe7269ed4c369856994eaf8a1ca"
+      "glb_sha256": "e7ec2e9d3a2d13cfd8dcb11d864239de2d0dfbbc761d48734ec215e0324dfe62",
+      "blend_sha256": "13746664782072c3e1e6dd117a4fe21491bdda9c02837a6c4225d4fa806e65d3"
     },
     {
       "id": "stairs",
@@ -19,7 +21,8 @@
       "glb": "assets/reference-scene/models/stairs.glb",
       "vertices": 240,
       "objects": 2,
-      "glb_sha256": "6ed2a7ccb3c04c6a128d641e8016211ab69392734a39cfebf44bff0ea2963a4e"
+      "glb_sha256": "ee7da901834ce0b9e98c7c7d77605d458fe12b2d3f9903f4bb7f13c6a78810ea",
+      "blend_sha256": "f2a43f6784a586ee3d905c28f6a0cc5acb5de1c854633ff5ed14ac6dc150d1c8"
     },
     {
       "id": "pillar",
@@ -27,7 +30,8 @@
       "glb": "assets/reference-scene/models/pillar.glb",
       "vertices": 48,
       "objects": 2,
-      "glb_sha256": "c57b66b71dad2bee9ace8f8f6aeb080bf29bfbbdd296c23c053fc35f011b7afc"
+      "glb_sha256": "b2e43f2164f48d0eac1cdaab9f6ba63ca95aa1890dc887783395f0a567192d47",
+      "blend_sha256": "33d06bc300f8f81ebf8322a2aa49607d2bedbd270bd1c6159c70c27ca1241245"
     },
     {
       "id": "railing",
@@ -35,31 +39,35 @@
       "glb": "assets/reference-scene/models/railing.glb",
       "vertices": 112,
       "objects": 1,
-      "glb_sha256": "ee8e72cd7b1f1aecb8a111855b9706f8276c139974c22cee3188786569df7ae0"
+      "glb_sha256": "bdd76723fef8ccb790702b35189caeee90c81eb6d986372cc155a6359857caaa",
+      "blend_sha256": "4dd69b0391861f9bed5457a30d40f7a20e719161512d281509b1a75ff60c37d8"
     },
     {
       "id": "palazzo",
       "blend": "art_source/reference-scene/blender/palazzo.blend",
       "glb": "assets/reference-scene/models/palazzo.glb",
-      "vertices": 666,
-      "objects": 11,
-      "glb_sha256": "8bf7c000366de55cee679171e3c308d59cd10140e60dbdc5b6ba7b8b0db8539c"
+      "vertices": 1154,
+      "objects": 12,
+      "glb_sha256": "b9b5e764f50c50532ce89b8b354b85d51cef4ffcc92dd4eee8c58e117f72d4f5",
+      "blend_sha256": "4c1a5ad2e47833ec83b765d59f16b65ada8b3fce9868800194c5990cf582bf2c"
     },
     {
       "id": "townhouse",
       "blend": "art_source/reference-scene/blender/townhouse.blend",
       "glb": "assets/reference-scene/models/townhouse.glb",
-      "vertices": 306,
-      "objects": 11,
-      "glb_sha256": "761727302b7c52fc8e02950b82e72a003b18ee471fd6f8a1efef1267bd5407fb"
+      "vertices": 746,
+      "objects": 12,
+      "glb_sha256": "b3732db0f3fcf0d53c2215bf6fff96f9344a9a8a2ecdb43317c06c332915cccc",
+      "blend_sha256": "4fd9dd16edf5c979fd648aab079341598cb3b5aaa1b02d4f20a2c1b2d13f202d"
     },
     {
       "id": "tower",
       "blend": "art_source/reference-scene/blender/tower.blend",
       "glb": "assets/reference-scene/models/tower.glb",
-      "vertices": 338,
-      "objects": 11,
-      "glb_sha256": "a1066902efc39f6f23d45a4be7ab3a807cd763f2dd575981c422f024357c06b7"
+      "vertices": 906,
+      "objects": 12,
+      "glb_sha256": "902092db09c2a573c9a39760b7d87f12c6ad37963aea519a47ae510aa6a17249",
+      "blend_sha256": "0db68e99617465d65a86968aa21d5c79dc438cc68e680e6245e0f9538b4bf8d9"
     },
     {
       "id": "market",
@@ -67,7 +75,8 @@
       "glb": "assets/reference-scene/models/market.glb",
       "vertices": 712,
       "objects": 6,
-      "glb_sha256": "bb0b3f7717c6f482da164f29396ceb57436b1c0eab65805e3127e07fd2aa27f3"
+      "glb_sha256": "99a11d6bada3d2c380e556c667f99edb2b5c64268265632ac12c82285b6af271",
+      "blend_sha256": "2c5fa006fa0a25ab4c63969113289c157f5256ef6e944922769f6d2c9a3ac122"
     },
     {
       "id": "lamp",
@@ -75,7 +84,8 @@
       "glb": "assets/reference-scene/models/lamp.glb",
       "vertices": 182,
       "objects": 4,
-      "glb_sha256": "ec767cbfc51e5966e30d92f3e48bd3c0e48add973b78f58f01f00254adaafd94"
+      "glb_sha256": "cb7200544e488e0b14970e4f2c44a511d90c4d440cbce32716c9409b09bb0cc2",
+      "blend_sha256": "d8c11d44a7158e2d4512ca5b680d16cdfab4101bd0f7d13aa592ad7dbf31a781"
     },
     {
       "id": "barrel",
@@ -83,7 +93,8 @@
       "glb": "assets/reference-scene/models/barrel.glb",
       "vertices": 140,
       "objects": 2,
-      "glb_sha256": "fe8404cdffe9ab3527d4d544ead1fb92100e9000390de4857a28b435a04759c8"
+      "glb_sha256": "b36a869fec93aa84c0ee3b1d75f9ed424d5fc6e304fd6f9ebe4a3618b50df09e",
+      "blend_sha256": "381b656f90570eda884f9247322bebc33230a91da314aeb1827473470392b380"
     },
     {
       "id": "crate",
@@ -91,7 +102,8 @@
       "glb": "assets/reference-scene/models/crate.glb",
       "vertices": 56,
       "objects": 1,
-      "glb_sha256": "4c5e74151f08fea8434aa6c783e454f754e42e26f7a2292d33178c0f852b1f11"
+      "glb_sha256": "1b8d94e37b20a219abe7fbf308fb03c2aeda236c641a56602cd81c68104f6682",
+      "blend_sha256": "6b314aa73432b1ed05a650865ced28760680dc79222a442f10dda477d3319d9e"
     },
     {
       "id": "dock",
@@ -99,7 +111,8 @@
       "glb": "assets/reference-scene/models/dock.glb",
       "vertices": 368,
       "objects": 2,
-      "glb_sha256": "3a1d0b785e2e7c1c25f0920894eddf50659004ad54646589f42bbc6c5abd69af"
+      "glb_sha256": "eae80a038fe773a1a6dd78768c5811a1b75614cafe1f24a6dad1ebe31ce9e32f",
+      "blend_sha256": "e14b548d20825e27499ddb0a61ee3c62f5330ebae3ab27c517924dfa417b2b15"
     },
     {
       "id": "bench",
@@ -107,7 +120,8 @@
       "glb": "assets/reference-scene/models/bench.glb",
       "vertices": 88,
       "objects": 2,
-      "glb_sha256": "0fed8df7cc3405a26ac8ecc5223caa8065e21dc5219ecb49afdf665c626ef6db"
+      "glb_sha256": "2fab4ef4d193c8a760031e5c3bebb7de55d79d138ae205a8899d92c0c990257f",
+      "blend_sha256": "bed85ba57f095460e65eb57e56abc53d06999aa6ef29ed4d767a98dc760d5e94"
     },
     {
       "id": "boat",
@@ -115,7 +129,8 @@
       "glb": "assets/reference-scene/models/boat.glb",
       "vertices": 94,
       "objects": 1,
-      "glb_sha256": "f9e4746412c80ac7654793c534298028a007ab6136d9b5a11b27ebb07d9dae15"
+      "glb_sha256": "c3ed1b4aa3f940ac9da50673f3e24e4220c04970bab4a4b09985ece41b78d216",
+      "blend_sha256": "fcc6af0ba095bb086da682d1e58cc83b2903065c652c7e7ac683ed03f850b848"
     },
     {
       "id": "planter",
@@ -123,7 +138,8 @@
       "glb": "assets/reference-scene/models/planter.glb",
       "vertices": 20,
       "objects": 2,
-      "glb_sha256": "2c9b58f025fd8417969bce073982008151c4e217f30452650e9cb2667f43b6ee"
+      "glb_sha256": "8e98578d8daa0b2aad8b88f679a77135cb9047e423dae74ba4a1a55b9e71d979",
+      "blend_sha256": "31e0862fd302513236a5514fcfc331fdfb586ab6208fab108fb273f4a6432bdc"
     },
     {
       "id": "retaining",
@@ -131,7 +147,10 @@
       "glb": "assets/reference-scene/models/retaining.glb",
       "vertices": 16,
       "objects": 2,
-      "glb_sha256": "d4613d7fd99321c913765c46ed96e71bcdebb55a66a6f38eab6242b1fc823c1f"
+      "glb_sha256": "cbce6d230b1fde7e910d5ceff6e7ebb6f179850a66b7c2a8c9bb96490b592eb5",
+      "blend_sha256": "abe2d965cd3053929a89bc4bc2bbb0e645bb6ec20adbb731dc10f909e363be76"
     }
-  ]
+  ],
+  "input_texture_manifest_sha256": "ed30c1b039ee029b45dea8eeb921e0dbd7228922dc80be873e764d407abfe674",
+  "provenance_note": "input_manifest_sha256 retains the original model-build snapshot. input_texture_manifest_sha256 binds exactly the model texture records; later actor-only cleanup changes sprites without changing any texture, GLB or blend bytes."
 }

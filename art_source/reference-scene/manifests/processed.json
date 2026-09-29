@@ -1,18 +1,57 @@
 {
-  "schema": 1,
-  "source_type": "imagegen-derived",
-  "input_sha256": "84542754221fc40760da5b9d8207afab79d580089232a95c21b4ce42dd85a837",
+  "schema": 2,
+  "source_type": "imagegen-original-derived",
+  "input_path": "art_source/reference-scene/originals/town-module-board-upload-20260929.png",
+  "input_sha256": "48db5064440c2a2562591ea42eaec7a485f02b272a29743afc08f02bea19d3a0",
+  "input_rgba_sha256": "fb4a2df5adf65140b1c7ebac304a4caa50b354d89c965a7733377ecd128313ba",
+  "recipe_sha256": "876abf45ee1b6773a7542bb00e916ca67ee0660b623d0172bc7b1369202ab5d8",
   "generator": "tools/p9/process_assets.py",
+  "pillow": "12.3.0",
+  "texture_size": [
+    64,
+    64
+  ],
   "sprite_frame": [
     48,
     64
   ],
+  "model_texture_manifest_sha256": "ed30c1b039ee029b45dea8eeb921e0dbd7228922dc80be873e764d407abfe674",
   "directions": [
     "front",
     "back",
     "left",
     "right"
   ],
+  "processing": {
+    "coordinates": "original PNG pixels, rectangles left/top/right/bottom exclusive; quads upper-left/lower-left/lower-right/upper-right",
+    "rectification": "Pillow QUAD samples original perspective-bearing texture patches directly; flat crops use identity rectification",
+    "paper_removal": {
+      "algorithm": "border-connected flood fill",
+      "minimum_channel": 204,
+      "maximum_channel_spread": 46
+    },
+    "actor_ground_shadow": {
+      "algorithm": "exterior-connected neutral-gray removal restricted to bottom 18 percent of original actor crop",
+      "start_y_fraction": 0.82,
+      "minimum_channel": 70,
+      "maximum_channel_spread": 42,
+      "protection": "pixels above foot band unchanged; dark shoes and colored hems stop flood fill"
+    },
+    "downsample": "LANCZOS to 64x64 for textures; aspect-fit decals with 2px margin; actors 48x64 with 3px margin",
+    "color": {
+      "saturation": 0.92,
+      "contrast": 1.04,
+      "quantizer": "MEDIANCUT",
+      "dither": "NONE",
+      "texture_colors": 64,
+      "actor_colors": 48
+    },
+    "alpha": "binary threshold >127; fully transparent pixels normalized to zero RGBA",
+    "tile_edges": "opposite texture edge RGB averaged identically",
+    "atlas": "192x256 RGBA, four 48x64 frames in front/back/left/right rows; deterministic derived foot swing only",
+    "runtime_sampling": "nearest; texture mipmaps enabled, actor mipmaps disabled",
+    "randomness": "none"
+  },
   "animation_note": "Hero has three sourced directions plus mirroring and derived lower-leg swing. NPCs are front-only static sprites repeated in atlas for API compatibility.",
   "assets": [
     {
@@ -21,7 +60,8 @@
         64,
         64
       ],
-      "sha256": "7daf345f96dd2302e96918b12ca8abea4da4a5c70ca34cae69134008427a4ad4",
+      "sha256": "7b3fc280f3f25216d3b7a66b8b677dd122742a1488e8b8336001f2c3dd19d6fb",
+      "rgba_sha256": "0eb70842dc24390423cd978e68a5be5ab4eb51748d29daf1e603073d041dd3d4",
       "mode": "RGB"
     },
     {
@@ -30,7 +70,8 @@
         64,
         64
       ],
-      "sha256": "262cde6f0b15614eaa8806c8bf25c1a5267de40ed9e19cbdec993742979939db",
+      "sha256": "d04d62819aa99c4643029bffaf1220f88e713b26f755cacf6835130c598327d3",
+      "rgba_sha256": "80a298474f77ad7560cbefb4dbe3985148587848096ff90d2caf0f4faa78fabf",
       "mode": "RGB"
     },
     {
@@ -39,7 +80,8 @@
         64,
         64
       ],
-      "sha256": "ff1d20cb18f739b8a88290399f8eb6d84102aa8b5d02569d5a28a98280d8cb01",
+      "sha256": "7f003df28b23dd0dda41dec287ba5ca6ab6ba3dd31b4fb6883dba74aedaa60e5",
+      "rgba_sha256": "35d1ce329495ffbb457261314333d7868e924f82ecd9f500d1cf2842a4331925",
       "mode": "RGB"
     },
     {
@@ -48,7 +90,8 @@
         64,
         64
       ],
-      "sha256": "e734576afc63ade411cf2b1b671748abea91e9805502715fd74617dc5b1ee908",
+      "sha256": "6bc58c9715fcf6947e744e906d2feadfea8ad329a2f866c2f22e007496e78ec9",
+      "rgba_sha256": "0024ca529c77ff32f3cd2d850bdddca136cf58c83ff725f6467535ba9d82de68",
       "mode": "RGB"
     },
     {
@@ -57,7 +100,8 @@
         64,
         64
       ],
-      "sha256": "8a897d2cd3438a9bb999b48bbb0e0ef5d6d5b189276674267d78adc7234f2d84",
+      "sha256": "ace1e1e2687187013d1f71bd8e838630bef297b78f4055bf5686b82d88d5f3b8",
+      "rgba_sha256": "49b1df057b76f4d12013541c6eb7eb024773e578e5fa77d76cb45272952eec57",
       "mode": "RGB"
     },
     {
@@ -66,7 +110,8 @@
         64,
         64
       ],
-      "sha256": "b7e11cfb54465f531b8d45d17a44c3cc52c296c51044bbfd11669d65f9020bfc",
+      "sha256": "6b6532e63ee9edc7cd683a56b7938577ad8916ecf8a562425ee0df016c74b036",
+      "rgba_sha256": "9dd06c71c15709c6a62a1caab5f61235fa30c4c4f820ed1b0f4c0e99bebdd770",
       "mode": "RGB"
     },
     {
@@ -75,7 +120,8 @@
         64,
         64
       ],
-      "sha256": "3c83c47a6969643fa636a52e4f3c57d354edda894761bea1eca91b18ea7494af",
+      "sha256": "f5111371393bb448f4c21971ee0686b86fc05d9b84a9289e7bf5644c3fb6a3fd",
+      "rgba_sha256": "fe371d4c8434eda2d06004daeddfcc00faebd328bc813f4ed1ff2300b36b5815",
       "mode": "RGB"
     },
     {
@@ -84,7 +130,8 @@
         64,
         64
       ],
-      "sha256": "712c732f2ef73c37fdf7eab76ab891b85a6c13b5110602a097eeb0520b9ab942",
+      "sha256": "fdc4d7b901efdc4f09a7558857da174b2a70924bf9eed5dbb97615592a645b12",
+      "rgba_sha256": "44abc33669106be46f211a81bf0ce60c631f962c5ad1e3e9d7733be6fd827cef",
       "mode": "RGB"
     },
     {
@@ -93,7 +140,8 @@
         64,
         64
       ],
-      "sha256": "2661a35755e0de13ba557c28d50212efc30a3d48a40b9cf4b62099e4baf32d39",
+      "sha256": "b12293ac3161ff15ad41c75816d41ab07413fb5c74735a038e74bd3c9f2510c2",
+      "rgba_sha256": "dc1fcd37b673c07e8ca1b0ec0aed20429c7bab699f63f7fbdf8d87828130ec0b",
       "mode": "RGB"
     },
     {
@@ -102,7 +150,8 @@
         64,
         64
       ],
-      "sha256": "5db34dc41e1632b05b15e932f9759542b2be6deba86e6fa07e963552cd9dafe1",
+      "sha256": "839627439c6833d82c43831d8a05027c07ed6fc598002c3d559035fa36b35da6",
+      "rgba_sha256": "6cee20e3fa6fa0260d102e1ce8f54989a783cf2fbbc6227d5f9ce46d9eaf0c35",
       "mode": "RGBA"
     },
     {
@@ -111,7 +160,8 @@
         64,
         64
       ],
-      "sha256": "9889f175e9b85477fbf768c2f0a0830bed7e9b73aa228ee3b0c0fffcacb31ecf",
+      "sha256": "128a3a8142d88ec3177f7a4f85c5c97598cdddb54f34c64315f34841e694e256",
+      "rgba_sha256": "ff605aab11bd9f58e3f58ff663c4674738708bd9f690e4eb25caca2f2a8088f6",
       "mode": "RGBA"
     },
     {
@@ -120,7 +170,8 @@
         64,
         64
       ],
-      "sha256": "fe8b06f39ce8c5056585cab16b4d69a380b08885839d8e81f8ce96dc3d5b9f89",
+      "sha256": "fe8a51e9b1a2f75595a53c48b92ed0716500da94d987c6361ffd12c949bae2fc",
+      "rgba_sha256": "4d866bdec6ed1d382f484bfb1a47df547428011ecce0620732a8157dc33cfcc7",
       "mode": "RGBA"
     },
     {
@@ -129,7 +180,8 @@
         64,
         64
       ],
-      "sha256": "ca537edf791d6bede7e6dba668c12b53bdf2038a902a4e9374896e5867696c98",
+      "sha256": "a485d738f9b16107776e930d719fb85962ac3294749fa071b703e76bed1a7949",
+      "rgba_sha256": "089ca969b95d96ac256e43316608bab179bc58e5b70f2de0885d74118a5e8b16",
       "mode": "RGBA"
     },
     {
@@ -138,7 +190,8 @@
         64,
         64
       ],
-      "sha256": "60de8338c6603cb8dfb3301fc2621347886e575311c656abc103781c0386d3b4",
+      "sha256": "78aad8a8ae1148b6b7c042ff876398354071e1a5a722304a17c9cd279967441e",
+      "rgba_sha256": "5c35683735105f851a0d001156ae85f216503a39ce65cfb6ec4db3cc0d91246b",
       "mode": "RGBA"
     },
     {
@@ -147,7 +200,8 @@
         64,
         64
       ],
-      "sha256": "a1547c3b99ad59f5f349ea5df1e9e977ae84b741587c5677d0f0e70042536f20",
+      "sha256": "362fc8ce4b17e8b59f2bd678a0c27a33f2fdd6cce1ce77a9cf179b86d1772714",
+      "rgba_sha256": "1a4f07de5aec7cd0aaf8d99ead15152bc532296c56069dad698881d5d271f354",
       "mode": "RGBA"
     },
     {
@@ -156,7 +210,8 @@
         64,
         64
       ],
-      "sha256": "c2c4d2451520b65d21732d776618ad753dfddf8b34b495eeab8cb973a58d43d2",
+      "sha256": "a3ea76625759a182cccb1dced0496b3edce3113cde1951bae247d132ece52286",
+      "rgba_sha256": "8a93517b17b33f366ee8a0cd0d5e2059f07c0117f56e1c76c8055354d1c5c768",
       "mode": "RGBA"
     },
     {
@@ -165,7 +220,8 @@
         64,
         64
       ],
-      "sha256": "4a52e289a935da0b5cc6868df615ef783a9e51dbdd07cbec4c76ef19cd802c08",
+      "sha256": "3e29cb2795e5939693102c3f80a506fcb5b323dadc833ac35e262adb665a09d2",
+      "rgba_sha256": "09743bb62b6ea6312306be6702d39aa778232bdb8f104fd4337e6f8685acb309",
       "mode": "RGBA"
     },
     {
@@ -174,7 +230,8 @@
         64,
         64
       ],
-      "sha256": "01d450928e7d962fc79e76fa9b5dfc85aaea5c77ea9e42d272191ab04ceca51c",
+      "sha256": "8c812bdd2a771116a88e62e62ae2cd4af0a66db1d8dd69694f1060252a59eb0b",
+      "rgba_sha256": "aea78a8a2271cd15b22a86f695520f884012691e52fc290c98d31764bd52b00d",
       "mode": "RGB"
     },
     {
@@ -183,7 +240,8 @@
         192,
         256
       ],
-      "sha256": "1682481a369eac804871838eb80f61478a97d5c5afcb23824f1c51bb433e2937",
+      "sha256": "88865e52c5c55d4345204e90e5e55910eb1dcf3cdb27338fcd5d9ce1ac7c4528",
+      "rgba_sha256": "15a229bb9517fbaeb900b26e93884398a53ee1b33956678d7a0cc645446c7304",
       "mode": "RGBA"
     },
     {
@@ -192,7 +250,8 @@
         192,
         256
       ],
-      "sha256": "5b4959b27f2b451d85823cef0e1a00c95922db74e209cfe882b3941237e4f865",
+      "sha256": "b23e45f000338902dbca636d26a566deb1ad4933084b2227d3c81cff2cd8e85a",
+      "rgba_sha256": "fc3b27c872b533a6eceb2f7021e71744dde50ed903e0c02607229697542a62aa",
       "mode": "RGBA"
     },
     {
@@ -201,7 +260,8 @@
         192,
         256
       ],
-      "sha256": "cee85ab6b8eb2dbe8a4ae047815c4f70893bf0a15441f94dc62f427f043e72f9",
+      "sha256": "8d416b0259e6c1362a035a8e8ee37067943aa380215952f99505183a48f75d64",
+      "rgba_sha256": "6016e5393660f10ec9cffbef80aad4457bbca086c7d5189a145b28f435fabe37",
       "mode": "RGBA"
     },
     {
@@ -210,7 +270,8 @@
         192,
         256
       ],
-      "sha256": "596389700a165ded2f21ba37d882cdaebc11b33ce5fb1ce9fe3f092627e86f6f",
+      "sha256": "f10be81eb4e107a18c43f918bf6f32624e06e58e51c0cebe69f1fc54dcac4e85",
+      "rgba_sha256": "7f53788018d790845a2265c88e00f814a38b9046e07e47ea2c92fb0a1d1bf234",
       "mode": "RGBA"
     },
     {
@@ -219,7 +280,8 @@
         192,
         256
       ],
-      "sha256": "ddbf234723388c0e2e88dd725827af28ad16aa91d289ab078fa7d1e1bb8ae922",
+      "sha256": "72da519a5232e8b7045762dc5237d74903eb0ad2bd77060dcb4873788e3d5d44",
+      "rgba_sha256": "2173284cd752dfa99b295411d881545fe99c436b1e40acd5b2a5ad3fa1d3f83b",
       "mode": "RGBA"
     }
   ]

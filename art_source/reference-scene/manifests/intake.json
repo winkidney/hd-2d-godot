@@ -1,419 +1,79 @@
 {
-  "schema": 1,
-  "source_type": "imagegen-derived",
+  "schema": 2,
+  "source_type": "imagegen-original-derived",
   "upstream": {
     "file_id": "file_00000000a33c81f59bf8ac533a21cc7f",
     "generation_id": "9e6f4537-a0a2-4912-bc82-e84a47b9af9c",
     "sha256": "ff85aae1ce6b117ad597bc5932a4a2f01eacbc61140df3a2860fd1a59ba138ed",
-    "size": [
-      1448,
-      1086
-    ],
-    "review_coordinates": [
-      1408,
-      1056
-    ],
-    "prompt": "Not returned by original tool; not invented"
+    "size": [1448, 1086],
+    "prompt": "Not returned by original tool; not invented",
+    "status": "Historical tool record retained. The user-supplied original has matching dimensions but different bytes; byte identity is not asserted."
   },
   "intake": {
-    "path": "art_source/reference-scene/intake/approved-intake.webp",
-    "size": [
-      384,
-      256
-    ],
-    "sha256": "84542754221fc40760da5b9d8207afab79d580089232a95c21b4ce42dd85a837",
-    "recipe": "LANCZOS original to review size; crop rect; textures resize64; objects fit60 on64 warm-white; atlas6x4; quantize128 no dither; WebP q75. This normalized intake is the authoritative offline build input, not a lossless archive of the upstream image."
+    "path": "art_source/reference-scene/originals/town-module-board-upload-20260929.png",
+    "size": [1448, 1086],
+    "sha256": "48db5064440c2a2562591ea42eaec7a485f02b272a29743afc08f02bea19d3a0",
+    "rgba_sha256": "fb4a2df5adf65140b1c7ebac304a4caa50b354d89c965a7733377ecd128313ba",
+    "recipe": "Unmodified uploaded PNG is the production input. Crops use original-image pixels; no resized sheet or lossy intake is sampled."
+  },
+  "processing": {
+    "coordinates": "original PNG pixels, rectangles left/top/right/bottom exclusive; quads upper-left/lower-left/lower-right/upper-right",
+    "rectification": "Pillow QUAD samples original perspective-bearing texture patches directly; flat crops use identity rectification",
+    "paper_removal": {"algorithm": "border-connected flood fill", "minimum_channel": 204, "maximum_channel_spread": 46},
+    "actor_ground_shadow": {"algorithm": "exterior-connected neutral-gray removal restricted to bottom 18 percent of original actor crop", "start_y_fraction": 0.82, "minimum_channel": 70, "maximum_channel_spread": 42, "protection": "pixels above foot band unchanged; dark shoes and colored hems stop flood fill"},
+    "downsample": "LANCZOS to 64x64 for textures; aspect-fit decals with 2px margin; actors 48x64 with 3px margin",
+    "color": {"saturation": 0.92, "contrast": 1.04, "quantizer": "MEDIANCUT", "dither": "NONE", "texture_colors": 64, "actor_colors": 48},
+    "alpha": "binary threshold >127; fully transparent pixels normalized to zero RGBA",
+    "tile_edges": "opposite texture edge RGB averaged identically",
+    "atlas": "192x256 RGBA, four 48x64 frames in front/back/left/right rows; deterministic derived foot swing only",
+    "runtime_sampling": "nearest; texture mipmaps enabled, actor mipmaps disabled",
+    "randomness": "none"
   },
   "items": [
-    {
-      "id": "brick",
-      "source_rect": [
-        30,
-        73,
-        134,
-        156
-      ],
-      "cell": [
-        0,
-        0,
-        64,
-        64
-      ],
-      "kind": "texture"
-    },
-    {
-      "id": "paving",
-      "source_rect": [
-        533,
-        48,
-        618,
-        129
-      ],
-      "cell": [
-        64,
-        0,
-        64,
-        64
-      ],
-      "kind": "texture"
-    },
-    {
-      "id": "stone",
-      "source_rect": [
-        532,
-        148,
-        615,
-        173
-      ],
-      "cell": [
-        128,
-        0,
-        64,
-        64
-      ],
-      "kind": "texture"
-    },
-    {
-      "id": "plaster",
-      "source_rect": [
-        319,
-        48,
-        382,
-        174
-      ],
-      "cell": [
-        192,
-        0,
-        64,
-        64
-      ],
-      "kind": "texture"
-    },
-    {
-      "id": "roof",
-      "source_rect": [
-        916,
-        50,
-        1006,
-        141
-      ],
-      "cell": [
-        256,
-        0,
-        64,
-        64
-      ],
-      "kind": "texture"
-    },
-    {
-      "id": "wood",
-      "source_rect": [
-        995,
-        299,
-        1053,
-        380
-      ],
-      "cell": [
-        320,
-        0,
-        64,
-        64
-      ],
-      "kind": "texture"
-    },
-    {
-      "id": "canvas",
-      "source_rect": [
-        1166,
-        176,
-        1240,
-        224
-      ],
-      "cell": [
-        0,
-        64,
-        64,
-        64
-      ],
-      "kind": "texture"
-    },
-    {
-      "id": "green",
-      "source_rect": [
-        342,
-        579,
-        356,
-        634
-      ],
-      "cell": [
-        64,
-        64,
-        64,
-        64
-      ],
-      "kind": "texture"
-    },
-    {
-      "id": "water",
-      "source_rect": [
-        783,
-        302,
-        950,
-        491
-      ],
-      "cell": [
-        128,
-        64,
-        64,
-        64
-      ],
-      "kind": "texture"
-    },
-    {
-      "id": "door_green",
-      "source_rect": [
-        19,
-        552,
-        103,
-        715
-      ],
-      "cell": [
-        192,
-        64,
-        64,
-        64
-      ],
-      "kind": "decal"
-    },
-    {
-      "id": "window_arch",
-      "source_rect": [
-        235,
-        552,
-        316,
-        633
-      ],
-      "cell": [
-        256,
-        64,
-        64,
-        64
-      ],
-      "kind": "decal"
-    },
-    {
-      "id": "window_shutter",
-      "source_rect": [
-        322,
-        554,
-        374,
-        645
-      ],
-      "cell": [
-        320,
-        64,
-        64,
-        64
-      ],
-      "kind": "decal"
-    },
-    {
-      "id": "flowerbox",
-      "source_rect": [
-        244,
-        637,
-        311,
-        678
-      ],
-      "cell": [
-        0,
-        128,
-        64,
-        64
-      ],
-      "kind": "decal"
-    },
-    {
-      "id": "sign_banner",
-      "source_rect": [
-        496,
-        556,
-        566,
-        657
-      ],
-      "cell": [
-        64,
-        128,
-        64,
-        64
-      ],
-      "kind": "decal"
-    },
-    {
-      "id": "sign_menu",
-      "source_rect": [
-        528,
-        663,
-        594,
-        737
-      ],
-      "cell": [
-        128,
-        128,
-        64,
-        64
-      ],
-      "kind": "decal"
-    },
-    {
-      "id": "planter",
-      "source_rect": [
-        1129,
-        650,
-        1229,
-        735
-      ],
-      "cell": [
-        192,
-        128,
-        64,
-        64
-      ],
-      "kind": "decal"
-    },
-    {
-      "id": "lantern",
-      "source_rect": [
-        1344,
-        450,
-        1389,
-        512
-      ],
-      "cell": [
-        256,
-        128,
-        64,
-        64
-      ],
-      "kind": "decal"
-    },
-    {
-      "id": "hero_front",
-      "source_rect": [
-        31,
-        807,
-        87,
-        901
-      ],
-      "cell": [
-        320,
-        128,
-        64,
-        64
-      ],
-      "kind": "actor"
-    },
-    {
-      "id": "hero_back",
-      "source_rect": [
-        100,
-        807,
-        159,
-        901
-      ],
-      "cell": [
-        0,
-        192,
-        64,
-        64
-      ],
-      "kind": "actor"
-    },
-    {
-      "id": "hero_side",
-      "source_rect": [
-        166,
-        807,
-        219,
-        901
-      ],
-      "cell": [
-        64,
-        192,
-        64,
-        64
-      ],
-      "kind": "actor"
-    },
-    {
-      "id": "merchant_front",
-      "source_rect": [
-        267,
-        814,
-        311,
-        901
-      ],
-      "cell": [
-        128,
-        192,
-        64,
-        64
-      ],
-      "kind": "actor"
-    },
-    {
-      "id": "keeper_front",
-      "source_rect": [
-        393,
-        814,
-        444,
-        901
-      ],
-      "cell": [
-        192,
-        192,
-        64,
-        64
-      ],
-      "kind": "actor"
-    },
-    {
-      "id": "baker_front",
-      "source_rect": [
-        513,
-        814,
-        563,
-        901
-      ],
-      "cell": [
-        256,
-        192,
-        64,
-        64
-      ],
-      "kind": "actor"
-    },
-    {
-      "id": "noble_front",
-      "source_rect": [
-        628,
-        813,
-        672,
-        901
-      ],
-      "cell": [
-        320,
-        192,
-        64,
-        64
-      ],
-      "kind": "actor"
-    }
+    {"id":"brick","source_rect":[32,78,133,163],"quad":[32,80,32,163,133,163,133,77],"kind":"texture"},
+    {"id":"paving","source_rect":[549,47,635,132],"quad":[550,49,550,133,635,131,635,48],"kind":"texture"},
+    {"id":"stone","source_rect":[650,49,729,128],"kind":"texture"},
+    {"id":"plaster","source_rect":[330,51,391,180],"kind":"texture"},
+    {"id":"roof","source_rect":[938,50,1034,146],"quad":[938,50,938,146,1034,146,1033,50],"kind":"texture"},
+    {"id":"wood","source_rect":[1022,312,1081,370],"quad":[1022,313,1022,369,1081,370,1081,312],"kind":"texture"},
+    {"id":"canvas","source_rect":[1200,177,1268,234],"kind":"texture"},
+    {"id":"green","source_rect":[350,596,365,650],"kind":"texture"},
+    {"id":"water","source_rect":[809,310,973,505],"kind":"texture"},
+    {"id":"door_green","source_rect":[19,567,107,737],"kind":"decal"},
+    {"id":"window_arch","source_rect":[241,567,326,655],"kind":"decal"},
+    {"id":"window_shutter","source_rect":[330,568,386,652],"kind":"decal"},
+    {"id":"flowerbox","source_rect":[251,653,321,699],"kind":"decal"},
+    {"id":"sign_banner","source_rect":[509,571,584,676],"kind":"decal"},
+    {"id":"sign_menu","source_rect":[550,682,611,758],"kind":"decal"},
+    {"id":"planter","source_rect":[1161,668,1250,757],"kind":"decal"},
+    {"id":"lantern","source_rect":[1381,461,1432,528],"kind":"decal"},
+    {"id":"hero_front","source_rect":[31,831,94,927],"kind":"actor"},
+    {"id":"hero_back","source_rect":[103,833,165,927],"kind":"actor"},
+    {"id":"hero_side","source_rect":[171,831,226,927],"kind":"actor"},
+    {"id":"merchant_front","source_rect":[271,835,323,927],"kind":"actor"},
+    {"id":"keeper_front","source_rect":[402,835,460,928],"kind":"actor"},
+    {"id":"baker_front","source_rect":[527,835,581,928],"kind":"actor"},
+    {"id":"noble_front","source_rect":[645,835,695,928],"kind":"actor"}
   ],
   "reference": {
     "file_id": "file_000000006af4820c83f91393610efd2a",
     "sha256": "cb294b1cf9d36bcb5886d52db83b5945844adb9699c3a670633bdc25bdee020a",
-    "purpose": "visual reference only; no pixels sampled into runtime assets"
+    "purpose": "copyrighted visual research only; no pixels sampled into runtime assets"
   },
-  "upstream_archive_scope": "Full-size originals retained in conversation companion source archive; normalized intake and all derived assets archived in remote project."
+  "concept": {
+    "path": "art_source/reference-scene/originals/canal-extension-concept-upload-20260929.png",
+    "sha256": "6a5a13bbf85e044b3670c71e9a9a9fb32863fb95b1275dbc4c8bbf83dcda94ad",
+    "rgba_sha256": "4eb0e61896b62124e82eb78d1ed36075134391d167c41d07d520b877b1346688",
+    "size": [1672, 941],
+    "runtime_usage": false,
+    "purpose": "composition, density and lighting reference; never a scene image"
+  },
+  "historical_intake": {
+    "path": "art_source/reference-scene/intake/approved-intake.webp",
+    "sha256": "84542754221fc40760da5b9d8207afab79d580089232a95c21b4ce42dd85a837",
+    "size": [384, 256],
+    "runtime_build_input": false,
+    "baseline": "art_source/reference-scene/baseline-3b6333f"
+  },
+  "upstream_archive_scope": "Both user-supplied original PNGs retained without re-encoding; historical upstream hash mismatch documented."
 }

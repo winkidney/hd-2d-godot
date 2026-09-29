@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "reference": {
     "path": "art_source/reference-scene/research/otc-path-traveler.png",
     "sha256": "cb294b1cf9d36bcb5886d52db83b5945844adb9699c3a670633bdc25bdee020a",
@@ -7,16 +7,25 @@
     "runtime_usage": false
   },
   "imagegen_asset_board": {
-    "original_archived": false,
+    "original_archived": true,
+    "path": "art_source/reference-scene/originals/town-module-board-upload-20260929.png",
+    "sha256": "48db5064440c2a2562591ea42eaec7a485f02b272a29743afc08f02bea19d3a0",
+    "rgba_sha256": "fb4a2df5adf65140b1c7ebac304a4caa50b354d89c965a7733377ecd128313ba",
+    "size": [1448, 1086],
     "expected_sha256": "ff85aae1ce6b117ad597bc5932a4a2f01eacbc61140df3a2860fd1a59ba138ed",
     "retained_derivative": "art_source/reference-scene/intake/approved-intake.webp",
     "recipe_manifest": "art_source/reference-scene/manifests/intake.json",
-    "status": "original file unavailable through retrieved conversation and local image cache"
+    "status": "User re-upload archived without re-encoding. File hash differs from historical tool record; no byte identity claim. This PNG is now the direct reproducible production source.",
+    "historical_derivative_build_input": false
   },
   "imagegen_extension_concept": {
-    "original_archived": false,
+    "original_archived": true,
+    "path": "art_source/reference-scene/originals/canal-extension-concept-upload-20260929.png",
+    "sha256": "6a5a13bbf85e044b3670c71e9a9a9fb32863fb95b1275dbc4c8bbf83dcda94ad",
+    "rgba_sha256": "4eb0e61896b62124e82eb78d1ed36075134391d167c41d07d520b877b1346688",
+    "size": [1672, 941],
     "runtime_usage": false,
-    "status": "referenced by user; original image not returned by conversation retrieval"
+    "status": "User re-upload archived without re-encoding; composition and lighting reference only."
   },
   "anchors": {
     "coordinates": "Approximate normalized screen coordinates from visual inspection; world positions are authored design, not reconstructed survey data",
@@ -27,5 +36,15 @@
     "right_stair": {"reference_uv": [0.73, 0.41], "world_bottom": [17.5, 1.2, 3.2]},
     "camera": {"position": [16, 21, 32], "target": [0, 2, 1], "fov_degrees": 35}
   },
-  "acceptance": "incomplete until both original generated images are archived and linked"
+  "acceptance": "Both supplied original PNGs archived and linked. Historical board byte mismatch remains explicit. Current asset rebuild samples only the original board; runtime and visual acceptance are reported separately.",
+  "baseline": "art_source/reference-scene/baseline-3b6333f",
+  "checkpoint_baseline_exceptions": {
+    "project.godot": {
+      "historical_commit": "0673236",
+      "historical_sha256": "e88fea7e8412901bc37de3d3a1d06a55d122b886d59e4a619505a1784c6c8a72",
+      "checkpoint_commit": "3b6333f7b7e3aab09ffac34b4a97ef8d75ac3475",
+      "checkpoint_sha256": "abb14bd9dae624ff5d6931419ba6b75925ea8fc52ba7135d3f6a7e7d2442a4fc",
+      "reason": "The user-authorized P9 checkpoint already removed explicit engine-default renderer, DOF bokeh shape and jitter values and reordered the retained bokeh quality setting. Current project.godot is byte-identical to that checkpoint. This is not an F9 or four-experiment change; the historical baseline hash is retained."
+    }
+  }
 }

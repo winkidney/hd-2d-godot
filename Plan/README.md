@@ -2,7 +2,7 @@
 
 ## P9 接续实施
 
-[参考场景重建计划](features/reference-scene-rebuild.md) 已有独立场景和模块化素材，正在完成 [P9 验收](../docs/validation/p9/README.md)。完整 ImageGen 上游源图归档仍缺失；不能标为全部完成。
+[参考场景重建计划](features/reference-scene-rebuild.md) 已有独立场景和模块化素材。两张用户重新上传的ImageGen原PNG已归档，素材板与历史散列的差异保留在来源记录中。[四方案实验计划](features/p9-four-experiments.md) 正在实现原图直接生产链、透视/正交/绕转/多视图比较；旧 [P9 验收](../docs/validation/p9/README.md) 不作为新实验已通过的证据。
 
 状态：执行中。用户已接受视觉和交付范围；视觉定稿仍需用户验收。
 

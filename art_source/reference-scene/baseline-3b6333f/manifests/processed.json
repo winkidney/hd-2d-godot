@@ -1,0 +1,226 @@
+{
+  "schema": 1,
+  "source_type": "imagegen-derived",
+  "input_sha256": "84542754221fc40760da5b9d8207afab79d580089232a95c21b4ce42dd85a837",
+  "generator": "tools/p9/process_assets.py",
+  "sprite_frame": [
+    48,
+    64
+  ],
+  "directions": [
+    "front",
+    "back",
+    "left",
+    "right"
+  ],
+  "animation_note": "Hero has three sourced directions plus mirroring and derived lower-leg swing. NPCs are front-only static sprites repeated in atlas for API compatibility.",
+  "assets": [
+    {
+      "path": "assets/reference-scene/textures/brick.png",
+      "size": [
+        64,
+        64
+      ],
+      "sha256": "7daf345f96dd2302e96918b12ca8abea4da4a5c70ca34cae69134008427a4ad4",
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/reference-scene/textures/paving.png",
+      "size": [
+        64,
+        64
+      ],
+      "sha256": "262cde6f0b15614eaa8806c8bf25c1a5267de40ed9e19cbdec993742979939db",
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/reference-scene/textures/stone.png",
+      "size": [
+        64,
+        64
+      ],
+      "sha256": "ff1d20cb18f739b8a88290399f8eb6d84102aa8b5d02569d5a28a98280d8cb01",
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/reference-scene/textures/plaster.png",
+      "size": [
+        64,
+        64
+      ],
+      "sha256": "e734576afc63ade411cf2b1b671748abea91e9805502715fd74617dc5b1ee908",
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/reference-scene/textures/roof.png",
+      "size": [
+        64,
+        64
+      ],
+      "sha256": "8a897d2cd3438a9bb999b48bbb0e0ef5d6d5b189276674267d78adc7234f2d84",
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/reference-scene/textures/wood.png",
+      "size": [
+        64,
+        64
+      ],
+      "sha256": "b7e11cfb54465f531b8d45d17a44c3cc52c296c51044bbfd11669d65f9020bfc",
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/reference-scene/textures/canvas.png",
+      "size": [
+        64,
+        64
+      ],
+      "sha256": "3c83c47a6969643fa636a52e4f3c57d354edda894761bea1eca91b18ea7494af",
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/reference-scene/textures/green.png",
+      "size": [
+        64,
+        64
+      ],
+      "sha256": "712c732f2ef73c37fdf7eab76ab891b85a6c13b5110602a097eeb0520b9ab942",
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/reference-scene/textures/water.png",
+      "size": [
+        64,
+        64
+      ],
+      "sha256": "2661a35755e0de13ba557c28d50212efc30a3d48a40b9cf4b62099e4baf32d39",
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/reference-scene/textures/door_green.png",
+      "size": [
+        64,
+        64
+      ],
+      "sha256": "5db34dc41e1632b05b15e932f9759542b2be6deba86e6fa07e963552cd9dafe1",
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/reference-scene/textures/window_arch.png",
+      "size": [
+        64,
+        64
+      ],
+      "sha256": "9889f175e9b85477fbf768c2f0a0830bed7e9b73aa228ee3b0c0fffcacb31ecf",
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/reference-scene/textures/window_shutter.png",
+      "size": [
+        64,
+        64
+      ],
+      "sha256": "fe8b06f39ce8c5056585cab16b4d69a380b08885839d8e81f8ce96dc3d5b9f89",
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/reference-scene/textures/flowerbox.png",
+      "size": [
+        64,
+        64
+      ],
+      "sha256": "ca537edf791d6bede7e6dba668c12b53bdf2038a902a4e9374896e5867696c98",
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/reference-scene/textures/sign_banner.png",
+      "size": [
+        64,
+        64
+      ],
+      "sha256": "60de8338c6603cb8dfb3301fc2621347886e575311c656abc103781c0386d3b4",
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/reference-scene/textures/sign_menu.png",
+      "size": [
+        64,
+        64
+      ],
+      "sha256": "a1547c3b99ad59f5f349ea5df1e9e977ae84b741587c5677d0f0e70042536f20",
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/reference-scene/textures/planter.png",
+      "size": [
+        64,
+        64
+      ],
+      "sha256": "c2c4d2451520b65d21732d776618ad753dfddf8b34b495eeab8cb973a58d43d2",
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/reference-scene/textures/lantern.png",
+      "size": [
+        64,
+        64
+      ],
+      "sha256": "4a52e289a935da0b5cc6868df615ef783a9e51dbdd07cbec4c76ef19cd802c08",
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/reference-scene/textures/awning_green.png",
+      "size": [
+        64,
+        64
+      ],
+      "sha256": "01d450928e7d962fc79e76fa9b5dfc85aaea5c77ea9e42d272191ab04ceca51c",
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/reference-scene/sprites/hero.png",
+      "size": [
+        192,
+        256
+      ],
+      "sha256": "1682481a369eac804871838eb80f61478a97d5c5afcb23824f1c51bb433e2937",
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/reference-scene/sprites/merchant.png",
+      "size": [
+        192,
+        256
+      ],
+      "sha256": "5b4959b27f2b451d85823cef0e1a00c95922db74e209cfe882b3941237e4f865",
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/reference-scene/sprites/keeper.png",
+      "size": [
+        192,
+        256
+      ],
+      "sha256": "cee85ab6b8eb2dbe8a4ae047815c4f70893bf0a15441f94dc62f427f043e72f9",
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/reference-scene/sprites/baker.png",
+      "size": [
+        192,
+        256
+      ],
+      "sha256": "596389700a165ded2f21ba37d882cdaebc11b33ce5fb1ce9fe3f092627e86f6f",
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets/reference-scene/sprites/noble.png",
+      "size": [
+        192,
+        256
+      ],
+      "sha256": "ddbf234723388c0e2e88dd725827af28ad16aa91d289ab078fa7d1e1bb8ae922",
+      "mode": "RGBA"
+    }
+  ]
+}

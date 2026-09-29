@@ -1,0 +1,51 @@
+{
+  "angles_degrees": [
+    -24.0,
+    -16.0,
+    -8.0,
+    0.0,
+    8.0,
+    16.0,
+    24.0
+  ],
+  "atlas_size": [
+    3584,
+    512
+  ],
+  "capture_projection": "orthographic",
+  "engine": "4.7.2-stable (official)",
+  "feet_anchor_uv": [
+    0.5,
+    0.8
+  ],
+  "frame_size": [
+    512,
+    512
+  ],
+  "generator": "tools/p9/capture_impostors.gd",
+  "lighting": "reference-scene preset; no fog, DOF or glow",
+  "outputs": [
+    {
+      "path": "assets/reference-scene/impostors/palazzo-day.png",
+      "period": "day",
+      "sha256": "d311de36655b5289e569e0cfe11b4cb67dffbdf6953852d7e3d4a05d0de00f42"
+    },
+    {
+      "path": "assets/reference-scene/impostors/palazzo-dusk.png",
+      "period": "dusk",
+      "sha256": "86e2f491108cb79402de16592053f72c38d19ab7a63eb75ebbb8bc7f282b412f"
+    },
+    {
+      "path": "assets/reference-scene/impostors/palazzo-night.png",
+      "period": "night",
+      "sha256": "8e36db443a47eeb9a905e02aab814cfbb7565cf2dfa1ccc2a993fe9736ad0ef1"
+    }
+  ],
+  "pitch_degrees": 28.574411008029,
+  "renderer": "forward_plus",
+  "schema": 1,
+  "source_model": "assets/reference-scene/models/palazzo.glb",
+  "source_model_sha256": "b9b5e764f50c50532ce89b8b354b85d51cef4ffcc92dd4eee8c58e117f72d4f5",
+  "transparent": true,
+  "world_span": 13.5
+}

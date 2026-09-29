@@ -14,6 +14,28 @@ p9-rebuild:
 	$(PYTHON) tools/p9/accept.py rebuild
 p9-package:
 	$(PYTHON) tools/p9/package.py
+
+.PHONY: p9x-import p9x-atlas p9x-test p9x-quick p9x-visual p9x-record p9x-export p9x-rebuild p9x-package
+p9x-import:
+	$(PYTHON) tools/p9/experiments.py import
+p9x-atlas:
+	$(PYTHON) tools/p9/experiments.py atlas
+p9x-test:
+	$(PYTHON) tests/p9/check_assets.py
+	$(PYTHON) -c 'import sys,subprocess;sys.path.insert(0,"tools");from project import engine;subprocess.run([engine(),"--headless","--path",".","--script","res://tests/p9/experiment_camera_unit.gd"],check=True)'
+	$(PYTHON) tools/p9/experiments.py headless
+p9x-quick:
+	$(PYTHON) tools/p9/experiments.py quick --no-route
+p9x-visual:
+	$(PYTHON) tools/p9/experiments.py gpu --no-route
+p9x-record:
+	$(PYTHON) tools/p9/experiments.py record
+p9x-export:
+	$(PYTHON) tools/p9/experiments.py export
+p9x-rebuild:
+	$(PYTHON) tools/p9/experiments.py rebuild
+p9x-package:
+	$(PYTHON) tools/p9/experiments.py package
 BLENDER ?= blender
 .DEFAULT_GOAL := help
 .PHONY: help run editor import bake test visual export record assets models rebuild templates docs package reproduce

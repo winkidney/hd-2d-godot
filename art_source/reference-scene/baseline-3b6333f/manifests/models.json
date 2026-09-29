@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "source_type": "authored-blender-with-imagegen-derived-textures",
+  "blender": "5.2.2 LTS",
+  "generator": "tools/p9/build_models.py",
+  "input_manifest_sha256": "be35363ce392fc7e1dc2f833308e3d5f665b90b566379845b690fa8a09ab9980",
+  "models": [
+    {
+      "id": "arch_bridge",
+      "blend": "art_source/reference-scene/blender/arch_bridge.blend",
+      "glb": "assets/reference-scene/models/arch_bridge.glb",
+      "vertices": 1736,
+      "objects": 4,
+      "glb_sha256": "1bc5640f880fb6419849248281b84fedc1f5ebe7269ed4c369856994eaf8a1ca"
+    },
+    {
+      "id": "stairs",
+      "blend": "art_source/reference-scene/blender/stairs.blend",
+      "glb": "assets/reference-scene/models/stairs.glb",
+      "vertices": 240,
+      "objects": 2,
+      "glb_sha256": "6ed2a7ccb3c04c6a128d641e8016211ab69392734a39cfebf44bff0ea2963a4e"
+    },
+    {
+      "id": "pillar",
+      "blend": "art_source/reference-scene/blender/pillar.blend",
+      "glb": "assets/reference-scene/models/pillar.glb",
+      "vertices": 48,
+      "objects": 2,
+      "glb_sha256": "c57b66b71dad2bee9ace8f8f6aeb080bf29bfbbdd296c23c053fc35f011b7afc"
+    },
+    {
+      "id": "railing",
+      "blend": "art_source/reference-scene/blender/railing.blend",
+      "glb": "assets/reference-scene/models/railing.glb",
+      "vertices": 112,
+      "objects": 1,
+      "glb_sha256": "ee8e72cd7b1f1aecb8a111855b9706f8276c139974c22cee3188786569df7ae0"
+    },
+    {
+      "id": "palazzo",
+      "blend": "art_source/reference-scene/blender/palazzo.blend",
+      "glb": "assets/reference-scene/models/palazzo.glb",
+      "vertices": 666,
+      "objects": 11,
+      "glb_sha256": "8bf7c000366de55cee679171e3c308d59cd10140e60dbdc5b6ba7b8b0db8539c"
+    },
+    {
+      "id": "townhouse",
+      "blend": "art_source/reference-scene/blender/townhouse.blend",
+      "glb": "assets/reference-scene/models/townhouse.glb",
+      "vertices": 306,
+      "objects": 11,
+      "glb_sha256": "761727302b7c52fc8e02950b82e72a003b18ee471fd6f8a1efef1267bd5407fb"
+    },
+    {
+      "id": "tower",
+      "blend": "art_source/reference-scene/blender/tower.blend",
+      "glb": "assets/reference-scene/models/tower.glb",
+      "vertices": 338,
+      "objects": 11,
+      "glb_sha256": "a1066902efc39f6f23d45a4be7ab3a807cd763f2dd575981c422f024357c06b7"
+    },
+    {
+      "id": "market",
+      "blend": "art_source/reference-scene/blender/market.blend",
+      "glb": "assets/reference-scene/models/market.glb",
+      "vertices": 712,
+      "objects": 6,
+      "glb_sha256": "bb0b3f7717c6f482da164f29396ceb57436b1c0eab65805e3127e07fd2aa27f3"
+    },
+    {
+      "id": "lamp",
+      "blend": "art_source/reference-scene/blender/lamp.blend",
+      "glb": "assets/reference-scene/models/lamp.glb",
+      "vertices": 182,
+      "objects": 4,
+      "glb_sha256": "ec767cbfc51e5966e30d92f3e48bd3c0e48add973b78f58f01f00254adaafd94"
+    },
+    {
+      "id": "barrel",
+      "blend": "art_source/reference-scene/blender/barrel.blend",
+      "glb": "assets/reference-scene/models/barrel.glb",
+      "vertices": 140,
+      "objects": 2,
+      "glb_sha256": "fe8404cdffe9ab3527d4d544ead1fb92100e9000390de4857a28b435a04759c8"
+    },
+    {
+      "id": "crate",
+      "blend": "art_source/reference-scene/blender/crate.blend",
+      "glb": "assets/reference-scene/models/crate.glb",
+      "vertices": 56,
+      "objects": 1,
+      "glb_sha256": "4c5e74151f08fea8434aa6c783e454f754e42e26f7a2292d33178c0f852b1f11"
+    },
+    {
+      "id": "dock",
+      "blend": "art_source/reference-scene/blender/dock.blend",
+      "glb": "assets/reference-scene/models/dock.glb",
+      "vertices": 368,
+      "objects": 2,
+      "glb_sha256": "3a1d0b785e2e7c1c25f0920894eddf50659004ad54646589f42bbc6c5abd69af"
+    },
+    {
+      "id": "bench",
+      "blend": "art_source/reference-scene/blender/bench.blend",
+      "glb": "assets/reference-scene/models/bench.glb",
+      "vertices": 88,
+      "objects": 2,
+      "glb_sha256": "0fed8df7cc3405a26ac8ecc5223caa8065e21dc5219ecb49afdf665c626ef6db"
+    },
+    {
+      "id": "boat",
+      "blend": "art_source/reference-scene/blender/boat.blend",
+      "glb": "assets/reference-scene/models/boat.glb",
+      "vertices": 94,
+      "objects": 1,
+      "glb_sha256": "f9e4746412c80ac7654793c534298028a007ab6136d9b5a11b27ebb07d9dae15"
+    },
+    {
+      "id": "planter",
+      "blend": "art_source/reference-scene/blender/planter.blend",
+      "glb": "assets/reference-scene/models/planter.glb",
+      "vertices": 20,
+      "objects": 2,
+      "glb_sha256": "2c9b58f025fd8417969bce073982008151c4e217f30452650e9cb2667f43b6ee"
+    },
+    {
+      "id": "retaining",
+      "blend": "art_source/reference-scene/blender/retaining.blend",
+      "glb": "assets/reference-scene/models/retaining.glb",
+      "vertices": 16,
+      "objects": 2,
+      "glb_sha256": "d4613d7fd99321c913765c46ed96e71bcdebb55a66a6f38eab6242b1fc823c1f"
+    }
+  ]
+}

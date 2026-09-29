@@ -1,6 +1,6 @@
 """Canal kit authored in Godot coordinates and exported using Blender."""
 from pathlib import Path
-import bpy, bmesh, math, json, hashlib
+import bpy, bmesh, math, json, hashlib, sys
 from mathutils import Vector
 ROOT=Path(__file__).resolve().parents[2]
 OUT=ROOT/'assets/reference-scene/models'
@@ -17,6 +17,12 @@ def reset():
     bpy.ops.object.delete(use_global=False)
     for mat in list(bpy.data.materials):
         bpy.data.materials.remove(mat)
+    for mesh in list(bpy.data.meshes):
+        if mesh.users == 0:
+            bpy.data.meshes.remove(mesh)
+    for image in list(bpy.data.images):
+        if image.users == 0:
+            bpy.data.images.remove(image)
     MATS.clear()
     colors={'brick':(.53,.29,.20,1),'stone':(.62,.58,.48,1),'paving':(.60,.56,.46,1),'plaster':(.78,.65,.46,1),'roof':(.48,.19,.08,1),'wood':(.29,.19,.10,1),'canvas':(.80,.75,.59,1),'green':(.10,.21,.12,1),'iron':(.06,.13,.10,1),'glass':(1,.58,.21,1),'red':(.62,.09,.04,1),'leaf':(.13,.26,.09,1),'gold':(.79,.49,.14,1)}
     decals=['door_green','window_arch','window_shutter','flowerbox','sign_banner','sign_menu','planter','awning_green']
@@ -96,6 +102,25 @@ def decal(name,p,w,h,mat):
             uv.data[li].uv=((v.x-(x-w/2))/w,(v.z-(y-h/2))/h)
     return obj
 
+def side_decal(name,p,w,h,mat,side):
+    """Outward-facing X wall decal with unmirrored local UVs on both sides."""
+    x,y,z=p
+    verts=[(x,y-h/2,z+side*w/2),(x,y-h/2,z-side*w/2),
+           (x,y+h/2,z-side*w/2),(x,y+h/2,z+side*w/2)]
+    obj=mesh_obj(name,verts,[(0,1,2,3)],mat)
+    corners=[(0,0),(1,0),(1,1),(0,1)]
+    for loop in obj.data.polygons[0].loop_indices:
+        obj.data.uv_layers.active.data[loop].uv=corners[obj.data.loops[loop].vertex_index]
+    return obj
+
+def side_window(side,z,y,w):
+    x=side*w/2
+    # The frame has thickness. The picture sits just beyond it, not inside the wall.
+    box('side_window_frame',(x+side*.08,y,z),(.16,1.68,1.28),'stone')
+    side_decal('side_shutter_window',(x+side*.17,y,z),1.20,1.57,'window_shutter',side)
+    box('side_window_sill',(x+side*.17,y-.86,z),(.38,.12,1.48),'stone')
+    side_decal('side_window_flowers',(x+side*.38,y-.91,z),1.30,.43,'flowerbox',side)
+
 def cylinder(name,p,radius,height,mat,vertices=12):
     bpy.ops.mesh.primitive_cylinder_add(vertices=vertices,radius=radius,depth=height,location=xyz(p))
     obj=bpy.context.object;obj.name=name;uv_world(obj)
@@ -170,16 +195,33 @@ def house(w=7,d=5,h=6.8,balcony=True):
     box('upper_plaster',(0,(h+2.9)/2,0),(w,h-2.9,d),'plaster')
     for y in [.45,2.9,h]:
         box('facade_belt',(0,y,d/2+.08),(w+.24,.19,.24),'stone')
+        box('rear_belt',(0,y,-d/2-.08),(w+.24,.19,.24),'stone')
+        for side in [-1,1]:
+            box('side_belt',(side*(w/2+.08),y,0),(.24,.19,d+.24),'stone')
     for x in [-w/2,w/2]:
         for y in [0.6,1.1,1.6,2.1,2.6,3.1,4,4.8,5.6,6.4]:
-            if y<h: box('corner_quoin',(x,y,d/2+.06),(.42,.22,.22),'brick')
+            if y<h:
+                for z in [-d/2,d/2]:
+                    box('corner_quoin',(x,y,z),(.42,.22,.42),'brick')
     decal('arched_green_door',(-w*.20,1.55,d/2+.14),1.65,2.95,'door_green')
-    for x in [-w*.32,0,w*.32]:
+    front_windows=[-w*.30,w*.30] if w<5 else [-w*.32,0,w*.32]
+    for x in front_windows:
         decal('arched_window',(x,h-1.4,d/2+.15),1.45,1.75,'window_arch')
         decal('window_flowers',(x,h-2.22,d/2+.22),1.5,.63,'flowerbox')
     decal('shutter_window',(w*.25,1.65,d/2+.14),1.6,2.0,'window_shutter')
-    for x in [-w*.32,0,w*.32]:
+    for x in front_windows:
         box('window_warmth',(x,h-1.42,d/2+.065),(.70,1.1,.04),'glass')
+    levels=[1.65,h-1.4] if h<8 else [1.65,4.65,h-1.4]
+    for side in [-1,1]:
+        for level in levels:
+            for z in [-d*.26,d*.26]:
+                side_window(side,z,level,w)
+        box('side_eave',(side*(w/2+.21),h+.04,0),(.44,.23,d+.75),'wood')
+        # Vertical downpipes make front/rear corner overlap visible during orbit.
+        for z in [-d/2-.08,d/2+.08]:
+            beam('rain_pipe',(side*(w/2+.18),.45,z),(side*(w/2+.18),h,z),.07,'iron')
+    for z in [-d/2-.20,d/2+.20]:
+        box('front_rear_eave',(0,h+.04,z),(w+.85,.23,.40),'wood')
     roof(w+.8,d+.7,h+.07,1.2)
     box('chimney',(w*.32,h+.7,-.5),(.65,1.8,.65),'brick')
     box('chimney_cap',(w*.32,h+1.6,-.5),(.88,.16,.87),'stone')
@@ -274,22 +316,26 @@ def export(name):
         for obj in objects:
             obj.select_set(True)
         bpy.context.view_layer.objects.active=objects[0]
-        bpy.ops.object.join()
+        if len(objects)>1:
+            bpy.ops.object.join()
         objects[0].name=name+'_'+mat.name
     for image in bpy.data.images:
         if image.filepath:
             image.pack()
+            image.filepath=bpy.path.relpath(image.filepath,start=str(SOURCE))
     blend=SOURCE/(name+'.blend')
     glb=OUT/(name+'.glb')
     bpy.ops.wm.save_as_mainfile(filepath=str(blend))
     bpy.ops.export_scene.gltf(filepath=str(glb),export_format='GLB',export_yup=True,export_apply=True,export_cameras=False,export_lights=False)
     result={'id':name,'blend':blend.relative_to(ROOT).as_posix(),'glb':glb.relative_to(ROOT).as_posix(),
             'vertices':sum(len(o.data.vertices) for o in bpy.context.scene.objects if o.type=='MESH'),
-            'objects':len(bpy.context.scene.objects),'glb_sha256':hashlib.sha256(glb.read_bytes()).hexdigest()}
+            'objects':len(bpy.context.scene.objects),'glb_sha256':hashlib.sha256(glb.read_bytes()).hexdigest(),
+            'blend_sha256':hashlib.sha256(blend.read_bytes()).hexdigest()}
     RESULTS.append(result)
     print('P9_MODEL',name,result['vertices'],flush=True)
 
 def main():
+    bpy.context.preferences.filepaths.save_version=0
     OUT.mkdir(parents=True,exist_ok=True)
     SOURCE.mkdir(parents=True,exist_ok=True)
     recipes=[('arch_bridge',bridge),('stairs',stairs),('pillar',stone_pillar),('railing',railing),
@@ -301,12 +347,27 @@ def main():
         reset()
         build()
         export(name)
-    report={'schema':1,'source_type':'authored-blender-with-imagegen-derived-textures',
+    report={'schema':2,'source_type':'authored-blender-with-imagegen-original-derived-textures',
             'blender':bpy.app.version_string,'generator':'tools/p9/build_models.py',
+            'house_surfaces':'Front and rear belts; both X side walls have outward-facing UV decals, thick window frames, sills, flowerboxes, eaves, corner quoins and rain pipes.',
             'input_manifest_sha256':hashlib.sha256((ROOT/'art_source/reference-scene/manifests/processed.json').read_bytes()).hexdigest(),
+            'input_texture_manifest_sha256':json.loads((ROOT/'art_source/reference-scene/manifests/processed.json').read_text())['model_texture_manifest_sha256'],
             'models':RESULTS}
     (ROOT/'art_source/reference-scene/manifests/models.json').write_text(json.dumps(report,indent=2)+'\n')
     print('P9_MODELS_COMPLETE',len(RESULTS),flush=True)
 
+def verify_sources():
+    report=json.loads((ROOT/'art_source/reference-scene/manifests/models.json').read_text())
+    for model in report['models']:
+        path=ROOT/model['blend']
+        assert hashlib.sha256(path.read_bytes()).hexdigest()==model['blend_sha256']
+        bpy.ops.wm.open_mainfile(filepath=str(path))
+        meshes=[obj for obj in bpy.context.scene.objects if obj.type=='MESH']
+        assert len(bpy.context.scene.objects)==model['objects'], model['id']
+        assert sum(len(obj.data.vertices) for obj in meshes)==model['vertices'], model['id']
+        assert all(image.packed_file for image in bpy.data.images if image.source=='FILE'), model['id']
+        print('P9_BLEND_READBACK',model['id'],model['objects'],model['vertices'],flush=True)
+    print('P9_BLEND_READBACK_COMPLETE',len(report['models']),flush=True)
+
 if __name__=='__main__':
-    main()
+    verify_sources() if '--verify-only' in sys.argv else main()

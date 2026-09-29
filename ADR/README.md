@@ -2,7 +2,7 @@
 
 ## P9 决策
 
-[ADR-17 参考场景重建](17-reference-scene-reconstruction.md) 与 [ADR-18 生成式美术管线](18-generated-art-asset-pipeline.md) 已落盘。工程结果和来源缺口见 [P9 验收](../docs/validation/p9/README.md)。
+[ADR-17 参考场景重建](17-reference-scene-reconstruction.md) 与 [ADR-18 生成式美术管线](18-generated-art-asset-pipeline.md) 已落盘。[ADR-19 四种相机实验](19-reference-camera-experiments.md) 规定P9独立扩展、代表点投影补偿和D多视图模拟，并补充原PNG已归档后的重建边界。四方案美术选择与实际验收仍待完成；旧工程结果见 [P9 验收](../docs/validation/p9/README.md)。
 
 Accepted 表示采用该架构，不代表所有代码/视觉已验收；Proposed 需要实际画面对照后定稿。
 
