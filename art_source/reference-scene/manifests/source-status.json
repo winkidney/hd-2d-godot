@@ -45,6 +45,16 @@
       "checkpoint_commit": "3b6333f7b7e3aab09ffac34b4a97ef8d75ac3475",
       "checkpoint_sha256": "abb14bd9dae624ff5d6931419ba6b75925ea8fc52ba7135d3f6a7e7d2442a4fc",
       "reason": "The user-authorized P9 checkpoint already removed explicit engine-default renderer, DOF bokeh shape and jitter values and reordered the retained bokeh quality setting. Current project.godot is byte-identical to that checkpoint. This is not an F9 or four-experiment change; the historical baseline hash is retained."
+    },
+    "scripts/pixel_actor.gd": {
+      "historical_commit": "0673236",
+      "historical_sha256": "fbbc8cb7d649eb49d4fb3c6695df2d75b0ef271f83c07c168930e5369d438407",
+      "checkpoint_commit": null,
+      "checkpoint_id": "2026-10-06-crescent-traveler-v1",
+      "checkpoint_sha256": "0352dab31a1e5e08c1a05f8343dbbc3f658c6a9e6638132d472de3e8219bb24d",
+      "authorization_adr": "ADR/20-default-character.md",
+      "source_manifest": "art_source/characters/crescent-traveler/v1/manifest.json",
+      "reason": "On 2026-10-06 the user adopted animation A as the default HD2D character and authorized filling the other required directions. The shared actor now loads the documented 256-pixel clips, retains source timing and a fixed foot pivot, and detects actual movement. This adoption checkpoint is identified by its stable ID and content hash; original actor assets and the historical baseline hash remain unchanged."
     }
   }
 }

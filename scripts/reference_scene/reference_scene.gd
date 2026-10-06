@@ -26,9 +26,6 @@ func _ready() -> void:
     lighting.preset_changed.connect(impostor.apply_preset)
     hud.container.add_child(experiment_panel)
     experiment_panel.configure(self)
-    player.sprite.texture=load("res://assets/reference-scene/sprites/hero.png")
-    player.sprite.pixel_size=.035
-    player.sprite.offset=Vector2(0,30)
     if has_node("Waykeeper"): get_node("Waykeeper").queue_free()
     for entry in layout.npcs:
         var npc := Actor.make_sprite("res://assets/reference-scene/sprites/"+entry.sprite+".png")

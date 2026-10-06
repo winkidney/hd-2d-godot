@@ -1,0 +1,36 @@
+{
+  "command": [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-n",
+    "-framerate",
+    "24.0",
+    "-i",
+    "raw/%05d.png",
+    "-c:v",
+    "libx264",
+    "-crf",
+    "16",
+    "-pix_fmt",
+    "yuv420p",
+    "original.mp4"
+  ],
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 768,
+        "height": 768,
+        "r_frame_rate": "24/1",
+        "duration": "2.333333",
+        "nb_read_frames": "56"
+      }
+    ]
+  },
+  "sha256": "67ad7b0b53cdf843c14542231caf639beb5104a67dd142a8b9bbf5c530e31e86",
+  "all_frames_original_speed": true,
+  "preview_is_lossy": true,
+  "complete_decode_passed": true
+}

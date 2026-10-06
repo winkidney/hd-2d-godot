@@ -6,10 +6,13 @@ var controls_enabled := true
 var camera: Camera3D
 var sprite: Sprite3D
 var animation_clock := 0.0
-var facing := 0
+var facing := 3
 var walking := false
 var scripted_input := false
 var scripted_direction := Vector2.ZERO
+var animation := preload("res://scripts/character_animation.gd").new()
+var animation_frame := -1
+var displayed_facing := -1
 
 func _ready() -> void:
     name = "Traveler"
@@ -21,8 +24,14 @@ func _ready() -> void:
     collider.shape = shape
     collider.position.y = 0.675
     add_child(collider)
-    sprite = make_sprite("res://assets/sprites/traveler.png")
+    sprite = make_sprite("res://assets/characters/crescent-traveler/v1/right/atlas.png")
+    sprite.hframes = 1
+    sprite.vframes = 1
+    sprite.pixel_size = 0.009
+    sprite.offset = animation.clips[facing].pivot - Vector2(128, 128)
+    sprite.offset.x = -sprite.offset.x
     add_child(sprite)
+    update_animation()
     var shadow := Sprite3D.new()
     shadow.texture = load("res://assets/sprites/contact_shadow.png")
     shadow.pixel_size = 0.017
@@ -76,7 +85,7 @@ func _physics_process(delta: float) -> void:
     if position.y < -5.0:
         position = Vector3(1.2, 0.25, 0.0)
         velocity = Vector3.ZERO
-    walking = Vector2(velocity.x, velocity.z).length() > 0.08
+    walking = Vector2(get_real_velocity().x, get_real_velocity().z).length() > 0.08
     if walking:
         var screen_move := Vector2(move.x, move.z)
         if is_instance_valid(camera):
@@ -88,4 +97,13 @@ func _physics_process(delta: float) -> void:
         animation_clock += delta
     else:
         animation_clock = 0.0
-    sprite.frame = facing * 4 + (int(animation_clock * 8.0) % 4 if walking else 0)
+    update_animation()
+
+func update_animation() -> void:
+    var index := animation.frame_at(facing, animation_clock, walking)
+    if index != animation_frame or facing != displayed_facing:
+        sprite.texture = animation.texture_at(facing, index)
+        sprite.offset = animation.clips[facing].pivot - Vector2(128, 128)
+        sprite.offset.x = -sprite.offset.x
+        animation_frame = index
+        displayed_facing = facing

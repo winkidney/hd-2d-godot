@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "commands": {
+    "make test": {
+      "exit_code": 0,
+      "P8_checks": 410,
+      "character_checks": 401,
+      "pixel_directions": 4,
+      "settings_restart_passed": true
+    },
+    "make p9-test": {
+      "exit_code": 0,
+      "asset_checks": 575,
+      "runtime_checks": 151,
+      "headless_passed": true
+    },
+    "make frontal-test": {
+      "exit_code": 0,
+      "camera_checks": 2115,
+      "lens_checks": 10430,
+      "runtime_checks": 131,
+      "headless_passed": true
+    }
+  },
+  "standalone_PCK": {
+    "passed": true,
+    "four_json_manifests_and_all_native_frames_loaded": true,
+    "source_assets_copied_into_probe_directory": false,
+    "pack_sha256": "c4d194fe6cdd096c0227219ff456e24092ff86aa4aded6cb24bd5ae9f3c761bd"
+  },
+  "GPU": {
+    "passed": true,
+    "adapter": "NVIDIA GeForce RTX 4070 SUPER",
+    "renderer": "forward_plus",
+    "main_window_minimized": true,
+    "keyboard_injection": false,
+    "screenshots": 8,
+    "cycles_each_direction": 3,
+    "frames_recorded": 324
+  },
+  "service_cleanup": {
+    "state": "stopped",
+    "manager_state": "stopped",
+    "leases_remaining": 0,
+    "owned_processes_remaining": 0,
+    "H3_source_generation": {
+      "left": "completed",
+      "down": "completed",
+      "up_first": "completed but art rejected for turning toward camera",
+      "up_replacement": "all56 raw frames generated; export stage failed; separate identical postprocessing recovery completed without H3 resubmission"
+    }
+  },
+  "scope": "No native keyboard/window interaction matrix, independent idle loop, eight-direction assets or binary-release publication claimed."
+}

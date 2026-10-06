@@ -1,6 +1,8 @@
 # HD-2D · Riverside Waystation
 
 当前工程保留驿站、参考场景、灰盒和正面运河四个入口。游戏内按 P 调视差、O 调景深、C 调相机，也可点击左上方按钮。F8/F9 留给 Godot 编辑器的停止/暂停功能，不再作为场景快捷键。
+默认玩家角色采用用户选定的 A 稿，原生 256×256，补齐朝镜头、背向镜头和三分之四向左行走；向右保留 A 的原始像素与时序。四入口共用同一角色，待机保留最后朝向。见[默认角色接入](docs/validation/default-character/README.md)与[角色来源](art_source/characters/crescent-traveler/v1/README.md)。
+
 [启动与操作](docs/operation/README.md) · [输入安全修复](docs/validation/input-safety/README.md) · [P8验收](docs/validation/p8/README.md)
 
 自然/柔和/增强与五层独立倍率、相机横向参数、云风和本机保存已实现；旧场景与素材保持不变。
@@ -54,7 +56,7 @@ make package   # build/delivery/p8/ 中的新交付与校验和
 
 ## 当前边界
 
-当前美术为本项目程序化原创基线，保留 17 张源 PNG、12 套 Blender 模型、生成器、散列和可编辑静态场景。**ImageGen 与 Blender MCP 尚未接入**；MCP 高风险执行入口仍须另行批准。没有从原作提取美术。
+本项目保留程序化原创基线的 17 张源 PNG、12 套 Blender 模型、生成器、散列和可编辑静态场景。默认角色新增用户设计、ImageGen 方向母图与 H3 行走素材，配方和可编辑源文件另行保存。Blender MCP 尚未接入；MCP 高风险执行入口仍须另行批准。没有从原作提取美术。
 
 已经实现行走、碰撞、桥梁通行、NPC/招牌、原子灯光切换、水面动画、景深、泛光、雾与截图。没有战斗、背包、任务、室内地图、音频、真实水面倒影或 Web/Windows 已验收版本。
 

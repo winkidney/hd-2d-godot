@@ -1,0 +1,22 @@
+{
+  "fps": 24.0,
+  "resolution": 1024,
+  "device": "cuda",
+  "dtype": "float32",
+  "batch_size": 1,
+  "regularization": 1e-05,
+  "small_iterations": 10,
+  "big_iterations": 2,
+  "threshold": 0.5,
+  "erode_source_pixels": 0,
+  "matting_band": 0,
+  "size_a": 128,
+  "size_b": 256,
+  "pivot_a": "64,120",
+  "pivot_b": "128,240",
+  "crop_xyxy": "",
+  "palette_size": 96,
+  "palette_reference_size": 256,
+  "palette_override": "",
+  "background": "#ff00ff"
+}

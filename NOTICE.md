@@ -4,7 +4,9 @@
 
 旧场景源美术类型为 `procedural-original`。来源与 SHA-256 见 `art_source/generated/manifest.json`；模型源与生成记录见 `art_source/blender/manifest.json`。
 
-P9 使用已有 `imagegen-derived` 归一化输入，来源与处理配方见 `art_source/reference-scene/manifests/`。两张上游 ImageGen 原图尚未归档，不能宣称来源验收完整。本轮未重新生成这些素材，也未启用 Blender MCP。
+P9 使用已有 `imagegen-derived` 输入，来源与处理配方见 `art_source/reference-scene/manifests/`。两张用户重新上传的 ImageGen 原图已归档；素材板文件与历史记录的字节差异仍在来源状态中明确保留。本轮未重新生成这些素材，也未启用 Blender MCP。
+
+默认角色的设计来自本次用户提供的图片；右向采用用户选择的 A 稿，其余方向使用 ImageGen 母图与 H3/ToonOut 行走流程。角色参考、参数、可编辑源文件和散列见 [角色来源](art_source/characters/crescent-traveler/v1/README.md)。生成服务与模型不进入游戏运行包。
 
 本地 `art_source/reference-scene/research/` 中的用户原作截图仅用于视觉与结构研究，不进入运行包，P9 源码交付 ZIP 也排除此研究截图。项目许可不覆盖该截图。
 

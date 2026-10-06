@@ -1,0 +1,25 @@
+{
+  "algorithm": "agent-reviewed-contiguous-full-stride",
+  "action": "walk",
+  "roi_xyxy": [
+    60,
+    164,
+    206,
+    244
+  ],
+  "selected": {
+    "start": 28,
+    "end_exclusive": 55,
+    "frame_count": 27,
+    "duration_ms": 1125,
+    "seam_to_internal_p75": 0.7015759348869324,
+    "heuristic_gate_passed": true,
+    "full_automatic_gate_passed": null
+  },
+  "original_automatic_analysis": "../../loop-proposals/a-steady-auto/analysis.json",
+  "selection_reason": "Keep a complete two-step stride in the second generated cycle and exclude the larger transition near the middle guide. Review both opposing arm phases and alternating legs in source frames 28..54. No retiming, frame skipping, interpolation or redrawing.",
+  "limitations": [
+    "Some internal pose transitions remain uneven; retained as an animation draft.",
+    "The automatic recurrence window cannot evaluate the final endpoint with its usual symmetric window; manual seam metric and semantic inspection are recorded separately."
+  ]
+}

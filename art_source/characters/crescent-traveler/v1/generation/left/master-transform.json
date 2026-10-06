@@ -1,0 +1,28 @@
+{
+  "source_bounds": [
+    319,
+    10,
+    1008,
+    1236
+  ],
+  "source_size": [
+    1254,
+    1254
+  ],
+  "scale": 0.5285481239804242,
+  "translation": [
+    202,
+    72
+  ],
+  "visible_height": 648,
+  "foot_anchor": [
+    384,
+    720
+  ],
+  "output_size": [
+    768,
+    768
+  ],
+  "per_frame_recentering": false,
+  "source_sha256": "5e4a045e22baa9aeabb1e1b984765a8d50edd05df9e9a658e827412fd986b901"
+}

@@ -1,0 +1,8 @@
+{
+  "direction": "up",
+  "job": "up",
+  "status": "rejected",
+  "reason": "Model turns toward camera through frames 2-25 and 30-53. Back view only survives reference anchors; no valid continuous walk clip.",
+  "replacement_job": "up-back-v2",
+  "source_pixels_modified": false
+}

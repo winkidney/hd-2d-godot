@@ -119,12 +119,19 @@ for model in models['models']:
             check(embedded['name'] in texture_pixels and pixels(image)==texture_pixels.get(embedded['name']),'glb_uses_current_texture:'+label)
 shared=json.loads((ROOT/'art_source/reference-scene/manifests/shared-baseline.json').read_text())
 exceptions=status.get('checkpoint_baseline_exceptions',{})
-check(set(exceptions)=={'project.godot'},'baseline_exception_scope')
+check(set(exceptions)=={'project.godot','scripts/pixel_actor.gd'},'baseline_exception_scope')
 for name,digest in shared['files'].items():
     if name in exceptions:
         exception=exceptions[name]
         check(exception['historical_commit']==shared['git_commit'] and exception['historical_sha256']==digest,'historical_baseline_retained:'+name)
-        check(exception['checkpoint_commit']=='3b6333f7b7e3aab09ffac34b4a97ef8d75ac3475' and bool(exception['reason']),'checkpoint_exception_documented:'+name)
+        if name=='scripts/pixel_actor.gd':
+            check(exception['checkpoint_commit'] is None and exception['checkpoint_id']=='2026-10-06-crescent-traveler-v1' and bool(exception['reason']),'checkpoint_exception_documented:'+name)
+            source_path='art_source/characters/crescent-traveler/v1/manifest.json'
+            check(exception['authorization_adr']=='ADR/20-default-character.md' and (ROOT/exception['authorization_adr']).is_file() and exception['source_manifest']==source_path,'character_adoption_authority:'+name)
+            adopted=json.loads((ROOT/source_path).read_text())
+            check(adopted['id']=='crescent-traveler' and adopted['adoption']['selected_animation']=='A' and adopted['adoption']['default_direction']=='right' and adopted['directions']['right']['exact_original_frame_bytes'] and adopted['directions']['right']['exact_original_frame_timing'],'character_adoption_source:'+name)
+        else:
+            check(exception['checkpoint_commit']=='3b6333f7b7e3aab09ffac34b4a97ef8d75ac3475' and bool(exception['reason']),'checkpoint_exception_documented:'+name)
         check(sha(ROOT/name)==exception['checkpoint_sha256'],'checkpoint_baseline_unchanged:'+name)
     else:
         check(sha(ROOT/name)==digest,'old_baseline_unchanged:'+name)

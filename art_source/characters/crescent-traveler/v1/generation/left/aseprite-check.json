@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "RGBA_roundtrip_exact": true,
+  "durations_match": true,
+  "frames": 27,
+  "size": [
+    256,
+    256
+  ]
+}

@@ -93,6 +93,8 @@ verify-release:
 .PHONY: features-test features-visual features-quick features-record verify-features package-features
 test:
 	$(PYTHON) tools/parallax.py test
+	$(PYTHON) tests/check_character.py
+	$(PYTHON) -c 'import sys,subprocess;sys.path.insert(0,"tools");from project import engine;subprocess.run([engine(),"--headless","--path",".","--script","res://tests/character_animation.gd","--","--ignore-user-settings"],check=True)'
 features-test:
 	$(PYTHON) tools/features.py test
 features-visual:

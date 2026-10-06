@@ -12,6 +12,7 @@
 | 素材管线 | [重建与替换](assets/README.md) | 原图、Blender、GLB、ImageGen 接入口 |
 | 流程图 | [Mermaid + SVG](workflows/README.md) | 运行时、素材、交互、验收交付 |
 | 验收 | [基线报告](validation/baseline-report.md) | 实测条件、结果、证据与限制 |
+| 默认角色 | [A 稿与四方向接入](validation/default-character/README.md) | 256 像素角色、来源、后台 GPU 图像与录像 |
 | 验收设计 | [测试策略](validation/README.md) | 代码正确与视觉批准的区别 |
 | 交付 | [打包与重建](delivery/README.md) | 独立运行、源包、模板和校验 |
 | 依赖安全 | [依赖说明](delivery/dependencies.md) | 复用环境、锁定版本、MCP 安全门 |

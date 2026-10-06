@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "directions": [
+    {
+      "direction": "down",
+      "frames": 27,
+      "duration_ms": 1125,
+      "passed": true
+    },
+    {
+      "direction": "up",
+      "frames": 27,
+      "duration_ms": 1125,
+      "passed": true
+    },
+    {
+      "direction": "left",
+      "frames": 27,
+      "duration_ms": 1125,
+      "passed": true
+    },
+    {
+      "direction": "right",
+      "frames": 27,
+      "duration_ms": 1125,
+      "passed": true
+    }
+  ]
+}

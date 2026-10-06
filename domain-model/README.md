@@ -25,7 +25,7 @@ P9 的独立场景、模块与来源契约见 [参考场景模型](reference-sce
 只有最近且范围内的交互点可以响应；HUD 隐藏不停止世界模拟。
 灯光切换不得重建角色或模型；快照必须在实际图形帧完成后保存。
 生成种子必须固定；文件名/资源引用用相对路径；没有外部网络运行依赖。
-所有源素材为本项目原创程序化生成，后续替换素材必须登记来源。
+初始素材为本项目原创程序化生成；默认角色已按用户选择采用 A 稿并补齐四方向，生成来源、固定参数及批准范围按 [ADR-20](../ADR/20-default-character.md) 独立登记。
 
 ## 关系与事件
 WorldLayout -> WaystationScene -> {PixelActor, InteractionPoint[], LightingPreset, CameraRig, WaterSurface}

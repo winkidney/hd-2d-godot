@@ -1,0 +1,259 @@
+{
+  "adapter": "NVIDIA GeForce RTX 4070 SUPER",
+  "capture_mode": "Minimized no-focus native window; independent offscreen SubViewport",
+  "clip_visibility": [
+    {
+      "changed_pixels": 55953,
+      "passed": true,
+      "projected_area": 298117.3125
+    },
+    {
+      "changed_pixels": 50931,
+      "passed": true,
+      "projected_area": 298117.3125
+    },
+    {
+      "changed_pixels": 62555,
+      "passed": true,
+      "projected_area": 298117.3125
+    },
+    {
+      "changed_pixels": 60035,
+      "passed": true,
+      "projected_area": 298117.3125
+    }
+  ],
+  "clips": [
+    {
+      "cycles_rendered": 3,
+      "direction": "down",
+      "duration_ms": 1125,
+      "frames": 27,
+      "seen": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "cycles_rendered": 3,
+      "direction": "up",
+      "duration_ms": 1125,
+      "frames": 27,
+      "seen": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "cycles_rendered": 3,
+      "direction": "left",
+      "duration_ms": 1125,
+      "frames": 27,
+      "seen": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "cycles_rendered": 3,
+      "direction": "right",
+      "duration_ms": 1125,
+      "frames": 27,
+      "seen": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ]
+    }
+  ],
+  "failures": [],
+  "hardware_gpu": true,
+  "main_window_minimized": true,
+  "main_window_scene_visible": true,
+  "passed": true,
+  "preferences_ignored": true,
+  "recorded_frames": 324,
+  "renderer": "forward_plus",
+  "scene_entries": [
+    {
+      "default_direction": "right",
+      "foot_anchor_screen": [
+        644.669982910156,
+        380.879364013672
+      ],
+      "frame": 11,
+      "pixel_size": 0.00899999961256981,
+      "player_in_frustum": true,
+      "preferences_loaded": false,
+      "scene": "waystation",
+      "screenshot": "waystation-default.png",
+      "shaded": true,
+      "visibility": {
+        "changed_pixels": 595,
+        "passed": true,
+        "projected_area": 3838.53002929688
+      }
+    },
+    {
+      "default_direction": "right",
+      "foot_anchor_screen": [
+        641.710083007812,
+        485.381622314453
+      ],
+      "frame": 11,
+      "pixel_size": 0.00899999961256981,
+      "player_in_frustum": true,
+      "preferences_loaded": false,
+      "scene": "reference_scene",
+      "screenshot": "reference_scene-default.png",
+      "shaded": true,
+      "visibility": {
+        "changed_pixels": 1232,
+        "passed": true,
+        "projected_area": 5837.5234375
+      }
+    },
+    {
+      "default_direction": "right",
+      "foot_anchor_screen": [
+        641.710083007812,
+        485.381622314453
+      ],
+      "frame": 11,
+      "pixel_size": 0.00899999961256981,
+      "player_in_frustum": true,
+      "preferences_loaded": false,
+      "scene": "reference_scene_graybox",
+      "screenshot": "reference_scene_graybox-default.png",
+      "shaded": true,
+      "visibility": {
+        "changed_pixels": 1228,
+        "passed": true,
+        "projected_area": 5837.5234375
+      }
+    },
+    {
+      "default_direction": "right",
+      "foot_anchor_screen": [
+        640.0,
+        530.171691894531
+      ],
+      "frame": 11,
+      "pixel_size": 0.00899999961256981,
+      "player_in_frustum": true,
+      "preferences_loaded": false,
+      "scene": "frontal_canal",
+      "screenshot": "frontal_canal-default.png",
+      "shaded": true,
+      "visibility": {
+        "changed_pixels": 2484,
+        "passed": true,
+        "projected_area": 10229.0498046875
+      }
+    }
+  ],
+  "scope": "Real Sprite3D in project scenes; close-up camera is evidence framing only. Clip playback in place is separate from physical movement tests.",
+  "size": [
+    1280,
+    720
+  ]
+}

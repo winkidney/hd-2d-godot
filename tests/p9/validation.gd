@@ -51,8 +51,8 @@ func run(value: Node3D) -> void:
     # 171e632. This legacy runner now enters default A; do not require the old path.
     check(scene.experiment_id=="A" and scene.preferences_path=="user://settings/lantern-canal-A-parallax.cfg","isolated_default_A_preferences")
     check(not scene.settings_load_attempted,"tests_ignore_preferences")
-    check(scene.player.sprite.texture.resource_path.ends_with("reference-scene/sprites/hero.png"),"imagegen_hero_connected")
-    check(scene.player.sprite.texture.get_size()==Vector2(192,256),"hero_atlas_contract")
+    check(scene.player.animation.clips.size()==4 and scene.player.animation.DIRECTIONS[scene.player.facing]=="right","crescent_traveler_connected")
+    check(scene.player.sprite.texture.get_size()==Vector2(256,256),"character_frame_contract")
     check(scene.get_node("World").has_node("CentralStairRamp"),"central_stair_collider")
     check(scene.get_node("World").has_node("MarketStairRamp"),"market_stair_collider")
     check(scene.get_node("World").has_node("DockStairRamp"),"dock_stair_collider")

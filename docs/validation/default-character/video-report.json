@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "24/1",
+        "nb_frames": "324"
+      }
+    ],
+    "format": {
+      "duration": "13.500000"
+    }
+  },
+  "sha256": "168a4b1b6b274d809f5cfc8673efb3ce244efdc62b45499da7783aea6db993d1",
+  "direction_order": [
+    "down",
+    "up",
+    "left",
+    "right"
+  ],
+  "cycles_per_direction": 3,
+  "scope": "Actual Forward+ SubViewport render at 1280x720. Native clip poses sampled at original frame-duration midpoints and encoded as 24fps preview. Actor walks in place; physical movement is independently verified."
+}

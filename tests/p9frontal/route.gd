@@ -187,7 +187,7 @@ static func run(scene, capture_dir := "", record := false) -> Dictionary:
     scene.player.animation_clock = saved.animation
     scene.player.facing = saved.facing
     scene.player.walking = saved.walking
-    scene.player.sprite.frame = saved.frame
+    scene.player.update_animation()
     scene.clock_frozen = saved.clock
     scene.elapsed = saved.elapsed
     scene.background.wind_enabled = saved.wind_enabled

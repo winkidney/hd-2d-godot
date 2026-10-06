@@ -34,7 +34,7 @@ func run_core(scene) -> void:
     await settle(30)
     check(scene.get_node("World").get_child_count() >= 290, "baked_world_loaded")
     check(scene.player.is_on_floor(), "actor_starts_on_floor")
-    check(scene.player.sprite.hframes == 4 and scene.player.sprite.vframes == 4, "four_direction_atlas")
+    check(scene.player.animation.clips.size() == 4 and scene.player.animation.clips.all(func(clip): return clip.textures.size() > 1), "four_direction_animated_character")
     scene.player.scripted_direction = Vector2(1, 1)
     check(absf(scene.player.motion_direction().length() - 1.0) < 0.001, "diagonal_input_normalized")
     await place(scene, Vector3(1.2, 0.25, 0.8))

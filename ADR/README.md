@@ -1,5 +1,7 @@
 # ADR · 架构决策索引
 
+[ADR-20：A 稿默认角色与四方向行走](20-default-character.md) — Accepted，记录用户采用、256 像素方向补齐、来源和接入验证边界。
+
 ## P9 决策
 
 [ADR-17 参考场景重建](17-reference-scene-reconstruction.md) 与 [ADR-18 生成式美术管线](18-generated-art-asset-pipeline.md) 已落盘。[ADR-19 四种相机实验](19-reference-camera-experiments.md) 规定P9独立扩展、代表点投影补偿和D多视图模拟，并补充原PNG已归档后的重建边界。四方案美术选择与实际验收仍待完成；旧工程结果见 [P9 验收](../docs/validation/p9/README.md)。

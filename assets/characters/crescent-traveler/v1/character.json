@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "crescent-traveler",
+  "version": "v1",
+  "default_direction": "right",
+  "size": [
+    256,
+    256
+  ],
+  "pivot": [
+    128,
+    240
+  ],
+  "pixel_size": 0.009,
+  "directions": {
+    "down": {
+      "manifest": "down/animation.json",
+      "idle_frame": 10,
+      "generation": "independent-H3"
+    },
+    "up": {
+      "manifest": "up/animation.json",
+      "idle_frame": 10,
+      "generation": "independent-H3"
+    },
+    "left": {
+      "manifest": "left/animation.json",
+      "idle_frame": 10,
+      "generation": "independent-H3"
+    },
+    "right": {
+      "manifest": "right/animation.json",
+      "idle_frame": 11,
+      "generation": "approved-A"
+    }
+  },
+  "stationary_behavior": "Hold a reviewed balanced frame from the current direction; no separately generated idle animation."
+}
