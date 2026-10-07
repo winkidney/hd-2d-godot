@@ -586,35 +586,31 @@
     },
     "camera_variant": {
       "page": "environment",
-      "group": "F / W / O 探索镜头",
+      "group": "F / W 居中镜头",
       "label": "观察方案",
       "type": "enum",
       "default": "F",
       "options": [
         {
-          "label": "F · 正面稳定平移",
+          "label": "F · 正面居中跟随",
           "value": "F"
         },
         {
-          "label": "W · 广角纵深",
+          "label": "W · 广角居中跟随",
           "value": "W"
-        },
-        {
-          "label": "O · 轻微绕转",
-          "value": "O"
         }
       ]
     },
     "camera_follow": {
       "page": "environment",
-      "group": "F / W / O 探索镜头",
+      "group": "F / W 居中镜头",
       "label": "相机跟随人物",
       "type": "bool",
       "default": true
     },
     "camera_distance": {
       "page": "environment",
-      "group": "F / W / O 探索镜头",
+      "group": "F / W 居中镜头",
       "label": "当前方案观察半径",
       "type": "float",
       "default": 30.0,
@@ -625,7 +621,7 @@
     },
     "camera_fov": {
       "page": "environment",
-      "group": "F / W / O 探索镜头",
+      "group": "F / W 居中镜头",
       "label": "当前方案纵向视野",
       "type": "float",
       "default": 35.0,

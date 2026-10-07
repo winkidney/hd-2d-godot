@@ -1,4 +1,4 @@
-"""Reproduce headless scene/settings/layout checks without imports or fixed FPS."""
+"""Headless scene/settings checks; camera fixtures use fixed 60 Hz, never GPU."""
 from pathlib import Path
 import argparse
 import hashlib
@@ -26,6 +26,10 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def resource(path):
+    return 'res://' + path.relative_to(ROOT).as_posix()
+
+
 def archive_regression_transcripts(runs):
     """Preserve original process bytes in portable evidence paths, not host logs."""
     folder = OUT / 'regression/raw-transcripts'
@@ -51,9 +55,10 @@ def archive_regression_transcripts(runs):
     return records
 
 
-def run(label, script, args, raw_path=None):
+def run(label, script, args, raw_path=None, fixed_fps=False):
     entry = [script] if script.endswith('.tscn') else ['--script', script]
-    command = [engine(), '--headless', '--path', str(ROOT), *entry, '--', '--ignore-user-settings', *args]
+    timing = ['--fixed-fps', '60'] if fixed_fps else []
+    command = [engine(), '--headless', '--path', str(ROOT), *timing, *entry, '--', '--ignore-user-settings', *args]
     return run_command(label, command, raw_path)
 
 
@@ -79,7 +84,7 @@ def run_command(label, command, raw_path=None):
         raw.update(runtime_fingerprint=before['sha256'], runtime_fingerprint_before=before['sha256'], runtime_fingerprint_after=after['sha256'], runtime_unchanged=before['sha256'] == after['sha256'])
         write(raw_path, raw)
     passed = result.returncode == 0 and not errors and (raw is None or raw.get('passed') is True)
-    entry = dict(label=label, returncode=result.returncode, passed=passed, elapsed_s=elapsed, fixed_fps=False, import_performed=False,
+    entry = dict(label=label, returncode=result.returncode, passed=passed, elapsed_s=elapsed, fixed_fps='--fixed-fps' in command, import_performed=False,
                  errors=errors, log=log.relative_to(OUT).as_posix(), runtime_fingerprint_before=before['sha256'], runtime_fingerprint_after=after['sha256'], runtime_unchanged=before['sha256'] == after['sha256'])
     entry['import'] = False
     print(('PASS ' if passed else 'FAIL ') + label + f' ({elapsed:.2f}s)', flush=True)
@@ -89,53 +94,63 @@ def run_command(label, command, raw_path=None):
 
 
 def main():
+    global OUT
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--mode', choices=['all', 'headless', 'settings', 'blockout', 'contract', 'regression'], default='all')
+    parser.add_argument('--mode', choices=['all', 'headless', 'settings', 'blockout', 'contract', 'regression', 'camera'], default='all')
+    parser.add_argument('--output-dir', default='build/ancient-canal', help='Project build directory for fresh evidence; use a new directory to retain historical reports.')
     args = parser.parse_args()
+    OUT = (ROOT / args.output_dir).resolve()
+    if not OUT.is_relative_to(ROOT / 'build'):
+        parser.error('--output-dir must be within the project build directory')
     OUT.mkdir(parents=True, exist_ok=True)
     before = fingerprint(ROOT)
     runs = []
     selected = lambda mode: args.mode in ['all', mode]
     if selected('headless'):
-        runs.append(run('final-headless', 'res://tests/ancient_canal/validation.gd', ['--canal-test', '--canal-output=res://build/ancient-canal/headless'], OUT/'headless/report.json'))
+        runs.append(run('final-headless', 'res://tests/ancient_canal/validation.gd', ['--canal-test', '--canal-output='+resource(OUT/'headless')], OUT/'headless/report.json'))
     if selected('blockout'):
-        runs.append(run('final-blockout', 'res://tests/ancient_canal/blockout.gd', [], OUT/'blockout.json'))
+        runs.append(run('final-blockout', 'res://tests/ancient_canal/blockout.gd', ['--blockout-output='+resource(OUT/'blockout.json')], OUT/'blockout.json'))
     if args.mode == 'all':
         runs.append(run('background-unit', 'res://tests/ancient_canal/background_unit.gd', []))
-        runs.append(run('upright-validation', 'res://tests/ancient_canal/upright_validation.gd', ['--upright-output=res://build/ancient-canal/upright-validation', '--canal-fingerprint='+fingerprint(ROOT)['sha256']], OUT/'upright-validation/upright-report.json'))
+        runs.append(run('upright-validation', 'res://tests/ancient_canal/upright_validation.gd', ['--upright-output='+resource(OUT/'upright-validation'), '--canal-fingerprint='+fingerprint(ROOT)['sha256']], OUT/'upright-validation/upright-report.json'))
     if selected('settings'):
         for phase in ['write', 'read']:
-            runs.append(run('final-settings-'+phase, 'res://tests/ancient_canal/validation.gd', ['--canal-test', '--canal-settings-'+phase, '--canal-output=res://build/ancient-canal/settings-'+phase], OUT/('settings-'+phase)/'report.json'))
+            runs.append(run('final-settings-'+phase, 'res://tests/ancient_canal/validation.gd', ['--canal-test', '--canal-settings-'+phase, '--canal-output='+resource(OUT/('settings-'+phase))], OUT/('settings-'+phase)/'report.json'))
         parts = [(OUT/('settings-'+phase)/'report.json') for phase in ['write', 'read']]
         reports = [json.loads(p.read_text()) for p in parts]
         after_settings = fingerprint(ROOT)
         settings_runs = [r for r in runs if r['label'].startswith('final-settings-')]
         settings_before = settings_runs[0]['runtime_fingerprint_before']
         checks = [c for report in reports for c in report['checks']]
-        probe_removed = not (OUT/'scene-settings-cross-process.cfg').exists()
+        probe_removed = not (ROOT/'build/ancient-canal/scene-settings-cross-process.cfg').exists()
         write(OUT/'settings-report.json', dict(schema_version=2, passed=all(r['passed'] and r['runtime_unchanged'] for r in settings_runs) and settings_before == after_settings['sha256'] and probe_removed,
             runtime_fingerprint=settings_before, runtime_fingerprint_before=settings_before, runtime_fingerprint_after=after_settings['sha256'], runtime_unchanged=settings_before == after_settings['sha256'],
             independent_file=True, cross_process=True, write_report='settings-write/report.json', read_report='settings-read/report.json', checks=checks, checks_count=len(checks),
             source_reports=[dict(path=p.relative_to(OUT).as_posix(), sha256=sha(p)) for p in parts], settings_probe_file_removed=probe_removed, fixed_fps=False, import_performed=False,
-            scope='Two real scene processes restore all F/W/O profiles, six requested parallax gains, native Colors, actual single-lamp overrides, explicit night background colors despite custom lighting, and material/DOF settings. Isolated XDG homes; no import, GPU or everyday preferences.'))
+            scope='Two real scene processes restore both fixed F/W profiles, six requested parallax gains, native Colors, actual single-lamp overrides, explicit night background colors despite custom lighting, and material/DOF settings. Isolated XDG homes; no import, GPU or everyday preferences.'))
     if selected('contract'):
-        runs.append(run('settings-contract', 'res://tests/ancient_canal/settings_contract.gd', ['--report=res://build/ancient-canal/settings-contract.json'], OUT/'settings-contract.json'))
+        runs.append(run('settings-contract', 'res://tests/ancient_canal/settings_contract.gd', ['--report='+resource(OUT/'settings-contract.json')], OUT/'settings-contract.json'))
         for phase in ['write', 'read']:
-            runs.append(run('settings-contract-'+phase, 'res://tests/ancient_canal/settings_contract.gd', ['--settings-contract-'+phase, '--report=res://build/ancient-canal/settings-contract-'+phase+'.json'], OUT/('settings-contract-'+phase+'.json')))
+            runs.append(run('settings-contract-'+phase, 'res://tests/ancient_canal/settings_contract.gd', ['--settings-contract-'+phase, '--report='+resource(OUT/('settings-contract-'+phase+'.json'))], OUT/('settings-contract-'+phase+'.json')))
+    if args.mode == 'camera':
+        for label, script in [('center-follow', 'center_follow.gd'), ('walkable-extent', 'walkable_extent.gd')]:
+            destination = OUT/(label+'.json')
+            runs.append(run(label, 'res://tests/ancient_canal/'+script,
+                ['--report='+resource(destination), '--canal-fingerprint='+before['sha256']], destination, fixed_fps=True))
     if args.mode == 'regression':
         for label, script in [('frontal-camera', 'camera_unit.gd'), ('frontal-lens', 'lens_unit.gd')]:
             runs.append(run(label, 'res://tests/p9frontal/'+script, []))
         runs.append(run('original-character', 'res://tests/character_animation.gd', []))
-        runs.append(run('original-p9-scene', 'res://scenes/reference_scene.tscn', ['--p9-test', '--capture-dir=res://build/ancient-canal/regression/p9'], OUT/'regression/p9/report.json'))
-        runs.append(run('original-frontal-scene', 'res://scenes/frontal_canal.tscn', ['--frontal-test', '--frontal-quick', '--frontal-output=res://build/ancient-canal/regression/frontal'], OUT/'regression/frontal/report.json'))
-        runs.append(run('original-input-dispatch', 'res://tests/input_dispatch.gd', ['--input-output=res://build/ancient-canal/regression/input-dispatch.json'], OUT/'regression/input-dispatch.json'))
+        runs.append(run('original-p9-scene', 'res://scenes/reference_scene.tscn', ['--p9-test', '--capture-dir='+resource(OUT/'regression/p9')], OUT/'regression/p9/report.json'))
+        runs.append(run('original-frontal-scene', 'res://scenes/frontal_canal.tscn', ['--frontal-test', '--frontal-quick', '--frontal-output='+resource(OUT/'regression/frontal')], OUT/'regression/frontal/report.json'))
+        runs.append(run('original-input-dispatch', 'res://tests/input_dispatch.gd', ['--input-output='+resource(OUT/'regression/input-dispatch.json')], OUT/'regression/input-dispatch.json'))
         runs.append(run_command('input-cleanup', ['/usr/bin/python3', 'tests/test_input_window_cleanup.py', '-v']))
     after = fingerprint(ROOT)
     changed = sorted(k for k in before['files'].keys() | after['files'].keys() if before['files'].get(k) != after['files'].get(k))
     stable = before['sha256'] == after['sha256'] and all(r['runtime_unchanged'] for r in runs)
     suite = dict(schema_version=2, passed=all(r['passed'] for r in runs) and stable, complete=True, mode=args.mode,
         runtime_fingerprint=before['sha256'], runtime_fingerprint_before=before['sha256'], runtime_fingerprint_after=after['sha256'], runtime_unchanged=stable,
-        changed_files=changed, headless=True, fixed_fps=False, import_performed=False, time_scale=1, physics_ticks_per_second=60, runs=runs,
+        changed_files=changed, headless=True, fixed_fps=args.mode == 'camera', import_performed=False, time_scale=1, physics_ticks_per_second=60, runs=runs,
         scope='Actual current scene/settings/layout contract checks. Each run records before/after fingerprints; a source drift prevents a frozen pass. No GPU, screenshot, window-focus or performance claim.')
     target = 'final-headless-suite.json' if args.mode == 'all' else args.mode+'-suite.json'
     suite['import'] = False

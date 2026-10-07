@@ -72,7 +72,7 @@ func _initialize() -> void:
         elif argument.begins_with("--canal-fingerprint="): fingerprint = argument.trim_prefix("--canal-fingerprint=")
     if check_only:
         print("DOCK_CAPTURE_SCHEMA_OK ",JSON.stringify({"size":[SIZE.x,SIZE.y],"micro_frames_per_group":MICRO_FRAMES,
-            "groups":["legacy_projection","F","W","O"],"offset_metres":MICRO_OFFSET,
+            "groups":["legacy_projection","F","W"],"offset_metres":MICRO_OFFSET,
             "motion_phases":["bank_stop","down_slope","dock_stop","up_slope","return_stop"],
             "gpu_performed":false}))
         quit(0)
@@ -322,8 +322,8 @@ func run() -> void:
         start_usec = Time.get_ticks_usec()
         await new_scene()
         report["surface_audit"] = surface_audit()
-        for id in ["legacy_projection","F","W","O"]: await micro_probe(id)
-        for id in ["F","W","O"]: await motion_probe(id)
+        for id in ["legacy_projection","F","W"]: await micro_probe(id)
+        for id in ["F","W"]: await motion_probe(id)
     report["micro_groups"] = micro_groups
     report["motion_cases"] = motion_cases
     report["frames"] = frames

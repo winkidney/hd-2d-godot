@@ -122,11 +122,14 @@ export:
 parallax-quick:
 	$(PYTHON) tools/parallax.py quick-visual
 
-.PHONY: canal-run canal-import canal-quick canal-calibration canal-normals canal-route canal-benchmark canal-test canal-export canal-package
+.PHONY: canal-run canal-import canal-quick canal-calibration canal-normals canal-route canal-benchmark canal-test canal-camera-test canal-export canal-package
 canal-run canal-import canal-quick canal-calibration canal-normals canal-route canal-benchmark:
 	$(PYTHON) tools/ancient_canal/run.py $(patsubst canal-%,%,$@)
 canal-test:
 	$(PYTHON) tests/ancient_canal/check_sources.py
 	$(PYTHON) tools/ancient_canal/validate.py
+	$(PYTHON) tools/ancient_canal/validate.py --mode camera
+canal-camera-test:
+	$(PYTHON) tools/ancient_canal/validate.py --mode camera
 canal-export canal-package:
 	$(PYTHON) tools/ancient_canal/package.py $(patsubst canal-%,%,$@)

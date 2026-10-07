@@ -20,7 +20,6 @@ func configure(data: Dictionary, blockout := false) -> void:
     var half: float = layout.river.half_width
     var length: float = bank.max_z-bank.min_z
     for side in [-1.0, 1.0]:
-        var width: float = bank.outer_x-half
         if side<0:
             bank_rect(-bank.outer_x,-half,bank.min_z,bank.max_z)
         else:
@@ -48,7 +47,7 @@ func configure(data: Dictionary, blockout := false) -> void:
     for z in [5.45,8.55]: box("DockEndGuard",Vector3(3.65,.15,z),Vector3(2.1,.9,.1),Color(.35,.25,.16),true)
     for side in [-1.0,1.0]:
         box("Boundary",Vector3(side*bank.outer_x,1,0),Vector3(.2,2,length+3),Color(.4,.4,.4),true,false)
-    for z in [bank.min_z,bank.max_z]: box("Boundary",Vector3(0,1,z),Vector3(26,2,.2),Color(.4,.4,.4),true,false)
+    for z in [bank.min_z,bank.max_z]: box("Boundary",Vector3(0,1,z),Vector3(2*float(bank.outer_x),2,.2),Color(.4,.4,.4),true,false)
     water = MeshInstance3D.new()
     var plane := PlaneMesh.new()
     plane.size = Vector2(half*2,layout.river.length)

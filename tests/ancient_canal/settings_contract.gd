@@ -2,7 +2,8 @@ extends SceneTree
 ## Storage and Chinese controls exercise the real camera/profile and local lights.
 const Settings = preload("res://scripts/ancient_canal/settings.gd")
 const Console = preload("res://scripts/ancient_canal/console.gd")
-const Camera = preload("res://scripts/frontal_canal/camera.gd")
+const Camera = preload("res://scripts/ancient_canal/camera.gd")
+const LegacyCamera = preload("res://scripts/frontal_canal/camera.gd")
 const Parallax = preload("res://scripts/ancient_canal/parallax.gd")
 const FIXTURE := "user://settings/ancient-canal-contract.cfg"
 const REPORT := "res://build/ancient-canal-camera/settings-contract.json"
@@ -89,6 +90,15 @@ func check(passed: bool, scope: String) -> void:
         failures.append(scope)
         print("SETTINGS_CONTRACT_FAIL ", scope)
 
+func same_pose(first: Dictionary, second: Dictionary) -> bool:
+    var a := first.duplicate(true)
+    var b := second.duplicate(true)
+    var first_test: float = a.get("test_yaw", NAN)
+    var second_test: float = b.get("test_yaw", NAN)
+    a.erase("test_yaw")
+    b.erase("test_yaw")
+    return a == b and ((is_nan(first_test) and is_nan(second_test)) or first_test == second_test)
+
 func make_demo() -> Node:
     var demo := Demo.new()
     root.add_child(demo)
@@ -132,6 +142,14 @@ func write_fixture(config: ConfigFile) -> void:
     file.flush()
     file.close()
 
+func legacy_v2_config(store: RefCounted, candidate: Dictionary, active := "O") -> ConfigFile:
+    var config: ConfigFile = store.config_for(candidate)
+    var original := LegacyCamera.new()
+    var lens: Dictionary = original.lens_defaults("O")
+    for key in lens: config.set_value("lens_O", key, lens[key])
+    config.set_value("camera", "variant", active)
+    return config
+
 func storage_checks(demo: Node) -> void:
     var store: RefCounted = demo.store
     var defaults: Dictionary = store.default_values()
@@ -142,10 +160,14 @@ func storage_checks(demo: Node) -> void:
     check(not defaults.has("camera_yaw") and not defaults.has("camera_pitch") and not defaults.has("parallax"), "obsolete free-angle and one-layer controls removed")
     for key in store.parameters:
         check(store.field_error(key, defaults[key]).is_empty() and not store.field_error(key, null).is_empty(), "strict type validation " + key)
+    check(defaults.camera_variant == "F" and not store.field_error("camera_variant", "O").is_empty(), "O cannot be selected as a current parameter")
+    var current_pose: Dictionary = demo.rig.pose_snapshot()
+    check(not demo.rig.select_variant("O", Vector3(9,0,4)) and same_pose(demo.rig.pose_snapshot(), current_pose), "O selection rejects without changing the camera or profiles")
+    check(not demo.rig.restore_lens_profiles(demo.rig.lens_profiles_snapshot(), "O", Vector3(9,0,4)) and same_pose(demo.rig.pose_snapshot(), current_pose), "O profile restoration rejects without mutation")
     var previous_lenses: Dictionary = demo.rig.lens_profiles_snapshot()
     var bad_lenses: Dictionary = previous_lenses.duplicate(true)
     bad_lenses.W.fov = NAN
-    check(not demo.rig.restore_lens_profiles(bad_lenses, "O", Vector3.ZERO) and demo.rig.lens_profiles_snapshot() == previous_lenses and demo.rig.variant_id == "F", "invalid inactive lens rejects entire restore without pose mutation")
+    check(not demo.rig.restore_lens_profiles(bad_lenses, "W", Vector3.ZERO) and demo.rig.lens_profiles_snapshot() == previous_lenses and demo.rig.variant_id == "F", "invalid inactive lens rejects entire restore without pose mutation")
     var old := legacy_config(defaults)
     old.set_value("parameters", "camera_distance", 38.0)
     old.set_value("parameters", "camera_fov", 55.0)
@@ -189,8 +211,8 @@ func storage_checks(demo: Node) -> void:
     malformed.erase("background_preset")
     check(store.validate_candidate(malformed).is_empty(), "missing background metadata rejects the complete candidate")
     malformed = candidate.duplicate(true)
-    malformed.lens_profiles.O.radius = INF
-    check(store.validate_candidate(malformed).is_empty(), "malformed inactive O profile rejects candidate")
+    malformed.lens_profiles.W.radius = INF
+    check(store.validate_candidate(malformed).is_empty(), "malformed inactive W profile rejects candidate")
     malformed = candidate.duplicate(true)
     malformed.parallax.far_clouds = 3.0
     check(store.validate_candidate(malformed).is_empty(), "out-of-range sixth layer rejects entire candidate")
@@ -211,7 +233,7 @@ func storage_checks(demo: Node) -> void:
         malformed.lamp_overrides = {"lantern_0":{"energy":invalid}}
         check(store.validate_candidate(malformed).is_empty(), "invalid single lamp energy rejected " + str(invalid))
     check(demo.camera.global_transform == rig_before.transform and demo.rig.variant_id == rig_before.variant_id and demo.rig.lens_profiles_snapshot() == rig_before.lens_profiles and demo.rig.follow_offset == rig_before.follow_offset and demo.rig.yaw_degrees == rig_before.yaw_degrees and demo.parallax.snapshot() == profile_before and FileAccess.get_sha256(FIXTURE) == before, "candidate rejection never mutates controllers or original file")
-    demo.rig.select_variant("O", Vector3.ZERO)
+    demo.rig.select_variant("F", Vector3.ZERO)
     demo.rig.set_lens("radius", 32.5)
     demo.rig.set_lens("fov", 39.0)
     demo.values.main_color = Color(0.7,0.5,0.3,1)
@@ -222,11 +244,51 @@ func storage_checks(demo: Node) -> void:
     check(demo.save_settings(), "explicit save writes complete v2 transaction")
     check(FileAccess.get_sha256(FIXTURE) != before and not store.migrated_v1, "only explicit save replaces old CFG with v2")
     var loaded: Dictionary = store.load_settings()
-    check(loaded.camera.variant == "O" and loaded.lens_profiles.W.radius == 24.5 and loaded.lens_profiles.W.fov == 47.0 and loaded.lens_profiles.O.radius == 32.5 and loaded.lens_profiles.O.fov == 39.0, "all independent inactive and active profiles survive file roundtrip")
+    check(loaded.camera.variant == "F" and loaded.lens_profiles.W.radius == 24.5 and loaded.lens_profiles.W.fov == 47.0 and loaded.lens_profiles.F.radius == 32.5 and loaded.lens_profiles.F.fov == 39.0, "all independent inactive and active profiles survive file roundtrip")
     check(loaded.parallax.mode == "natural" and loaded.parallax.far_clouds == 0.4 and demo.parallax.effective("far_clouds") == 1.0, "natural mode persists artistic requested gain and retains effective 1")
     check(loaded.lamp_overrides == demo.lamp_overrides and not loaded.has("selected_lamp_id") and not loaded.has("isolation"), "single-lamp overrides persist without transient selection or isolation")
     check(loaded.background_preset == "night" and loaded.parameters.time_preset == "custom", "actual night background persists independently from custom lighting label")
-    var older_v2: ConfigFile = store.config_for(loaded)
+    var new_config := ConfigFile.new()
+    new_config.load(FIXTURE)
+    check(not new_config.has_section("lens_O") and loaded.lens_profiles.size() == 2, "explicit schema2 save contains exactly F and W profiles")
+    var old_three := legacy_v2_config(store, loaded, "O")
+    write_fixture(old_three)
+    var old_three_hash := FileAccess.get_sha256(FIXTURE)
+    var frozen_pose: Dictionary = demo.rig.pose_snapshot()
+    var migrated_three: Dictionary = store.load_settings()
+    check(not migrated_three.is_empty() and store.migrated_orbit and migrated_three.camera.variant == "F" and migrated_three.camera.follow == loaded.camera.follow, "complete old F W O file maps active O to F")
+    check(migrated_three.lens_profiles == loaded.lens_profiles and migrated_three.parameters == loaded.parameters and migrated_three.parallax == loaded.parallax and migrated_three.lamp_overrides == loaded.lamp_overrides and migrated_three.background_preset == loaded.background_preset, "old O migration preserves both independent lenses and all valid noncamera settings")
+    check(FileAccess.get_sha256(FIXTURE) == old_three_hash and same_pose(demo.rig.pose_snapshot(), frozen_pose), "old O loading changes no file bytes or live pose")
+    check("内存" in store.message and "原文件" in store.message, "O migration explicitly explains deferred file replacement")
+    for active in ["F", "W"]:
+        var old_active := legacy_v2_config(store, loaded, active)
+        var mapped_three: Dictionary = store.apply_config(old_active)
+        check(not mapped_three.is_empty() and mapped_three.camera.variant == active and mapped_three.lens_profiles == loaded.lens_profiles, "old three-profile file preserves active " + active)
+    var old_missing_broad := legacy_v2_config(store, loaded, "O")
+    for key in Settings.BROAD_LIGHT_KEYS: old_missing_broad.erase_section_key("parameters", key)
+    var mapped_old_lights: Dictionary = store.apply_config(old_missing_broad)
+    check(not mapped_old_lights.is_empty() and mapped_old_lights.camera.variant == "F" and mapped_old_lights.lens_profiles == loaded.lens_profiles and mapped_old_lights.parameters.broad_range == 7.0, "complete previous O file also upgrades the five missing broad light fields")
+    for invalid in [NAN, INF, -1.0, 61.0, true, "35"]:
+        var broken_old := legacy_v2_config(store, loaded, "O")
+        broken_old.set_value("lens_O", "fov", invalid)
+        check(store.apply_config(broken_old).is_empty(), "invalid discarded O lens still rejects entire old file " + str(invalid))
+    var broken_old := legacy_v2_config(store, loaded, "O")
+    broken_old.set_value("lens_O", "unknown", 1)
+    check(store.apply_config(broken_old).is_empty(), "unknown discarded O field rejects old file")
+    broken_old = legacy_v2_config(store, loaded, "O")
+    broken_old.erase_section_key("lens_O", "radius")
+    check(store.apply_config(broken_old).is_empty(), "partial O profile rejects old file")
+    broken_old = legacy_v2_config(store, loaded, "O")
+    broken_old.erase_section("lens_W")
+    check(store.apply_config(broken_old).is_empty(), "partial three-profile file rejects before migration")
+    var unexpected_o: ConfigFile = store.config_for(loaded)
+    unexpected_o.set_value("camera", "variant", "O")
+    check(store.apply_config(unexpected_o).is_empty(), "new two-profile file cannot choose removed O")
+    check(FileAccess.get_sha256(FIXTURE) == old_three_hash and same_pose(demo.rig.pose_snapshot(), frozen_pose), "all malformed legacy O files leave original bytes and live controllers untouched")
+    check(store.save_candidate(migrated_three), "explicit save upgrades migrated O candidate")
+    new_config.load(FIXTURE)
+    check(not new_config.has_section("lens_O") and FileAccess.get_sha256(FIXTURE) != old_three_hash, "only explicit save replaces historical O section with F W file")
+    var older_v2: ConfigFile = legacy_v2_config(store, loaded, loaded.camera.variant)
     for key in Settings.BROAD_LIGHT_KEYS: older_v2.erase_section_key("parameters",key)
     write_fixture(older_v2)
     var older_v2_sha := FileAccess.get_sha256(FIXTURE)
@@ -241,11 +303,14 @@ func storage_checks(demo: Node) -> void:
     var incomplete_new: ConfigFile = store.config_for(loaded)
     incomplete_new.erase_section_key("parameters","broad_shadow")
     check(store.apply_config(incomplete_new).is_empty(),"partial_new_lighting_settings_still_rejected")
+    incomplete_new = store.config_for(loaded)
+    for key in Settings.BROAD_LIGHT_KEYS: incomplete_new.erase_section_key("parameters",key)
+    check(store.apply_config(incomplete_new).is_empty(),"new_F_W_file_missing_all_broad_fields_cannot_impersonate_historical_F_W_O")
     older_v2.set_value("parameters","time_preset","night")
     check(store.apply_config(older_v2).parameters.broad_energy==2.6,"previous_v2_night_defaults_new_light_intensity")
     check(store.save_candidate(loaded),"explicit_save_writes_complete_current_lighting_settings")
     var exported: Dictionary = store.candidate_from_values(demo.values, demo.lamp_overrides)
-    check(exported.lens_profiles == demo.rig.lens_profiles_snapshot() and exported.camera.variant == "O", "save reads rig authority despite stale UI aliases")
+    check(exported.lens_profiles == demo.rig.lens_profiles_snapshot() and exported.camera.variant == "F", "save reads rig authority despite stale UI aliases")
     var stale_aliases: Dictionary = demo.values.duplicate(true)
     stale_aliases.camera_distance = -99.0
     stale_aliases.camera_fov = NAN
@@ -281,6 +346,7 @@ func panel_checks(demo: Node) -> void:
     panel.configure(demo)
     check(panel.tabs.get_tab_count() == 4 and panel.fields.size() == 78, "four Chinese pages expose 73 global and five selected-lamp controls")
     check(not panel.fields.has("camera_yaw") and not panel.fields.has("camera_pitch"), "free yaw and pitch cannot be changed through UI")
+    check(panel.fields.camera_variant.item_count == 2 and panel.fields.camera_variant.get_item_text(0).begins_with("F") and panel.fields.camera_variant.get_item_text(1).begins_with("W"), "Chinese camera selector contains only F and W")
     var lens_before: Dictionary = demo.rig.lens_profiles_snapshot()
     var profile_before: Dictionary = demo.parallax.snapshot()
     var lamp_before: Dictionary = demo.selected_lamp_values()
@@ -288,9 +354,9 @@ func panel_checks(demo: Node) -> void:
     panel.refresh()
     check(demo.rig.lens_profiles_snapshot() == lens_before and demo.parallax.snapshot() == profile_before and demo.selected_lamp_values() == lamp_before, "panel refresh emits no parameter mutation")
     panel.fields.camera_variant.item_selected.emit(1)
-    check(demo.rig.variant_id == "W" and panel.fields.camera_distance.value == 24.5 and panel.fields.camera_fov.value == 47.0, "F W O selector reads actual stored W lens")
+    check(demo.rig.variant_id == "W" and panel.fields.camera_distance.value == 24.5 and panel.fields.camera_fov.value == 47.0, "F W selector reads actual stored W lens")
     panel.fields.camera_distance.value_changed.emit(26.0)
-    check(demo.rig.lens_snapshot().radius == 26.0 and demo.rig.lens_profiles.O.radius == 32.5, "radius control updates only actual active profile")
+    check(demo.rig.lens_snapshot().radius == 26.0 and demo.rig.lens_profiles.F.radius == 32.5, "radius control updates only actual active profile")
     demo.values.camera_distance = 18.0
     panel.refresh()
     check(panel.fields.camera_distance.value == 26.0 and "12.0" in panel.camera_readout.text, "actual rig readout overrides stale UI alias and reports W pitch")
@@ -334,7 +400,7 @@ func process_probe(demo: Node, read: bool) -> void:
         demo.rig.select_variant("W", Vector3.ZERO)
         demo.rig.set_lens("radius", 24.5)
         demo.rig.set_lens("fov", 47.0)
-        demo.rig.select_variant("O", Vector3.ZERO)
+        demo.rig.select_variant("F", Vector3.ZERO)
         demo.rig.set_lens("radius", 32.5)
         demo.values.main_color = Color(0.7,0.5,0.3,1)
         demo.values.time_preset = "custom"
@@ -346,14 +412,14 @@ func process_probe(demo: Node, read: bool) -> void:
         var loaded: Dictionary = demo.store.load_settings()
         check(not loaded.is_empty(), "reader process loads v2")
         if loaded.is_empty(): return
-        check(loaded.camera.variant == "O" and loaded.lens_profiles.W.radius == 24.5 and loaded.lens_profiles.W.fov == 47.0 and loaded.lens_profiles.O.radius == 32.5, "different process restores active variant and inactive profile")
+        check(loaded.camera.variant == "F" and loaded.lens_profiles.W.radius == 24.5 and loaded.lens_profiles.W.fov == 47.0 and loaded.lens_profiles.F.radius == 32.5, "different process restores active variant and inactive profile")
         check(loaded.parameters.main_color == Color(0.7,0.5,0.3,1), "different process restores native Color")
         check(loaded.background_preset == "night" and loaded.parameters.time_preset == "custom", "different process retains explicit night background despite custom lighting")
         check(loaded.parallax.mode == "natural" and loaded.parallax.far_clouds == 0.4, "different process restores six-layer requested profile")
         check(loaded.lamp_overrides.streetlamp_left_front.energy == 1.25 and loaded.lamp_overrides.streetlamp_left_front.color == Color(1,0.7,0.4,1), "different process restores single-lamp scalar and native Color")
         check(demo.rig.variant_id == "F", "load candidate leaves scene pose untouched until explicit application")
         check(demo.rig.restore_lens_profiles(loaded.lens_profiles, loaded.camera.variant, Vector3.ZERO) and demo.parallax.apply_snapshot(loaded.parallax), "fully validated candidate applies controller states once")
-        check(demo.rig.variant_id == "O" and demo.rig.lens_snapshot().radius == 32.5 and demo.parallax.effective("far_clouds") == 1.0, "applied controller values match independent process snapshot")
+        check(demo.rig.variant_id == "F" and demo.rig.lens_snapshot().radius == 32.5 and demo.parallax.effective("far_clouds") == 1.0, "applied controller values match independent process snapshot")
 
 func run() -> void:
     root.size = Vector2i(1920,1080)

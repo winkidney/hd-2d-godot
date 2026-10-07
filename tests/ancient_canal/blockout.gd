@@ -5,8 +5,12 @@ var layout: Dictionary
 var failures: Array[String] = []
 var report: Dictionary = {"checks":[],"trajectory":[]}
 var npc_distances: Dictionary = {}
+var output := "res://build/ancient-canal/blockout.json"
 
 func _initialize() -> void:
+    for argument in OS.get_cmdline_user_args():
+        if argument.begins_with("--blockout-output="):
+            output = argument.trim_prefix("--blockout-output=")
     call_deferred("run")
 
 func check(ok: bool,id: String) -> void:
@@ -57,7 +61,6 @@ func run() -> void:
     report["passed"] = failures.is_empty()
     report["failures"] = failures
     report["scope"] = "Actual CharacterBody3D collision walking with unchanged actor movement; both banks, parabola bridge, dock ramp and all NPC spots."
-    var output := "res://build/ancient-canal/blockout.json"
     DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(output.get_base_dir()))
     var file := FileAccess.open(output,FileAccess.WRITE)
     file.store_string(JSON.stringify(report,"  ")+"\n")

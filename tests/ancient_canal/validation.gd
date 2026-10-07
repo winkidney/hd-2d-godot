@@ -278,7 +278,7 @@ func check_group_lights(key: String, value: Variant) -> void:
 func camera_profiles_and_layers() -> void:
     scene.restore_defaults()
     var saved_position: Vector3 = scene.player.position
-    var expected := {"F":{"radius":30.0,"fov":35.0,"pitch":14.0,"yaw":0.0},"W":{"radius":23.0,"fov":45.0,"pitch":12.0,"yaw":0.0},"O":{"radius":30.0,"fov":35.0,"pitch":14.0,"yaw":4.0}}
+    var expected := {"F":{"radius":30.0,"fov":35.0,"pitch":14.0,"yaw":0.0},"W":{"radius":23.0,"fov":45.0,"pitch":12.0,"yaw":0.0}}
     for id in expected:
         check(scene.select_variant(id),"select_actual_variant_"+id)
         var pose: Dictionary = scene.rig.pose_diagnostics()
@@ -292,7 +292,7 @@ func camera_profiles_and_layers() -> void:
         check(same(scene.rig.yaw_degrees,expected[id].yaw) and scene.rig.supported_pose(),"horizontal_travel_yaw_bound_"+id)
     var profiles_before: Dictionary = scene.rig.lens_profiles_snapshot()
     var pose_before: Transform3D = scene.camera.global_transform
-    check(not scene.set_lens("radius",45.1) and not scene.select_variant("unknown") and scene.rig.lens_profiles_snapshot()==profiles_before and same(scene.camera.global_transform,pose_before),"invalid_lens_or_variant_keeps_actual_pose")
+    check(not scene.set_lens("radius",45.1) and not scene.select_variant("unknown") and not scene.select_variant("O") and scene.rig.lens_profiles_snapshot()==profiles_before and same(scene.camera.global_transform,pose_before),"invalid_lens_or_removed_O_keeps_actual_pose")
     scene.player.position = saved_position
     scene.restore_defaults()
     scene.player.position += Vector3.RIGHT*2.0
@@ -602,7 +602,7 @@ func settings_round_trip() -> void:
     scene.select_variant("W")
     scene.set_lens("radius",24.5)
     scene.set_lens("fov",47.0)
-    scene.select_variant("O")
+    scene.select_variant("F")
     scene.set_lens("radius",32.5)
     scene.set_lens("fov",42.0)
     scene.set_parameter("near_town",.5)
@@ -619,10 +619,13 @@ func settings_round_trip() -> void:
     var saved_parallax: Dictionary = scene.parallax.snapshot()
     var saved_overrides: Dictionary = scene.lamp_overrides.duplicate(true)
     check(scene.save_settings(),"scene_saves_isolated_settings")
+    var written := ConfigFile.new()
+    written.load(isolated_path)
+    check(not written.has_section("lens_O") and written.get_value("camera", "variant") == "F", "scene_explicit_save_contains_only_F_W")
     scene.restore_defaults()
     check(scene.load_settings() and scene.values == saved,"scene_restores_complete_settings")
     check(same(scene.camera.fov,42.0) and scene.attributes.dof_blur_near_enabled and same(shader_value("normal_strength"),1.2) and same(scene.main_light.light_color,Color(.8,.6,.4,1)),"loaded_settings_apply_real_properties")
-    check(scene.rig.variant_id=="O" and scene.rig.lens_profiles_snapshot()==saved_profiles and scene.parallax.snapshot()==saved_parallax and scene.lamp_overrides==saved_overrides,"loaded_settings_restore_all_inactive_profiles_and_lamps")
+    check(scene.rig.variant_id=="F" and scene.rig.lens_profiles_snapshot()==saved_profiles and scene.parallax.snapshot()==saved_parallax and scene.lamp_overrides==saved_overrides,"loaded_settings_restore_all_inactive_profiles_and_lamps")
     check(same(scene.lamp_state("streetlamp_left_back").energy,1.25) and same(scene.lamp_state("streetlamp_left_back").color,Color(1,.7,.4,1)) and scene.lamp_state("streetlamp_left_back").shadow,"loaded_single_light_override_applies_actual_node")
     scene.console.refresh()
     check(same(control_value("camera_fov"),42.0) and same(control_value("normal_strength"),1.2),"loaded_settings_refresh_UI")
@@ -632,6 +635,21 @@ func settings_round_trip() -> void:
     config.save(isolated_path)
     check(not scene.load_settings() and scene.values == saved,"invalid_saved_settings_do_not_partially_apply")
     check(scene.rig.lens_profiles_snapshot()==saved_profiles and scene.parallax.snapshot()==saved_parallax and scene.lamp_overrides==saved_overrides,"invalid_cfg_preserves_all_authoritative_controllers")
+    var old_three := ConfigFile.new()
+    old_three.parse(scene.settings.config_for(scene.settings.candidate_from_values(saved, saved_overrides)).encode_to_text())
+    old_three.set_value("lens_O", "radius", 29.5)
+    old_three.set_value("lens_O", "fov", 38.0)
+    old_three.set_value("camera", "variant", "O")
+    old_three.save(isolated_path)
+    var old_three_hash := FileAccess.get_sha256(isolated_path)
+    check(scene.load_settings() and scene.rig.variant_id == "F" and scene.rig.lens_profiles_snapshot() == saved_profiles and scene.values == saved, "scene_maps_valid_saved_O_to_F_and_preserves_F_W_settings")
+    check(FileAccess.get_sha256(isolated_path) == old_three_hash, "scene_old_O_load_preserves_file_bytes")
+    var camera_before_rejection: Transform3D = scene.camera.global_transform
+    old_three.set_value("lens_O", "radius", NAN)
+    old_three.save(isolated_path)
+    var rejected_old_hash := FileAccess.get_sha256(isolated_path)
+    check(not scene.load_settings() and scene.values == saved and scene.rig.lens_profiles_snapshot() == saved_profiles and same(scene.camera.global_transform, camera_before_rejection), "scene_invalid_discarded_O_lens_rejects_atomically")
+    check(FileAccess.get_sha256(isolated_path) == rejected_old_hash, "scene_invalid_O_load_does_not_rewrite_file")
     var legacy := ConfigFile.new()
     legacy.set_value("meta","schema",1)
     legacy.set_value("meta","scene","ancient-canal")
@@ -805,7 +823,7 @@ func cross_process() -> void:
         scene.select_variant("W")
         scene.set_lens("radius",24.5)
         scene.set_lens("fov",47.0)
-        scene.select_variant("O")
+        scene.select_variant("F")
         scene.set_lens("radius",32.5)
         scene.set_lens("fov",42.0)
         scene.set_parameter("far_clouds",.4)
@@ -820,7 +838,7 @@ func cross_process() -> void:
     else:
         check(scene.load_settings(),"cross_process_settings_loaded")
         check(same(scene.camera.fov,42.0) and scene.attributes.dof_blur_near_enabled and same(shader_value("normal_strength"),1.2) and same(scene.main_light.light_color,Color(.8,.6,.4,1)),"cross_process_real_properties_restored")
-        check(scene.rig.variant_id=="O" and same(scene.rig.lens_snapshot().radius,32.5) and same(scene.rig.lens_profiles.W.radius,24.5) and same(scene.rig.lens_profiles.W.fov,47.0),"cross_process_all_lens_profiles_restored")
+        check(scene.rig.variant_id=="F" and same(scene.rig.lens_snapshot().radius,32.5) and same(scene.rig.lens_profiles.W.radius,24.5) and same(scene.rig.lens_profiles.W.fov,47.0),"cross_process_all_lens_profiles_restored")
         check(scene.parallax.snapshot().mode=="natural" and same(scene.parallax.snapshot().far_clouds,.4) and same(scene.parallax.effective("far_clouds"),1.0),"cross_process_six_layer_requested_profile_restored")
         check(same(scene.lamp_state("streetlamp_left_back").energy,1.25) and same(scene.lamp_state("streetlamp_left_back").color,Color(1,.7,.4,1)),"cross_process_single_light_actual_override_restored")
         check(scene.values.time_preset=="custom" and background_palette_matches("night"),"cross_process_custom_night_background_applies_actual_layer_colors")

@@ -1,6 +1,7 @@
 extends RefCounted
 ## One independent transaction: live controllers own camera/profile calculations.
-const Camera = preload("res://scripts/frontal_canal/camera.gd")
+const Camera = preload("res://scripts/ancient_canal/camera.gd")
+const LegacyCamera = preload("res://scripts/frontal_canal/camera.gd")
 const Parallax = preload("res://scripts/ancient_canal/parallax.gd")
 const SPEC_PATH := "res://resources/ancient-canal/parameters.json"
 const SETTINGS_PATH := "user://settings/ancient-canal.cfg"
@@ -17,6 +18,7 @@ var parameters: Dictionary = {}
 var path := SETTINGS_PATH
 var message := ""
 var migrated_v1 := false
+var migrated_orbit := false
 var discarded_fields: Array[String] = []
 var camera_source: RefCounted = Camera.new()
 var parallax_source: RefCounted = Parallax.new()
@@ -74,7 +76,7 @@ func field_error(key: String, value: Variant) -> String:
         var error: String = camera_source.lens_error("radius" if key == "camera_distance" else "fov", value)
         return "镜头参数超出共享控制器允许的范围。" if not error.is_empty() else ""
     if key == "camera_variant":
-        return "镜头方案无效。" if not value is String or not Camera.VARIANTS.has(value) else ""
+        return "镜头方案无效。" if not value is String or not Camera.SUPPORTED_VARIANTS.has(value) else ""
     if PARALLAX_ALIASES.has(key) or key in LAYER_IDS:
         return parallax_source.field_error(PARALLAX_ALIASES.get(key, key), value)
     return _definition_error(parameters[key], value)
@@ -209,10 +211,10 @@ func validate_candidate(value: Dictionary) -> Dictionary:
         var error := field_error(key, value.parameters[key])
         if not error.is_empty(): message = error; return {}
         normalized[key] = normalize(key, value.parameters[key])
-    if not _exact_keys(value.camera, ["variant", "follow"]) or not value.camera.variant is String or not Camera.VARIANTS.has(value.camera.variant) or typeof(value.camera.follow) != TYPE_BOOL:
+    if not _exact_keys(value.camera, ["variant", "follow"]) or not value.camera.variant is String or not Camera.SUPPORTED_VARIANTS.has(value.camera.variant) or typeof(value.camera.follow) != TYPE_BOOL:
         message = "镜头方案或跟随设置无效。"; return {}
     var lenses: Dictionary = camera_source.validate_lens_profiles(value.lens_profiles)
-    if lenses.is_empty(): message = "三组镜头设置无效，当前镜头保留。"; return {}
+    if lenses.is_empty(): message = "F / W 镜头设置无效，当前镜头保留。"; return {}
     var profile_error: String = parallax_source.validate_snapshot(value.parallax)
     if not profile_error.is_empty(): message = profile_error; return {}
     var overrides: Dictionary = {}
@@ -259,7 +261,7 @@ func config_for(candidate: Dictionary) -> ConfigFile:
     config.set_value("meta", "background_preset", candidate.background_preset)
     for key in candidate.parameters: config.set_value("parameters", key, candidate.parameters[key])
     for key in candidate.camera: config.set_value("camera", key, candidate.camera[key])
-    for id in Camera.VARIANTS:
+    for id in Camera.SUPPORTED_VARIANTS:
         for key in candidate.lens_profiles[id]: config.set_value("lens_" + id, key, candidate.lens_profiles[id][key])
     for key in candidate.parallax: config.set_value("parallax", key, candidate.parallax[key])
     config.set_value("lamps", "overrides", candidate.lamp_overrides)
@@ -286,12 +288,13 @@ func save_candidate(value: Dictionary) -> bool:
     file.close()
     if error == OK: error = DirAccess.rename_absolute(temporary, destination)
     if error != OK: DirAccess.remove_absolute(temporary)
-    message = "江南河街设置已保存，三组镜头与单灯修改一同保留。" if error == OK else "设置保存失败，原文件保留。"
-    if error == OK: migrated_v1 = false
+    message = "江南河街设置已保存，F / W 镜头与单灯修改一同保留。" if error == OK else "设置保存失败，原文件保留。"
+    if error == OK: migrated_v1 = false; migrated_orbit = false
     return error == OK
 
 func load_settings() -> Dictionary:
     migrated_v1 = false
+    migrated_orbit = false
     discarded_fields.clear()
     if not FileAccess.file_exists(path): message = "尚未保存设置，继续使用当前参数。"; return {}
     var file := FileAccess.open(path, FileAccess.READ)
@@ -321,28 +324,45 @@ func apply_config(config: ConfigFile) -> Dictionary:
     if schema != 2: return {}
     if not _exact_keys(_section(config, "meta"), ["schema", "scene", "background_preset"]): return {}
     var sections := config.get_sections()
-    var required := ["meta", "parameters", "camera", "lens_F", "lens_W", "lens_O", "parallax", "lamps"]
+    var required := ["meta", "parameters", "camera", "lens_F", "lens_W", "parallax", "lamps"]
+    var legacy_orbit := "lens_O" in sections
+    if legacy_orbit: required.append("lens_O")
     if sections.size() != required.size(): return {}
     for section in required:
         if section not in sections: return {}
     if not _exact_keys(_section(config, "lamps"), ["overrides"]): return {}
     var lenses: Dictionary = {}
-    for id in Camera.VARIANTS: lenses[id] = _section(config, "lens_" + id)
+    for id in Camera.SUPPORTED_VARIANTS: lenses[id] = _section(config, "lens_" + id)
+    var saved_camera := _section(config, "camera")
+    if legacy_orbit:
+        # A complete historical F/W/O transaction must validate its inactive O
+        # profile before it can be discarded. Partial or malformed files fail.
+        lenses["O"] = _section(config, "lens_O")
+        var legacy_source := LegacyCamera.new()
+        var validated: Dictionary = legacy_source.validate_lens_profiles(lenses)
+        if validated.is_empty() or not _exact_keys(saved_camera, ["variant", "follow"]) or not saved_camera.variant is String or not LegacyCamera.VARIANTS.has(saved_camera.variant) or typeof(saved_camera.follow) != TYPE_BOOL:
+            message = "旧 F / W / O 镜头设置无效，当前镜头保留。"; return {}
+        validated.erase("O")
+        lenses = validated
+        if saved_camera.variant == "O": saved_camera.variant = "F"
     var saved_parameters := _section(config, "parameters")
     var previous_keys: Array = _parameters_only(default_values()).keys().filter(func(key): return key not in BROAD_LIGHT_KEYS)
-    var old_lighting_config := _exact_keys(saved_parameters, previous_keys)
+    var old_lighting_config := legacy_orbit and _exact_keys(saved_parameters, previous_keys)
     if old_lighting_config:
         # Only the complete previous schema-2 set qualifies for this additive
         # upgrade. Partial current files still fail strict validation below.
         var defaults := default_values()
         for key in BROAD_LIGHT_KEYS: saved_parameters[key] = defaults[key]
         saved_parameters.broad_energy = {"day":.1,"dusk":1.7,"night":2.6}.get(saved_parameters.get("time_preset","dusk"),defaults.broad_energy)
-    var candidate := validate_candidate({"schema":2, "parameters":saved_parameters, "camera":_section(config, "camera"),
+    var candidate := validate_candidate({"schema":2, "parameters":saved_parameters, "camera":saved_camera,
         "lens_profiles":lenses, "parallax":_section(config, "parallax"), "lamp_overrides":config.get_value("lamps", "overrides"),
         "background_preset":config.get_value("meta", "background_preset")})
     if not candidate.is_empty(): message = "江南河街设置已载入，等待场景统一应用。"
     if not candidate.is_empty() and old_lighting_config:
         message = "原设置已在内存载入，新大范围灯使用默认值；手动保存前保留原文件。"
+    if not candidate.is_empty() and legacy_orbit:
+        migrated_orbit = true
+        message = "旧 F / W / O 设置仅在内存迁移为 F / W，原 O 方案改用 F；保留两组镜头、其他参数及原文件，主动保存后才移除 O。"
     return candidate
 
 func _migrate_v1(config: ConfigFile) -> Dictionary:

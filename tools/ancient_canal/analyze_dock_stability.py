@@ -210,8 +210,8 @@ def analyze(capture_dir, expected=None):
             metrics["control_bank"] = temporal_metrics(bank_pixels)
         groups[key] = metrics
         contacts.append(contact(frames, images, contacts_dir/(key+"-micro-contact.png"), group["fixed_roi"] if key=="legacy_projection" else None))
-    if set(groups) != {"legacy_projection","F","W","O"}:
-        raise ValueError("must capture old projection and all three current camera variants")
+    if set(groups) != {"legacy_projection","F","W"}:
+        raise ValueError("must capture old projection and both current fixed camera variants")
     motion = {}
     for case in source["motion_cases"]:
         key = case["id"]
@@ -239,8 +239,8 @@ def analyze(capture_dir, expected=None):
             "interpretation":"Diagnostic only: moving lights, contact shadows and nearest texture sampling can change pixels. No automatic wood/stone or smoothness claim.",
             "visual_review_required":True}
         contacts.append(contact(selection, images, contacts_dir/(key+"-motion-contact.png")))
-    if set(motion) != {"F","W","O"}:
-        raise ValueError("actual moving coverage must include F/W/O")
+    if set(motion) != {"F","W"}:
+        raise ValueError("actual moving coverage must include F/W")
     final_current = fingerprint(ROOT)["sha256"]
     if final_current != current:
         raise ValueError("runtime changed during PNG analysis")
@@ -249,7 +249,7 @@ def analyze(capture_dir, expected=None):
         "producer_script":source["producer_script"],"producer_script_sha256":source["producer_script_sha256"],
         "analyzer_script":"tools/ancient_canal/analyze_dock_stability.py","analyzer_script_sha256":sha(Path(__file__)),
         "passed":all(group["passed"] for group in groups.values()),"criterion":source["criterion"],
-        "scope":"Verified current hardware GPU producer/PNG chain; each adjacent static +/-0.5mm dock pair <=1% changed pixels above16/255; actual F/W/O downhill/stop/uphill physical movement. Visual texture consistency and natural pixel edges are reviewed separately using the contacts.",
+        "scope":"Verified current hardware GPU producer/PNG chain; each adjacent static +/-0.5mm dock pair <=1% changed pixels above16/255; actual fixed F/W downhill/stop/uphill physical movement. Visual texture consistency and natural pixel edges are reviewed separately using the contacts.",
         "static_micro_groups":groups,"motion_cases":motion,"raw_frame_count":len(entries),
         "raw_frame_sha256":{entry["file"]:entry["sha256"] for entry in entries},"contacts":contacts,
         "surface_audit":audit,"sampling":source["sampling"],"wall_duration_ms":source["wall_duration_ms"],

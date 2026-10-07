@@ -4,7 +4,7 @@ const World = preload("res://scripts/ancient_canal/world.gd")
 const Actor = preload("res://scripts/ancient_canal/actor.gd")
 const Settings = preload("res://scripts/ancient_canal/settings.gd")
 const Console = preload("res://scripts/ancient_canal/console.gd")
-const FrontalRig = preload("res://scripts/frontal_canal/camera.gd")
+const CanalRig = preload("res://scripts/ancient_canal/camera.gd")
 const Background = preload("res://scripts/ancient_canal/background.gd")
 const Parallax = preload("res://scripts/ancient_canal/parallax.gd")
 const FONT_PATH := "res://assets/ancient-canal/fonts/NotoSansSC.ttf"
@@ -82,8 +82,10 @@ func _ready() -> void:
     camera.far = 240
     camera.attributes = attributes
     add_child(camera)
-    rig = FrontalRig.new()
-    rig.configure(camera,layout.camera,vec(layout.player_spawn))
+    rig = CanalRig.new()
+    var camera_config: Dictionary = layout.camera.duplicate(true)
+    camera_config.follow_bounds = layout.banks
+    rig.configure(camera,camera_config,vec(layout.player_spawn))
     parallax = Parallax.new()
     parallax.configure(camera,rig,farfield)
     settings.configure_controllers(rig,parallax)
@@ -554,7 +556,7 @@ func restore_defaults() -> void:
     camera_locked = false
     values = settings.default_values()
     rig.enabled = true
-    rig.restore_lens_profiles({"F":rig.lens_defaults("F"),"W":rig.lens_defaults("W"),"O":rig.lens_defaults("O")},"F",player.position)
+    rig.restore_lens_profiles(rig.lens_profiles_defaults(),"F",player.position)
     parallax.reset_all()
     sync_controller_values()
     apply_time_preset("dusk")

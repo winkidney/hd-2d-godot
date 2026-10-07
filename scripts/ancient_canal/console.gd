@@ -219,7 +219,7 @@ func _build_camera_actions(parent: Node) -> void:
     _button(actions, "恢复六层远景", func():
         if scene.has_method("reset_parallax"): scene.reset_parallax()
         refresh())
-    _button(parent, "保存三组镜头与全部设置", func():
+    _button(parent, "保存 F / W 镜头与全部设置", func():
         scene.save_settings()
         refresh())
 

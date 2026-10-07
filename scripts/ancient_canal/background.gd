@@ -19,8 +19,11 @@ var wind_enabled := true
 var cloud_time := 0.0
 var profile_id := "dusk"
 
-func configure(value: Node3D, _layout: Dictionary) -> void:
+func configure(value: Node3D, layout: Dictionary) -> void:
     world = value
+    var bank: Dictionary = layout.banks
+    var outer_x: float = bank.outer_x
+    var lateral_extension := maxf(0.0, outer_x - 13.0)
     name = "CanalBackground"
     for id in LAYER_IDS:
         var layer := Node3D.new()
@@ -28,9 +31,16 @@ func configure(value: Node3D, _layout: Dictionary) -> void:
         add_child(layer)
         layers[id] = layer
     for position in NEAR_HOUSES:
-        town_model("house", Vector3(position[0], 0, position[1]), layers.near_town)
+        var site := Vector3(position[0], 0, position[1])
+        # Side rows keep their original clearance beyond the playable banks.
+        if absf(site.x) == 17.0:
+            site.x += signf(site.x) * lateral_extension
+        town_model("house", site, layers.near_town)
     for position in NEAR_TREES:
-        town_model("willow", Vector3(position[0], 0, position[1]), layers.near_town)
+        var site := Vector3(position[0], 0, position[1])
+        if absf(site.x) == 19.0:
+            site.x += signf(site.x) * lateral_extension
+        town_model("willow", site, layers.near_town)
     for index in range(FAR_HOUSES.size()):
         var position: Array = FAR_HOUSES[index]
         var model := town_model("house", Vector3(position[0], 0, position[1]), layers.far_town)
@@ -44,13 +54,25 @@ func configure(value: Node3D, _layout: Dictionary) -> void:
         cloud("far_clouds", index, Vector3([-140.0,-45.0,90.0,150.0][index], 16.0 + index % 3, -250.0 - index * 5.0), Vector2(32,7), 1, 400.0)
     # Foundation strips touch the playable bank edges rather than overlap them.
     # They stay fixed in world space; only decorative layer roots move.
+    var outer_street_edge := maxf(52.0, outer_x + 1.0)
+    var outer_street_width := outer_street_edge - outer_x
+    var street_z: float = (bank.min_z + bank.max_z) / 2.0
+    var street_length: float = bank.max_z - bank.min_z
+    var river_edge: float = layout.river.half_width
+    var south_edge := 46.0
+    var south_length: float = south_edge - bank.max_z
     for side in [-1.0,1.0]:
         world.box("DistantBank", Vector3(side*22.6,-.5,-71), Vector3(40,1,110), Color(.5,.49,.45), false)
-        world.box("OuterStreet", Vector3(side*32.5,-.5,-1), Vector3(39,1,30), Color(.5,.49,.45), false)
+        world.box("OuterStreet", Vector3(side*(outer_x+outer_street_edge)/2.0,-.5,street_z), Vector3(outer_street_width,1,street_length), Color(.5,.49,.45), false)
         world.box("FarBank", Vector3(side*82.6,-.5,-210), Vector3(160,1,168), Color(.46,.48,.45), false)
+        # Continue the visible banks beyond the south collision boundary. The
+        # river gap stays open, and these surfaces only meet existing ground.
+        world.box("SouthBankLeft" if side < 0 else "SouthBankRight",
+            Vector3(side*(river_edge+outer_street_edge)/2.0,-.5,(bank.max_z+south_edge)/2.0),
+            Vector3(outer_street_edge-river_edge,1,south_length), Color(.5,.49,.45), false)
     var water_mesh := world.water.mesh as PlaneMesh
-    water_mesh.size = Vector2(5.2,320)
-    world.water.position.z = -134.0
+    water_mesh.size = Vector2(5.2,340)
+    world.water.position.z = -124.0
     apply_preset("dusk")
 
 func town_model(id: String, position: Vector3, parent: Node3D) -> Node3D:

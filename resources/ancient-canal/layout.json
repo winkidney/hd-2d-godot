@@ -9,7 +9,7 @@
     "water_y": -0.62
   },
   "banks": {
-    "outer_x": 13.0,
+    "outer_x": 26.0,
     "min_z": -16.0,
     "max_z": 14.0,
     "surface_y": 0.0
@@ -36,7 +36,7 @@
     "pitch": 14.0,
     "distance": 30.0,
     "fov": 35.0,
-    "follow_gain": 0.68,
+    "follow_gain": 1.0,
     "far": 320.0
   },
   "models": [
