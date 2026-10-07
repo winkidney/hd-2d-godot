@@ -1,0 +1,791 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-08",
+  "scene": "scenes/ancient_canal.tscn",
+  "source_commit": "661452d10bf18a1fc372c8daff7940006c591fa3",
+  "original_output_root": "build/ancient-canal/profile-20261008",
+  "compression_policy": "gzip level 9, mtime 0; decompressed sample bytes identical to original files",
+  "excluded": "run logs, shader/pipeline caches, XDG user-data/config/cache, transient processes",
+  "records": [
+    {
+      "source": "build/ancient-canal/profile-20261008/cleanup.json",
+      "path": "metadata/cleanup.json",
+      "encoding": "identity",
+      "original_bytes": 177,
+      "stored_bytes": 177,
+      "original_sha256": "a62b44b0443cb1c2f0be70de25064bed97cba5795a85bbdc6403d983dd33d8ed",
+      "stored_sha256": "a62b44b0443cb1c2f0be70de25064bed97cba5795a85bbdc6403d983dd33d8ed",
+      "role": "measurement_metadata"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/gpu-stage-summary-corrected.json",
+      "path": "metadata/gpu-stage-summary-corrected.json",
+      "encoding": "identity",
+      "original_bytes": 7171,
+      "stored_bytes": 7171,
+      "original_sha256": "51a168a0815bf62f99c4f9edf8dc12be732e02104a88cdcb3d4d447919204646",
+      "stored_sha256": "51a168a0815bf62f99c4f9edf8dc12be732e02104a88cdcb3d4d447919204646",
+      "role": "measurement_metadata"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/gpu-stage-summary.json",
+      "path": "metadata/gpu-stage-summary.json",
+      "encoding": "identity",
+      "original_bytes": 7184,
+      "stored_bytes": 7184,
+      "original_sha256": "084952c1057601c544f9faf205daabe13e7905e8d2bc56a75dd5a894f6ca9263",
+      "stored_sha256": "084952c1057601c544f9faf205daabe13e7905e8d2bc56a75dd5a894f6ca9263",
+      "role": "measurement_metadata"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/model-inventory.json",
+      "path": "metadata/model-inventory.json",
+      "encoding": "identity",
+      "original_bytes": 2011,
+      "stored_bytes": 2011,
+      "original_sha256": "a783633c79dbcfd220ec9536a3844bf56e7cb2de303a95b3f51cec46f7603964",
+      "stored_sha256": "a783633c79dbcfd220ec9536a3844bf56e7cb2de303a95b3f51cec46f7603964",
+      "role": "measurement_metadata"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/verification-summary.json",
+      "path": "metadata/verification-summary.json",
+      "encoding": "identity",
+      "original_bytes": 11954,
+      "stored_bytes": 11954,
+      "original_sha256": "0566042b436399fa89931a80e2e78ec050d1bfc5c7e741fdc2acce59e836a1e6",
+      "stored_sha256": "0566042b436399fa89931a80e2e78ec050d1bfc5c7e741fdc2acce59e836a1e6",
+      "role": "measurement_metadata"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-a/baseline-dusk-samples.json",
+      "path": "raw/ablation-a/baseline-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 372693,
+      "stored_bytes": 52742,
+      "original_sha256": "17789e9946288d7aeeb9d2f365b8c47ec3111990fb5a9d77f33a6d5a8463bd24",
+      "stored_sha256": "9858cb453f52d8dfdf0ade465d027ba49c63836599bebc57c27c41c5c6f28fb5",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-a/manifest.json",
+      "path": "metadata/ablation-a/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 179252,
+      "stored_bytes": 179252,
+      "original_sha256": "14253cd243e55bd2caa941c0d72d93daf5a3f4ca33c8a301146cb1f2b7fee424",
+      "stored_sha256": "14253cd243e55bd2caa941c0d72d93daf5a3f4ca33c8a301146cb1f2b7fee424",
+      "role": "measurement_metadata"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_broad_shadows-dusk-samples.json",
+      "path": "raw/ablation-a/no_broad_shadows-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 385204,
+      "stored_bytes": 54017,
+      "original_sha256": "6a70ffa47581d21d39bddaaf2583182571c30e6fe728d162851cabeddbb3d1fe",
+      "stored_sha256": "f7662cbb5216a82d62b616f0035ab07a39f7083da7013b7b5ee7622d3071578f",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_dof-dusk-samples.json",
+      "path": "raw/ablation-a/no_dof-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 378524,
+      "stored_bytes": 54730,
+      "original_sha256": "dda3e2f694282099f0c52f851a5da4817ec377724df4433804c95cceeb913247",
+      "stored_sha256": "cce0520808746495bd02e1907dce7858096bbcd2e6b0d436d709df29eddec020",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_far_town-dusk-samples.json",
+      "path": "raw/ablation-a/no_far_town-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 385385,
+      "stored_bytes": 53693,
+      "original_sha256": "5f6555a5332cc85754bf8a0eb3a49a902b58d870d9253b6a3bb3fe1b3f2963ef",
+      "stored_sha256": "717556b06d91fcafa22e03ec3db2f99b7059195f6fd18ac8571f48b23a0a86c6",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_glow-dusk-samples.json",
+      "path": "raw/ablation-a/no_glow-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 381287,
+      "stored_bytes": 54326,
+      "original_sha256": "a26d2d8f36daf8e50506c319e50566a9f03940f46a28c34eeb7b7e0153b0ea1d",
+      "stored_sha256": "5ceb92fdeb942989db595bbc4f435be271c0eb16402b84d1ffd1cc9f4c4507a0",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_local_shadows-dusk-samples.json",
+      "path": "raw/ablation-a/no_local_shadows-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 382663,
+      "stored_bytes": 52084,
+      "original_sha256": "9479a175703a3daaeeb72dcaddcae6ec58053adc632e4e758d6f83b88b9795b5",
+      "stored_sha256": "bbf02ba3fa24982b7f7be6fd3e1d792bd1ff24280bd39a7b5617b226bacb365b",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_main_shadow-dusk-samples.json",
+      "path": "raw/ablation-a/no_main_shadow-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 384980,
+      "stored_bytes": 53217,
+      "original_sha256": "c35228fd5ac874a3994800b4af79166ea047237458d6758c6a39fca82f13400a",
+      "stored_sha256": "5860347638adbb7cdf3e552ed52fda62d2c1ecd063acecc2e6f3274bf636e2ab",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_msaa-dusk-samples.json",
+      "path": "raw/ablation-a/no_msaa-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 385937,
+      "stored_bytes": 53743,
+      "original_sha256": "0684b8c0a18425adc16a2108eeedfe49a9bdd380a9560cccdb647b7efdb7f5da",
+      "stored_sha256": "dbd8355f83a5ad9dd9e83a9b4b4981a6f825320c45701c9b78b9693bc154290d",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_near_town-dusk-samples.json",
+      "path": "raw/ablation-a/no_near_town-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 384644,
+      "stored_bytes": 53937,
+      "original_sha256": "2b885b080a8115d73be2af2ed088ef914568775d0dff8b7705875cc20ecc19be",
+      "stored_sha256": "e56daece7a27f5880f19e1e6f0d4b82da00bce19f7134235005938722bf73813",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_normals-dusk-samples.json",
+      "path": "raw/ablation-a/no_normals-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 385487,
+      "stored_bytes": 54153,
+      "original_sha256": "9b6fa8c04d3fa279674a1c1932aef059f40f0942102998d6ee0cffaaebce6d1c",
+      "stored_sha256": "82e9c34fd32b34dc2ec6daf67cbb579bcd821305fa2cafe1a6ee2b2bbe232331",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_post-dusk-samples.json",
+      "path": "raw/ablation-a/no_post-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 387534,
+      "stored_bytes": 54878,
+      "original_sha256": "8c814af878a7a885cbed4d0d5f0a7f6cfcdd773ef5061d741270080f94ccb624",
+      "stored_sha256": "55166a73cb78faca2744942edf41969098476c63153cc28b578dc66702e50427",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_shadows-dusk-samples.json",
+      "path": "raw/ablation-a/no_shadows-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 382618,
+      "stored_bytes": 51791,
+      "original_sha256": "e1b5a8283ddb3672745a32038f4c13c02aa85f288b371e8f97e2e9c6eb10847e",
+      "stored_sha256": "e28bdc231817b085da54643a847c8189148ab98e14f6ed140be9ba2a78e5ea6b",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_ssao-dusk-samples.json",
+      "path": "raw/ablation-a/no_ssao-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 376881,
+      "stored_bytes": 54719,
+      "original_sha256": "27b8ffe52656e62c60ca425378d10876d3406303810cb08aef48fe1c263bbf3c",
+      "stored_sha256": "e23495ec22b4d1bd3b8de00ab338faf4905b3805af65f8979ff5a930ea0ca748",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_ssr-dusk-samples.json",
+      "path": "raw/ablation-a/no_ssr-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 376536,
+      "stored_bytes": 54301,
+      "original_sha256": "af89292a19ae76422ae1d7790670a5a1d7f3cee347fa572d5907f0573fbe5ed9",
+      "stored_sha256": "912d33251b601c24a061b7a390289eaf38d69483383865ef2623cf479fc84131",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-a/performance-report.json",
+      "path": "metadata/ablation-a/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 64502,
+      "stored_bytes": 64502,
+      "original_sha256": "56a7b562432f49bf423350f684c037855f11cbb401cd187b247f5277643be9fb",
+      "stored_sha256": "56a7b562432f49bf423350f684c037855f11cbb401cd187b247f5277643be9fb",
+      "role": "measurement_metadata"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-a/probe.gd",
+      "path": "snapshots/ablation-a/probe.gd",
+      "encoding": "identity",
+      "original_bytes": 27070,
+      "stored_bytes": 27070,
+      "original_sha256": "32227a7847e6862b8c38f7dba0a8555df54404a4caaf2b287758e360dd42885f",
+      "stored_sha256": "32227a7847e6862b8c38f7dba0a8555df54404a4caaf2b287758e360dd42885f",
+      "role": "generated_probe"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-a/scale_075-dusk-samples.json",
+      "path": "raw/ablation-a/scale_075-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 387800,
+      "stored_bytes": 54916,
+      "original_sha256": "dddc2da61a6c2e4e42a69935a74848606cae8ed5e58e776b2ba14d8cfe0234d4",
+      "stored_sha256": "b5d915a13466d4703d21223e6501753110dfe7d6649c3956dc0900c83382ce95",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/baseline-dusk-samples.json",
+      "path": "raw/ablation-b/baseline-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 896572,
+      "stored_bytes": 108521,
+      "original_sha256": "8ff43c488cb080373f4094eab8940d7a13e356edd51d5039d197382cbf69aff1",
+      "stored_sha256": "bcaac33c22bb2893c93d1e21523f67ee79e0f4fa481c0436172749db16fdb0ca",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/manifest.json",
+      "path": "metadata/ablation-b/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 179267,
+      "stored_bytes": 179267,
+      "original_sha256": "96af30bc8ae8f2d1c6067a92e07f42cb4f6d303679dd9a82495aa966c6b82011",
+      "stored_sha256": "96af30bc8ae8f2d1c6067a92e07f42cb4f6d303679dd9a82495aa966c6b82011",
+      "role": "measurement_metadata"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_broad_shadows-dusk-samples.json",
+      "path": "raw/ablation-b/no_broad_shadows-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 912109,
+      "stored_bytes": 110760,
+      "original_sha256": "47ac143a077836aa20622a9cd46baa1638a55f88234da6bc3a139c3232507d53",
+      "stored_sha256": "069655200931a00ec54e0180c018a5cbc49e783fac3f803a1b48764cc95a14fb",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_dof-dusk-samples.json",
+      "path": "raw/ablation-b/no_dof-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 1160106,
+      "stored_bytes": 136047,
+      "original_sha256": "f819f087592f881b864adc6e3436ba4840aa1cd3f703fbdaf3b570252242414e",
+      "stored_sha256": "f28a3bc1250f700877151b36d66824bf965e07574ebe1ef13c94a1fd8f3e0821",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_far_town-dusk-samples.json",
+      "path": "raw/ablation-b/no_far_town-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 890509,
+      "stored_bytes": 108035,
+      "original_sha256": "e97811db9ba19066533e413f7da483de07bc413d9457fb540caeab245a3905f7",
+      "stored_sha256": "54e7a9fcc78cdb7ee0f0999286f040fa9ff6924647004e3c183793e16ff1eee9",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_glow-dusk-samples.json",
+      "path": "raw/ablation-b/no_glow-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 943861,
+      "stored_bytes": 113665,
+      "original_sha256": "edc7aad1386270531371d8532ca79045b901bedc4589950424e1c8c3238a35e3",
+      "stored_sha256": "10dccae60800f42147ee947a50c90d1353af5547ac206dbac78a3016cb627e60",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_local_shadows-dusk-samples.json",
+      "path": "raw/ablation-b/no_local_shadows-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 992354,
+      "stored_bytes": 114416,
+      "original_sha256": "d32278e3faeef1ef04fcc5901a509424e61bc626e6297e9d7662158bed4f33d5",
+      "stored_sha256": "41c5f3a00c8b9fb5a4414fe979bea3208e0873dbd734397f67639add8033fc6b",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_main_shadow-dusk-samples.json",
+      "path": "raw/ablation-b/no_main_shadow-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 961179,
+      "stored_bytes": 115237,
+      "original_sha256": "1b340ffb5546e20a064b629dbe94bab1250f6a6c1bceebb5f2e344f8be404945",
+      "stored_sha256": "600689e0f1a48d738755a7968ed764676b1257be816596132b3c964fd5d59ccb",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_msaa-dusk-samples.json",
+      "path": "raw/ablation-b/no_msaa-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 952242,
+      "stored_bytes": 111801,
+      "original_sha256": "08ffe965229780a4266e09a2561d565866bf723304082ca7e941b2fd805a83fc",
+      "stored_sha256": "8beedac80c6aec8f5e2d9a69a9a6e41b924b66014a6b193d0b3eac19b7fbd9e9",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_near_town-dusk-samples.json",
+      "path": "raw/ablation-b/no_near_town-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 934940,
+      "stored_bytes": 112639,
+      "original_sha256": "7c4780adf66a344ea85c14aca60bbfaae93bd5c695834f8ec782cdd12ff1ba8a",
+      "stored_sha256": "4769d247ea14011cba77d01827253e93ddfc4c2d8953a9a69a56a15c9085f3ef",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_normals-dusk-samples.json",
+      "path": "raw/ablation-b/no_normals-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 877758,
+      "stored_bytes": 106737,
+      "original_sha256": "dc498c947f4467ca4a82ed0cc35546fff64d76606350ce08e55e6d2a6d8678d2",
+      "stored_sha256": "357bdec4777a38a96175fcef6cb4be458f7fb8c170da966f33bf7cfcc596db82",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_post-dusk-samples.json",
+      "path": "raw/ablation-b/no_post-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 1607846,
+      "stored_bytes": 187178,
+      "original_sha256": "b8fb5efe631145be781727c4ea5ae2e7a248bb0ee095d593b85828bed4f48859",
+      "stored_sha256": "cf1af03077b11679194bd96d7f364a13cc4c5c55179cc6952c0804627e2fad08",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_shadows-dusk-samples.json",
+      "path": "raw/ablation-b/no_shadows-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 1107665,
+      "stored_bytes": 125720,
+      "original_sha256": "7fc4200327ff22dd6d8b0356859822f5ef700bd84dd68dfec85a4e1be5d7cfb2",
+      "stored_sha256": "bc645a53d08d0a1ee5eb1be336dc5e7be59bfcf469805eb7e5e8c4888c22ded3",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_ssao-dusk-samples.json",
+      "path": "raw/ablation-b/no_ssao-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 917149,
+      "stored_bytes": 109660,
+      "original_sha256": "f65e133164017a6d111d2b8b36b9c26263b9ac5cc36aedfe13d310ace04a1b63",
+      "stored_sha256": "c0f9d794b94966d7128ebf657e7025294bfecc069c6df8493fe6a57cd061e225",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_ssr-dusk-samples.json",
+      "path": "raw/ablation-b/no_ssr-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 981120,
+      "stored_bytes": 116415,
+      "original_sha256": "4c89274e56e36f2cb19fac9aa54cb2e5988746a086f1e31f7b3b857ae453b250",
+      "stored_sha256": "a8f827338baabfc6e6a145fe5da9996ec958f9bee25f1248dbc1772e662d90e0",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/parallax.gd",
+      "path": "snapshots/ablation-b/parallax.gd",
+      "encoding": "identity",
+      "original_bytes": 8240,
+      "stored_bytes": 8240,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "role": "generated_probe"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/performance-report.json",
+      "path": "metadata/ablation-b/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 68729,
+      "stored_bytes": 68729,
+      "original_sha256": "34a15c9f010d223cba710336600435da9bb7b2b5a9d76007f852246082ca6f23",
+      "stored_sha256": "34a15c9f010d223cba710336600435da9bb7b2b5a9d76007f852246082ca6f23",
+      "role": "measurement_metadata"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/probe.gd",
+      "path": "snapshots/ablation-b/probe.gd",
+      "encoding": "identity",
+      "original_bytes": 27434,
+      "stored_bytes": 27434,
+      "original_sha256": "5f77e9b2608573e3db3cd7044203f3eee79aacb97580780ded21835a3316900b",
+      "stored_sha256": "5f77e9b2608573e3db3cd7044203f3eee79aacb97580780ded21835a3316900b",
+      "role": "generated_probe"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/scale_075-dusk-samples.json",
+      "path": "raw/ablation-b/scale_075-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 1197734,
+      "stored_bytes": 138810,
+      "original_sha256": "86a3edf163bb867f4bd84cc502c94a37892467fecfb3729d723e112b8e8d3ac6",
+      "stored_sha256": "f9002cc87d3a17353e537471b5d6a4ecbe6cd13eb53a1b65269b1f62c6727134",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/scene.gd",
+      "path": "snapshots/ablation-b/scene.gd",
+      "encoding": "identity",
+      "original_bytes": 35342,
+      "stored_bytes": 35342,
+      "original_sha256": "29560421c8705c8f3e264b55d3b80d11e57de7b56413a61342babd5b86b9b294",
+      "stored_sha256": "29560421c8705c8f3e264b55d3b80d11e57de7b56413a61342babd5b86b9b294",
+      "role": "generated_probe"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/ablation-b/static_natural-dusk-samples.json",
+      "path": "raw/ablation-b/static_natural-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 853684,
+      "stored_bytes": 105862,
+      "original_sha256": "49ff429f4d72fa9d6a2d4f75c54dd2af4a1de882a0b630c9be681e74c8f0f821",
+      "stored_sha256": "a38ac9110aa75a3496a4b5db45891224e80b00c617f454053bb9ade6439684b1",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/baseline/day-samples.json",
+      "path": "raw/baseline/day-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 778151,
+      "stored_bytes": 120556,
+      "original_sha256": "0ab00399026a64674aea61fd9718f3f117d57ee850db7409fcb8b5f519ba5569",
+      "stored_sha256": "5f4fb43aa02fdbf12feb6f54293c60d4577d12ec5d60e3e03b8765f73566ecf2",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/baseline/dusk-samples.json",
+      "path": "raw/baseline/dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 790057,
+      "stored_bytes": 117877,
+      "original_sha256": "080b0d3e7914d499b3b8ca05e6463a9136d3477569da82d3714c85520d9f35fa",
+      "stored_sha256": "da2f01ce7a1f0a1eeb9d6debd2c0f4c48e38711430479fe89dad47b881923a58",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/baseline/night-samples.json",
+      "path": "raw/baseline/night-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 799352,
+      "stored_bytes": 118446,
+      "original_sha256": "0a975920ab94fd94ea55166621e77190dbb11e34b13deb21702bb57cc8b37f5e",
+      "stored_sha256": "3d124b806976721b275c9c00395b120f41613de525573d07aff01441027cbf25",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/baseline/performance-report.json",
+      "path": "metadata/baseline/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 12222,
+      "stored_bytes": 12222,
+      "original_sha256": "7efe7fd21009d395ce62b1ddf19e6959a18ea2654290668266d0a51a3be28ebb",
+      "stored_sha256": "7efe7fd21009d395ce62b1ddf19e6959a18ea2654290668266d0a51a3be28ebb",
+      "role": "measurement_metadata"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/confirm/baseline-dusk-samples.json",
+      "path": "raw/confirm/baseline-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 854764,
+      "stored_bytes": 106212,
+      "original_sha256": "c0025843e74d6e6fa8b4361cc594490e3844cb7b12c4ce97e114add6f6617f15",
+      "stored_sha256": "db379f9597792d2f6d810ad4d016dd5486072623ceb8473f5990c910ba472e46",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/confirm/dof_low-dusk-samples.json",
+      "path": "raw/confirm/dof_low-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 1022511,
+      "stored_bytes": 125833,
+      "original_sha256": "f87773ebf7be27c84634f1156a6b941f129f8ec4410067709ad274d78dc84469",
+      "stored_sha256": "d07060083c949bfe59b62f4dcd274a016a4283c2e2dd79de614ca4f22b7b9ff9",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/confirm/manifest.json",
+      "path": "metadata/confirm/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 179565,
+      "stored_bytes": 179565,
+      "original_sha256": "6e0f5ce9060b2127ae3a2f4ffdba1fa6cc36a9b047939d26f7e7600f0b86c2ca",
+      "stored_sha256": "6e0f5ce9060b2127ae3a2f4ffdba1fa6cc36a9b047939d26f7e7600f0b86c2ca",
+      "role": "measurement_metadata"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/confirm/no_dof-dusk-samples.json",
+      "path": "raw/confirm/no_dof-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 1140360,
+      "stored_bytes": 134235,
+      "original_sha256": "88c8bc396d9cc7741496e5ac32983d19c01700fafed182aea81bb3694f55d7eb",
+      "stored_sha256": "ee99b7180030fa0ff75c50c09eb685f4f8fc0acc2397ab6fe5bb70bae7a828fd",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/confirm/no_local_shadows-dusk-samples.json",
+      "path": "raw/confirm/no_local_shadows-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 983980,
+      "stored_bytes": 109056,
+      "original_sha256": "8cb570e96d0b3ea499afd5a8e68438ff8f8a81402832c1830b2c8e8cb1665da2",
+      "stored_sha256": "b91baa7af46cdabef50580446615b271f1c2bf023b56c58ce550c1762c06ae74",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/confirm/parallax.gd",
+      "path": "snapshots/confirm/parallax.gd",
+      "encoding": "identity",
+      "original_bytes": 8240,
+      "stored_bytes": 8240,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "role": "generated_probe"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/confirm/performance-report.json",
+      "path": "metadata/confirm/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 18620,
+      "stored_bytes": 18620,
+      "original_sha256": "6904dbc812e0a92ec2fca25503e8f3b46b84c5a723c5dc08c4eaa6b9dab6b0a1",
+      "stored_sha256": "6904dbc812e0a92ec2fca25503e8f3b46b84c5a723c5dc08c4eaa6b9dab6b0a1",
+      "role": "measurement_metadata"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/confirm/probe.gd",
+      "path": "snapshots/confirm/probe.gd",
+      "encoding": "identity",
+      "original_bytes": 27963,
+      "stored_bytes": 27963,
+      "original_sha256": "0494a66da58399935fc71b18deb0c72bbea39df903024d30ec236b1ccdcb6898",
+      "stored_sha256": "0494a66da58399935fc71b18deb0c72bbea39df903024d30ec236b1ccdcb6898",
+      "role": "generated_probe"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/confirm/scene.gd",
+      "path": "snapshots/confirm/scene.gd",
+      "encoding": "identity",
+      "original_bytes": 35339,
+      "stored_bytes": 35339,
+      "original_sha256": "f1f4270367c745d768a6bde1ecb4f5744ed4b6eb4c7d3e61835cf00964f92384",
+      "stored_sha256": "f1f4270367c745d768a6bde1ecb4f5744ed4b6eb4c7d3e61835cf00964f92384",
+      "role": "generated_probe"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/cpu/actor.gd",
+      "path": "snapshots/cpu/actor.gd",
+      "encoding": "identity",
+      "original_bytes": 5559,
+      "stored_bytes": 5559,
+      "original_sha256": "2a1e612537748f0c402a720fef42744c43842deb22bef43c6c6f301f1586b47a",
+      "stored_sha256": "2a1e612537748f0c402a720fef42744c43842deb22bef43c6c6f301f1586b47a",
+      "role": "generated_probe"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/cpu/background.gd",
+      "path": "snapshots/cpu/background.gd",
+      "encoding": "identity",
+      "original_bytes": 8629,
+      "stored_bytes": 8629,
+      "original_sha256": "2c97e2db7481a7e4bd089dd99bbc44b924452980abf5dd66e8348f436ab7fd62",
+      "stored_sha256": "2c97e2db7481a7e4bd089dd99bbc44b924452980abf5dd66e8348f436ab7fd62",
+      "role": "generated_probe"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/cpu/baseline-dusk-samples.json",
+      "path": "raw/cpu/baseline-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 2781324,
+      "stored_bytes": 242119,
+      "original_sha256": "2ca8a71ed54f03509ff261b13a933be65ac7b8341dc1c93802af725ef11684cb",
+      "stored_sha256": "1bad6576dc9edb041a914140090cdea8db4ef0ae473ac94bc7adeb0cc5054892",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/cpu/camera.gd",
+      "path": "snapshots/cpu/camera.gd",
+      "encoding": "identity",
+      "original_bytes": 8331,
+      "stored_bytes": 8331,
+      "original_sha256": "fc09269202f476c7564f26325e54ef2eb63c66084325d0c6dbff9be0284ed450",
+      "stored_sha256": "fc09269202f476c7564f26325e54ef2eb63c66084325d0c6dbff9be0284ed450",
+      "role": "generated_probe"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/cpu/manifest.json",
+      "path": "metadata/cpu/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 179801,
+      "stored_bytes": 179801,
+      "original_sha256": "ea4e21dcfb6d47053c7c8ddbfd0b22b27307a238c59bacd8419b0742da5c4f43",
+      "stored_sha256": "ea4e21dcfb6d47053c7c8ddbfd0b22b27307a238c59bacd8419b0742da5c4f43",
+      "role": "measurement_metadata"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/cpu/parallax.gd",
+      "path": "snapshots/cpu/parallax.gd",
+      "encoding": "identity",
+      "original_bytes": 8669,
+      "stored_bytes": 8669,
+      "original_sha256": "25ea4dd6766d0efd49c4a016bdc50ecd64d7dca4fa8869320905d7b19d56b402",
+      "stored_sha256": "25ea4dd6766d0efd49c4a016bdc50ecd64d7dca4fa8869320905d7b19d56b402",
+      "role": "generated_probe"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/cpu/performance-report.json",
+      "path": "metadata/cpu/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 9918,
+      "stored_bytes": 9918,
+      "original_sha256": "42839abe60ded5b1e6ec08b34a19c84538e3269c7eaeaae1f44067f5e1a6a533",
+      "stored_sha256": "42839abe60ded5b1e6ec08b34a19c84538e3269c7eaeaae1f44067f5e1a6a533",
+      "role": "measurement_metadata"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/cpu/probe.gd",
+      "path": "snapshots/cpu/probe.gd",
+      "encoding": "identity",
+      "original_bytes": 28211,
+      "stored_bytes": 28211,
+      "original_sha256": "af76c12adc89ce76f74d3b7c9ccb77b191701fdc1f93fdfdebdf2edba29dedbf",
+      "stored_sha256": "af76c12adc89ce76f74d3b7c9ccb77b191701fdc1f93fdfdebdf2edba29dedbf",
+      "role": "generated_probe"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/cpu/scene.gd",
+      "path": "snapshots/cpu/scene.gd",
+      "encoding": "identity",
+      "original_bytes": 36763,
+      "stored_bytes": 36763,
+      "original_sha256": "0626fb644520c86f510e4d040662f61c7af2d22034ae4e09da03bb2a554fa60f",
+      "stored_sha256": "0626fb644520c86f510e4d040662f61c7af2d22034ae4e09da03bb2a554fa60f",
+      "role": "generated_probe"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/cpu/static_natural-dusk-samples.json",
+      "path": "raw/cpu/static_natural-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 2800591,
+      "stored_bytes": 234350,
+      "original_sha256": "a6c4b419aa617eb90bd66ab3f8584d4eb62fe7fbb4515bf575dd678f16376371",
+      "stored_sha256": "73f08c11c497a57d9ffa056950c74b6618f671e27f1c39b61a759c3887224ad8",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/gpu-stages/baseline-dusk-samples.json",
+      "path": "raw/gpu-stages/baseline-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 3088346,
+      "stored_bytes": 222530,
+      "original_sha256": "3795d9e3959706b5d71053eb01f2e244e330df4e39ec0f58ff7b059231dca1e5",
+      "stored_sha256": "5a313a03a62f0d4ff7dcb2f1b7c91ce91f1ceaa1f18b919d7658c014c31432ad",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/gpu-stages/manifest.json",
+      "path": "metadata/gpu-stages/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 179098,
+      "stored_bytes": 179098,
+      "original_sha256": "cd22a2162721f4100221e9eeaa07f56b154fa73fcc2be226b745418cd8e0f6f8",
+      "stored_sha256": "cd22a2162721f4100221e9eeaa07f56b154fa73fcc2be226b745418cd8e0f6f8",
+      "role": "measurement_metadata"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/gpu-stages/performance-report.json",
+      "path": "metadata/gpu-stages/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 5557,
+      "stored_bytes": 5557,
+      "original_sha256": "c46db7efe82ab332cf7dc48d93adaf989a1d9be9ffd5a9cf8768c4c258360ff5",
+      "stored_sha256": "c46db7efe82ab332cf7dc48d93adaf989a1d9be9ffd5a9cf8768c4c258360ff5",
+      "role": "measurement_metadata"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/gpu-stages/probe.gd",
+      "path": "snapshots/gpu-stages/probe.gd",
+      "encoding": "identity",
+      "original_bytes": 26803,
+      "stored_bytes": 26803,
+      "original_sha256": "56d44b0e5160ecd0d8850f7f15c126b4b1f69b4e838901e7747e2b65e406b5ab",
+      "stored_sha256": "56d44b0e5160ecd0d8850f7f15c126b4b1f69b4e838901e7747e2b65e406b5ab",
+      "role": "generated_probe"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/gpu-stages-corrected/baseline-dusk-samples.json",
+      "path": "raw/gpu-stages-corrected/baseline-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 6407806,
+      "stored_bytes": 447211,
+      "original_sha256": "542e3f450f30b1c424227d818fe8694ab02b031ce644fe322b13efdffc5e9ae0",
+      "stored_sha256": "a00c4b05f53a25868cb1045e724b83b0e4e92bf781e5f090cfb81f310df94511",
+      "role": "raw_samples"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/gpu-stages-corrected/manifest.json",
+      "path": "metadata/gpu-stages-corrected/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 179544,
+      "stored_bytes": 179544,
+      "original_sha256": "c4e9a848823058de8886c07605c03d2c13b309dd040ea9b2b2e900ca7679d8d9",
+      "stored_sha256": "c4e9a848823058de8886c07605c03d2c13b309dd040ea9b2b2e900ca7679d8d9",
+      "role": "measurement_metadata"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/gpu-stages-corrected/parallax.gd",
+      "path": "snapshots/gpu-stages-corrected/parallax.gd",
+      "encoding": "identity",
+      "original_bytes": 8240,
+      "stored_bytes": 8240,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "role": "generated_probe"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/gpu-stages-corrected/performance-report.json",
+      "path": "metadata/gpu-stages-corrected/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 5728,
+      "stored_bytes": 5728,
+      "original_sha256": "da3aaf3a82befb38f4c720d2b68ad4c7e061dd463ebdbcad05631b4e5ee8a5f8",
+      "stored_sha256": "da3aaf3a82befb38f4c720d2b68ad4c7e061dd463ebdbcad05631b4e5ee8a5f8",
+      "role": "measurement_metadata"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/gpu-stages-corrected/probe.gd",
+      "path": "snapshots/gpu-stages-corrected/probe.gd",
+      "encoding": "identity",
+      "original_bytes": 27919,
+      "stored_bytes": 27919,
+      "original_sha256": "744c018cb3cab73b43d079c8d4410bcd645b8072c9ff33b1bc0ea6e8d7334350",
+      "stored_sha256": "744c018cb3cab73b43d079c8d4410bcd645b8072c9ff33b1bc0ea6e8d7334350",
+      "role": "generated_probe"
+    },
+    {
+      "source": "build/ancient-canal/profile-20261008/gpu-stages-corrected/scene.gd",
+      "path": "snapshots/gpu-stages-corrected/scene.gd",
+      "encoding": "identity",
+      "original_bytes": 35352,
+      "stored_bytes": 35352,
+      "original_sha256": "6d84f75f7e82a6c1381e6196faa0ddbaff55a82c4b6f17a0f5ae934523523a14",
+      "stored_sha256": "6d84f75f7e82a6c1381e6196faa0ddbaff55a82c4b6f17a0f5ae934523523a14",
+      "role": "generated_probe"
+    },
+    {
+      "source": "tools/ancient_canal/benchmark.gd",
+      "path": "sources/benchmark.gd",
+      "encoding": "identity",
+      "original_bytes": 22005,
+      "stored_bytes": 22005,
+      "original_sha256": "30bfb1d7c8169baa49d7ba1371b9b720bd1acb9e17d06fe91ac28a0cd0071e1d",
+      "stored_sha256": "30bfb1d7c8169baa49d7ba1371b9b720bd1acb9e17d06fe91ac28a0cd0071e1d",
+      "role": "benchmark_source"
+    }
+  ]
+}

@@ -1,0 +1,2742 @@
+{
+  "schema_version": 1,
+  "verified": true,
+  "measurement_count": 42,
+  "report_count": 7,
+  "archived_records": 78,
+  "original_bytes": 45048652,
+  "stored_bytes": 6383584,
+  "source_commit": "661452d10bf18a1fc372c8daff7940006c591fa3",
+  "runtime_fingerprint": "1a540a6c3fa4548b7cdbe7636f456ae1384cf0bc58901947c56106cb9cb787c6",
+  "conditions": {
+    "native_size": [
+      1920,
+      1080
+    ],
+    "corrected_baseline_msaa": "2x",
+    "background_sleep_usec": 0,
+    "physics_hz": 60,
+    "time_scale": 1,
+    "gpu": "RTX 4070 SUPER",
+    "cpu": "Ryzen 9 7900X3D",
+    "driver": "580.178.04",
+    "engine": "4.7.2.ed1daf0bf",
+    "gpu_runs_serial": true,
+    "presentation_measured": false,
+    "instrumentation_runs_separate": true
+  },
+  "baseline_corrected_dusk": {
+    "wall": {
+      "sample_count": 4735,
+      "mean_ms": 2.1123510031678987,
+      "p50_ms": 2.028,
+      "p95_ms": 2.549,
+      "p99_ms": 2.70632
+    },
+    "gpu": {
+      "sample_count": 4735,
+      "mean_ms": 2.0229919740743347,
+      "p50_ms": 1.96700000762939,
+      "p95_ms": 2.36400008201599,
+      "p99_ms": 2.612659940719605
+    },
+    "render_cpu": {
+      "sample_count": 4735,
+      "mean_ms": 0.5531167900046174,
+      "p50_ms": 0.518999993801117,
+      "p95_ms": 0.6973000228405003,
+      "p99_ms": 0.8076600122451779
+    }
+  },
+  "dof_low_gpu_reduction_percent": 14.927879604479877,
+  "normal_comparison_scope": "Shared normal switch affects actor/NPC shader branches and building normal_scale; not an isolated character texture cost. Difference is within small measurement variability.",
+  "scope": "Offscreen rendering only; CPU function timings include instrumentation; nested function times cannot be added; interventions are diagnostic and gains cannot be summed.",
+  "gpu_stages": [
+    {
+      "name": "Render Opaque Pass",
+      "samples": 352,
+      "mean_gpu_ms": 0.5465221818181818,
+      "mean_cpu_ms": 0.04703409090909091
+    },
+    {
+      "name": "Depth of Field",
+      "samples": 352,
+      "mean_gpu_ms": 0.4904468181818182,
+      "mean_cpu_ms": 0.0030113636363636362
+    },
+    {
+      "name": "Render Depth Pre-Pass",
+      "samples": 352,
+      "mean_gpu_ms": 0.18315763636363636,
+      "mean_cpu_ms": 0.052869318181818184
+    },
+    {
+      "name": "Render OmniLight Shadows",
+      "samples": 352,
+      "mean_gpu_ms": 0.18250763636363637,
+      "mean_cpu_ms": 0.19583522727272729
+    },
+    {
+      "name": "Process SSR",
+      "samples": 352,
+      "mean_gpu_ms": 0.14940127272727272,
+      "mean_cpu_ms": 0.01734943181818182
+    },
+    {
+      "name": "Glow",
+      "samples": 352,
+      "mean_gpu_ms": 0.09892618181818182,
+      "mean_cpu_ms": 0.0030170454545454545
+    },
+    {
+      "name": "Render Directional/SpotLight Shadows",
+      "samples": 352,
+      "mean_gpu_ms": 0.08989963636363636,
+      "mean_cpu_ms": 0.06376704545454545
+    },
+    {
+      "name": "Process SSAO",
+      "samples": 352,
+      "mean_gpu_ms": 0.08247381818181818,
+      "mean_cpu_ms": 0.010849431818181817
+    },
+    {
+      "name": "Tonemap",
+      "samples": 352,
+      "mean_gpu_ms": 0.07421972727272727,
+      "mean_cpu_ms": 0.0037840909090909093
+    },
+    {
+      "name": "Resolve",
+      "samples": 352,
+      "mean_gpu_ms": 0.053354454545454545,
+      "mean_cpu_ms": 0.001434659090909091
+    },
+    {
+      "name": "Resolve Depth Pre-Pass (MSAA)",
+      "samples": 352,
+      "mean_gpu_ms": 0.030627545454545456,
+      "mean_cpu_ms": 0.002414772727272727
+    },
+    {
+      "name": "Render CanvasItems",
+      "samples": 352,
+      "mean_gpu_ms": 0.022862636363636363,
+      "mean_cpu_ms": 0.011778409090909091
+    },
+    {
+      "name": "Copy Final Framebuffer (SSIL/SSR)",
+      "samples": 352,
+      "mean_gpu_ms": 0.01716409090909091,
+      "mean_cpu_ms": 0.001159090909090909
+    },
+    {
+      "name": "Prepare Depth for SSAO/SSIL",
+      "samples": 352,
+      "mean_gpu_ms": 0.013323363636363637,
+      "mean_cpu_ms": 0.00203125
+    },
+    {
+      "name": "Render 3D Transparent Pass",
+      "samples": 352,
+      "mean_gpu_ms": 0.010458181818181818,
+      "mean_cpu_ms": 0.005457386363636364
+    },
+    {
+      "name": "Render 3D Cluster Elements",
+      "samples": 352,
+      "mean_gpu_ms": 0.009586818181818182,
+      "mean_cpu_ms": 0.0012017045454545455
+    },
+    {
+      "name": "Pack 3D Cluster Elements",
+      "samples": 352,
+      "mean_gpu_ms": 0.007493090909090909,
+      "mean_cpu_ms": 0.00033238636363636364
+    },
+    {
+      "name": "Render Sky",
+      "samples": 352,
+      "mean_gpu_ms": 0.006632727272727273,
+      "mean_cpu_ms": 0.0020142045454545456
+    },
+    {
+      "name": "Cull OmniLight3D Shadow Cube, Side 2",
+      "samples": 352,
+      "mean_gpu_ms": 0.004731727272727273,
+      "mean_cpu_ms": 0.02828977272727273
+    },
+    {
+      "name": "Cull OmniLight3D Shadow Cube, Side 4",
+      "samples": 352,
+      "mean_gpu_ms": 0.004261909090909091,
+      "mean_cpu_ms": 0.0236875
+    },
+    {
+      "name": "Cull OmniLight3D Shadow Cube, Side 0",
+      "samples": 352,
+      "mean_gpu_ms": 0.004146181818181819,
+      "mean_cpu_ms": 0.02763352272727273
+    },
+    {
+      "name": "Cull OmniLight3D Shadow Cube, Side 3",
+      "samples": 352,
+      "mean_gpu_ms": 0.004145363636363636,
+      "mean_cpu_ms": 0.020363636363636365
+    },
+    {
+      "name": "Cull OmniLight3D Shadow Cube, Side 1",
+      "samples": 352,
+      "mean_gpu_ms": 0.004136,
+      "mean_cpu_ms": 0.030803977272727275
+    },
+    {
+      "name": "Cull OmniLight3D Shadow Cube, Side 5",
+      "samples": 352,
+      "mean_gpu_ms": 0.004123363636363637,
+      "mean_cpu_ms": 0.02621306818181818
+    },
+    {
+      "name": "Pre Opaque Render",
+      "samples": 352,
+      "mean_gpu_ms": 0.0026681818181818182,
+      "mean_cpu_ms": 0.005071022727272727
+    },
+    {
+      "name": "Prepare Render Frame",
+      "samples": 352,
+      "mean_gpu_ms": 0.002518090909090909,
+      "mean_cpu_ms": 0.013809659090909091
+    },
+    {
+      "name": "Setup 3D Scene",
+      "samples": 352,
+      "mean_gpu_ms": 0.0022392727272727273,
+      "mean_cpu_ms": 0.024363636363636365
+    },
+    {
+      "name": "Setup Sky",
+      "samples": 352,
+      "mean_gpu_ms": 0.0018720909090909092,
+      "mean_cpu_ms": 0.0017386363636363636
+    },
+    {
+      "name": "Cull CanvasItem Tree",
+      "samples": 352,
+      "mean_gpu_ms": 0.0018349090909090908,
+      "mean_cpu_ms": 0.011573863636363637
+    },
+    {
+      "name": "Frame Begin",
+      "samples": 352,
+      "mean_gpu_ms": 0.001226,
+      "mean_cpu_ms": 0.00033238636363636364
+    },
+    {
+      "name": "Cull 2D Lights",
+      "samples": 352,
+      "mean_gpu_ms": 0.001186909090909091,
+      "mean_cpu_ms": 0.0013210227272727273
+    },
+    {
+      "name": "Process Post Opaque Compositor Effects",
+      "samples": 352,
+      "mean_gpu_ms": 0.0007796363636363636,
+      "mean_cpu_ms": 0.00024147727272727274
+    },
+    {
+      "name": "Cull 3D Scene",
+      "samples": 352,
+      "mean_gpu_ms": 0.0006965454545454546,
+      "mean_cpu_ms": 0.0029090909090909093
+    },
+    {
+      "name": "Cull DirectionalLight3D, Split 0",
+      "samples": 352,
+      "mean_gpu_ms": 0.0006812727272727273,
+      "mean_cpu_ms": 0.0016107954545454546
+    },
+    {
+      "name": "Cull DirectionalLight3D, Split 3",
+      "samples": 352,
+      "mean_gpu_ms": 0.0006735454545454546,
+      "mean_cpu_ms": 0.021039772727272726
+    },
+    {
+      "name": "Cull DirectionalLight3D, Split 1",
+      "samples": 352,
+      "mean_gpu_ms": 0.0006707272727272727,
+      "mean_cpu_ms": 0.0009886363636363636
+    },
+    {
+      "name": "Update Occlusion Buffer",
+      "samples": 352,
+      "mean_gpu_ms": 0.0006659090909090909,
+      "mean_cpu_ms": 0.0013892045454545455
+    },
+    {
+      "name": "Cull DirectionalLight3D, Split 2",
+      "samples": 352,
+      "mean_gpu_ms": 0.0006593636363636364,
+      "mean_cpu_ms": 0.000965909090909091
+    },
+    {
+      "name": "Update Visibility Dependencies",
+      "samples": 352,
+      "mean_gpu_ms": 0.0006484545454545455,
+      "mean_cpu_ms": 0.00015056818181818183
+    },
+    {
+      "name": "Prepare 3D Scene",
+      "samples": 352,
+      "mean_gpu_ms": 0.0006210909090909091,
+      "mean_cpu_ms": 0.0006448863636363636
+    },
+    {
+      "name": "Render 3D Scene",
+      "samples": 352,
+      "mean_gpu_ms": 0.0006133636363636364,
+      "mean_cpu_ms": 0.001059659090909091
+    },
+    {
+      "name": "Setup Shadows",
+      "samples": 352,
+      "mean_gpu_ms": 0.0006021818181818181,
+      "mean_cpu_ms": 0.001971590909090909
+    },
+    {
+      "name": "Process Pre Opaque Compositor Effects",
+      "samples": 352,
+      "mean_gpu_ms": 0.0006015454545454545,
+      "mean_cpu_ms": 0.0005085227272727273
+    },
+    {
+      "name": "Process Post Sky Compositor Effects",
+      "samples": 352,
+      "mean_gpu_ms": 0.0005905454545454545,
+      "mean_cpu_ms": 0.0002471590909090909
+    },
+    {
+      "name": "Resolve MSAA",
+      "samples": 352,
+      "mean_gpu_ms": 0.0005789090909090909,
+      "mean_cpu_ms": 0.00016477272727272727
+    },
+    {
+      "name": "Process Pre Transparent Compositor Effects",
+      "samples": 352,
+      "mean_gpu_ms": 0.0005643636363636364,
+      "mean_cpu_ms": 0.00013920454545454547
+    },
+    {
+      "name": "Update Volumetric Fog",
+      "samples": 352,
+      "mean_gpu_ms": 0.0005585454545454545,
+      "mean_cpu_ms": 0.0006136363636363636
+    },
+    {
+      "name": "Process Post Transparent Compositor Effects",
+      "samples": 352,
+      "mean_gpu_ms": 0.0005185454545454546,
+      "mean_cpu_ms": 0.00019602272727272727
+    }
+  ],
+  "cpu_functions": {
+    "baseline/dusk": {
+      "actor": {
+        "_physics_process": {
+          "sample_count": 1200,
+          "mean_ms": 0.045192500000000004,
+          "p50_ms": 0.037,
+          "p95_ms": 0.08804999999999995,
+          "p99_ms": 0.102
+        },
+        "bind_frame": {
+          "sample_count": 1200,
+          "mean_ms": 0.005103333333333333,
+          "p50_ms": 0.005,
+          "p95_ms": 0.008,
+          "p99_ms": 0.011
+        },
+        "update_animation": {
+          "sample_count": 1200,
+          "mean_ms": 0.012973333333333333,
+          "p50_ms": 0.012,
+          "p95_ms": 0.021,
+          "p99_ms": 0.026
+        }
+      },
+      "background": {
+        "advance": {
+          "sample_count": 8309,
+          "mean_ms": 0.00447153688771212,
+          "p50_ms": 0.004,
+          "p95_ms": 0.005,
+          "p99_ms": 0.007
+        }
+      },
+      "camera": {
+        "update": {
+          "sample_count": 8309,
+          "mean_ms": 0.007670237092309544,
+          "p50_ms": 0.008,
+          "p95_ms": 0.009,
+          "p99_ms": 0.011
+        }
+      },
+      "parallax": {
+        "update": {
+          "sample_count": 8309,
+          "mean_ms": 0.033491996630160066,
+          "p50_ms": 0.032,
+          "p95_ms": 0.041,
+          "p99_ms": 0.048
+        }
+      },
+      "scene": {
+        "_physics_process": {
+          "sample_count": 1200,
+          "mean_ms": 0.0026016666666666666,
+          "p50_ms": 0.002,
+          "p95_ms": 0.004,
+          "p99_ms": 0.005
+        },
+        "_process": {
+          "sample_count": 8309,
+          "mean_ms": 0.06934588999879648,
+          "p50_ms": 0.067,
+          "p95_ms": 0.082,
+          "p99_ms": 0.094
+        },
+        "camera_update": {
+          "sample_count": 8309,
+          "mean_ms": 0.050090504272475626,
+          "p50_ms": 0.049,
+          "p95_ms": 0.06,
+          "p99_ms": 0.069
+        },
+        "nearest_interaction": {
+          "sample_count": 8309,
+          "mean_ms": 0.0030570465760019257,
+          "p50_ms": 0.003,
+          "p95_ms": 0.004,
+          "p99_ms": 0.005
+        },
+        "sync_input": {
+          "sample_count": 8311,
+          "mean_ms": 0.0016699554806882445,
+          "p50_ms": 0.002,
+          "p95_ms": 0.002,
+          "p99_ms": 0.003
+        },
+        "update_focus": {
+          "sample_count": 8309,
+          "mean_ms": 0.0026704777951618726,
+          "p50_ms": 0.003,
+          "p95_ms": 0.003,
+          "p99_ms": 0.004
+        }
+      }
+    },
+    "static_natural/dusk": {
+      "actor": {
+        "_physics_process": {
+          "sample_count": 1200,
+          "mean_ms": 0.0448825,
+          "p50_ms": 0.036,
+          "p95_ms": 0.087,
+          "p99_ms": 0.10201999999999997
+        },
+        "bind_frame": {
+          "sample_count": 1200,
+          "mean_ms": 0.0050841666666666665,
+          "p50_ms": 0.005,
+          "p95_ms": 0.009,
+          "p99_ms": 0.012
+        },
+        "update_animation": {
+          "sample_count": 1200,
+          "mean_ms": 0.012804166666666667,
+          "p50_ms": 0.012,
+          "p95_ms": 0.021,
+          "p99_ms": 0.02800999999999999
+        }
+      },
+      "background": {
+        "advance": {
+          "sample_count": 8256,
+          "mean_ms": 0.004715964147286822,
+          "p50_ms": 0.005,
+          "p95_ms": 0.006,
+          "p99_ms": 0.008
+        }
+      },
+      "camera": {
+        "update": {
+          "sample_count": 8256,
+          "mean_ms": 0.007547480620155039,
+          "p50_ms": 0.007,
+          "p95_ms": 0.009,
+          "p99_ms": 0.012
+        }
+      },
+      "parallax": {
+        "update": {
+          "sample_count": 8256,
+          "mean_ms": 0.0009801356589147288,
+          "p50_ms": 0.001,
+          "p95_ms": 0.001,
+          "p99_ms": 0.002
+        }
+      },
+      "scene": {
+        "_physics_process": {
+          "sample_count": 1200,
+          "mean_ms": 0.0026008333333333335,
+          "p50_ms": 0.002,
+          "p95_ms": 0.004,
+          "p99_ms": 0.005009999999999991
+        },
+        "_process": {
+          "sample_count": 8256,
+          "mean_ms": 0.0373015988372093,
+          "p50_ms": 0.036,
+          "p95_ms": 0.046,
+          "p99_ms": 0.055
+        },
+        "camera_update": {
+          "sample_count": 8256,
+          "mean_ms": 0.017577398255813954,
+          "p50_ms": 0.017,
+          "p95_ms": 0.022,
+          "p99_ms": 0.025
+        },
+        "nearest_interaction": {
+          "sample_count": 8256,
+          "mean_ms": 0.0031579457364341087,
+          "p50_ms": 0.003,
+          "p95_ms": 0.004,
+          "p99_ms": 0.005
+        },
+        "sync_input": {
+          "sample_count": 8258,
+          "mean_ms": 0.0016163720029062727,
+          "p50_ms": 0.002,
+          "p95_ms": 0.002,
+          "p99_ms": 0.003
+        },
+        "update_focus": {
+          "sample_count": 8256,
+          "mean_ms": 0.0029823158914728683,
+          "p50_ms": 0.003,
+          "p95_ms": 0.004,
+          "p99_ms": 0.005
+        }
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "case": "baseline/dusk",
+      "wall": {
+        "sample_count": 4735,
+        "mean_ms": 2.1123510031678987,
+        "p50_ms": 2.028,
+        "p95_ms": 2.549,
+        "p99_ms": 2.70632
+      },
+      "gpu": {
+        "sample_count": 4735,
+        "mean_ms": 2.0229919740743347,
+        "p50_ms": 1.96700000762939,
+        "p95_ms": 2.36400008201599,
+        "p99_ms": 2.612659940719605
+      },
+      "render_cpu": {
+        "sample_count": 4735,
+        "mean_ms": 0.5531167900046174,
+        "p50_ms": 0.518999993801117,
+        "p95_ms": 0.6973000228405003,
+        "p99_ms": 0.8076600122451779
+      },
+      "gpu_reduction_percent": 0.0,
+      "render_cpu_reduction_percent": 0.0
+    },
+    {
+      "case": "no_broad_shadows/dusk",
+      "wall": {
+        "sample_count": 4918,
+        "mean_ms": 2.0334154127694184,
+        "p50_ms": 1.948,
+        "p95_ms": 2.469,
+        "p99_ms": 2.64
+      },
+      "gpu": {
+        "sample_count": 4918,
+        "mean_ms": 1.9441451811606247,
+        "p50_ms": 1.89699995517731,
+        "p95_ms": 2.2051499485969503,
+        "p99_ms": 2.356830084323884
+      },
+      "render_cpu": {
+        "sample_count": 4918,
+        "mean_ms": 0.4635166729936371,
+        "p50_ms": 0.428999990224838,
+        "p95_ms": 0.595000028610229,
+        "p99_ms": 0.6928300106525419
+      },
+      "gpu_reduction_percent": 3.897533649375362,
+      "render_cpu_reduction_percent": 16.19913165359388
+    },
+    {
+      "case": "no_dof/dusk",
+      "wall": {
+        "sample_count": 6311,
+        "mean_ms": 1.5845839011250198,
+        "p50_ms": 1.525,
+        "p95_ms": 1.9985,
+        "p99_ms": 2.159
+      },
+      "gpu": {
+        "sample_count": 6311,
+        "mean_ms": 1.5042695288725387,
+        "p50_ms": 1.47399997711182,
+        "p95_ms": 1.76600003242493,
+        "p99_ms": 1.9018999576568636
+      },
+      "render_cpu": {
+        "sample_count": 6311,
+        "mean_ms": 0.5425054675528599,
+        "p50_ms": 0.513999998569489,
+        "p95_ms": 0.684000015258789,
+        "p99_ms": 0.768899995088577
+      },
+      "gpu_reduction_percent": 25.64134963704683,
+      "render_cpu_reduction_percent": 1.918459653280269
+    },
+    {
+      "case": "no_far_town/dusk",
+      "wall": {
+        "sample_count": 4831,
+        "mean_ms": 2.0702920720347753,
+        "p50_ms": 1.989,
+        "p95_ms": 2.5315000000000003,
+        "p99_ms": 2.6866999999999996
+      },
+      "gpu": {
+        "sample_count": 4831,
+        "mean_ms": 1.9955135570059057,
+        "p50_ms": 1.93700003623962,
+        "p95_ms": 2.41199994087219,
+        "p99_ms": 2.630700063705445
+      },
+      "render_cpu": {
+        "sample_count": 4831,
+        "mean_ms": 0.5414918241257056,
+        "p50_ms": 0.50900000333786,
+        "p95_ms": 0.6814999878406525,
+        "p99_ms": 0.7793999791145324
+      },
+      "gpu_reduction_percent": 1.3583057876936144,
+      "render_cpu_reduction_percent": 2.1017199421508703
+    },
+    {
+      "case": "no_glow/dusk",
+      "wall": {
+        "sample_count": 5089,
+        "mean_ms": 1.965141285124779,
+        "p50_ms": 1.895,
+        "p95_ms": 2.377,
+        "p99_ms": 2.531
+      },
+      "gpu": {
+        "sample_count": 5089,
+        "mean_ms": 1.8703136182435722,
+        "p50_ms": 1.83000004291534,
+        "p95_ms": 2.1340000629425,
+        "p99_ms": 2.25399994850159
+      },
+      "render_cpu": {
+        "sample_count": 5089,
+        "mean_ms": 0.5526912956346485,
+        "p50_ms": 0.518999993801117,
+        "p95_ms": 0.694000005722046,
+        "p99_ms": 0.8212399840354915
+      },
+      "gpu_reduction_percent": 7.547155786449622,
+      "render_cpu_reduction_percent": 0.07692667763085081
+    },
+    {
+      "case": "no_local_shadows/dusk",
+      "wall": {
+        "sample_count": 5358,
+        "mean_ms": 1.8665350877192983,
+        "p50_ms": 1.794,
+        "p95_ms": 2.269,
+        "p99_ms": 2.4334300000000004
+      },
+      "gpu": {
+        "sample_count": 5358,
+        "mean_ms": 1.7955964920502092,
+        "p50_ms": 1.74800002574921,
+        "p95_ms": 2.08699989318848,
+        "p99_ms": 2.18499994277954
+      },
+      "render_cpu": {
+        "sample_count": 5358,
+        "mean_ms": 0.24639063035932307,
+        "p50_ms": 0.239999994635582,
+        "p95_ms": 0.289000004529953,
+        "p99_ms": 0.34842999726533946
+      },
+      "gpu_reduction_percent": 11.240552851336716,
+      "render_cpu_reduction_percent": 55.4541400999116
+    },
+    {
+      "case": "no_main_shadow/dusk",
+      "wall": {
+        "sample_count": 5179,
+        "mean_ms": 1.9311965630430585,
+        "p50_ms": 1.856,
+        "p95_ms": 2.324,
+        "p99_ms": 2.47222
+      },
+      "gpu": {
+        "sample_count": 5179,
+        "mean_ms": 1.842655918754236,
+        "p50_ms": 1.7940000295639,
+        "p95_ms": 2.08400011062622,
+        "p99_ms": 2.22000002861023
+      },
+      "render_cpu": {
+        "sample_count": 5179,
+        "mean_ms": 0.4717756325350601,
+        "p50_ms": 0.444999992847443,
+        "p95_ms": 0.610000014305115,
+        "p99_ms": 0.6602200233936314
+      },
+      "gpu_reduction_percent": 8.914323814982783,
+      "render_cpu_reduction_percent": 14.705964262787663
+    },
+    {
+      "case": "no_msaa/dusk",
+      "wall": {
+        "sample_count": 5169,
+        "mean_ms": 1.9347101953956278,
+        "p50_ms": 1.862,
+        "p95_ms": 2.33,
+        "p99_ms": 2.49832
+      },
+      "gpu": {
+        "sample_count": 5169,
+        "mean_ms": 1.8497061324225654,
+        "p50_ms": 1.80799996852875,
+        "p95_ms": 2.14299988746643,
+        "p99_ms": 2.22131993293762
+      },
+      "render_cpu": {
+        "sample_count": 5169,
+        "mean_ms": 0.5541340689936789,
+        "p50_ms": 0.522000014781952,
+        "p95_ms": 0.697000026702881,
+        "p99_ms": 0.8073199963569638
+      },
+      "gpu_reduction_percent": 8.565819532282626,
+      "render_cpu_reduction_percent": -0.18391757535565212
+    },
+    {
+      "case": "no_near_town/dusk",
+      "wall": {
+        "sample_count": 5069,
+        "mean_ms": 1.9730915367922668,
+        "p50_ms": 1.902,
+        "p95_ms": 2.4015999999999993,
+        "p99_ms": 2.5423199999999997
+      },
+      "gpu": {
+        "sample_count": 5069,
+        "mean_ms": 1.879558690014288,
+        "p50_ms": 1.84700000286102,
+        "p95_ms": 2.12199997901917,
+        "p99_ms": 2.26699995994568
+      },
+      "render_cpu": {
+        "sample_count": 5069,
+        "mean_ms": 0.5105361998092967,
+        "p50_ms": 0.477999985218048,
+        "p95_ms": 0.644999980926514,
+        "p99_ms": 0.7422799992561331
+      },
+      "gpu_reduction_percent": 7.090155863108549,
+      "render_cpu_reduction_percent": 7.698300063349251
+    },
+    {
+      "case": "no_normals/dusk",
+      "wall": {
+        "sample_count": 4757,
+        "mean_ms": 2.1025207063275175,
+        "p50_ms": 2.018,
+        "p95_ms": 2.556,
+        "p99_ms": 2.6734399999999994
+      },
+      "gpu": {
+        "sample_count": 4757,
+        "mean_ms": 2.0105642217634503,
+        "p50_ms": 1.96200001239777,
+        "p95_ms": 2.3092000007629396,
+        "p99_ms": 2.404879980087279
+      },
+      "render_cpu": {
+        "sample_count": 4757,
+        "mean_ms": 0.5696516712159952,
+        "p50_ms": 0.52700001001358,
+        "p95_ms": 0.74099999666214,
+        "p99_ms": 0.9688800096511829
+      },
+      "gpu_reduction_percent": 0.6143253394058079,
+      "render_cpu_reduction_percent": -2.9894014266389934
+    },
+    {
+      "case": "no_post/dusk",
+      "wall": {
+        "sample_count": 9331,
+        "mean_ms": 1.0717482584931948,
+        "p50_ms": 1.017,
+        "p95_ms": 1.375,
+        "p99_ms": 1.482
+      },
+      "gpu": {
+        "sample_count": 9331,
+        "mean_ms": 0.9520515487925082,
+        "p50_ms": 0.955999970436096,
+        "p95_ms": 1.01600003242493,
+        "p99_ms": 1.07400000095367
+      },
+      "render_cpu": {
+        "sample_count": 9331,
+        "mean_ms": 0.49929632355566134,
+        "p50_ms": 0.479000002145767,
+        "p95_ms": 0.611000001430511,
+        "p99_ms": 0.732999980449677
+      },
+      "gpu_reduction_percent": 52.938441625397914,
+      "render_cpu_reduction_percent": 9.730398248895467
+    },
+    {
+      "case": "no_shadows/dusk",
+      "wall": {
+        "sample_count": 5980,
+        "mean_ms": 1.6724826086956521,
+        "p50_ms": 1.61,
+        "p95_ms": 2.051,
+        "p99_ms": 2.224
+      },
+      "gpu": {
+        "sample_count": 5980,
+        "mean_ms": 1.6011672243625426,
+        "p50_ms": 1.55999994277954,
+        "p95_ms": 1.8531000435352303,
+        "p99_ms": 2.0472099661827095
+      },
+      "render_cpu": {
+        "sample_count": 5980,
+        "mean_ms": 0.173312207174341,
+        "p50_ms": 0.168999999761581,
+        "p95_ms": 0.196999996900558,
+        "p99_ms": 0.2372100038826462
+      },
+      "gpu_reduction_percent": 20.851528583290968,
+      "render_cpu_reduction_percent": 68.66625452232354
+    },
+    {
+      "case": "no_ssao/dusk",
+      "wall": {
+        "sample_count": 4894,
+        "mean_ms": 2.043652431548835,
+        "p50_ms": 1.942,
+        "p95_ms": 2.5763499999999997,
+        "p99_ms": 2.752
+      },
+      "gpu": {
+        "sample_count": 4894,
+        "mean_ms": 1.94711524347992,
+        "p50_ms": 1.88999998569489,
+        "p95_ms": 2.28699994087219,
+        "p99_ms": 2.5044199514389054
+      },
+      "render_cpu": {
+        "sample_count": 4894,
+        "mean_ms": 0.5450917455947394,
+        "p50_ms": 0.510999977588654,
+        "p95_ms": 0.7033500045537944,
+        "p99_ms": 0.7882099890708916
+      },
+      "gpu_reduction_percent": 3.7507183205278904,
+      "render_cpu_reduction_percent": 1.4508770217969813
+    },
+    {
+      "case": "no_ssr/dusk",
+      "wall": {
+        "sample_count": 5208,
+        "mean_ms": 1.9205560675883258,
+        "p50_ms": 1.835,
+        "p95_ms": 2.431,
+        "p99_ms": 2.5768600000000004
+      },
+      "gpu": {
+        "sample_count": 5208,
+        "mean_ms": 1.840845622705974,
+        "p50_ms": 1.77900004386902,
+        "p95_ms": 2.2039999961853,
+        "p99_ms": 2.40599989891052
+      },
+      "render_cpu": {
+        "sample_count": 5208,
+        "mean_ms": 0.530359831365389,
+        "p50_ms": 0.499000012874603,
+        "p95_ms": 0.675000011920929,
+        "p99_ms": 0.76800000667572
+      },
+      "gpu_reduction_percent": 9.003809886675695,
+      "render_cpu_reduction_percent": 4.114313477816944
+    },
+    {
+      "case": "scale_075/dusk",
+      "wall": {
+        "sample_count": 6624,
+        "mean_ms": 1.5098716787439614,
+        "p50_ms": 1.453,
+        "p95_ms": 1.8658499999999996,
+        "p99_ms": 2.0435399999999992
+      },
+      "gpu": {
+        "sample_count": 6624,
+        "mean_ms": 1.4348928123388602,
+        "p50_ms": 1.40199995040894,
+        "p95_ms": 1.6688500225543934,
+        "p99_ms": 1.7967700397968305
+      },
+      "render_cpu": {
+        "sample_count": 6624,
+        "mean_ms": 0.5446961053426643,
+        "p50_ms": 0.522000014781952,
+        "p95_ms": 0.652999997138977,
+        "p99_ms": 0.730000019073486
+      },
+      "gpu_reduction_percent": 29.070760995212176,
+      "render_cpu_reduction_percent": 1.5224062646665981
+    },
+    {
+      "case": "static_natural/dusk",
+      "wall": {
+        "sample_count": 4741,
+        "mean_ms": 2.109399704703649,
+        "p50_ms": 2.015,
+        "p95_ms": 2.635,
+        "p99_ms": 2.759
+      },
+      "gpu": {
+        "sample_count": 4741,
+        "mean_ms": 2.0306739083977847,
+        "p50_ms": 1.96200001239777,
+        "p95_ms": 2.50099992752075,
+        "p99_ms": 2.6685999393463105
+      },
+      "render_cpu": {
+        "sample_count": 4741,
+        "mean_ms": 0.5537177814923869,
+        "p50_ms": 0.518999993801117,
+        "p95_ms": 0.698000013828278,
+        "p99_ms": 0.794000029563904
+      },
+      "gpu_reduction_percent": -0.3797313297283278,
+      "render_cpu_reduction_percent": -0.10865544106235525
+    }
+  ],
+  "all_cases": [
+    {
+      "run": "ablation-a",
+      "case": "baseline/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-a/baseline-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 2050,
+          "mean_ms": 4.878089756097561,
+          "p50_ms": 4.5565,
+          "p95_ms": 7.351,
+          "p99_ms": 7.54902
+        },
+        "gpu": {
+          "sample_count": 2050,
+          "mean_ms": 2.0274273170494452,
+          "p50_ms": 1.97399997711182,
+          "p95_ms": 2.4145499944686923,
+          "p99_ms": 2.5950399088859557
+        },
+        "render_cpu": {
+          "sample_count": 2050,
+          "mean_ms": 0.6443980491742856,
+          "p50_ms": 0.630999982357025,
+          "p95_ms": 0.783999979496002,
+          "p99_ms": 0.907000005245209
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-a",
+      "case": "no_broad_shadows/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_broad_shadows-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 2050,
+          "mean_ms": 4.878129756097561,
+          "p50_ms": 4.640000000000001,
+          "p95_ms": 7.362,
+          "p99_ms": 7.47502
+        },
+        "gpu": {
+          "sample_count": 2050,
+          "mean_ms": 1.946496098215987,
+          "p50_ms": 1.89600002765656,
+          "p95_ms": 2.3605499863624613,
+          "p99_ms": 2.578019950389861
+        },
+        "render_cpu": {
+          "sample_count": 2050,
+          "mean_ms": 0.5324107317662821,
+          "p50_ms": 0.514499992132187,
+          "p95_ms": 0.6945499986410143,
+          "p99_ms": 0.7810599881410597
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 8,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-a",
+      "case": "no_dof/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_dof-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 2050,
+          "mean_ms": 4.8782458536585365,
+          "p50_ms": 4.862500000000001,
+          "p95_ms": 7.356199999999999,
+          "p99_ms": 7.54202
+        },
+        "gpu": {
+          "sample_count": 2050,
+          "mean_ms": 1.7243770732530734,
+          "p50_ms": 1.66700005531311,
+          "p95_ms": 2.114099967479704,
+          "p99_ms": 2.3605499768257134
+        },
+        "render_cpu": {
+          "sample_count": 2050,
+          "mean_ms": 0.6412034150449241,
+          "p50_ms": 0.628000020980835,
+          "p95_ms": 0.794000029563904,
+          "p99_ms": 0.9415099781751635
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": false,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-a",
+      "case": "no_far_town/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_far_town-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 2050,
+          "mean_ms": 4.880559512195122,
+          "p50_ms": 4.6485,
+          "p95_ms": 7.36355,
+          "p99_ms": 7.46653
+        },
+        "gpu": {
+          "sample_count": 2050,
+          "mean_ms": 1.9686248781622908,
+          "p50_ms": 1.94150000810623,
+          "p95_ms": 2.28399991989136,
+          "p99_ms": 2.478300044536592
+        },
+        "render_cpu": {
+          "sample_count": 2050,
+          "mean_ms": 0.6183585367551664,
+          "p50_ms": 0.6145000159740446,
+          "p95_ms": 0.795000016689301,
+          "p99_ms": 0.8610200011730194
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-a",
+      "case": "no_glow/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_glow-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 2050,
+          "mean_ms": 4.879362926829268,
+          "p50_ms": 4.7195,
+          "p95_ms": 7.38655,
+          "p99_ms": 7.60157
+        },
+        "gpu": {
+          "sample_count": 2050,
+          "mean_ms": 1.8973443900666584,
+          "p50_ms": 1.82400000095367,
+          "p95_ms": 2.359549927711488,
+          "p99_ms": 2.5115900015831
+        },
+        "render_cpu": {
+          "sample_count": 2050,
+          "mean_ms": 0.6489478049772541,
+          "p50_ms": 0.629000008106232,
+          "p95_ms": 0.8245499938726423,
+          "p99_ms": 0.9890199929475784
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-a",
+      "case": "no_local_shadows/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_local_shadows-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 2050,
+          "mean_ms": 4.880535609756097,
+          "p50_ms": 4.99,
+          "p95_ms": 7.19,
+          "p99_ms": 7.367629999999999
+        },
+        "gpu": {
+          "sample_count": 2050,
+          "mean_ms": 1.7573868302601137,
+          "p50_ms": 1.72699999809265,
+          "p95_ms": 2.0025500535964924,
+          "p99_ms": 2.16700005531311
+        },
+        "render_cpu": {
+          "sample_count": 2050,
+          "mean_ms": 0.2817199998730567,
+          "p50_ms": 0.264999985694885,
+          "p95_ms": 0.3845499962568283,
+          "p99_ms": 0.5700599932670597
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 0,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-a",
+      "case": "no_main_shadow/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_main_shadow-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 2050,
+          "mean_ms": 4.878057073170732,
+          "p50_ms": 4.7405,
+          "p95_ms": 7.37455,
+          "p99_ms": 7.524
+        },
+        "gpu": {
+          "sample_count": 2050,
+          "mean_ms": 1.8308165852034965,
+          "p50_ms": 1.81299996376038,
+          "p95_ms": 2.04999995231628,
+          "p99_ms": 2.1935100412368773
+        },
+        "render_cpu": {
+          "sample_count": 2050,
+          "mean_ms": 0.5665058538535747,
+          "p50_ms": 0.555999994277954,
+          "p95_ms": 0.7115500181913373,
+          "p99_ms": 0.8360199958086013
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": false,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-a",
+      "case": "no_msaa/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_msaa-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 2050,
+          "mean_ms": 4.880582926829268,
+          "p50_ms": 4.727,
+          "p95_ms": 7.37655,
+          "p99_ms": 7.5732
+        },
+        "gpu": {
+          "sample_count": 2050,
+          "mean_ms": 1.8173004858668258,
+          "p50_ms": 1.80200004577637,
+          "p95_ms": 2.002099978923794,
+          "p99_ms": 2.2265299153327933
+        },
+        "render_cpu": {
+          "sample_count": 2050,
+          "mean_ms": 0.6358756102149079,
+          "p50_ms": 0.625999987125397,
+          "p95_ms": 0.809000015258789,
+          "p99_ms": 0.920710009932518
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 0,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-a",
+      "case": "no_near_town/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_near_town-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 2049,
+          "mean_ms": 4.880946315275744,
+          "p50_ms": 4.734,
+          "p95_ms": 7.3482,
+          "p99_ms": 7.48368
+        },
+        "gpu": {
+          "sample_count": 2049,
+          "mean_ms": 1.8848511471057183,
+          "p50_ms": 1.82400000095367,
+          "p95_ms": 2.306599950790406,
+          "p99_ms": 2.5350399684906018
+        },
+        "render_cpu": {
+          "sample_count": 2049,
+          "mean_ms": 0.564947291430524,
+          "p50_ms": 0.556999981403351,
+          "p95_ms": 0.7465999841690061,
+          "p99_ms": 0.8260400056838988
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-a",
+      "case": "no_normals/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_normals-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 2050,
+          "mean_ms": 4.878185365853659,
+          "p50_ms": 4.580500000000001,
+          "p95_ms": 7.39655,
+          "p99_ms": 7.58373
+        },
+        "gpu": {
+          "sample_count": 2050,
+          "mean_ms": 1.9711331706512265,
+          "p50_ms": 1.95799994468689,
+          "p95_ms": 2.18700003623962,
+          "p99_ms": 2.3415299248695387
+        },
+        "render_cpu": {
+          "sample_count": 2050,
+          "mean_ms": 0.655836585222221,
+          "p50_ms": 0.64300000667572,
+          "p95_ms": 0.840549999475479,
+          "p99_ms": 1.0045499718189213
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-a",
+      "case": "no_post/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_post-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 2050,
+          "mean_ms": 4.880684878048781,
+          "p50_ms": 4.895,
+          "p95_ms": 7.38055,
+          "p99_ms": 7.673629999999999
+        },
+        "gpu": {
+          "sample_count": 2050,
+          "mean_ms": 1.6364448773570177,
+          "p50_ms": 1.54350000619888,
+          "p95_ms": 2.2255499958992013,
+          "p99_ms": 2.582099897861483
+        },
+        "render_cpu": {
+          "sample_count": 2050,
+          "mean_ms": 0.5968985361878465,
+          "p50_ms": 0.583999991416931,
+          "p95_ms": 0.774999976158142,
+          "p99_ms": 0.9716299796104427
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": false,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": false,
+        "ssr": false,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-a",
+      "case": "no_shadows/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_shadows-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 2050,
+          "mean_ms": 4.880511219512195,
+          "p50_ms": 5.0735,
+          "p95_ms": 7.147,
+          "p99_ms": 7.21351
+        },
+        "gpu": {
+          "sample_count": 2050,
+          "mean_ms": 1.7211907296645932,
+          "p50_ms": 1.66799998283386,
+          "p95_ms": 2.07500004768372,
+          "p99_ms": 2.3415100431442224
+        },
+        "render_cpu": {
+          "sample_count": 2050,
+          "mean_ms": 0.19569414633076365,
+          "p50_ms": 0.189499996602535,
+          "p95_ms": 0.23509999960660916,
+          "p99_ms": 0.3441400116682053
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": false,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 0,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-a",
+      "case": "no_ssao/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_ssao-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 2050,
+          "mean_ms": 4.880640975609756,
+          "p50_ms": 4.646,
+          "p95_ms": 7.37855,
+          "p99_ms": 7.544
+        },
+        "gpu": {
+          "sample_count": 2050,
+          "mean_ms": 1.939793170661461,
+          "p50_ms": 1.90100002288818,
+          "p95_ms": 2.22300004959106,
+          "p99_ms": 2.3045099854469284
+        },
+        "render_cpu": {
+          "sample_count": 2050,
+          "mean_ms": 0.6370795114738185,
+          "p50_ms": 0.620999991893768,
+          "p95_ms": 0.799000024795532,
+          "p99_ms": 0.9640600162744523
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": false,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-a",
+      "case": "no_ssr/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-a/no_ssr-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 2049,
+          "mean_ms": 4.880494875549048,
+          "p50_ms": 4.717,
+          "p95_ms": 7.3826,
+          "p99_ms": 7.6212
+        },
+        "gpu": {
+          "sample_count": 2049,
+          "mean_ms": 1.8348604184700374,
+          "p50_ms": 1.80099999904633,
+          "p95_ms": 2.125,
+          "p99_ms": 2.192559995651247
+        },
+        "render_cpu": {
+          "sample_count": 2049,
+          "mean_ms": 0.6449541237628884,
+          "p50_ms": 0.619000017642975,
+          "p95_ms": 0.8395999789237975,
+          "p99_ms": 1.0786799716949442
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": false,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-a",
+      "case": "scale_075/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-a/scale_075-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 2050,
+          "mean_ms": 4.878052195121951,
+          "p50_ms": 4.8765,
+          "p95_ms": 7.404,
+          "p99_ms": 7.660629999999999
+        },
+        "gpu": {
+          "sample_count": 2050,
+          "mean_ms": 1.6897775637231223,
+          "p50_ms": 1.65299999713898,
+          "p95_ms": 2.1885499238967925,
+          "p99_ms": 2.4721200013160676
+        },
+        "render_cpu": {
+          "sample_count": 2050,
+          "mean_ms": 0.6479819513384889,
+          "p50_ms": 0.634999990463257,
+          "p95_ms": 0.8385499924421312,
+          "p99_ms": 1.0190199935436228
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 0.75,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-b",
+      "case": "baseline/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-b/baseline-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 4735,
+          "mean_ms": 2.1123510031678987,
+          "p50_ms": 2.028,
+          "p95_ms": 2.549,
+          "p99_ms": 2.70632
+        },
+        "gpu": {
+          "sample_count": 4735,
+          "mean_ms": 2.0229919740743347,
+          "p50_ms": 1.96700000762939,
+          "p95_ms": 2.36400008201599,
+          "p99_ms": 2.612659940719605
+        },
+        "render_cpu": {
+          "sample_count": 4735,
+          "mean_ms": 0.5531167900046174,
+          "p50_ms": 0.518999993801117,
+          "p95_ms": 0.6973000228405003,
+          "p99_ms": 0.8076600122451779
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-b",
+      "case": "no_broad_shadows/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_broad_shadows-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 4918,
+          "mean_ms": 2.0334154127694184,
+          "p50_ms": 1.948,
+          "p95_ms": 2.469,
+          "p99_ms": 2.64
+        },
+        "gpu": {
+          "sample_count": 4918,
+          "mean_ms": 1.9441451811606247,
+          "p50_ms": 1.89699995517731,
+          "p95_ms": 2.2051499485969503,
+          "p99_ms": 2.356830084323884
+        },
+        "render_cpu": {
+          "sample_count": 4918,
+          "mean_ms": 0.4635166729936371,
+          "p50_ms": 0.428999990224838,
+          "p95_ms": 0.595000028610229,
+          "p99_ms": 0.6928300106525419
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 8,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-b",
+      "case": "no_dof/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_dof-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 6311,
+          "mean_ms": 1.5845839011250198,
+          "p50_ms": 1.525,
+          "p95_ms": 1.9985,
+          "p99_ms": 2.159
+        },
+        "gpu": {
+          "sample_count": 6311,
+          "mean_ms": 1.5042695288725387,
+          "p50_ms": 1.47399997711182,
+          "p95_ms": 1.76600003242493,
+          "p99_ms": 1.9018999576568636
+        },
+        "render_cpu": {
+          "sample_count": 6311,
+          "mean_ms": 0.5425054675528599,
+          "p50_ms": 0.513999998569489,
+          "p95_ms": 0.684000015258789,
+          "p99_ms": 0.768899995088577
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": false,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-b",
+      "case": "no_far_town/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_far_town-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 4831,
+          "mean_ms": 2.0702920720347753,
+          "p50_ms": 1.989,
+          "p95_ms": 2.5315000000000003,
+          "p99_ms": 2.6866999999999996
+        },
+        "gpu": {
+          "sample_count": 4831,
+          "mean_ms": 1.9955135570059057,
+          "p50_ms": 1.93700003623962,
+          "p95_ms": 2.41199994087219,
+          "p99_ms": 2.630700063705445
+        },
+        "render_cpu": {
+          "sample_count": 4831,
+          "mean_ms": 0.5414918241257056,
+          "p50_ms": 0.50900000333786,
+          "p95_ms": 0.6814999878406525,
+          "p99_ms": 0.7793999791145324
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-b",
+      "case": "no_glow/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_glow-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 5089,
+          "mean_ms": 1.965141285124779,
+          "p50_ms": 1.895,
+          "p95_ms": 2.377,
+          "p99_ms": 2.531
+        },
+        "gpu": {
+          "sample_count": 5089,
+          "mean_ms": 1.8703136182435722,
+          "p50_ms": 1.83000004291534,
+          "p95_ms": 2.1340000629425,
+          "p99_ms": 2.25399994850159
+        },
+        "render_cpu": {
+          "sample_count": 5089,
+          "mean_ms": 0.5526912956346485,
+          "p50_ms": 0.518999993801117,
+          "p95_ms": 0.694000005722046,
+          "p99_ms": 0.8212399840354915
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-b",
+      "case": "no_local_shadows/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_local_shadows-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 5358,
+          "mean_ms": 1.8665350877192983,
+          "p50_ms": 1.794,
+          "p95_ms": 2.269,
+          "p99_ms": 2.4334300000000004
+        },
+        "gpu": {
+          "sample_count": 5358,
+          "mean_ms": 1.7955964920502092,
+          "p50_ms": 1.74800002574921,
+          "p95_ms": 2.08699989318848,
+          "p99_ms": 2.18499994277954
+        },
+        "render_cpu": {
+          "sample_count": 5358,
+          "mean_ms": 0.24639063035932307,
+          "p50_ms": 0.239999994635582,
+          "p95_ms": 0.289000004529953,
+          "p99_ms": 0.34842999726533946
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 0,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-b",
+      "case": "no_main_shadow/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_main_shadow-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 5179,
+          "mean_ms": 1.9311965630430585,
+          "p50_ms": 1.856,
+          "p95_ms": 2.324,
+          "p99_ms": 2.47222
+        },
+        "gpu": {
+          "sample_count": 5179,
+          "mean_ms": 1.842655918754236,
+          "p50_ms": 1.7940000295639,
+          "p95_ms": 2.08400011062622,
+          "p99_ms": 2.22000002861023
+        },
+        "render_cpu": {
+          "sample_count": 5179,
+          "mean_ms": 0.4717756325350601,
+          "p50_ms": 0.444999992847443,
+          "p95_ms": 0.610000014305115,
+          "p99_ms": 0.6602200233936314
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": false,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-b",
+      "case": "no_msaa/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_msaa-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 5169,
+          "mean_ms": 1.9347101953956278,
+          "p50_ms": 1.862,
+          "p95_ms": 2.33,
+          "p99_ms": 2.49832
+        },
+        "gpu": {
+          "sample_count": 5169,
+          "mean_ms": 1.8497061324225654,
+          "p50_ms": 1.80799996852875,
+          "p95_ms": 2.14299988746643,
+          "p99_ms": 2.22131993293762
+        },
+        "render_cpu": {
+          "sample_count": 5169,
+          "mean_ms": 0.5541340689936789,
+          "p50_ms": 0.522000014781952,
+          "p95_ms": 0.697000026702881,
+          "p99_ms": 0.8073199963569638
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 0,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-b",
+      "case": "no_near_town/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_near_town-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 5069,
+          "mean_ms": 1.9730915367922668,
+          "p50_ms": 1.902,
+          "p95_ms": 2.4015999999999993,
+          "p99_ms": 2.5423199999999997
+        },
+        "gpu": {
+          "sample_count": 5069,
+          "mean_ms": 1.879558690014288,
+          "p50_ms": 1.84700000286102,
+          "p95_ms": 2.12199997901917,
+          "p99_ms": 2.26699995994568
+        },
+        "render_cpu": {
+          "sample_count": 5069,
+          "mean_ms": 0.5105361998092967,
+          "p50_ms": 0.477999985218048,
+          "p95_ms": 0.644999980926514,
+          "p99_ms": 0.7422799992561331
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-b",
+      "case": "no_normals/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_normals-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 4757,
+          "mean_ms": 2.1025207063275175,
+          "p50_ms": 2.018,
+          "p95_ms": 2.556,
+          "p99_ms": 2.6734399999999994
+        },
+        "gpu": {
+          "sample_count": 4757,
+          "mean_ms": 2.0105642217634503,
+          "p50_ms": 1.96200001239777,
+          "p95_ms": 2.3092000007629396,
+          "p99_ms": 2.404879980087279
+        },
+        "render_cpu": {
+          "sample_count": 4757,
+          "mean_ms": 0.5696516712159952,
+          "p50_ms": 0.52700001001358,
+          "p95_ms": 0.74099999666214,
+          "p99_ms": 0.9688800096511829
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-b",
+      "case": "no_post/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_post-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 9331,
+          "mean_ms": 1.0717482584931948,
+          "p50_ms": 1.017,
+          "p95_ms": 1.375,
+          "p99_ms": 1.482
+        },
+        "gpu": {
+          "sample_count": 9331,
+          "mean_ms": 0.9520515487925082,
+          "p50_ms": 0.955999970436096,
+          "p95_ms": 1.01600003242493,
+          "p99_ms": 1.07400000095367
+        },
+        "render_cpu": {
+          "sample_count": 9331,
+          "mean_ms": 0.49929632355566134,
+          "p50_ms": 0.479000002145767,
+          "p95_ms": 0.611000001430511,
+          "p99_ms": 0.732999980449677
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": false,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": false,
+        "ssr": false,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-b",
+      "case": "no_shadows/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_shadows-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 5980,
+          "mean_ms": 1.6724826086956521,
+          "p50_ms": 1.61,
+          "p95_ms": 2.051,
+          "p99_ms": 2.224
+        },
+        "gpu": {
+          "sample_count": 5980,
+          "mean_ms": 1.6011672243625426,
+          "p50_ms": 1.55999994277954,
+          "p95_ms": 1.8531000435352303,
+          "p99_ms": 2.0472099661827095
+        },
+        "render_cpu": {
+          "sample_count": 5980,
+          "mean_ms": 0.173312207174341,
+          "p50_ms": 0.168999999761581,
+          "p95_ms": 0.196999996900558,
+          "p99_ms": 0.2372100038826462
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": false,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 0,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-b",
+      "case": "no_ssao/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_ssao-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 4894,
+          "mean_ms": 2.043652431548835,
+          "p50_ms": 1.942,
+          "p95_ms": 2.5763499999999997,
+          "p99_ms": 2.752
+        },
+        "gpu": {
+          "sample_count": 4894,
+          "mean_ms": 1.94711524347992,
+          "p50_ms": 1.88999998569489,
+          "p95_ms": 2.28699994087219,
+          "p99_ms": 2.5044199514389054
+        },
+        "render_cpu": {
+          "sample_count": 4894,
+          "mean_ms": 0.5450917455947394,
+          "p50_ms": 0.510999977588654,
+          "p95_ms": 0.7033500045537944,
+          "p99_ms": 0.7882099890708916
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": false,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-b",
+      "case": "no_ssr/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-b/no_ssr-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 5208,
+          "mean_ms": 1.9205560675883258,
+          "p50_ms": 1.835,
+          "p95_ms": 2.431,
+          "p99_ms": 2.5768600000000004
+        },
+        "gpu": {
+          "sample_count": 5208,
+          "mean_ms": 1.840845622705974,
+          "p50_ms": 1.77900004386902,
+          "p95_ms": 2.2039999961853,
+          "p99_ms": 2.40599989891052
+        },
+        "render_cpu": {
+          "sample_count": 5208,
+          "mean_ms": 0.530359831365389,
+          "p50_ms": 0.499000012874603,
+          "p95_ms": 0.675000011920929,
+          "p99_ms": 0.76800000667572
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": false,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-b",
+      "case": "scale_075/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-b/scale_075-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 6624,
+          "mean_ms": 1.5098716787439614,
+          "p50_ms": 1.453,
+          "p95_ms": 1.8658499999999996,
+          "p99_ms": 2.0435399999999992
+        },
+        "gpu": {
+          "sample_count": 6624,
+          "mean_ms": 1.4348928123388602,
+          "p50_ms": 1.40199995040894,
+          "p95_ms": 1.6688500225543934,
+          "p99_ms": 1.7967700397968305
+        },
+        "render_cpu": {
+          "sample_count": 6624,
+          "mean_ms": 0.5446961053426643,
+          "p50_ms": 0.522000014781952,
+          "p95_ms": 0.652999997138977,
+          "p99_ms": 0.730000019073486
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 0.75,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "ablation-b",
+      "case": "static_natural/dusk",
+      "source": "build/ancient-canal/profile-20261008/ablation-b/static_natural-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 4741,
+          "mean_ms": 2.109399704703649,
+          "p50_ms": 2.015,
+          "p95_ms": 2.635,
+          "p99_ms": 2.759
+        },
+        "gpu": {
+          "sample_count": 4741,
+          "mean_ms": 2.0306739083977847,
+          "p50_ms": 1.96200001239777,
+          "p95_ms": 2.50099992752075,
+          "p99_ms": 2.6685999393463105
+        },
+        "render_cpu": {
+          "sample_count": 4741,
+          "mean_ms": 0.5537177814923869,
+          "p50_ms": 0.518999993801117,
+          "p95_ms": 0.698000013828278,
+          "p99_ms": 0.794000029563904
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "baseline",
+      "case": "day",
+      "source": "build/ancient-canal/profile-20261008/baseline/day-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 6148,
+          "mean_ms": 4.879832303188029,
+          "p50_ms": 4.73,
+          "p95_ms": 7.554,
+          "p99_ms": 8.271299999999997
+        },
+        "gpu": {
+          "sample_count": 6148,
+          "mean_ms": 1.8499046849134144,
+          "p50_ms": 1.81299996376038,
+          "p95_ms": 2.13599991798401,
+          "p99_ms": 2.20900011062622
+        },
+        "render_cpu": {
+          "sample_count": 6148,
+          "mean_ms": 0.707201203361648,
+          "p50_ms": 0.649999976158142,
+          "p95_ms": 1.08299994468689,
+          "p99_ms": 1.4915900206565844
+        }
+      },
+      "completed_routes": 1,
+      "inventory": null
+    },
+    {
+      "run": "baseline",
+      "case": "dusk",
+      "source": "build/ancient-canal/profile-20261008/baseline/dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 6148,
+          "mean_ms": 4.87985052049447,
+          "p50_ms": 4.781,
+          "p95_ms": 7.349,
+          "p99_ms": 7.497
+        },
+        "gpu": {
+          "sample_count": 6148,
+          "mean_ms": 1.8643318155056947,
+          "p50_ms": 1.81500005722046,
+          "p95_ms": 2.2396500349044772,
+          "p99_ms": 2.47399997711182
+        },
+        "render_cpu": {
+          "sample_count": 6148,
+          "mean_ms": 0.6332550420630032,
+          "p50_ms": 0.621999979019165,
+          "p95_ms": 0.783999979496002,
+          "p99_ms": 0.9055299961566925
+        }
+      },
+      "completed_routes": 1,
+      "inventory": null
+    },
+    {
+      "run": "baseline",
+      "case": "night",
+      "source": "build/ancient-canal/profile-20261008/baseline/night-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 6148,
+          "mean_ms": 4.879827748861418,
+          "p50_ms": 4.755,
+          "p95_ms": 7.371,
+          "p99_ms": 7.54753
+        },
+        "gpu": {
+          "sample_count": 6148,
+          "mean_ms": 1.8403197784042236,
+          "p50_ms": 1.81400001049042,
+          "p95_ms": 2.0812999844551077,
+          "p99_ms": 2.300060074329377
+        },
+        "render_cpu": {
+          "sample_count": 6148,
+          "mean_ms": 0.6318126222047235,
+          "p50_ms": 0.617999970912933,
+          "p95_ms": 0.78600001335144,
+          "p99_ms": 0.928529998064041
+        }
+      },
+      "completed_routes": 1,
+      "inventory": null
+    },
+    {
+      "run": "confirm",
+      "case": "baseline/dusk",
+      "source": "build/ancient-canal/profile-20261008/confirm/baseline-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 4746,
+          "mean_ms": 2.1073786346396965,
+          "p50_ms": 2.026,
+          "p95_ms": 2.55775,
+          "p99_ms": 2.69855
+        },
+        "gpu": {
+          "sample_count": 4746,
+          "mean_ms": 2.0220636333838526,
+          "p50_ms": 1.97599995136261,
+          "p95_ms": 2.29900002479553,
+          "p99_ms": 2.42799997329712
+        },
+        "render_cpu": {
+          "sample_count": 4746,
+          "mean_ms": 0.5571517067534784,
+          "p50_ms": 0.523000001907349,
+          "p95_ms": 0.694000005722046,
+          "p99_ms": 0.7797500073909769
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "background_sleep_usec": 0,
+        "dof": true,
+        "dof_jitter": false,
+        "dof_quality": 2,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "confirm",
+      "case": "dof_low/dusk",
+      "source": "build/ancient-canal/profile-20261008/confirm/dof_low-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 5593,
+          "mean_ms": 1.7879833720722331,
+          "p50_ms": 1.714,
+          "p95_ms": 2.243,
+          "p99_ms": 2.42008
+        },
+        "gpu": {
+          "sample_count": 5593,
+          "mean_ms": 1.7202124086663397,
+          "p50_ms": 1.65900003910065,
+          "p95_ms": 2.13599991798401,
+          "p99_ms": 2.36700010299683
+        },
+        "render_cpu": {
+          "sample_count": 5593,
+          "mean_ms": 0.5477210798119467,
+          "p50_ms": 0.519999980926514,
+          "p95_ms": 0.675000011920929,
+          "p99_ms": 0.7651599884033199
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "background_sleep_usec": 0,
+        "dof": true,
+        "dof_jitter": false,
+        "dof_quality": 1,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "confirm",
+      "case": "no_dof/dusk",
+      "source": "build/ancient-canal/profile-20261008/confirm/no_dof-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 6243,
+          "mean_ms": 1.601846708313311,
+          "p50_ms": 1.533,
+          "p95_ms": 1.995,
+          "p99_ms": 2.1625799999999997
+        },
+        "gpu": {
+          "sample_count": 6243,
+          "mean_ms": 1.5248861115616177,
+          "p50_ms": 1.48399996757507,
+          "p95_ms": 1.8128999710083036,
+          "p99_ms": 1.922580008506775
+        },
+        "render_cpu": {
+          "sample_count": 6243,
+          "mean_ms": 0.5448543969473166,
+          "p50_ms": 0.518999993801117,
+          "p95_ms": 0.66100001335144,
+          "p99_ms": 0.7345800197124481
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "background_sleep_usec": 0,
+        "dof": false,
+        "dof_jitter": false,
+        "dof_quality": 2,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "confirm",
+      "case": "no_local_shadows/dusk",
+      "source": "build/ancient-canal/profile-20261008/confirm/no_local_shadows-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 5342,
+          "mean_ms": 1.8720642081617371,
+          "p50_ms": 1.801,
+          "p95_ms": 2.276,
+          "p99_ms": 2.452
+        },
+        "gpu": {
+          "sample_count": 5342,
+          "mean_ms": 1.7931018356123654,
+          "p50_ms": 1.75600004196167,
+          "p95_ms": 2.048950028419492,
+          "p99_ms": 2.18600010871887
+        },
+        "render_cpu": {
+          "sample_count": 5342,
+          "mean_ms": 0.2420840504373874,
+          "p50_ms": 0.236000001430511,
+          "p95_ms": 0.282000005245209,
+          "p99_ms": 0.323000013828278
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "background_sleep_usec": 0,
+        "dof": true,
+        "dof_jitter": false,
+        "dof_quality": 2,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 0,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "cpu",
+      "case": "baseline/dusk",
+      "source": "build/ancient-canal/profile-20261008/cpu/baseline-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 9509,
+          "mean_ms": 2.1034703964665056,
+          "p50_ms": 2.018,
+          "p95_ms": 2.551,
+          "p99_ms": 2.70992
+        },
+        "gpu": {
+          "sample_count": 9509,
+          "mean_ms": 2.0150993802166597,
+          "p50_ms": 1.96599996089935,
+          "p95_ms": 2.34200000762939,
+          "p99_ms": 2.4938399696350104
+        },
+        "render_cpu": {
+          "sample_count": 9509,
+          "mean_ms": 0.5514923760048259,
+          "p50_ms": 0.522000014781952,
+          "p95_ms": 0.686999976634979,
+          "p99_ms": 0.76800000667572
+        }
+      },
+      "completed_routes": 1,
+      "inventory": {
+        "background_sleep_usec": 0,
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "cpu",
+      "case": "static_natural/dusk",
+      "source": "build/ancient-canal/profile-20261008/cpu/static_natural-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 9456,
+          "mean_ms": 2.115065143824027,
+          "p50_ms": 2.032,
+          "p95_ms": 2.536,
+          "p99_ms": 2.7
+        },
+        "gpu": {
+          "sample_count": 9456,
+          "mean_ms": 2.0258981606808004,
+          "p50_ms": 1.97899997234344,
+          "p95_ms": 2.29299998283386,
+          "p99_ms": 2.42899990081787
+        },
+        "render_cpu": {
+          "sample_count": 9456,
+          "mean_ms": 0.5467711508891808,
+          "p50_ms": 0.514999985694885,
+          "p95_ms": 0.677999973297119,
+          "p99_ms": 0.776000022888184
+        }
+      },
+      "completed_routes": 1,
+      "inventory": {
+        "background_sleep_usec": 0,
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "gpu-stages-corrected",
+      "case": "baseline/dusk",
+      "source": "build/ancient-canal/profile-20261008/gpu-stages-corrected/baseline-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 3525,
+          "mean_ms": 2.2699690780141846,
+          "p50_ms": 2.133,
+          "p95_ms": 2.726,
+          "p99_ms": 2.965799999999999
+        },
+        "gpu": {
+          "sample_count": 3525,
+          "mean_ms": 2.1481347517933407,
+          "p50_ms": 2.04999995231628,
+          "p95_ms": 2.57200002670288,
+          "p99_ms": 2.7375199508666994
+        },
+        "render_cpu": {
+          "sample_count": 3525,
+          "mean_ms": 0.6718570215820421,
+          "p50_ms": 0.606000006198883,
+          "p95_ms": 1.0,
+          "p99_ms": 1.30552000045776
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "background_sleep_usec": 0,
+        "dof": true,
+        "dof_jitter": false,
+        "dof_quality": 2,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    },
+    {
+      "run": "gpu-stages",
+      "case": "baseline/dusk",
+      "source": "build/ancient-canal/profile-20261008/gpu-stages/baseline-dusk-samples.json",
+      "metrics": {
+        "wall": {
+          "sample_count": 1640,
+          "mean_ms": 4.880703048780488,
+          "p50_ms": 4.4605,
+          "p95_ms": 7.428,
+          "p99_ms": 7.74405
+        },
+        "gpu": {
+          "sample_count": 1640,
+          "mean_ms": 2.0718792698005353,
+          "p50_ms": 2.045500040054325,
+          "p95_ms": 2.32800006866455,
+          "p99_ms": 2.463610014915467
+        },
+        "render_cpu": {
+          "sample_count": 1640,
+          "mean_ms": 0.678498781163518,
+          "p50_ms": 0.657000005245209,
+          "p95_ms": 0.8770499765872951,
+          "p99_ms": 1.1636599922180182
+        }
+      },
+      "completed_routes": 0,
+      "inventory": {
+        "dof": true,
+        "main_shadow": true,
+        "mesh_instances": 315,
+        "msaa_3d": 1,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 315,
+        "triangles": 444171,
+        "unique_materials": 315,
+        "unique_meshes": 75
+      }
+    }
+  ]
+}

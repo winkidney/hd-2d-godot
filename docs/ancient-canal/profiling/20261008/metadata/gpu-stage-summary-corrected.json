@@ -1,0 +1,290 @@
+[
+  {
+    "name": "Render Opaque Pass",
+    "samples": 352,
+    "mean_gpu_ms": 0.5465221818181818,
+    "mean_cpu_ms": 0.04703409090909091
+  },
+  {
+    "name": "Depth of Field",
+    "samples": 352,
+    "mean_gpu_ms": 0.4904468181818182,
+    "mean_cpu_ms": 0.0030113636363636362
+  },
+  {
+    "name": "Render Depth Pre-Pass",
+    "samples": 352,
+    "mean_gpu_ms": 0.18315763636363636,
+    "mean_cpu_ms": 0.052869318181818184
+  },
+  {
+    "name": "Render OmniLight Shadows",
+    "samples": 352,
+    "mean_gpu_ms": 0.18250763636363637,
+    "mean_cpu_ms": 0.19583522727272729
+  },
+  {
+    "name": "Process SSR",
+    "samples": 352,
+    "mean_gpu_ms": 0.14940127272727272,
+    "mean_cpu_ms": 0.01734943181818182
+  },
+  {
+    "name": "Glow",
+    "samples": 352,
+    "mean_gpu_ms": 0.09892618181818182,
+    "mean_cpu_ms": 0.0030170454545454545
+  },
+  {
+    "name": "Render Directional/SpotLight Shadows",
+    "samples": 352,
+    "mean_gpu_ms": 0.08989963636363636,
+    "mean_cpu_ms": 0.06376704545454545
+  },
+  {
+    "name": "Process SSAO",
+    "samples": 352,
+    "mean_gpu_ms": 0.08247381818181818,
+    "mean_cpu_ms": 0.010849431818181817
+  },
+  {
+    "name": "Tonemap",
+    "samples": 352,
+    "mean_gpu_ms": 0.07421972727272727,
+    "mean_cpu_ms": 0.0037840909090909093
+  },
+  {
+    "name": "Resolve",
+    "samples": 352,
+    "mean_gpu_ms": 0.053354454545454545,
+    "mean_cpu_ms": 0.001434659090909091
+  },
+  {
+    "name": "Resolve Depth Pre-Pass (MSAA)",
+    "samples": 352,
+    "mean_gpu_ms": 0.030627545454545456,
+    "mean_cpu_ms": 0.002414772727272727
+  },
+  {
+    "name": "Render CanvasItems",
+    "samples": 352,
+    "mean_gpu_ms": 0.022862636363636363,
+    "mean_cpu_ms": 0.011778409090909091
+  },
+  {
+    "name": "Copy Final Framebuffer (SSIL/SSR)",
+    "samples": 352,
+    "mean_gpu_ms": 0.01716409090909091,
+    "mean_cpu_ms": 0.001159090909090909
+  },
+  {
+    "name": "Prepare Depth for SSAO/SSIL",
+    "samples": 352,
+    "mean_gpu_ms": 0.013323363636363637,
+    "mean_cpu_ms": 0.00203125
+  },
+  {
+    "name": "Render 3D Transparent Pass",
+    "samples": 352,
+    "mean_gpu_ms": 0.010458181818181818,
+    "mean_cpu_ms": 0.005457386363636364
+  },
+  {
+    "name": "Render 3D Cluster Elements",
+    "samples": 352,
+    "mean_gpu_ms": 0.009586818181818182,
+    "mean_cpu_ms": 0.0012017045454545455
+  },
+  {
+    "name": "Pack 3D Cluster Elements",
+    "samples": 352,
+    "mean_gpu_ms": 0.007493090909090909,
+    "mean_cpu_ms": 0.00033238636363636364
+  },
+  {
+    "name": "Render Sky",
+    "samples": 352,
+    "mean_gpu_ms": 0.006632727272727273,
+    "mean_cpu_ms": 0.0020142045454545456
+  },
+  {
+    "name": "Cull OmniLight3D Shadow Cube, Side 2",
+    "samples": 352,
+    "mean_gpu_ms": 0.004731727272727273,
+    "mean_cpu_ms": 0.02828977272727273
+  },
+  {
+    "name": "Cull OmniLight3D Shadow Cube, Side 4",
+    "samples": 352,
+    "mean_gpu_ms": 0.004261909090909091,
+    "mean_cpu_ms": 0.0236875
+  },
+  {
+    "name": "Cull OmniLight3D Shadow Cube, Side 0",
+    "samples": 352,
+    "mean_gpu_ms": 0.004146181818181819,
+    "mean_cpu_ms": 0.02763352272727273
+  },
+  {
+    "name": "Cull OmniLight3D Shadow Cube, Side 3",
+    "samples": 352,
+    "mean_gpu_ms": 0.004145363636363636,
+    "mean_cpu_ms": 0.020363636363636365
+  },
+  {
+    "name": "Cull OmniLight3D Shadow Cube, Side 1",
+    "samples": 352,
+    "mean_gpu_ms": 0.004136,
+    "mean_cpu_ms": 0.030803977272727275
+  },
+  {
+    "name": "Cull OmniLight3D Shadow Cube, Side 5",
+    "samples": 352,
+    "mean_gpu_ms": 0.004123363636363637,
+    "mean_cpu_ms": 0.02621306818181818
+  },
+  {
+    "name": "Pre Opaque Render",
+    "samples": 352,
+    "mean_gpu_ms": 0.0026681818181818182,
+    "mean_cpu_ms": 0.005071022727272727
+  },
+  {
+    "name": "Prepare Render Frame",
+    "samples": 352,
+    "mean_gpu_ms": 0.002518090909090909,
+    "mean_cpu_ms": 0.013809659090909091
+  },
+  {
+    "name": "Setup 3D Scene",
+    "samples": 352,
+    "mean_gpu_ms": 0.0022392727272727273,
+    "mean_cpu_ms": 0.024363636363636365
+  },
+  {
+    "name": "Setup Sky",
+    "samples": 352,
+    "mean_gpu_ms": 0.0018720909090909092,
+    "mean_cpu_ms": 0.0017386363636363636
+  },
+  {
+    "name": "Cull CanvasItem Tree",
+    "samples": 352,
+    "mean_gpu_ms": 0.0018349090909090908,
+    "mean_cpu_ms": 0.011573863636363637
+  },
+  {
+    "name": "Frame Begin",
+    "samples": 352,
+    "mean_gpu_ms": 0.001226,
+    "mean_cpu_ms": 0.00033238636363636364
+  },
+  {
+    "name": "Cull 2D Lights",
+    "samples": 352,
+    "mean_gpu_ms": 0.001186909090909091,
+    "mean_cpu_ms": 0.0013210227272727273
+  },
+  {
+    "name": "Process Post Opaque Compositor Effects",
+    "samples": 352,
+    "mean_gpu_ms": 0.0007796363636363636,
+    "mean_cpu_ms": 0.00024147727272727274
+  },
+  {
+    "name": "Cull 3D Scene",
+    "samples": 352,
+    "mean_gpu_ms": 0.0006965454545454546,
+    "mean_cpu_ms": 0.0029090909090909093
+  },
+  {
+    "name": "Cull DirectionalLight3D, Split 0",
+    "samples": 352,
+    "mean_gpu_ms": 0.0006812727272727273,
+    "mean_cpu_ms": 0.0016107954545454546
+  },
+  {
+    "name": "Cull DirectionalLight3D, Split 3",
+    "samples": 352,
+    "mean_gpu_ms": 0.0006735454545454546,
+    "mean_cpu_ms": 0.021039772727272726
+  },
+  {
+    "name": "Cull DirectionalLight3D, Split 1",
+    "samples": 352,
+    "mean_gpu_ms": 0.0006707272727272727,
+    "mean_cpu_ms": 0.0009886363636363636
+  },
+  {
+    "name": "Update Occlusion Buffer",
+    "samples": 352,
+    "mean_gpu_ms": 0.0006659090909090909,
+    "mean_cpu_ms": 0.0013892045454545455
+  },
+  {
+    "name": "Cull DirectionalLight3D, Split 2",
+    "samples": 352,
+    "mean_gpu_ms": 0.0006593636363636364,
+    "mean_cpu_ms": 0.000965909090909091
+  },
+  {
+    "name": "Update Visibility Dependencies",
+    "samples": 352,
+    "mean_gpu_ms": 0.0006484545454545455,
+    "mean_cpu_ms": 0.00015056818181818183
+  },
+  {
+    "name": "Prepare 3D Scene",
+    "samples": 352,
+    "mean_gpu_ms": 0.0006210909090909091,
+    "mean_cpu_ms": 0.0006448863636363636
+  },
+  {
+    "name": "Render 3D Scene",
+    "samples": 352,
+    "mean_gpu_ms": 0.0006133636363636364,
+    "mean_cpu_ms": 0.001059659090909091
+  },
+  {
+    "name": "Setup Shadows",
+    "samples": 352,
+    "mean_gpu_ms": 0.0006021818181818181,
+    "mean_cpu_ms": 0.001971590909090909
+  },
+  {
+    "name": "Process Pre Opaque Compositor Effects",
+    "samples": 352,
+    "mean_gpu_ms": 0.0006015454545454545,
+    "mean_cpu_ms": 0.0005085227272727273
+  },
+  {
+    "name": "Process Post Sky Compositor Effects",
+    "samples": 352,
+    "mean_gpu_ms": 0.0005905454545454545,
+    "mean_cpu_ms": 0.0002471590909090909
+  },
+  {
+    "name": "Resolve MSAA",
+    "samples": 352,
+    "mean_gpu_ms": 0.0005789090909090909,
+    "mean_cpu_ms": 0.00016477272727272727
+  },
+  {
+    "name": "Process Pre Transparent Compositor Effects",
+    "samples": 352,
+    "mean_gpu_ms": 0.0005643636363636364,
+    "mean_cpu_ms": 0.00013920454545454547
+  },
+  {
+    "name": "Update Volumetric Fog",
+    "samples": 352,
+    "mean_gpu_ms": 0.0005585454545454545,
+    "mean_cpu_ms": 0.0006136363636363636
+  },
+  {
+    "name": "Process Post Transparent Compositor Effects",
+    "samples": 352,
+    "mean_gpu_ms": 0.0005185454545454546,
+    "mean_cpu_ms": 0.00019602272727272727
+  }
+]

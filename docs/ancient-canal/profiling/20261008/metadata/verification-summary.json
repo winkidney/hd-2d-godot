@@ -1,0 +1,366 @@
+{
+  "checks": [
+    {
+      "report": "build/ancient-canal/profile-20261008/ablation-a/performance-report.json",
+      "passed": true,
+      "samples": [
+        {
+          "case": "baseline/dusk",
+          "frames": 2050,
+          "elapsed_s": 10.000084,
+          "completed_routes": 0,
+          "sha256": "17789e9946288d7aeeb9d2f365b8c47ec3111990fb5a9d77f33a6d5a8463bd24"
+        },
+        {
+          "case": "no_broad_shadows/dusk",
+          "frames": 2050,
+          "elapsed_s": 10.000166,
+          "completed_routes": 0,
+          "sha256": "6a70ffa47581d21d39bddaaf2583182571c30e6fe728d162851cabeddbb3d1fe"
+        },
+        {
+          "case": "no_dof/dusk",
+          "frames": 2050,
+          "elapsed_s": 10.000404,
+          "completed_routes": 0,
+          "sha256": "dda3e2f694282099f0c52f851a5da4817ec377724df4433804c95cceeb913247"
+        },
+        {
+          "case": "no_far_town/dusk",
+          "frames": 2050,
+          "elapsed_s": 10.005147,
+          "completed_routes": 0,
+          "sha256": "5f6555a5332cc85754bf8a0eb3a49a902b58d870d9253b6a3bb3fe1b3f2963ef"
+        },
+        {
+          "case": "no_glow/dusk",
+          "frames": 2050,
+          "elapsed_s": 10.002694,
+          "completed_routes": 0,
+          "sha256": "a26d2d8f36daf8e50506c319e50566a9f03940f46a28c34eeb7b7e0153b0ea1d"
+        },
+        {
+          "case": "no_local_shadows/dusk",
+          "frames": 2050,
+          "elapsed_s": 10.005098,
+          "completed_routes": 0,
+          "sha256": "9479a175703a3daaeeb72dcaddcae6ec58053adc632e4e758d6f83b88b9795b5"
+        },
+        {
+          "case": "no_main_shadow/dusk",
+          "frames": 2050,
+          "elapsed_s": 10.000017,
+          "completed_routes": 0,
+          "sha256": "c35228fd5ac874a3994800b4af79166ea047237458d6758c6a39fca82f13400a"
+        },
+        {
+          "case": "no_msaa/dusk",
+          "frames": 2050,
+          "elapsed_s": 10.005195,
+          "completed_routes": 0,
+          "sha256": "0684b8c0a18425adc16a2108eeedfe49a9bdd380a9560cccdb647b7efdb7f5da"
+        },
+        {
+          "case": "no_near_town/dusk",
+          "frames": 2049,
+          "elapsed_s": 10.001059,
+          "completed_routes": 0,
+          "sha256": "2b885b080a8115d73be2af2ed088ef914568775d0dff8b7705875cc20ecc19be"
+        },
+        {
+          "case": "no_normals/dusk",
+          "frames": 2050,
+          "elapsed_s": 10.00028,
+          "completed_routes": 0,
+          "sha256": "9b6fa8c04d3fa279674a1c1932aef059f40f0942102998d6ee0cffaaebce6d1c"
+        },
+        {
+          "case": "no_post/dusk",
+          "frames": 2050,
+          "elapsed_s": 10.005404,
+          "completed_routes": 0,
+          "sha256": "8c814af878a7a885cbed4d0d5f0a7f6cfcdd773ef5061d741270080f94ccb624"
+        },
+        {
+          "case": "no_shadows/dusk",
+          "frames": 2050,
+          "elapsed_s": 10.005048,
+          "completed_routes": 0,
+          "sha256": "e1b5a8283ddb3672745a32038f4c13c02aa85f288b371e8f97e2e9c6eb10847e"
+        },
+        {
+          "case": "no_ssao/dusk",
+          "frames": 2050,
+          "elapsed_s": 10.005314,
+          "completed_routes": 0,
+          "sha256": "27b8ffe52656e62c60ca425378d10876d3406303810cb08aef48fe1c263bbf3c"
+        },
+        {
+          "case": "no_ssr/dusk",
+          "frames": 2049,
+          "elapsed_s": 10.000134,
+          "completed_routes": 0,
+          "sha256": "af89292a19ae76422ae1d7790670a5a1d7f3cee347fa572d5907f0573fbe5ed9"
+        },
+        {
+          "case": "scale_075/dusk",
+          "frames": 2050,
+          "elapsed_s": 10.000007,
+          "completed_routes": 0,
+          "sha256": "dddc2da61a6c2e4e42a69935a74848606cae8ed5e58e776b2ba14d8cfe0234d4"
+        }
+      ]
+    },
+    {
+      "report": "build/ancient-canal/profile-20261008/ablation-b/performance-report.json",
+      "passed": true,
+      "samples": [
+        {
+          "case": "baseline/dusk",
+          "frames": 4735,
+          "elapsed_s": 10.001982,
+          "completed_routes": 0,
+          "sha256": "8ff43c488cb080373f4094eab8940d7a13e356edd51d5039d197382cbf69aff1"
+        },
+        {
+          "case": "no_broad_shadows/dusk",
+          "frames": 4918,
+          "elapsed_s": 10.000337,
+          "completed_routes": 0,
+          "sha256": "47ac143a077836aa20622a9cd46baa1638a55f88234da6bc3a139c3232507d53"
+        },
+        {
+          "case": "no_dof/dusk",
+          "frames": 6311,
+          "elapsed_s": 10.000309,
+          "completed_routes": 0,
+          "sha256": "f819f087592f881b864adc6e3436ba4840aa1cd3f703fbdaf3b570252242414e"
+        },
+        {
+          "case": "no_far_town/dusk",
+          "frames": 4831,
+          "elapsed_s": 10.001581,
+          "completed_routes": 0,
+          "sha256": "e97811db9ba19066533e413f7da483de07bc413d9457fb540caeab245a3905f7"
+        },
+        {
+          "case": "no_glow/dusk",
+          "frames": 5089,
+          "elapsed_s": 10.000604,
+          "completed_routes": 0,
+          "sha256": "edc7aad1386270531371d8532ca79045b901bedc4589950424e1c8c3238a35e3"
+        },
+        {
+          "case": "no_local_shadows/dusk",
+          "frames": 5358,
+          "elapsed_s": 10.000895,
+          "completed_routes": 0,
+          "sha256": "d32278e3faeef1ef04fcc5901a509424e61bc626e6297e9d7662158bed4f33d5"
+        },
+        {
+          "case": "no_main_shadow/dusk",
+          "frames": 5179,
+          "elapsed_s": 10.001667,
+          "completed_routes": 0,
+          "sha256": "1b340ffb5546e20a064b629dbe94bab1250f6a6c1bceebb5f2e344f8be404945"
+        },
+        {
+          "case": "no_msaa/dusk",
+          "frames": 5169,
+          "elapsed_s": 10.000517,
+          "completed_routes": 0,
+          "sha256": "08ffe965229780a4266e09a2561d565866bf723304082ca7e941b2fd805a83fc"
+        },
+        {
+          "case": "no_near_town/dusk",
+          "frames": 5069,
+          "elapsed_s": 10.001601,
+          "completed_routes": 0,
+          "sha256": "7c4780adf66a344ea85c14aca60bbfaae93bd5c695834f8ec782cdd12ff1ba8a"
+        },
+        {
+          "case": "no_normals/dusk",
+          "frames": 4757,
+          "elapsed_s": 10.001691,
+          "completed_routes": 0,
+          "sha256": "dc498c947f4467ca4a82ed0cc35546fff64d76606350ce08e55e6d2a6d8678d2"
+        },
+        {
+          "case": "no_post/dusk",
+          "frames": 9331,
+          "elapsed_s": 10.000483,
+          "completed_routes": 0,
+          "sha256": "b8fb5efe631145be781727c4ea5ae2e7a248bb0ee095d593b85828bed4f48859"
+        },
+        {
+          "case": "no_shadows/dusk",
+          "frames": 5980,
+          "elapsed_s": 10.001446,
+          "completed_routes": 0,
+          "sha256": "7fc4200327ff22dd6d8b0356859822f5ef700bd84dd68dfec85a4e1be5d7cfb2"
+        },
+        {
+          "case": "no_ssao/dusk",
+          "frames": 4894,
+          "elapsed_s": 10.001635,
+          "completed_routes": 0,
+          "sha256": "f65e133164017a6d111d2b8b36b9c26263b9ac5cc36aedfe13d310ace04a1b63"
+        },
+        {
+          "case": "no_ssr/dusk",
+          "frames": 5208,
+          "elapsed_s": 10.002256,
+          "completed_routes": 0,
+          "sha256": "4c89274e56e36f2cb19fac9aa54cb2e5988746a086f1e31f7b3b857ae453b250"
+        },
+        {
+          "case": "scale_075/dusk",
+          "frames": 6624,
+          "elapsed_s": 10.00139,
+          "completed_routes": 0,
+          "sha256": "86a3edf163bb867f4bd84cc502c94a37892467fecfb3729d723e112b8e8d3ac6"
+        },
+        {
+          "case": "static_natural/dusk",
+          "frames": 4741,
+          "elapsed_s": 10.000664,
+          "completed_routes": 0,
+          "sha256": "49ff429f4d72fa9d6a2d4f75c54dd2af4a1de882a0b630c9be681e74c8f0f821"
+        }
+      ]
+    },
+    {
+      "report": "build/ancient-canal/profile-20261008/baseline/performance-report.json",
+      "passed": true,
+      "samples": [
+        {
+          "case": "day",
+          "frames": 6148,
+          "elapsed_s": 30.001209,
+          "completed_routes": 1,
+          "sha256": "0ab00399026a64674aea61fd9718f3f117d57ee850db7409fcb8b5f519ba5569"
+        },
+        {
+          "case": "dusk",
+          "frames": 6148,
+          "elapsed_s": 30.001321,
+          "completed_routes": 1,
+          "sha256": "080b0d3e7914d499b3b8ca05e6463a9136d3477569da82d3714c85520d9f35fa"
+        },
+        {
+          "case": "night",
+          "frames": 6148,
+          "elapsed_s": 30.001181,
+          "completed_routes": 1,
+          "sha256": "0a975920ab94fd94ea55166621e77190dbb11e34b13deb21702bb57cc8b37f5e"
+        }
+      ]
+    },
+    {
+      "report": "build/ancient-canal/profile-20261008/confirm/performance-report.json",
+      "passed": true,
+      "samples": [
+        {
+          "case": "baseline/dusk",
+          "frames": 4746,
+          "elapsed_s": 10.001619,
+          "completed_routes": 0,
+          "sha256": "c0025843e74d6e6fa8b4361cc594490e3844cb7b12c4ce97e114add6f6617f15"
+        },
+        {
+          "case": "dof_low/dusk",
+          "frames": 5593,
+          "elapsed_s": 10.000191,
+          "completed_routes": 0,
+          "sha256": "f87773ebf7be27c84634f1156a6b941f129f8ec4410067709ad274d78dc84469"
+        },
+        {
+          "case": "no_dof/dusk",
+          "frames": 6243,
+          "elapsed_s": 10.000329,
+          "completed_routes": 0,
+          "sha256": "88c8bc396d9cc7741496e5ac32983d19c01700fafed182aea81bb3694f55d7eb"
+        },
+        {
+          "case": "no_local_shadows/dusk",
+          "frames": 5342,
+          "elapsed_s": 10.000567,
+          "completed_routes": 0,
+          "sha256": "8cb570e96d0b3ea499afd5a8e68438ff8f8a81402832c1830b2c8e8cb1665da2"
+        }
+      ]
+    },
+    {
+      "report": "build/ancient-canal/profile-20261008/cpu/performance-report.json",
+      "passed": true,
+      "samples": [
+        {
+          "case": "baseline/dusk",
+          "frames": 9509,
+          "elapsed_s": 20.0019,
+          "completed_routes": 1,
+          "sha256": "2ca8a71ed54f03509ff261b13a933be65ac7b8341dc1c93802af725ef11684cb"
+        },
+        {
+          "case": "static_natural/dusk",
+          "frames": 9456,
+          "elapsed_s": 20.000056,
+          "completed_routes": 1,
+          "sha256": "a6c4b419aa617eb90bd66ab3f8584d4eb62fe7fbb4515bf575dd678f16376371"
+        }
+      ]
+    },
+    {
+      "report": "build/ancient-canal/profile-20261008/gpu-stages/performance-report.json",
+      "passed": true,
+      "samples": [
+        {
+          "case": "baseline/dusk",
+          "frames": 1640,
+          "elapsed_s": 8.004353,
+          "completed_routes": 0,
+          "sha256": "3795d9e3959706b5d71053eb01f2e244e330df4e39ec0f58ff7b059231dca1e5"
+        }
+      ]
+    },
+    {
+      "report": "build/ancient-canal/profile-20261008/gpu-stages-corrected/performance-report.json",
+      "passed": true,
+      "samples": [
+        {
+          "case": "baseline/dusk",
+          "frames": 3525,
+          "elapsed_s": 8.001641,
+          "completed_routes": 0,
+          "sha256": "542e3f450f30b1c424227d818fe8694ab02b031ce644fe322b13efdffc5e9ae0"
+        }
+      ]
+    }
+  ],
+  "all_passed": true,
+  "runtime_fingerprint_before": "1a540a6c3fa4548b7cdbe7636f456ae1384cf0bc58901947c56106cb9cb787c6",
+  "runtime_fingerprint_after": "1a540a6c3fa4548b7cdbe7636f456ae1384cf0bc58901947c56106cb9cb787c6",
+  "gpu_stage_units": {
+    "original_gpu_us_field_in_first_runs": "actually Vulkan nanoseconds; calibrated against engine GPU profile and exact backend source",
+    "corrected_gpu_ns": "nanoseconds stored as decimal strings",
+    "cpu_us": "microseconds"
+  },
+  "conditions": {
+    "native_size": [
+      1920,
+      1080
+    ],
+    "corrected_baseline_msaa": "2x",
+    "background_sleep_usec": 0,
+    "physics_hz": 60,
+    "time_scale": 1,
+    "gpu": "RTX 4070 SUPER",
+    "cpu": "Ryzen 9 7900X3D",
+    "driver": "580.178.04",
+    "engine": "4.7.2.ed1daf0bf",
+    "gpu_runs_serial": true,
+    "presentation_measured": false,
+    "instrumentation_runs_separate": true
+  },
+  "runtime_unchanged": true
+}

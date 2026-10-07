@@ -1,0 +1,98 @@
+[
+  {
+    "asset": "assets/ancient-canal/models/willow.glb",
+    "triangles": 19784,
+    "mesh_nodes": 2,
+    "surfaces": 2
+  },
+  {
+    "asset": "assets/ancient-canal/models/tavern.glb",
+    "triangles": 12112,
+    "mesh_nodes": 8,
+    "surfaces": 8
+  },
+  {
+    "asset": "assets/ancient-canal/models/house.glb",
+    "triangles": 8516,
+    "mesh_nodes": 7,
+    "surfaces": 7
+  },
+  {
+    "asset": "assets/ancient-canal/models/bridge.glb",
+    "triangles": 2500,
+    "mesh_nodes": 1,
+    "surfaces": 1
+  },
+  {
+    "asset": "assets/background/ridge_far.glb",
+    "triangles": 1536,
+    "mesh_nodes": 1,
+    "surfaces": 1
+  },
+  {
+    "asset": "assets/background/ridge_mid.glb",
+    "triangles": 1408,
+    "mesh_nodes": 1,
+    "surfaces": 1
+  },
+  {
+    "asset": "assets/background/ridge_near.glb",
+    "triangles": 1280,
+    "mesh_nodes": 1,
+    "surfaces": 1
+  },
+  {
+    "asset": "assets/ancient-canal/models/food_stall.glb",
+    "triangles": 1192,
+    "mesh_nodes": 4,
+    "surfaces": 4
+  },
+  {
+    "asset": "assets/ancient-canal/models/dock.glb",
+    "triangles": 744,
+    "mesh_nodes": 2,
+    "surfaces": 2
+  },
+  {
+    "asset": "assets/ancient-canal/models/boat.glb",
+    "triangles": 529,
+    "mesh_nodes": 1,
+    "surfaces": 1
+  },
+  {
+    "asset": "assets/ancient-canal/models/streetlamp.glb",
+    "triangles": 376,
+    "mesh_nodes": 6,
+    "surfaces": 6
+  },
+  {
+    "asset": "assets/ancient-canal/models/cloth_stall.glb",
+    "triangles": 316,
+    "mesh_nodes": 3,
+    "surfaces": 3
+  },
+  {
+    "asset": "assets/ancient-canal/models/wine_jar.glb",
+    "triangles": 312,
+    "mesh_nodes": 2,
+    "surfaces": 2
+  },
+  {
+    "asset": "assets/ancient-canal/models/lantern.glb",
+    "triangles": 268,
+    "mesh_nodes": 3,
+    "surfaces": 3
+  },
+  {
+    "asset": "assets/ancient-canal/models/bank_wall.glb",
+    "triangles": 84,
+    "mesh_nodes": 1,
+    "surfaces": 1
+  },
+  {
+    "asset": "assets/ancient-canal/models/cloth_banner.glb",
+    "triangles": 52,
+    "mesh_nodes": 2,
+    "surfaces": 2
+  }
+]
