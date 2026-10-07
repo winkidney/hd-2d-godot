@@ -1,0 +1,4373 @@
+[
+  {
+    "frame": 0,
+    "source_index": 28,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          111.0,
+          76.0
+        ],
+        "after": [
+          112.0,
+          78.0
+        ],
+        "pixels": 335
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.0,
+          39.0
+        ],
+        "after": [
+          135.0,
+          42.0
+        ],
+        "pixels": 258
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          140.0,
+          52.0
+        ],
+        "after": [
+          140.0,
+          50.0
+        ],
+        "pixels": 95
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.0,
+          78.0
+        ],
+        "after": [
+          139.0,
+          78.0
+        ],
+        "pixels": 33
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.0,
+          100.0
+        ],
+        "after": [
+          112.0,
+          102.0
+        ],
+        "pixels": 268
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.0,
+          128.0
+        ],
+        "after": [
+          112.0,
+          130.0
+        ],
+        "pixels": 141
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          86.0,
+          117.0
+        ],
+        "after": [
+          86.0,
+          120.0
+        ],
+        "pixels": 91
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          165.0,
+          116.0
+        ],
+        "after": [
+          166.0,
+          113.0
+        ],
+        "pixels": 49
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          83.0,
+          140.0
+        ],
+        "after": [
+          81.0,
+          138.0
+        ],
+        "pixels": 25
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          160.0,
+          147.0
+        ],
+        "after": [
+          160.0,
+          146.0
+        ],
+        "pixels": 27
+      },
+      {
+        "feature": "silver_9",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          111.0,
+          206.0
+        ],
+        "after": [
+          109.0,
+          207.0
+        ],
+        "pixels": 26
+      },
+      {
+        "feature": "silver_10",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          153.0,
+          192.0
+        ],
+        "after": [
+          153.0,
+          195.0
+        ],
+        "pixels": 28
+      }
+    ],
+    "visible_pixels": 12890,
+    "semantic_pixels": {
+      "face": 844,
+      "hair": 1626,
+      "braids": 991,
+      "cloth": 2303,
+      "skirt": 4237,
+      "metal": 1354,
+      "boots": 1535
+    }
+  },
+  {
+    "frame": 1,
+    "source_index": 29,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          111.0006,
+          75.6359
+        ],
+        "after": [
+          112.0,
+          78.5
+        ],
+        "pixels": 320
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          134.8966,
+          38.4998
+        ],
+        "after": [
+          135.0,
+          41.4998
+        ],
+        "pixels": 259
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.7498,
+          51.5518
+        ],
+        "after": [
+          140.0,
+          49.0
+        ],
+        "pixels": 98
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          138.774,
+          78.1223
+        ],
+        "after": [
+          139.0,
+          77.5
+        ],
+        "pixels": 36
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.099,
+          99.5435
+        ],
+        "after": [
+          112.0,
+          101.0
+        ],
+        "pixels": 264
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.0567,
+          127.3914
+        ],
+        "after": [
+          112.0,
+          130.0
+        ],
+        "pixels": 135
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          86.5898,
+          117.3343
+        ],
+        "after": [
+          86.0,
+          120.3343
+        ],
+        "pixels": 84
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          164.4168,
+          116.6494
+        ],
+        "after": [
+          165.0,
+          113.6494
+        ],
+        "pixels": 53
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          84.1217,
+          140.5599
+        ],
+        "after": [
+          82.0,
+          139.0
+        ],
+        "pixels": 28
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          158.048,
+          147.5014
+        ],
+        "after": [
+          158.0,
+          146.0
+        ],
+        "pixels": 22
+      },
+      {
+        "feature": "silver_9",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.7505,
+          205.5003
+        ],
+        "after": [
+          111.5,
+          207.5
+        ],
+        "pixels": 26
+      },
+      {
+        "feature": "silver_10",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          147.0538,
+          191.1287
+        ],
+        "after": [
+          149.0,
+          194.0
+        ],
+        "pixels": 31
+      }
+    ],
+    "visible_pixels": 12735,
+    "semantic_pixels": {
+      "face": 989,
+      "hair": 1518,
+      "braids": 969,
+      "cloth": 2165,
+      "skirt": 4241,
+      "metal": 1341,
+      "boots": 1512
+    }
+  },
+  {
+    "frame": 2,
+    "source_index": 30,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.7939,
+          74.4099
+        ],
+        "after": [
+          112.5,
+          75.0
+        ],
+        "pixels": 309
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.0717,
+          37.2503
+        ],
+        "after": [
+          135.0,
+          40.2503
+        ],
+        "pixels": 266
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.4813,
+          50.3769
+        ],
+        "after": [
+          140.0,
+          48.5
+        ],
+        "pixels": 102
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          138.053,
+          77.2094
+        ],
+        "after": [
+          138.0,
+          77.0
+        ],
+        "pixels": 38
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2004,
+          98.2796
+        ],
+        "after": [
+          112.0,
+          100.0
+        ],
+        "pixels": 265
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.1235,
+          126.1055
+        ],
+        "after": [
+          111.0,
+          128.0
+        ],
+        "pixels": 133
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          88.4573,
+          117.9383
+        ],
+        "after": [
+          88.5,
+          120.9383
+        ],
+        "pixels": 86
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          162.4577,
+          118.0991
+        ],
+        "after": [
+          163.0,
+          115.0991
+        ],
+        "pixels": 50
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          87.635,
+          141.7311
+        ],
+        "after": [
+          86.0,
+          139.0
+        ],
+        "pixels": 27
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          153.578,
+          148.3583
+        ],
+        "after": [
+          154.0,
+          147.0
+        ],
+        "pixels": 28
+      },
+      {
+        "feature": "silver_9",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          118.2238,
+          204.1018
+        ],
+        "after": [
+          118.0,
+          206.0
+        ],
+        "pixels": 31
+      },
+      {
+        "feature": "silver_10",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          137.0333,
+          189.0978
+        ],
+        "after": [
+          140.0,
+          192.0
+        ],
+        "pixels": 23
+      }
+    ],
+    "visible_pixels": 12386,
+    "semantic_pixels": {
+      "face": 767,
+      "hair": 1566,
+      "braids": 985,
+      "cloth": 2156,
+      "skirt": 4130,
+      "metal": 1360,
+      "boots": 1422
+    }
+  },
+  {
+    "frame": 3,
+    "source_index": 31,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.695,
+          73.4537
+        ],
+        "after": [
+          112.5,
+          74.5
+        ],
+        "pixels": 302
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.0143,
+          36.354
+        ],
+        "after": [
+          135.0,
+          39.354
+        ],
+        "pixels": 263
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.3765,
+          49.5212
+        ],
+        "after": [
+          139.5,
+          47.0
+        ],
+        "pixels": 96
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          137.7509,
+          76.6113
+        ],
+        "after": [
+          138.0,
+          76.0
+        ],
+        "pixels": 37
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2345,
+          97.3805
+        ],
+        "after": [
+          112.0,
+          99.0
+        ],
+        "pixels": 264
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2346,
+          125.2833
+        ],
+        "after": [
+          112.0,
+          127.5
+        ],
+        "pixels": 134
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          89.9636,
+          118.4049
+        ],
+        "after": [
+          90.0,
+          121.4049
+        ],
+        "pixels": 90
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          160.9245,
+          118.7002
+        ],
+        "after": [
+          162.0,
+          115.7002
+        ],
+        "pixels": 53
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          89.8875,
+          142.3045
+        ],
+        "after": [
+          88.0,
+          140.0
+        ],
+        "pixels": 28
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          150.3586,
+          148.6963
+        ],
+        "after": [
+          151.0,
+          147.0
+        ],
+        "pixels": 28
+      },
+      {
+        "feature": "silver_9",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          121.2053,
+          202.9848
+        ],
+        "after": [
+          122.0,
+          205.9848
+        ],
+        "pixels": 29
+      },
+      {
+        "feature": "silver_10",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          132.4685,
+          189.1861
+        ],
+        "after": [
+          135.0,
+          191.0
+        ],
+        "pixels": 32
+      }
+    ],
+    "visible_pixels": 12133,
+    "semantic_pixels": {
+      "face": 825,
+      "hair": 1570,
+      "braids": 946,
+      "cloth": 2048,
+      "skirt": 4009,
+      "metal": 1375,
+      "boots": 1360
+    }
+  },
+  {
+    "frame": 4,
+    "source_index": 32,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.4329,
+          72.561
+        ],
+        "after": [
+          112.0,
+          74.0
+        ],
+        "pixels": 293
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.1173,
+          35.5587
+        ],
+        "after": [
+          135.0,
+          38.5587
+        ],
+        "pixels": 261
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.39,
+          48.7096
+        ],
+        "after": [
+          139.0,
+          45.7096
+        ],
+        "pixels": 95
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          137.5566,
+          75.7993
+        ],
+        "after": [
+          138.0,
+          75.0
+        ],
+        "pixels": 38
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2743,
+          96.4328
+        ],
+        "after": [
+          112.0,
+          98.0
+        ],
+        "pixels": 258
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2698,
+          124.5077
+        ],
+        "after": [
+          112.0,
+          126.5
+        ],
+        "pixels": 134
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          91.6259,
+          118.4734
+        ],
+        "after": [
+          92.0,
+          121.4734
+        ],
+        "pixels": 93
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          159.4216,
+          119.1966
+        ],
+        "after": [
+          160.0,
+          116.1966
+        ],
+        "pixels": 52
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          92.7059,
+          142.8577
+        ],
+        "after": [
+          90.5,
+          141.0
+        ],
+        "pixels": 22
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          146.8533,
+          148.8917
+        ],
+        "after": [
+          148.0,
+          147.0
+        ],
+        "pixels": 26
+      },
+      {
+        "feature": "silver_9",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          124.1349,
+          201.6864
+        ],
+        "after": [
+          126.0,
+          204.0
+        ],
+        "pixels": 26
+      },
+      {
+        "feature": "silver_10",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          128.5178,
+          188.9881
+        ],
+        "after": [
+          130.0,
+          190.0
+        ],
+        "pixels": 26
+      }
+    ],
+    "visible_pixels": 11802,
+    "semantic_pixels": {
+      "face": 960,
+      "hair": 1469,
+      "braids": 926,
+      "cloth": 1935,
+      "skirt": 3920,
+      "metal": 1360,
+      "boots": 1232
+    }
+  },
+  {
+    "frame": 5,
+    "source_index": 33,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.4033,
+          71.7485
+        ],
+        "after": [
+          112.0,
+          73.0
+        ],
+        "pixels": 305
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.1938,
+          34.7221
+        ],
+        "after": [
+          135.0,
+          37.7221
+        ],
+        "pixels": 263
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.5267,
+          47.9554
+        ],
+        "after": [
+          140.0,
+          46.0
+        ],
+        "pixels": 99
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          137.4124,
+          75.0095
+        ],
+        "after": [
+          137.5,
+          74.0
+        ],
+        "pixels": 36
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.252,
+          95.5169
+        ],
+        "after": [
+          112.0,
+          97.0
+        ],
+        "pixels": 256
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.3681,
+          123.611
+        ],
+        "after": [
+          112.0,
+          126.0
+        ],
+        "pixels": 137
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          93.1484,
+          118.4854
+        ],
+        "after": [
+          93.0,
+          121.4854
+        ],
+        "pixels": 85
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          157.9453,
+          119.6244
+        ],
+        "after": [
+          159.0,
+          116.6244
+        ],
+        "pixels": 54
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          95.5318,
+          143.2543
+        ],
+        "after": [
+          93.5,
+          141.0
+        ],
+        "pixels": 24
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          143.1855,
+          148.9313
+        ],
+        "after": [
+          144.5,
+          147.0
+        ],
+        "pixels": 26
+      },
+      {
+        "feature": "silver_9",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          127.4582,
+          200.2067
+        ],
+        "after": [
+          130.0,
+          203.2067
+        ],
+        "pixels": 18
+      },
+      {
+        "feature": "silver_10",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          128.0772,
+          188.7673
+        ],
+        "after": [
+          127.0,
+          185.7673
+        ],
+        "pixels": 8
+      }
+    ],
+    "visible_pixels": 11493,
+    "semantic_pixels": {
+      "face": 860,
+      "hair": 1524,
+      "braids": 916,
+      "cloth": 1909,
+      "skirt": 3841,
+      "metal": 1336,
+      "boots": 1107
+    }
+  },
+  {
+    "frame": 6,
+    "source_index": 34,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.4129,
+          70.3047
+        ],
+        "after": [
+          112.0,
+          70.5
+        ],
+        "pixels": 285
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.2661,
+          33.1527
+        ],
+        "after": [
+          135.0,
+          36.1527
+        ],
+        "pixels": 261
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.6715,
+          46.3887
+        ],
+        "after": [
+          140.0,
+          45.0
+        ],
+        "pixels": 101
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          137.3687,
+          73.7413
+        ],
+        "after": [
+          137.5,
+          73.0
+        ],
+        "pixels": 36
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.3212,
+          94.178
+        ],
+        "after": [
+          112.0,
+          96.0
+        ],
+        "pixels": 266
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.4382,
+          122.2548
+        ],
+        "after": [
+          112.0,
+          125.0
+        ],
+        "pixels": 131
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          95.4165,
+          118.1202
+        ],
+        "after": [
+          95.0,
+          121.1202
+        ],
+        "pixels": 70
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          155.7257,
+          119.6812
+        ],
+        "after": [
+          157.0,
+          116.6812
+        ],
+        "pixels": 55
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          97.9725,
+          144.1499
+        ],
+        "after": [
+          100.9725,
+          144.0
+        ],
+        "pixels": 20
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.5968,
+          149.1276
+        ],
+        "after": [
+          138.0,
+          147.0
+        ],
+        "pixels": 25
+      },
+      {
+        "feature": "silver_9",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          131.7102,
+          198.6011
+        ],
+        "after": [
+          134.7102,
+          200.0
+        ],
+        "pixels": 15
+      },
+      {
+        "feature": "silver_10",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          128.106,
+          187.0311
+        ],
+        "after": [
+          128.0,
+          184.0311
+        ],
+        "pixels": 14
+      }
+    ],
+    "visible_pixels": 11161,
+    "semantic_pixels": {
+      "face": 913,
+      "hair": 1487,
+      "braids": 982,
+      "cloth": 1770,
+      "skirt": 3644,
+      "metal": 1319,
+      "boots": 1046
+    }
+  },
+  {
+    "frame": 7,
+    "source_index": 35,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.3633,
+          70.0922
+        ],
+        "after": [
+          112.0,
+          72.5
+        ],
+        "pixels": 284
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.3176,
+          33.0782
+        ],
+        "after": [
+          136.0,
+          36.0782
+        ],
+        "pixels": 261
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.7812,
+          46.2786
+        ],
+        "after": [
+          140.0,
+          44.5
+        ],
+        "pixels": 102
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          137.6567,
+          73.4764
+        ],
+        "after": [
+          138.0,
+          73.0
+        ],
+        "pixels": 34
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2482,
+          94.0187
+        ],
+        "after": [
+          112.0,
+          95.5
+        ],
+        "pixels": 266
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.3961,
+          122.2396
+        ],
+        "after": [
+          112.0,
+          125.0
+        ],
+        "pixels": 134
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          95.8243,
+          117.8289
+        ],
+        "after": [
+          95.0,
+          120.8289
+        ],
+        "pixels": 65
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          155.4523,
+          119.4378
+        ],
+        "after": [
+          157.0,
+          116.4378
+        ],
+        "pixels": 52
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          98.5657,
+          144.3583
+        ],
+        "after": [
+          101.5657,
+          144.5
+        ],
+        "pixels": 14
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          132.057,
+          148.9765
+        ],
+        "after": [
+          134.5,
+          147.0
+        ],
+        "pixels": 26
+      },
+      {
+        "feature": "silver_10",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          127.5011,
+          186.9134
+        ],
+        "after": [
+          127.5,
+          183.9134
+        ],
+        "pixels": 8
+      }
+    ],
+    "visible_pixels": 11338,
+    "semantic_pixels": {
+      "face": 751,
+      "hair": 1594,
+      "braids": 933,
+      "cloth": 1830,
+      "skirt": 3641,
+      "metal": 1245,
+      "boots": 1344
+    }
+  },
+  {
+    "frame": 8,
+    "source_index": 36,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.485,
+          70.3433
+        ],
+        "after": [
+          112.0,
+          70.5
+        ],
+        "pixels": 288
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.312,
+          33.1716
+        ],
+        "after": [
+          135.0,
+          36.1716
+        ],
+        "pixels": 260
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.8677,
+          46.3658
+        ],
+        "after": [
+          140.0,
+          44.0
+        ],
+        "pixels": 99
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          137.8404,
+          73.5443
+        ],
+        "after": [
+          138.0,
+          73.0
+        ],
+        "pixels": 36
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2673,
+          94.2804
+        ],
+        "after": [
+          111.0,
+          96.0
+        ],
+        "pixels": 258
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.3126,
+          122.3797
+        ],
+        "after": [
+          112.0,
+          125.0
+        ],
+        "pixels": 146
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          95.619,
+          117.7366
+        ],
+        "after": [
+          94.0,
+          118.0
+        ],
+        "pixels": 58
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          155.9046,
+          119.2365
+        ],
+        "after": [
+          157.0,
+          116.2365
+        ],
+        "pixels": 51
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          98.8416,
+          143.8603
+        ],
+        "after": [
+          101.8416,
+          145.0
+        ],
+        "pixels": 13
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          128.0689,
+          149.0888
+        ],
+        "after": [
+          130.0,
+          147.0
+        ],
+        "pixels": 25
+      },
+      {
+        "feature": "silver_10",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          127.2109,
+          187.2641
+        ],
+        "after": [
+          128.0,
+          184.2641
+        ],
+        "pixels": 8
+      }
+    ],
+    "visible_pixels": 11306,
+    "semantic_pixels": {
+      "face": 813,
+      "hair": 1567,
+      "braids": 957,
+      "cloth": 1818,
+      "skirt": 3589,
+      "metal": 1228,
+      "boots": 1334
+    }
+  },
+  {
+    "frame": 9,
+    "source_index": 37,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.5755,
+          70.8775
+        ],
+        "after": [
+          112.5,
+          71.5
+        ],
+        "pixels": 292
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.2963,
+          33.8683
+        ],
+        "after": [
+          135.0,
+          36.8683
+        ],
+        "pixels": 259
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.989,
+          47.0344
+        ],
+        "after": [
+          140.0,
+          45.0
+        ],
+        "pixels": 97
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          138.0151,
+          73.8592
+        ],
+        "after": [
+          138.0,
+          73.5
+        ],
+        "pixels": 34
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2292,
+          94.8527
+        ],
+        "after": [
+          112.0,
+          96.0
+        ],
+        "pixels": 258
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.3178,
+          122.9088
+        ],
+        "after": [
+          112.0,
+          125.9088
+        ],
+        "pixels": 146
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          94.6381,
+          117.2634
+        ],
+        "after": [
+          93.0,
+          117.0
+        ],
+        "pixels": 45
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          156.9598,
+          118.8737
+        ],
+        "after": [
+          158.0,
+          115.8737
+        ],
+        "pixels": 53
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          98.897,
+          144.3642
+        ],
+        "after": [
+          101.897,
+          147.0
+        ],
+        "pixels": 19
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          124.9682,
+          149.2736
+        ],
+        "after": [
+          127.0,
+          148.0
+        ],
+        "pixels": 26
+      },
+      {
+        "feature": "silver_10",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          125.8223,
+          188.5176
+        ],
+        "after": [
+          126.0,
+          185.5176
+        ],
+        "pixels": 5
+      }
+    ],
+    "visible_pixels": 11350,
+    "semantic_pixels": {
+      "face": 943,
+      "hair": 1474,
+      "braids": 983,
+      "cloth": 1749,
+      "skirt": 3582,
+      "metal": 1222,
+      "boots": 1397
+    }
+  },
+  {
+    "frame": 10,
+    "source_index": 38,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.8303,
+          72.5469
+        ],
+        "after": [
+          112.5,
+          72.0
+        ],
+        "pixels": 309
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.2122,
+          35.4473
+        ],
+        "after": [
+          135.0,
+          38.4473
+        ],
+        "pixels": 263
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          140.17,
+          48.7165
+        ],
+        "after": [
+          140.0,
+          47.0
+        ],
+        "pixels": 98
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          138.5058,
+          75.1039
+        ],
+        "after": [
+          139.0,
+          74.0
+        ],
+        "pixels": 37
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2011,
+          96.4554
+        ],
+        "after": [
+          112.0,
+          98.0
+        ],
+        "pixels": 266
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          111.9669,
+          124.1477
+        ],
+        "after": [
+          112.0,
+          127.1477
+        ],
+        "pixels": 163
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          92.0682,
+          116.9734
+        ],
+        "after": [
+          90.0,
+          117.0
+        ],
+        "pixels": 41
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          159.7186,
+          117.8703
+        ],
+        "after": [
+          161.0,
+          114.8703
+        ],
+        "pixels": 50
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          98.7394,
+          146.134
+        ],
+        "after": [
+          101.7394,
+          147.0
+        ],
+        "pixels": 15
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          118.3548,
+          149.9567
+        ],
+        "after": [
+          120.0,
+          149.0
+        ],
+        "pixels": 43
+      }
+    ],
+    "visible_pixels": 11373,
+    "semantic_pixels": {
+      "face": 845,
+      "hair": 1543,
+      "braids": 996,
+      "cloth": 1659,
+      "skirt": 3611,
+      "metal": 1215,
+      "boots": 1504
+    }
+  },
+  {
+    "frame": 11,
+    "source_index": 39,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.906,
+          73.7284
+        ],
+        "after": [
+          112.5,
+          75.5
+        ],
+        "pixels": 316
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.1714,
+          36.7116
+        ],
+        "after": [
+          135.0,
+          39.7116
+        ],
+        "pixels": 261
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          140.2588,
+          49.8818
+        ],
+        "after": [
+          140.0,
+          47.0
+        ],
+        "pixels": 98
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          138.8434,
+          75.9394
+        ],
+        "after": [
+          139.0,
+          75.0
+        ],
+        "pixels": 37
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.1156,
+          97.6466
+        ],
+        "after": [
+          112.0,
+          99.0
+        ],
+        "pixels": 260
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          111.4152,
+          124.965
+        ],
+        "after": [
+          112.0,
+          127.965
+        ],
+        "pixels": 156
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          90.3136,
+          116.8732
+        ],
+        "after": [
+          88.5,
+          116.0
+        ],
+        "pixels": 42
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          161.2109,
+          117.0592
+        ],
+        "after": [
+          162.0,
+          114.0592
+        ],
+        "pixels": 48
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          98.7242,
+          147.1756
+        ],
+        "after": [
+          101.7242,
+          149.0
+        ],
+        "pixels": 13
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          115.6311,
+          150.0514
+        ],
+        "after": [
+          117.0,
+          149.0
+        ],
+        "pixels": 40
+      }
+    ],
+    "visible_pixels": 11410,
+    "semantic_pixels": {
+      "face": 908,
+      "hair": 1512,
+      "braids": 986,
+      "cloth": 1642,
+      "skirt": 3593,
+      "metal": 1210,
+      "boots": 1559
+    }
+  },
+  {
+    "frame": 12,
+    "source_index": 40,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.9572,
+          74.8526
+        ],
+        "after": [
+          112.5,
+          77.0
+        ],
+        "pixels": 327
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.1269,
+          37.8319
+        ],
+        "after": [
+          135.0,
+          40.8319
+        ],
+        "pixels": 253
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          140.2967,
+          50.9824
+        ],
+        "after": [
+          140.0,
+          48.5
+        ],
+        "pixels": 92
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.0022,
+          76.7988
+        ],
+        "after": [
+          139.0,
+          76.0
+        ],
+        "pixels": 35
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.0481,
+          98.6837
+        ],
+        "after": [
+          112.0,
+          100.0
+        ],
+        "pixels": 260
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          110.8895,
+          125.8176
+        ],
+        "after": [
+          112.0,
+          128.8176
+        ],
+        "pixels": 156
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          88.6361,
+          116.9963
+        ],
+        "after": [
+          87.0,
+          116.0
+        ],
+        "pixels": 41
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          162.9263,
+          116.2692
+        ],
+        "after": [
+          164.0,
+          113.2692
+        ],
+        "pixels": 48
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          98.6316,
+          148.2374
+        ],
+        "after": [
+          101.6316,
+          149.0
+        ],
+        "pixels": 15
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.8256,
+          150.1804
+        ],
+        "after": [
+          114.0,
+          149.0
+        ],
+        "pixels": 38
+      }
+    ],
+    "visible_pixels": 11421,
+    "semantic_pixels": {
+      "face": 861,
+      "hair": 1597,
+      "braids": 1003,
+      "cloth": 1510,
+      "skirt": 3644,
+      "metal": 1211,
+      "boots": 1595
+    }
+  },
+  {
+    "frame": 13,
+    "source_index": 41,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          111.0279,
+          75.7227
+        ],
+        "after": [
+          112.0,
+          76.0
+        ],
+        "pixels": 332
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.0391,
+          38.6543
+        ],
+        "after": [
+          135.0,
+          41.6543
+        ],
+        "pixels": 260
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          140.2365,
+          51.8469
+        ],
+        "after": [
+          140.0,
+          49.0
+        ],
+        "pixels": 97
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.1195,
+          77.5013
+        ],
+        "after": [
+          140.0,
+          77.0
+        ],
+        "pixels": 35
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.0062,
+          99.5298
+        ],
+        "after": [
+          112.0,
+          101.0
+        ],
+        "pixels": 256
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          110.4712,
+          126.391
+        ],
+        "after": [
+          111.0,
+          129.391
+        ],
+        "pixels": 150
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          87.6374,
+          117.2519
+        ],
+        "after": [
+          86.0,
+          116.0
+        ],
+        "pixels": 43
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          164.6894,
+          115.5866
+        ],
+        "after": [
+          166.0,
+          112.5866
+        ],
+        "pixels": 53
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          98.4823,
+          149.3193
+        ],
+        "after": [
+          101.4823,
+          151.0
+        ],
+        "pixels": 14
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          110.8534,
+          150.3308
+        ],
+        "after": [
+          113.0,
+          149.0
+        ],
+        "pixels": 30
+      },
+      {
+        "feature": "silver_9",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          128.2653,
+          192.9489
+        ],
+        "after": [
+          127.0,
+          189.9489
+        ],
+        "pixels": 3
+      }
+    ],
+    "visible_pixels": 11457,
+    "semantic_pixels": {
+      "face": 855,
+      "hair": 1611,
+      "braids": 998,
+      "cloth": 1508,
+      "skirt": 3677,
+      "metal": 1198,
+      "boots": 1610
+    }
+  },
+  {
+    "frame": 14,
+    "source_index": 42,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.9811,
+          75.4574
+        ],
+        "after": [
+          112.0,
+          75.0
+        ],
+        "pixels": 328
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          134.9759,
+          38.2817
+        ],
+        "after": [
+          135.0,
+          41.2817
+        ],
+        "pixels": 265
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.7997,
+          51.4408
+        ],
+        "after": [
+          140.0,
+          50.0
+        ],
+        "pixels": 100
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          138.7519,
+          77.5661
+        ],
+        "after": [
+          139.0,
+          77.0
+        ],
+        "pixels": 36
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.1894,
+          99.1472
+        ],
+        "after": [
+          112.0,
+          101.0
+        ],
+        "pixels": 265
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          110.9169,
+          126.1503
+        ],
+        "after": [
+          112.0,
+          129.0
+        ],
+        "pixels": 158
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          87.7371,
+          117.5637
+        ],
+        "after": [
+          86.0,
+          116.5
+        ],
+        "pixels": 42
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          164.3974,
+          116.1747
+        ],
+        "after": [
+          165.0,
+          113.1747
+        ],
+        "pixels": 51
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          98.5497,
+          149.0548
+        ],
+        "after": [
+          101.5497,
+          151.0
+        ],
+        "pixels": 18
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.5241,
+          150.4706
+        ],
+        "after": [
+          114.0,
+          149.0
+        ],
+        "pixels": 34
+      }
+    ],
+    "visible_pixels": 11362,
+    "semantic_pixels": {
+      "face": 876,
+      "hair": 1567,
+      "braids": 986,
+      "cloth": 1561,
+      "skirt": 3570,
+      "metal": 1235,
+      "boots": 1567
+    }
+  },
+  {
+    "frame": 15,
+    "source_index": 43,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.8992,
+          74.6437
+        ],
+        "after": [
+          112.5,
+          74.5
+        ],
+        "pixels": 325
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          134.9701,
+          37.5316
+        ],
+        "after": [
+          135.0,
+          40.5316
+        ],
+        "pixels": 259
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.6902,
+          50.7166
+        ],
+        "after": [
+          140.0,
+          49.0
+        ],
+        "pixels": 99
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          138.3288,
+          77.1125
+        ],
+        "after": [
+          139.0,
+          77.0
+        ],
+        "pixels": 36
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.1757,
+          98.4209
+        ],
+        "after": [
+          112.0,
+          100.0
+        ],
+        "pixels": 268
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          111.2109,
+          125.5636
+        ],
+        "after": [
+          112.0,
+          128.5636
+        ],
+        "pixels": 164
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          88.5069,
+          117.9697
+        ],
+        "after": [
+          87.0,
+          117.0
+        ],
+        "pixels": 41
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          163.3645,
+          116.9564
+        ],
+        "after": [
+          164.0,
+          113.9564
+        ],
+        "pixels": 53
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          98.7105,
+          148.3553
+        ],
+        "after": [
+          101.7105,
+          149.5
+        ],
+        "pixels": 16
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          114.9792,
+          150.3552
+        ],
+        "after": [
+          116.0,
+          149.0
+        ],
+        "pixels": 42
+      }
+    ],
+    "visible_pixels": 11274,
+    "semantic_pixels": {
+      "face": 910,
+      "hair": 1534,
+      "braids": 958,
+      "cloth": 1624,
+      "skirt": 3542,
+      "metal": 1212,
+      "boots": 1494
+    }
+  },
+  {
+    "frame": 16,
+    "source_index": 44,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.7193,
+          73.7544
+        ],
+        "after": [
+          112.5,
+          73.0
+        ],
+        "pixels": 312
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.0335,
+          36.7154
+        ],
+        "after": [
+          135.0,
+          39.7154
+        ],
+        "pixels": 264
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.5363,
+          49.9938
+        ],
+        "after": [
+          140.0,
+          48.0
+        ],
+        "pixels": 101
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          137.9788,
+          76.5745
+        ],
+        "after": [
+          138.0,
+          76.0
+        ],
+        "pixels": 39
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2044,
+          97.5785
+        ],
+        "after": [
+          112.0,
+          99.0
+        ],
+        "pixels": 254
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          111.5906,
+          124.8741
+        ],
+        "after": [
+          112.0,
+          127.8741
+        ],
+        "pixels": 160
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          89.8137,
+          118.2634
+        ],
+        "after": [
+          88.0,
+          117.0
+        ],
+        "pixels": 43
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          162.168,
+          117.5498
+        ],
+        "after": [
+          163.0,
+          114.5498
+        ],
+        "pixels": 49
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          98.7661,
+          147.4334
+        ],
+        "after": [
+          101.7661,
+          150.0
+        ],
+        "pixels": 19
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          118.0725,
+          150.2574
+        ],
+        "after": [
+          119.0,
+          149.0
+        ],
+        "pixels": 45
+      }
+    ],
+    "visible_pixels": 11183,
+    "semantic_pixels": {
+      "face": 800,
+      "hair": 1541,
+      "braids": 954,
+      "cloth": 1687,
+      "skirt": 3544,
+      "metal": 1242,
+      "boots": 1415
+    }
+  },
+  {
+    "frame": 17,
+    "source_index": 45,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.6488,
+          72.7077
+        ],
+        "after": [
+          112.5,
+          73.5
+        ],
+        "pixels": 303
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.1155,
+          35.7413
+        ],
+        "after": [
+          135.0,
+          38.7413
+        ],
+        "pixels": 262
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.5138,
+          49.0191
+        ],
+        "after": [
+          140.0,
+          47.0
+        ],
+        "pixels": 100
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          137.7074,
+          75.918
+        ],
+        "after": [
+          138.0,
+          75.0
+        ],
+        "pixels": 37
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2542,
+          96.5794
+        ],
+        "after": [
+          112.0,
+          98.0
+        ],
+        "pixels": 266
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          111.8472,
+          124.1812
+        ],
+        "after": [
+          112.0,
+          127.1812
+        ],
+        "pixels": 160
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          91.3243,
+          118.5056
+        ],
+        "after": [
+          89.0,
+          119.0
+        ],
+        "pixels": 38
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          160.8728,
+          118.1268
+        ],
+        "after": [
+          161.0,
+          115.1268
+        ],
+        "pixels": 53
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          98.7568,
+          146.7249
+        ],
+        "after": [
+          101.7568,
+          149.0
+        ],
+        "pixels": 18
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          121.3821,
+          150.1772
+        ],
+        "after": [
+          123.0,
+          148.0
+        ],
+        "pixels": 33
+      },
+      {
+        "feature": "silver_10",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          122.587,
+          196.5484
+        ],
+        "after": [
+          119.587,
+          199.5484
+        ],
+        "pixels": 11
+      }
+    ],
+    "visible_pixels": 11093,
+    "semantic_pixels": {
+      "face": 884,
+      "hair": 1490,
+      "braids": 934,
+      "cloth": 1691,
+      "skirt": 3540,
+      "metal": 1250,
+      "boots": 1304
+    }
+  },
+  {
+    "frame": 18,
+    "source_index": 46,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.4152,
+          71.2024
+        ],
+        "after": [
+          112.0,
+          70.5
+        ],
+        "pixels": 307
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.2249,
+          34.1824
+        ],
+        "after": [
+          136.0,
+          37.1824
+        ],
+        "pixels": 263
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.5435,
+          47.4855
+        ],
+        "after": [
+          140.0,
+          46.0
+        ],
+        "pixels": 105
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          137.2829,
+          74.7005
+        ],
+        "after": [
+          137.0,
+          74.0
+        ],
+        "pixels": 37
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2466,
+          94.9974
+        ],
+        "after": [
+          112.0,
+          97.0
+        ],
+        "pixels": 257
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.1696,
+          123.1213
+        ],
+        "after": [
+          112.0,
+          126.0
+        ],
+        "pixels": 149
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          93.6201,
+          118.5579
+        ],
+        "after": [
+          92.0,
+          120.0
+        ],
+        "pixels": 53
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          158.1506,
+          119.0103
+        ],
+        "after": [
+          159.0,
+          116.0103
+        ],
+        "pixels": 48
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          98.7685,
+          145.2901
+        ],
+        "after": [
+          101.7685,
+          147.0
+        ],
+        "pixels": 19
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          128.0029,
+          149.6034
+        ],
+        "after": [
+          130.0,
+          148.0
+        ],
+        "pixels": 27
+      },
+      {
+        "feature": "silver_9",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          123.872,
+          192.6793
+        ],
+        "after": [
+          125.0,
+          195.6793
+        ],
+        "pixels": 5
+      },
+      {
+        "feature": "silver_10",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          127.0314,
+          195.5097
+        ],
+        "after": [
+          126.0,
+          198.5097
+        ],
+        "pixels": 31
+      }
+    ],
+    "visible_pixels": 11102,
+    "semantic_pixels": {
+      "face": 867,
+      "hair": 1456,
+      "braids": 950,
+      "cloth": 1781,
+      "skirt": 3582,
+      "metal": 1252,
+      "boots": 1214
+    }
+  },
+  {
+    "frame": 19,
+    "source_index": 47,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.394,
+          70.562
+        ],
+        "after": [
+          112.0,
+          72.5
+        ],
+        "pixels": 289
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.1556,
+          33.4644
+        ],
+        "after": [
+          135.0,
+          36.4644
+        ],
+        "pixels": 263
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.6617,
+          46.6693
+        ],
+        "after": [
+          140.0,
+          45.0
+        ],
+        "pixels": 102
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          137.3203,
+          73.9521
+        ],
+        "after": [
+          137.0,
+          73.0
+        ],
+        "pixels": 39
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2838,
+          94.4111
+        ],
+        "after": [
+          112.0,
+          96.0
+        ],
+        "pixels": 261
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2276,
+          122.4871
+        ],
+        "after": [
+          112.0,
+          123.0
+        ],
+        "pixels": 133
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          94.5228,
+          118.3326
+        ],
+        "after": [
+          94.5,
+          120.5
+        ],
+        "pixels": 74
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          156.7454,
+          119.2164
+        ],
+        "after": [
+          158.0,
+          116.2164
+        ],
+        "pixels": 52
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          98.7102,
+          144.9377
+        ],
+        "after": [
+          101.7102,
+          147.9377
+        ],
+        "pixels": 19
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          131.7104,
+          149.308
+        ],
+        "after": [
+          134.0,
+          147.5
+        ],
+        "pixels": 22
+      },
+      {
+        "feature": "silver_10",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          130.019,
+          194.0224
+        ],
+        "after": [
+          128.0,
+          197.0224
+        ],
+        "pixels": 3
+      }
+    ],
+    "visible_pixels": 10984,
+    "semantic_pixels": {
+      "face": 777,
+      "hair": 1585,
+      "braids": 938,
+      "cloth": 1823,
+      "skirt": 3608,
+      "metal": 1215,
+      "boots": 1038
+    }
+  },
+  {
+    "frame": 20,
+    "source_index": 48,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.4493,
+          70.1951
+        ],
+        "after": [
+          112.0,
+          70.5
+        ],
+        "pixels": 286
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.2745,
+          33.2041
+        ],
+        "after": [
+          135.0,
+          36.2041
+        ],
+        "pixels": 262
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.7485,
+          46.3884
+        ],
+        "after": [
+          140.0,
+          45.0
+        ],
+        "pixels": 102
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          137.5252,
+          73.6135
+        ],
+        "after": [
+          138.0,
+          73.0
+        ],
+        "pixels": 35
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2868,
+          94.0905
+        ],
+        "after": [
+          112.0,
+          96.0
+        ],
+        "pixels": 264
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.3021,
+          122.277
+        ],
+        "after": [
+          112.0,
+          124.0
+        ],
+        "pixels": 135
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          94.7056,
+          117.5821
+        ],
+        "after": [
+          95.5,
+          120.5821
+        ],
+        "pixels": 86
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          155.9396,
+          119.1658
+        ],
+        "after": [
+          157.0,
+          116.1658
+        ],
+        "pixels": 51
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          98.1731,
+          143.3348
+        ],
+        "after": [
+          101.1731,
+          143.0
+        ],
+        "pixels": 21
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          136.0409,
+          149.0087
+        ],
+        "after": [
+          138.0,
+          147.0
+        ],
+        "pixels": 24
+      },
+      {
+        "feature": "silver_10",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          132.3811,
+          194.0896
+        ],
+        "after": [
+          132.0,
+          197.0896
+        ],
+        "pixels": 24
+      }
+    ],
+    "visible_pixels": 10926,
+    "semantic_pixels": {
+      "face": 932,
+      "hair": 1463,
+      "braids": 918,
+      "cloth": 1827,
+      "skirt": 3685,
+      "metal": 1274,
+      "boots": 827
+    }
+  },
+  {
+    "frame": 21,
+    "source_index": 49,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.5076,
+          70.276
+        ],
+        "after": [
+          112.5,
+          72.5
+        ],
+        "pixels": 291
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.2942,
+          33.2549
+        ],
+        "after": [
+          135.0,
+          36.2549
+        ],
+        "pixels": 259
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.8223,
+          46.428
+        ],
+        "after": [
+          140.0,
+          45.0
+        ],
+        "pixels": 101
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          137.7505,
+          73.6477
+        ],
+        "after": [
+          138.0,
+          73.0
+        ],
+        "pixels": 34
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.3347,
+          94.2442
+        ],
+        "after": [
+          112.0,
+          96.0
+        ],
+        "pixels": 266
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.3032,
+          122.3275
+        ],
+        "after": [
+          112.0,
+          124.5
+        ],
+        "pixels": 134
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          94.1587,
+          117.1785
+        ],
+        "after": [
+          94.0,
+          120.1785
+        ],
+        "pixels": 89
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          156.028,
+          118.9807
+        ],
+        "after": [
+          157.0,
+          115.9807
+        ],
+        "pixels": 52
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          96.8661,
+          142.0684
+        ],
+        "after": [
+          94.0,
+          140.0
+        ],
+        "pixels": 23
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          140.2862,
+          148.8785
+        ],
+        "after": [
+          142.0,
+          147.0
+        ],
+        "pixels": 25
+      },
+      {
+        "feature": "silver_10",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.6619,
+          194.7376
+        ],
+        "after": [
+          136.5,
+          197.7376
+        ],
+        "pixels": 28
+      }
+    ],
+    "visible_pixels": 11500,
+    "semantic_pixels": {
+      "face": 806,
+      "hair": 1595,
+      "braids": 929,
+      "cloth": 1907,
+      "skirt": 3831,
+      "metal": 1275,
+      "boots": 1157
+    }
+  },
+  {
+    "frame": 22,
+    "source_index": 50,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.7297,
+          71.2851
+        ],
+        "after": [
+          112.5,
+          71.0
+        ],
+        "pixels": 301
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.2458,
+          34.2716
+        ],
+        "after": [
+          135.0,
+          37.2716
+        ],
+        "pixels": 261
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          140.0055,
+          47.4159
+        ],
+        "after": [
+          140.0,
+          45.0
+        ],
+        "pixels": 102
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          138.0399,
+          74.1989
+        ],
+        "after": [
+          138.0,
+          74.0
+        ],
+        "pixels": 36
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2963,
+          95.3084
+        ],
+        "after": [
+          112.0,
+          97.0
+        ],
+        "pixels": 265
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2216,
+          123.4293
+        ],
+        "after": [
+          112.0,
+          126.0
+        ],
+        "pixels": 137
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          92.2248,
+          116.7239
+        ],
+        "after": [
+          92.0,
+          119.7239
+        ],
+        "pixels": 81
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          158.0007,
+          118.2829
+        ],
+        "after": [
+          159.0,
+          115.2829
+        ],
+        "pixels": 51
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          91.6554,
+          140.7441
+        ],
+        "after": [
+          89.0,
+          139.0
+        ],
+        "pixels": 21
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          147.4273,
+          148.1449
+        ],
+        "after": [
+          148.0,
+          147.0
+        ],
+        "pixels": 28
+      },
+      {
+        "feature": "silver_10",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          141.711,
+          194.2296
+        ],
+        "after": [
+          144.0,
+          197.2296
+        ],
+        "pixels": 25
+      }
+    ],
+    "visible_pixels": 12076,
+    "semantic_pixels": {
+      "face": 896,
+      "hair": 1521,
+      "braids": 951,
+      "cloth": 2006,
+      "skirt": 4027,
+      "metal": 1284,
+      "boots": 1391
+    }
+  },
+  {
+    "frame": 23,
+    "source_index": 51,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.8124,
+          72.1832
+        ],
+        "after": [
+          112.5,
+          71.5
+        ],
+        "pixels": 310
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.2622,
+          35.1754
+        ],
+        "after": [
+          135.0,
+          38.1754
+        ],
+        "pixels": 261
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          140.1046,
+          48.244
+        ],
+        "after": [
+          140.0,
+          46.0
+        ],
+        "pixels": 100
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          138.3819,
+          74.7467
+        ],
+        "after": [
+          139.0,
+          74.0
+        ],
+        "pixels": 37
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2773,
+          96.165
+        ],
+        "after": [
+          112.0,
+          98.0
+        ],
+        "pixels": 265
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2065,
+          124.2888
+        ],
+        "after": [
+          112.0,
+          127.0
+        ],
+        "pixels": 136
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          90.8692,
+          116.7038
+        ],
+        "after": [
+          91.0,
+          119.7038
+        ],
+        "pixels": 82
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          159.3151,
+          117.8092
+        ],
+        "after": [
+          160.0,
+          114.8092
+        ],
+        "pixels": 54
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          89.2678,
+          140.4706
+        ],
+        "after": [
+          87.0,
+          139.0
+        ],
+        "pixels": 25
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          150.9531,
+          147.7902
+        ],
+        "after": [
+          152.0,
+          146.0
+        ],
+        "pixels": 25
+      },
+      {
+        "feature": "silver_9",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          120.1693,
+          197.1011
+        ],
+        "after": [
+          117.1693,
+          200.1011
+        ],
+        "pixels": 5
+      },
+      {
+        "feature": "silver_10",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          144.6637,
+          194.0878
+        ],
+        "after": [
+          146.0,
+          197.0878
+        ],
+        "pixels": 29
+      }
+    ],
+    "visible_pixels": 12352,
+    "semantic_pixels": {
+      "face": 900,
+      "hair": 1588,
+      "braids": 1001,
+      "cloth": 1983,
+      "skirt": 4075,
+      "metal": 1364,
+      "boots": 1441
+    }
+  },
+  {
+    "frame": 24,
+    "source_index": 52,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          110.9051,
+          73.1751
+        ],
+        "after": [
+          112.5,
+          74.0
+        ],
+        "pixels": 322
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.1877,
+          36.0608
+        ],
+        "after": [
+          135.0,
+          39.0608
+        ],
+        "pixels": 256
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          140.2378,
+          49.0654
+        ],
+        "after": [
+          140.0,
+          47.0
+        ],
+        "pixels": 96
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          138.6556,
+          75.4042
+        ],
+        "after": [
+          139.0,
+          75.0
+        ],
+        "pixels": 34
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2112,
+          97.1468
+        ],
+        "after": [
+          112.0,
+          99.0
+        ],
+        "pixels": 267
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.1645,
+          125.1806
+        ],
+        "after": [
+          112.0,
+          126.5
+        ],
+        "pixels": 132
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          89.4855,
+          116.7041
+        ],
+        "after": [
+          89.0,
+          119.7041
+        ],
+        "pixels": 85
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          160.7705,
+          117.3089
+        ],
+        "after": [
+          162.0,
+          114.3089
+        ],
+        "pixels": 49
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          87.0471,
+          140.3028
+        ],
+        "after": [
+          85.0,
+          138.0
+        ],
+        "pixels": 25
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          153.764,
+          147.6041
+        ],
+        "after": [
+          154.0,
+          146.0
+        ],
+        "pixels": 24
+      },
+      {
+        "feature": "silver_9",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          117.47,
+          200.0488
+        ],
+        "after": [
+          114.47,
+          203.0488
+        ],
+        "pixels": 10
+      },
+      {
+        "feature": "silver_10",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          147.2152,
+          193.8217
+        ],
+        "after": [
+          149.0,
+          196.8217
+        ],
+        "pixels": 28
+      }
+    ],
+    "visible_pixels": 12521,
+    "semantic_pixels": {
+      "face": 906,
+      "hair": 1576,
+      "braids": 928,
+      "cloth": 2129,
+      "skirt": 4205,
+      "metal": 1296,
+      "boots": 1481
+    }
+  },
+  {
+    "frame": 25,
+    "source_index": 53,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          111.0019,
+          73.9499
+        ],
+        "after": [
+          112.5,
+          76.0
+        ],
+        "pixels": 323
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          135.196,
+          37.0012
+        ],
+        "after": [
+          135.0,
+          40.0012
+        ],
+        "pixels": 253
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          140.2803,
+          50.0156
+        ],
+        "after": [
+          140.0,
+          48.0
+        ],
+        "pixels": 95
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          138.8429,
+          76.2091
+        ],
+        "after": [
+          139.0,
+          76.0
+        ],
+        "pixels": 36
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.2015,
+          98.0548
+        ],
+        "after": [
+          111.5,
+          99.5
+        ],
+        "pixels": 268
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.0766,
+          125.9893
+        ],
+        "after": [
+          111.0,
+          128.0
+        ],
+        "pixels": 135
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          88.2079,
+          116.7672
+        ],
+        "after": [
+          88.0,
+          119.7672
+        ],
+        "pixels": 78
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          162.0618,
+          116.8459
+        ],
+        "after": [
+          163.0,
+          113.8459
+        ],
+        "pixels": 53
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          85.2708,
+          140.1415
+        ],
+        "after": [
+          83.0,
+          138.0
+        ],
+        "pixels": 22
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          156.227,
+          147.3703
+        ],
+        "after": [
+          156.0,
+          146.0
+        ],
+        "pixels": 29
+      },
+      {
+        "feature": "silver_9",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          114.7101,
+          202.2451
+        ],
+        "after": [
+          111.7101,
+          205.0
+        ],
+        "pixels": 17
+      },
+      {
+        "feature": "silver_10",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          149.9416,
+          193.4795
+        ],
+        "after": [
+          151.0,
+          196.4795
+        ],
+        "pixels": 29
+      }
+    ],
+    "visible_pixels": 12631,
+    "semantic_pixels": {
+      "face": 909,
+      "hair": 1589,
+      "braids": 962,
+      "cloth": 2074,
+      "skirt": 4273,
+      "metal": 1338,
+      "boots": 1486
+    }
+  },
+  {
+    "frame": 26,
+    "source_index": 54,
+    "corrections": [
+      {
+        "feature": "face",
+        "method": "visible skin bounds in transported face ROI",
+        "before": [
+          111.1239,
+          75.8144
+        ],
+        "after": [
+          112.0,
+          78.0
+        ],
+        "pixels": 334
+      },
+      {
+        "feature": "silver_0",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          134.9566,
+          38.7562
+        ],
+        "after": [
+          135.0,
+          41.7562
+        ],
+        "pixels": 255
+      },
+      {
+        "feature": "silver_1",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          140.2351,
+          51.7996
+        ],
+        "after": [
+          140.0,
+          49.5
+        ],
+        "pixels": 96
+      },
+      {
+        "feature": "silver_2",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          139.1131,
+          77.7928
+        ],
+        "after": [
+          139.0,
+          78.0
+        ],
+        "pixels": 35
+      },
+      {
+        "feature": "silver_3",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.0488,
+          99.9104
+        ],
+        "after": [
+          112.0,
+          102.0
+        ],
+        "pixels": 265
+      },
+      {
+        "feature": "silver_4",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          112.0027,
+          127.8167
+        ],
+        "after": [
+          112.0,
+          130.0
+        ],
+        "pixels": 146
+      },
+      {
+        "feature": "silver_5",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          86.0594,
+          116.9767
+        ],
+        "after": [
+          85.0,
+          119.9767
+        ],
+        "pixels": 83
+      },
+      {
+        "feature": "silver_6",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          164.8057,
+          115.9366
+        ],
+        "after": [
+          166.0,
+          112.9366
+        ],
+        "pixels": 52
+      },
+      {
+        "feature": "silver_7",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          82.6002,
+          140.0828
+        ],
+        "after": [
+          81.0,
+          138.0
+        ],
+        "pixels": 23
+      },
+      {
+        "feature": "silver_8",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          159.9542,
+          146.9725
+        ],
+        "after": [
+          160.0,
+          146.0
+        ],
+        "pixels": 29
+      },
+      {
+        "feature": "silver_9",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          111.7574,
+          205.0572
+        ],
+        "after": [
+          108.7574,
+          207.0
+        ],
+        "pixels": 27
+      },
+      {
+        "feature": "silver_10",
+        "method": "local visible material centroid, capped 3px",
+        "before": [
+          152.8358,
+          191.9818
+        ],
+        "after": [
+          154.0,
+          194.9818
+        ],
+        "pixels": 28
+      }
+    ],
+    "visible_pixels": 12879,
+    "semantic_pixels": {
+      "face": 890,
+      "hair": 1635,
+      "braids": 997,
+      "cloth": 2176,
+      "skirt": 4290,
+      "metal": 1360,
+      "boots": 1531
+    }
+  }
+]

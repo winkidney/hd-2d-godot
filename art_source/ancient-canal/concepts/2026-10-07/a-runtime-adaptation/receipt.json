@@ -1,0 +1,34 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "seed": null,
+  "seed_availability": "not returned by built-in tool",
+  "calls": 1,
+  "kind": "selected A production adaptation to actual HD2D layout",
+  "prompt": {
+    "path": "prompt.txt",
+    "sha256": "54764bec51be0574ab6a7e0109aa8e2121e883fa13b67b43e43f7f38cf984bc1"
+  },
+  "image": {
+    "path": "concept.png",
+    "sha256": "b182369313d18b6ac797e81c5bded98d46fdbc69a288da7de159ffb4c0f19755",
+    "size": [
+      1672,
+      941
+    ]
+  },
+  "references": [
+    {
+      "path": "actual-layout-reference.png",
+      "sha256": "b71dc36e1ed9d955b29d2f1b8a557d90df1f7f588f4242700928969a4a5a6a30"
+    },
+    {
+      "path": "../a-bridge-tavern/concept.png",
+      "sha256": "34ea5910ba8fb192a1e04ab77c6589082a6285c3d24a37aa779e43f459633b20"
+    },
+    {
+      "path": "art_source/characters/crescent-traveler/v1/reference.png",
+      "sha256": "3b8823af9320ae49d3a6e130e6bbed31e49aefd49f45c472121b8f39155974ad"
+    }
+  ],
+  "runtime_color_policy": "reference figures are concept only; original 108 runtime frames unchanged"
+}

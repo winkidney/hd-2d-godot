@@ -1,0 +1,892 @@
+{
+  "schema_version": 1,
+  "id": "innkeeper",
+  "coordinate_system": "normalized mother-image x-right y-down",
+  "normal_convention": "OpenGL x-right y-up z-toward-camera, unit vectors, linear data",
+  "authorship": "manually drawn semantic ellipsoids, garment crease polylines and independent material regions",
+  "forbidden_sources": [
+    "RGB luminance",
+    "color Sobel",
+    "grayscale bump",
+    "generated baked light"
+  ],
+  "foot_anchor": [
+    128,
+    240
+  ],
+  "target_height": 224,
+  "canvas_size": [
+    256,
+    256
+  ],
+  "palette_size": 96,
+  "mask_channels": {
+    "r": "silver specular region",
+    "g": "roughness",
+    "b": "metallicity",
+    "a": "exact color alpha"
+  },
+  "materials": {
+    "cloth": [
+      0.0,
+      0.93,
+      0.0
+    ],
+    "skin": [
+      0.0,
+      0.72,
+      0.0
+    ],
+    "hair": [
+      0.0,
+      0.78,
+      0.0
+    ],
+    "leather": [
+      0.0,
+      0.86,
+      0.0
+    ],
+    "straw": [
+      0.0,
+      0.96,
+      0.0
+    ],
+    "silver": [
+      1.0,
+      0.24,
+      1.0
+    ]
+  },
+  "layers": [
+    {
+      "name": "robe_body",
+      "kind": "curved",
+      "center": [
+        0.51,
+        0.58
+      ],
+      "radii": [
+        0.24,
+        0.31
+      ],
+      "polygon": [
+        [
+          0.4,
+          0.25
+        ],
+        [
+          0.6,
+          0.25
+        ],
+        [
+          0.7,
+          0.45
+        ],
+        [
+          0.79,
+          0.76
+        ],
+        [
+          0.65,
+          0.825
+        ],
+        [
+          0.32,
+          0.8
+        ],
+        [
+          0.26,
+          0.76
+        ],
+        [
+          0.36,
+          0.49
+        ]
+      ],
+      "material": "cloth",
+      "slope": [
+        0.43,
+        0.15
+      ]
+    },
+    {
+      "name": "left_sleeve",
+      "kind": "curved",
+      "center": [
+        0.32,
+        0.35
+      ],
+      "radii": [
+        0.11,
+        0.09
+      ],
+      "polygon": [
+        [
+          0.35,
+          0.25
+        ],
+        [
+          0.41,
+          0.38
+        ],
+        [
+          0.35,
+          0.45
+        ],
+        [
+          0.24,
+          0.47
+        ],
+        [
+          0.225,
+          0.39
+        ],
+        [
+          0.28,
+          0.3
+        ]
+      ],
+      "material": "cloth",
+      "slope": [
+        0.6,
+        0.38
+      ]
+    },
+    {
+      "name": "right_sleeve",
+      "kind": "curved",
+      "center": [
+        0.7,
+        0.385
+      ],
+      "radii": [
+        0.07,
+        0.09
+      ],
+      "polygon": [
+        [
+          0.635,
+          0.28
+        ],
+        [
+          0.7,
+          0.32
+        ],
+        [
+          0.73,
+          0.4
+        ],
+        [
+          0.765,
+          0.435
+        ],
+        [
+          0.73,
+          0.48
+        ],
+        [
+          0.676,
+          0.46
+        ]
+      ],
+      "material": "cloth",
+      "slope": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "name": "left_trouser",
+      "kind": "curved",
+      "center": [
+        0.397,
+        0.822
+      ],
+      "radii": [
+        0.081,
+        0.073
+      ],
+      "polygon": [
+        [
+          0.32,
+          0.77
+        ],
+        [
+          0.49,
+          0.81
+        ],
+        [
+          0.47,
+          0.867
+        ],
+        [
+          0.375,
+          0.865
+        ],
+        [
+          0.34,
+          0.84
+        ]
+      ],
+      "material": "cloth",
+      "slope": [
+        0.6,
+        0.4
+      ]
+    },
+    {
+      "name": "right_trouser",
+      "kind": "curved",
+      "center": [
+        0.636,
+        0.828
+      ],
+      "radii": [
+        0.081,
+        0.071
+      ],
+      "polygon": [
+        [
+          0.53,
+          0.815
+        ],
+        [
+          0.72,
+          0.795
+        ],
+        [
+          0.714,
+          0.847
+        ],
+        [
+          0.653,
+          0.873
+        ],
+        [
+          0.579,
+          0.86
+        ]
+      ],
+      "material": "cloth",
+      "slope": [
+        0.6,
+        0.4
+      ]
+    },
+    {
+      "name": "left_shoe",
+      "kind": "curved",
+      "center": [
+        0.398,
+        0.946
+      ],
+      "radii": [
+        0.056,
+        0.044
+      ],
+      "polygon": [
+        [
+          0.37,
+          0.87
+        ],
+        [
+          0.429,
+          0.87
+        ],
+        [
+          0.45,
+          0.96
+        ],
+        [
+          0.435,
+          0.986
+        ],
+        [
+          0.34,
+          0.986
+        ],
+        [
+          0.337,
+          0.96
+        ]
+      ],
+      "material": "leather",
+      "slope": [
+        0.6,
+        0.55
+      ]
+    },
+    {
+      "name": "right_shoe",
+      "kind": "curved",
+      "center": [
+        0.69,
+        0.941
+      ],
+      "radii": [
+        0.105,
+        0.034
+      ],
+      "polygon": [
+        [
+          0.607,
+          0.871
+        ],
+        [
+          0.67,
+          0.87
+        ],
+        [
+          0.683,
+          0.905
+        ],
+        [
+          0.775,
+          0.932
+        ],
+        [
+          0.78,
+          0.971
+        ],
+        [
+          0.6,
+          0.97
+        ],
+        [
+          0.592,
+          0.947
+        ]
+      ],
+      "material": "leather",
+      "slope": [
+        0.5,
+        0.7
+      ]
+    },
+    {
+      "name": "neck",
+      "kind": "curved",
+      "center": [
+        0.523,
+        0.241
+      ],
+      "radii": [
+        0.045,
+        0.043
+      ],
+      "polygon": [
+        [
+          0.466,
+          0.197
+        ],
+        [
+          0.556,
+          0.204
+        ],
+        [
+          0.571,
+          0.241
+        ],
+        [
+          0.537,
+          0.265
+        ],
+        [
+          0.476,
+          0.231
+        ]
+      ],
+      "material": "skin",
+      "slope": [
+        0.45,
+        0.25
+      ]
+    },
+    {
+      "name": "face",
+      "kind": "curved",
+      "center": [
+        0.549,
+        0.155
+      ],
+      "radii": [
+        0.102,
+        0.077
+      ],
+      "polygon": [
+        [
+          0.499,
+          0.105
+        ],
+        [
+          0.584,
+          0.1
+        ],
+        [
+          0.601,
+          0.119
+        ],
+        [
+          0.61,
+          0.174
+        ],
+        [
+          0.586,
+          0.207
+        ],
+        [
+          0.541,
+          0.216
+        ],
+        [
+          0.49,
+          0.191
+        ],
+        [
+          0.469,
+          0.159
+        ]
+      ],
+      "material": "skin",
+      "slope": [
+        0.45,
+        0.35
+      ]
+    },
+    {
+      "name": "nose",
+      "kind": "curved",
+      "center": [
+        0.578,
+        0.169
+      ],
+      "radii": [
+        0.024,
+        0.021
+      ],
+      "polygon": null,
+      "material": "skin",
+      "slope": [
+        0.65,
+        0.55
+      ]
+    },
+    {
+      "name": "ear",
+      "kind": "curved",
+      "center": [
+        0.433,
+        0.17
+      ],
+      "radii": [
+        0.022,
+        0.018
+      ],
+      "polygon": null,
+      "material": "skin",
+      "slope": [
+        0.6,
+        0.4
+      ]
+    },
+    {
+      "name": "hair_cap",
+      "kind": "curved",
+      "center": [
+        0.489,
+        0.1
+      ],
+      "radii": [
+        0.124,
+        0.082
+      ],
+      "polygon": [
+        [
+          0.45,
+          0.034
+        ],
+        [
+          0.56,
+          0.062
+        ],
+        [
+          0.59,
+          0.1
+        ],
+        [
+          0.55,
+          0.095
+        ],
+        [
+          0.509,
+          0.104
+        ],
+        [
+          0.466,
+          0.139
+        ],
+        [
+          0.448,
+          0.193
+        ],
+        [
+          0.419,
+          0.154
+        ],
+        [
+          0.394,
+          0.115
+        ],
+        [
+          0.383,
+          0.074
+        ]
+      ],
+      "material": "hair",
+      "slope": [
+        0.65,
+        0.4
+      ]
+    },
+    {
+      "name": "topknot",
+      "kind": "curved",
+      "center": [
+        0.428,
+        0.037
+      ],
+      "radii": [
+        0.052,
+        0.03
+      ],
+      "polygon": null,
+      "material": "hair",
+      "slope": [
+        0.6,
+        0.4
+      ]
+    },
+    {
+      "name": "sash",
+      "kind": "curved",
+      "center": [
+        0.515,
+        0.441
+      ],
+      "radii": [
+        0.16,
+        0.023
+      ],
+      "polygon": [
+        [
+          0.386,
+          0.406
+        ],
+        [
+          0.475,
+          0.406
+        ],
+        [
+          0.65,
+          0.408
+        ],
+        [
+          0.663,
+          0.459
+        ],
+        [
+          0.524,
+          0.47
+        ],
+        [
+          0.412,
+          0.457
+        ]
+      ],
+      "material": "cloth",
+      "slope": [
+        0.27,
+        0.4
+      ]
+    },
+    {
+      "name": "left_forearm",
+      "kind": "curved",
+      "center": [
+        0.317,
+        0.428
+      ],
+      "radii": [
+        0.068,
+        0.031
+      ],
+      "polygon": [
+        [
+          0.281,
+          0.408
+        ],
+        [
+          0.339,
+          0.404
+        ],
+        [
+          0.379,
+          0.447
+        ],
+        [
+          0.346,
+          0.47
+        ],
+        [
+          0.271,
+          0.434
+        ]
+      ],
+      "material": "skin",
+      "slope": [
+        0.5,
+        0.45
+      ]
+    },
+    {
+      "name": "left_hand",
+      "kind": "curved",
+      "center": [
+        0.431,
+        0.457
+      ],
+      "radii": [
+        0.05,
+        0.031
+      ],
+      "polygon": [
+        [
+          0.405,
+          0.436
+        ],
+        [
+          0.456,
+          0.427
+        ],
+        [
+          0.481,
+          0.444
+        ],
+        [
+          0.472,
+          0.478
+        ],
+        [
+          0.43,
+          0.482
+        ],
+        [
+          0.39,
+          0.459
+        ]
+      ],
+      "material": "skin",
+      "slope": [
+        0.6,
+        0.4
+      ]
+    },
+    {
+      "name": "right_forearm",
+      "kind": "curved",
+      "center": [
+        0.721,
+        0.48
+      ],
+      "radii": [
+        0.029,
+        0.038
+      ],
+      "polygon": [
+        [
+          0.69,
+          0.456
+        ],
+        [
+          0.721,
+          0.443
+        ],
+        [
+          0.749,
+          0.5
+        ],
+        [
+          0.718,
+          0.522
+        ]
+      ],
+      "material": "skin",
+      "slope": [
+        0.6,
+        0.4
+      ]
+    },
+    {
+      "name": "right_hand",
+      "kind": "curved",
+      "center": [
+        0.743,
+        0.555
+      ],
+      "radii": [
+        0.04,
+        0.045
+      ],
+      "polygon": [
+        [
+          0.713,
+          0.518
+        ],
+        [
+          0.744,
+          0.505
+        ],
+        [
+          0.777,
+          0.545
+        ],
+        [
+          0.773,
+          0.593
+        ],
+        [
+          0.744,
+          0.609
+        ],
+        [
+          0.716,
+          0.59
+        ]
+      ],
+      "material": "skin",
+      "slope": [
+        0.45,
+        0.25
+      ]
+    },
+    {
+      "name": "silver_clasp",
+      "kind": "curved",
+      "center": [
+        0.606,
+        0.46
+      ],
+      "radii": [
+        0.019,
+        0.014
+      ],
+      "polygon": null,
+      "material": "silver",
+      "slope": [
+        0.75,
+        0.75
+      ]
+    },
+    {
+      "name": "robe_left_drape",
+      "kind": "fold",
+      "points": [
+        [
+          0.405,
+          0.5
+        ],
+        [
+          0.389,
+          0.64
+        ],
+        [
+          0.367,
+          0.78
+        ]
+      ],
+      "width": 0.008,
+      "strength": 0.24
+    },
+    {
+      "name": "robe_center_drape",
+      "kind": "fold",
+      "points": [
+        [
+          0.533,
+          0.493
+        ],
+        [
+          0.532,
+          0.641
+        ],
+        [
+          0.548,
+          0.808
+        ]
+      ],
+      "width": 0.007,
+      "strength": 0.24
+    },
+    {
+      "name": "robe_right_drape",
+      "kind": "fold",
+      "points": [
+        [
+          0.633,
+          0.5
+        ],
+        [
+          0.65,
+          0.65
+        ],
+        [
+          0.72,
+          0.78
+        ]
+      ],
+      "width": 0.009,
+      "strength": 0.24
+    },
+    {
+      "name": "sleeve_left_crease",
+      "kind": "fold",
+      "points": [
+        [
+          0.307,
+          0.302
+        ],
+        [
+          0.339,
+          0.357
+        ],
+        [
+          0.283,
+          0.383
+        ]
+      ],
+      "width": 0.006,
+      "strength": 0.18
+    },
+    {
+      "name": "sleeve_right_crease",
+      "kind": "fold",
+      "points": [
+        [
+          0.682,
+          0.345
+        ],
+        [
+          0.686,
+          0.4
+        ],
+        [
+          0.73,
+          0.43
+        ]
+      ],
+      "width": 0.007,
+      "strength": 0.18
+    }
+  ]
+}

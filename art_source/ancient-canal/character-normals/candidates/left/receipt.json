@@ -1,0 +1,19 @@
+{
+  "direction": "left",
+  "tool": "builtin image_gen.imagegen",
+  "seed": null,
+  "recorded_date": "2026-10-07",
+  "reference": "../../reference/left-keyposes.png",
+  "keyposes": [
+    0,
+    6,
+    13,
+    20,
+    26,
+    10
+  ],
+  "prompt": "prompt.txt",
+  "raw_original": "guide.png",
+  "sha256": "b430904e769d8d350fcd66bcb52ae594cb908ebaee53d9653449be8cedd463c6",
+  "role": "Geometric volume candidate for manual analytic semantic surface construction only. Not sampled into runtime normals; source animation remains immutable."
+}

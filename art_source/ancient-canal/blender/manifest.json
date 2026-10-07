@@ -1,0 +1,320 @@
+{
+  "schema_version": 1,
+  "seed": 20261007,
+  "generator": "tools/ancient_canal/build_models.py",
+  "blender": "5.2.2 LTS",
+  "basis": "Authored Godot Y up to Blender Z up via xyz; GLTF export_yup performs inverse once",
+  "texture_manifest_sha256": "7a91986c4146ac087dc85f89654421c9278e1da884ad1567b188a36f9c7dd07e",
+  "source_type": "authored true 3D geometry with ImageGen mother-derived pixel diffuse and independent geometric normal layers",
+  "models": [
+    {
+      "id": "tavern",
+      "blend": "art_source/ancient-canal/blender/tavern.blend",
+      "glb": "assets/ancient-canal/models/tavern.glb",
+      "vertices": 7290,
+      "triangles": 12112,
+      "material_meshes": 8,
+      "glb_sha256": "b7d9f169c584c1bf306ac8ce3bcb5a5f6497397e5d5921deb9be926f563b212f",
+      "blend_sha256": "a43c0a77577001480ff578397a960d5ccc10fd2e145bbb7617db0143001d6688",
+      "bounds_min": [
+        -3.4472391605377197,
+        0.0,
+        -2.9300003051757812
+      ],
+      "bounds_max": [
+        3.4472391605377197,
+        5.987370491027832,
+        3.5
+      ],
+      "uv_layers": 1,
+      "tangents": true,
+      "packed_texture_images": 16
+    },
+    {
+      "id": "house",
+      "blend": "art_source/ancient-canal/blender/house.blend",
+      "glb": "assets/ancient-canal/models/house.glb",
+      "vertices": 5006,
+      "triangles": 8516,
+      "material_meshes": 7,
+      "glb_sha256": "8e4d3fe1a245967ffdbbab74c6e5e18265fc5c3ebc864868db90e3a967ed31c3",
+      "blend_sha256": "c16836bc3f99416fd46990ae8f8b9fd970247f620368a1afc2eded3990836ae0",
+      "bounds_min": [
+        -2.6472389698028564,
+        0.0,
+        -2.2300002574920654
+      ],
+      "bounds_max": [
+        2.6472389698028564,
+        4.187370777130127,
+        2.430000066757202
+      ],
+      "uv_layers": 1,
+      "tangents": true,
+      "packed_texture_images": 16
+    },
+    {
+      "id": "bridge",
+      "blend": "art_source/ancient-canal/blender/bridge.blend",
+      "glb": "assets/ancient-canal/models/bridge.glb",
+      "vertices": 1636,
+      "triangles": 2500,
+      "material_meshes": 1,
+      "glb_sha256": "95fb897a02e00732481486bdef159f88b839fb2650cbf88f696681695fcf30db",
+      "blend_sha256": "3436acd5a675e560e347843c61284326004f3a1afd2fae6825cff321fb0aebc5",
+      "bounds_min": [
+        -4.339999675750732,
+        -1.1399999856948853,
+        -1.6450001001358032
+      ],
+      "bounds_max": [
+        4.339999675750732,
+        2.3299999237060547,
+        1.6450001001358032
+      ],
+      "uv_layers": 1,
+      "tangents": true,
+      "packed_texture_images": 16
+    },
+    {
+      "id": "cloth_stall",
+      "blend": "art_source/ancient-canal/blender/cloth_stall.blend",
+      "glb": "assets/ancient-canal/models/cloth_stall.glb",
+      "vertices": 218,
+      "triangles": 316,
+      "material_meshes": 3,
+      "glb_sha256": "079bf518a658284ece38f22f915323c0238f90db06436a60c52a72c819cbe828",
+      "blend_sha256": "99af73e028f443a96aa5610a401450e8c9377b25161f75f6b9cf722a4913e5dd",
+      "bounds_min": [
+        -1.4900000095367432,
+        0.0,
+        -1.059999942779541
+      ],
+      "bounds_max": [
+        1.4900000095367432,
+        2.4000000953674316,
+        1.090000033378601
+      ],
+      "uv_layers": 1,
+      "tangents": true,
+      "packed_texture_images": 16
+    },
+    {
+      "id": "food_stall",
+      "blend": "art_source/ancient-canal/blender/food_stall.blend",
+      "glb": "assets/ancient-canal/models/food_stall.glb",
+      "vertices": 686,
+      "triangles": 1192,
+      "material_meshes": 4,
+      "glb_sha256": "db2f2dc4570820abd60c35cd076aa6b9e9f9c465c4c9f3e79d97e0f6a59cd6b3",
+      "blend_sha256": "51fd964c155292efb74d72f4748438c72142668e5246d604d9e43fd9f951bfdb",
+      "bounds_min": [
+        -1.4900000095367432,
+        0.0,
+        -1.059999942779541
+      ],
+      "bounds_max": [
+        1.4900000095367432,
+        2.4000000953674316,
+        1.090000033378601
+      ],
+      "uv_layers": 1,
+      "tangents": true,
+      "packed_texture_images": 16
+    },
+    {
+      "id": "bank_wall",
+      "blend": "art_source/ancient-canal/blender/bank_wall.blend",
+      "glb": "assets/ancient-canal/models/bank_wall.glb",
+      "vertices": 56,
+      "triangles": 84,
+      "material_meshes": 1,
+      "glb_sha256": "959c0f581d5237b961c7d8a27d700dbe2c12c99ca04cde630873d85e8129223b",
+      "blend_sha256": "69a0fd679de36030077f3b3ab143c3ecf494eccf8851515bcb42959b31abfd86",
+      "bounds_min": [
+        -1.5,
+        -1.399999976158142,
+        -0.3149999976158142
+      ],
+      "bounds_max": [
+        1.5,
+        0.09499996900558472,
+        0.3149999976158142
+      ],
+      "uv_layers": 1,
+      "tangents": true,
+      "packed_texture_images": 16
+    },
+    {
+      "id": "dock",
+      "blend": "art_source/ancient-canal/blender/dock.blend",
+      "glb": "assets/ancient-canal/models/dock.glb",
+      "vertices": 432,
+      "triangles": 744,
+      "material_meshes": 2,
+      "glb_sha256": "156b46739ff760a99c1737775c3ce9df82bfd824c569d619d4b7cabd27ff57a1",
+      "blend_sha256": "407494bfb49a90c7e5cb869e04bf8c018031ebef1c90c9d2555cdbc6b42e1a09",
+      "bounds_min": [
+        -1.0,
+        -1.1500000953674316,
+        -1.5
+      ],
+      "bounds_max": [
+        1.0,
+        0.3100000321865082,
+        1.5
+      ],
+      "uv_layers": 1,
+      "tangents": true,
+      "packed_texture_images": 16
+    },
+    {
+      "id": "boat",
+      "blend": "art_source/ancient-canal/blender/boat.blend",
+      "glb": "assets/ancient-canal/models/boat.glb",
+      "vertices": 418,
+      "triangles": 529,
+      "material_meshes": 1,
+      "glb_sha256": "07675bb62ea173ba1b5d25732fe638eabd720167f667cb1f9c0b7abe115fe4c3",
+      "blend_sha256": "a470843dc2f1c4f182ce892b97cf26bad49f24b6f45a2f325d98be7e6a9991ca",
+      "bounds_min": [
+        -0.7800000309944153,
+        0.03999999910593033,
+        -2.240000009536743
+      ],
+      "bounds_max": [
+        1.3088409900665283,
+        1.1973457336425781,
+        2.384371519088745
+      ],
+      "uv_layers": 1,
+      "tangents": true,
+      "packed_texture_images": 16
+    },
+    {
+      "id": "lantern",
+      "blend": "art_source/ancient-canal/blender/lantern.blend",
+      "glb": "assets/ancient-canal/models/lantern.glb",
+      "vertices": 168,
+      "triangles": 268,
+      "material_meshes": 3,
+      "glb_sha256": "c049e74f4a623b85d9d8abc030f807e3b3ecf67a6f2c84451c318487175eb46f",
+      "blend_sha256": "23b89131a6ba3a8f81e7ce46af4130a2207710d1eade11d4b4ebad0170794ecd",
+      "bounds_min": [
+        -0.20000000298023224,
+        -0.8799999952316284,
+        -0.20000000298023224
+      ],
+      "bounds_max": [
+        0.20000000298023224,
+        0.0,
+        0.20000000298023224
+      ],
+      "uv_layers": 1,
+      "tangents": true,
+      "packed_texture_images": 16
+    },
+    {
+      "id": "wine_jar",
+      "blend": "art_source/ancient-canal/blender/wine_jar.blend",
+      "glb": "assets/ancient-canal/models/wine_jar.glb",
+      "vertices": 168,
+      "triangles": 312,
+      "material_meshes": 2,
+      "glb_sha256": "33b7ede546964f6bc81fb199a337519cd04ca757e3be17093cd84bdc2fc76d5c",
+      "blend_sha256": "f041eb4d04a31be5375c3fcc7185a139f12fdac622037672a01e3572ba522f7b",
+      "bounds_min": [
+        -0.4099999964237213,
+        0.0,
+        -0.4099999964237213
+      ],
+      "bounds_max": [
+        0.4099999964237213,
+        0.8224999904632568,
+        0.42938506603240967
+      ],
+      "uv_layers": 1,
+      "tangents": true,
+      "packed_texture_images": 16
+    },
+    {
+      "id": "cloth_banner",
+      "blend": "art_source/ancient-canal/blender/cloth_banner.blend",
+      "glb": "assets/ancient-canal/models/cloth_banner.glb",
+      "vertices": 42,
+      "triangles": 52,
+      "material_meshes": 2,
+      "glb_sha256": "23ac56fa1248221e9a94d4f48c34e5743c9a79776cea08cf2e6a52a7c876335c",
+      "blend_sha256": "2658bca7e69d148693dad6dcff7840c078214626f58aa12b72301b3c66934314",
+      "bounds_min": [
+        -0.4300000071525574,
+        -1.600000023841858,
+        -0.059769876301288605
+      ],
+      "bounds_max": [
+        0.4300000071525574,
+        0.0950000211596489,
+        0.05948749929666519
+      ],
+      "uv_layers": 1,
+      "tangents": true,
+      "packed_texture_images": 16
+    },
+    {
+      "id": "willow",
+      "blend": "art_source/ancient-canal/blender/willow.blend",
+      "glb": "assets/ancient-canal/models/willow.glb",
+      "vertices": 12228,
+      "triangles": 19784,
+      "material_meshes": 2,
+      "glb_sha256": "bf40a19ac7da9176661bb69880f0e6d24a1808da4529e46d399644a46dfd01ea",
+      "blend_sha256": "4414e3ceb6116bf838ac7ba3e6a0c719a5431284d14aee7acad0df664a0611a9",
+      "bounds_min": [
+        -2.5213122367858887,
+        -0.06888963282108307,
+        -2.3816404342651367
+      ],
+      "bounds_max": [
+        2.515805959701538,
+        5.225351333618164,
+        2.584632396697998
+      ],
+      "uv_layers": 1,
+      "tangents": true,
+      "packed_texture_images": 16
+    },
+    {
+      "id": "streetlamp",
+      "blend": "art_source/ancient-canal/blender/streetlamp.blend",
+      "glb": "assets/ancient-canal/models/streetlamp.glb",
+      "vertices": 240,
+      "triangles": 376,
+      "material_meshes": 6,
+      "glb_sha256": "bc7ca184f41b0f04d7380ae34feae110aaf10ff4e1f4385b9fc4dcfb8f3819e6",
+      "blend_sha256": "39ace76400f00d8d2a3e81359adcacce117d1f745fee5c0e547e861bf7bd3712",
+      "bounds_min": [
+        -0.20000000298023224,
+        0.0,
+        -0.125
+      ],
+      "bounds_max": [
+        0.20000000298023224,
+        2.6399998664855957,
+        0.5600000023841858
+      ],
+      "uv_layers": 1,
+      "tangents": true,
+      "packed_texture_images": 16,
+      "source": "art_source/ancient-canal/blender/streetlamp-source.json",
+      "licence": "original project-authored geometry; no third-party model",
+      "pole_height": 2.6,
+      "light_offset": [
+        0,
+        2.2,
+        0.36
+      ],
+      "collision_radius": 0.12
+    }
+  ],
+  "source_portability_revision": "source-portability.json"
+}

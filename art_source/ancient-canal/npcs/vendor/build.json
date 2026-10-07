@@ -1,0 +1,59 @@
+{
+  "id": "vendor",
+  "source": {
+    "path": "art_source/ancient-canal/npcs/vendor/mother.png",
+    "sha256": "b8b57aee9c719bacf9f82f6fb7f6949e004a9086170255c2d2305ce184aa1f20"
+  },
+  "structure": {
+    "path": "art_source/ancient-canal/npcs/vendor/structure.json",
+    "sha256": "ebe90ae6d3106cdc5c2d5cf69e56c9e5a9132ab5999a329e5d76c2d08f40e996"
+  },
+  "outputs": [
+    {
+      "path": "assets/ancient-canal/npcs/vendor.png",
+      "sha256": "8ec46619c1122a84396950799456e7c30e3a546595c4bec7c32b9db7d914ddcb",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "path": "assets/ancient-canal/npcs/vendor-normal.png",
+      "sha256": "6979247c8e30617093814f191c32920b26505facb0897450022306d871d5c366",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "path": "assets/ancient-canal/npcs/vendor-mask.png",
+      "sha256": "c19e8b9f063d573c846c94a1fb0955e05d8d65f8cd4a73d15a564333b719393d",
+      "size": [
+        256,
+        256
+      ]
+    }
+  ],
+  "checks": {
+    "color_palette_count": 92,
+    "color_alpha_equals_normal": true,
+    "color_alpha_equals_mask": true,
+    "normal_vector_max_length_error": 0.0054752071318631135,
+    "silhouette_bbox": [
+      86,
+      16,
+      167,
+      240
+    ],
+    "foot_anchor": [
+      128,
+      240
+    ]
+  },
+  "mask_channels": {
+    "r": "silver specular region",
+    "g": "roughness",
+    "b": "metallicity",
+    "a": "exact color alpha"
+  }
+}

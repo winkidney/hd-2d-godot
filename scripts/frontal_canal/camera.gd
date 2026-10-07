@@ -59,6 +59,50 @@ func lens_defaults(id: String) -> Dictionary:
 func lens_snapshot() -> Dictionary:
     return lens_profiles[variant_id].duplicate()
 
+func lens_profiles_defaults() -> Dictionary:
+    var result: Dictionary = {}
+    for id in VARIANTS:
+        result[id] = lens_defaults(id)
+    return result
+
+func lens_profiles_snapshot() -> Dictionary:
+    return lens_profiles.duplicate(true)
+
+func lens_profiles_error(value: Variant) -> String:
+    if not value is Dictionary or value.size() != VARIANTS.size():
+        return "All three camera lens profiles are required."
+    for id in VARIANTS:
+        if not value.has(id) or not value[id] is Dictionary:
+            return "Missing camera lens profile."
+        var profile: Dictionary = value[id]
+        if profile.size() != LENS_LIMITS.size():
+            return "Unknown or missing lens setting."
+        for key in LENS_LIMITS:
+            if not profile.has(key):
+                return "Missing lens setting."
+            var error := lens_error(key, profile[key])
+            if not error.is_empty():
+                return error
+    return ""
+
+func validate_lens_profiles(value: Variant) -> Dictionary:
+    if not lens_profiles_error(value).is_empty():
+        return {}
+    var result: Dictionary = {}
+    for id in VARIANTS:
+        result[id] = {"radius":float(value[id].radius), "fov":float(value[id].fov)}
+    return result
+
+func restore_lens_profiles(value: Dictionary, active_id: String, player_position := Vector3.INF) -> bool:
+    if not VARIANTS.has(active_id) or camera == null:
+        return false
+    var candidate := validate_lens_profiles(value)
+    if candidate.is_empty():
+        return false
+    # Validate inactive profiles as well, then update the actual pose only once.
+    lens_profiles = candidate
+    return select_variant(active_id, player_position)
+
 func lens_error(key: String, value: Variant) -> String:
     if not LENS_LIMITS.has(key): return "Unknown lens setting."
     if typeof(value) not in [TYPE_INT,TYPE_FLOAT]: return "A number is required."

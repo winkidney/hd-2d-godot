@@ -3,6 +3,7 @@ extends "res://scripts/parallax_controller.gd"
 ## D uses the same exact projection equation with explicit 2.5D layer gains.
 const D_GAINS := {"ridge_near": 0.6, "ridge_mid": 0.3, "ridge_far": 0.12,
     "clouds_near": 0.6, "clouds_far": 0.25}
+const ProjectionMath = preload("res://scripts/projection_parallax.gd")
 var variant_id := "A"
 var variant_settings: Dictionary = {}
 var variant_defaults: Dictionary = {}
@@ -37,14 +38,7 @@ func reset_all() -> void:
 func update(delta: float, immediate := false) -> void:
     compatible = rig.supported_pose()
     notice = "" if compatible else "Unsupported external camera pose; decorative layers restored to natural positions."
-    var actual_inverse := camera.get_camera_transform().affine_inverse()
-    var virtual_transform := camera.get_camera_transform()
-    virtual_transform.origin -= rig.horizontal_follow
-    var virtual_inverse := virtual_transform.affine_inverse()
-    var viewport_size := camera.get_viewport().get_visible_rect().size
-    var projection := camera.get_camera_projection()
-    var focal := projection.x.x * viewport_size.x * 0.5
-    var perspective := camera.projection == Camera3D.PROJECTION_PERSPECTIVE
+    var view := ProjectionMath.context(camera, rig.horizontal_follow)
     projections.clear()
     for id in Profile.IDS:
         var requested: float = profile.effective(id) if compatible else 1.0
@@ -54,27 +48,18 @@ func update(delta: float, immediate := false) -> void:
             current[id] = move_toward(float(current[id]), requested, 2.0 * delta / profile.transition_time)
         var base: Transform3D = states[id].base
         var point: Vector3 = base * states[id].point
-        var actual: Vector3 = actual_inverse * point
-        var virtual: Vector3 = virtual_inverse * point
-        var valid := -actual.z > camera.near and -virtual.z > camera.near and absf(focal) > 0.001
-        var natural_x := projected_x(actual, focal, perspective)
-        var virtual_x := projected_x(virtual, focal, perspective)
         var ratio := float(current[id])
-        var desired_x := virtual_x + ratio * (natural_x - virtual_x)
-        if valid and compatible:
-            var metres_per_pixel := -actual.z / focal if perspective else 1.0 / focal
-            base.origin += camera.global_basis.x * (desired_x - natural_x) * metres_per_pixel
-        elif not valid:
+        var info := ProjectionMath.sample(view, point, ratio)
+        if info.valid and compatible:
+            base.origin += info.offset_world
+        elif not info.valid:
             notice = "A decorative representative point is behind the camera; that layer stays in world space."
         states[id].node.global_transform = base
-        var actual_result: Vector3 = actual_inverse * layer_point(id)
-        projections[id] = {"natural_x": natural_x, "virtual_x": virtual_x,
-            "expected_x": desired_x, "result_x": projected_x(actual_result, focal, perspective),
-            "valid": valid, "depth": -actual.z, "focal": focal,
-            "perspective": perspective}
+        info["result_x"] = ProjectionMath.result_x(view, layer_point(id))
+        projections[id] = info
 
 static func projected_x(camera_point: Vector3, focal: float, perspective: bool) -> float:
-    return focal * camera_point.x / maxf(-camera_point.z, 0.00001) if perspective else focal * camera_point.x
+    return ProjectionMath.projected_x(camera_point, focal, perspective)
 
 func diagnostics() -> Dictionary:
     var result: Dictionary = {}

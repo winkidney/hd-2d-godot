@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "script": "tools/ancient_canal/build_character_normals.py",
+  "seed": 0,
+  "baseline": "art_source/ancient-canal/character-reuse.json",
+  "method": "hand-authored semantic analytic geometry; Farneback feature correspondence; per-frame skin/jewelry corrections; exact-alpha compose",
+  "normal_RGB": "vector data; no palette, dither, mipmap or color space conversion",
+  "imagegen": "four six-keypose volume guides; only a form interpretation source, never resampled into runtime normals",
+  "editable_layers": {
+    "face": 1,
+    "hair": 2,
+    "braids": 3,
+    "cloth": 4,
+    "skirt": 5,
+    "metal": 6,
+    "boots": 7
+  },
+  "source_color_policy": "read-only, verify hashes before every build",
+  "directions": [
+    "down",
+    "up",
+    "left",
+    "right"
+  ]
+}

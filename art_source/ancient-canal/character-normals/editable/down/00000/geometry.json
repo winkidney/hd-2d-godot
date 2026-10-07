@@ -1,0 +1,525 @@
+{
+  "face": [
+    131.5,
+    77.0,
+    17.5,
+    19.0
+  ],
+  "face_yaw": 0.06,
+  "head": [
+    125.0,
+    59.0,
+    28.0,
+    28.0
+  ],
+  "torso": [
+    129.0,
+    106.0,
+    17.0,
+    18.0
+  ],
+  "braids": [
+    [
+      [
+        110.0,
+        82.0
+      ],
+      [
+        103.0,
+        94.0
+      ],
+      [
+        96.0,
+        104.0
+      ],
+      [
+        90.0,
+        114.0
+      ],
+      [
+        81.0,
+        129.0
+      ]
+    ],
+    [
+      [
+        145.0,
+        81.0
+      ],
+      [
+        151.0,
+        93.0
+      ],
+      [
+        160.0,
+        106.0
+      ],
+      [
+        169.0,
+        119.0
+      ],
+      [
+        174.0,
+        128.0
+      ]
+    ]
+  ],
+  "strands": [
+    [
+      [
+        102.0,
+        62.0
+      ],
+      [
+        108.0,
+        47.0
+      ],
+      [
+        129.0,
+        40.0
+      ]
+    ],
+    [
+      [
+        110.0,
+        58.0
+      ],
+      [
+        128.0,
+        46.0
+      ],
+      [
+        145.0,
+        56.0
+      ]
+    ],
+    [
+      [
+        131.0,
+        45.0
+      ],
+      [
+        137.0,
+        59.0
+      ],
+      [
+        129.0,
+        70.0
+      ]
+    ],
+    [
+      [
+        142.0,
+        48.0
+      ],
+      [
+        149.0,
+        61.0
+      ],
+      [
+        148.0,
+        76.0
+      ]
+    ],
+    [
+      [
+        108.0,
+        62.0
+      ],
+      [
+        111.0,
+        77.0
+      ],
+      [
+        107.0,
+        87.0
+      ]
+    ]
+  ],
+  "sleeves": [
+    [
+      [
+        113.0,
+        98.0
+      ],
+      [
+        108.0,
+        115.0
+      ],
+      [
+        102.0,
+        131.0
+      ]
+    ],
+    [
+      [
+        145.0,
+        100.0
+      ],
+      [
+        151.0,
+        116.0
+      ],
+      [
+        157.0,
+        129.0
+      ]
+    ]
+  ],
+  "skirt": [
+    129.0,
+    155.0,
+    40.0,
+    34.0
+  ],
+  "belt": [
+    129.0,
+    121.0
+  ],
+  "pleats": [
+    [
+      [
+        109.0,
+        127.0
+      ],
+      [
+        103.0,
+        150.0
+      ],
+      [
+        92.0,
+        170.0
+      ]
+    ],
+    [
+      [
+        118.0,
+        126.0
+      ],
+      [
+        114.0,
+        157.0
+      ],
+      [
+        113.0,
+        185.0
+      ]
+    ],
+    [
+      [
+        130.0,
+        127.0
+      ],
+      [
+        131.0,
+        157.0
+      ],
+      [
+        133.0,
+        184.0
+      ]
+    ],
+    [
+      [
+        139.0,
+        128.0
+      ],
+      [
+        147.0,
+        153.0
+      ],
+      [
+        153.0,
+        177.0
+      ]
+    ],
+    [
+      [
+        146.0,
+        133.0
+      ],
+      [
+        155.0,
+        151.0
+      ],
+      [
+        167.0,
+        168.0
+      ]
+    ]
+  ],
+  "apron": [
+    133.0,
+    151.0,
+    11.0,
+    28.0
+  ],
+  "metal_regions": [
+    [
+      112.0,
+      40.0,
+      15.0,
+      17.0
+    ],
+    [
+      105.5,
+      51.5,
+      4.0,
+      8.0
+    ],
+    [
+      105.0,
+      76.0,
+      4.0,
+      7.0
+    ],
+    [
+      127.0,
+      101.0,
+      14.0,
+      12.0
+    ],
+    [
+      131.0,
+      130.0,
+      8.0,
+      13.0
+    ],
+    [
+      89.0,
+      113.0,
+      6.0,
+      9.0
+    ],
+    [
+      166.0,
+      115.0,
+      6.0,
+      9.0
+    ],
+    [
+      102.0,
+      140.0,
+      5.0,
+      5.0
+    ],
+    [
+      160.0,
+      140.0,
+      5.0,
+      5.0
+    ],
+    [
+      116.0,
+      194.0,
+      4.0,
+      8.0
+    ],
+    [
+      142.0,
+      204.0,
+      4.0,
+      8.0
+    ]
+  ],
+  "legs": [
+    [
+      [
+        124.0,
+        183.0
+      ],
+      [
+        121.0,
+        203.0
+      ],
+      [
+        122.0,
+        215.0
+      ]
+    ],
+    [
+      [
+        134.0,
+        190.0
+      ],
+      [
+        134.0,
+        219.0
+      ],
+      [
+        136.0,
+        233.0
+      ]
+    ]
+  ],
+  "direction": "down",
+  "frame": 0,
+  "size": [
+    256,
+    256
+  ],
+  "geometry_source": "hand-authored visible form annotations assisted by ImageGen construction studies",
+  "motion_transport": {
+    "method": "cyclic forward/backward anchored blend",
+    "forward_weight": 1.0,
+    "backward_weight": 0.0
+  },
+  "corrections": [
+    {
+      "feature": "face",
+      "method": "visible skin bounds in transported face ROI",
+      "before": [
+        130.0,
+        77.0
+      ],
+      "after": [
+        131.5,
+        77.0
+      ],
+      "pixels": 356
+    },
+    {
+      "feature": "silver_0",
+      "method": "local visible material centroid, capped 3px",
+      "before": [
+        112.0,
+        37.0
+      ],
+      "after": [
+        112.0,
+        40.0
+      ],
+      "pixels": 235
+    },
+    {
+      "feature": "silver_1",
+      "method": "local visible material centroid, capped 3px",
+      "before": [
+        104.0,
+        53.0
+      ],
+      "after": [
+        105.5,
+        51.5
+      ],
+      "pixels": 68
+    },
+    {
+      "feature": "silver_2",
+      "method": "local visible material centroid, capped 3px",
+      "before": [
+        105.0,
+        76.0
+      ],
+      "after": [
+        105.0,
+        76.0
+      ],
+      "pixels": 25
+    },
+    {
+      "feature": "silver_3",
+      "method": "local visible material centroid, capped 3px",
+      "before": [
+        129.0,
+        100.0
+      ],
+      "after": [
+        127.0,
+        101.0
+      ],
+      "pixels": 315
+    },
+    {
+      "feature": "silver_4",
+      "method": "local visible material centroid, capped 3px",
+      "before": [
+        130.0,
+        127.0
+      ],
+      "after": [
+        131.0,
+        130.0
+      ],
+      "pixels": 143
+    },
+    {
+      "feature": "silver_5",
+      "method": "local visible material centroid, capped 3px",
+      "before": [
+        88.0,
+        115.0
+      ],
+      "after": [
+        89.0,
+        113.0
+      ],
+      "pixels": 41
+    },
+    {
+      "feature": "silver_6",
+      "method": "local visible material centroid, capped 3px",
+      "before": [
+        167.0,
+        115.0
+      ],
+      "after": [
+        166.0,
+        115.0
+      ],
+      "pixels": 49
+    },
+    {
+      "feature": "silver_7",
+      "method": "local visible material centroid, capped 3px",
+      "before": [
+        102.0,
+        139.0
+      ],
+      "after": [
+        102.0,
+        140.0
+      ],
+      "pixels": 51
+    },
+    {
+      "feature": "silver_8",
+      "method": "local visible material centroid, capped 3px",
+      "before": [
+        160.0,
+        138.0
+      ],
+      "after": [
+        160.0,
+        140.0
+      ],
+      "pixels": 22
+    },
+    {
+      "feature": "silver_9",
+      "method": "local visible material centroid, capped 3px",
+      "before": [
+        116.0,
+        193.0
+      ],
+      "after": [
+        116.0,
+        194.0
+      ],
+      "pixels": 24
+    },
+    {
+      "feature": "silver_10",
+      "method": "local visible material centroid, capped 3px",
+      "before": [
+        143.0,
+        203.0
+      ],
+      "after": [
+        142.0,
+        204.0
+      ],
+      "pixels": 25
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "direction": "down",
+  "tool": "builtin image_gen.imagegen",
+  "seed": null,
+  "recorded_date": "2026-10-07",
+  "reference": "../../reference/down-keyposes.png",
+  "keyposes": [
+    0,
+    6,
+    13,
+    20,
+    26,
+    10
+  ],
+  "prompt": "prompt.txt",
+  "raw_original": "guide.png",
+  "sha256": "45de844f77e681d244921f53a7816a2f3d5cbb7eb127b2972274420a6dbfa7a8",
+  "role": "Geometric volume candidate for manual analytic semantic surface construction only. Not sampled into runtime normals; source animation remains immutable."
+}

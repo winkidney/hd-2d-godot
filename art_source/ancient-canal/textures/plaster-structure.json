@@ -1,0 +1,19 @@
+{
+  "material": "plaster",
+  "size": [
+    256,
+    256
+  ],
+  "geometry": [
+    {
+      "type": "plaster_micro_pits",
+      "seed": 20261007,
+      "count": 96
+    }
+  ],
+  "normal_basis": "OpenGL tangent: X right, Y up, Z outward",
+  "height_source": "authored construction features, never diffuse luminance",
+  "height_png": "plaster-height.png",
+  "normal_derivative_scale": 0.8,
+  "periodic_border_height": 0.625
+}

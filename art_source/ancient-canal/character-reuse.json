@@ -1,0 +1,1360 @@
+{
+  "schema_version": 1,
+  "authorization_date": "2026-10-07",
+  "character_id": "crescent-traveler",
+  "version": "v1",
+  "source_definition": "assets/characters/crescent-traveler/v1/character.json",
+  "source_definition_sha256": "42c2394a5a4833bf36b6f066838a9af697ae1891129868f7342b87f42ac0a7cc",
+  "policy": "Reuse existing animation and color PNGs directly. Do not regenerate, recolor, resize, reorder or retime. New normals reference this immutable baseline. Concept figures are composition references only.",
+  "frame_count": 108,
+  "directions": [
+    {
+      "direction": "down",
+      "manifest": "assets/characters/crescent-traveler/v1/down/animation.json",
+      "manifest_sha256": "761f4bdb9e238fa66d04c3d867ecaee401a643df55218dd8948f2292afd4314c",
+      "atlas_sha256": "c269c9add307a8a9d15b9f1354f27eb16355c5cb99959ff4cf3b10829b211e60",
+      "pivot": [
+        128,
+        240
+      ],
+      "frames": [
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00000.png",
+          "sha256": "db659beb52d684656dac145451c234c9547dbb12d10c3a1d32fe11135ba00e53",
+          "duration_ms": 41,
+          "region": [
+            1,
+            1,
+            256,
+            256
+          ],
+          "source_index": 28
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00001.png",
+          "sha256": "b2a073d3d85d7723eedc40e219966eb0d32184bd59af5089894caa1405511c54",
+          "duration_ms": 42,
+          "region": [
+            259,
+            1,
+            256,
+            256
+          ],
+          "source_index": 29
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00002.png",
+          "sha256": "988ecd23fac4939e6d771bf04503668992032113fae57831e15065ad04006451",
+          "duration_ms": 42,
+          "region": [
+            517,
+            1,
+            256,
+            256
+          ],
+          "source_index": 30
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00003.png",
+          "sha256": "60a1f6dc1d465da2ecef0b1a1aecadac62725e7d9323cb3ee10942de45ff0f1f",
+          "duration_ms": 41,
+          "region": [
+            775,
+            1,
+            256,
+            256
+          ],
+          "source_index": 31
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00004.png",
+          "sha256": "871d5fb3ca88c3c2619818947aa01eace05525088291f75b12aec5c22e28c940",
+          "duration_ms": 42,
+          "region": [
+            1033,
+            1,
+            256,
+            256
+          ],
+          "source_index": 32
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00005.png",
+          "sha256": "3f958318dcf526c108941d971e7cbc2b65ee43df01e802693e03f6324ecd38f3",
+          "duration_ms": 42,
+          "region": [
+            1291,
+            1,
+            256,
+            256
+          ],
+          "source_index": 33
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00006.png",
+          "sha256": "ee69ff7db8bd60cc880331d18259fe39e4f65c11c881a0ce8a14ba31042b21ca",
+          "duration_ms": 41,
+          "region": [
+            1549,
+            1,
+            256,
+            256
+          ],
+          "source_index": 34
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00007.png",
+          "sha256": "40764fe1d6ee2521e589de9b0d5360f52c717d364a1cb72d20da0f5ec05ecfc5",
+          "duration_ms": 42,
+          "region": [
+            1807,
+            1,
+            256,
+            256
+          ],
+          "source_index": 35
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00008.png",
+          "sha256": "14ec8cc2a70875fa4a9d72af9f1f6e18d6d75bd6a22a7be6ef1bfbaa87d9a972",
+          "duration_ms": 42,
+          "region": [
+            1,
+            259,
+            256,
+            256
+          ],
+          "source_index": 36
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00009.png",
+          "sha256": "e746f594a6664af7c9a7003c8e325c3b50e4161f317abc78824f3243b70baf3c",
+          "duration_ms": 41,
+          "region": [
+            259,
+            259,
+            256,
+            256
+          ],
+          "source_index": 37
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00010.png",
+          "sha256": "5fe79c6342c8ed0600fc50e6843f233b27677aa3158ed79cac4ddf097c67376e",
+          "duration_ms": 42,
+          "region": [
+            517,
+            259,
+            256,
+            256
+          ],
+          "source_index": 38
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00011.png",
+          "sha256": "f5e834e0a84f4707e78efb3f646c406df45090bd6742845b0f19b8e232b7085f",
+          "duration_ms": 42,
+          "region": [
+            775,
+            259,
+            256,
+            256
+          ],
+          "source_index": 39
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00012.png",
+          "sha256": "cee33c32c7fe624c8846b47c7248105262ef9869ef840e3c055db1daceef7813",
+          "duration_ms": 41,
+          "region": [
+            1033,
+            259,
+            256,
+            256
+          ],
+          "source_index": 40
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00013.png",
+          "sha256": "d4de33ef360ebe657a31c8ae0bb6f5d84b1f6a76c4ec65216f544eeeaaca5bb2",
+          "duration_ms": 42,
+          "region": [
+            1291,
+            259,
+            256,
+            256
+          ],
+          "source_index": 41
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00014.png",
+          "sha256": "43c5c805c2f6cea808075f37a5a7585b4620520703795ee2e4eff71aaa53f21c",
+          "duration_ms": 42,
+          "region": [
+            1549,
+            259,
+            256,
+            256
+          ],
+          "source_index": 42
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00015.png",
+          "sha256": "48001d6646974961c1b19f2a86691bb2c8981ffe5707f5ccab16b7e10b0e84a1",
+          "duration_ms": 41,
+          "region": [
+            1807,
+            259,
+            256,
+            256
+          ],
+          "source_index": 43
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00016.png",
+          "sha256": "7d8cd10fa3b10b24850368d8be71e459437967816ef9082a4b031f5a7d12a77c",
+          "duration_ms": 42,
+          "region": [
+            1,
+            517,
+            256,
+            256
+          ],
+          "source_index": 44
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00017.png",
+          "sha256": "e27ef1e22e945820baf8b7e3df33b3d8e55eaafbd29e2aeec53e662e71d68530",
+          "duration_ms": 42,
+          "region": [
+            259,
+            517,
+            256,
+            256
+          ],
+          "source_index": 45
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00018.png",
+          "sha256": "e6edcbd1cd8490b15369fd674827c9436083cfa659f4b1a979f3e3e3dfe5b400",
+          "duration_ms": 41,
+          "region": [
+            517,
+            517,
+            256,
+            256
+          ],
+          "source_index": 46
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00019.png",
+          "sha256": "30d637a2f6582c9e8407a2a2a032f1c190e21af724fbe4ef8bf968a2e8d59f4b",
+          "duration_ms": 42,
+          "region": [
+            775,
+            517,
+            256,
+            256
+          ],
+          "source_index": 47
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00020.png",
+          "sha256": "51581f530e5a66cca5e59a40e9e55df72c8903f77edbdcfab901542253dba07f",
+          "duration_ms": 42,
+          "region": [
+            1033,
+            517,
+            256,
+            256
+          ],
+          "source_index": 48
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00021.png",
+          "sha256": "01810e86016bae6d7cde47951e721823df37dd43a83afc2e178799533684fbe2",
+          "duration_ms": 41,
+          "region": [
+            1291,
+            517,
+            256,
+            256
+          ],
+          "source_index": 49
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00022.png",
+          "sha256": "c003284076dedde3f860b8ea93528a2d7ea88c2ae0b86602f00e42caafbcd014",
+          "duration_ms": 42,
+          "region": [
+            1549,
+            517,
+            256,
+            256
+          ],
+          "source_index": 50
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00023.png",
+          "sha256": "724113588c2a03b94a8706f3aee3627da3e761bc1572aaf0b01524933a120cc8",
+          "duration_ms": 42,
+          "region": [
+            1807,
+            517,
+            256,
+            256
+          ],
+          "source_index": 51
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00024.png",
+          "sha256": "1506090d00a9840c5df3214ef92943fa9d9dcd2898e2ba7349b7c4c991e5f6c0",
+          "duration_ms": 41,
+          "region": [
+            1,
+            775,
+            256,
+            256
+          ],
+          "source_index": 52
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00025.png",
+          "sha256": "911c1ddfc05d7ac4c72f1fce56ed78f3a42dbae2281884669319ea00fa557bb1",
+          "duration_ms": 42,
+          "region": [
+            259,
+            775,
+            256,
+            256
+          ],
+          "source_index": 53
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/down/frames/00026.png",
+          "sha256": "782e805bc98a444a788070957332a1ddf63e0978ffb0a560e7c393c62371c248",
+          "duration_ms": 42,
+          "region": [
+            517,
+            775,
+            256,
+            256
+          ],
+          "source_index": 54
+        }
+      ],
+      "idle_frame": 10
+    },
+    {
+      "direction": "up",
+      "manifest": "assets/characters/crescent-traveler/v1/up/animation.json",
+      "manifest_sha256": "06d592c82fcfd69bb259278bbc76518e426034e96e07f13bd91131b547f6d5bd",
+      "atlas_sha256": "32051fcdab5f5c45f9265e24f17e91336ed108c5fa1a4b429a83cf74800e0a22",
+      "pivot": [
+        128,
+        240
+      ],
+      "frames": [
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00000.png",
+          "sha256": "7f9e2c98669355702a2947d02e182a93a2598a3292999d3d79886854358b6495",
+          "duration_ms": 41,
+          "region": [
+            1,
+            1,
+            256,
+            256
+          ],
+          "source_index": 28
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00001.png",
+          "sha256": "53a7878e719c621568cbb614fba6cc1b3cf7de7db8bd437bf4b471f16d54e49b",
+          "duration_ms": 42,
+          "region": [
+            259,
+            1,
+            256,
+            256
+          ],
+          "source_index": 29
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00002.png",
+          "sha256": "bc7c485e8f63287f9079ee96e75175170d6702fd31a68765ff71de6e4afdcb1a",
+          "duration_ms": 42,
+          "region": [
+            517,
+            1,
+            256,
+            256
+          ],
+          "source_index": 30
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00003.png",
+          "sha256": "8e90a16d8bdd17f026e284246060106339859620aa54eea5ab44835bc6e28890",
+          "duration_ms": 41,
+          "region": [
+            775,
+            1,
+            256,
+            256
+          ],
+          "source_index": 31
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00004.png",
+          "sha256": "98b56c2505ff04151803fb63a876c7de91322650e084220b4789faa9190fb8a5",
+          "duration_ms": 42,
+          "region": [
+            1033,
+            1,
+            256,
+            256
+          ],
+          "source_index": 32
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00005.png",
+          "sha256": "19f90333b20c5f8965f214b776ee1a2cd0734b52ef7860c2c858ff798903b648",
+          "duration_ms": 42,
+          "region": [
+            1291,
+            1,
+            256,
+            256
+          ],
+          "source_index": 33
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00006.png",
+          "sha256": "0bc15e9f0884929499137e501d03d6352eef6d2b454e67f2209961ae96cf8965",
+          "duration_ms": 41,
+          "region": [
+            1549,
+            1,
+            256,
+            256
+          ],
+          "source_index": 34
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00007.png",
+          "sha256": "b57329c90e72efc9149317da1cbcba04644c4b7054bd444600688816787f8c22",
+          "duration_ms": 42,
+          "region": [
+            1807,
+            1,
+            256,
+            256
+          ],
+          "source_index": 35
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00008.png",
+          "sha256": "c11cfc61698bb4f93c29b89e17c0fc2f54f8082f0626bc40fe2f46842414aa79",
+          "duration_ms": 42,
+          "region": [
+            1,
+            259,
+            256,
+            256
+          ],
+          "source_index": 36
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00009.png",
+          "sha256": "39ad83b3aef7d0a39d8ea8b269a91b71090e785cc65e036019fcbf51d83e5cf1",
+          "duration_ms": 41,
+          "region": [
+            259,
+            259,
+            256,
+            256
+          ],
+          "source_index": 37
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00010.png",
+          "sha256": "70f2911c56c3f0c70bd731900d05bcb9fab62bdfd8980b765940c6398dd386a9",
+          "duration_ms": 42,
+          "region": [
+            517,
+            259,
+            256,
+            256
+          ],
+          "source_index": 38
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00011.png",
+          "sha256": "5183905c703bbfe054c31459501b09d120ac5dc832ea494352d73a2f0cf7f511",
+          "duration_ms": 42,
+          "region": [
+            775,
+            259,
+            256,
+            256
+          ],
+          "source_index": 39
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00012.png",
+          "sha256": "32207f72bd092f840a917454a97c52fe8d1aa44733f128347c8fb3ba7fe22801",
+          "duration_ms": 41,
+          "region": [
+            1033,
+            259,
+            256,
+            256
+          ],
+          "source_index": 40
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00013.png",
+          "sha256": "1273de8522b3ae6c257cdccdc1f63ffca59cd35c7aee185d7a18c01e768a0b7a",
+          "duration_ms": 42,
+          "region": [
+            1291,
+            259,
+            256,
+            256
+          ],
+          "source_index": 41
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00014.png",
+          "sha256": "3c6af0410ac798cd8864d9aba2046127f6b00913e867a4c422c7332671b098cf",
+          "duration_ms": 42,
+          "region": [
+            1549,
+            259,
+            256,
+            256
+          ],
+          "source_index": 42
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00015.png",
+          "sha256": "15776b94d25ca8a9635c4f5b4bbfdac86247f2328b10835a2ac17a94d5a23aff",
+          "duration_ms": 41,
+          "region": [
+            1807,
+            259,
+            256,
+            256
+          ],
+          "source_index": 43
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00016.png",
+          "sha256": "69803faec11cfc1261873c39a0df424d5c6ee15213483111667c1cc8b0dafee7",
+          "duration_ms": 42,
+          "region": [
+            1,
+            517,
+            256,
+            256
+          ],
+          "source_index": 44
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00017.png",
+          "sha256": "0f41c054d72ae89a30cd691f08ee9f97afbbb2fe6e695cff35db1a7136bcb648",
+          "duration_ms": 42,
+          "region": [
+            259,
+            517,
+            256,
+            256
+          ],
+          "source_index": 45
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00018.png",
+          "sha256": "7299f0b0b1b1be747712c22c321fa7ce834ebed3e8c7cf0699572194baba2e6d",
+          "duration_ms": 41,
+          "region": [
+            517,
+            517,
+            256,
+            256
+          ],
+          "source_index": 46
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00019.png",
+          "sha256": "0dbd826514d952bfc744bda192d9bf3b3dd5d553489644bf37b99206143ccd37",
+          "duration_ms": 42,
+          "region": [
+            775,
+            517,
+            256,
+            256
+          ],
+          "source_index": 47
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00020.png",
+          "sha256": "f8175c6a47fe54ba8f308d18cd247d42e229fce5829322090674f0283c3ae780",
+          "duration_ms": 42,
+          "region": [
+            1033,
+            517,
+            256,
+            256
+          ],
+          "source_index": 48
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00021.png",
+          "sha256": "0d3ea1c3655332a2960cc0fa97b8146dd122979e75bc65d69bf456a02963be88",
+          "duration_ms": 41,
+          "region": [
+            1291,
+            517,
+            256,
+            256
+          ],
+          "source_index": 49
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00022.png",
+          "sha256": "a779124c324b1916912655a92f415e6de7cf11a4d159b12137e949c336d2e69b",
+          "duration_ms": 42,
+          "region": [
+            1549,
+            517,
+            256,
+            256
+          ],
+          "source_index": 50
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00023.png",
+          "sha256": "93291434050bdce8bac0779f28e7ed2ea2dc54c40bc5686aaf39cae1a88aedcc",
+          "duration_ms": 42,
+          "region": [
+            1807,
+            517,
+            256,
+            256
+          ],
+          "source_index": 51
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00024.png",
+          "sha256": "59a6bcd6a8e0da99d1b404beb190589c042737ca1d209825e490917842c869fb",
+          "duration_ms": 41,
+          "region": [
+            1,
+            775,
+            256,
+            256
+          ],
+          "source_index": 52
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00025.png",
+          "sha256": "d7993b4f60f4dd500f2769dd41f29fe5d700570b156c8df5b7bff90741cf4b69",
+          "duration_ms": 42,
+          "region": [
+            259,
+            775,
+            256,
+            256
+          ],
+          "source_index": 53
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/up/frames/00026.png",
+          "sha256": "c0856bed6484db1a9e21cef8b4aaf37bcc1c3cbf272848d78cb24470bd3db677",
+          "duration_ms": 42,
+          "region": [
+            517,
+            775,
+            256,
+            256
+          ],
+          "source_index": 54
+        }
+      ],
+      "idle_frame": 10
+    },
+    {
+      "direction": "left",
+      "manifest": "assets/characters/crescent-traveler/v1/left/animation.json",
+      "manifest_sha256": "2bc00e5f27519e6033b27130242b14e0a3be1ef3ad7f2260129234d1e5bbc312",
+      "atlas_sha256": "b4ce90eb320f8ea762e321ab6ee2b7836ab9ebe8a7bd73cdf86316a3438631ba",
+      "pivot": [
+        128,
+        240
+      ],
+      "frames": [
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00000.png",
+          "sha256": "812061da8e179086c7eff0a81dbff98158e2d71c5c1c10187ef6840b1da797ec",
+          "duration_ms": 41,
+          "region": [
+            1,
+            1,
+            256,
+            256
+          ],
+          "source_index": 28
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00001.png",
+          "sha256": "95cf9201a76743a9feb69e9126f284c68bad097e4956f56ce78c51cdddabf870",
+          "duration_ms": 42,
+          "region": [
+            259,
+            1,
+            256,
+            256
+          ],
+          "source_index": 29
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00002.png",
+          "sha256": "6295afd0d614fdddc498ac5b580f19c776255a97fb912de12eaba82104d0b379",
+          "duration_ms": 42,
+          "region": [
+            517,
+            1,
+            256,
+            256
+          ],
+          "source_index": 30
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00003.png",
+          "sha256": "017c4c2efceb4666dce0a124e70fde81c5a8e3cc7fe4b14c7ebd350561c42f7a",
+          "duration_ms": 41,
+          "region": [
+            775,
+            1,
+            256,
+            256
+          ],
+          "source_index": 31
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00004.png",
+          "sha256": "8349ef10b055715cd1a7d94860836b23c7f4faa576c933e9b60086d76dfa5b05",
+          "duration_ms": 42,
+          "region": [
+            1033,
+            1,
+            256,
+            256
+          ],
+          "source_index": 32
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00005.png",
+          "sha256": "2b05a85275fc79b2b9dab86826c472dc7b4c6b8b6398ef0627c70cb1d3b03cad",
+          "duration_ms": 42,
+          "region": [
+            1291,
+            1,
+            256,
+            256
+          ],
+          "source_index": 33
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00006.png",
+          "sha256": "84f3ae7b83757be81170bc7d2c7f82fe32fd3d5cc09648076e69388ba0bd9f81",
+          "duration_ms": 41,
+          "region": [
+            1549,
+            1,
+            256,
+            256
+          ],
+          "source_index": 34
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00007.png",
+          "sha256": "789425be0f77e9e6c09cb80cdf654d6201c73f1496bdb342274df3b3aa2cd37a",
+          "duration_ms": 42,
+          "region": [
+            1807,
+            1,
+            256,
+            256
+          ],
+          "source_index": 35
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00008.png",
+          "sha256": "8479cd9968f2ccffd0acfc04a3e4742957e9689b01d7d6b47c4e95e46c8cf71e",
+          "duration_ms": 42,
+          "region": [
+            1,
+            259,
+            256,
+            256
+          ],
+          "source_index": 36
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00009.png",
+          "sha256": "64ff576f060fb2d643d45ef5781864b82bfd461632543b07234c343efddd71f7",
+          "duration_ms": 41,
+          "region": [
+            259,
+            259,
+            256,
+            256
+          ],
+          "source_index": 37
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00010.png",
+          "sha256": "e7e01c92861ae17f412f0a389a53d242b77d354878187bc69dade52672360ece",
+          "duration_ms": 42,
+          "region": [
+            517,
+            259,
+            256,
+            256
+          ],
+          "source_index": 38
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00011.png",
+          "sha256": "64b84712186686830c495d4084d17201811f2a0b68e4aa1b39b8bc8536dadb49",
+          "duration_ms": 42,
+          "region": [
+            775,
+            259,
+            256,
+            256
+          ],
+          "source_index": 39
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00012.png",
+          "sha256": "d9392dc53771ca7e551bff027c1eff5885edb11fb6dda2bfd783f44637579ed6",
+          "duration_ms": 41,
+          "region": [
+            1033,
+            259,
+            256,
+            256
+          ],
+          "source_index": 40
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00013.png",
+          "sha256": "8df8799ee343b7640f4743d7895ebad306a9e4598a86473d33d96bf3525d0790",
+          "duration_ms": 42,
+          "region": [
+            1291,
+            259,
+            256,
+            256
+          ],
+          "source_index": 41
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00014.png",
+          "sha256": "83c08ec2e20a1047d96611bbc1447d4d34f555c00d6a87b06a8f17aa06dfac56",
+          "duration_ms": 42,
+          "region": [
+            1549,
+            259,
+            256,
+            256
+          ],
+          "source_index": 42
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00015.png",
+          "sha256": "a9f735d26e9a179b678d64dd7285771c0d7b11c172a718d3e15ef98c2b4867f3",
+          "duration_ms": 41,
+          "region": [
+            1807,
+            259,
+            256,
+            256
+          ],
+          "source_index": 43
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00016.png",
+          "sha256": "90994732b351b7c94f4a1b220238d60c67b2cb785eeede4f98746abf2ad4c946",
+          "duration_ms": 42,
+          "region": [
+            1,
+            517,
+            256,
+            256
+          ],
+          "source_index": 44
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00017.png",
+          "sha256": "7f167a0ca150b74b6cc0dbd4aa64fc0fcc019f0ed72f5fa60bad1db028e8c061",
+          "duration_ms": 42,
+          "region": [
+            259,
+            517,
+            256,
+            256
+          ],
+          "source_index": 45
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00018.png",
+          "sha256": "aa5a7cf161b953279880c43906417d08ed75dabe9e0ab858362e8acc33147f90",
+          "duration_ms": 41,
+          "region": [
+            517,
+            517,
+            256,
+            256
+          ],
+          "source_index": 46
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00019.png",
+          "sha256": "85d03b86e21b2ef2bfaca073e92579732b0ac0499b5e89ad649ed98c24780965",
+          "duration_ms": 42,
+          "region": [
+            775,
+            517,
+            256,
+            256
+          ],
+          "source_index": 47
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00020.png",
+          "sha256": "37039aee6f63ea0153f3f18cbc68cbd28ad30f38c05383a7bc08211f91f2ff4a",
+          "duration_ms": 42,
+          "region": [
+            1033,
+            517,
+            256,
+            256
+          ],
+          "source_index": 48
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00021.png",
+          "sha256": "f270b27a378a8376f47b308f69a8babad6b5c0f3a1bec79d3843707dbc2b57f1",
+          "duration_ms": 41,
+          "region": [
+            1291,
+            517,
+            256,
+            256
+          ],
+          "source_index": 49
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00022.png",
+          "sha256": "f53b0f02886f183b8339cd2e3dcde13ee74c74ed2986018500e9ebe5d09e375b",
+          "duration_ms": 42,
+          "region": [
+            1549,
+            517,
+            256,
+            256
+          ],
+          "source_index": 50
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00023.png",
+          "sha256": "055db508b7980b31c8c8d486c700326e2ec1baa5ec441dd534d01307e9567f9e",
+          "duration_ms": 42,
+          "region": [
+            1807,
+            517,
+            256,
+            256
+          ],
+          "source_index": 51
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00024.png",
+          "sha256": "82882561c7898ee5e60fac9c15b1f226ca37819e51b5ee9c82ded9178fbe9b56",
+          "duration_ms": 41,
+          "region": [
+            1,
+            775,
+            256,
+            256
+          ],
+          "source_index": 52
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00025.png",
+          "sha256": "ee3e746d4c8edfd23cb9ff3df1ebc3785d9f2b18235b3b92be87f1035286daf9",
+          "duration_ms": 42,
+          "region": [
+            259,
+            775,
+            256,
+            256
+          ],
+          "source_index": 53
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/left/frames/00026.png",
+          "sha256": "a73d5c8cf82c5c24c7970d94f0c5ed15d8a93db4880d84f7c52f29fa37bfbbe5",
+          "duration_ms": 42,
+          "region": [
+            517,
+            775,
+            256,
+            256
+          ],
+          "source_index": 54
+        }
+      ],
+      "idle_frame": 10
+    },
+    {
+      "direction": "right",
+      "manifest": "assets/characters/crescent-traveler/v1/right/animation.json",
+      "manifest_sha256": "7470ec0b117b317dfabd59000efed300a3b1d875564702559434d62370a82e02",
+      "atlas_sha256": "2151bddadb0b25e3d3a6426d769bbfc4d4ca7f1e09893c4199a83b5a6b350860",
+      "pivot": [
+        128,
+        240
+      ],
+      "frames": [
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00000.png",
+          "sha256": "31a9ea1aa2a68f600f26539f76448fcd3be1b51490e976a34b069a876c9463b3",
+          "duration_ms": 41,
+          "region": [
+            1,
+            1,
+            256,
+            256
+          ],
+          "source_index": 28
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00001.png",
+          "sha256": "21070c51b18678ffbff0fc596bd42040622e4ba15b613a81ebea5f4b1e45adbe",
+          "duration_ms": 42,
+          "region": [
+            259,
+            1,
+            256,
+            256
+          ],
+          "source_index": 29
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00002.png",
+          "sha256": "d39699b70865921e49fc604ca3ecb0f6294481eae62cb5ca5548b283b31425e1",
+          "duration_ms": 42,
+          "region": [
+            517,
+            1,
+            256,
+            256
+          ],
+          "source_index": 30
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00003.png",
+          "sha256": "a42c4139c55b6409e29b7f334c518ea9ee5e60fac7ab52116e2779a69235fdc9",
+          "duration_ms": 41,
+          "region": [
+            775,
+            1,
+            256,
+            256
+          ],
+          "source_index": 31
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00004.png",
+          "sha256": "fa1bbcaeb0edc1046597fb42f7d819e10fcf97b7b920d23f448871bc652cf619",
+          "duration_ms": 42,
+          "region": [
+            1033,
+            1,
+            256,
+            256
+          ],
+          "source_index": 32
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00005.png",
+          "sha256": "91c27d6b5b8aa014d2f3276e4d4316a25678dfd324e1a6e0a7777736b7f5ae3d",
+          "duration_ms": 42,
+          "region": [
+            1291,
+            1,
+            256,
+            256
+          ],
+          "source_index": 33
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00006.png",
+          "sha256": "7634691c7f6a17bb947ca23317900d51173d06d2d6a8d793773285376fe06724",
+          "duration_ms": 41,
+          "region": [
+            1549,
+            1,
+            256,
+            256
+          ],
+          "source_index": 34
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00007.png",
+          "sha256": "c52dc8e972883635c489db620ab8bf5206a66ef09f2864f47273a9c735cb7ba3",
+          "duration_ms": 42,
+          "region": [
+            1807,
+            1,
+            256,
+            256
+          ],
+          "source_index": 35
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00008.png",
+          "sha256": "0d4c06f4b29030eb047d99dede89c7ec9c3507198f552309802589c284e340dd",
+          "duration_ms": 42,
+          "region": [
+            1,
+            259,
+            256,
+            256
+          ],
+          "source_index": 36
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00009.png",
+          "sha256": "8a81b10fea9188f44e7659d251d08c74f864af2fb29921cc650b8c005ab4f3e5",
+          "duration_ms": 41,
+          "region": [
+            259,
+            259,
+            256,
+            256
+          ],
+          "source_index": 37
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00010.png",
+          "sha256": "1e3a655f8eb5a5d448aeb8519ac137bed91ec98c47bdf467f56066f4939bd0a3",
+          "duration_ms": 42,
+          "region": [
+            517,
+            259,
+            256,
+            256
+          ],
+          "source_index": 38
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00011.png",
+          "sha256": "6b3606a1dda4eef856e1981d45b4734781e4d3c7622b9363ebad88648cc36d12",
+          "duration_ms": 42,
+          "region": [
+            775,
+            259,
+            256,
+            256
+          ],
+          "source_index": 39
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00012.png",
+          "sha256": "cc4531b3a7bc1e8005d1cbf97c5c09a246e85b776ad045e3e42cd29d3612c4e1",
+          "duration_ms": 41,
+          "region": [
+            1033,
+            259,
+            256,
+            256
+          ],
+          "source_index": 40
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00013.png",
+          "sha256": "34c59a345e153b9ea85bb968f928a17fa48bfaff66287df05dd0f1e2c57c166d",
+          "duration_ms": 42,
+          "region": [
+            1291,
+            259,
+            256,
+            256
+          ],
+          "source_index": 41
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00014.png",
+          "sha256": "0b0c68407f4f00401539e70f8c7a670aca658e812016bd7d6eaad0077c5da326",
+          "duration_ms": 42,
+          "region": [
+            1549,
+            259,
+            256,
+            256
+          ],
+          "source_index": 42
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00015.png",
+          "sha256": "da652830577e30a608f406202ed31dc9a04e7860186e0b1c7067f4276b839420",
+          "duration_ms": 41,
+          "region": [
+            1807,
+            259,
+            256,
+            256
+          ],
+          "source_index": 43
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00016.png",
+          "sha256": "2292cfce75f9112d6cd606a6cc2cd6aa31b983d9c7a7633f6ce8634caec70421",
+          "duration_ms": 42,
+          "region": [
+            1,
+            517,
+            256,
+            256
+          ],
+          "source_index": 44
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00017.png",
+          "sha256": "b893937fffeaecd012cdd4969cb058153b6ac626121a517a18d8675198cc7caf",
+          "duration_ms": 42,
+          "region": [
+            259,
+            517,
+            256,
+            256
+          ],
+          "source_index": 45
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00018.png",
+          "sha256": "40568852ab27dea75f877eb90dc9225eb22c78d5c2a062791aa5ceddc5958d33",
+          "duration_ms": 41,
+          "region": [
+            517,
+            517,
+            256,
+            256
+          ],
+          "source_index": 46
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00019.png",
+          "sha256": "3fd95e82758c424fe7124265d52136b3f822d3f23369c39665040f006ff02853",
+          "duration_ms": 42,
+          "region": [
+            775,
+            517,
+            256,
+            256
+          ],
+          "source_index": 47
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00020.png",
+          "sha256": "41c277f237aaaa54ba583d54b12a3d40723f591aa7efc8d2d059fdbe53c421e5",
+          "duration_ms": 42,
+          "region": [
+            1033,
+            517,
+            256,
+            256
+          ],
+          "source_index": 48
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00021.png",
+          "sha256": "3106e44961cc63ba1d56b73c3ad3ca32b15241c3b3c8eee2a24dede2293c0200",
+          "duration_ms": 41,
+          "region": [
+            1291,
+            517,
+            256,
+            256
+          ],
+          "source_index": 49
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00022.png",
+          "sha256": "9599a4bf4700ba4a3b57323cadb2782cfb348a481cb2fa97af001b3726fb380a",
+          "duration_ms": 42,
+          "region": [
+            1549,
+            517,
+            256,
+            256
+          ],
+          "source_index": 50
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00023.png",
+          "sha256": "51a1a3a94a49990536d446507d43fbfca9fcf9548b2f4f5f2ce5a6b9ede7f4a8",
+          "duration_ms": 42,
+          "region": [
+            1807,
+            517,
+            256,
+            256
+          ],
+          "source_index": 51
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00024.png",
+          "sha256": "2fa60bfe93cfb1a4d72087f5101467bf48413904901745baaf492fcca1fee5cc",
+          "duration_ms": 41,
+          "region": [
+            1,
+            775,
+            256,
+            256
+          ],
+          "source_index": 52
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00025.png",
+          "sha256": "651ca0ddbeb22fd249c52beccbd114071619347c7095c62983216a4cf4a7c6dc",
+          "duration_ms": 42,
+          "region": [
+            259,
+            775,
+            256,
+            256
+          ],
+          "source_index": 53
+        },
+        {
+          "path": "assets/characters/crescent-traveler/v1/right/frames/00026.png",
+          "sha256": "cfdacaed8f2dff717de4410af3105a30443c696c46f580594f922a0062007763",
+          "duration_ms": 42,
+          "region": [
+            517,
+            775,
+            256,
+            256
+          ],
+          "source_index": 54
+        }
+      ],
+      "idle_frame": 11
+    }
+  ]
+}

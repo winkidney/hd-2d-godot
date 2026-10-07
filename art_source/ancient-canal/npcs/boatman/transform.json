@@ -1,0 +1,23 @@
+{
+  "crop_xyxy": [
+    46,
+    13,
+    951,
+    1483
+  ],
+  "scaled_size": [
+    138,
+    224
+  ],
+  "offset_xy": [
+    49,
+    16
+  ],
+  "scale_xy": [
+    0.15248618784530388,
+    0.1523809523809524
+  ],
+  "source_foot_x": 565.0,
+  "filter": "nearest",
+  "dither": false
+}

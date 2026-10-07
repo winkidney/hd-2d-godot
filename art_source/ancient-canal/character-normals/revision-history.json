@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-10-07",
+  "imagegen_calls": 4,
+  "imagegen_revisions": 0,
+  "production_revisions": [
+    {
+      "id": "initial-forward-track",
+      "reason": "Initial semantic volumes and forward-only tracking",
+      "observed_loop_seam_mean_degrees": {
+        "down": 3.89,
+        "up": 4.63,
+        "left": 13.26,
+        "right": 14.61
+      },
+      "visual_findings": [
+        "Pink skirt embroidery sometimes classified as skin",
+        "Crossing boots could leave the tracked tube and become flat",
+        "Forward tracking accumulates seam drift on lateral views"
+      ],
+      "retained_review": [
+        "revisions/initial-review/down-normal-upscale.png",
+        "revisions/initial-review/right-normal-upscale.png"
+      ]
+    },
+    {
+      "id": "skin-and-face-occlusion",
+      "change": "Skin constrained to transported head/neck/hand forms; exposed lower-face convex mask assigns eye and mouth ink to cheek geometry"
+    },
+    {
+      "id": "cyclic-tracking",
+      "change": "Forward and backward trajectories anchored at frame 0, blended around the complete 27-frame cycle",
+      "observed_loop_seam_mean_degrees": {
+        "down": 2.13,
+        "up": 1.0,
+        "left": 2.73,
+        "right": 4.46
+      }
+    },
+    {
+      "id": "visible-boot-repair",
+      "change": "Visible material-island principal axes correct crossing boot geometry",
+      "observed_loop_seam_mean_degrees": {
+        "down": 2.104,
+        "up": 0.977,
+        "left": 1.782,
+        "right": 3.427
+      },
+      "current_assets": "assets/ancient-canal/character-normals/v1/manifest.json",
+      "validation": "validation.json"
+    }
+  ],
+  "status": "production data verified; CPU form review complete; actual GPU lighting acceptance remains separate"
+}

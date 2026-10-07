@@ -1,0 +1,64 @@
+{
+  "material": "indigo",
+  "size": [
+    256,
+    256
+  ],
+  "geometry": [
+    {
+      "type": "embroidered_diamond",
+      "points": [
+        [
+          64,
+          66
+        ],
+        [
+          99,
+          128
+        ],
+        [
+          64,
+          190
+        ],
+        [
+          29,
+          128
+        ],
+        [
+          64,
+          66
+        ]
+      ]
+    },
+    {
+      "type": "embroidered_diamond",
+      "points": [
+        [
+          192,
+          66
+        ],
+        [
+          227,
+          128
+        ],
+        [
+          192,
+          190
+        ],
+        [
+          157,
+          128
+        ],
+        [
+          192,
+          66
+        ]
+      ]
+    }
+  ],
+  "normal_basis": "OpenGL tangent: X right, Y up, Z outward",
+  "height_source": "authored construction features, never diffuse luminance",
+  "height_png": "indigo-height.png",
+  "normal_derivative_scale": 0.8,
+  "periodic_border_height": 0.625
+}

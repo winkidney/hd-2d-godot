@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-07",
+  "status": "selected_for_production",
+  "selected_concept": "A",
+  "generation": {
+    "tool": "built-in image_gen.imagegen",
+    "initial_concepts": "three independent agents launched concurrently",
+    "calls_total": 7,
+    "calls_per_concept": 2,
+    "seed": null,
+    "seed_availability": "not returned by the built-in tool"
+  },
+  "character_reference": {
+    "path": "art_source/characters/crescent-traveler/v1/reference.png",
+    "sha256": "3b8823af9320ae49d3a6e130e6bbed31e49aefd49f45c472121b8f39155974ad"
+  },
+  "runtime_character": {
+    "reuse_manifest": "../../character-reuse.json",
+    "sha256": "3290862774aa9a7924eccc8f16dbd05d029662d6029c3ac1e75dcf3e9426f9ff",
+    "color_frames": 108,
+    "frame_size": [
+      256,
+      256
+    ],
+    "animation_policy": "reuse existing color frames, ordering, durations, atlases and foot pivot; concept figures are reference only"
+  },
+  "concepts": [
+    {
+      "id": "A",
+      "title": "桥头酒肆",
+      "image": {
+        "path": "a-bridge-tavern/concept.png",
+        "sha256": "34ea5910ba8fb192a1e04ab77c6589082a6285c3d24a37aa779e43f459633b20",
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "preserved_draft": {
+        "path": "a-bridge-tavern/draft-01.png",
+        "sha256": "c8efcca953f572218c67285bd87f26a3266d523b035ba9adb3cf8860efce3db8"
+      },
+      "prompts": [
+        {
+          "path": "a-bridge-tavern/prompt.txt",
+          "sha256": "b9fe4806c659de7a829b58dd5844e42f57a4509dbfc5328c4e8c9c611b89a870"
+        },
+        {
+          "path": "a-bridge-tavern/revision-prompt.txt",
+          "sha256": "8b099c49505505ba7cc4b24a1e89d40d368cd2127c68bea1e307bde69ca06100"
+        }
+      ],
+      "receipt": "a-bridge-tavern/receipt.json",
+      "layout": "a-bridge-tavern/layout.md",
+      "crops": [
+        {
+          "path": "a-bridge-tavern/closeup.png",
+          "source": "a-bridge-tavern/concept.png",
+          "rect_xyxy": [
+            400,
+            550,
+            590,
+            830
+          ],
+          "sha256": "787d48a422ce199fedbe19c4123a76c2db66f05af6b29ed3e4b39561d4533bd5",
+          "operation": "mechanical_crop_no_resampling"
+        },
+        {
+          "path": "a-bridge-tavern/tavern-closeup.png",
+          "source": "a-bridge-tavern/concept.png",
+          "rect_xyxy": [
+            870,
+            0,
+            1672,
+            620
+          ],
+          "sha256": "73558777caee24a2242c94970b05b0719a414a1532fb6494b6d47570e735bca7",
+          "operation": "mechanical_crop_no_resampling"
+        }
+      ],
+      "planned_route": [
+        "左岸布摊",
+        "拱桥",
+        "右岸饮食摊与酒肆",
+        "右岸码头"
+      ],
+      "required_blockout_adjustments": [
+        "落实酒肆平台至码头的下行台阶",
+        "验证桥头净宽与坡度"
+      ]
+    },
+    {
+      "id": "B",
+      "title": "沿河长街",
+      "image": {
+        "path": "b-canal-street/concept.png",
+        "sha256": "4fc6ba36f5d8bda616f18d77e874d9a8488c4447b176499d48df2a952195119c",
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "preserved_draft": {
+        "path": "b-canal-street/concept-initial.png",
+        "sha256": "991c3dcb34c8d1943d54c13f866eb74c37accb627d9ebfac683dc7ae240a63c6"
+      },
+      "prompts": [
+        {
+          "path": "b-canal-street/prompt-initial.txt",
+          "sha256": "fcd026f22d56b56493cf90f808f54ff6f9eb8ebd8297125d8e98f9e7cdde379c"
+        },
+        {
+          "path": "b-canal-street/prompt.txt",
+          "sha256": "c1362d02612ae63815f6ca3434cbbd89937be54f5ea50dceb8bfaec3eb20b0b0"
+        }
+      ],
+      "receipt": "b-canal-street/receipt.json",
+      "layout": "b-canal-street/layout.md",
+      "crops": [
+        {
+          "path": "b-canal-street/closeup.png",
+          "source": "b-canal-street/concept.png",
+          "rect_xyxy": [
+            435,
+            535,
+            575,
+            800
+          ],
+          "sha256": "9f8b96084807972eb5d56eea8c0204da8545b64b47396f44820a60d698f95faa",
+          "operation": "mechanical_crop_no_resampling"
+        },
+        {
+          "path": "b-canal-street/architecture-closeup.png",
+          "source": "b-canal-street/concept.png",
+          "rect_xyxy": [
+            95,
+            0,
+            955,
+            750
+          ],
+          "sha256": "aeff0b1d6f67fefb132147c5f3370aa796655773896652c044010fd8f208d828",
+          "operation": "mechanical_crop_no_resampling"
+        }
+      ],
+      "planned_route": [
+        "近岸酒肆与摊位",
+        "中景拱桥",
+        "对岸道路",
+        "返回近岸码头支路"
+      ],
+      "required_blockout_adjustments": [
+        "明确被树木栏杆遮住的两端桥头入口",
+        "验证沿街净宽"
+      ]
+    },
+    {
+      "id": "C",
+      "title": "两岸市集",
+      "image": {
+        "path": "c-two-bank-market/concept.png",
+        "sha256": "2e9acd0c8cb75894f5466c1b4c130a91dd94534a939f094c8c1c107894a4c85a",
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "preserved_draft": {
+        "path": "c-two-bank-market/concept-v1.png",
+        "sha256": "ac566ef83a0d5372759adcf43dab11a7b7817b9ba685544bac1b30a0da5d60db"
+      },
+      "prompts": [
+        {
+          "path": "c-two-bank-market/prompt.txt",
+          "sha256": "62650b9ff264898f7f96b1c870da59d4eb873997a09a9e6a101e8e43b20ad093"
+        },
+        {
+          "path": "c-two-bank-market/revision-prompt.txt",
+          "sha256": "05d375185c3379330999a07221cb6fd1d8364068f9fa164971e89366c09c0b19"
+        }
+      ],
+      "receipt": "c-two-bank-market/receipt.json",
+      "layout": "c-two-bank-market/layout.md",
+      "crops": [
+        {
+          "path": "c-two-bank-market/closeup.png",
+          "source": "c-two-bank-market/concept.png",
+          "rect_xyxy": [
+            290,
+            340,
+            1050,
+            940
+          ],
+          "sha256": "416c3539e58431da5a8dcc64fb12936a83ee1d98a795ae9399ec73dc8a540f5e",
+          "operation": "mechanical_crop_no_resampling"
+        }
+      ],
+      "planned_route": [
+        "近岸市集",
+        "左桥头",
+        "拱桥",
+        "对岸酒肆",
+        "近岸停船支路"
+      ],
+      "required_blockout_adjustments": [
+        "将摊位分配到两岸",
+        "将陡石阶落实为连续可走桥面"
+      ]
+    }
+  ],
+  "scope_note": "Initial three concept comparison and selected A production adaptation; runtime acceptance is separately recorded in build/ancient-canal.",
+  "selection_authorization": "User explicitly selected A and authorized implementation through acceptance, adapting the concept to actual HD2D constraints.",
+  "production_adaptation": {
+    "image": "a-runtime-adaptation/concept.png",
+    "receipt": "a-runtime-adaptation/receipt.json",
+    "layout_reference": "a-runtime-adaptation/actual-layout-reference.png"
+  }
+}

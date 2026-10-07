@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "concept_id": "B",
+  "title": "沿河长街",
+  "status": "superseded_by_framing_revision",
+  "recorded_at_utc": "2026-10-06T16:52:30.807407+00:00",
+  "generator": {
+    "tool": "image_gen__imagegen",
+    "mode": "built-in",
+    "seed": null,
+    "original_filename": "exec-e8fb855f-e974-44a0-b660-079cb1dc89b0.png",
+    "transparent_background": false,
+    "revision_count": 0
+  },
+  "prompt": {
+    "path": "prompt-initial.txt",
+    "sha256": "fcd026f22d56b56493cf90f808f54ff6f9eb8ebd8297125d8e98f9e7cdde379c"
+  },
+  "reference": {
+    "role": "protagonist identity and costume reference; not a runtime replacement",
+    "path": "art_source/characters/crescent-traveler/v1/reference.png",
+    "sha256": "3b8823af9320ae49d3a6e130e6bbed31e49aefd49f45c472121b8f39155974ad"
+  },
+  "original": {
+    "path": "concept-initial.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "991c3dcb34c8d1943d54c13f866eb74c37accb627d9ebfac683dc7ae240a63c6",
+    "byte_identical_to_tool_output": true
+  },
+  "closeup": {
+    "path": "closeup-initial.png",
+    "source": "concept-initial.png",
+    "rectangle_xyxy": [
+      330,
+      370,
+      590,
+      850
+    ],
+    "width": 260,
+    "height": 480,
+    "resampling": null,
+    "description": "机械裁切前景角色服饰，未经插值或美术修改",
+    "sha256": "9822e9a412efe910a341de345b17cfa328907dc7d3783b4a6631c6d0dfdf7b5f"
+  },
+  "runtime_character_policy": "复用 assets/characters/crescent-traveler/v1 既有108帧；概念人物仅用于构图与比例参考，不提取、不重生成动画。",
+  "visual_observations": {
+    "covered": [
+      "街景透视",
+      "两岸道路",
+      "中景石拱桥",
+      "两层木构酒肆",
+      "青瓦白墙住宅",
+      "两种沿街摊位",
+      "近侧码头台阶与木船",
+      "灯笼",
+      "酒坛",
+      "布帘",
+      "掌柜",
+      "摊主",
+      "船工"
+    ],
+    "limitations": [
+      "前景角色高约433像素，占画面高度约46%；比提示要求的18–22%大",
+      "左侧近景酒肆顶部屋檐延伸至画外",
+      "远岸到近侧码头的完整回路须在灰盒中进一步验证",
+      "桥上出现额外背景行人，运行资产仍仅需三名驻点NPC"
+    ]
+  }
+}

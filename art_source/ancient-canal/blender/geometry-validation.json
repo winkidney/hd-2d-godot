@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "validation": "GLB bytes, independent accessor decoding, UV, orthogonal normalized tangent bases, embedded pixels",
+  "models": [
+    {
+      "model": "tavern",
+      "sha256": "b7d9f169c584c1bf306ac8ce3bcb5a5f6497397e5d5921deb9be926f563b212f",
+      "primitives": 8,
+      "embedded_images": 10,
+      "max_tangent_normal_dot": 9.091888811785243e-05,
+      "max_vector_length_error": 5.9873399953946915e-05,
+      "all_attributes_finite": true,
+      "nearest_repeat_samplers": true
+    },
+    {
+      "model": "house",
+      "sha256": "8e4d3fe1a245967ffdbbab74c6e5e18265fc5c3ebc864868db90e3a967ed31c3",
+      "primitives": 7,
+      "embedded_images": 8,
+      "max_tangent_normal_dot": 8.403040304827414e-05,
+      "max_vector_length_error": 5.90587390878472e-05,
+      "all_attributes_finite": true,
+      "nearest_repeat_samplers": true
+    },
+    {
+      "model": "bridge",
+      "sha256": "95fb897a02e00732481486bdef159f88b839fb2650cbf88f696681695fcf30db",
+      "primitives": 1,
+      "embedded_images": 2,
+      "max_tangent_normal_dot": 2.393660025745703e-08,
+      "max_vector_length_error": 4.795678072433418e-05,
+      "all_attributes_finite": true,
+      "nearest_repeat_samplers": true
+    },
+    {
+      "model": "cloth_stall",
+      "sha256": "079bf518a658284ece38f22f915323c0238f90db06436a60c52a72c819cbe828",
+      "primitives": 3,
+      "embedded_images": 6,
+      "max_tangent_normal_dot": 0.0,
+      "max_vector_length_error": 8.057202349753823e-08,
+      "all_attributes_finite": true,
+      "nearest_repeat_samplers": true
+    },
+    {
+      "model": "food_stall",
+      "sha256": "db2f2dc4570820abd60c35cd076aa6b9e9f9c465c4c9f3e79d97e0f6a59cd6b3",
+      "primitives": 4,
+      "embedded_images": 4,
+      "max_tangent_normal_dot": 2.99890661175084e-05,
+      "max_vector_length_error": 4.1792031156839826e-05,
+      "all_attributes_finite": true,
+      "nearest_repeat_samplers": true
+    },
+    {
+      "model": "bank_wall",
+      "sha256": "959c0f581d5237b961c7d8a27d700dbe2c12c99ca04cde630873d85e8129223b",
+      "primitives": 1,
+      "embedded_images": 2,
+      "max_tangent_normal_dot": 0.0,
+      "max_vector_length_error": 0.0,
+      "all_attributes_finite": true,
+      "nearest_repeat_samplers": true
+    },
+    {
+      "model": "dock",
+      "sha256": "156b46739ff760a99c1737775c3ce9df82bfd824c569d619d4b7cabd27ff57a1",
+      "primitives": 2,
+      "embedded_images": 4,
+      "max_tangent_normal_dot": 7.646868027677556e-09,
+      "max_vector_length_error": 3.6092054189307277e-05,
+      "all_attributes_finite": true,
+      "nearest_repeat_samplers": true
+    },
+    {
+      "model": "boat",
+      "sha256": "07675bb62ea173ba1b5d25732fe638eabd720167f667cb1f9c0b7abe115fe4c3",
+      "primitives": 1,
+      "embedded_images": 2,
+      "max_tangent_normal_dot": 5.397191992173589e-05,
+      "max_vector_length_error": 4.0573489701101195e-05,
+      "all_attributes_finite": true,
+      "nearest_repeat_samplers": true
+    },
+    {
+      "model": "lantern",
+      "sha256": "c049e74f4a623b85d9d8abc030f807e3b3ecf67a6f2c84451c318487175eb46f",
+      "primitives": 3,
+      "embedded_images": 2,
+      "max_tangent_normal_dot": 6.875563229868931e-09,
+      "max_vector_length_error": 2.5255816893166028e-05,
+      "all_attributes_finite": true,
+      "nearest_repeat_samplers": true
+    },
+    {
+      "model": "wine_jar",
+      "sha256": "33b7ede546964f6bc81fb199a337519cd04ca757e3be17093cd84bdc2fc76d5c",
+      "primitives": 2,
+      "embedded_images": 2,
+      "max_tangent_normal_dot": 8.302084711431235e-05,
+      "max_vector_length_error": 4.1932180671055974e-05,
+      "all_attributes_finite": true,
+      "nearest_repeat_samplers": true
+    },
+    {
+      "model": "cloth_banner",
+      "sha256": "23ac56fa1248221e9a94d4f48c34e5743c9a79776cea08cf2e6a52a7c876335c",
+      "primitives": 2,
+      "embedded_images": 4,
+      "max_tangent_normal_dot": 6.875563229868931e-09,
+      "max_vector_length_error": 2.5255816893166028e-05,
+      "all_attributes_finite": true,
+      "nearest_repeat_samplers": true
+    },
+    {
+      "model": "willow",
+      "sha256": "bf40a19ac7da9176661bb69880f0e6d24a1808da4529e46d399644a46dfd01ea",
+      "primitives": 2,
+      "embedded_images": 4,
+      "max_tangent_normal_dot": 0.00013301453526004536,
+      "max_vector_length_error": 7.560320474009341e-05,
+      "all_attributes_finite": true,
+      "nearest_repeat_samplers": true
+    },
+    {
+      "model": "streetlamp",
+      "sha256": "bc7ca184f41b0f04d7380ae34feae110aaf10ff4e1f4385b9fc4dcfb8f3819e6",
+      "primitives": 6,
+      "embedded_images": 8,
+      "max_tangent_normal_dot": 6.875563229868931e-09,
+      "max_vector_length_error": 5.3577600392928915e-05,
+      "all_attributes_finite": true,
+      "nearest_repeat_samplers": true
+    }
+  ],
+  "pass": true
+}

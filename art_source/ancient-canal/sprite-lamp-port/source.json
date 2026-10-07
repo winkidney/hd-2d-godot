@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "upstream": "https://github.com/winkidney/sprite-lamp-godot",
+  "commit": "7b9e65958533c9f5d8146e77d1cf14d1f3b74706",
+  "authorization": "User requested applying their sprite-lamp-godot technique to this character and scene.",
+  "license_status": "No LICENSE or NOTICE file is present at this local upstream commit. These snapshots record the user-requested technique and its source; no third-party license has been invented.",
+  "source_files": [
+    {
+      "path": "surface.gdshaderinc",
+      "upstream_path": "shaders/surface.gdshaderinc",
+      "sha256": "f50c9e930219c29c5987877e3d3d62c0da1cbeb63fc52e7308076015abfb9cf3"
+    },
+    {
+      "path": "native.gdshader",
+      "upstream_path": "shaders/native.gdshader",
+      "sha256": "efc5a78baa34447a41beb789e566fd869cd54e788236e49393e6208dbdad3ab1"
+    },
+    {
+      "path": "toon.gdshader",
+      "upstream_path": "shaders/toon.gdshader",
+      "sha256": "7a0e06dfd2741abee6e3d343f205dcd159909135ceae5cec6556d6e0a84e1592"
+    }
+  ],
+  "adapted_files": [
+    "shaders/ancient_canal/sprite_surface.gdshaderinc",
+    "shaders/ancient_canal/sprite_native.gdshader",
+    "shaders/ancient_canal/sprite_stepped.gdshader"
+  ],
+  "adaptation": "Reimplemented the 2D normal strength, Y calibration, clay and stepped diffuse controls in spatial tangent basis; retain Godot light attenuation, accumulating contributions and geometry shadows.",
+  "reference": "https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/spatial_shader.html"
+}

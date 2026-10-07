@@ -1,0 +1,59 @@
+{
+  "id": "innkeeper",
+  "source": {
+    "path": "art_source/ancient-canal/npcs/innkeeper/mother.png",
+    "sha256": "e0c6616db37a779695e96d1b266529a5a57f4742ca3e6087ce8de7169fcd6570"
+  },
+  "structure": {
+    "path": "art_source/ancient-canal/npcs/innkeeper/structure.json",
+    "sha256": "ecdbf7a314781db51d0cafdc060195b0ba5f2f7665ef13edf64d8d3c600e17d7"
+  },
+  "outputs": [
+    {
+      "path": "assets/ancient-canal/npcs/innkeeper.png",
+      "sha256": "a032b53958c6505366ae213fb0aea03d4bcbbc05e8a14c85f36ae396efd93598",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "path": "assets/ancient-canal/npcs/innkeeper-normal.png",
+      "sha256": "1271ff645068a98dde6fe032d52af828205a36e8c517ed376b28948908a60367",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "path": "assets/ancient-canal/npcs/innkeeper-mask.png",
+      "sha256": "e1169abb94c635ff347893069fb884bb5361b7c320bf687419a348b1d8203aa8",
+      "size": [
+        256,
+        256
+      ]
+    }
+  ],
+  "checks": {
+    "color_palette_count": 92,
+    "color_alpha_equals_normal": true,
+    "color_alpha_equals_mask": true,
+    "normal_vector_max_length_error": 0.0052916508878742,
+    "silhouette_bbox": [
+      75,
+      16,
+      164,
+      240
+    ],
+    "foot_anchor": [
+      128,
+      240
+    ]
+  },
+  "mask_channels": {
+    "r": "silver specular region",
+    "g": "roughness",
+    "b": "metallicity",
+    "a": "exact color alpha"
+  }
+}

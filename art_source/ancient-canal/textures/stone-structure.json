@@ -1,0 +1,274 @@
+{
+  "material": "stone",
+  "size": [
+    256,
+    256
+  ],
+  "geometry": [
+    {
+      "type": "mortar",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          52
+        ]
+      ]
+    },
+    {
+      "type": "mortar",
+      "points": [
+        [
+          64,
+          0
+        ],
+        [
+          64,
+          52
+        ]
+      ]
+    },
+    {
+      "type": "mortar",
+      "points": [
+        [
+          128,
+          0
+        ],
+        [
+          128,
+          52
+        ]
+      ]
+    },
+    {
+      "type": "mortar",
+      "points": [
+        [
+          192,
+          0
+        ],
+        [
+          192,
+          52
+        ]
+      ]
+    },
+    {
+      "type": "mortar",
+      "points": [
+        [
+          32,
+          52
+        ],
+        [
+          32,
+          104
+        ]
+      ]
+    },
+    {
+      "type": "mortar",
+      "points": [
+        [
+          96,
+          52
+        ],
+        [
+          96,
+          104
+        ]
+      ]
+    },
+    {
+      "type": "mortar",
+      "points": [
+        [
+          160,
+          52
+        ],
+        [
+          160,
+          104
+        ]
+      ]
+    },
+    {
+      "type": "mortar",
+      "points": [
+        [
+          224,
+          52
+        ],
+        [
+          224,
+          104
+        ]
+      ]
+    },
+    {
+      "type": "mortar",
+      "points": [
+        [
+          0,
+          104
+        ],
+        [
+          0,
+          152
+        ]
+      ]
+    },
+    {
+      "type": "mortar",
+      "points": [
+        [
+          64,
+          104
+        ],
+        [
+          64,
+          152
+        ]
+      ]
+    },
+    {
+      "type": "mortar",
+      "points": [
+        [
+          128,
+          104
+        ],
+        [
+          128,
+          152
+        ]
+      ]
+    },
+    {
+      "type": "mortar",
+      "points": [
+        [
+          192,
+          104
+        ],
+        [
+          192,
+          152
+        ]
+      ]
+    },
+    {
+      "type": "mortar",
+      "points": [
+        [
+          32,
+          152
+        ],
+        [
+          32,
+          204
+        ]
+      ]
+    },
+    {
+      "type": "mortar",
+      "points": [
+        [
+          96,
+          152
+        ],
+        [
+          96,
+          204
+        ]
+      ]
+    },
+    {
+      "type": "mortar",
+      "points": [
+        [
+          160,
+          152
+        ],
+        [
+          160,
+          204
+        ]
+      ]
+    },
+    {
+      "type": "mortar",
+      "points": [
+        [
+          224,
+          152
+        ],
+        [
+          224,
+          204
+        ]
+      ]
+    },
+    {
+      "type": "mortar",
+      "points": [
+        [
+          0,
+          204
+        ],
+        [
+          0,
+          255
+        ]
+      ]
+    },
+    {
+      "type": "mortar",
+      "points": [
+        [
+          64,
+          204
+        ],
+        [
+          64,
+          255
+        ]
+      ]
+    },
+    {
+      "type": "mortar",
+      "points": [
+        [
+          128,
+          204
+        ],
+        [
+          128,
+          255
+        ]
+      ]
+    },
+    {
+      "type": "mortar",
+      "points": [
+        [
+          192,
+          204
+        ],
+        [
+          192,
+          255
+        ]
+      ]
+    }
+  ],
+  "normal_basis": "OpenGL tangent: X right, Y up, Z outward",
+  "height_source": "authored construction features, never diffuse luminance",
+  "height_png": "stone-height.png",
+  "normal_derivative_scale": 0.8,
+  "periodic_border_height": 0.625
+}

@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "generator": "tools/ancient_canal/build_models.py --textures",
+  "imagegen": {
+    "tool": "builtin image_gen",
+    "seed": null,
+    "reference": "art_source/ancient-canal/concepts/2026-10-07/a-bridge-tavern/concept.png",
+    "prompt": "prompt.txt",
+    "original": "mother-sheet.png",
+    "sha256": "3ec384b140fd3bd9089fea5ada9600c7b21ba84bbb5083c78801fa3241288eb6",
+    "detail_reference": "tavern-detail-reference.png",
+    "detail_prompt": "detail-prompt.txt",
+    "detail_sha256": "5716139cd1dd34b46b272d66e2180f142dc0027faee02c42e163b73f34ca9bf3",
+    "calls": 2
+  },
+  "process": "nearest resample, mirrored quadrant seamless assembly, authored geometric relief, wrapped central derivatives",
+  "color_policy": "retain mother-sheet pixel clusters; no directional cast shadow generated or added",
+  "normal_policy": "linear tangent vectors, no color palette reduction",
+  "materials": [
+    {
+      "material": "roof",
+      "mother_rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "quadrant_rect_after_resize": [
+        32,
+        32,
+        160,
+        160
+      ],
+      "color_sha256": "c424f36193151ca146d21f2f3126c13e98719b81ef0f92a35a47e98503c3c9b8",
+      "normal_sha256": "500df43be0088f80953936e0b82ec5482aa2014dcd33a08e392bd2375a1360fd",
+      "structure": "roof-structure.json",
+      "height": "roof-height.png",
+      "size": [
+        256,
+        256
+      ],
+      "repeat_edges_equal": true,
+      "normal_max_length_error": 0.002779681475911344
+    },
+    {
+      "material": "wood",
+      "mother_rect": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "quadrant_rect_after_resize": [
+        32,
+        32,
+        160,
+        160
+      ],
+      "color_sha256": "b1f1fda43c77545590bdb053bb1f55106984ed43e3475f07a479721f1d99c7ee",
+      "normal_sha256": "61c4198e0fd89d71f21688d6975186fab61e0ad74abb60c52393e0a66e0c97f8",
+      "structure": "wood-structure.json",
+      "height": "wood-height.png",
+      "size": [
+        256,
+        256
+      ],
+      "repeat_edges_equal": true,
+      "normal_max_length_error": 0.004067085042079421
+    },
+    {
+      "material": "stone",
+      "mother_rect": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "quadrant_rect_after_resize": [
+        32,
+        32,
+        160,
+        160
+      ],
+      "color_sha256": "60fdb0c27c69854540a83d23f40496e64de38d4fb7a73aa4f682eb96c87f0bc3",
+      "normal_sha256": "7fbe5eb38b9c23c0c0cec95c5bfb52375bc9337a7d0d3210cfecd3c37f4fce54",
+      "structure": "stone-structure.json",
+      "height": "stone-height.png",
+      "size": [
+        256,
+        256
+      ],
+      "repeat_edges_equal": true,
+      "normal_max_length_error": 0.0029023625403059583
+    },
+    {
+      "material": "plaster",
+      "mother_rect": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "quadrant_rect_after_resize": [
+        32,
+        32,
+        160,
+        160
+      ],
+      "color_sha256": "f6b01e08068dd283214467ef1852f35c82d5b68e3b3ec0b9cf14053779bab8ec",
+      "normal_sha256": "107f96e4c374c2ba90472835274aa243d004bb8354b7bc26bb47df60a1a9f5f8",
+      "structure": "plaster-structure.json",
+      "height": "plaster-height.png",
+      "size": [
+        256,
+        256
+      ],
+      "repeat_edges_equal": true,
+      "normal_max_length_error": 0.0003843936332625919
+    },
+    {
+      "material": "indigo",
+      "mother_rect": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "quadrant_rect_after_resize": [
+        32,
+        32,
+        160,
+        160
+      ],
+      "color_sha256": "50a9b0c07a8222d6f226d37cafc67ef8ffc219e3eca152d7214684dc3a21fdd8",
+      "normal_sha256": "f61c43129661f48ea9a523e96bc591333c240bfbf50dc0e0ad3d7a66c21c26be",
+      "structure": "indigo-structure.json",
+      "height": "indigo-height.png",
+      "size": [
+        256,
+        256
+      ],
+      "repeat_edges_equal": true,
+      "normal_max_length_error": 0.0026332247216845905
+    },
+    {
+      "material": "red",
+      "mother_rect": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "quadrant_rect_after_resize": [
+        32,
+        32,
+        160,
+        160
+      ],
+      "color_sha256": "9f4d345a9d29bc1cb461fad081d2a54b38d317ff347d1bbc1c74cbf0d95a0b60",
+      "normal_sha256": "f61c43129661f48ea9a523e96bc591333c240bfbf50dc0e0ad3d7a66c21c26be",
+      "structure": "red-structure.json",
+      "height": "red-height.png",
+      "size": [
+        256,
+        256
+      ],
+      "repeat_edges_equal": true,
+      "normal_max_length_error": 0.0026332247216845905
+    },
+    {
+      "material": "leaf",
+      "color_source": "stone.png pixel clusters recolored by RGB [.43,.67,.38]",
+      "color_sha256": "549fdd4a7bf5525fbb1ac3b68b7d6fd7e169588f59e3c95a0a68627e888327bd",
+      "normal_sha256": "ff896d91ae3f94668a0a05e525c324792064b54341534b5d15b01a4bed8c57d1",
+      "size": [
+        256,
+        256
+      ],
+      "repeat_edges_equal": true,
+      "structure": "leaf-structure.json",
+      "height": "leaf-height.png"
+    }
+  ]
+}

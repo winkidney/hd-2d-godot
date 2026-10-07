@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "concept_id": "C",
+  "title": "两岸市集",
+  "tool": "image_gen__imagegen",
+  "mode": "built-in",
+  "seed": null,
+  "model": null,
+  "recorded_at_utc": "2026-10-06T16:55:27.103402+00:00",
+  "reference": {
+    "path": "art_source/characters/crescent-traveler/v1/reference.png",
+    "width": 1038,
+    "height": 1515,
+    "mode": "RGBA",
+    "sha256": "3b8823af9320ae49d3a6e130e6bbed31e49aefd49f45c472121b8f39155974ad"
+  },
+  "calls": [
+    {
+      "index": 1,
+      "intent": "generate with existing heroine identity reference",
+      "prompt_path": "art_source/ancient-canal/concepts/2026-10-07/c-two-bank-market/prompt.txt",
+      "prompt_sha256": "62650b9ff264898f7f96b1c870da59d4eb873997a09a9e6a101e8e43b20ad093",
+      "referenced_image_paths": [
+        "art_source/characters/crescent-traveler/v1/reference.png"
+      ],
+      "transparent_background": false,
+      "builtin_artifact_name": "exec-c247010d-3c27-4223-a416-a40ec35b01e2.png",
+      "output": {
+        "path": "art_source/ancient-canal/concepts/2026-10-07/c-two-bank-market/concept-v1.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "sha256": "ac566ef83a0d5372759adcf43dab11a7b7817b9ba685544bac1b30a0da5d60db"
+      },
+      "assessment": "首稿人物约44%画高，保留作为历史来源。"
+    },
+    {
+      "index": 2,
+      "intent": "one directed revision to reduce heroine scene scale",
+      "prompt_path": "art_source/ancient-canal/concepts/2026-10-07/c-two-bank-market/revision-prompt.txt",
+      "prompt_sha256": "05d375185c3379330999a07221cb6fd1d8364068f9fa164971e89366c09c0b19",
+      "referenced_image_paths": [
+        "art_source/ancient-canal/concepts/2026-10-07/c-two-bank-market/concept-v1.png",
+        "art_source/characters/crescent-traveler/v1/reference.png"
+      ],
+      "transparent_background": false,
+      "builtin_artifact_name": "exec-ec04d812-faa1-4dcc-b900-e880974a0191.png",
+      "output": {
+        "path": "art_source/ancient-canal/concepts/2026-10-07/c-two-bank-market/concept.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "sha256": "2e9acd0c8cb75894f5466c1b4c130a91dd94534a939f094c8c1c107894a4c85a"
+      },
+      "assessment": "修订稿主角约27%画高，建筑、桥、运河和NPC布局保留。"
+    }
+  ],
+  "selected_for_comparison": "art_source/ancient-canal/concepts/2026-10-07/c-two-bank-market/concept.png",
+  "crop": {
+    "source": "art_source/ancient-canal/concepts/2026-10-07/c-two-bank-market/concept.png",
+    "source_sha256": "2e9acd0c8cb75894f5466c1b4c130a91dd94534a939f094c8c1c107894a4c85a",
+    "rect_xyxy": [
+      290,
+      340,
+      1050,
+      940
+    ],
+    "operation": "integer pixel crop, no resize or interpolation",
+    "output": {
+      "path": "art_source/ancient-canal/concepts/2026-10-07/c-two-bank-market/closeup.png",
+      "width": 760,
+      "height": 600,
+      "mode": "RGB",
+      "sha256": "416c3539e58431da5a8dcc64fb12936a83ee1d98a795ae9399ec73dc8a540f5e"
+    }
+  },
+  "animation_policy": "概念角色仅用于画面比例和风格说明。运行默认动画直接复用assets/characters/crescent-traveler/v1现有108帧，不提取概念人物也不重生成动画。",
+  "limitations": [
+    "概念不是可走性验证；桥面阶梯较陡，灰盒须转成可走坡面并验证脚底定位。",
+    "两个明显摊位实际都在近岸，选C后需在对岸补足摊位分布且保持通道。",
+    "修订后主角仍约27%画高，略超20-25%修订目标；最终镜距依既有256像素帧实测。",
+    "酒肆还有背景客人，只把门前掌柜、近岸摊主和码头船工作为本轮三名驻点NPC。"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "boatman",
+  "source": {
+    "path": "art_source/ancient-canal/npcs/boatman/mother.png",
+    "sha256": "5c4d0eb5c1b7c6417f70961db63849162f89c561be3aa33dc04ff84475477836"
+  },
+  "structure": {
+    "path": "art_source/ancient-canal/npcs/boatman/structure.json",
+    "sha256": "5ed83367038b293bdcc64f3cd51cc17dd8b4173498f068d0df6e7915a079103c"
+  },
+  "outputs": [
+    {
+      "path": "assets/ancient-canal/npcs/boatman.png",
+      "sha256": "56c3b05961083099512f553902c92ed690185460178075c4dbe6784b4dac2d6d",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "path": "assets/ancient-canal/npcs/boatman-normal.png",
+      "sha256": "8348b3052f3e8a081699e071030680c02b1d9499625669f1f1e12e7225171e77",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "path": "assets/ancient-canal/npcs/boatman-mask.png",
+      "sha256": "c38990cb5a0b0503753b6e910926ee32aed335792279f14cb91e5842a305339a",
+      "size": [
+        256,
+        256
+      ]
+    }
+  ],
+  "checks": {
+    "color_palette_count": 96,
+    "color_alpha_equals_normal": true,
+    "color_alpha_equals_mask": true,
+    "normal_vector_max_length_error": 0.005907491519452579,
+    "silhouette_bbox": [
+      54,
+      16,
+      166,
+      240
+    ],
+    "foot_anchor": [
+      128,
+      240
+    ]
+  },
+  "mask_channels": {
+    "r": "silver specular region",
+    "g": "roughness",
+    "b": "metallicity",
+    "a": "exact color alpha"
+  }
+}

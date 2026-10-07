@@ -1,0 +1,7 @@
+Use case: stylized-concept
+Asset type: production pixel texture mother sheet for a Jiangnan HD2D 3D game.
+Input image: reference only for palette, crisp pixel detail density, period materials. Do not reproduce scene or people.
+Primary request: a clean orthographic flat material sheet with exactly six equal seamless square panels arranged 3 columns by 2 rows, edge-to-edge with no gaps, labels, frames, text, perspective, objects or cast shadows.
+Panel order left to right top row: dark blue-grey Chinese clay roof tiles with fine parallel half-cylinder tile channels; warm dark brown aged timber planks with restrained fine grain and iron nail marks; pale cool grey irregular stone blocks with narrow mortar seams and subtle weathering.
+Bottom row: warm ivory white plaster with sparse restrained age flecks; indigo woven cloth with a delicate pale silver diamond embroidery repeating border; deep vermilion woven cloth with a restrained geometric embroidered motif.
+Style: deliberate sharp pixel art, limited material-specific color groups, visible tiny pixel clusters, readable relief cues but completely even neutral diffuse illumination. Each panel seamless horizontally and vertically, continuous repeated material, no baked directional or ambient shadows, no highlights or light gradients. Pixel detailing suitable for reduction to 256x256 per material with nearest-neighbor sampling. Cloth motifs match reference character and tavern but no characters or building silhouettes. Artwork fills all image pixels.

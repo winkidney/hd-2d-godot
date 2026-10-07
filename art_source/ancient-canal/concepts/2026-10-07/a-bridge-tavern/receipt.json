@@ -1,0 +1,96 @@
+{
+  "concept": "A 桥头酒肆",
+  "date": "2026-10-07",
+  "tool": "built-in image_gen.imagegen",
+  "seed": null,
+  "reference": {
+    "path": "art_source/characters/crescent-traveler/v1/reference.png",
+    "sha256": "3b8823af9320ae49d3a6e130e6bbed31e49aefd49f45c472121b8f39155974ad",
+    "width": 1038,
+    "height": 1515,
+    "mode": "RGBA"
+  },
+  "calls": [
+    {
+      "id": 1,
+      "type": "generate_using_character_reference",
+      "source_filename": "exec-45cc6329-208c-49ab-88ab-c513f91b589a.png",
+      "prompt": "prompt.txt",
+      "result": {
+        "path": "art_source/ancient-canal/concepts/2026-10-07/a-bridge-tavern/draft-01.png",
+        "sha256": "c8efcca953f572218c67285bd87f26a3266d523b035ba9adb3cf8860efce3db8",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB"
+      },
+      "seed": null,
+      "status": "preserved_draft",
+      "observed_issues": [
+        "Heroine approximately 40 percent of image height",
+        "Main tavern roof partly outside frame",
+        "Second freestanding stall unclear",
+        "Extra balcony figure"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "targeted_edit",
+      "source_filename": "exec-fc71162f-fe2b-4136-ba0a-58001d67a122.png",
+      "prompt": "revision-prompt.txt",
+      "references": [
+        "draft-01.png",
+        "art_source/characters/crescent-traveler/v1/reference.png"
+      ],
+      "result": {
+        "path": "art_source/ancient-canal/concepts/2026-10-07/a-bridge-tavern/concept.png",
+        "sha256": "34ea5910ba8fb192a1e04ab77c6589082a6285c3d24a37aa779e43f459633b20",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB"
+      },
+      "seed": null,
+      "status": "selection_candidate",
+      "observed_issues": [
+        "Heroine approximately 24 percent of image height rather than requested 18-22 percent",
+        "Dock to right-bank stair connection suggested, to be fixed in walkable blockout"
+      ]
+    }
+  ],
+  "crops": [
+    {
+      "image": {
+        "path": "art_source/ancient-canal/concepts/2026-10-07/a-bridge-tavern/closeup.png",
+        "sha256": "787d48a422ce199fedbe19c4123a76c2db66f05af6b29ed3e4b39561d4533bd5",
+        "width": 190,
+        "height": 280,
+        "mode": "RGB"
+      },
+      "source": "concept.png",
+      "rect_xyxy": [
+        400,
+        550,
+        590,
+        830
+      ],
+      "operation": "mechanical_crop_no_resampling"
+    },
+    {
+      "image": {
+        "path": "art_source/ancient-canal/concepts/2026-10-07/a-bridge-tavern/tavern-closeup.png",
+        "sha256": "73558777caee24a2242c94970b05b0719a414a1532fb6494b6d47570e735bca7",
+        "width": 802,
+        "height": 620,
+        "mode": "RGB"
+      },
+      "source": "concept.png",
+      "rect_xyxy": [
+        870,
+        0,
+        1672,
+        620
+      ],
+      "operation": "mechanical_crop_no_resampling"
+    }
+  ],
+  "runtime_character_policy": "Reuse existing assets/characters/crescent-traveler/v1 108 color frames and animation timings; concept heroine is only composition and scale reference."
+}

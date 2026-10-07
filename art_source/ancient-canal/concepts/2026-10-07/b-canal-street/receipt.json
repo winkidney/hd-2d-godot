@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "concept_id": "B",
+  "title": "沿河长街",
+  "status": "awaiting_user_selection",
+  "recorded_at_utc": "2026-10-06T16:54:38.022259+00:00",
+  "generator": {
+    "tool": "image_gen__imagegen",
+    "mode": "built-in",
+    "intent": "edit",
+    "seed": null,
+    "original_filename": "exec-47374437-00c4-43be-b8bd-e97e0d81e8fe.png",
+    "transparent_background": false,
+    "revision_count": 1,
+    "revision_budget_exhausted": true
+  },
+  "revision_reason": "首稿角色过大且左侧酒肆屋顶出框；唯一针对性修订拉远镜头、完整显示屋顶并缩小角色。",
+  "prompt": {
+    "path": "prompt.txt",
+    "sha256": "c1362d02612ae63815f6ca3434cbbd89937be54f5ea50dceb8bfaec3eb20b0b0"
+  },
+  "edit_reference": {
+    "path": "concept-initial.png",
+    "sha256": "991c3dcb34c8d1943d54c13f866eb74c37accb627d9ebfac683dc7ae240a63c6"
+  },
+  "original_character_reference": {
+    "path": "art_source/characters/crescent-traveler/v1/reference.png",
+    "sha256": "3b8823af9320ae49d3a6e130e6bbed31e49aefd49f45c472121b8f39155974ad"
+  },
+  "history": {
+    "initial_original": "concept-initial.png",
+    "initial_prompt": "prompt-initial.txt",
+    "initial_receipt": "receipt-initial.json",
+    "initial_closeup": "closeup-initial.png"
+  },
+  "original": {
+    "path": "concept.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "4fc6ba36f5d8bda616f18d77e874d9a8488c4447b176499d48df2a952195119c",
+    "byte_identical_to_tool_output": true
+  },
+  "closeup": {
+    "path": "closeup.png",
+    "source": "concept.png",
+    "rectangle_xyxy": [
+      435,
+      535,
+      575,
+      800
+    ],
+    "width": 140,
+    "height": 265,
+    "resampling": null,
+    "description": "机械裁切角色完整服饰，未经插值或美术修改",
+    "sha256": "9f8b96084807972eb5d56eea8c0204da8545b64b47396f44820a60d698f95faa"
+  },
+  "architecture_closeup": {
+    "path": "architecture-closeup.png",
+    "source": "concept.png",
+    "rectangle_xyxy": [
+      95,
+      0,
+      955,
+      750
+    ],
+    "width": 860,
+    "height": 750,
+    "resampling": null,
+    "sha256": "aeff0b1d6f67fefb132147c5f3370aa796655773896652c044010fd8f208d828"
+  },
+  "runtime_character_policy": "复用 assets/characters/crescent-traveler/v1 既有108帧；概念人物仅用于构图与比例参考，不提取、不重生成动画。",
+  "visual_observations": {
+    "protagonist_height_estimate_pixels": 235,
+    "protagonist_height_fraction_estimate": 0.2497,
+    "covered": [
+      "街景透视",
+      "两岸道路",
+      "中景石拱桥",
+      "完整两层木构酒肆屋顶",
+      "青瓦白墙住宅",
+      "两种沿街摊位",
+      "近侧码头台阶与木船",
+      "灯笼",
+      "酒坛",
+      "布帘",
+      "掌柜",
+      "摊主",
+      "船工"
+    ],
+    "limitations": [
+      "角色约25%画高，服饰清晰但细节仍以既有序列帧为准",
+      "船工码头被置于近岸右下；若最终必须在对岸布置，灰盒阶段需要位置调整",
+      "桥两端与岸路连接被部分摊位、树木和栏杆遮挡，需灰盒验证净空和坡度",
+      "桥面及远岸保留首稿中的额外背景行人；运行资产仅制作三名驻点NPC"
+    ]
+  }
+}

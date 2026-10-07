@@ -1,5 +1,7 @@
 # ADR · 架构决策索引
 
+[ADR-21：江南河街与逐帧空间法线](21-ancient-canal-normals.md)记录选定 A、原动画复用、新入口与法线制作及验收边界。
+
 [ADR-20：A 稿默认角色与四方向行走](20-default-character.md) — Accepted，记录用户采用、256 像素方向补齐、来源和接入验证边界。
 
 ## P9 决策

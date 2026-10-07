@@ -1,0 +1,74 @@
+{
+  "material": "roof",
+  "size": [
+    256,
+    256
+  ],
+  "geometry": [
+    {
+      "type": "tile_channel",
+      "x": 12,
+      "width": 3
+    },
+    {
+      "type": "tile_channel",
+      "x": 55,
+      "width": 3
+    },
+    {
+      "type": "tile_channel",
+      "x": 98,
+      "width": 3
+    },
+    {
+      "type": "tile_channel",
+      "x": 157,
+      "width": 3
+    },
+    {
+      "type": "tile_channel",
+      "x": 200,
+      "width": 3
+    },
+    {
+      "type": "tile_channel",
+      "x": 243,
+      "width": 3
+    },
+    {
+      "type": "tile_overlap",
+      "y": 26,
+      "width": 2
+    },
+    {
+      "type": "tile_overlap",
+      "y": 66,
+      "width": 2
+    },
+    {
+      "type": "tile_overlap",
+      "y": 106,
+      "width": 2
+    },
+    {
+      "type": "tile_overlap",
+      "y": 149,
+      "width": 2
+    },
+    {
+      "type": "tile_overlap",
+      "y": 189,
+      "width": 2
+    },
+    {
+      "type": "tile_overlap",
+      "y": 229,
+      "width": 2
+    }
+  ],
+  "normal_basis": "OpenGL tangent: X right, Y up, Z outward",
+  "height_source": "authored construction features, never diffuse luminance",
+  "height_png": "roof-height.png",
+  "normal_derivative_scale": 0.8,
+  "periodic_border_height": 0.625
+}

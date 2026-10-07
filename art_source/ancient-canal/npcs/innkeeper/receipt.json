@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "innkeeper",
+  "tool": "built-in image_gen.imagegen",
+  "seed": null,
+  "model": null,
+  "mode": "independent transparent stationary NPC generation with style reference",
+  "generated_source_filename": "exec-0ae4349d-d444-4554-ab7c-176de0509924.png",
+  "reference": {
+    "path": "art_source/characters/crescent-traveler/v1/reference.png",
+    "sha256": "3b8823af9320ae49d3a6e130e6bbed31e49aefd49f45c472121b8f39155974ad"
+  },
+  "mother": "mother.png",
+  "prompt": "prompt.txt",
+  "calls": 1,
+  "original_bytes_preserved": true,
+  "processing": {
+    "color": "mechanical crop, foot anchoring, nearest reduction, 96-color palette without dithering",
+    "normal": "independent manually drawn editable semantic geometry, no RGB brightness/edge-derived bump",
+    "mask": "R silver specular; G roughness; B metallicity; A exact color alpha"
+  },
+  "visual_review": "mother inspected; full body, footwear, required clothing and transparent cutout present",
+  "no_walk_animation": true,
+  "recorded_date": "2026-10-07"
+}

@@ -1,0 +1,823 @@
+{
+  "schema_version": 2,
+  "scene_id": "ancient-canal",
+  "settings_path": "user://settings/ancient-canal.cfg",
+  "pages": [
+    {
+      "id": "character",
+      "label": "角色材质"
+    },
+    {
+      "id": "lighting",
+      "label": "场景照明"
+    },
+    {
+      "id": "environment",
+      "label": "环境效果"
+    },
+    {
+      "id": "comparison",
+      "label": "比较与复现"
+    }
+  ],
+  "parameters": {
+    "normals_enabled": {
+      "page": "character",
+      "group": "动态法线",
+      "label": "启用逐帧法线",
+      "type": "bool",
+      "default": true
+    },
+    "normal_strength": {
+      "page": "character",
+      "group": "动态法线",
+      "label": "法线强度",
+      "type": "float",
+      "default": 0.8,
+      "min": 0.0,
+      "max": 2.0,
+      "step": 0.05
+    },
+    "normal_flip_y": {
+      "page": "character",
+      "group": "动态法线",
+      "label": "翻转法线 Y 方向",
+      "type": "bool",
+      "default": false
+    },
+    "shading_mode": {
+      "page": "character",
+      "group": "受光与材质",
+      "label": "受光模式",
+      "type": "enum",
+      "default": "native",
+      "options": [
+        {
+          "value": "native",
+          "label": "原生受光"
+        },
+        {
+          "value": "stepped",
+          "label": "分档受光"
+        }
+      ]
+    },
+    "light_steps": {
+      "page": "character",
+      "group": "受光与材质",
+      "label": "明暗档数",
+      "type": "int",
+      "default": 4,
+      "min": 2,
+      "max": 8,
+      "step": 1
+    },
+    "clay": {
+      "page": "character",
+      "group": "受光与材质",
+      "label": "灰材质检查",
+      "type": "bool",
+      "default": false
+    },
+    "normal_debug": {
+      "page": "character",
+      "group": "受光与材质",
+      "label": "显示法线向量",
+      "type": "bool",
+      "default": false
+    },
+    "silver_specular": {
+      "page": "character",
+      "group": "受光与材质",
+      "label": "银饰高光",
+      "type": "float",
+      "default": 0.75,
+      "min": 0.0,
+      "max": 1.0,
+      "step": 0.05
+    },
+    "direction": {
+      "page": "character",
+      "group": "方向与逐帧",
+      "label": "人物朝向",
+      "type": "enum",
+      "default": "auto",
+      "options": [
+        {
+          "value": "auto",
+          "label": "跟随移动"
+        },
+        {
+          "value": "down",
+          "label": "向前"
+        },
+        {
+          "value": "up",
+          "label": "向后"
+        },
+        {
+          "value": "left",
+          "label": "向左"
+        },
+        {
+          "value": "right",
+          "label": "向右"
+        }
+      ]
+    },
+    "animation_pause": {
+      "page": "character",
+      "group": "方向与逐帧",
+      "label": "暂停人物动画",
+      "type": "bool",
+      "default": false
+    },
+    "animation_frame": {
+      "page": "character",
+      "group": "方向与逐帧",
+      "label": "当前序列帧",
+      "type": "int",
+      "default": 0,
+      "min": 0,
+      "max": 26,
+      "step": 1
+    },
+    "time_preset": {
+      "page": "lighting",
+      "group": "时段与主光",
+      "label": "时段",
+      "type": "enum",
+      "default": "dusk",
+      "options": [
+        {
+          "value": "day",
+          "label": "晴昼"
+        },
+        {
+          "value": "dusk",
+          "label": "黄昏"
+        },
+        {
+          "value": "night",
+          "label": "夜晚"
+        },
+        {
+          "value": "custom",
+          "label": "自定义"
+        }
+      ]
+    },
+    "main_yaw": {
+      "page": "lighting",
+      "group": "时段与主光",
+      "label": "主光水平角",
+      "type": "float",
+      "default": -38.0,
+      "min": -180.0,
+      "max": 180.0,
+      "step": 1.0,
+      "suffix": "°"
+    },
+    "main_pitch": {
+      "page": "lighting",
+      "group": "时段与主光",
+      "label": "主光俯角",
+      "type": "float",
+      "default": -32.0,
+      "min": -85.0,
+      "max": -5.0,
+      "step": 1.0,
+      "suffix": "°"
+    },
+    "main_energy": {
+      "page": "lighting",
+      "group": "时段与主光",
+      "label": "主光强度",
+      "type": "float",
+      "default": 1.1,
+      "min": 0.0,
+      "max": 4.0,
+      "step": 0.05
+    },
+    "main_color": {
+      "page": "lighting",
+      "group": "时段与主光",
+      "label": "主光颜色",
+      "type": "color",
+      "default": [
+        1.0,
+        0.76,
+        0.54,
+        1.0
+      ]
+    },
+    "main_shadow": {
+      "page": "lighting",
+      "group": "时段与主光",
+      "label": "主光投影阴影",
+      "type": "bool",
+      "default": true
+    },
+    "scene_shadow": {
+      "page": "lighting",
+      "group": "时段与主光",
+      "label": "场景阴影总开关",
+      "type": "bool",
+      "default": true
+    },
+    "ambient": {
+      "page": "lighting",
+      "group": "环境与灯笼",
+      "label": "环境补光强度",
+      "type": "float",
+      "default": 0.38,
+      "min": 0.0,
+      "max": 2.0,
+      "step": 0.02
+    },
+    "ambient_color": {
+      "page": "lighting",
+      "group": "环境与灯笼",
+      "label": "环境补光颜色",
+      "type": "color",
+      "default": [
+        0.36,
+        0.48,
+        0.66,
+        1.0
+      ]
+    },
+    "lantern_enabled": {
+      "page": "lighting",
+      "group": "场景灯笼组",
+      "label": "启用灯笼组",
+      "type": "bool",
+      "default": true
+    },
+    "lantern_energy": {
+      "page": "lighting",
+      "group": "场景灯笼组",
+      "label": "灯笼强度",
+      "type": "float",
+      "default": 1.6,
+      "min": 0.0,
+      "max": 5.0,
+      "step": 0.1
+    },
+    "lantern_color": {
+      "page": "lighting",
+      "group": "场景灯笼组",
+      "label": "灯笼颜色",
+      "type": "color",
+      "default": [
+        1.0,
+        0.42,
+        0.16,
+        1.0
+      ]
+    },
+    "lantern_range": {
+      "page": "lighting",
+      "group": "场景灯笼组",
+      "label": "灯笼照明范围",
+      "type": "float",
+      "default": 4.5,
+      "min": 1.0,
+      "max": 12.0,
+      "step": 0.25,
+      "suffix": "m"
+    },
+    "lantern_shadow": {
+      "page": "lighting",
+      "group": "场景灯笼组",
+      "label": "灯笼组阴影（按灯具配置）",
+      "type": "bool",
+      "default": true
+    },
+    "streetlamp_enabled": {
+      "page": "lighting",
+      "group": "场景路灯组",
+      "label": "启用路灯组",
+      "type": "bool",
+      "default": true
+    },
+    "streetlamp_energy": {
+      "page": "lighting",
+      "group": "场景路灯组",
+      "label": "路灯强度",
+      "type": "float",
+      "default": 0.8,
+      "min": 0.0,
+      "max": 8.0,
+      "step": 0.1
+    },
+    "streetlamp_color": {
+      "page": "lighting",
+      "group": "场景路灯组",
+      "label": "路灯颜色",
+      "type": "color",
+      "default": [
+        1,
+        0.68,
+        0.38,
+        1
+      ]
+    },
+    "streetlamp_range": {
+      "page": "lighting",
+      "group": "场景路灯组",
+      "label": "路灯照明范围",
+      "type": "float",
+      "default": 4.0,
+      "min": 1.0,
+      "max": 24.0,
+      "step": 0.25,
+      "suffix": "m"
+    },
+    "streetlamp_shadow": {
+      "page": "lighting",
+      "group": "场景路灯组",
+      "label": "路灯组阴影（仅配置的两盏默认开启）",
+      "type": "bool",
+      "default": true
+    },
+    "broad_enabled": {
+      "page": "lighting",
+      "group": "大范围对照灯组",
+      "label": "启用大范围灯组",
+      "type": "bool",
+      "default": true
+    },
+    "broad_energy": {
+      "page": "lighting",
+      "group": "大范围对照灯组",
+      "label": "大范围灯强度",
+      "type": "float",
+      "default": 1.7,
+      "min": 0.0,
+      "max": 8.0,
+      "step": 0.1
+    },
+    "broad_color": {
+      "page": "lighting",
+      "group": "大范围对照灯组",
+      "label": "大范围灯组色调",
+      "type": "color",
+      "default": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "broad_range": {
+      "page": "lighting",
+      "group": "大范围对照灯组",
+      "label": "大范围灯照明范围",
+      "type": "float",
+      "default": 7.0,
+      "min": 2.0,
+      "max": 18.0,
+      "step": 0.25,
+      "suffix": "m"
+    },
+    "broad_shadow": {
+      "page": "lighting",
+      "group": "大范围对照灯组",
+      "label": "大范围灯投影阴影",
+      "type": "bool",
+      "default": true
+    },
+    "test_light_enabled": {
+      "page": "lighting",
+      "group": "扫光测试灯",
+      "label": "启用测试灯",
+      "type": "bool",
+      "default": false
+    },
+    "test_light_color": {
+      "page": "lighting",
+      "group": "扫光测试灯",
+      "label": "测试灯颜色",
+      "type": "color",
+      "default": [
+        0.48,
+        0.72,
+        1.0,
+        1.0
+      ]
+    },
+    "test_light_energy": {
+      "page": "lighting",
+      "group": "扫光测试灯",
+      "label": "测试灯强度",
+      "type": "float",
+      "default": 2.0,
+      "min": 0.0,
+      "max": 8.0,
+      "step": 0.1
+    },
+    "test_light_x": {
+      "page": "lighting",
+      "group": "扫光测试灯",
+      "label": "测试灯左右位置",
+      "type": "float",
+      "default": -2.0,
+      "min": -20.0,
+      "max": 20.0,
+      "step": 0.25,
+      "suffix": "m"
+    },
+    "test_light_y": {
+      "page": "lighting",
+      "group": "扫光测试灯",
+      "label": "测试灯高度",
+      "type": "float",
+      "default": 3.0,
+      "min": 0.25,
+      "max": 12.0,
+      "step": 0.25,
+      "suffix": "m"
+    },
+    "test_light_z": {
+      "page": "lighting",
+      "group": "扫光测试灯",
+      "label": "测试灯前后位置",
+      "type": "float",
+      "default": 2.0,
+      "min": -16.0,
+      "max": 16.0,
+      "step": 0.25,
+      "suffix": "m"
+    },
+    "test_light_range": {
+      "page": "lighting",
+      "group": "扫光测试灯",
+      "label": "测试灯照明范围",
+      "type": "float",
+      "default": 8.0,
+      "min": 1.0,
+      "max": 24.0,
+      "step": 0.5,
+      "suffix": "m"
+    },
+    "test_light_shadow": {
+      "page": "lighting",
+      "group": "扫光测试灯",
+      "label": "测试灯投影阴影",
+      "type": "bool",
+      "default": true
+    },
+    "orbit_light": {
+      "page": "lighting",
+      "group": "扫光测试灯",
+      "label": "绕人物自动扫光",
+      "type": "bool",
+      "default": false
+    },
+    "orbit_speed": {
+      "page": "lighting",
+      "group": "扫光测试灯",
+      "label": "扫光速度",
+      "type": "float",
+      "default": 0.6,
+      "min": 0.1,
+      "max": 2.0,
+      "step": 0.1
+    },
+    "water_flow": {
+      "page": "environment",
+      "group": "运河水面",
+      "label": "水流速度",
+      "type": "float",
+      "default": 0.35,
+      "min": 0.0,
+      "max": 2.0,
+      "step": 0.05
+    },
+    "water_wave": {
+      "page": "environment",
+      "group": "运河水面",
+      "label": "波纹法线强度",
+      "type": "float",
+      "default": 0.6,
+      "min": 0.0,
+      "max": 2.0,
+      "step": 0.05
+    },
+    "water_reflection": {
+      "page": "environment",
+      "group": "运河水面",
+      "label": "水面反光",
+      "type": "float",
+      "default": 0.55,
+      "min": 0.0,
+      "max": 1.0,
+      "step": 0.05
+    },
+    "fog": {
+      "page": "environment",
+      "group": "空气与后处理",
+      "label": "雾密度",
+      "type": "float",
+      "default": 0.004,
+      "min": 0.0,
+      "max": 0.08,
+      "step": 0.002
+    },
+    "bloom": {
+      "page": "environment",
+      "group": "空气与后处理",
+      "label": "泛光强度",
+      "type": "float",
+      "default": 0.35,
+      "min": 0.0,
+      "max": 1.5,
+      "step": 0.05
+    },
+    "ssao": {
+      "page": "environment",
+      "group": "空气与后处理",
+      "label": "环境遮蔽 SSAO",
+      "type": "bool",
+      "default": true
+    },
+    "dof_near": {
+      "page": "environment",
+      "group": "景深与焦点",
+      "label": "近景景深",
+      "type": "bool",
+      "default": false
+    },
+    "dof_far": {
+      "page": "environment",
+      "group": "景深与焦点",
+      "label": "远景景深",
+      "type": "bool",
+      "default": true
+    },
+    "dof_amount": {
+      "page": "environment",
+      "group": "景深与焦点",
+      "label": "景深模糊强度",
+      "type": "float",
+      "default": 0.08,
+      "min": 0.0,
+      "max": 0.5,
+      "step": 0.01
+    },
+    "focus_protection": {
+      "page": "environment",
+      "group": "景深与焦点",
+      "label": "保护人物焦点",
+      "type": "bool",
+      "default": true
+    },
+    "focus_distance": {
+      "page": "environment",
+      "group": "景深与焦点",
+      "label": "手动焦点距离",
+      "type": "float",
+      "default": 22.0,
+      "min": 5.0,
+      "max": 45.0,
+      "step": 0.5,
+      "suffix": "m"
+    },
+    "camera_variant": {
+      "page": "environment",
+      "group": "F / W / O 探索镜头",
+      "label": "观察方案",
+      "type": "enum",
+      "default": "F",
+      "options": [
+        {
+          "label": "F · 正面稳定平移",
+          "value": "F"
+        },
+        {
+          "label": "W · 广角纵深",
+          "value": "W"
+        },
+        {
+          "label": "O · 轻微绕转",
+          "value": "O"
+        }
+      ]
+    },
+    "camera_follow": {
+      "page": "environment",
+      "group": "F / W / O 探索镜头",
+      "label": "相机跟随人物",
+      "type": "bool",
+      "default": true
+    },
+    "camera_distance": {
+      "page": "environment",
+      "group": "F / W / O 探索镜头",
+      "label": "当前方案观察半径",
+      "type": "float",
+      "default": 30.0,
+      "min": 18.0,
+      "max": 45.0,
+      "step": 0.5,
+      "suffix": "m"
+    },
+    "camera_fov": {
+      "page": "environment",
+      "group": "F / W / O 探索镜头",
+      "label": "当前方案纵向视野",
+      "type": "float",
+      "default": 35.0,
+      "min": 25.0,
+      "max": 60.0,
+      "step": 1.0,
+      "suffix": "°"
+    },
+    "parallax_mode": {
+      "page": "environment",
+      "group": "六层远景视差",
+      "label": "远景模式",
+      "type": "enum",
+      "default": "natural",
+      "options": [
+        {
+          "label": "自然 · 真实透视",
+          "value": "natural"
+        },
+        {
+          "label": "艺术 · 分层倍率",
+          "value": "artistic"
+        }
+      ]
+    },
+    "parallax_strength": {
+      "page": "environment",
+      "group": "六层远景视差",
+      "label": "艺术模式整体倍率",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 2.0,
+      "step": 0.05
+    },
+    "parallax_transition": {
+      "page": "environment",
+      "group": "六层远景视差",
+      "label": "倍率过渡时间",
+      "type": "float",
+      "default": 0.2,
+      "min": 0.0,
+      "max": 1.0,
+      "step": 0.05,
+      "suffix": "s"
+    },
+    "near_town": {
+      "page": "environment",
+      "group": "六层远景视差",
+      "label": "近镇艺术倍率",
+      "type": "float",
+      "default": 0.95,
+      "min": 0.0,
+      "max": 2.0,
+      "step": 0.05
+    },
+    "far_town": {
+      "page": "environment",
+      "group": "六层远景视差",
+      "label": "远镇艺术倍率",
+      "type": "float",
+      "default": 0.75,
+      "min": 0.0,
+      "max": 2.0,
+      "step": 0.05
+    },
+    "near_hills": {
+      "page": "environment",
+      "group": "六层远景视差",
+      "label": "近山艺术倍率",
+      "type": "float",
+      "default": 0.6,
+      "min": 0.0,
+      "max": 2.0,
+      "step": 0.05
+    },
+    "far_mountains": {
+      "page": "environment",
+      "group": "六层远景视差",
+      "label": "远山艺术倍率",
+      "type": "float",
+      "default": 0.35,
+      "min": 0.0,
+      "max": 2.0,
+      "step": 0.05
+    },
+    "near_clouds": {
+      "page": "environment",
+      "group": "六层远景视差",
+      "label": "近云艺术倍率",
+      "type": "float",
+      "default": 0.45,
+      "min": 0.0,
+      "max": 2.0,
+      "step": 0.05
+    },
+    "far_clouds": {
+      "page": "environment",
+      "group": "六层远景视差",
+      "label": "远云艺术倍率",
+      "type": "float",
+      "default": 0.2,
+      "min": 0.0,
+      "max": 2.0,
+      "step": 0.05
+    },
+    "fixed_animation": {
+      "page": "comparison",
+      "group": "固定比较条件",
+      "label": "固定动画姿态",
+      "type": "bool",
+      "default": false
+    },
+    "fixed_light": {
+      "page": "comparison",
+      "group": "固定比较条件",
+      "label": "固定测试灯位置",
+      "type": "bool",
+      "default": false
+    },
+    "sky_top_color": {
+      "page": "lighting",
+      "group": "天空色调",
+      "label": "天空上缘颜色",
+      "type": "color",
+      "default": [
+        0.12,
+        0.19,
+        0.34,
+        1.0
+      ]
+    },
+    "sky_horizon_color": {
+      "page": "lighting",
+      "group": "天空色调",
+      "label": "天空地平线颜色",
+      "type": "color",
+      "default": [
+        0.73,
+        0.45,
+        0.35,
+        1.0
+      ]
+    }
+  },
+  "lamp_parameters": {
+    "enabled": {
+      "page": "lighting",
+      "group": "单灯调节",
+      "label": "启用所选灯",
+      "type": "bool",
+      "default": true
+    },
+    "color": {
+      "page": "lighting",
+      "group": "单灯调节",
+      "label": "所选灯颜色",
+      "type": "color",
+      "default": [
+        1,
+        0.68,
+        0.38,
+        1
+      ]
+    },
+    "energy": {
+      "page": "lighting",
+      "group": "单灯调节",
+      "label": "所选灯强度",
+      "type": "float",
+      "default": 0.8,
+      "min": 0.0,
+      "max": 8.0,
+      "step": 0.1
+    },
+    "range": {
+      "page": "lighting",
+      "group": "单灯调节",
+      "label": "所选灯照明范围",
+      "type": "float",
+      "default": 4.0,
+      "min": 1.0,
+      "max": 24.0,
+      "step": 0.25,
+      "suffix": "m"
+    },
+    "shadow": {
+      "page": "lighting",
+      "group": "单灯调节",
+      "label": "所选灯投影阴影",
+      "type": "bool",
+      "default": false
+    }
+  }
+}

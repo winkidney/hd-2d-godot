@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-07",
+  "changes": [
+    {"asset": "tavern, house", "reason": "Keep complete roof silhouette within the agreed 6.0/4.2 metre height.", "correction": "Shortened the real roof finial; final bounds checked after GLB export."},
+    {"asset": "cloth_stall, food_stall", "reason": "Canopy face order pointed downward.", "correction": "Reversed the canopy quads to expose the cloth top surface to the scene camera."},
+    {"asset": "willow", "reason": "Opposed lamina faces shared vertices and produced degenerate GLB tangents.", "correction": "Added independently mapped, closed thin leaf geometry with a real 0.004 metre fold thickness."},
+    {"asset": "willow", "reason": "Leaf edge faces inherited identical top/bottom UVs.", "correction": "Assigned non-degenerate UV rectangles to side faces; independent accessor checks must pass."}
+  ],
+  "tool_runtime": "Background Blender saves and validates before explicit batch exit to avoid container audio shutdown blocking. No system changes."
+}

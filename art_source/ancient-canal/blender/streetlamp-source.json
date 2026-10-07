@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "streetlamp",
+  "recipe": "tools/ancient_canal/build_models.py:streetlamp",
+  "authorship": "Original deterministic geometry authored for this project",
+  "licence": "Project owner may use, modify, export and redistribute the authored geometry without third-party model restrictions",
+  "third_party_model": false,
+  "imagegen_calls": 0,
+  "diffuse_source": "Existing selected-concept ImageGen mother-derived pixel textures; no new texture generation",
+  "normal_source": "Existing independently authored tangent-space construction normals; never diffuse luminance",
+  "texture_manifest_sha256": "7a91986c4146ac087dc85f89654421c9278e1da884ad1567b188a36f9c7dd07e",
+  "basis": "Godot Y up via xyz, Blender Z up, glTF export_yup inverse once",
+  "dimensions": {
+    "pole_height": 2.6,
+    "pole_width": 0.18,
+    "collision_radius": 0.12,
+    "hanging_point": [
+      0,
+      2.6,
+      0.36
+    ],
+    "paper_light_centre": [
+      0,
+      2.2,
+      0.36
+    ]
+  },
+  "blend": "art_source/ancient-canal/blender/streetlamp.blend",
+  "blend_sha256": "39ace76400f00d8d2a3e81359adcacce117d1f745fee5c0e547e861bf7bd3712",
+  "glb": "assets/ancient-canal/models/streetlamp.glb",
+  "glb_sha256": "bc7ca184f41b0f04d7380ae34feae110aaf10ff4e1f4385b9fc4dcfb8f3819e6",
+  "source_portability_revision": "source-portability.json"
+}

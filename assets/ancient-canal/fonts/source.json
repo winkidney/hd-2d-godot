@@ -1,0 +1,7 @@
+{
+  "family": "Noto Sans CJK SC",
+  "license": "OFL.txt",
+  "source": "Fedora google-noto-sans-cjk-vf-fonts installed NotoSansCJK-VF.ttc, collection index2",
+  "operation": "Extract SC collection face and instantiate static weight400 with fontTools; no glyph substitution.",
+  "sha256": "1c24d104e0c5ef51b3d460a125889d09b77834d8e62624b5d613f5fc4bd03e15"
+}

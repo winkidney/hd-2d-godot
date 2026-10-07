@@ -1,0 +1,2090 @@
+{
+  "schema_version": 1,
+  "character_id": "crescent-traveler",
+  "version": "v1",
+  "frame_count": 108,
+  "size": [
+    256,
+    256
+  ],
+  "pivot": [
+    128,
+    240
+  ],
+  "normal_convention": {
+    "x": "right",
+    "y": "up",
+    "z": "toward viewer",
+    "encoding": "linear RGB = vector * 0.5 + 0.5",
+    "vector_source": "analytic semantic geometry, not diffuse luminance",
+    "alpha": "exact immutable color alpha"
+  },
+  "baseline": "art_source/ancient-canal/character-reuse.json",
+  "baseline_sha256": "3290862774aa9a7924eccc8f16dbd05d029662d6029c3ac1e75dcf3e9426f9ff",
+  "directions": {
+    "down": {
+      "atlas": "assets/ancient-canal/character-normals/v1/down/atlas.png",
+      "atlas_sha256": "be9f7ee0f84c025cd1b99c9230cd1d54c0da1e306196807c2473f7ff419f83ae",
+      "mask_atlas": "assets/ancient-canal/character-normals/v1/down/mask-atlas.png",
+      "mask_atlas_sha256": "5732d52b850d4ac2e95a5bdf143cf5e71874b16144b5b7b6cdcfe9e63785a2f0",
+      "source_atlas": "assets/characters/crescent-traveler/v1/down/atlas.png",
+      "source_atlas_sha256": "c269c9add307a8a9d15b9f1354f27eb16355c5cb99959ff4cf3b10829b211e60",
+      "source_manifest": "assets/characters/crescent-traveler/v1/down/animation.json",
+      "atlas_size": [
+        2064,
+        1032
+      ],
+      "pivot": [
+        128,
+        240
+      ],
+      "idle_frame": 10,
+      "keyposes": [
+        0,
+        6,
+        10,
+        13,
+        20,
+        26
+      ],
+      "loop": true,
+      "duration_ms": 1125,
+      "frames": [
+        {
+          "index": 0,
+          "source_index": 28,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00000.png",
+          "sha256": "25e9b278cde21aa9566c32d1ade9c59edc40ea24574862268b33ca7bd533bcb4",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00000.png",
+          "mask_sha256": "70d95339fb17658a777b1112315c3fd6064d33b24b965c2b97845ac817602c7d",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00000.png",
+          "source_sha256": "db659beb52d684656dac145451c234c9547dbb12d10c3a1d32fe11135ba00e53",
+          "region": [
+            1,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00000/geometry.json"
+        },
+        {
+          "index": 1,
+          "source_index": 29,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00001.png",
+          "sha256": "56f85352d2e6e8f85961ff50da4b06e883f20f77addc5fdb8cfd09b7bb815095",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00001.png",
+          "mask_sha256": "904c805a8636b404b68fa5887c8a4a3f15fa29537f81cb2dfb4579821475b78c",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00001.png",
+          "source_sha256": "b2a073d3d85d7723eedc40e219966eb0d32184bd59af5089894caa1405511c54",
+          "region": [
+            259,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00001/geometry.json"
+        },
+        {
+          "index": 2,
+          "source_index": 30,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00002.png",
+          "sha256": "a9de09cacf12c365cd84413545fdf3f7fa65a487f638b454c18310905a644673",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00002.png",
+          "mask_sha256": "7221eec2b3f2b641c0202964d1dfd56b40b2b266f9d60bc511003c73332594c8",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00002.png",
+          "source_sha256": "988ecd23fac4939e6d771bf04503668992032113fae57831e15065ad04006451",
+          "region": [
+            517,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00002/geometry.json"
+        },
+        {
+          "index": 3,
+          "source_index": 31,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00003.png",
+          "sha256": "10e9e1b61378887ff7efa3ee159e5a9c01132d7faf23bd646701ddcfcd72d3c0",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00003.png",
+          "mask_sha256": "07e62a838b54568d2c67b002de1eac945b498b0d3629d4402e56c98fd5c4be8e",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00003.png",
+          "source_sha256": "60a1f6dc1d465da2ecef0b1a1aecadac62725e7d9323cb3ee10942de45ff0f1f",
+          "region": [
+            775,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00003/geometry.json"
+        },
+        {
+          "index": 4,
+          "source_index": 32,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00004.png",
+          "sha256": "e538487083d70105cba5b731e9de940a5292fb489d22a86fe97abe4690ee3c8e",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00004.png",
+          "mask_sha256": "88ba7841aee90c2ad0fe1f0353df82c76a49adc84c8c3fa9770666efe8df9b3c",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00004.png",
+          "source_sha256": "871d5fb3ca88c3c2619818947aa01eace05525088291f75b12aec5c22e28c940",
+          "region": [
+            1033,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00004/geometry.json"
+        },
+        {
+          "index": 5,
+          "source_index": 33,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00005.png",
+          "sha256": "25af660a4bb58e4885e6e3b09297a3ea862ead70bcb784ccc1950da1e01a3223",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00005.png",
+          "mask_sha256": "f100ba8f45195b4f2b1ac9747cb105b8a0599e5bec7cb3059626606b0e93f979",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00005.png",
+          "source_sha256": "3f958318dcf526c108941d971e7cbc2b65ee43df01e802693e03f6324ecd38f3",
+          "region": [
+            1291,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00005/geometry.json"
+        },
+        {
+          "index": 6,
+          "source_index": 34,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00006.png",
+          "sha256": "eb60fb4a4ae220d73322f3b82decf99a87ec94c58e842c252363db21824086ed",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00006.png",
+          "mask_sha256": "06884d9c168b82abb295fce40a4c2186b47a9874343b2c257f51cb5fe00c274e",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00006.png",
+          "source_sha256": "ee69ff7db8bd60cc880331d18259fe39e4f65c11c881a0ce8a14ba31042b21ca",
+          "region": [
+            1549,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00006/geometry.json"
+        },
+        {
+          "index": 7,
+          "source_index": 35,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00007.png",
+          "sha256": "50e7c9ca18f5e9ced8d669e4483112e6976704036027f0bb092b712bf6134533",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00007.png",
+          "mask_sha256": "f58c7d4d7a5a67aa6d971ba62ddfc7057b335ff368c20d2ca70cf305ca3dbcca",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00007.png",
+          "source_sha256": "40764fe1d6ee2521e589de9b0d5360f52c717d364a1cb72d20da0f5ec05ecfc5",
+          "region": [
+            1807,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00007/geometry.json"
+        },
+        {
+          "index": 8,
+          "source_index": 36,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00008.png",
+          "sha256": "1250c01a056a4f78c5c117125981df0dfc4a2c1c1a22932b16e8e75621cf5c35",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00008.png",
+          "mask_sha256": "7b4700bd8aba3aaa3246ac123f6e1add8f1ab49ecf9e0bd9105e82fef19eeff9",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00008.png",
+          "source_sha256": "14ec8cc2a70875fa4a9d72af9f1f6e18d6d75bd6a22a7be6ef1bfbaa87d9a972",
+          "region": [
+            1,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00008/geometry.json"
+        },
+        {
+          "index": 9,
+          "source_index": 37,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00009.png",
+          "sha256": "208c24ee1c2e28464d0e12581d77ddf25502ce4ac3793dc99d7c2e398b3f545f",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00009.png",
+          "mask_sha256": "0bbbba6fcd95f2adf0810306cac70440a5b26ec13be31743362ef2f00faf3bfe",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00009.png",
+          "source_sha256": "e746f594a6664af7c9a7003c8e325c3b50e4161f317abc78824f3243b70baf3c",
+          "region": [
+            259,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00009/geometry.json"
+        },
+        {
+          "index": 10,
+          "source_index": 38,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00010.png",
+          "sha256": "0cd59e68569742e09520c4c07e9e870d6a0b20eae0a7a859551690b2bed67f64",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00010.png",
+          "mask_sha256": "8dc1fb35585a0e5c9dac382931579f8c4eff675929e825034d152bfe7a3d152d",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00010.png",
+          "source_sha256": "5fe79c6342c8ed0600fc50e6843f233b27677aa3158ed79cac4ddf097c67376e",
+          "region": [
+            517,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00010/geometry.json"
+        },
+        {
+          "index": 11,
+          "source_index": 39,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00011.png",
+          "sha256": "a541237206a1f513cd393d40ea880cfadee5b029d56ce5990e2b19181c31f9d4",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00011.png",
+          "mask_sha256": "68613119c857f6f5f188415c9a4beabcf18081990b5a11c87526a595d313a6a0",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00011.png",
+          "source_sha256": "f5e834e0a84f4707e78efb3f646c406df45090bd6742845b0f19b8e232b7085f",
+          "region": [
+            775,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00011/geometry.json"
+        },
+        {
+          "index": 12,
+          "source_index": 40,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00012.png",
+          "sha256": "ca8669d637eaa1cf1a2bfc2bacf2af96cf92e7fd6ece2b94b81805e3fc59408d",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00012.png",
+          "mask_sha256": "6fa96bfa0c551ab5fbb11b43acd7fc54a6ef5462725071f5ae65c0af7bd8dbe4",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00012.png",
+          "source_sha256": "cee33c32c7fe624c8846b47c7248105262ef9869ef840e3c055db1daceef7813",
+          "region": [
+            1033,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00012/geometry.json"
+        },
+        {
+          "index": 13,
+          "source_index": 41,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00013.png",
+          "sha256": "9e1130cc7f06c75e6d072d0ddf57a626fdd22bff7b8f9549f31ae138b37f959f",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00013.png",
+          "mask_sha256": "de45b7772fe42cb989f0243117f244517d560ff16e7c81f145d205cbfd8d6bf3",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00013.png",
+          "source_sha256": "d4de33ef360ebe657a31c8ae0bb6f5d84b1f6a76c4ec65216f544eeeaaca5bb2",
+          "region": [
+            1291,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00013/geometry.json"
+        },
+        {
+          "index": 14,
+          "source_index": 42,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00014.png",
+          "sha256": "a0596cd3e3fc9624298b14988993d2d631969e68e4effff60d4a47fdb66cf4d3",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00014.png",
+          "mask_sha256": "59edd3f54c432881481781f88b04582a393fa98b3f025842e3f6a8de19b43077",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00014.png",
+          "source_sha256": "43c5c805c2f6cea808075f37a5a7585b4620520703795ee2e4eff71aaa53f21c",
+          "region": [
+            1549,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00014/geometry.json"
+        },
+        {
+          "index": 15,
+          "source_index": 43,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00015.png",
+          "sha256": "65106a0637d28cadc8dc9d57f6ab23dc5ecf802fd7c4c1c0552311badede72ae",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00015.png",
+          "mask_sha256": "47518d8d7023fd7b163154a6e07e83e0abed4ad02490d51fbcf99f3d8861cdc1",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00015.png",
+          "source_sha256": "48001d6646974961c1b19f2a86691bb2c8981ffe5707f5ccab16b7e10b0e84a1",
+          "region": [
+            1807,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00015/geometry.json"
+        },
+        {
+          "index": 16,
+          "source_index": 44,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00016.png",
+          "sha256": "66fa10a0d44905b9fb742995b94686fdb6566844c00b3a9986481efe25f7a869",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00016.png",
+          "mask_sha256": "766d587d0dbd9bb1a29109e900c1c043019ad410f5835c189ef87f4f79446512",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00016.png",
+          "source_sha256": "7d8cd10fa3b10b24850368d8be71e459437967816ef9082a4b031f5a7d12a77c",
+          "region": [
+            1,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00016/geometry.json"
+        },
+        {
+          "index": 17,
+          "source_index": 45,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00017.png",
+          "sha256": "79c9fe1c4bebca9ed71239e509b41d0c37fac3547f41a038fd4176f008e2914d",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00017.png",
+          "mask_sha256": "53a61e23f192685c61b6b477c7f7d14d23b94ae45a3ffab20954fe1681b851ef",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00017.png",
+          "source_sha256": "e27ef1e22e945820baf8b7e3df33b3d8e55eaafbd29e2aeec53e662e71d68530",
+          "region": [
+            259,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00017/geometry.json"
+        },
+        {
+          "index": 18,
+          "source_index": 46,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00018.png",
+          "sha256": "4aaf7b788f12126fc91c9024f6de1e4b9ca190b67f8ff00c5d5ded6e67b28c5c",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00018.png",
+          "mask_sha256": "e995fe3b0bdcb502c620ffde389afb0d1790b732d6645a6f6c5cdf83e97bea18",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00018.png",
+          "source_sha256": "e6edcbd1cd8490b15369fd674827c9436083cfa659f4b1a979f3e3e3dfe5b400",
+          "region": [
+            517,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00018/geometry.json"
+        },
+        {
+          "index": 19,
+          "source_index": 47,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00019.png",
+          "sha256": "9fd5629ce116e4664f57a3d1d1defc76efe7f250098329ede9151b0f94b7584e",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00019.png",
+          "mask_sha256": "68678a32bc57b0a311c95f8ddb5611c439f18093492539022f8f06c651becfba",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00019.png",
+          "source_sha256": "30d637a2f6582c9e8407a2a2a032f1c190e21af724fbe4ef8bf968a2e8d59f4b",
+          "region": [
+            775,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00019/geometry.json"
+        },
+        {
+          "index": 20,
+          "source_index": 48,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00020.png",
+          "sha256": "fe5cf5b4dcf6356fc79c60fbde9f9c5d92d480ed0cdb846c673c6c022629de83",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00020.png",
+          "mask_sha256": "9c02da6a0587e3c12311ad09ba195a6f74fa1e38cdfb9317b01739cd84ee658f",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00020.png",
+          "source_sha256": "51581f530e5a66cca5e59a40e9e55df72c8903f77edbdcfab901542253dba07f",
+          "region": [
+            1033,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00020/geometry.json"
+        },
+        {
+          "index": 21,
+          "source_index": 49,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00021.png",
+          "sha256": "bd835cf9fe481e57fd864505a97aa08ba653805b271cff79256069ca69c0de8e",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00021.png",
+          "mask_sha256": "466ca37c7bde703784fdc6350700919210b077d1cb2822d1e98f27ffadda70fa",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00021.png",
+          "source_sha256": "01810e86016bae6d7cde47951e721823df37dd43a83afc2e178799533684fbe2",
+          "region": [
+            1291,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00021/geometry.json"
+        },
+        {
+          "index": 22,
+          "source_index": 50,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00022.png",
+          "sha256": "9d659aa51668df78e2bc7f921f0ffba099e22c182a4ddb2ab491db6cd453cbed",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00022.png",
+          "mask_sha256": "dd052649883bf47428cc1a1a09936b50e7a3d5e7f382b37a4c761e1125df4e9e",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00022.png",
+          "source_sha256": "c003284076dedde3f860b8ea93528a2d7ea88c2ae0b86602f00e42caafbcd014",
+          "region": [
+            1549,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00022/geometry.json"
+        },
+        {
+          "index": 23,
+          "source_index": 51,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00023.png",
+          "sha256": "878788b35206244792de4b64a80dbcfbe0bafb9f0ac11ed120a3cb353f6036d3",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00023.png",
+          "mask_sha256": "5ccbb366323cfa7db1fb40965f93f1de0ffb20352aee7ce8df307fcb7f44a502",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00023.png",
+          "source_sha256": "724113588c2a03b94a8706f3aee3627da3e761bc1572aaf0b01524933a120cc8",
+          "region": [
+            1807,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00023/geometry.json"
+        },
+        {
+          "index": 24,
+          "source_index": 52,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00024.png",
+          "sha256": "cf26e0c484631f52221f3a6f7815748a94b16cd6752c06aa9cd060f4d7963634",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00024.png",
+          "mask_sha256": "e59effaa459253c2469b23519d021b8efcddd2d8dc585a03418527ea21de2698",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00024.png",
+          "source_sha256": "1506090d00a9840c5df3214ef92943fa9d9dcd2898e2ba7349b7c4c991e5f6c0",
+          "region": [
+            1,
+            775,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00024/geometry.json"
+        },
+        {
+          "index": 25,
+          "source_index": 53,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00025.png",
+          "sha256": "a0869b277096ffa30b35e0805892a37bef2a2a7967dce1deb51a6287aa078cdc",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00025.png",
+          "mask_sha256": "71d217f61bc035950825475f7f4196166ed985eef7e38f7e0fcd0bff1d8b1df2",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00025.png",
+          "source_sha256": "911c1ddfc05d7ac4c72f1fce56ed78f3a42dbae2281884669319ea00fa557bb1",
+          "region": [
+            259,
+            775,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00025/geometry.json"
+        },
+        {
+          "index": 26,
+          "source_index": 54,
+          "path": "assets/ancient-canal/character-normals/v1/down/frames/00026.png",
+          "sha256": "a52cc3dbec187255bc16a3d60f9a7f81983219074faffb171f4be66dfad76c97",
+          "mask_path": "assets/ancient-canal/character-normals/v1/down/masks/00026.png",
+          "mask_sha256": "645159bbd558a2d3b529a4426ad1635f74d9daf0d137de734021bfee06d80dc2",
+          "source_path": "assets/characters/crescent-traveler/v1/down/frames/00026.png",
+          "source_sha256": "782e805bc98a444a788070957332a1ddf63e0978ffb0a560e7c393c62371c248",
+          "region": [
+            517,
+            775,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/down/00026/geometry.json"
+        }
+      ]
+    },
+    "up": {
+      "atlas": "assets/ancient-canal/character-normals/v1/up/atlas.png",
+      "atlas_sha256": "8971f3606b0a708b3327a94071fefd387eaa39523bcf7c2502b7550144d4c7af",
+      "mask_atlas": "assets/ancient-canal/character-normals/v1/up/mask-atlas.png",
+      "mask_atlas_sha256": "3b6f7107faaff41b379add84d75bbdbdfaa599f8f5150ba5fcad7fc71401e0a1",
+      "source_atlas": "assets/characters/crescent-traveler/v1/up/atlas.png",
+      "source_atlas_sha256": "32051fcdab5f5c45f9265e24f17e91336ed108c5fa1a4b429a83cf74800e0a22",
+      "source_manifest": "assets/characters/crescent-traveler/v1/up/animation.json",
+      "atlas_size": [
+        2064,
+        1032
+      ],
+      "pivot": [
+        128,
+        240
+      ],
+      "idle_frame": 10,
+      "keyposes": [
+        0,
+        6,
+        10,
+        13,
+        20,
+        26
+      ],
+      "loop": true,
+      "duration_ms": 1125,
+      "frames": [
+        {
+          "index": 0,
+          "source_index": 28,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00000.png",
+          "sha256": "654c8fec761e181f0b8e55799c04997295bbbd83f1c6d63ca542d7c0fa895b4f",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00000.png",
+          "mask_sha256": "7839ea835417a2b4e8bef71c310d3946ef0aa89f1fbd75efad9fbc9d37bea945",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00000.png",
+          "source_sha256": "7f9e2c98669355702a2947d02e182a93a2598a3292999d3d79886854358b6495",
+          "region": [
+            1,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00000/geometry.json"
+        },
+        {
+          "index": 1,
+          "source_index": 29,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00001.png",
+          "sha256": "e9f29e03992ce6d6a0265e974f64d49039305c5d9d1007e13ebae09522771efa",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00001.png",
+          "mask_sha256": "976666aabc81a15205539d654ca56661c9df130708fe2a72934640deba22cd98",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00001.png",
+          "source_sha256": "53a7878e719c621568cbb614fba6cc1b3cf7de7db8bd437bf4b471f16d54e49b",
+          "region": [
+            259,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00001/geometry.json"
+        },
+        {
+          "index": 2,
+          "source_index": 30,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00002.png",
+          "sha256": "ab6ff5adff2a56ca2980d23ecfe596f7970a041b25cb5256b22dae763d4b197c",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00002.png",
+          "mask_sha256": "854b3fd8fc0a5bf911974304700e33eebf50237d0ff57c835474f3f98be78571",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00002.png",
+          "source_sha256": "bc7c485e8f63287f9079ee96e75175170d6702fd31a68765ff71de6e4afdcb1a",
+          "region": [
+            517,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00002/geometry.json"
+        },
+        {
+          "index": 3,
+          "source_index": 31,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00003.png",
+          "sha256": "4b76f6af1696d338867666116f783252052dbb71912902eee6879a57af3354b5",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00003.png",
+          "mask_sha256": "8805d926ad654a757a024a8aee9b0116476475fd6284ae6782ba3099a0bfe480",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00003.png",
+          "source_sha256": "8e90a16d8bdd17f026e284246060106339859620aa54eea5ab44835bc6e28890",
+          "region": [
+            775,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00003/geometry.json"
+        },
+        {
+          "index": 4,
+          "source_index": 32,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00004.png",
+          "sha256": "dcb418f5c3ba2722a218f820bcb7e5ba5c36a6871d9e2e8422a3ee6e1671322c",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00004.png",
+          "mask_sha256": "e323dcc14a39ca2d0f9371ac339f178f2260062e74e14993d81ef4f5c2526c1f",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00004.png",
+          "source_sha256": "98b56c2505ff04151803fb63a876c7de91322650e084220b4789faa9190fb8a5",
+          "region": [
+            1033,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00004/geometry.json"
+        },
+        {
+          "index": 5,
+          "source_index": 33,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00005.png",
+          "sha256": "6525b4c4623f85928da864c73de9d9de38c9cf4d31d6bbfe26969d037fda02f9",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00005.png",
+          "mask_sha256": "f3e8a83ec7c7ab8f3f647f8598fd86141a0cee0bdb055d3a5a5c7335f207ab78",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00005.png",
+          "source_sha256": "19f90333b20c5f8965f214b776ee1a2cd0734b52ef7860c2c858ff798903b648",
+          "region": [
+            1291,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00005/geometry.json"
+        },
+        {
+          "index": 6,
+          "source_index": 34,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00006.png",
+          "sha256": "f9ade8a33144b3f225b0605a3cf0794a8605214141a49e162f16158381672c90",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00006.png",
+          "mask_sha256": "2eb5c1e6db94cea51d6145114232d096ef4fdbeccf495a2226797e24881f9f02",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00006.png",
+          "source_sha256": "0bc15e9f0884929499137e501d03d6352eef6d2b454e67f2209961ae96cf8965",
+          "region": [
+            1549,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00006/geometry.json"
+        },
+        {
+          "index": 7,
+          "source_index": 35,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00007.png",
+          "sha256": "8aa1baf0de9d82ff6ed1ddb2b268fa5937cd215737293d37d1f4ef25d1d13c37",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00007.png",
+          "mask_sha256": "b3f52054e90b114e663b24ede2eaffa351c289923368c03d3bf06862ab8789f9",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00007.png",
+          "source_sha256": "b57329c90e72efc9149317da1cbcba04644c4b7054bd444600688816787f8c22",
+          "region": [
+            1807,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00007/geometry.json"
+        },
+        {
+          "index": 8,
+          "source_index": 36,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00008.png",
+          "sha256": "0f5d5539cd7c02fad509346bf7c74b7a592aab22ed1b8865452788bace6691bf",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00008.png",
+          "mask_sha256": "18f7380be06685af6e1d592abc7d70f92fa8ad33dca1b53048fe9a6ebc87fa8e",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00008.png",
+          "source_sha256": "c11cfc61698bb4f93c29b89e17c0fc2f54f8082f0626bc40fe2f46842414aa79",
+          "region": [
+            1,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00008/geometry.json"
+        },
+        {
+          "index": 9,
+          "source_index": 37,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00009.png",
+          "sha256": "799307c43f6df0963159e57ce982531ce90cd4b35fe2bfc57702392fe81b1227",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00009.png",
+          "mask_sha256": "48000f02e97a5b29e6b25031784f28c99882b0cf120deecf28737ccefbf6e316",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00009.png",
+          "source_sha256": "39ad83b3aef7d0a39d8ea8b269a91b71090e785cc65e036019fcbf51d83e5cf1",
+          "region": [
+            259,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00009/geometry.json"
+        },
+        {
+          "index": 10,
+          "source_index": 38,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00010.png",
+          "sha256": "3e668cab32dff5c04da900dcc11d6c8bcbbf510862f920f9637bffaddd8c416d",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00010.png",
+          "mask_sha256": "4a3a56b7b2e4c84b4cfe9cec84290d48da6ab06432ff0a48410ca2a153d4c0d5",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00010.png",
+          "source_sha256": "70f2911c56c3f0c70bd731900d05bcb9fab62bdfd8980b765940c6398dd386a9",
+          "region": [
+            517,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00010/geometry.json"
+        },
+        {
+          "index": 11,
+          "source_index": 39,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00011.png",
+          "sha256": "271be8cb18b5fe465edb2914d59116997b6e8b4e0d2fb8154a5b5ef8f09eace9",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00011.png",
+          "mask_sha256": "1a58c5e8f3bc236ae46b701216748dead3d416de760f07e00e64631d7bae0e77",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00011.png",
+          "source_sha256": "5183905c703bbfe054c31459501b09d120ac5dc832ea494352d73a2f0cf7f511",
+          "region": [
+            775,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00011/geometry.json"
+        },
+        {
+          "index": 12,
+          "source_index": 40,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00012.png",
+          "sha256": "a6d486a6d568bda294c0a4e2ef9d413096d04e7e5e49f33bc69d9e815fd64a5f",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00012.png",
+          "mask_sha256": "6647aa4e9dd4353e3619860724320e0e85536caba111511f207c9da0d45291eb",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00012.png",
+          "source_sha256": "32207f72bd092f840a917454a97c52fe8d1aa44733f128347c8fb3ba7fe22801",
+          "region": [
+            1033,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00012/geometry.json"
+        },
+        {
+          "index": 13,
+          "source_index": 41,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00013.png",
+          "sha256": "cfe1bcbb6c2ff7a6f93186b68e6a630ba75389a90a483844dda4a95fedd3378f",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00013.png",
+          "mask_sha256": "979ee4617d789259640dbc69528ad2c2f9774bd9d52dc58f3d35989979a92a52",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00013.png",
+          "source_sha256": "1273de8522b3ae6c257cdccdc1f63ffca59cd35c7aee185d7a18c01e768a0b7a",
+          "region": [
+            1291,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00013/geometry.json"
+        },
+        {
+          "index": 14,
+          "source_index": 42,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00014.png",
+          "sha256": "a201e232249a776beea107b8ab04d346fd387c44a256fbcf16465f074ab34107",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00014.png",
+          "mask_sha256": "e8827a294e1193212c2e5836334b720d24f4075be89cb9153d923bcc62f0c072",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00014.png",
+          "source_sha256": "3c6af0410ac798cd8864d9aba2046127f6b00913e867a4c422c7332671b098cf",
+          "region": [
+            1549,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00014/geometry.json"
+        },
+        {
+          "index": 15,
+          "source_index": 43,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00015.png",
+          "sha256": "fd63ce936ad0d4d63c7668411ecb938b0c5d4cb5b31c9d68ae4ea4b3fa02fe02",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00015.png",
+          "mask_sha256": "c265489780f28e9025aedc154ba7c26aef75690dfa08d40505a171ee58607d76",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00015.png",
+          "source_sha256": "15776b94d25ca8a9635c4f5b4bbfdac86247f2328b10835a2ac17a94d5a23aff",
+          "region": [
+            1807,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00015/geometry.json"
+        },
+        {
+          "index": 16,
+          "source_index": 44,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00016.png",
+          "sha256": "d56dc08e2239a62c990d778cf9bd14afd8a687a3f3a53271868a4ef30d4d1ab0",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00016.png",
+          "mask_sha256": "5cc3d1be5f308f4d48def61a3890399e624715bd6510596840b1ac7a2e864fdb",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00016.png",
+          "source_sha256": "69803faec11cfc1261873c39a0df424d5c6ee15213483111667c1cc8b0dafee7",
+          "region": [
+            1,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00016/geometry.json"
+        },
+        {
+          "index": 17,
+          "source_index": 45,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00017.png",
+          "sha256": "cf5999acf1b38756c4f35a84fbdb1b8ba3ddc7e41f90077599f0429e15dae8af",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00017.png",
+          "mask_sha256": "ba5554e5e8057fb83d1e8fa64f7a55846f75a5ce85eaea021bd41a41a1e88116",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00017.png",
+          "source_sha256": "0f41c054d72ae89a30cd691f08ee9f97afbbb2fe6e695cff35db1a7136bcb648",
+          "region": [
+            259,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00017/geometry.json"
+        },
+        {
+          "index": 18,
+          "source_index": 46,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00018.png",
+          "sha256": "ae05d545e3a7ec4f287da52eb321eda32522d61c44c1f38d981c759dc1ef62d6",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00018.png",
+          "mask_sha256": "37ad6c417352e27260790b8b23538ac0baa6cab24041aaf1db08ca88d37ae476",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00018.png",
+          "source_sha256": "7299f0b0b1b1be747712c22c321fa7ce834ebed3e8c7cf0699572194baba2e6d",
+          "region": [
+            517,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00018/geometry.json"
+        },
+        {
+          "index": 19,
+          "source_index": 47,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00019.png",
+          "sha256": "a390ed8b7785bf65fdfc6ad998a3f6f6047470f1fd239e19e7197829442afd07",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00019.png",
+          "mask_sha256": "b9a312d7c4f81e554e670414787d2b0efbcba351de9e5c2ec085f625361e5998",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00019.png",
+          "source_sha256": "0dbd826514d952bfc744bda192d9bf3b3dd5d553489644bf37b99206143ccd37",
+          "region": [
+            775,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00019/geometry.json"
+        },
+        {
+          "index": 20,
+          "source_index": 48,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00020.png",
+          "sha256": "02937d6670e141d0bf947390394577a0d2215d2f4fea614fa5d6fcee69d44f76",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00020.png",
+          "mask_sha256": "ee7f6554bd9059944c3b659448abe55a8f5cff903f8663bce163abd6f15493e2",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00020.png",
+          "source_sha256": "f8175c6a47fe54ba8f308d18cd247d42e229fce5829322090674f0283c3ae780",
+          "region": [
+            1033,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00020/geometry.json"
+        },
+        {
+          "index": 21,
+          "source_index": 49,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00021.png",
+          "sha256": "bebbe441e195c8049c680914504d8f8b9af13a6ddfa048019d35319814e489b5",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00021.png",
+          "mask_sha256": "f30480ca390e05164e79e882bee3f721474a58b2be4680cb657a5101f5810e96",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00021.png",
+          "source_sha256": "0d3ea1c3655332a2960cc0fa97b8146dd122979e75bc65d69bf456a02963be88",
+          "region": [
+            1291,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00021/geometry.json"
+        },
+        {
+          "index": 22,
+          "source_index": 50,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00022.png",
+          "sha256": "8aaf3c0bdb94c57a6578e234de9598b1e3a3334f3c0d56a4bf4a7a3d2ffe1f7a",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00022.png",
+          "mask_sha256": "38e7ec7710e2486ca51742a35add5320c35b1f9c9b20ca5a1675d120e44c3805",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00022.png",
+          "source_sha256": "a779124c324b1916912655a92f415e6de7cf11a4d159b12137e949c336d2e69b",
+          "region": [
+            1549,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00022/geometry.json"
+        },
+        {
+          "index": 23,
+          "source_index": 51,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00023.png",
+          "sha256": "b43b3cca28d7f516bc0c3aeae498d82e5f4a3602a6831843ff9750c2f5440b16",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00023.png",
+          "mask_sha256": "e371418aac1e084189a0d3b905870a4b0d8cc5d4fda631f8ce773f8abceaf6ac",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00023.png",
+          "source_sha256": "93291434050bdce8bac0779f28e7ed2ea2dc54c40bc5686aaf39cae1a88aedcc",
+          "region": [
+            1807,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00023/geometry.json"
+        },
+        {
+          "index": 24,
+          "source_index": 52,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00024.png",
+          "sha256": "2a209271359b10bd002f6798670b80a464a7373f54fbbf79614538954cd0120b",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00024.png",
+          "mask_sha256": "21576d5ad6a0833370f2111913464e8b2c86a7c77c8b77e17223fc323a1a909d",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00024.png",
+          "source_sha256": "59a6bcd6a8e0da99d1b404beb190589c042737ca1d209825e490917842c869fb",
+          "region": [
+            1,
+            775,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00024/geometry.json"
+        },
+        {
+          "index": 25,
+          "source_index": 53,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00025.png",
+          "sha256": "0906d919e403dc3182f87b1f513de48b5f017ddf86c4c9722f35279e473e90e3",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00025.png",
+          "mask_sha256": "22d9e0411fd84dbb896738c3979897e3c218adb57c339786ab4e70b9410b2ec1",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00025.png",
+          "source_sha256": "d7993b4f60f4dd500f2769dd41f29fe5d700570b156c8df5b7bff90741cf4b69",
+          "region": [
+            259,
+            775,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00025/geometry.json"
+        },
+        {
+          "index": 26,
+          "source_index": 54,
+          "path": "assets/ancient-canal/character-normals/v1/up/frames/00026.png",
+          "sha256": "201d358b4a80b507c9958b98934a8b9120c22cbad688f2462bb066d35e5d31e9",
+          "mask_path": "assets/ancient-canal/character-normals/v1/up/masks/00026.png",
+          "mask_sha256": "48fe52448e47903c3557179abb964cb61cd9e59e727ff663528a123d9c0d9186",
+          "source_path": "assets/characters/crescent-traveler/v1/up/frames/00026.png",
+          "source_sha256": "c0856bed6484db1a9e21cef8b4aaf37bcc1c3cbf272848d78cb24470bd3db677",
+          "region": [
+            517,
+            775,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/up/00026/geometry.json"
+        }
+      ]
+    },
+    "left": {
+      "atlas": "assets/ancient-canal/character-normals/v1/left/atlas.png",
+      "atlas_sha256": "f60ab40c88827b0098e9410736740574e2decaa515feb1f6ea5c10c2928a4167",
+      "mask_atlas": "assets/ancient-canal/character-normals/v1/left/mask-atlas.png",
+      "mask_atlas_sha256": "68887ebd0ea2bdc68ed9b48ce3e7d05c540cc8ff6a9948bd39da6eea0e0be4d1",
+      "source_atlas": "assets/characters/crescent-traveler/v1/left/atlas.png",
+      "source_atlas_sha256": "b4ce90eb320f8ea762e321ab6ee2b7836ab9ebe8a7bd73cdf86316a3438631ba",
+      "source_manifest": "assets/characters/crescent-traveler/v1/left/animation.json",
+      "atlas_size": [
+        2064,
+        1032
+      ],
+      "pivot": [
+        128,
+        240
+      ],
+      "idle_frame": 10,
+      "keyposes": [
+        0,
+        6,
+        10,
+        13,
+        20,
+        26
+      ],
+      "loop": true,
+      "duration_ms": 1125,
+      "frames": [
+        {
+          "index": 0,
+          "source_index": 28,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00000.png",
+          "sha256": "93c042b751d0cf10cbada6a424e3e074139192ea179e5fe6fc7c8eb29b0ff850",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00000.png",
+          "mask_sha256": "e114fb234869e3fa587a2a73cab691ffb98a04c81c643fe2cf4c45ae6fb2d236",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00000.png",
+          "source_sha256": "812061da8e179086c7eff0a81dbff98158e2d71c5c1c10187ef6840b1da797ec",
+          "region": [
+            1,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00000/geometry.json"
+        },
+        {
+          "index": 1,
+          "source_index": 29,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00001.png",
+          "sha256": "16d972fe89962aebb208263d426dd92a3ba18e7409eda0505121f7c1facadc34",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00001.png",
+          "mask_sha256": "6de04c71ae7e924e5af8ab9249290e8685f82a12a790ffba570ac7a20c6dc0d5",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00001.png",
+          "source_sha256": "95cf9201a76743a9feb69e9126f284c68bad097e4956f56ce78c51cdddabf870",
+          "region": [
+            259,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00001/geometry.json"
+        },
+        {
+          "index": 2,
+          "source_index": 30,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00002.png",
+          "sha256": "ed8249d1b55a42e5567587413cc2333f434b09d9725854ff7d3a59b240e9f9a7",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00002.png",
+          "mask_sha256": "b05309522cabf07b2c8250821fea5fcae44460fb805e8fa9fc06473e8fc3a1b4",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00002.png",
+          "source_sha256": "6295afd0d614fdddc498ac5b580f19c776255a97fb912de12eaba82104d0b379",
+          "region": [
+            517,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00002/geometry.json"
+        },
+        {
+          "index": 3,
+          "source_index": 31,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00003.png",
+          "sha256": "d3062f4100fbddac52d2d098cd3ca6394035db3dbf1daae80a18da41cbba957c",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00003.png",
+          "mask_sha256": "8893008b285a7373e216dc6590520165bf1d59407b80d5d78d72d4b8fe886e2b",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00003.png",
+          "source_sha256": "017c4c2efceb4666dce0a124e70fde81c5a8e3cc7fe4b14c7ebd350561c42f7a",
+          "region": [
+            775,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00003/geometry.json"
+        },
+        {
+          "index": 4,
+          "source_index": 32,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00004.png",
+          "sha256": "4edf9f45bbcdda06529128207658a168b7625e221d76effaed889976b7f61236",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00004.png",
+          "mask_sha256": "b503817e60e008a8a51e3510ed21bb208c5fc99cd544f0986b826b2bd9e68964",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00004.png",
+          "source_sha256": "8349ef10b055715cd1a7d94860836b23c7f4faa576c933e9b60086d76dfa5b05",
+          "region": [
+            1033,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00004/geometry.json"
+        },
+        {
+          "index": 5,
+          "source_index": 33,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00005.png",
+          "sha256": "2412e10523ded99ec84e0ad202eeb55ffe7e72a9cf7b42f6a8da84a94ef9516b",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00005.png",
+          "mask_sha256": "6789f2a1b8bcaa4a07b92bec9f7b60fbef063c3cc5862a538dac27f27fc3f494",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00005.png",
+          "source_sha256": "2b05a85275fc79b2b9dab86826c472dc7b4c6b8b6398ef0627c70cb1d3b03cad",
+          "region": [
+            1291,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00005/geometry.json"
+        },
+        {
+          "index": 6,
+          "source_index": 34,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00006.png",
+          "sha256": "baf0fc36ff3f14ffc05254ee0f604146545985a092a1a4c64f31ac4372f1e8e4",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00006.png",
+          "mask_sha256": "517d31984d39367713961c52288484d41ef7abcb26b0a20c930dc535caa35122",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00006.png",
+          "source_sha256": "84f3ae7b83757be81170bc7d2c7f82fe32fd3d5cc09648076e69388ba0bd9f81",
+          "region": [
+            1549,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00006/geometry.json"
+        },
+        {
+          "index": 7,
+          "source_index": 35,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00007.png",
+          "sha256": "11e5392970bb584229d2bdf2bdeb10b2e6f1840e1fc6873620eb7a0c028b6eb1",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00007.png",
+          "mask_sha256": "31b5d4223c5e56bf8430377ad2eca9065b3570ad9c43d305576c1407754048ba",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00007.png",
+          "source_sha256": "789425be0f77e9e6c09cb80cdf654d6201c73f1496bdb342274df3b3aa2cd37a",
+          "region": [
+            1807,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00007/geometry.json"
+        },
+        {
+          "index": 8,
+          "source_index": 36,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00008.png",
+          "sha256": "f25d3858dad8ccddaa19fad0c812132bd4dff00405203cd5dc3fa4754b36f339",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00008.png",
+          "mask_sha256": "e3a90da78ae0aacf6d6dc1a355d959fa2139f616b9e55ec50c0e050de5aba86b",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00008.png",
+          "source_sha256": "8479cd9968f2ccffd0acfc04a3e4742957e9689b01d7d6b47c4e95e46c8cf71e",
+          "region": [
+            1,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00008/geometry.json"
+        },
+        {
+          "index": 9,
+          "source_index": 37,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00009.png",
+          "sha256": "f6f89f9f282f95e5557b7004078a49210f8ae5cd622cef9c0435cf91bf08c935",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00009.png",
+          "mask_sha256": "7775a853a46755182506a44732f00d669c811091c6b5adc725722ce19029a93e",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00009.png",
+          "source_sha256": "64ff576f060fb2d643d45ef5781864b82bfd461632543b07234c343efddd71f7",
+          "region": [
+            259,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00009/geometry.json"
+        },
+        {
+          "index": 10,
+          "source_index": 38,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00010.png",
+          "sha256": "d1772daf6939c59aa9eca70d4c5cad436ed39b817c05fa359032af18f8f44ae3",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00010.png",
+          "mask_sha256": "207cf80ace33a75c101b09077d803e34ee255ff3abf8c004c11fe8e4cf8b2002",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00010.png",
+          "source_sha256": "e7e01c92861ae17f412f0a389a53d242b77d354878187bc69dade52672360ece",
+          "region": [
+            517,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00010/geometry.json"
+        },
+        {
+          "index": 11,
+          "source_index": 39,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00011.png",
+          "sha256": "d4beb9b021dff468a1585bd16a86893b50180d4742283f974af6e08c1e92733e",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00011.png",
+          "mask_sha256": "5e0e919c425fac947bdb5d3dc1c93ac038de93bbfce3618e2930bf558fe64834",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00011.png",
+          "source_sha256": "64b84712186686830c495d4084d17201811f2a0b68e4aa1b39b8bc8536dadb49",
+          "region": [
+            775,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00011/geometry.json"
+        },
+        {
+          "index": 12,
+          "source_index": 40,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00012.png",
+          "sha256": "23d695fe2f1cce2f73395ea32cf8eed8abc64252413a2687e939c556cd2d5966",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00012.png",
+          "mask_sha256": "027f18e2cabbb55090fc94dcc585a7776d5cd6c85d449cb11ba84cf56e469072",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00012.png",
+          "source_sha256": "d9392dc53771ca7e551bff027c1eff5885edb11fb6dda2bfd783f44637579ed6",
+          "region": [
+            1033,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00012/geometry.json"
+        },
+        {
+          "index": 13,
+          "source_index": 41,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00013.png",
+          "sha256": "002d2a86ea8d81395215d3b02e12d203c8f2cf853ddaf82e603815328c09a8b4",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00013.png",
+          "mask_sha256": "44a127f3f93a211ce46e3783b30bd531162b57227fcedbe91165db61105b09d3",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00013.png",
+          "source_sha256": "8df8799ee343b7640f4743d7895ebad306a9e4598a86473d33d96bf3525d0790",
+          "region": [
+            1291,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00013/geometry.json"
+        },
+        {
+          "index": 14,
+          "source_index": 42,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00014.png",
+          "sha256": "e6cad0ad4d0e66a2170760d29a4cf64b21b528ba48829f1ba48974f3da086ca4",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00014.png",
+          "mask_sha256": "1cf94449189267a5c4fd3d4be8326640ebdb3799a77deaf02469b2469d968a79",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00014.png",
+          "source_sha256": "83c08ec2e20a1047d96611bbc1447d4d34f555c00d6a87b06a8f17aa06dfac56",
+          "region": [
+            1549,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00014/geometry.json"
+        },
+        {
+          "index": 15,
+          "source_index": 43,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00015.png",
+          "sha256": "4cdd5a171bacaa9b183bca740ca10818e2dffb43d85e5a0e4ce8cf706d7ffaea",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00015.png",
+          "mask_sha256": "8df57426c72f6f4f1aae2c5cd53c24337fa7f91551ad70e8a2601c7a2f9eccbc",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00015.png",
+          "source_sha256": "a9f735d26e9a179b678d64dd7285771c0d7b11c172a718d3e15ef98c2b4867f3",
+          "region": [
+            1807,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00015/geometry.json"
+        },
+        {
+          "index": 16,
+          "source_index": 44,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00016.png",
+          "sha256": "7794953002ec4a9030dc31dd6b8df69b1352a4d5405b640cb76e0c6352c6138c",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00016.png",
+          "mask_sha256": "116651fb621efbf1e7a0510135a9d0bbee9b42b26d6d54c8f373ffb71a7e4d3d",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00016.png",
+          "source_sha256": "90994732b351b7c94f4a1b220238d60c67b2cb785eeede4f98746abf2ad4c946",
+          "region": [
+            1,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00016/geometry.json"
+        },
+        {
+          "index": 17,
+          "source_index": 45,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00017.png",
+          "sha256": "bef24797ec29c882fc994083f6319fda1925399a07254903cc27238f33dcb47c",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00017.png",
+          "mask_sha256": "dc125b584cd3864e756360cd4e9df988c576acc97e795da119a675750d12c7c3",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00017.png",
+          "source_sha256": "7f167a0ca150b74b6cc0dbd4aa64fc0fcc019f0ed72f5fa60bad1db028e8c061",
+          "region": [
+            259,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00017/geometry.json"
+        },
+        {
+          "index": 18,
+          "source_index": 46,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00018.png",
+          "sha256": "7243e8589b64dc06a50f4fc7a631677a6e7828c4c510fcef70f0a751090d23e4",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00018.png",
+          "mask_sha256": "a187553b04daee64147562ebf39f95463454e4fc28a65600c57f914283d210a2",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00018.png",
+          "source_sha256": "aa5a7cf161b953279880c43906417d08ed75dabe9e0ab858362e8acc33147f90",
+          "region": [
+            517,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00018/geometry.json"
+        },
+        {
+          "index": 19,
+          "source_index": 47,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00019.png",
+          "sha256": "86602b6f4c50ecd4b4d56edf584c3b66b9129f5a12360c6a127e50b084d0269d",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00019.png",
+          "mask_sha256": "756ed86b00524f0c8e8feaf9881537c617060bb92806aca185ca84f8dc9696bf",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00019.png",
+          "source_sha256": "85d03b86e21b2ef2bfaca073e92579732b0ac0499b5e89ad649ed98c24780965",
+          "region": [
+            775,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00019/geometry.json"
+        },
+        {
+          "index": 20,
+          "source_index": 48,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00020.png",
+          "sha256": "aa16562dcc2603edeb179b7132cffb490d48dbd40a970c557993664340b53655",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00020.png",
+          "mask_sha256": "ca1dfb358b7bc9bba29c27a1435014de684895db5658845694718593bf0d0cb9",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00020.png",
+          "source_sha256": "37039aee6f63ea0153f3f18cbc68cbd28ad30f38c05383a7bc08211f91f2ff4a",
+          "region": [
+            1033,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00020/geometry.json"
+        },
+        {
+          "index": 21,
+          "source_index": 49,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00021.png",
+          "sha256": "8a504d1c333d476ba4d3d851f85b5080a8dc4914fd95edbe6bd293b14e5c3476",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00021.png",
+          "mask_sha256": "b3b6a758e9f62d5c627590fbe4d1997ddde8133a47241c203bc84162d6864cc8",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00021.png",
+          "source_sha256": "f270b27a378a8376f47b308f69a8babad6b5c0f3a1bec79d3843707dbc2b57f1",
+          "region": [
+            1291,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00021/geometry.json"
+        },
+        {
+          "index": 22,
+          "source_index": 50,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00022.png",
+          "sha256": "e2c3f5143be0089ac5253b91f8465e2536c7193ecb71fcd4ea0ae121c0ea3688",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00022.png",
+          "mask_sha256": "1cf4338a76bd924ed5347718ce46d38f546f5cc603c0d5199d6e2d635851df63",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00022.png",
+          "source_sha256": "f53b0f02886f183b8339cd2e3dcde13ee74c74ed2986018500e9ebe5d09e375b",
+          "region": [
+            1549,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00022/geometry.json"
+        },
+        {
+          "index": 23,
+          "source_index": 51,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00023.png",
+          "sha256": "ba15b0a5c4d880c3b190944c39c65a3b28285aa4efd5f87a317744feebb46ef9",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00023.png",
+          "mask_sha256": "8b07c7b8b05952269fbf0888c32d873cf12178ea183659c171cd63bb5ec1bcbf",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00023.png",
+          "source_sha256": "055db508b7980b31c8c8d486c700326e2ec1baa5ec441dd534d01307e9567f9e",
+          "region": [
+            1807,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00023/geometry.json"
+        },
+        {
+          "index": 24,
+          "source_index": 52,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00024.png",
+          "sha256": "7ca6c2ea2ce1f1e872d359c340e6cbfec494a8b41ab0f885557fd54cfed36786",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00024.png",
+          "mask_sha256": "9ab2115f32848d25dad09a0f6d84cfc48c1e7bb210e139ed6147be7ff1568909",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00024.png",
+          "source_sha256": "82882561c7898ee5e60fac9c15b1f226ca37819e51b5ee9c82ded9178fbe9b56",
+          "region": [
+            1,
+            775,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00024/geometry.json"
+        },
+        {
+          "index": 25,
+          "source_index": 53,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00025.png",
+          "sha256": "7f486f5ce32a3fa55659b3639bac6283345f76a71200316f8be4efd380ff869b",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00025.png",
+          "mask_sha256": "3d9d8a53eb57e3556d0fdcabff3c6d410115754509074d24e2c5954cb3bf382b",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00025.png",
+          "source_sha256": "ee3e746d4c8edfd23cb9ff3df1ebc3785d9f2b18235b3b92be87f1035286daf9",
+          "region": [
+            259,
+            775,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00025/geometry.json"
+        },
+        {
+          "index": 26,
+          "source_index": 54,
+          "path": "assets/ancient-canal/character-normals/v1/left/frames/00026.png",
+          "sha256": "e434a7b9aa48f7ab5566ded5ca380672ae35f90d47c7cdc77534e8373e7653f8",
+          "mask_path": "assets/ancient-canal/character-normals/v1/left/masks/00026.png",
+          "mask_sha256": "4e970449ea47f950e15bc37e1da42b93e84bf4c0779cbc7fe888f74280d4e01d",
+          "source_path": "assets/characters/crescent-traveler/v1/left/frames/00026.png",
+          "source_sha256": "a73d5c8cf82c5c24c7970d94f0c5ed15d8a93db4880d84f7c52f29fa37bfbbe5",
+          "region": [
+            517,
+            775,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/left/00026/geometry.json"
+        }
+      ]
+    },
+    "right": {
+      "atlas": "assets/ancient-canal/character-normals/v1/right/atlas.png",
+      "atlas_sha256": "211ef73a1f11b0b86155a79ceb5a444861be4aa8f27a8b54d9b5acd01dfb8af7",
+      "mask_atlas": "assets/ancient-canal/character-normals/v1/right/mask-atlas.png",
+      "mask_atlas_sha256": "d7e096df3da248578681d9a859fac2213e2a83d21ae513943ca0837831e9b155",
+      "source_atlas": "assets/characters/crescent-traveler/v1/right/atlas.png",
+      "source_atlas_sha256": "2151bddadb0b25e3d3a6426d769bbfc4d4ca7f1e09893c4199a83b5a6b350860",
+      "source_manifest": "assets/characters/crescent-traveler/v1/right/animation.json",
+      "atlas_size": [
+        2064,
+        1032
+      ],
+      "pivot": [
+        128,
+        240
+      ],
+      "idle_frame": 11,
+      "keyposes": [
+        0,
+        6,
+        11,
+        13,
+        20,
+        26
+      ],
+      "loop": true,
+      "duration_ms": 1125,
+      "frames": [
+        {
+          "index": 0,
+          "source_index": 28,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00000.png",
+          "sha256": "83f064eaee7ca288f92b8d02d421e16ff70cd80d403a283b3c1ae06cc0313c3f",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00000.png",
+          "mask_sha256": "4b6cda97e7f376ca124ad1104b9d07af2abb01b6827db39adff06087cf0b325b",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00000.png",
+          "source_sha256": "31a9ea1aa2a68f600f26539f76448fcd3be1b51490e976a34b069a876c9463b3",
+          "region": [
+            1,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00000/geometry.json"
+        },
+        {
+          "index": 1,
+          "source_index": 29,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00001.png",
+          "sha256": "075e78e8bb8c7c7ba7a5a769074bc4f72daee114626126cd7395ef589e3000c3",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00001.png",
+          "mask_sha256": "6d5a15f33fc04b15051b28583de30eee29467407ae403c150d51a9d3fc46e8e3",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00001.png",
+          "source_sha256": "21070c51b18678ffbff0fc596bd42040622e4ba15b613a81ebea5f4b1e45adbe",
+          "region": [
+            259,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00001/geometry.json"
+        },
+        {
+          "index": 2,
+          "source_index": 30,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00002.png",
+          "sha256": "5ca592e597ca8c137ae25266ef2dbe5682b4d35364462b900b7bf531b456b8a6",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00002.png",
+          "mask_sha256": "9fc474a2a23d88a7ece115c8f9819fdfe47d4ce5431029720b8de2b09d267b1c",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00002.png",
+          "source_sha256": "d39699b70865921e49fc604ca3ecb0f6294481eae62cb5ca5548b283b31425e1",
+          "region": [
+            517,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00002/geometry.json"
+        },
+        {
+          "index": 3,
+          "source_index": 31,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00003.png",
+          "sha256": "b5b89f5b03b768f553fd12b6ff27a85dbe6056dfd349cc1fe265e94ec5f941e5",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00003.png",
+          "mask_sha256": "5e622da241398186b5bcd14a04ad8b2584391af8ac4626b00de1d97a9ac6e54d",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00003.png",
+          "source_sha256": "a42c4139c55b6409e29b7f334c518ea9ee5e60fac7ab52116e2779a69235fdc9",
+          "region": [
+            775,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00003/geometry.json"
+        },
+        {
+          "index": 4,
+          "source_index": 32,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00004.png",
+          "sha256": "aacb1ddd723aab96c3f30f64180c9033e96023de72d1d269e8733a536d43e523",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00004.png",
+          "mask_sha256": "7ee17761c584dabfe30370b3208b321b75b0592970831d93b58d60d644a22e5f",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00004.png",
+          "source_sha256": "fa1bbcaeb0edc1046597fb42f7d819e10fcf97b7b920d23f448871bc652cf619",
+          "region": [
+            1033,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00004/geometry.json"
+        },
+        {
+          "index": 5,
+          "source_index": 33,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00005.png",
+          "sha256": "bed1a5761d30cac64f1da82aaf8a35a11b4d33cc9191520d58aa9e746ca5331f",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00005.png",
+          "mask_sha256": "1e6a8d80cdb6b073b530be76f9fa817c3489567069238bb998cf802e9be90da2",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00005.png",
+          "source_sha256": "91c27d6b5b8aa014d2f3276e4d4316a25678dfd324e1a6e0a7777736b7f5ae3d",
+          "region": [
+            1291,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00005/geometry.json"
+        },
+        {
+          "index": 6,
+          "source_index": 34,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00006.png",
+          "sha256": "f4be65ad108ca2bad9a78cda5dfc3db835d569102f4ec05ebba7f1030b564ba9",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00006.png",
+          "mask_sha256": "81511089658e1b637410a8271009a550cd9f67a2845869fb803c1e00912547e9",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00006.png",
+          "source_sha256": "7634691c7f6a17bb947ca23317900d51173d06d2d6a8d793773285376fe06724",
+          "region": [
+            1549,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00006/geometry.json"
+        },
+        {
+          "index": 7,
+          "source_index": 35,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00007.png",
+          "sha256": "44e013bbd4bd765481d9f1841546e42d4d85d7141b184bcebd0b2b7c71d0e61b",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00007.png",
+          "mask_sha256": "ded77c5a00a0a945510a2dcc260d1453b449f16618ed732e2fd6aa0d568a2020",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00007.png",
+          "source_sha256": "c52dc8e972883635c489db620ab8bf5206a66ef09f2864f47273a9c735cb7ba3",
+          "region": [
+            1807,
+            1,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00007/geometry.json"
+        },
+        {
+          "index": 8,
+          "source_index": 36,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00008.png",
+          "sha256": "db7679aa760d4c1dd8779ec9f4d120411d09e8fce2874c4aa71f87bc325730eb",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00008.png",
+          "mask_sha256": "ebb91c161d1ca5c423c12aab697ea7d8db78cb5aece904e246727bdf68dbf3b2",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00008.png",
+          "source_sha256": "0d4c06f4b29030eb047d99dede89c7ec9c3507198f552309802589c284e340dd",
+          "region": [
+            1,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00008/geometry.json"
+        },
+        {
+          "index": 9,
+          "source_index": 37,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00009.png",
+          "sha256": "c1f3eb4df58d7082177e7441dce9b79a0704979f9ae0a1540de822ea024459b2",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00009.png",
+          "mask_sha256": "419ac49caec9445e502eaabab30297f718a65875aad3a1c215d1e4c0d22538ab",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00009.png",
+          "source_sha256": "8a81b10fea9188f44e7659d251d08c74f864af2fb29921cc650b8c005ab4f3e5",
+          "region": [
+            259,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00009/geometry.json"
+        },
+        {
+          "index": 10,
+          "source_index": 38,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00010.png",
+          "sha256": "7bf3d9635dccc7ff0b5765af519036accc452bd20eb22dbd0e662a420660de44",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00010.png",
+          "mask_sha256": "016b941f02ae22199b418e16363c700de94a9a851c4b8e8293e79c80085fea5f",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00010.png",
+          "source_sha256": "1e3a655f8eb5a5d448aeb8519ac137bed91ec98c47bdf467f56066f4939bd0a3",
+          "region": [
+            517,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00010/geometry.json"
+        },
+        {
+          "index": 11,
+          "source_index": 39,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00011.png",
+          "sha256": "be854d791e3d68aea869acb970a4bbdb8852bacff66f806c22397a78f8c6188e",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00011.png",
+          "mask_sha256": "c006af2cf6a1a5d4ae252f6d279f44701c3757428095bde3262d8886bef21c17",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00011.png",
+          "source_sha256": "6b3606a1dda4eef856e1981d45b4734781e4d3c7622b9363ebad88648cc36d12",
+          "region": [
+            775,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00011/geometry.json"
+        },
+        {
+          "index": 12,
+          "source_index": 40,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00012.png",
+          "sha256": "8ec7e9c6a593d7d13dee85e01c911224edfaa425b8b2502b189180a36ae29f3c",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00012.png",
+          "mask_sha256": "41e4c8af3a4bf43ee1eeca3cc61ee488be1b039f9801e343c44e21d77191eeac",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00012.png",
+          "source_sha256": "cc4531b3a7bc1e8005d1cbf97c5c09a246e85b776ad045e3e42cd29d3612c4e1",
+          "region": [
+            1033,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00012/geometry.json"
+        },
+        {
+          "index": 13,
+          "source_index": 41,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00013.png",
+          "sha256": "9a518aedf38860c2108fa4e0cd0e36dc28ff15e1f4e7167233dd51f14083dfde",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00013.png",
+          "mask_sha256": "d66de1f1395ad231a12df8d3d472c7c4fb8c5f97a6c62528cbc6ee0f368c1d5f",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00013.png",
+          "source_sha256": "34c59a345e153b9ea85bb968f928a17fa48bfaff66287df05dd0f1e2c57c166d",
+          "region": [
+            1291,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00013/geometry.json"
+        },
+        {
+          "index": 14,
+          "source_index": 42,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00014.png",
+          "sha256": "4d08450513f209fd81f4593ad4b33c8a3dee7993fa4157d2a1e295bb2ee39f28",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00014.png",
+          "mask_sha256": "9ed78f75e035edcb5dc15fc9b6b9012a4d4230531f479be8948178c00fe1f62f",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00014.png",
+          "source_sha256": "0b0c68407f4f00401539e70f8c7a670aca658e812016bd7d6eaad0077c5da326",
+          "region": [
+            1549,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00014/geometry.json"
+        },
+        {
+          "index": 15,
+          "source_index": 43,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00015.png",
+          "sha256": "9e79185316931e188f5e4cc926e7de12d88c992cd2d198e8b59082efa1b063de",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00015.png",
+          "mask_sha256": "3c40990fcd09ee0d1a71ab078b81bb9b71928017a69cf98312c355007a46c91c",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00015.png",
+          "source_sha256": "da652830577e30a608f406202ed31dc9a04e7860186e0b1c7067f4276b839420",
+          "region": [
+            1807,
+            259,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00015/geometry.json"
+        },
+        {
+          "index": 16,
+          "source_index": 44,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00016.png",
+          "sha256": "cf43aa52c6995c4b1a03f99d2614609ac68b1fed3c550fc0b03b1aadcc1b1d96",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00016.png",
+          "mask_sha256": "4d495280ccdeb854634081b93a68ab73b2680dd830ad96d1f4418c2028d1e4d4",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00016.png",
+          "source_sha256": "2292cfce75f9112d6cd606a6cc2cd6aa31b983d9c7a7633f6ce8634caec70421",
+          "region": [
+            1,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00016/geometry.json"
+        },
+        {
+          "index": 17,
+          "source_index": 45,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00017.png",
+          "sha256": "3f7a368fbe90d965c6c3636ced27b1e02af6ef7ee261281d64fd574553ccc573",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00017.png",
+          "mask_sha256": "f24a592f0cf7751ec03454f9c11469a431c30e052b8b6f59c05b92b554c29350",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00017.png",
+          "source_sha256": "b893937fffeaecd012cdd4969cb058153b6ac626121a517a18d8675198cc7caf",
+          "region": [
+            259,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00017/geometry.json"
+        },
+        {
+          "index": 18,
+          "source_index": 46,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00018.png",
+          "sha256": "a142b6a269ac40c115c96f0bd6c3c4ee0348934aad7286162806f31a871e85e0",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00018.png",
+          "mask_sha256": "e2a8372ec93db2b3aaf54b1f7f0df4e0e5d337a105965a0e39e1e66065d57d33",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00018.png",
+          "source_sha256": "40568852ab27dea75f877eb90dc9225eb22c78d5c2a062791aa5ceddc5958d33",
+          "region": [
+            517,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00018/geometry.json"
+        },
+        {
+          "index": 19,
+          "source_index": 47,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00019.png",
+          "sha256": "552c779b8a1fc34cf04e04b54fd42a5d8c7097c7cc554908263e2643feb67129",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00019.png",
+          "mask_sha256": "041e0ada406146efca65ef85bb48a66abf20f77f7914c20491869dc2f791c16e",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00019.png",
+          "source_sha256": "3fd95e82758c424fe7124265d52136b3f822d3f23369c39665040f006ff02853",
+          "region": [
+            775,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00019/geometry.json"
+        },
+        {
+          "index": 20,
+          "source_index": 48,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00020.png",
+          "sha256": "ca0396a43043fe02ff46fac5d68b5ba166122cf44fb437927612e78846a53c1b",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00020.png",
+          "mask_sha256": "a2729680c8bcd22f2c101143af56f52483049cd532b6b476f7443f32904c8597",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00020.png",
+          "source_sha256": "41c277f237aaaa54ba583d54b12a3d40723f591aa7efc8d2d059fdbe53c421e5",
+          "region": [
+            1033,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00020/geometry.json"
+        },
+        {
+          "index": 21,
+          "source_index": 49,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00021.png",
+          "sha256": "7d634ed408224ddbdf4cdd7798660d33e237b2e5b5eb71194d48501a10de9504",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00021.png",
+          "mask_sha256": "a87c062d4db2ab355a73d2cedecd3063f6dd5272fbe4c1bb2f2541f4db7c995a",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00021.png",
+          "source_sha256": "3106e44961cc63ba1d56b73c3ad3ca32b15241c3b3c8eee2a24dede2293c0200",
+          "region": [
+            1291,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00021/geometry.json"
+        },
+        {
+          "index": 22,
+          "source_index": 50,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00022.png",
+          "sha256": "9b48becf2e95da8ba1cd568b2c8c56891eec5178394b89bef6ae6d7e6ff5956d",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00022.png",
+          "mask_sha256": "bfe13c986f8500f1778a35aa2262e5883d5d23353586b8f5d04274a4dacfec2c",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00022.png",
+          "source_sha256": "9599a4bf4700ba4a3b57323cadb2782cfb348a481cb2fa97af001b3726fb380a",
+          "region": [
+            1549,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00022/geometry.json"
+        },
+        {
+          "index": 23,
+          "source_index": 51,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00023.png",
+          "sha256": "5fc3cdc82e857ff04699bd59b9900055d4aecb787aee724a86919bf5b6b887bc",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00023.png",
+          "mask_sha256": "20875179bc952f251ec29e9fe9831216dfaa95862c7a3ff832cc6c48da743236",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00023.png",
+          "source_sha256": "51a1a3a94a49990536d446507d43fbfca9fcf9548b2f4f5f2ce5a6b9ede7f4a8",
+          "region": [
+            1807,
+            517,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00023/geometry.json"
+        },
+        {
+          "index": 24,
+          "source_index": 52,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00024.png",
+          "sha256": "aeec0f438d7c8e4f737bc64285b00a34b790681e613631a9884c6d40332c996b",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00024.png",
+          "mask_sha256": "87e1761514e09dd044937ae4b49f0b46806100fed13ba8cdeabce49c3febecad",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00024.png",
+          "source_sha256": "2fa60bfe93cfb1a4d72087f5101467bf48413904901745baaf492fcca1fee5cc",
+          "region": [
+            1,
+            775,
+            256,
+            256
+          ],
+          "duration_ms": 41,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00024/geometry.json"
+        },
+        {
+          "index": 25,
+          "source_index": 53,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00025.png",
+          "sha256": "92bbc4c5b5af6c21880dc54be1b05eddc98f166646a280a485ba994f56ca66e6",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00025.png",
+          "mask_sha256": "a504b557aa02c3e3e31e74af0d36d0d38d7216ff454e5874b6b4629d86a78d87",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00025.png",
+          "source_sha256": "651ca0ddbeb22fd249c52beccbd114071619347c7095c62983216a4cf4a7c6dc",
+          "region": [
+            259,
+            775,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00025/geometry.json"
+        },
+        {
+          "index": 26,
+          "source_index": 54,
+          "path": "assets/ancient-canal/character-normals/v1/right/frames/00026.png",
+          "sha256": "7c59370bb274602672a33d5d253ad0a999f9fcca3e818af12c26661b35183391",
+          "mask_path": "assets/ancient-canal/character-normals/v1/right/masks/00026.png",
+          "mask_sha256": "e4d79fd121d967830cedf62d98992f114654b371ae2cb76e3d164f02521ce290",
+          "source_path": "assets/characters/crescent-traveler/v1/right/frames/00026.png",
+          "source_sha256": "cfdacaed8f2dff717de4410af3105a30443c696c46f580594f922a0062007763",
+          "region": [
+            517,
+            775,
+            256,
+            256
+          ],
+          "duration_ms": 42,
+          "editable": "art_source/ancient-canal/character-normals/editable/right/00026/geometry.json"
+        }
+      ]
+    }
+  }
+}

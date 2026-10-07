@@ -1,0 +1,1131 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-07",
+  "passed": true,
+  "operation": "Image.packed_files[].filepath normalized to existing project-relative Image.filepath; unrelated scene render output changed to a relative ignored build destination; original FILE images retained with use_fake_user to prevent Blender discarding unused packed mother materials on resave. Save and reopen, no geometry rebuild or GLB export.",
+  "blender": "5.2.2 LTS",
+  "models": 13,
+  "packed_paths_corrected": 182,
+  "glb_and_textures_unchanged": true,
+  "original_backup_scope": "Ignored local source-before-sanitizing folder; previous delivery packages and acceptance evidence remain historical and unchanged.",
+  "records": [
+    {
+      "id": "bank_wall",
+      "path": "art_source/ancient-canal/blender/bank_wall.blend",
+      "before_sha256": "e8ec3d301759922e4dce0860ef0a950a7c9d2667acb2e8d6d37bcfd5e56d00d1",
+      "after_sha256": "69a0fd679de36030077f3b3ab143c3ecf494eccf8851515bcb42959b31abfd86",
+      "geometry_sha256": "ae39bfc9ae7e73c9d10166084ecab3aa94078b2cdd8dfd843799507f721e1c17",
+      "material_sha256": "dacce6730c274eea34e0f23988f5665e063c95b0e8d9939c6678464fb8d9b0fb",
+      "packed_image_sha256": "af93136c7564d59ff10e5d9b2686690a9cb9ae090e86be1910e1c75e46667afe",
+      "geometry_unchanged": true,
+      "materials_unchanged": true,
+      "packed_images_unchanged": true,
+      "actual_reopened": true,
+      "corrected_fields": [
+        {
+          "image": "indigo.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo.png"
+        },
+        {
+          "image": "indigo_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo_normal.png"
+        },
+        {
+          "image": "leaf.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf.png"
+        },
+        {
+          "image": "leaf_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf_normal.png"
+        },
+        {
+          "image": "plaster.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster.png"
+        },
+        {
+          "image": "plaster_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster_normal.png"
+        },
+        {
+          "image": "red.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red.png"
+        },
+        {
+          "image": "red_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red_normal.png"
+        },
+        {
+          "image": "roof.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof.png"
+        },
+        {
+          "image": "roof_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof_normal.png"
+        },
+        {
+          "image": "stone.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone.png"
+        },
+        {
+          "image": "stone_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone_normal.png"
+        },
+        {
+          "image": "wood.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood.png"
+        },
+        {
+          "image": "wood_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood_normal.png"
+        }
+      ],
+      "render_output": "//../../../build/ancient-canal/model-preview"
+    },
+    {
+      "id": "boat",
+      "path": "art_source/ancient-canal/blender/boat.blend",
+      "before_sha256": "e5f21fc9f238361154b64b769c76f3bdc371d582e1e355772ff9bf37aab6981a",
+      "after_sha256": "a470843dc2f1c4f182ce892b97cf26bad49f24b6f45a2f325d98be7e6a9991ca",
+      "geometry_sha256": "97bd6431a676c0bcab833238a09ea2dd4f6be466e4f3b33e5dc12fee78f29e11",
+      "material_sha256": "222a85ecb2634c7faf3578b45cb2142cb945192b61f6c75c3524a9dc62c54e39",
+      "packed_image_sha256": "af93136c7564d59ff10e5d9b2686690a9cb9ae090e86be1910e1c75e46667afe",
+      "geometry_unchanged": true,
+      "materials_unchanged": true,
+      "packed_images_unchanged": true,
+      "actual_reopened": true,
+      "corrected_fields": [
+        {
+          "image": "indigo.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo.png"
+        },
+        {
+          "image": "indigo_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo_normal.png"
+        },
+        {
+          "image": "leaf.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf.png"
+        },
+        {
+          "image": "leaf_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf_normal.png"
+        },
+        {
+          "image": "plaster.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster.png"
+        },
+        {
+          "image": "plaster_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster_normal.png"
+        },
+        {
+          "image": "red.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red.png"
+        },
+        {
+          "image": "red_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red_normal.png"
+        },
+        {
+          "image": "roof.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof.png"
+        },
+        {
+          "image": "roof_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof_normal.png"
+        },
+        {
+          "image": "stone.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone.png"
+        },
+        {
+          "image": "stone_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone_normal.png"
+        },
+        {
+          "image": "wood.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood.png"
+        },
+        {
+          "image": "wood_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood_normal.png"
+        }
+      ],
+      "render_output": "//../../../build/ancient-canal/model-preview"
+    },
+    {
+      "id": "bridge",
+      "path": "art_source/ancient-canal/blender/bridge.blend",
+      "before_sha256": "3ab529d39e5d8e9f29f5a6465f30e65b355297c70090941f44a4f2e45d7cc719",
+      "after_sha256": "3436acd5a675e560e347843c61284326004f3a1afd2fae6825cff321fb0aebc5",
+      "geometry_sha256": "0e0ebd926b718225eeac37748f379ce57d351e8a5fd210fca0a30cff267fec62",
+      "material_sha256": "dacce6730c274eea34e0f23988f5665e063c95b0e8d9939c6678464fb8d9b0fb",
+      "packed_image_sha256": "af93136c7564d59ff10e5d9b2686690a9cb9ae090e86be1910e1c75e46667afe",
+      "geometry_unchanged": true,
+      "materials_unchanged": true,
+      "packed_images_unchanged": true,
+      "actual_reopened": true,
+      "corrected_fields": [
+        {
+          "image": "indigo.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo.png"
+        },
+        {
+          "image": "indigo_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo_normal.png"
+        },
+        {
+          "image": "leaf.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf.png"
+        },
+        {
+          "image": "leaf_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf_normal.png"
+        },
+        {
+          "image": "plaster.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster.png"
+        },
+        {
+          "image": "plaster_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster_normal.png"
+        },
+        {
+          "image": "red.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red.png"
+        },
+        {
+          "image": "red_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red_normal.png"
+        },
+        {
+          "image": "roof.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof.png"
+        },
+        {
+          "image": "roof_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof_normal.png"
+        },
+        {
+          "image": "stone.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone.png"
+        },
+        {
+          "image": "stone_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone_normal.png"
+        },
+        {
+          "image": "wood.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood.png"
+        },
+        {
+          "image": "wood_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood_normal.png"
+        }
+      ],
+      "render_output": "//../../../build/ancient-canal/model-preview"
+    },
+    {
+      "id": "cloth_banner",
+      "path": "art_source/ancient-canal/blender/cloth_banner.blend",
+      "before_sha256": "cd7cc1e9df1fccd3d4fcffcc176222a061313eb33518aba47b761b293e763902",
+      "after_sha256": "2658bca7e69d148693dad6dcff7840c078214626f58aa12b72301b3c66934314",
+      "geometry_sha256": "d2124ff2dc9e3223649f37be523f73ed62e1ba43d9fcc249c489ad8fa41587bd",
+      "material_sha256": "26163d9e049c541750f5a8f69c31068bf57fefece082c54a542754984095d980",
+      "packed_image_sha256": "af93136c7564d59ff10e5d9b2686690a9cb9ae090e86be1910e1c75e46667afe",
+      "geometry_unchanged": true,
+      "materials_unchanged": true,
+      "packed_images_unchanged": true,
+      "actual_reopened": true,
+      "corrected_fields": [
+        {
+          "image": "indigo.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo.png"
+        },
+        {
+          "image": "indigo_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo_normal.png"
+        },
+        {
+          "image": "leaf.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf.png"
+        },
+        {
+          "image": "leaf_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf_normal.png"
+        },
+        {
+          "image": "plaster.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster.png"
+        },
+        {
+          "image": "plaster_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster_normal.png"
+        },
+        {
+          "image": "red.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red.png"
+        },
+        {
+          "image": "red_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red_normal.png"
+        },
+        {
+          "image": "roof.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof.png"
+        },
+        {
+          "image": "roof_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof_normal.png"
+        },
+        {
+          "image": "stone.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone.png"
+        },
+        {
+          "image": "stone_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone_normal.png"
+        },
+        {
+          "image": "wood.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood.png"
+        },
+        {
+          "image": "wood_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood_normal.png"
+        }
+      ],
+      "render_output": "//../../../build/ancient-canal/model-preview"
+    },
+    {
+      "id": "cloth_stall",
+      "path": "art_source/ancient-canal/blender/cloth_stall.blend",
+      "before_sha256": "a42ac68f7dcaaf2cd025e2779008b0fa062b8eb23086061b5d2d5253b0481001",
+      "after_sha256": "99af73e028f443a96aa5610a401450e8c9377b25161f75f6b9cf722a4913e5dd",
+      "geometry_sha256": "c79610591e1b4cd92bc2cd9af3ec6246143da912a529d4ab3acadb997b59ceab",
+      "material_sha256": "107704f299621c7491b2709bd7f338e24e6e757b33ac754774ca2114f98ae91f",
+      "packed_image_sha256": "af93136c7564d59ff10e5d9b2686690a9cb9ae090e86be1910e1c75e46667afe",
+      "geometry_unchanged": true,
+      "materials_unchanged": true,
+      "packed_images_unchanged": true,
+      "actual_reopened": true,
+      "corrected_fields": [
+        {
+          "image": "indigo.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo.png"
+        },
+        {
+          "image": "indigo_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo_normal.png"
+        },
+        {
+          "image": "leaf.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf.png"
+        },
+        {
+          "image": "leaf_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf_normal.png"
+        },
+        {
+          "image": "plaster.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster.png"
+        },
+        {
+          "image": "plaster_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster_normal.png"
+        },
+        {
+          "image": "red.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red.png"
+        },
+        {
+          "image": "red_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red_normal.png"
+        },
+        {
+          "image": "roof.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof.png"
+        },
+        {
+          "image": "roof_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof_normal.png"
+        },
+        {
+          "image": "stone.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone.png"
+        },
+        {
+          "image": "stone_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone_normal.png"
+        },
+        {
+          "image": "wood.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood.png"
+        },
+        {
+          "image": "wood_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood_normal.png"
+        }
+      ],
+      "render_output": "//../../../build/ancient-canal/model-preview"
+    },
+    {
+      "id": "dock",
+      "path": "art_source/ancient-canal/blender/dock.blend",
+      "before_sha256": "9d5c99bf2826f0274bf335aa3457c59543b5ee2bded1c8b6e3bc16ce674c418e",
+      "after_sha256": "407494bfb49a90c7e5cb869e04bf8c018031ebef1c90c9d2555cdbc6b42e1a09",
+      "geometry_sha256": "55acf647c3f504280fc08e3c41cc6df26525735c03ec58f2f20f5bc9fa34f658",
+      "material_sha256": "f4d7916200a059a2c41a617d13ee812b63d52adc4b5de66673efe330889b9c38",
+      "packed_image_sha256": "af93136c7564d59ff10e5d9b2686690a9cb9ae090e86be1910e1c75e46667afe",
+      "geometry_unchanged": true,
+      "materials_unchanged": true,
+      "packed_images_unchanged": true,
+      "actual_reopened": true,
+      "corrected_fields": [
+        {
+          "image": "indigo.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo.png"
+        },
+        {
+          "image": "indigo_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo_normal.png"
+        },
+        {
+          "image": "leaf.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf.png"
+        },
+        {
+          "image": "leaf_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf_normal.png"
+        },
+        {
+          "image": "plaster.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster.png"
+        },
+        {
+          "image": "plaster_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster_normal.png"
+        },
+        {
+          "image": "red.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red.png"
+        },
+        {
+          "image": "red_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red_normal.png"
+        },
+        {
+          "image": "roof.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof.png"
+        },
+        {
+          "image": "roof_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof_normal.png"
+        },
+        {
+          "image": "stone.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone.png"
+        },
+        {
+          "image": "stone_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone_normal.png"
+        },
+        {
+          "image": "wood.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood.png"
+        },
+        {
+          "image": "wood_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood_normal.png"
+        }
+      ],
+      "render_output": "//../../../build/ancient-canal/model-preview"
+    },
+    {
+      "id": "food_stall",
+      "path": "art_source/ancient-canal/blender/food_stall.blend",
+      "before_sha256": "eb303be56287d23914c1560426c11a56b42728b0372da77877d3e03e4cc61098",
+      "after_sha256": "51fd964c155292efb74d72f4748438c72142668e5246d604d9e43fd9f951bfdb",
+      "geometry_sha256": "c6f348d5ac78d61aae4f4289fab099a2483f35a99124cec0775bdc1b36090c03",
+      "material_sha256": "5e4992cefb0ff8e54e52c16345dd9dd90e337b0f7b8919814822f6b56aca06ab",
+      "packed_image_sha256": "af93136c7564d59ff10e5d9b2686690a9cb9ae090e86be1910e1c75e46667afe",
+      "geometry_unchanged": true,
+      "materials_unchanged": true,
+      "packed_images_unchanged": true,
+      "actual_reopened": true,
+      "corrected_fields": [
+        {
+          "image": "indigo.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo.png"
+        },
+        {
+          "image": "indigo_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo_normal.png"
+        },
+        {
+          "image": "leaf.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf.png"
+        },
+        {
+          "image": "leaf_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf_normal.png"
+        },
+        {
+          "image": "plaster.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster.png"
+        },
+        {
+          "image": "plaster_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster_normal.png"
+        },
+        {
+          "image": "red.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red.png"
+        },
+        {
+          "image": "red_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red_normal.png"
+        },
+        {
+          "image": "roof.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof.png"
+        },
+        {
+          "image": "roof_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof_normal.png"
+        },
+        {
+          "image": "stone.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone.png"
+        },
+        {
+          "image": "stone_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone_normal.png"
+        },
+        {
+          "image": "wood.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood.png"
+        },
+        {
+          "image": "wood_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood_normal.png"
+        }
+      ],
+      "render_output": "//../../../build/ancient-canal/model-preview"
+    },
+    {
+      "id": "house",
+      "path": "art_source/ancient-canal/blender/house.blend",
+      "before_sha256": "216cda8138bef1d4ca8d95436f88537d37d663806dbc78e072eda498dfee9038",
+      "after_sha256": "c16836bc3f99416fd46990ae8f8b9fd970247f620368a1afc2eded3990836ae0",
+      "geometry_sha256": "032237eb3d11c502d9d8aaa4870c1b0b9542cdef171138d8d1c91eacff60db45",
+      "material_sha256": "b530e30fc2bb9d145a200541110132dafd8b225030173bec1ebae493890c510d",
+      "packed_image_sha256": "af93136c7564d59ff10e5d9b2686690a9cb9ae090e86be1910e1c75e46667afe",
+      "geometry_unchanged": true,
+      "materials_unchanged": true,
+      "packed_images_unchanged": true,
+      "actual_reopened": true,
+      "corrected_fields": [
+        {
+          "image": "indigo.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo.png"
+        },
+        {
+          "image": "indigo_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo_normal.png"
+        },
+        {
+          "image": "leaf.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf.png"
+        },
+        {
+          "image": "leaf_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf_normal.png"
+        },
+        {
+          "image": "plaster.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster.png"
+        },
+        {
+          "image": "plaster_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster_normal.png"
+        },
+        {
+          "image": "red.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red.png"
+        },
+        {
+          "image": "red_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red_normal.png"
+        },
+        {
+          "image": "roof.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof.png"
+        },
+        {
+          "image": "roof_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof_normal.png"
+        },
+        {
+          "image": "stone.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone.png"
+        },
+        {
+          "image": "stone_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone_normal.png"
+        },
+        {
+          "image": "wood.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood.png"
+        },
+        {
+          "image": "wood_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood_normal.png"
+        }
+      ],
+      "render_output": "//../../../build/ancient-canal/model-preview"
+    },
+    {
+      "id": "lantern",
+      "path": "art_source/ancient-canal/blender/lantern.blend",
+      "before_sha256": "6e06acb11da4c9f729872b7788e71a45098c0e382b0e562cea2ae4e8ff4802ee",
+      "after_sha256": "23b89131a6ba3a8f81e7ce46af4130a2207710d1eade11d4b4ebad0170794ecd",
+      "geometry_sha256": "ef15bb17604f2a78c8bc688aec8c169ef12467a5693e794dcacab0204fbbc856",
+      "material_sha256": "3dcdd7ac422d8d8a95fd34d497ac7fd09aaebef2a7e118478f6db683c0ae3bf0",
+      "packed_image_sha256": "af93136c7564d59ff10e5d9b2686690a9cb9ae090e86be1910e1c75e46667afe",
+      "geometry_unchanged": true,
+      "materials_unchanged": true,
+      "packed_images_unchanged": true,
+      "actual_reopened": true,
+      "corrected_fields": [
+        {
+          "image": "indigo.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo.png"
+        },
+        {
+          "image": "indigo_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo_normal.png"
+        },
+        {
+          "image": "leaf.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf.png"
+        },
+        {
+          "image": "leaf_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf_normal.png"
+        },
+        {
+          "image": "plaster.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster.png"
+        },
+        {
+          "image": "plaster_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster_normal.png"
+        },
+        {
+          "image": "red.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red.png"
+        },
+        {
+          "image": "red_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red_normal.png"
+        },
+        {
+          "image": "roof.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof.png"
+        },
+        {
+          "image": "roof_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof_normal.png"
+        },
+        {
+          "image": "stone.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone.png"
+        },
+        {
+          "image": "stone_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone_normal.png"
+        },
+        {
+          "image": "wood.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood.png"
+        },
+        {
+          "image": "wood_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood_normal.png"
+        }
+      ],
+      "render_output": "//../../../build/ancient-canal/model-preview"
+    },
+    {
+      "id": "streetlamp",
+      "path": "art_source/ancient-canal/blender/streetlamp.blend",
+      "before_sha256": "d170baaac4e6272a9d86c6d0b0913fee7607ec33a5a554ba3f990d11635f9996",
+      "after_sha256": "39ace76400f00d8d2a3e81359adcacce117d1f745fee5c0e547e861bf7bd3712",
+      "geometry_sha256": "4fff579f234da5cca97deb5188318b2ef27db029b5b440b0ae1840c5a04a10d3",
+      "material_sha256": "61dd4c4312f4d8361fc95a5b9d410fba34fc3555c5cd4640829c95cba1fd44ab",
+      "packed_image_sha256": "af93136c7564d59ff10e5d9b2686690a9cb9ae090e86be1910e1c75e46667afe",
+      "geometry_unchanged": true,
+      "materials_unchanged": true,
+      "packed_images_unchanged": true,
+      "actual_reopened": true,
+      "corrected_fields": [
+        {
+          "image": "indigo.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo.png"
+        },
+        {
+          "image": "indigo_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo_normal.png"
+        },
+        {
+          "image": "leaf.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf.png"
+        },
+        {
+          "image": "leaf_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf_normal.png"
+        },
+        {
+          "image": "plaster.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster.png"
+        },
+        {
+          "image": "plaster_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster_normal.png"
+        },
+        {
+          "image": "red.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red.png"
+        },
+        {
+          "image": "red_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red_normal.png"
+        },
+        {
+          "image": "roof.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof.png"
+        },
+        {
+          "image": "roof_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof_normal.png"
+        },
+        {
+          "image": "stone.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone.png"
+        },
+        {
+          "image": "stone_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone_normal.png"
+        },
+        {
+          "image": "wood.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood.png"
+        },
+        {
+          "image": "wood_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood_normal.png"
+        }
+      ],
+      "render_output": "//../../../build/ancient-canal/model-preview"
+    },
+    {
+      "id": "tavern",
+      "path": "art_source/ancient-canal/blender/tavern.blend",
+      "before_sha256": "647cdca0ff9136fd80895d7a71651d7da582a39ca92649a208adb587196f8f1f",
+      "after_sha256": "a43c0a77577001480ff578397a960d5ccc10fd2e145bbb7617db0143001d6688",
+      "geometry_sha256": "b6dd7a8233faee30c2ad28213088b5ce7da322dc4c7728b8e86258ffcf212bcb",
+      "material_sha256": "1c08f2d4ddc6836a45946d974b0a9327c604df7322e1987c4a6c14e14a80e695",
+      "packed_image_sha256": "af93136c7564d59ff10e5d9b2686690a9cb9ae090e86be1910e1c75e46667afe",
+      "geometry_unchanged": true,
+      "materials_unchanged": true,
+      "packed_images_unchanged": true,
+      "actual_reopened": true,
+      "corrected_fields": [
+        {
+          "image": "indigo.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo.png"
+        },
+        {
+          "image": "indigo_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo_normal.png"
+        },
+        {
+          "image": "leaf.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf.png"
+        },
+        {
+          "image": "leaf_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf_normal.png"
+        },
+        {
+          "image": "plaster.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster.png"
+        },
+        {
+          "image": "plaster_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster_normal.png"
+        },
+        {
+          "image": "red.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red.png"
+        },
+        {
+          "image": "red_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red_normal.png"
+        },
+        {
+          "image": "roof.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof.png"
+        },
+        {
+          "image": "roof_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof_normal.png"
+        },
+        {
+          "image": "stone.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone.png"
+        },
+        {
+          "image": "stone_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone_normal.png"
+        },
+        {
+          "image": "wood.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood.png"
+        },
+        {
+          "image": "wood_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood_normal.png"
+        }
+      ],
+      "render_output": "//../../../build/ancient-canal/model-preview"
+    },
+    {
+      "id": "willow",
+      "path": "art_source/ancient-canal/blender/willow.blend",
+      "before_sha256": "83005c7e7abd002bb25269d0a566f9130298ba86bf3c5bae166e29ec115509b7",
+      "after_sha256": "4414e3ceb6116bf838ac7ba3e6a0c719a5431284d14aee7acad0df664a0611a9",
+      "geometry_sha256": "32c5b0f2b8ecf88578a25a7323dcc8d3ab96ba83174443525881165d9bf4adaa",
+      "material_sha256": "fb40a82beffdcb66102f633b90e77c05e525dcc5f4b802b76ca1817fd1b2e914",
+      "packed_image_sha256": "af93136c7564d59ff10e5d9b2686690a9cb9ae090e86be1910e1c75e46667afe",
+      "geometry_unchanged": true,
+      "materials_unchanged": true,
+      "packed_images_unchanged": true,
+      "actual_reopened": true,
+      "corrected_fields": [
+        {
+          "image": "indigo.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo.png"
+        },
+        {
+          "image": "indigo_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo_normal.png"
+        },
+        {
+          "image": "leaf.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf.png"
+        },
+        {
+          "image": "leaf_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf_normal.png"
+        },
+        {
+          "image": "plaster.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster.png"
+        },
+        {
+          "image": "plaster_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster_normal.png"
+        },
+        {
+          "image": "red.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red.png"
+        },
+        {
+          "image": "red_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red_normal.png"
+        },
+        {
+          "image": "roof.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof.png"
+        },
+        {
+          "image": "roof_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof_normal.png"
+        },
+        {
+          "image": "stone.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone.png"
+        },
+        {
+          "image": "stone_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone_normal.png"
+        },
+        {
+          "image": "wood.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood.png"
+        },
+        {
+          "image": "wood_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood_normal.png"
+        }
+      ],
+      "render_output": "//../../../build/ancient-canal/model-preview"
+    },
+    {
+      "id": "wine_jar",
+      "path": "art_source/ancient-canal/blender/wine_jar.blend",
+      "before_sha256": "78f6b1c133f36393783f03b575858b1dd871f4f354f910c3afbaf8d109839cfe",
+      "after_sha256": "f041eb4d04a31be5375c3fcc7185a139f12fdac622037672a01e3572ba522f7b",
+      "geometry_sha256": "3ea972e7d121086f622a276a2ca17a9158e16ed77bf4be0f69a69c7eef3e1f3e",
+      "material_sha256": "e7353c9e86f5bdc1b3d89a67c172cab61554ba46c436e42c7387f17b2f2c4a1c",
+      "packed_image_sha256": "af93136c7564d59ff10e5d9b2686690a9cb9ae090e86be1910e1c75e46667afe",
+      "geometry_unchanged": true,
+      "materials_unchanged": true,
+      "packed_images_unchanged": true,
+      "actual_reopened": true,
+      "corrected_fields": [
+        {
+          "image": "indigo.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo.png"
+        },
+        {
+          "image": "indigo_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/indigo_normal.png"
+        },
+        {
+          "image": "leaf.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf.png"
+        },
+        {
+          "image": "leaf_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/leaf_normal.png"
+        },
+        {
+          "image": "plaster.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster.png"
+        },
+        {
+          "image": "plaster_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/plaster_normal.png"
+        },
+        {
+          "image": "red.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red.png"
+        },
+        {
+          "image": "red_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/red_normal.png"
+        },
+        {
+          "image": "roof.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof.png"
+        },
+        {
+          "image": "roof_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/roof_normal.png"
+        },
+        {
+          "image": "stone.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone.png"
+        },
+        {
+          "image": "stone_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/stone_normal.png"
+        },
+        {
+          "image": "wood.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood.png"
+        },
+        {
+          "image": "wood_normal.png",
+          "field": "Image.packed_files[].filepath",
+          "value": "//../../../assets/ancient-canal/textures/wood_normal.png"
+        }
+      ],
+      "render_output": "//../../../build/ancient-canal/model-preview"
+    }
+  ]
+}
