@@ -1,6 +1,10 @@
 # 江南河街 · 桥头酒肆
 
-这是独立的 HD2D 光影演示。沿两岸街道行走，经过石拱桥、酒肆、布摊、饮食摊与木码头，与掌柜、摊主、船工交谈。默认角色原样复用 A 角色四方向的 108 张 256×256 颜色帧、帧序、每帧时长、循环和脚底位置。新增的逐帧法线与银饰蒙版用于动态三维受光。
+这是项目默认启动的 HD2D 光影演示。沿两岸街道行走，经过石拱桥、酒肆、布摊、饮食摊与木码头，与掌柜、摊主、船工交谈。默认角色原样复用 A 角色四方向的 108 张 256×256 颜色帧、帧序、每帧时长、循环和脚底位置。新增的逐帧法线与银饰蒙版用于动态三维受光。
+
+打开工程后按 F5，或在工程根运行 `make run`，直接进入本场景。单独打开 `scenes/ancient_canal.tscn` 后也可按 F6。旧默认驿站 `scenes/waystation.tscn` 仅作存档和参考，打开后 F6 或使用 `make waystation-run` 单独运行。其他历史场景见[启动与操作](../operation/README.md)。
+
+主入口整理已通过 `make test` 与不指定场景的实际默认启动检查，共267项资源、角色、NPC与控制台检查。记录位于 `build/ancient-canal/main-scene-20261007/verification-summary.json`；历史场景、脚本、美术和测试源文件保持原样，30份既有检查文件在重跑前归档。本次仅做无窗口验证，未重新导出、录制或打包。
 
 本轮默认使用 F 正面透视：30 米观察半径、35° 纵向视野、14° 俯角、中央偏航 0°。玩家和三名 NPC 在世界中竖直站立，水平面朝主相机；相机俯仰不再让人物倾斜。远景由近镇、远镇、近山、远山、近云、远云六层组成。
 
@@ -42,7 +46,7 @@
 
 录制来源见[完整演示录制器](../../tools/ancient_canal/capture_lighting_demo.gd)，编码、时间线和独立解码来源见[视频编码与审计工具](../../tools/ancient_canal/encode_lighting_demo.py)。灰材质扫光工具现同时关闭新增大范围灯，避免它们混入单灯法线测试；这项修正不改写旧录像及其历史报告。
 
-使用交付的 Linux 包时，解压 `jiangnan-linux-x86_64.zip`，进入 `jiangnan-river-street`，运行 `jiangnan-river-street.x86_64`。独立 ELF 默认进入江南河街 `scenes/ancient_canal.tscn`。完整工程的 `project.godot` 默认入口仍为旧场景 `scenes/waystation.tscn`；在工程根运行 `python3 tools/ancient_canal/run.py run` 进入新场景。
+使用此前交付的 Linux 包时，解压 `jiangnan-linux-x86_64.zip`，进入 `jiangnan-river-street`，运行 `jiangnan-river-street.x86_64`。独立 ELF 与当前工程都默认进入江南河街 `scenes/ancient_canal.tscn`。`make export`／`make package` 使用江南交付流程；本次入口整理不重新生成历史运行包、录像或性能报告。
 
 ## 操作
 

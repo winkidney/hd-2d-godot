@@ -71,7 +71,10 @@ def verify_videos():
 
 def export():
     stage=copy_project('export')
-    config=stage/'project.godot';config.write_text(config.read_text().replace('run/main_scene="res://scenes/waystation.tscn"','run/main_scene="res://scenes/frontal_canal.tscn"'))
+    config=stage/'project.godot'
+    text,count=re.subn(r'^run/main_scene=.*$','run/main_scene="res://scenes/frontal_canal.tscn"',config.read_text(),flags=re.MULTILINE)
+    if count!=1:raise RuntimeError('Main scene setting was not found exactly once')
+    config.write_text(text)
     shutil.copytree(ROOT/'build/templates',stage/'build/templates')
     run([engine(),'--headless','--path',stage,'--editor','--quit'],'export-import')
     folder=OUT/'linux';folder.mkdir(exist_ok=True)

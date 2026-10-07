@@ -8,7 +8,9 @@ input-test:
 input-window-test:
 	$(INPUT_PYTHON) tools/input_window_test.py
 
-.PHONY: frontal-run frontal-import frontal-bake frontal-test frontal-quick frontal-visual frontal-record frontal-export frontal-rebuild frontal-package
+.PHONY: waystation-run frontal-run frontal-import frontal-bake frontal-test frontal-quick frontal-visual frontal-record frontal-export frontal-rebuild frontal-package
+waystation-run:
+	$(PYTHON) -c 'import sys,subprocess;sys.path.insert(0,"tools");from project import engine,ROOT,desktop_environment;subprocess.run([engine(),"--path",str(ROOT),"res://scenes/waystation.tscn"],env=desktop_environment(),check=True)'
 frontal-run:
 	$(PYTHON) -c 'import sys,subprocess;sys.path.insert(0,"tools");from project import engine,ROOT,desktop_environment;subprocess.run([engine(),"--path",str(ROOT),"scenes/frontal_canal.tscn"],env=desktop_environment(),check=True)'
 frontal-import frontal-bake frontal-quick frontal-record frontal-export frontal-rebuild:
@@ -63,7 +65,7 @@ BLENDER ?= blender
 .DEFAULT_GOAL := help
 .PHONY: help run editor import bake test visual export record assets models rebuild templates docs package reproduce
 help:
-	@printf '%s\n' 'run / editor: preview or edit' 'test / visual: offline tests or real GPU evidence' 'rebuild: regenerate assets, models, imports, baked scene' 'templates / export / package: Linux delivery' 'docs / reproduce: diagrams and clean-copy validation'
+	@printf '%s\n' 'run / editor: Jiangnan main scene or project editor' 'waystation-run / frontal-run / p9-run: archived reference scenes' 'canal-test / canal-camera-test: Jiangnan headless validation' 'export / package: Jiangnan Linux delivery' 'test / visual / rebuild / reproduce: archived Waystation validation and production tools' 'docs / templates: diagrams and locked export templates'
 run editor import bake:
 	$(PYTHON) tools/project.py $@
 assets:
@@ -82,7 +84,7 @@ templates:
 docs:
 	$(PYTHON) tools/render_diagrams.py
 package:
-	$(PYTHON) tools/package_parallax.py
+	$(PYTHON) tools/ancient_canal/package.py package
 reproduce:
 	$(PYTHON) tools/reproduce_parallax.py --headless-only
 
@@ -118,7 +120,7 @@ reproduce-visual:
 
 .PHONY: parallax-quick
 export:
-	$(PYTHON) tools/parallax.py export
+	$(PYTHON) tools/ancient_canal/package.py export
 parallax-quick:
 	$(PYTHON) tools/parallax.py quick-visual
 

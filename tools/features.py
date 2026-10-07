@@ -7,12 +7,13 @@ import subprocess
 import sys
 from project import ROOT, engine, desktop_environment, execute
 from feature_fingerprint import fingerprint
+SCENE = 'res://scenes/waystation.tscn'
 
 def native(mode: str, out: Path, quick: bool=False, binary: Path|None=None) -> dict:
     out.mkdir(parents=True,exist_ok=True)
     report_path=out/'features-report.json'
     if report_path.exists(): report_path.unlink()
-    command=[str(binary)] if binary else [engine(),'--path',str(ROOT)]
+    command=[str(binary)] if binary else [engine(),'--path',str(ROOT),SCENE]
     command += ['--headless'] if mode=='headless' else ['--resolution','1920x1080']
     command += ['--fixed-fps','60','--','--p6p7-test','--capture-dir='+str(out)]
     if quick: command.append('--quick')
@@ -50,7 +51,7 @@ def main() -> None:
             native('gpu',base/('gpu-quick' if action=='quick-visual' else 'gpu'),action=='quick-visual')
     else:
         folder=base/'media';folder.mkdir(parents=True,exist_ok=True)
-        execute([engine(),'--path',str(ROOT),'--resolution','1920x1080','--write-movie',str(folder/'walkthrough.avi'),'--fixed-fps','30','--quit-after','720','--','--walk-recording'],'p6p7-record',True,600)
+        execute([engine(),'--path',str(ROOT),SCENE,'--resolution','1920x1080','--write-movie',str(folder/'walkthrough.avi'),'--fixed-fps','30','--quit-after','720','--','--walk-recording'],'p6p7-record',True,600)
         subprocess.run(['ffmpeg','-y','-i',str(folder/'walkthrough.avi'),'-an','-c:v','libx264','-crf','20','-pix_fmt','yuv420p',str(folder/'walkthrough.mp4')],cwd=ROOT,check=True,capture_output=True)
         import hashlib
         movie=folder/'walkthrough.mp4'

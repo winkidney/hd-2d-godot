@@ -1,6 +1,6 @@
 """Reproduce P9 four-method comparisons with existing local tools only."""
 from pathlib import Path
-import sys, os, subprocess, json, hashlib, shutil, tempfile, time, zipfile
+import sys, os, subprocess, json, hashlib, shutil, tempfile, time, zipfile, re
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT/'tools'))
 from project import engine, desktop_environment
@@ -67,7 +67,9 @@ def export():
     (OUT/'staging').mkdir(parents=True,exist_ok=True)
     stage=copy_project('export')
     config=stage/'project.godot'
-    config.write_text(config.read_text().replace('run/main_scene="res://scenes/waystation.tscn"','run/main_scene="res://scenes/reference_scene.tscn"'))
+    text,count=re.subn(r'^run/main_scene=.*$','run/main_scene="res://scenes/reference_scene.tscn"',config.read_text(),flags=re.MULTILINE)
+    if count!=1:raise RuntimeError('Main scene setting was not found exactly once')
+    config.write_text(text)
     shutil.copytree(ROOT/'build/templates',stage/'build/templates')
     run([engine(),'--headless','--path',stage,'--editor','--quit'],'export-import')
     folder=OUT/'linux';folder.mkdir(exist_ok=True)

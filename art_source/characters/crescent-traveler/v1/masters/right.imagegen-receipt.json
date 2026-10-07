@@ -1,0 +1,14 @@
+{
+  "tool": "built-in image_gen",
+  "reference_role": "canonical character design supplied by user",
+  "reference_sha256": "3b8823af9320ae49d3a6e130e6bbed31e49aefd49f45c472121b8f39155974ad",
+  "output": "master-raw.png",
+  "output_sha256": "0e7c9b267b926fb3447bd735f101c2c24fb5d485384307d4f7f52bebc832b5df",
+  "prompt": "prompts/master.txt",
+  "model": null,
+  "seed": null,
+  "observed_request_time_utc": "2026-10-06 14:26:18",
+  "observed_completion_time_utc": "2026-10-06 14:28:10",
+  "timing_note": "Observed tool-call bounds; completion may precede collection.",
+  "revision_calls": 1
+}

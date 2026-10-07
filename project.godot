@@ -16,7 +16,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="HD-2D · Riverside Waystation"
 config/description="Original HD-2D scene study. See Plan, ADR and domain-model."
-run/main_scene="res://scenes/waystation.tscn"
+run/main_scene="res://scenes/ancient_canal.tscn"
 config/features=PackedStringArray("4.7", "Forward Plus")
 
 [display]

@@ -2,20 +2,30 @@
 
 ## 启动
 
-在工程根目录运行 `make run` 进入驿站，`make p9-run` 进入参考场景，`make frontal-run` 进入正面运河。
-编辑场景用 `make editor`，打开以下入口后按 F6 运行当前场景。F5 始终运行工程默认入口驿站。
+在工程根目录运行 `make run` 默认进入江南古风场景，也可用 `make canal-run` 显式运行。编辑工程用 `make editor`，F5 运行主场景江南河街，F6 运行当前单独打开的场景。
+
+原默认驿站仅作存档和参考，使用 `make waystation-run` 或单独打开后 F6；`make p9-run`、`make frontal-run` 分别打开历史参考场景与正面运河。
 
 | 场景文件 | 内容 |
 |---|---|
-| `scenes/waystation.tscn` | P6/P7/P8 驿站 |
-| `scenes/reference_scene.tscn` | P9 A/B/C/D 四方案 |
-| `scenes/reference_scene_graybox.tscn` | 同布局灰盒 |
-| `scenes/frontal_canal.tscn` | 正面运河 F/W/O 与镜距/FOV |
+| `scenes/ancient_canal.tscn` | 当前默认：江南河街、逐帧法线与中文光影控制台，F/W 镜头 |
+| `scenes/waystation.tscn` | 存档：原默认 P6/P7/P8 驿站 |
+| `scenes/reference_scene.tscn` | 存档：P9 A/B/C/D 四方案 |
+| `scenes/reference_scene_graybox.tscn` | 存档：同布局灰盒 |
+| `scenes/frontal_canal.tscn` | 存档：正面运河 F/W/O 与镜距/FOV |
 
 静态世界保存在场景中，灯光、玩家和HUD在运行时组装，因此编辑器未运行时不会完全呈现最终照明。
 `GODOT` 环境变量可指定已有引擎。启动工具只读取现有图形会话，不新建显示服务或更改桌面、防火墙。
 
-## 游戏内操作
+## 江南主场景操作
+
+WASD／方向键行走，E 交谈或调查，M 打开／关闭中文光影控制台，T 切换时段，G 开始自动路线，K 保存截图。面板关闭时滚轮调整当前 F／W 镜距。移动键或 Esc 可以接管自动路线，Esc 逐层关闭弹出选项、面板和对话；退出需确认。
+
+控制台提供角色材质、场景照明、环境效果、比较与复现四页，包含法线开关、逐帧查看、单灯测试、近远景深及设置保存。详细参数、截图位置和建议路线见[江南河街说明](../ancient-canal/README.md)。Tab 只导航焦点，文本编辑和修饰键不触发普通操作；F8／F9 留给编辑器。
+
+`make export`／`make package` 使用江南交付流程。历史运行包保持原入口和原内容，本次不重新制作。
+
+## 存档场景操作
 
 F8是Godot编辑器停止运行，F9可能暂停游戏，不能再用于打开游戏面板。游戏功能使用字母键或左上方按钮，不需要修改编辑器设置。
 

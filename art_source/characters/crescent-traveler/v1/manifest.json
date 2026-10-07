@@ -287,7 +287,12 @@
       "original_record": "../jibijibi-game/experiments/2026-10-06/user-character-hd2d-three-drafts/final/a-steady/pixel-256",
       "exact_original_frame_bytes": true,
       "exact_original_frame_timing": true,
-      "atlas_identity_claim": "Runtime atlas is validated against retained PNG pixels; no original atlas byte-identity claim."
+      "atlas_identity_claim": "Runtime atlas is validated against retained PNG pixels; no original atlas byte-identity claim.",
+      "imagegen_prompt": "art_source/characters/crescent-traveler/v1/masters/right.prompt.txt",
+      "imagegen_receipt": "art_source/characters/crescent-traveler/v1/masters/right.imagegen-receipt.json",
+      "imagegen_provenance": "art_source/characters/crescent-traveler/v1/masters/right.provenance.json",
+      "imagegen_internal_seed": null,
+      "imagegen_seed_note": "The original built-in image tool receipt exposed neither an internal model version nor a seed; its null values are preserved."
     }
   },
   "runtime_sha256_scope": "Current PNG and JSON files under the runtime root. Godot-generated .import metadata is excluded because the engine can rewrite it; lossless compression and disabled mipmaps are checked separately.",
@@ -416,7 +421,7 @@
   "source_sha256_scope": "All local editable sources, references, prompts, generation recipes, previews and retained rejected attempt; source manifest itself excluded.",
   "source_sha256": {
     "art_source/characters/crescent-traveler/v1/.gdignore": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "art_source/characters/crescent-traveler/v1/README.md": "ad2528b557dcf0786bc3339b38e6be737ca2c971e8aeb0e6a4b5805f8fd8901a",
+    "art_source/characters/crescent-traveler/v1/README.md": "5be0b2baefb36e3eb35e7022be42f4f08a377028d2cd5b16eac216f59529beab",
     "art_source/characters/crescent-traveler/v1/down.aseprite": "25329302418229ea39b2a7329b39d5bd608748f118a567db4e64815e637e15ae",
     "art_source/characters/crescent-traveler/v1/generation/down/aseprite-check.json": "a0e18f5b8c490ae79cd6d5e46409b6a8968b0e52146cb91176d28841e0696604",
     "art_source/characters/crescent-traveler/v1/generation/down/checks.json": "a586fb0e6c22e3afec229486d63c2c72d7db77b4a8b0cd67948774e4d22c1f21",
@@ -480,7 +485,10 @@
     "art_source/characters/crescent-traveler/v1/previews/up.webp": "8219fc36213f57eedaccbe091a3bf925da7dd280fb3d0244c22608bb0a3dc9fb",
     "art_source/characters/crescent-traveler/v1/reference.png": "3b8823af9320ae49d3a6e130e6bbed31e49aefd49f45c472121b8f39155974ad",
     "art_source/characters/crescent-traveler/v1/right.aseprite": "5088158daec159df3b9d102c3d157dbd62c8e59d2f3062263c1bf9e5dde6e513",
-    "art_source/characters/crescent-traveler/v1/up.aseprite": "46c477f9b70289fe3e949a6a30d646dbde2dabd02067fdbbf3f1e2fddcfed5d4"
+    "art_source/characters/crescent-traveler/v1/up.aseprite": "46c477f9b70289fe3e949a6a30d646dbde2dabd02067fdbbf3f1e2fddcfed5d4",
+    "art_source/characters/crescent-traveler/v1/masters/right.prompt.txt": "102badab5ecbd12fa071cc0251a2da011b457f0e2e08f80142c1122e52776df7",
+    "art_source/characters/crescent-traveler/v1/masters/right.imagegen-receipt.json": "9131415c39df7c9a69d17d54b098ce1ed574c390e57a0efbfaffa7fb9d12baaf",
+    "art_source/characters/crescent-traveler/v1/masters/right.provenance.json": "b10f4b38b7eff034b9e72c36a4385c9b6780e31ea79fffe3ed14031f6724df71"
   },
   "validation_status": {
     "right_original_frame_bytes_and_timing": "verified exact against adopted A",

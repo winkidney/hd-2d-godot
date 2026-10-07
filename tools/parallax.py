@@ -12,6 +12,7 @@ from project import ROOT, engine, desktop_environment, execute
 from feature_fingerprint import fingerprint
 
 OUT = ROOT/'build/p8'
+SCENE = 'res://scenes/waystation.tscn'
 
 def clean_errors(text: str) -> str:
     # Release stdout is buffered, so stderr can arrive outside the marker block.
@@ -28,7 +29,7 @@ def native(mode: str, folder: Path, quick=False, binary=None) -> dict:
     report_path = folder/'features-report.json'
     report_path.unlink(missing_ok=True)
     before = fingerprint(ROOT)
-    command = [str(binary)] if binary else [engine(),'--path',str(ROOT)]
+    command = [str(binary)] if binary else [engine(),'--path',str(ROOT),SCENE]
     command += ['--headless'] if mode == 'headless' else ['--resolution','1920x1080']
     command += ['--fixed-fps','60','--','--p8-test','--ignore-user-settings','--capture-dir='+str(folder)]
     if quick: command.append('--quick')
@@ -67,7 +68,7 @@ def settings_processes(folder: Path, binary=None) -> dict:
     reports = {}
     for mode in ('save','reload','ignore'):
         target = folder/mode
-        command = [str(binary)] if binary else [engine(),'--path',str(ROOT)]
+        command = [str(binary)] if binary else [engine(),'--path',str(ROOT),SCENE]
         command += ['--headless','--','--settings-probe','--capture-dir='+str(target)]
         if mode == 'save': command.append('--probe-save')
         if mode == 'ignore': command.append('--ignore-user-settings')
@@ -118,7 +119,7 @@ def record_video() -> None:
     folder = OUT/'media'; folder.mkdir(parents=True,exist_ok=True)
     before = fingerprint(ROOT)['sha256']
     avi, movie = folder/'comparison.avi', folder/'comparison.mp4'
-    execute([engine(),'--path',str(ROOT),'--resolution','1920x1080','--write-movie',str(avi),
+    execute([engine(),'--path',str(ROOT),SCENE,'--resolution','1920x1080','--write-movie',str(avi),
              '--fixed-fps','30','--quit-after','1080','--','--p8-recording','--ignore-user-settings'],
              'p8-record',True,600)
     subprocess.run(['ffmpeg','-y','-i',str(avi),'-an','-c:v','libx264','-crf','20',

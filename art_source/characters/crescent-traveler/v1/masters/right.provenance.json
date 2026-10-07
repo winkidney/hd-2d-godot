@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "purpose": "Portable mapping for the original right-facing A ImageGen master and the unchanged historical receipt.",
+  "recorded_date": "2026-10-07",
+  "original_repository": "jibijibi-game",
+  "original_experiment": "experiments/2026-10-06/user-character-hd2d-three-drafts",
+  "original_repository_commit": null,
+  "original_repository_commit_note": "The historical generation receipt did not record a repository commit.",
+  "historical_receipt": "art_source/characters/crescent-traveler/v1/masters/right.imagegen-receipt.json",
+  "historical_receipt_policy": "Copied without changing any bytes; its original filenames resolve through files below.",
+  "files": [
+    {
+      "original_path": "reference.png",
+      "local_path": "art_source/characters/crescent-traveler/v1/reference.png",
+      "sha256": "3b8823af9320ae49d3a6e130e6bbed31e49aefd49f45c472121b8f39155974ad",
+      "byte_identical_to_original": true
+    },
+    {
+      "original_path": "master-raw.png",
+      "local_path": "art_source/characters/crescent-traveler/v1/masters/right.png",
+      "sha256": "0e7c9b267b926fb3447bd735f101c2c24fb5d485384307d4f7f52bebc832b5df",
+      "byte_identical_to_original": true
+    },
+    {
+      "original_path": "prompts/master.txt",
+      "local_path": "art_source/characters/crescent-traveler/v1/masters/right.prompt.txt",
+      "sha256": "102badab5ecbd12fa071cc0251a2da011b457f0e2e08f80142c1122e52776df7",
+      "byte_identical_to_original": true
+    },
+    {
+      "original_path": "imagegen-receipt.json",
+      "local_path": "art_source/characters/crescent-traveler/v1/masters/right.imagegen-receipt.json",
+      "sha256": "9131415c39df7c9a69d17d54b098ce1ed574c390e57a0efbfaffa7fb9d12baaf",
+      "byte_identical_to_original": true
+    }
+  ],
+  "imagegen_model": null,
+  "imagegen_internal_seed": null,
+  "imagegen_metadata_note": "The built-in image tool did not expose the internal model version or seed; null values are preserved from the original receipt.",
+  "reproduction_boundary": "The retained master, prompt and recipe document the input. A new generative call is not guaranteed to reproduce identical pixels.",
+  "license_note": "This provenance mapping does not assert an additional license or change existing project notices."
+}

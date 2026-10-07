@@ -1,6 +1,6 @@
 """P9 repeatable acceptance and isolated Linux export. No dependency installation."""
 from pathlib import Path
-import sys, os, subprocess, json, hashlib, shutil, tempfile, time
+import sys, os, subprocess, json, hashlib, shutil, tempfile, time, re
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT/'tools'))
 from project import engine, desktop_environment
@@ -52,7 +52,9 @@ def export():
     # Override only the independent export's main scene using a clean staging project.
     stage=copy_project('export')
     config=stage/'project.godot'
-    config.write_text(config.read_text().replace('run/main_scene="res://scenes/waystation.tscn"','run/main_scene="res://scenes/reference_scene.tscn"'))
+    text,count=re.subn(r'^run/main_scene=.*$','run/main_scene="res://scenes/reference_scene.tscn"',config.read_text(),flags=re.MULTILINE)
+    if count!=1:raise RuntimeError('Main scene setting was not found exactly once')
+    config.write_text(text)
     shutil.copytree(ROOT/'build/templates',stage/'build/templates')
     run([engine(),'--headless','--path',str(stage),'--editor','--quit'],'export-import')
     run([engine(),'--headless','--path',str(stage),'--export-release','Linux',str(binary)],'export-linux')

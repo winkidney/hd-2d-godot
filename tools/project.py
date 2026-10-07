@@ -9,6 +9,7 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+ARCHIVE_SCENE = 'res://scenes/waystation.tscn'
 LOGS = ROOT / 'build/logs'
 LOGS.mkdir(parents=True, exist_ok=True)
 
@@ -62,10 +63,10 @@ def main():
     elif action == 'test':
         execute([sys.executable, str(ROOT / 'tests/check_project.py')], 'static-tests')
         execute(base + ['--headless', '--editor', '--quit'], 'import')
-        execute(base + ['--headless', '--fixed-fps', '60', '--', '--self-test'], 'runtime-tests')
+        execute(base + [ARCHIVE_SCENE, '--headless', '--fixed-fps', '60', '--', '--self-test'], 'runtime-tests')
     elif action == 'visual':
         target = ROOT / 'build/visual'
-        execute(base + ['--resolution', '1920x1080', '--', '--self-test', '--capture-dir=' + str(target)], 'visual-tests', True, 240)
+        execute(base + [ARCHIVE_SCENE, '--resolution', '1920x1080', '--', '--self-test', '--capture-dir=' + str(target)], 'visual-tests', True, 240)
     elif action == 'export':
         destination = ROOT / 'build/linux'
         destination.mkdir(parents=True, exist_ok=True)
@@ -83,7 +84,7 @@ def main():
     elif action == 'record':
         destination = ROOT / 'build/media'
         destination.mkdir(parents=True, exist_ok=True)
-        execute(base + ['--resolution', '1280x720', '--write-movie', str(destination / 'showcase.avi'), '--fixed-fps', '30', '--quit-after', '240', '--', '--showcase'], 'record', True, 300)
+        execute(base + [ARCHIVE_SCENE, '--resolution', '1280x720', '--write-movie', str(destination / 'showcase.avi'), '--fixed-fps', '30', '--quit-after', '240', '--', '--showcase'], 'record', True, 300)
 
 if __name__ == '__main__':
     try:
