@@ -1,0 +1,23 @@
+{
+  "gpu": "NVIDIA GeForce RTX 4070 SUPER",
+  "passed": true,
+  "renderer": "forward_plus",
+  "runtime_fingerprint": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "scope": "Actual orthographic construction views, neutral background; no performance claim.",
+  "screenshots": [
+    {
+      "path": "render/actual-top-layout.png",
+      "scope": "Actual hardware GPU 1080p scene snapshot: actual-top-layout",
+      "sha256": "7a2f06a02152c51f995dec350ada19040161008d35713c9c6f4c5891ac7cc57b"
+    },
+    {
+      "path": "render/actual-side-layout.png",
+      "scope": "Actual hardware GPU 1080p scene snapshot: actual-side-layout",
+      "sha256": "e3b7496d9e58d82eed2dc801cdfadbfed29a887b8bfe18569d2aaf9a8dfea597"
+    }
+  ],
+  "viewport": [
+    1920,
+    1080
+  ]
+}

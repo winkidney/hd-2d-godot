@@ -97,8 +97,8 @@ func actual_value(key: String) -> Variant:
             return master
         "ambient": return scene.environment.ambient_light_energy
         "ambient_color": return scene.environment.ambient_light_color
-        "sky_top_color": return scene.environment.sky.sky_material.sky_top_color
-        "sky_horizon_color": return scene.environment.sky.sky_material.sky_horizon_color
+        "sky_top_color": return sky_color("sky_top_color")
+        "sky_horizon_color": return sky_color("sky_horizon_color")
         "lantern_energy": return scene.lanterns[0].light_energy if not scene.lanterns.is_empty() else null
         "lantern_enabled": return scene.lanterns[0].visible if not scene.lanterns.is_empty() else null
         "lantern_color": return scene.lanterns[0].light_color if not scene.lanterns.is_empty() else null
@@ -112,7 +112,7 @@ func actual_value(key: String) -> Variant:
         "broad_enabled": return scene.broad_lights[0].visible
         "broad_energy": return scene.broad_lights[0].light_energy
         "broad_color":
-            var actual: Color = scene.broad_lights[0].light_color
+            var actual: Color = scene.lamp_nodes.broad_tavern_warm.light_color
             var tint: Color = scene.lamp_metadata.broad_tavern_warm.tint
             return Color(actual.r/tint.r,actual.g/tint.g,actual.b/tint.b,actual.a)
         "broad_range": return scene.broad_lights[0].omni_range
@@ -157,7 +157,7 @@ func control_value(key: String) -> Variant:
 func behavioral_parameter(key: String, value: Variant) -> bool:
     if key == "time_preset":
         var colors := {"day": Color(.17,.32,.5), "dusk": Color(.12,.19,.34), "night": Color(.018,.035,.09)}
-        return same(scene.environment.sky.sky_material.sky_top_color,colors[value]) and same(scene.main_light.light_energy,{"day":1.35,"dusk":1.1,"night":.48}[value])
+        return same(sky_color("sky_top_color"),colors[value]) and same(scene.main_light.light_energy,{"day":1.35,"dusk":1.1,"night":.48}[value])
     if key == "camera_follow":
         var saved: Vector3 = scene.player.position
         scene.player.position += Vector3.RIGHT*2
@@ -218,7 +218,7 @@ func parameters() -> void:
     scene.player.set_physics_process(false)
     scene.frozen = true
     check(scene.parameter_spec.parameters.size() == 73 and scene.parameter_spec.lamp_parameters.size() == 5 and scene.console.fields.size() == 78,"all_parameter_controls",{"global":scene.parameter_spec.parameters.size(),"single_lamp":scene.parameter_spec.lamp_parameters.size(),"controls":scene.console.fields.size()})
-    check(scene.npc_materials.size() == 3,"three_independent_npc_materials")
+    check(scene.npc_materials.size() == 5,"five_independent_npc_materials")
     check(scene.lanterns.size() == 6 and scene.streetlamps.size() == 6 and scene.broad_lights.size() == 2 and scene.lamp_nodes.size() == 14,"fourteen_actual_environment_lights_exist")
     for key in scene.parameter_spec.parameters:
         scene.restore_defaults()
@@ -314,7 +314,7 @@ func individual_lights() -> void:
     check(catalog.size()==14 and catalog.all(func(entry): return scene.lamp_nodes[entry.id] is OmniLight3D),"all_catalog_ids_resolve_actual_Light3D")
     for period in ["day","dusk","night"]:
         scene.apply_time_preset(period)
-        check(not scene.test_light.visible and scene.streetlamps.all(func(light): return same(light.light_energy,{"day":.05,"dusk":.8,"night":1.4}[period]) and same(light.omni_range,4.0)),"new_streetlamp_actual_preset_"+period)
+        check(not scene.test_light.visible and scene.streetlamps.all(func(light): return same(light.light_energy,{"day":.05,"dusk":.8,"night":1.4}[period]) and same(light.omni_range,4.5 if light.name=="streetlamp_dock_south" else 4.0)),"new_streetlamp_actual_preset_"+period)
     scene.restore_defaults()
     check(scene.streetlamps.filter(func(light): return light.shadow_enabled).size()==2,"only_two_default_new_lamps_cast_shadows")
     check(not scene.select_lamp("unknown"),"unknown_selected_light_rejected")
@@ -675,19 +675,19 @@ func settings_round_trip() -> void:
     check(config.get_value("meta","schema")==2,"explicit_scene_save_writes_schema2")
     for period in ["day","night"]:
         scene.apply_time_preset(period)
-        var sky_before: Color = scene.environment.sky.sky_material.sky_top_color
+        var sky_before: Color = sky_color("sky_top_color")
         check(scene.save_settings(),"preset_settings_saved_"+period)
         scene.apply_time_preset("dusk")
-        check(scene.load_settings() and same(scene.environment.sky.sky_material.sky_top_color,sky_before),"saved_preset_restores_actual_sky_"+period)
+        check(scene.load_settings() and same(sky_color("sky_top_color"),sky_before),"saved_preset_restores_actual_sky_"+period)
     scene.apply_time_preset("night")
     scene.select_lamp("streetlamp_left_back")
     scene.set_selected_lamp("range",5.25)
-    var night_sky: Color = scene.environment.sky.sky_material.sky_top_color
+    var night_sky: Color = sky_color("sky_top_color")
     check(scene.values.time_preset=="custom" and scene.farfield.profile_id=="night","single_light_edit_marks_custom_and_preserves_actual_night_background")
     check(scene.save_settings(),"custom_night_scene_saved_with_explicit_background_metadata")
     scene.restore_defaults()
     check(scene.farfield.profile_id=="dusk","default_reset_changes_background_before_custom_load")
-    check(scene.load_settings() and scene.values.time_preset=="custom" and same(scene.environment.sky.sky_material.sky_top_color,night_sky),"custom_night_load_restores_actual_sky_and_custom_label")
+    check(scene.load_settings() and scene.values.time_preset=="custom" and same(sky_color("sky_top_color"),night_sky),"custom_night_load_restores_actual_sky_and_custom_label")
     check(background_palette_matches("night") and same(scene.lamp_state("streetlamp_left_back").range,5.25),"custom_night_load_restores_actual_background_colors_and_single_light")
     DirAccess.remove_absolute(ProjectSettings.globalize_path(isolated_path))
     scene.settings.path = original_path
@@ -753,31 +753,34 @@ func physics_checks() -> void:
     scene.restore_defaults()
     scene.player.set_physics_process(true)
     scene.frozen = true
-    await place(Vector3(-6,0,-1))
+    await place(Vector3(1.2,0,7.5))
     check(scene.player.is_on_floor() and absf(scene.player.position.y)<.08,"left_bank_physical_ground")
-    var outward := await walk_toward(Vector3(4.5,0,-1))
+    var outward := await walk_toward(Vector3(1.2,0,-2.3))
     check(outward.passed,"bridge_left_to_right",outward)
-    check(outward.highest > 1.1 and outward.lowest > -.1,"bridge_raises_feet",outward)
-    var inward := await walk_toward(Vector3(-4.5,0,-1))
-    check(inward.passed and inward.highest > 1.1,"bridge_right_to_left",inward)
-    await place(Vector3(5.85,0,7))
-    var dock := await walk_toward(Vector3(3.8,-.32,7))
+    check(outward.highest > .5 and outward.lowest > -.1,"bridge_raises_feet",outward)
+    var inward := await walk_toward(Vector3(1.2,0,7.5))
+    check(inward.passed and inward.highest > .5,"bridge_right_to_left",inward)
+    var dock_entry := Vector3(scene.layout.dock.center_x,0,scene.layout.dock.approach_z+.2)
+    await place(dock_entry)
+    var dock := await walk_toward(Vector3(scene.layout.dock.center_x,scene.layout.dock.surface_y,scene.layout.dock.center_z))
     await wait_physics(25)
     check(dock.passed and scene.player.is_on_floor() and absf(scene.player.position.y+.32)<.08,"dock_ramp_descends_to_floor",dock)
-    var back := await walk_toward(Vector3(5.85,0,7))
+    var back := await walk_toward(dock_entry)
     await wait_physics(20)
     check(back.passed and absf(scene.player.position.y)<.08,"dock_ramp_returns_to_bank",back)
     for side in [-1.0,1.0]:
-        await place(Vector3(side*3.3,0,3.8))
-        scene.player.scripted_direction = Vector2(-side,0)
+        await place(Vector3(22,0,2.5+side*3.3))
+        scene.player.scripted_direction = Vector2(0,-side)
         await wait_physics(100)
         scene.player.scripted_direction = Vector2.ZERO
-        check(absf(scene.player.position.x)>=float(scene.layout.river.half_width) and scene.player.position.y>-.08,"water_guard_side_"+str(side),{"position":str(scene.player.position)})
-    await place(Vector3(7.5,0,-2.2))
+        check(absf(scene.player.position.z-2.5)>=float(scene.layout.river.half_width) and scene.player.position.y>-.08,"water_guard_side_"+str(side),{"position":str(scene.player.position)})
+    var tavern: Dictionary = scene.layout.models.filter(func(x): return x.id=="tavern")[0]
+    var face: float = tavern.position[2]+tavern.collision_size[2]/2.0
+    await place(Vector3(tavern.position[0],0,face+1.5))
     scene.player.scripted_direction = Vector2(0,-1)
     await wait_physics(90)
     scene.player.scripted_direction = Vector2.ZERO
-    check(scene.player.position.z> -3.5,"tavern_collision_blocks_entry",{"position":str(scene.player.position)})
+    check(scene.player.position.z>face+.2 and scene.player.position.z<face+.6,"tavern_collision_blocks_entry",{"position":str(scene.player.position)})
     await place(vec(scene.layout.player_spawn))
     var manual_legs: Array[Dictionary] = []
     for index in scene.layout.route.size():
@@ -804,7 +807,7 @@ func physics_checks() -> void:
     for point in trajectory:
         extrema.x = minf(extrema.x,point[1])
         extrema.y = maxf(extrema.y,point[1])
-    check(extrema.x<-.24 and extrema.y>1.1,"automatic_route_visits_bridge_and_lower_dock",{"lowest_y":extrema.x,"highest_y":extrema.y})
+    check(extrema.x<-.24 and extrema.y>.5,"automatic_route_visits_bridge_and_lower_dock",{"lowest_y":extrema.x,"highest_y":extrema.y})
     report.automatic_route = scene.route_result.duplicate(true)
     report.automatic_route.full_trajectory = trajectory
     scene.start_route()
@@ -895,3 +898,7 @@ func finish() -> void:
         file.close()
     print("CANAL_VALIDATION_DONE checks=",checks.size()," failures=",failures.size())
     quit(0 if failures.is_empty() else 1)
+
+func sky_color(key: String) -> Color:
+    var material: Material = scene.environment.sky.sky_material
+    return material.get_shader_parameter(key) if material is ShaderMaterial else material.get(key)

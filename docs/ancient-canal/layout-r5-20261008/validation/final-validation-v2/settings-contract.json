@@ -1,0 +1,676 @@
+{
+  "checks": [
+    {
+      "passed": true,
+      "scope": "all 73 UI defaults present"
+    },
+    {
+      "passed": true,
+      "scope": "default lens derives from shared F controller"
+    },
+    {
+      "passed": true,
+      "scope": "profile defaults derive from actual six-layer controller"
+    },
+    {
+      "passed": true,
+      "scope": "normal scene keeps test lamp off and new lamp defaults"
+    },
+    {
+      "passed": true,
+      "scope": "obsolete free-angle and one-layer controls removed"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation normals_enabled"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation normal_strength"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation normal_flip_y"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation shading_mode"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation light_steps"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation clay"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation normal_debug"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation silver_specular"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation direction"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation animation_pause"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation animation_frame"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation time_preset"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation main_yaw"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation main_pitch"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation main_energy"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation main_color"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation main_shadow"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation scene_shadow"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation ambient"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation ambient_color"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation lantern_enabled"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation lantern_energy"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation lantern_color"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation lantern_range"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation lantern_shadow"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation streetlamp_enabled"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation streetlamp_energy"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation streetlamp_color"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation streetlamp_range"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation streetlamp_shadow"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation broad_enabled"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation broad_energy"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation broad_color"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation broad_range"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation broad_shadow"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation test_light_enabled"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation test_light_color"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation test_light_energy"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation test_light_x"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation test_light_y"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation test_light_z"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation test_light_range"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation test_light_shadow"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation orbit_light"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation orbit_speed"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation water_flow"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation water_wave"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation water_reflection"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation fog"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation bloom"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation ssao"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation dof_near"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation dof_far"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation dof_amount"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation focus_protection"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation focus_distance"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation camera_variant"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation camera_follow"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation camera_distance"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation camera_fov"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation parallax_mode"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation parallax_strength"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation parallax_transition"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation near_town"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation far_town"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation near_hills"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation far_mountains"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation near_clouds"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation far_clouds"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation fixed_animation"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation fixed_light"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation sky_top_color"
+    },
+    {
+      "passed": true,
+      "scope": "strict type validation sky_horizon_color"
+    },
+    {
+      "passed": true,
+      "scope": "O cannot be selected as a current parameter"
+    },
+    {
+      "passed": true,
+      "scope": "O selection rejects without changing the camera or profiles"
+    },
+    {
+      "passed": true,
+      "scope": "O profile restoration rejects without mutation"
+    },
+    {
+      "passed": true,
+      "scope": "invalid inactive lens rejects entire restore without pose mutation"
+    },
+    {
+      "passed": true,
+      "scope": "migrated candidate exposes canonical String UI keys and can be saved again"
+    },
+    {
+      "passed": true,
+      "scope": "engine StringName keys normalize to known canonical String keys"
+    },
+    {
+      "passed": true,
+      "scope": "v1 always resets every camera setting to canonical F"
+    },
+    {
+      "passed": true,
+      "scope": "old scalar parallax discarded for natural six-layer default"
+    },
+    {
+      "passed": true,
+      "scope": "valid v1 lighting preset explicitly migrates matching background metadata"
+    },
+    {
+      "passed": true,
+      "scope": "migration preserves valid material Color and independent DOF"
+    },
+    {
+      "passed": true,
+      "scope": "invalid noncamera migration field defaults with visible explanation"
+    },
+    {
+      "passed": true,
+      "scope": "migration explains no automatic file replacement"
+    },
+    {
+      "passed": true,
+      "scope": "load variant switch and edits preserve v1 exact file bytes"
+    },
+    {
+      "passed": true,
+      "scope": "custom lighting label cannot substitute for background time metadata"
+    },
+    {
+      "passed": true,
+      "scope": "missing background metadata rejects the complete candidate"
+    },
+    {
+      "passed": true,
+      "scope": "malformed inactive W profile rejects candidate"
+    },
+    {
+      "passed": true,
+      "scope": "out-of-range sixth layer rejects entire candidate"
+    },
+    {
+      "passed": true,
+      "scope": "missing layer rejects whole candidate"
+    },
+    {
+      "passed": true,
+      "scope": "coerced follow bool rejected"
+    },
+    {
+      "passed": true,
+      "scope": "unknown lamp ID rejected"
+    },
+    {
+      "passed": true,
+      "scope": "unknown lamp property rejected"
+    },
+    {
+      "passed": true,
+      "scope": "invalid single lamp energy rejected nan"
+    },
+    {
+      "passed": true,
+      "scope": "invalid single lamp energy rejected inf"
+    },
+    {
+      "passed": true,
+      "scope": "invalid single lamp energy rejected -1.0"
+    },
+    {
+      "passed": true,
+      "scope": "invalid single lamp energy rejected 9.0"
+    },
+    {
+      "passed": true,
+      "scope": "invalid single lamp energy rejected true"
+    },
+    {
+      "passed": true,
+      "scope": "invalid single lamp energy rejected 2"
+    },
+    {
+      "passed": true,
+      "scope": "candidate rejection never mutates controllers or original file"
+    },
+    {
+      "passed": true,
+      "scope": "explicit save writes complete v2 transaction"
+    },
+    {
+      "passed": true,
+      "scope": "only explicit save replaces old CFG with v2"
+    },
+    {
+      "passed": true,
+      "scope": "all independent inactive and active profiles survive file roundtrip"
+    },
+    {
+      "passed": true,
+      "scope": "natural mode persists artistic requested gain and retains effective 1"
+    },
+    {
+      "passed": true,
+      "scope": "single-lamp overrides persist without transient selection or isolation"
+    },
+    {
+      "passed": true,
+      "scope": "actual night background persists independently from custom lighting label"
+    },
+    {
+      "passed": true,
+      "scope": "explicit schema2 save contains exactly F and W profiles"
+    },
+    {
+      "passed": true,
+      "scope": "complete old F W O file maps active O to F"
+    },
+    {
+      "passed": true,
+      "scope": "old O migration preserves both independent lenses and all valid noncamera settings"
+    },
+    {
+      "passed": true,
+      "scope": "old O loading changes no file bytes or live pose"
+    },
+    {
+      "passed": true,
+      "scope": "O migration explicitly explains deferred file replacement"
+    },
+    {
+      "passed": true,
+      "scope": "old three-profile file preserves active F"
+    },
+    {
+      "passed": true,
+      "scope": "old three-profile file preserves active W"
+    },
+    {
+      "passed": true,
+      "scope": "complete previous O file also upgrades the five missing broad light fields"
+    },
+    {
+      "passed": true,
+      "scope": "invalid discarded O lens still rejects entire old file nan"
+    },
+    {
+      "passed": true,
+      "scope": "invalid discarded O lens still rejects entire old file inf"
+    },
+    {
+      "passed": true,
+      "scope": "invalid discarded O lens still rejects entire old file -1.0"
+    },
+    {
+      "passed": true,
+      "scope": "invalid discarded O lens still rejects entire old file 61.0"
+    },
+    {
+      "passed": true,
+      "scope": "invalid discarded O lens still rejects entire old file true"
+    },
+    {
+      "passed": true,
+      "scope": "invalid discarded O lens still rejects entire old file 35"
+    },
+    {
+      "passed": true,
+      "scope": "unknown discarded O field rejects old file"
+    },
+    {
+      "passed": true,
+      "scope": "partial O profile rejects old file"
+    },
+    {
+      "passed": true,
+      "scope": "partial three-profile file rejects before migration"
+    },
+    {
+      "passed": true,
+      "scope": "new two-profile file cannot choose removed O"
+    },
+    {
+      "passed": true,
+      "scope": "all malformed legacy O files leave original bytes and live controllers untouched"
+    },
+    {
+      "passed": true,
+      "scope": "explicit save upgrades migrated O candidate"
+    },
+    {
+      "passed": true,
+      "scope": "only explicit save replaces historical O section with F W file"
+    },
+    {
+      "passed": true,
+      "scope": "previous_complete_v2_preserves_controllers_and_single_lights"
+    },
+    {
+      "passed": true,
+      "scope": "previous_v2_preserves_all_old_fields_and_defaults_new_lights"
+    },
+    {
+      "passed": true,
+      "scope": "previous_v2_load_never_rewrites_local_settings"
+    },
+    {
+      "passed": true,
+      "scope": "partial_new_lighting_settings_still_rejected"
+    },
+    {
+      "passed": true,
+      "scope": "new_F_W_file_missing_all_broad_fields_cannot_impersonate_historical_F_W_O"
+    },
+    {
+      "passed": true,
+      "scope": "previous_v2_night_defaults_new_light_intensity"
+    },
+    {
+      "passed": true,
+      "scope": "explicit_save_writes_complete_current_lighting_settings"
+    },
+    {
+      "passed": true,
+      "scope": "save reads rig authority despite stale UI aliases"
+    },
+    {
+      "passed": true,
+      "scope": "invalid display aliases cannot override or block valid controller-authoritative save"
+    },
+    {
+      "passed": true,
+      "scope": "explicit captured candidate save ignores temporary preview controller changes"
+    },
+    {
+      "passed": true,
+      "scope": "saving captured settings never applies them to preview nodes"
+    },
+    {
+      "passed": true,
+      "scope": "CFG section unknown property rejected"
+    },
+    {
+      "passed": true,
+      "scope": "CFG extra section rejected"
+    },
+    {
+      "passed": true,
+      "scope": "invalid CFG background metadata rejects before application"
+    },
+    {
+      "passed": true,
+      "scope": "invalid save preserves complete existing file"
+    },
+    {
+      "passed": true,
+      "scope": "four Chinese pages expose 73 global and five selected-lamp controls"
+    },
+    {
+      "passed": true,
+      "scope": "free yaw and pitch cannot be changed through UI"
+    },
+    {
+      "passed": true,
+      "scope": "Chinese camera selector contains only F and W"
+    },
+    {
+      "passed": true,
+      "scope": "panel refresh emits no parameter mutation"
+    },
+    {
+      "passed": true,
+      "scope": "F W selector reads actual stored W lens"
+    },
+    {
+      "passed": true,
+      "scope": "radius control updates only actual active profile"
+    },
+    {
+      "passed": true,
+      "scope": "actual rig readout overrides stale UI alias and reports W pitch"
+    },
+    {
+      "passed": true,
+      "scope": "artistic mode and layer slider update authority"
+    },
+    {
+      "passed": true,
+      "scope": "natural selection preserves requested artistic layer gain"
+    },
+    {
+      "passed": true,
+      "scope": "single-lamp selector uses catalog stable IDs"
+    },
+    {
+      "passed": true,
+      "scope": "single lamp control reaches real Light3D and stored override"
+    },
+    {
+      "passed": true,
+      "scope": "off-grid actual light energy retains precise numeric readout"
+    },
+    {
+      "passed": true,
+      "scope": "single lamp refresh reads actual light node range"
+    },
+    {
+      "passed": true,
+      "scope": "isolation action dispatches selected-light-only state"
+    },
+    {
+      "passed": true,
+      "scope": "isolation recovery retains real individual modifications"
+    },
+    {
+      "passed": true,
+      "scope": "refresh protects focused text while actual label keeps updating"
+    },
+    {
+      "passed": true,
+      "scope": "new lamp menu participates in Escape popup-first handling"
+    },
+    {
+      "passed": true,
+      "scope": "closing panel releases input focus"
+    }
+  ],
+  "failures": [],
+  "mode": "suite",
+  "passed": true,
+  "scope": "Headless settings, real camera/profile and Light3D controls; no visual or performance claim.",
+  "runtime_fingerprint": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_before": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_after": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_unchanged": true
+}

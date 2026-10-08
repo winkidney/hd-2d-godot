@@ -1,5 +1,11 @@
 # Plan · HD-2D 河畔驿站
 
+## 横向河街与夜空 · 2026-10-08
+
+用户已批准 [横河重构计划](features/ancient-horizontal-night.md)。保留 Ancient 正面 F/W、跟随与角色动画，重排为酒肆、民居、摊位、低拱桥、码头和五名驻点 NPC，接入平面柳树与缓存星空。采用 [ADR-22](../ADR/22-horizontal-canal-night-sky.md)，验收和原始证据独立归档，本轮不提交或推送。
+
+后续按用户的完整俯视与侧视图指示实施 [R5 施工图](../art_source/ancient-canal/layout-review/20261008-r5/README.md)：码头迁到前岸并设置暖灯，桥心设置冷光，移除酒肆前 L5 树，补齐后方房屋和树木。[施工记录](../docs/ancient-canal/layout-r5-20261008/README.md)及可编辑总装独立保存，保留 R1–R4。
+
 ## 当前主场景 · 2026-10-07
 
 项目默认入口改为江南河街 `scenes/ancient_canal.tscn`。Godot F5、`make run` 及项目默认导出进入古风场景，`make export`／`make package` 使用江南交付流程。原默认驿站 `scenes/waystation.tscn` 与其他历史场景仅作存档和参考，单独打开后 F6 或使用各自显式运行命令；保留场景、美术、制作来源、历史证据与回归入口。

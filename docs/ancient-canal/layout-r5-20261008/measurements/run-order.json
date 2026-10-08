@@ -1,0 +1,45 @@
+{
+  "runtime_fingerprint": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runs": [
+    {
+      "id": "gpu-r1",
+      "path": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r1",
+      "cases": [
+        "baseline",
+        "plain_sky"
+      ],
+      "instrumented_cpu": false,
+      "passed": true
+    },
+    {
+      "id": "gpu-r2",
+      "path": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r2",
+      "cases": [
+        "plain_sky",
+        "baseline"
+      ],
+      "instrumented_cpu": false,
+      "passed": true
+    },
+    {
+      "id": "gpu-r3",
+      "path": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r3",
+      "cases": [
+        "baseline",
+        "plain_sky"
+      ],
+      "instrumented_cpu": false,
+      "passed": true
+    },
+    {
+      "id": "cpu",
+      "path": "build/ancient-canal/layout-r5-20261008/measurements/cpu",
+      "cases": [
+        "baseline"
+      ],
+      "instrumented_cpu": true,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

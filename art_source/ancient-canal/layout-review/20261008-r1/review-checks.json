@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "failures": [],
+  "runtime_unchanged": true,
+  "roof_bounds": {
+    "H1": [
+      -21.647238969802856,
+      -13.230000257492065,
+      -16.352761030197144,
+      -8.569999933242798
+    ],
+    "T1": [
+      -12.94723916053772,
+      -12.930000305175781,
+      -6.05276083946228,
+      -6.5
+    ],
+    "H2": [
+      5.152761030197143,
+      -13.030000257492066,
+      10.447238969802857,
+      -8.369999933242799
+    ],
+    "H3": [
+      15.152761030197144,
+      -14.030000257492066,
+      20.447238969802857,
+      -9.369999933242799
+    ],
+    "S1": [
+      -17.990000009536743,
+      -6.759999942779541,
+      -15.009999990463257,
+      -4.609999966621399
+    ],
+    "S2": [
+      10.309999990463258,
+      -6.759999942779541,
+      13.290000009536744,
+      -4.609999966621399
+    ],
+    "S3": [
+      19.709999990463256,
+      -6.759999942779541,
+      22.690000009536742,
+      -4.609999966621399
+    ]
+  },
+  "checks": [
+    "7 measured roof envelopes inside map",
+    "no building/stall roof envelope overlap",
+    "streets and bridge alley clear of roofs",
+    "four 1.6m entrance corridors clear of other roofs",
+    "runtime fingerprint unchanged"
+  ],
+  "scope": "Static layout geometry only. Collision and in-game visibility will be validated after user approval and placement."
+}

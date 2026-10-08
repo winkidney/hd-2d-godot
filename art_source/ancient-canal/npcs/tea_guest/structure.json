@@ -1,0 +1,337 @@
+{
+  "schema_version": 1,
+  "id": "tea_guest",
+  "coordinate_system": "normalized mother-image x-right y-down",
+  "normal_convention": "OpenGL x-right y-up z-toward-camera, unit vectors, linear data",
+  "authorship": "manually drawn semantic ellipsoids, garment crease polylines and independent material regions",
+  "forbidden_sources": [
+    "RGB luminance",
+    "color Sobel",
+    "grayscale bump",
+    "generated baked light"
+  ],
+  "foot_anchor": [
+    128,
+    240
+  ],
+  "target_height": 224,
+  "canvas_size": [
+    256,
+    256
+  ],
+  "palette_size": 96,
+  "mask_channels": {
+    "r": "silver specular region",
+    "g": "roughness",
+    "b": "metallicity",
+    "a": "exact color alpha"
+  },
+  "materials": {
+    "cloth": [
+      0.0,
+      0.93,
+      0.0
+    ],
+    "skin": [
+      0.0,
+      0.72,
+      0.0
+    ],
+    "hair": [
+      0.0,
+      0.78,
+      0.0
+    ],
+    "leather": [
+      0.0,
+      0.86,
+      0.0
+    ],
+    "straw": [
+      0.0,
+      0.96,
+      0.0
+    ],
+    "silver": [
+      1.0,
+      0.24,
+      1.0
+    ]
+  },
+  "layers": [
+    {
+      "name": "robe_or_apron",
+      "kind": "curved",
+      "center": [
+        0.5,
+        0.57
+      ],
+      "radii": [
+        0.14,
+        0.22
+      ],
+      "polygon": null,
+      "material": "cloth",
+      "slope": [
+        0.48,
+        0.2
+      ]
+    },
+    {
+      "name": "left_sleeve",
+      "kind": "curved",
+      "center": [
+        0.394,
+        0.42
+      ],
+      "radii": [
+        0.054,
+        0.11
+      ],
+      "polygon": null,
+      "material": "cloth",
+      "slope": [
+        0.65,
+        0.4
+      ]
+    },
+    {
+      "name": "right_sleeve",
+      "kind": "curved",
+      "center": [
+        0.59,
+        0.44
+      ],
+      "radii": [
+        0.05,
+        0.12
+      ],
+      "polygon": null,
+      "material": "cloth",
+      "slope": [
+        0.65,
+        0.4
+      ]
+    },
+    {
+      "name": "left_trouser",
+      "kind": "curved",
+      "center": [
+        0.43,
+        0.78
+      ],
+      "radii": [
+        0.062,
+        0.073
+      ],
+      "polygon": null,
+      "material": "cloth",
+      "slope": [
+        0.6,
+        0.25
+      ]
+    },
+    {
+      "name": "right_trouser",
+      "kind": "curved",
+      "center": [
+        0.56,
+        0.78
+      ],
+      "radii": [
+        0.062,
+        0.073
+      ],
+      "polygon": null,
+      "material": "cloth",
+      "slope": [
+        0.6,
+        0.25
+      ]
+    },
+    {
+      "name": "left_shoe",
+      "kind": "curved",
+      "center": [
+        0.43,
+        0.892
+      ],
+      "radii": [
+        0.045,
+        0.035
+      ],
+      "polygon": null,
+      "material": "leather",
+      "slope": [
+        0.6,
+        0.4
+      ]
+    },
+    {
+      "name": "right_shoe",
+      "kind": "curved",
+      "center": [
+        0.57,
+        0.892
+      ],
+      "radii": [
+        0.062,
+        0.035
+      ],
+      "polygon": null,
+      "material": "leather",
+      "slope": [
+        0.6,
+        0.4
+      ]
+    },
+    {
+      "name": "neck",
+      "kind": "curved",
+      "center": [
+        0.501,
+        0.271
+      ],
+      "radii": [
+        0.036,
+        0.036
+      ],
+      "polygon": null,
+      "material": "skin",
+      "slope": [
+        0.6,
+        0.4
+      ]
+    },
+    {
+      "name": "face",
+      "kind": "curved",
+      "center": [
+        0.521,
+        0.21
+      ],
+      "radii": [
+        0.064,
+        0.055
+      ],
+      "polygon": null,
+      "material": "skin",
+      "slope": [
+        0.4,
+        0.3
+      ]
+    },
+    {
+      "name": "nose",
+      "kind": "curved",
+      "center": [
+        0.548,
+        0.216
+      ],
+      "radii": [
+        0.012,
+        0.012
+      ],
+      "polygon": null,
+      "material": "skin",
+      "slope": [
+        0.6,
+        0.4
+      ]
+    },
+    {
+      "name": "hair",
+      "kind": "curved",
+      "center": [
+        0.48,
+        0.166
+      ],
+      "radii": [
+        0.1,
+        0.065
+      ],
+      "polygon": null,
+      "material": "hair",
+      "slope": [
+        0.6,
+        0.4
+      ]
+    },
+    {
+      "name": "left_hand",
+      "kind": "curved",
+      "center": [
+        0.455,
+        0.461
+      ],
+      "radii": [
+        0.025,
+        0.042
+      ],
+      "polygon": null,
+      "material": "skin",
+      "slope": [
+        0.6,
+        0.4
+      ]
+    },
+    {
+      "name": "right_hand",
+      "kind": "curved",
+      "center": [
+        0.62,
+        0.577
+      ],
+      "radii": [
+        0.025,
+        0.042
+      ],
+      "polygon": null,
+      "material": "skin",
+      "slope": [
+        0.6,
+        0.4
+      ]
+    },
+    {
+      "name": "left_drape",
+      "kind": "fold",
+      "points": [
+        [
+          0.461,
+          0.46
+        ],
+        [
+          0.448,
+          0.6
+        ],
+        [
+          0.433,
+          0.72
+        ]
+      ],
+      "width": 0.009,
+      "strength": 0.23
+    },
+    {
+      "name": "right_drape",
+      "kind": "fold",
+      "points": [
+        [
+          0.544,
+          0.48
+        ],
+        [
+          0.56,
+          0.6
+        ],
+        [
+          0.579,
+          0.73
+        ]
+      ],
+      "width": 0.008,
+      "strength": 0.22
+    }
+  ]
+}

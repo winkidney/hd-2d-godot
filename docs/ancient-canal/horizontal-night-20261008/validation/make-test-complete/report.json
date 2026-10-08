@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "runtime_fingerprint_before": "694a5de78fb64f0152956df73d585b1b8b59980daecee2e23820cac0b31b1c6f",
+  "runtime_fingerprint_after": "694a5de78fb64f0152956df73d585b1b8b59980daecee2e23820cac0b31b1c6f",
+  "runtime_unchanged": true,
+  "raw_transcript_sha256": "e2975d70f3b3a3ae5b0a40320bb74255e1ac3a93d3632f1d477d382609ae7c69",
+  "scope": "Original make test with project-local XDG directories; no everyday preferences."
+}

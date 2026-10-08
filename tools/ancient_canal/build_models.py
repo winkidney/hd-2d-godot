@@ -372,9 +372,9 @@ def building(w,d,total_h,tavern=False):
     curved_roof(w+.82,d+.76,wall_h-.05,1.09)
 
 
-def bridge():
+def bridge(height=1.3):
     count=24;span=4.2;width=2.8
-    def top(x):return 1.3*(1-(x/span)**2)
+    def top(x):return height*(1-(x/span)**2)
     # Intrados is a real barrel arch. End springing below waterline; crown open.
     def bottom(x):return top(x)-.31-.73*(abs(x)/span)**4
     verts=[]

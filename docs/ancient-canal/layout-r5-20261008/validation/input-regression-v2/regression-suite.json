@@ -1,0 +1,242 @@
+{
+  "schema_version": 2,
+  "passed": true,
+  "complete": true,
+  "mode": "regression",
+  "runtime_fingerprint": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_before": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_after": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_unchanged": true,
+  "changed_files": [],
+  "headless": true,
+  "fixed_fps": false,
+  "import_performed": false,
+  "time_scale": 1,
+  "physics_ticks_per_second": 60,
+  "runs": [
+    {
+      "label": "frontal-camera",
+      "returncode": 0,
+      "passed": true,
+      "elapsed_s": 0.26410086700343527,
+      "fixed_fps": false,
+      "import_performed": false,
+      "errors": [],
+      "log": "regression/raw-transcripts/frontal-camera.txt",
+      "runtime_fingerprint_before": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+      "runtime_fingerprint_after": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+      "runtime_unchanged": true,
+      "import": false,
+      "log_sha256": "80b3e4fa41d3ebaeb869f5ebcdf32e0e2082e00999d9eda3fe41724eb99c0a93",
+      "log_archival": {
+        "original_local_path": "logs/frontal-camera.log",
+        "original_sha256": "80b3e4fa41d3ebaeb869f5ebcdf32e0e2082e00999d9eda3fe41724eb99c0a93",
+        "path": "regression/raw-transcripts/frontal-camera.txt",
+        "sha256": "80b3e4fa41d3ebaeb869f5ebcdf32e0e2082e00999d9eda3fe41724eb99c0a93",
+        "bytes_identical": true,
+        "test_rerun": false
+      }
+    },
+    {
+      "label": "frontal-lens",
+      "returncode": 0,
+      "passed": true,
+      "elapsed_s": 0.2640379899967229,
+      "fixed_fps": false,
+      "import_performed": false,
+      "errors": [],
+      "log": "regression/raw-transcripts/frontal-lens.txt",
+      "runtime_fingerprint_before": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+      "runtime_fingerprint_after": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+      "runtime_unchanged": true,
+      "import": false,
+      "log_sha256": "6cb3c9b479076ec7f127d5999b7b1850e7f380ea5f3978f7745200792589c304",
+      "log_archival": {
+        "original_local_path": "logs/frontal-lens.log",
+        "original_sha256": "6cb3c9b479076ec7f127d5999b7b1850e7f380ea5f3978f7745200792589c304",
+        "path": "regression/raw-transcripts/frontal-lens.txt",
+        "sha256": "6cb3c9b479076ec7f127d5999b7b1850e7f380ea5f3978f7745200792589c304",
+        "bytes_identical": true,
+        "test_rerun": false
+      }
+    },
+    {
+      "label": "original-character",
+      "returncode": 0,
+      "passed": true,
+      "elapsed_s": 2.4174216679966776,
+      "fixed_fps": false,
+      "import_performed": false,
+      "errors": [],
+      "log": "regression/raw-transcripts/original-character.txt",
+      "runtime_fingerprint_before": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+      "runtime_fingerprint_after": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+      "runtime_unchanged": true,
+      "import": false,
+      "log_sha256": "9a68c572e97ed6bf0a30f5e0ea6608d73a98f6dba34d9857a0ef676adac3b510",
+      "log_archival": {
+        "original_local_path": "logs/original-character.log",
+        "original_sha256": "9a68c572e97ed6bf0a30f5e0ea6608d73a98f6dba34d9857a0ef676adac3b510",
+        "path": "regression/raw-transcripts/original-character.txt",
+        "sha256": "9a68c572e97ed6bf0a30f5e0ea6608d73a98f6dba34d9857a0ef676adac3b510",
+        "bytes_identical": true,
+        "test_rerun": false
+      }
+    },
+    {
+      "label": "original-p9-scene",
+      "returncode": 0,
+      "passed": true,
+      "elapsed_s": 60.59232640499249,
+      "fixed_fps": false,
+      "import_performed": false,
+      "errors": [],
+      "log": "regression/raw-transcripts/original-p9-scene.txt",
+      "runtime_fingerprint_before": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+      "runtime_fingerprint_after": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+      "runtime_unchanged": true,
+      "import": false,
+      "log_sha256": "b1a699a80624138d426cadb290e6a4b108fe10f8057ee9ecc7c8f542657d6a30",
+      "log_archival": {
+        "original_local_path": "logs/original-p9-scene.log",
+        "original_sha256": "b1a699a80624138d426cadb290e6a4b108fe10f8057ee9ecc7c8f542657d6a30",
+        "path": "regression/raw-transcripts/original-p9-scene.txt",
+        "sha256": "b1a699a80624138d426cadb290e6a4b108fe10f8057ee9ecc7c8f542657d6a30",
+        "bytes_identical": true,
+        "test_rerun": false
+      }
+    },
+    {
+      "label": "original-frontal-scene",
+      "returncode": 0,
+      "passed": true,
+      "elapsed_s": 145.62691927001288,
+      "fixed_fps": false,
+      "import_performed": false,
+      "errors": [],
+      "log": "regression/raw-transcripts/original-frontal-scene.txt",
+      "runtime_fingerprint_before": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+      "runtime_fingerprint_after": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+      "runtime_unchanged": true,
+      "import": false,
+      "log_sha256": "2855301307aea4cf485f0b75ba8ef08b6aadbc945c4f959aae22f459f7910a58",
+      "log_archival": {
+        "original_local_path": "logs/original-frontal-scene.log",
+        "original_sha256": "2855301307aea4cf485f0b75ba8ef08b6aadbc945c4f959aae22f459f7910a58",
+        "path": "regression/raw-transcripts/original-frontal-scene.txt",
+        "sha256": "2855301307aea4cf485f0b75ba8ef08b6aadbc945c4f959aae22f459f7910a58",
+        "bytes_identical": true,
+        "test_rerun": false
+      }
+    },
+    {
+      "label": "original-input-dispatch",
+      "returncode": 0,
+      "passed": true,
+      "elapsed_s": 23.795771773002343,
+      "fixed_fps": false,
+      "import_performed": false,
+      "errors": [],
+      "log": "regression/raw-transcripts/original-input-dispatch.txt",
+      "runtime_fingerprint_before": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+      "runtime_fingerprint_after": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+      "runtime_unchanged": true,
+      "import": false,
+      "log_sha256": "6ee18bcafdb68232f7bcf92f4f87c13f6720848ce1010fa8deebd5a600d3492c",
+      "log_archival": {
+        "original_local_path": "logs/original-input-dispatch.log",
+        "original_sha256": "6ee18bcafdb68232f7bcf92f4f87c13f6720848ce1010fa8deebd5a600d3492c",
+        "path": "regression/raw-transcripts/original-input-dispatch.txt",
+        "sha256": "6ee18bcafdb68232f7bcf92f4f87c13f6720848ce1010fa8deebd5a600d3492c",
+        "bytes_identical": true,
+        "test_rerun": false
+      }
+    },
+    {
+      "label": "input-cleanup",
+      "returncode": 0,
+      "passed": true,
+      "elapsed_s": 1.015230889999657,
+      "fixed_fps": false,
+      "import_performed": false,
+      "errors": [],
+      "log": "regression/raw-transcripts/input-cleanup.txt",
+      "runtime_fingerprint_before": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+      "runtime_fingerprint_after": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+      "runtime_unchanged": true,
+      "import": false,
+      "log_sha256": "cd0a3508238c30a630b10c4449f073f5ae7dd06274d306545424263a4021f2e5",
+      "log_archival": {
+        "original_local_path": "logs/input-cleanup.log",
+        "original_sha256": "cd0a3508238c30a630b10c4449f073f5ae7dd06274d306545424263a4021f2e5",
+        "path": "regression/raw-transcripts/input-cleanup.txt",
+        "sha256": "cd0a3508238c30a630b10c4449f073f5ae7dd06274d306545424263a4021f2e5",
+        "bytes_identical": true,
+        "test_rerun": false
+      }
+    }
+  ],
+  "scope": "Actual current scene/settings/layout contract checks. Each run records before/after fingerprints; a source drift prevents a frozen pass. No GPU, screenshot, window-focus or performance claim.",
+  "import": false,
+  "transcript_archival": {
+    "scope": "Original process logs copied byte-for-byte to portable raw-transcripts TXT files. Local host logs are retained but not bundled; archival does not rerun any test.",
+    "records": [
+      {
+        "original_local_path": "logs/frontal-camera.log",
+        "original_sha256": "80b3e4fa41d3ebaeb869f5ebcdf32e0e2082e00999d9eda3fe41724eb99c0a93",
+        "path": "regression/raw-transcripts/frontal-camera.txt",
+        "sha256": "80b3e4fa41d3ebaeb869f5ebcdf32e0e2082e00999d9eda3fe41724eb99c0a93",
+        "bytes_identical": true,
+        "test_rerun": false
+      },
+      {
+        "original_local_path": "logs/frontal-lens.log",
+        "original_sha256": "6cb3c9b479076ec7f127d5999b7b1850e7f380ea5f3978f7745200792589c304",
+        "path": "regression/raw-transcripts/frontal-lens.txt",
+        "sha256": "6cb3c9b479076ec7f127d5999b7b1850e7f380ea5f3978f7745200792589c304",
+        "bytes_identical": true,
+        "test_rerun": false
+      },
+      {
+        "original_local_path": "logs/original-character.log",
+        "original_sha256": "9a68c572e97ed6bf0a30f5e0ea6608d73a98f6dba34d9857a0ef676adac3b510",
+        "path": "regression/raw-transcripts/original-character.txt",
+        "sha256": "9a68c572e97ed6bf0a30f5e0ea6608d73a98f6dba34d9857a0ef676adac3b510",
+        "bytes_identical": true,
+        "test_rerun": false
+      },
+      {
+        "original_local_path": "logs/original-p9-scene.log",
+        "original_sha256": "b1a699a80624138d426cadb290e6a4b108fe10f8057ee9ecc7c8f542657d6a30",
+        "path": "regression/raw-transcripts/original-p9-scene.txt",
+        "sha256": "b1a699a80624138d426cadb290e6a4b108fe10f8057ee9ecc7c8f542657d6a30",
+        "bytes_identical": true,
+        "test_rerun": false
+      },
+      {
+        "original_local_path": "logs/original-frontal-scene.log",
+        "original_sha256": "2855301307aea4cf485f0b75ba8ef08b6aadbc945c4f959aae22f459f7910a58",
+        "path": "regression/raw-transcripts/original-frontal-scene.txt",
+        "sha256": "2855301307aea4cf485f0b75ba8ef08b6aadbc945c4f959aae22f459f7910a58",
+        "bytes_identical": true,
+        "test_rerun": false
+      },
+      {
+        "original_local_path": "logs/original-input-dispatch.log",
+        "original_sha256": "6ee18bcafdb68232f7bcf92f4f87c13f6720848ce1010fa8deebd5a600d3492c",
+        "path": "regression/raw-transcripts/original-input-dispatch.txt",
+        "sha256": "6ee18bcafdb68232f7bcf92f4f87c13f6720848ce1010fa8deebd5a600d3492c",
+        "bytes_identical": true,
+        "test_rerun": false
+      },
+      {
+        "original_local_path": "logs/input-cleanup.log",
+        "original_sha256": "cd0a3508238c30a630b10c4449f073f5ae7dd06274d306545424263a4021f2e5",
+        "path": "regression/raw-transcripts/input-cleanup.txt",
+        "sha256": "cd0a3508238c30a630b10c4449f073f5ae7dd06274d306545424263a4021f2e5",
+        "bytes_identical": true,
+        "test_rerun": false
+      }
+    ]
+  }
+}

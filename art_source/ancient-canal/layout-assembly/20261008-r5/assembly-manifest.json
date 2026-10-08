@@ -1,0 +1,365 @@
+{
+  "source": "tools/ancient_canal/build_layout_assembly.py",
+  "model": "art_source/ancient-canal/layout-assembly/20261008-r5/ancient-r5.blend",
+  "sha256": "2b5ba5ac9c86d533fe948e0ad29b1c1627e8d6abe51498422dd470f851edacea",
+  "blueprint": {
+    "path": "art_source/ancient-canal/layout-review/20261008-r5/layout.review.json",
+    "sha256": "efab51740abbdbf3c8330159b636bcebae5af2668492a95363728ebb13be0a8d"
+  },
+  "instances": [
+    {
+      "id": "H1",
+      "asset": "house",
+      "godot_position": [
+        -19,
+        0,
+        -11
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "T1",
+      "asset": "tavern",
+      "godot_position": [
+        -9.5,
+        0,
+        -10
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "H2",
+      "asset": "house",
+      "godot_position": [
+        7.8,
+        0,
+        -10.8
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "H3",
+      "asset": "house",
+      "godot_position": [
+        17.8,
+        0,
+        -11.8
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "S1",
+      "asset": "cloth_stall",
+      "godot_position": [
+        -16.5,
+        0,
+        -5.7
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "S2",
+      "asset": "food_stall",
+      "godot_position": [
+        11.8,
+        0,
+        -5.7
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "S3",
+      "asset": "food_stall",
+      "godot_position": [
+        21.2,
+        0,
+        -5.7
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "BR1",
+      "asset": "bridge_low",
+      "godot_position": [
+        1.2,
+        0,
+        2.5
+      ],
+      "yaw": 90
+    },
+    {
+      "id": "D1",
+      "asset": "dock",
+      "godot_position": [
+        -12,
+        -0.32,
+        3.8
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "BO1",
+      "asset": "boat",
+      "godot_position": [
+        -8.4,
+        -0.62,
+        3.5
+      ],
+      "yaw": 90
+    },
+    {
+      "id": "wine_jar_15",
+      "asset": "wine_jar",
+      "godot_position": [
+        -11.1,
+        0,
+        -6.8
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "wine_jar_16",
+      "asset": "wine_jar",
+      "godot_position": [
+        -8.0,
+        0,
+        -6.8
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "cloth_banner_17",
+      "asset": "cloth_banner",
+      "godot_position": [
+        -7.2,
+        0,
+        -6.2
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "E1",
+      "asset": "lantern",
+      "godot_position": [
+        -11.7,
+        4.1,
+        -7.4
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "E2",
+      "asset": "lantern",
+      "godot_position": [
+        -7.3,
+        4.1,
+        -7.4
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "E3",
+      "asset": "lantern",
+      "godot_position": [
+        6.6,
+        2.9,
+        -8.85
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "E4",
+      "asset": "lantern",
+      "godot_position": [
+        9,
+        2.9,
+        -8.85
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "E5",
+      "asset": "lantern",
+      "godot_position": [
+        -10.3,
+        2.6,
+        -6.32
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "E6",
+      "asset": "lantern",
+      "godot_position": [
+        -8.7,
+        2.6,
+        -6.32
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "B1",
+      "asset": "house",
+      "godot_position": [
+        -16,
+        0,
+        -21
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "B2",
+      "asset": "house",
+      "godot_position": [
+        -6,
+        0,
+        -23
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "B3",
+      "asset": "house",
+      "godot_position": [
+        -24,
+        0,
+        -29
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "B4",
+      "asset": "house",
+      "godot_position": [
+        -10.5,
+        0,
+        -31
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "B5",
+      "asset": "house",
+      "godot_position": [
+        12.8,
+        0,
+        -22
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "B6",
+      "asset": "house",
+      "godot_position": [
+        24,
+        0,
+        -25
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "F1",
+      "asset": "house",
+      "godot_position": [
+        -23,
+        0,
+        -43
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "F2",
+      "asset": "house",
+      "godot_position": [
+        -12,
+        0,
+        -46
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "F3",
+      "asset": "house",
+      "godot_position": [
+        7,
+        0,
+        -44
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "F4",
+      "asset": "house",
+      "godot_position": [
+        24,
+        0,
+        -47
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "P1",
+      "asset": "streetlamp",
+      "godot_position": [
+        -1,
+        0,
+        7
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "P2",
+      "asset": "streetlamp",
+      "godot_position": [
+        -1,
+        0,
+        -1.5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "P3",
+      "asset": "streetlamp",
+      "godot_position": [
+        3.4,
+        0,
+        7
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "P4",
+      "asset": "streetlamp",
+      "godot_position": [
+        3.4,
+        0,
+        -1.5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "P5",
+      "asset": "streetlamp",
+      "godot_position": [
+        -18.2,
+        0,
+        -1.3
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "P6",
+      "asset": "streetlamp",
+      "godot_position": [
+        -12.78,
+        -0.32,
+        4.9
+      ],
+      "yaw": 0
+    }
+  ],
+  "ground_batches": 3,
+  "lamps": 14,
+  "packed_textures": true,
+  "runtime_authority": "resources/ancient-canal/layout.json; Blender point energies are preview-only"
+}

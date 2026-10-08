@@ -1,0 +1,59 @@
+{
+  "id": "food_vendor",
+  "source": {
+    "path": "art_source/ancient-canal/npcs/food_vendor/mother.png",
+    "sha256": "1a95f61ea4b0fef36350a70053fb62f77379a87bf617d171da9c7e7e2981fa12"
+  },
+  "structure": {
+    "path": "art_source/ancient-canal/npcs/food_vendor/structure.json",
+    "sha256": "0fc0e39ee46640f842e329057511cf86513bc497a5f4aed980fd23bdb9936eac"
+  },
+  "outputs": [
+    {
+      "path": "assets/ancient-canal/npcs/food_vendor.png",
+      "sha256": "91b99fc688508d4e122348e0366566fd495259dbd30a47b3cf4d203a5fae31d0",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "path": "assets/ancient-canal/npcs/food_vendor-normal.png",
+      "sha256": "b740b966da905289fbca5b7084e0c88404171e3ae820fc64d5d37fdf0bb5eeba",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "path": "assets/ancient-canal/npcs/food_vendor-mask.png",
+      "sha256": "79c717587e4f1480c430502c7b81288ad015142b8f7d3d08da6cfef7654efd1a",
+      "size": [
+        256,
+        256
+      ]
+    }
+  ],
+  "checks": {
+    "color_palette_count": 92,
+    "color_alpha_equals_normal": true,
+    "color_alpha_equals_mask": true,
+    "normal_vector_max_length_error": 0.005475207131862891,
+    "silhouette_bbox": [
+      24,
+      36,
+      210,
+      236
+    ],
+    "foot_anchor": [
+      128,
+      240
+    ]
+  },
+  "mask_channels": {
+    "r": "silver specular region",
+    "g": "roughness",
+    "b": "metallicity",
+    "a": "exact color alpha"
+  }
+}

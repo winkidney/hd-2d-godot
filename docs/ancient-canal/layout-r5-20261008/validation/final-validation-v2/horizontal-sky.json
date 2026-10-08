@@ -1,0 +1,122 @@
+{
+  "checks": [
+    {
+      "id": "horizontal_river_and_bridge",
+      "passed": true
+    },
+    {
+      "id": "five_stationary_npcs",
+      "passed": true
+    },
+    {
+      "id": "five_bank_and_ten_background_flat_willows",
+      "passed": true
+    },
+    {
+      "id": "only_two_front_bank_trees_cast_shadows",
+      "passed": true
+    },
+    {
+      "id": "background_tree_shadows_disabled",
+      "passed": true
+    },
+    {
+      "id": "upright_cutout_and_mipmap_sampling",
+      "passed": true
+    },
+    {
+      "id": "night_enables_cached_panorama_and_sky_focus_protection",
+      "passed": true
+    },
+    {
+      "id": "absolute_parallax_-100.0",
+      "passed": true
+    },
+    {
+      "id": "motion_keeps_sky_material_uniforms_-100.0",
+      "passed": true
+    },
+    {
+      "id": "absolute_parallax_-20.0",
+      "passed": true
+    },
+    {
+      "id": "motion_keeps_sky_material_uniforms_-20.0",
+      "passed": true
+    },
+    {
+      "id": "absolute_parallax_0.0",
+      "passed": true
+    },
+    {
+      "id": "motion_keeps_sky_material_uniforms_0.0",
+      "passed": true
+    },
+    {
+      "id": "absolute_parallax_20.0",
+      "passed": true
+    },
+    {
+      "id": "motion_keeps_sky_material_uniforms_20.0",
+      "passed": true
+    },
+    {
+      "id": "absolute_parallax_100.0",
+      "passed": true
+    },
+    {
+      "id": "motion_keeps_sky_material_uniforms_100.0",
+      "passed": true
+    },
+    {
+      "id": "absolute_parallax_0.0",
+      "passed": true
+    },
+    {
+      "id": "motion_keeps_sky_material_uniforms_0.0",
+      "passed": true
+    },
+    {
+      "id": "stationary_sky_does_not_drift",
+      "passed": true
+    },
+    {
+      "id": "custom_night_keeps_stars",
+      "passed": true
+    },
+    {
+      "id": "lens_F_keeps_night",
+      "passed": true
+    },
+    {
+      "id": "lens_W_keeps_night",
+      "passed": true
+    },
+    {
+      "id": "comparison_restores_actual_night_sky",
+      "passed": true
+    },
+    {
+      "id": "single_lamp_isolation_keeps_night",
+      "passed": true
+    },
+    {
+      "id": "single_lamp_restore_keeps_night",
+      "passed": true
+    },
+    {
+      "id": "original_day_sky",
+      "passed": true
+    },
+    {
+      "id": "original_dusk_sky",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "scope": "Actual headless runtime state and compatibility. GPU rendering/performance are validated separately.",
+  "runtime_fingerprint": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_before": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_after": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_unchanged": true
+}

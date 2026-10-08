@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "groups": [
+    {
+      "lens": "F",
+      "repeat_roi_hashes_per_pose": [
+        1,
+        1
+      ],
+      "repeat_full_frame_hashes_per_pose": [
+        1,
+        1
+      ],
+      "roi_pixels": 154,
+      "micro_change_pixels_fraction": 0.0,
+      "mean_absolute_channel_difference": 0.13852813852813853
+    },
+    {
+      "lens": "W",
+      "repeat_roi_hashes_per_pose": [
+        1,
+        1
+      ],
+      "repeat_full_frame_hashes_per_pose": [
+        1,
+        1
+      ],
+      "roi_pixels": 156,
+      "micro_change_pixels_fraction": 0.057692307692307696,
+      "mean_absolute_channel_difference": 0.6452991452991453
+    }
+  ],
+  "scope": "Actual GPU frozen world; alternating +/-0.5 mm camera displacement with original DOF. Identical dock-interior pixel hashes for repeated poses check temporal instability; displacement differences include ordinary raster edges. Whole-frame first-frame settling is recorded separately."
+}

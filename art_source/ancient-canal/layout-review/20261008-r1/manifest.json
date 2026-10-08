@@ -1,0 +1,64 @@
+{
+  "status": "draft_for_user_review",
+  "source_type": "measured vector layout from existing model envelopes",
+  "generator": "draw.py",
+  "seed": "none; no random generation",
+  "date": "2026-10-08",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3346,
+      "sha256": "4429e1ef5fb8a74713bc07ec1e80352a46ebea3a6ad4ef5fd3fc40b14695f8e9"
+    },
+    {
+      "path": "draw.py",
+      "bytes": 15757,
+      "sha256": "187ddd787c5a71ae9db20e4c5d4f11797bf51f58a87bf1ddfedfbfed873d0858"
+    },
+    {
+      "path": "front-view.png",
+      "bytes": 114863,
+      "sha256": "1b1b86fffffb7c7c1018d8e3ab34d9ed4759ac06845a7f6d9a8795ac40b3f3d1"
+    },
+    {
+      "path": "layout-review.pdf",
+      "bytes": 146205,
+      "sha256": "f5a9027d6295bad6ec9d9ce3aae79c1531d121ed64a31af5a73011cbc3291ccc"
+    },
+    {
+      "path": "layout-review.png",
+      "bytes": 564101,
+      "sha256": "3dc5c8cbe409f543e583ed9cc1884c9e5989a811b2632c538fb60129d3d34254"
+    },
+    {
+      "path": "layout-review.svg",
+      "bytes": 490813,
+      "sha256": "265ece57a34e3e7da7a5455c3ca86e345a469668899f64c4d03cdfbb7ef424a0"
+    },
+    {
+      "path": "layout.review.json",
+      "bytes": 6930,
+      "sha256": "fa2b96dfaf5d13b52abde9f66f9042b3342e63670cea768c45414ae33998d835"
+    },
+    {
+      "path": "placement.csv",
+      "bytes": 284,
+      "sha256": "b50fd11c106cd5da0c3747a124268d72971bf2c8572a3b4acfeb4594d0265964"
+    },
+    {
+      "path": "review-checks.json",
+      "bytes": 1316,
+      "sha256": "35a29a9943126b379bb6ea8665d3a30df17427a916c803c77be4c82e5501a308"
+    },
+    {
+      "path": "runtime-before.json",
+      "bytes": 183,
+      "sha256": "7e529094465c9711fe55f1ee372a45cf50deb14209bff3837a025ff1e307002c"
+    },
+    {
+      "path": "top-view.png",
+      "bytes": 210091,
+      "sha256": "83a6e116dd773b083ef69a918cb0a27e6d25211fd735531031a4c74f4d0f7a4e"
+    }
+  ]
+}

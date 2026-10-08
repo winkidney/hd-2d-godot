@@ -3,7 +3,7 @@ extends SceneTree
 const ENTRY := "res://scenes/ancient_canal.tscn"
 const CENTER_HEIGHT := 1.0125
 const SIZES := [Vector2i(1920,1080),Vector2i(1280,1024),Vector2i(2560,1080)]
-const EDGES := [Vector3(-25.64,0,-15.64),Vector3(-25.64,0,13.64),Vector3(25.64,0,-15.64),Vector3(25.64,0,13.64),Vector3(-25.64,0,0),Vector3(25.64,0,0),Vector3(-6,0,-15.64),Vector3(-6,0,13.64)]
+const EDGES := [Vector3(-25.64,0,-15.64),Vector3(-25.64,0,13.64),Vector3(25.64,0,-15.64),Vector3(25.64,0,13.64),Vector3(-25.64,0,9),Vector3(25.64,0,9),Vector3(-6,0,-15.64),Vector3(-6,0,13.64)]
 var scene: Node3D
 var destination := "res://build/ancient-canal/center-follow-20261007/center.json"
 var fingerprint := ""
@@ -73,7 +73,7 @@ func frame_bounds() -> Dictionary:
     return {"forward":forward,"inset":inset,"bounds":[minimum.x,minimum.y,maximum.x,maximum.y]}
 
 func core_invariants() -> void:
-    await place(Vector3(-5,0,5))
+    await place(Vector3(-5,0,9))
     check(center_error()<=1.0,"startup_centered",{"pixel_error":center_error(),"pivot":array3(pivot()),"player":array3(scene.player.position)})
     var before: Transform3D = scene.camera.global_transform
     var profiles: Dictionary = scene.rig.lens_profiles_snapshot()
@@ -122,21 +122,21 @@ func actual_walks() -> void:
         check(scene.select_variant(variant),"walk_select_"+variant)
         scene.reset_lens()
         for direction in [Vector2.LEFT,Vector2.RIGHT,Vector2.UP,Vector2.DOWN]:
-            await place(Vector3(-6,0,5))
+            await place(Vector3(-6,0,9))
             var name: String = variant+"_direction_"+str(direction)
             var outbound := await drive(name,direction,30)
             check(Vector3(outbound.end[0],outbound.end[1],outbound.end[2]).distance_to(Vector3(outbound.start[0],outbound.start[1],outbound.start[2]))>1.4,name+"_actual_physics_moved")
             await drive(name+"_reverse",-direction,30)
             var stopped := await drive(name+"_stop",Vector2.ZERO,14)
             check(Vector3(stopped.end[0],stopped.end[1],stopped.end[2]).distance_to(Vector3(stopped.start[0],stopped.start[1],stopped.start[2]))<.01,name+"_stop_has_no_camera_lag")
-        await place(Vector3(-4.8,0,-1))
-        var bridge := await drive(variant+"_bridge",Vector2.RIGHT,200)
-        check(bridge.max_foot_y>1.2 and bridge.grounded_frames>=195 and float(bridge.end[0])>4.5,variant+"_actual_bridge_height_and_crossing",bridge)
-        await drive(variant+"_bridge_reverse",Vector2.LEFT,200)
-        await place(Vector3(5.85,0,7))
-        var dock := await drive(variant+"_dock_downhill",Vector2.LEFT,42)
+        await place(Vector3(1.2,0,7.3))
+        var bridge := await drive(variant+"_bridge",Vector2.UP,200)
+        check(bridge.max_foot_y>.5 and bridge.grounded_frames>=195 and float(bridge.end[2])<-1.7,variant+"_actual_bridge_height_and_crossing",bridge)
+        await drive(variant+"_bridge_reverse",Vector2.DOWN,200)
+        await place(Vector3(scene.layout.dock.center_x,0,scene.layout.dock.approach_z+.2))
+        var dock := await drive(variant+"_dock_downhill",Vector2.UP,42)
         check(dock.min_foot_y<-.25 and dock.grounded_frames>=38,variant+"_actual_dock_downhill",dock)
-        var bank := await drive(variant+"_dock_uphill",Vector2.RIGHT,42)
+        var bank := await drive(variant+"_dock_uphill",Vector2.DOWN,42)
         check(bank.max_foot_y>-.03 and bank.grounded_frames>=38,variant+"_actual_dock_returns_to_bank",bank)
     scene.player.scripted_direction = Vector2.ZERO
 
@@ -195,9 +195,9 @@ func edge_axis_and_restore() -> void:
         scene.select_variant(variant)
         scene.reset_lens()
         for side in [-1.0,1.0]:
-            await place(Vector3(side*25,0,0))
+            await place(Vector3(side*25,0,9))
             var edge_start := pivot()
-            await place(Vector3(side*25.64,0,1))
+            await place(Vector3(side*25.64,0,10))
             var edge_end := pivot()
             check(absf(edge_end.x-edge_start.x)<.001 and absf(edge_end.z-edge_start.z-1)<.001,variant+"_x_edge_limits_only_x_"+str(side),{"start":array3(edge_start),"end":array3(edge_end)})
         for z in [-15.64,13.64]:
@@ -206,11 +206,11 @@ func edge_axis_and_restore() -> void:
             await place(Vector3(-5,0,z))
             var edge_end := pivot()
             check(absf(edge_end.z-edge_start.z)<.001 and absf(edge_end.x-edge_start.x-1)<.001,variant+"_z_edge_limits_only_z_"+str(z),{"start":array3(edge_start),"end":array3(edge_end)})
-        await place(Vector3(24,0,0))
+        await place(Vector3(24,0,9))
         var previous := pivot()
         var maximum_jump := 0.0
         for step in range(141):
-            scene.player.position = Vector3(24.0-float(step)*.1,0,0)
+            scene.player.position = Vector3(24.0-float(step)*.1,0,9)
             scene.camera_update(1.0/60.0)
             maximum_jump = maxf(maximum_jump,pivot().distance_to(previous))
             previous = pivot()
@@ -219,7 +219,7 @@ func edge_axis_and_restore() -> void:
 func controls_remain_available() -> void:
     scene.select_variant("F")
     scene.reset_lens()
-    await place(Vector3(-6,0,5))
+    await place(Vector3(-6,0,9))
     check(scene.set_parameter("camera_follow",false),"follow_can_be_disabled")
     var off_pose: Transform3D = scene.camera.global_transform
     await drive("follow_disabled",Vector2.RIGHT,24,false)

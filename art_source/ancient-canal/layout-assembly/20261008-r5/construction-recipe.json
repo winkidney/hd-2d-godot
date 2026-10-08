@@ -1,0 +1,13 @@
+{
+  "source": "art_source/ancient-canal/layout-review/20261008-r5/layout.review.json",
+  "source_sha256": "efab51740abbdbf3c8330159b636bcebae5af2668492a95363728ebb13be0a8d",
+  "generator": "tools/ancient_canal/build_layout.py",
+  "runtime": "resources/ancient-canal/layout.json",
+  "runtime_sha256": "094ee5a945a25e89dd42f669e344d5dd251164de3e8877dc9ee3bef162b1a3e7",
+  "ground_tiles": 42,
+  "ground_batches": 3,
+  "ground_top_y": 0,
+  "dock_top_y": -0.32,
+  "light_count": 14,
+  "source_models_retained": true
+}

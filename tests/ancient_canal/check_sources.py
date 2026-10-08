@@ -345,10 +345,51 @@ def audit_npcs_font_concepts():
     record("npcs_font_concepts","Three independent original stationary NPCs and vector sources; bundled Chinese face has required glyphs and OFL; selected A and all comparison originals/crops plus one actual-layout adaptation retained",npcs=3,imagegen_concept_calls=7)
 
 
+def audit_horizontal_assets():
+    low=load("art_source/ancient-canal/blender/low-bridge/recipe.json")
+    assert low["reopened"] and low["original_model_retained"]
+    assert low["height"]==.6 and low["width"]==2.8 and low["half_span"]==4.2
+    model=low["model"]
+    hashed(model["blend"],model["blend_sha256"])
+    decode_glb(hashed(model["glb"],model["glb_sha256"]))
+    scenery=load("art_source/ancient-canal/scenery/recipe.json")
+    assert scenery["seed"]==20261008 and scenery["sky"]["moon_diameter_deg"]==.75
+    for item in scenery["outputs"]:
+        path=hashed(item["path"],item["sha256"])
+        image=Image.open(path)
+        assert list(image.size)==item["size"]
+        assert "mipmaps/generate=true" in source(item["path"]+".import").read_text()
+        if "panorama" in item["path"]:
+            assert image.mode=="RGB" and image.size==(4096,2048)
+            data=np.array(image)
+            assert np.array_equal(data[:,0],data[:,-1])
+            assert 4096*2048*4*4/3<=48*1024*1024
+        else:
+            alpha=np.array(image)[...,3]
+            assert np.any(alpha==0) and np.any(alpha==255)
+    extra=load("art_source/ancient-canal/npcs/extra-manifest.json")
+    assert extra["stationary_only"] and extra["pivot_px"]==[128,240]
+    assert {x["id"] for x in extra["characters"]}=={"food_vendor","tea_guest"}
+    for item in extra["characters"]:
+        base=ROOT/"art_source/ancient-canal/npcs"/item["id"]
+        hashed(item["source"]["path"],item["source"]["sha256"])
+        hashed(item["structure"]["path"],item["structure"]["sha256"])
+        receipt=load("receipt.json",base)
+        assert receipt["seed"] is None and receipt["original_bytes_preserved"] and receipt["no_walk_animation"]
+        source(receipt["prompt"],base);source("transform.json",base)
+        for output in item["outputs"]: hashed(output["path"],output["sha256"])
+        data_import(item["outputs"][1]["path"]);data_import(item["outputs"][2]["path"])
+        color,normal,mask=[rgba(x["path"]) for x in item["outputs"]]
+        assert color.shape==normal.shape==mask.shape==(256,256,4)
+        assert np.array_equal(color[...,3],normal[...,3]) and np.array_equal(color[...,3],mask[...,3])
+        vector_image(normal,color[...,3])
+    record("horizontal_assets","Separate low stone bridge GLB and reopened editable source; seeded seamless static RGB sky and cutout willow; two independent stationary NPCs with original receipts and exact alpha/vector layers",extra_npcs=2,willow_images=1,panorama_images=1)
+
+
 def check():
     FILES.clear();CHECKS.clear()
     before=fingerprint(ROOT)["sha256"]
-    audit_character();audit_environment();audit_background_reuse();audit_npcs_font_concepts()
+    audit_character();audit_environment();audit_background_reuse();audit_npcs_font_concepts();audit_horizontal_assets()
     assert before==fingerprint(ROOT)["sha256"],"Runtime source changed during audit"
     return {"schema_version":1,"passed":True,"status":"passed","runtime_fingerprint":before,
             "scope":"Source and asset data verification. No GPU rendering, interaction or performance completion claim.",

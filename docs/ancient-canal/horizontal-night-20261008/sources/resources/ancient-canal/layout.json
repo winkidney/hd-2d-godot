@@ -1,0 +1,672 @@
+{
+  "schema_version": 1,
+  "id": "jiangnan-horizontal-riverside",
+  "selected_concept": "A",
+  "units": "metres, Godot Y-up",
+  "river": {
+    "half_width": 2.6,
+    "length": 340,
+    "water_y": -0.62,
+    "axis": "x",
+    "center_z": 2.5
+  },
+  "banks": {
+    "outer_x": 26.0,
+    "min_z": -16.0,
+    "max_z": 14.0,
+    "surface_y": 0.0
+  },
+  "bridge": {
+    "center_z": 2.5,
+    "half_span": 4.2,
+    "width": 2.8,
+    "height": 0.6,
+    "segments": 24,
+    "center_x": 1.2
+  },
+  "player_spawn": [
+    1.2,
+    0.15,
+    8.5
+  ],
+  "camera": {
+    "target": [
+      0.5,
+      1.5,
+      0.0
+    ],
+    "yaw": 0.0,
+    "pitch": 14.0,
+    "distance": 30.0,
+    "fov": 35.0,
+    "follow_gain": 1.0,
+    "far": 320.0
+  },
+  "models": [
+    {
+      "id": "tavern",
+      "position": [
+        -7,
+        0,
+        -6.5
+      ],
+      "yaw": 0,
+      "collision_size": [
+        6,
+        6,
+        5
+      ]
+    },
+    {
+      "id": "house",
+      "position": [
+        7,
+        0,
+        -6.5
+      ],
+      "yaw": 0,
+      "collision_size": [
+        4.4,
+        4.2,
+        3.6
+      ]
+    },
+    {
+      "id": "house",
+      "position": [
+        14,
+        0,
+        -10
+      ],
+      "yaw": 0,
+      "collision_size": [
+        4.4,
+        4.2,
+        3.6
+      ]
+    },
+    {
+      "id": "house",
+      "position": [
+        -15,
+        0,
+        -11
+      ],
+      "yaw": 0,
+      "collision_size": [
+        4.4,
+        4.2,
+        3.6
+      ]
+    },
+    {
+      "id": "bridge",
+      "position": [
+        1.2,
+        0,
+        2.5
+      ],
+      "yaw": 90,
+      "asset": "bridge_low"
+    },
+    {
+      "id": "cloth_stall",
+      "position": [
+        -18,
+        0,
+        -4
+      ],
+      "yaw": 0,
+      "collision_size": [
+        2.7,
+        2.4,
+        1.8
+      ]
+    },
+    {
+      "id": "food_stall",
+      "position": [
+        8,
+        0,
+        -4
+      ],
+      "yaw": 0,
+      "collision_size": [
+        2.7,
+        2.4,
+        1.8
+      ]
+    },
+    {
+      "id": "food_stall",
+      "position": [
+        17,
+        0,
+        -4
+      ],
+      "yaw": 0,
+      "collision_size": [
+        2.7,
+        2.4,
+        1.8
+      ]
+    },
+    {
+      "id": "dock",
+      "position": [
+        -12,
+        -0.32,
+        1.2
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "boat",
+      "position": [
+        -9,
+        -0.62,
+        1.6
+      ],
+      "yaw": 90
+    },
+    {
+      "id": "willow",
+      "position": [
+        -20,
+        0,
+        9
+      ],
+      "yaw": 0,
+      "collision_size": [
+        0.38,
+        2.4,
+        0.38
+      ]
+    },
+    {
+      "id": "willow",
+      "position": [
+        20,
+        0,
+        10
+      ],
+      "yaw": 0,
+      "collision_size": [
+        0.38,
+        2.4,
+        0.38
+      ]
+    },
+    {
+      "id": "willow",
+      "position": [
+        -21,
+        0,
+        -3
+      ],
+      "yaw": 0,
+      "collision_size": [
+        0.38,
+        2.4,
+        0.38
+      ]
+    },
+    {
+      "id": "wine_jar",
+      "position": [
+        -8.6,
+        0,
+        -3.3
+      ],
+      "yaw": 0,
+      "collision_size": [
+        0.6,
+        0.9,
+        0.6
+      ]
+    },
+    {
+      "id": "wine_jar",
+      "position": [
+        -5.5,
+        0,
+        -3.3
+      ],
+      "yaw": 0,
+      "collision_size": [
+        0.6,
+        0.9,
+        0.6
+      ]
+    },
+    {
+      "id": "cloth_banner",
+      "position": [
+        -4.7,
+        0,
+        -2.7
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "lantern",
+      "position": [
+        -9.2,
+        4.1,
+        -3.9
+      ],
+      "yaw": 0,
+      "light_offset": [
+        0,
+        -0.4,
+        0.24
+      ],
+      "label": "檐下灯笼"
+    },
+    {
+      "id": "lantern",
+      "position": [
+        -4.8,
+        4.1,
+        -3.9
+      ],
+      "yaw": 0,
+      "light_offset": [
+        0,
+        -0.4,
+        0.24
+      ],
+      "label": "檐下灯笼"
+    },
+    {
+      "id": "lantern",
+      "position": [
+        5.8,
+        2.9,
+        -4.55
+      ],
+      "yaw": 0,
+      "light_offset": [
+        0,
+        -0.4,
+        0.24
+      ],
+      "label": "檐下灯笼"
+    },
+    {
+      "id": "lantern",
+      "position": [
+        8.2,
+        2.9,
+        -4.55
+      ],
+      "yaw": 0,
+      "light_offset": [
+        0,
+        -0.4,
+        0.24
+      ],
+      "label": "檐下灯笼"
+    },
+    {
+      "id": "lantern",
+      "position": [
+        -7.8,
+        2.6,
+        -2.82
+      ],
+      "yaw": 0,
+      "light_offset": [
+        0,
+        -0.4,
+        0.24
+      ],
+      "label": "酒肆门灯"
+    },
+    {
+      "id": "lantern",
+      "position": [
+        -6.2,
+        2.6,
+        -2.82
+      ],
+      "yaw": 0,
+      "light_offset": [
+        0,
+        -0.4,
+        0.24
+      ],
+      "label": "酒肆门灯"
+    }
+  ],
+  "npcs": [
+    {
+      "id": "innkeeper",
+      "name": "掌柜",
+      "position": [
+        -6,
+        0,
+        -1.65
+      ],
+      "dialogue": "客官，桂花酒已温好。过桥慢行，岸边风凉。"
+    },
+    {
+      "id": "vendor",
+      "name": "摊主",
+      "position": [
+        -17,
+        0,
+        -1.65
+      ],
+      "dialogue": "靛蓝布和朱红绦带都在这里，挑一段喜欢的颜色吧。"
+    },
+    {
+      "id": "boatman",
+      "name": "船工",
+      "position": [
+        -12,
+        -0.32,
+        1.1
+      ],
+      "dialogue": "船泊在桥边，沿木坡下来便是码头。"
+    },
+    {
+      "id": "food_vendor",
+      "name": "食摊摊主",
+      "position": [
+        9,
+        0,
+        -1.65
+      ],
+      "dialogue": "热汤和酥饼刚出锅，歇歇脚再赶路。"
+    },
+    {
+      "id": "tea_guest",
+      "name": "茶客",
+      "position": [
+        17,
+        0,
+        -1.65
+      ],
+      "dialogue": "河声入杯，柳影过桥。夜深时，这里也能看见银河。"
+    }
+  ],
+  "interactions": [
+    {
+      "id": "sign",
+      "name": "桥头酒肆招牌",
+      "position": [
+        -4.4,
+        0,
+        -1.9
+      ],
+      "dialogue": "桥头酒肆：温酒、热茶，静候归人。"
+    }
+  ],
+  "route": [
+    [
+      1.2,
+      0,
+      8.5
+    ],
+    [
+      7,
+      0,
+      8.5
+    ],
+    [
+      1.2,
+      0,
+      8.5
+    ],
+    [
+      1.2,
+      0,
+      -2.3
+    ],
+    [
+      7,
+      0,
+      -2.3
+    ],
+    [
+      17,
+      0,
+      -2.3
+    ],
+    [
+      7,
+      0,
+      -2.3
+    ],
+    [
+      -7,
+      0,
+      -2.3
+    ],
+    [
+      -12,
+      0,
+      -2.3
+    ],
+    [
+      -12,
+      0,
+      -1.6
+    ],
+    [
+      -12,
+      -0.32,
+      1
+    ],
+    [
+      -12,
+      0,
+      -1.6
+    ],
+    [
+      -12,
+      0,
+      -2.3
+    ],
+    [
+      -18,
+      0,
+      -2.3
+    ],
+    [
+      -7,
+      0,
+      -2.3
+    ],
+    [
+      1.2,
+      0,
+      -2.3
+    ],
+    [
+      1.2,
+      0,
+      8.5
+    ],
+    [
+      -7,
+      0,
+      8.5
+    ],
+    [
+      1.2,
+      0,
+      8.5
+    ]
+  ],
+  "streetlamps": [
+    {
+      "id": "streetlamp_left_front",
+      "label": "左岸桥前灯",
+      "position": [
+        -1.0,
+        0,
+        7.0
+      ],
+      "light_offset": [
+        0,
+        2.2,
+        0.36
+      ],
+      "pole_height": 2.6,
+      "collision_radius": 0.12,
+      "cast_shadow": true
+    },
+    {
+      "id": "streetlamp_left_back",
+      "label": "左岸后街灯",
+      "position": [
+        -1.0,
+        0,
+        -1.5
+      ],
+      "light_offset": [
+        0,
+        2.2,
+        0.36
+      ],
+      "pole_height": 2.6,
+      "collision_radius": 0.12,
+      "cast_shadow": false
+    },
+    {
+      "id": "streetlamp_right_front",
+      "label": "右岸码头路灯",
+      "position": [
+        3.4,
+        0,
+        7.0
+      ],
+      "light_offset": [
+        0,
+        2.2,
+        0.36
+      ],
+      "pole_height": 2.6,
+      "collision_radius": 0.12,
+      "cast_shadow": true
+    },
+    {
+      "id": "streetlamp_right_back",
+      "label": "右岸后街灯",
+      "position": [
+        3.4,
+        0,
+        -1.5
+      ],
+      "light_offset": [
+        0,
+        2.2,
+        0.36
+      ],
+      "pole_height": 2.6,
+      "collision_radius": 0.12,
+      "cast_shadow": false
+    },
+    {
+      "id": "streetlamp_cloth_entry",
+      "label": "布摊街灯",
+      "position": [
+        -19.7,
+        0,
+        -1.3
+      ],
+      "light_offset": [
+        0,
+        2.2,
+        0.36
+      ],
+      "pole_height": 2.6,
+      "collision_radius": 0.12,
+      "cast_shadow": false
+    },
+    {
+      "id": "streetlamp_dock_south",
+      "label": "码头南街灯",
+      "position": [
+        -13.7,
+        0,
+        -1.45
+      ],
+      "light_offset": [
+        0,
+        2.2,
+        0.36
+      ],
+      "pole_height": 2.6,
+      "collision_radius": 0.12,
+      "cast_shadow": false
+    }
+  ],
+  "background": {
+    "layers": [
+      "near_town",
+      "far_town",
+      "near_hills",
+      "far_mountains",
+      "near_clouds",
+      "far_clouds"
+    ],
+    "source": "Existing Jiangnan buildings and ridges/clouds; seeded pixel willow replaces all 3D willows. Original resources retained.",
+    "water_bounds_z": [
+      -294,
+      26
+    ],
+    "default_parallax": "natural",
+    "artistic_gains": [
+      0.95,
+      0.75,
+      0.6,
+      0.35,
+      0.45,
+      0.2
+    ],
+    "camera_far": 320.0
+  },
+  "broad_lights": [
+    {
+      "id": "broad_tavern_warm",
+      "label": "酒肆暖色大灯",
+      "position": [
+        -7.0,
+        1.8,
+        -2.3
+      ],
+      "tint": [
+        1,
+        0.58,
+        0.24,
+        1
+      ],
+      "cast_shadow": true
+    },
+    {
+      "id": "broad_cloth_cool",
+      "label": "布摊冷色大灯",
+      "position": [
+        7.0,
+        1.8,
+        -2.3
+      ],
+      "tint": [
+        0.35,
+        0.62,
+        1,
+        1
+      ],
+      "cast_shadow": true
+    }
+  ],
+  "dock": {
+    "center_x": -12.0,
+    "center_z": 1.2,
+    "approach_z": -1.6,
+    "surface_y": -0.32
+  }
+}

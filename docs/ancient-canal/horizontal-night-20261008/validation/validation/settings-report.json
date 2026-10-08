@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "passed": true,
+  "runtime_fingerprint": "694a5de78fb64f0152956df73d585b1b8b59980daecee2e23820cac0b31b1c6f",
+  "runtime_fingerprint_before": "694a5de78fb64f0152956df73d585b1b8b59980daecee2e23820cac0b31b1c6f",
+  "runtime_fingerprint_after": "694a5de78fb64f0152956df73d585b1b8b59980daecee2e23820cac0b31b1c6f",
+  "runtime_unchanged": true,
+  "independent_file": true,
+  "cross_process": true,
+  "write_report": "settings-write/report.json",
+  "read_report": "settings-read/report.json",
+  "checks": [
+    {
+      "detail": {},
+      "name": "ignore_everyday_preferences",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "real_scene_and_collision_world",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "one_exit_signal_handler",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "cross_process_settings_written",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "cross_process_writer_records_actual_night_background_independently",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "freed_scene_disconnects_exit_handler",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "ignore_everyday_preferences",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "real_scene_and_collision_world",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "one_exit_signal_handler",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "cross_process_settings_loaded",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "cross_process_real_properties_restored",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "cross_process_all_lens_profiles_restored",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "cross_process_six_layer_requested_profile_restored",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "cross_process_single_light_actual_override_restored",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "cross_process_custom_night_background_applies_actual_layer_colors",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "freed_scene_disconnects_exit_handler",
+      "passed": true
+    }
+  ],
+  "checks_count": 16,
+  "source_reports": [
+    {
+      "path": "settings-write/report.json",
+      "sha256": "8e06a1e8e8fce87da5bf03f5ff31681014c28f1be1cff7674a3f867ab5ab4764"
+    },
+    {
+      "path": "settings-read/report.json",
+      "sha256": "257efb3c0778811cf5ff5329af54d22c6c64f6922d78e599d403f0c166ee1314"
+    }
+  ],
+  "settings_probe_file_removed": true,
+  "fixed_fps": false,
+  "import_performed": false,
+  "scope": "Two real scene processes restore both fixed F/W profiles, six requested parallax gains, native Colors, actual single-lamp overrides, explicit night background colors despite custom lighting, and material/DOF settings. Isolated XDG homes; no import, GPU or everyday preferences."
+}

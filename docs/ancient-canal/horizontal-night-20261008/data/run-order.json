@@ -1,0 +1,282 @@
+{
+  "current": "694a5de78fb64f0152956df73d585b1b8b59980daecee2e23820cac0b31b1c6f",
+  "original": "1a540a6c3fa4548b7cdbe7636f456ae1384cf0bc58901947c56106cb9cb787c6",
+  "runs": [
+    {
+      "id": "old-day-r1",
+      "period": "day",
+      "cases": [
+        "baseline"
+      ],
+      "instrumented_cpu": false,
+      "original": true,
+      "passed": true,
+      "elapsed_s": 39.890585139000905,
+      "source_fingerprint": "1a540a6c3fa4548b7cdbe7636f456ae1384cf0bc58901947c56106cb9cb787c6",
+      "path": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r1"
+    },
+    {
+      "id": "new-day-r1",
+      "period": "day",
+      "cases": [
+        "baseline"
+      ],
+      "instrumented_cpu": false,
+      "original": false,
+      "passed": true,
+      "elapsed_s": 39.73864317799598,
+      "source_fingerprint": "694a5de78fb64f0152956df73d585b1b8b59980daecee2e23820cac0b31b1c6f",
+      "path": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r1"
+    },
+    {
+      "id": "new-day-r2",
+      "period": "day",
+      "cases": [
+        "baseline"
+      ],
+      "instrumented_cpu": false,
+      "original": false,
+      "passed": true,
+      "elapsed_s": 39.635767633000796,
+      "source_fingerprint": "694a5de78fb64f0152956df73d585b1b8b59980daecee2e23820cac0b31b1c6f",
+      "path": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r2"
+    },
+    {
+      "id": "old-day-r2",
+      "period": "day",
+      "cases": [
+        "baseline"
+      ],
+      "instrumented_cpu": false,
+      "original": true,
+      "passed": true,
+      "elapsed_s": 39.79075247600122,
+      "source_fingerprint": "1a540a6c3fa4548b7cdbe7636f456ae1384cf0bc58901947c56106cb9cb787c6",
+      "path": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r2"
+    },
+    {
+      "id": "old-day-r3",
+      "period": "day",
+      "cases": [
+        "baseline"
+      ],
+      "instrumented_cpu": false,
+      "original": true,
+      "passed": true,
+      "elapsed_s": 39.83776021300582,
+      "source_fingerprint": "1a540a6c3fa4548b7cdbe7636f456ae1384cf0bc58901947c56106cb9cb787c6",
+      "path": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r3"
+    },
+    {
+      "id": "new-day-r3",
+      "period": "day",
+      "cases": [
+        "baseline"
+      ],
+      "instrumented_cpu": false,
+      "original": false,
+      "passed": true,
+      "elapsed_s": 39.689965058998496,
+      "source_fingerprint": "694a5de78fb64f0152956df73d585b1b8b59980daecee2e23820cac0b31b1c6f",
+      "path": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r3"
+    },
+    {
+      "id": "old-dusk-r1",
+      "period": "dusk",
+      "cases": [
+        "baseline"
+      ],
+      "instrumented_cpu": false,
+      "original": true,
+      "passed": true,
+      "elapsed_s": 39.84433364999859,
+      "source_fingerprint": "1a540a6c3fa4548b7cdbe7636f456ae1384cf0bc58901947c56106cb9cb787c6",
+      "path": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r1"
+    },
+    {
+      "id": "new-dusk-r1",
+      "period": "dusk",
+      "cases": [
+        "baseline"
+      ],
+      "instrumented_cpu": false,
+      "original": false,
+      "passed": true,
+      "elapsed_s": 39.787070530001074,
+      "source_fingerprint": "694a5de78fb64f0152956df73d585b1b8b59980daecee2e23820cac0b31b1c6f",
+      "path": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r1"
+    },
+    {
+      "id": "new-dusk-r2",
+      "period": "dusk",
+      "cases": [
+        "baseline"
+      ],
+      "instrumented_cpu": false,
+      "original": false,
+      "passed": true,
+      "elapsed_s": 39.79110166399914,
+      "source_fingerprint": "694a5de78fb64f0152956df73d585b1b8b59980daecee2e23820cac0b31b1c6f",
+      "path": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r2"
+    },
+    {
+      "id": "old-dusk-r2",
+      "period": "dusk",
+      "cases": [
+        "baseline"
+      ],
+      "instrumented_cpu": false,
+      "original": true,
+      "passed": true,
+      "elapsed_s": 39.88559344299574,
+      "source_fingerprint": "1a540a6c3fa4548b7cdbe7636f456ae1384cf0bc58901947c56106cb9cb787c6",
+      "path": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r2"
+    },
+    {
+      "id": "old-dusk-r3",
+      "period": "dusk",
+      "cases": [
+        "baseline"
+      ],
+      "instrumented_cpu": false,
+      "original": true,
+      "passed": true,
+      "elapsed_s": 39.88996667399624,
+      "source_fingerprint": "1a540a6c3fa4548b7cdbe7636f456ae1384cf0bc58901947c56106cb9cb787c6",
+      "path": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r3"
+    },
+    {
+      "id": "new-dusk-r3",
+      "period": "dusk",
+      "cases": [
+        "baseline"
+      ],
+      "instrumented_cpu": false,
+      "original": false,
+      "passed": true,
+      "elapsed_s": 39.742933100998926,
+      "source_fingerprint": "694a5de78fb64f0152956df73d585b1b8b59980daecee2e23820cac0b31b1c6f",
+      "path": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r3"
+    },
+    {
+      "id": "old-night-r1",
+      "period": "night",
+      "cases": [
+        "baseline"
+      ],
+      "instrumented_cpu": false,
+      "original": true,
+      "passed": true,
+      "elapsed_s": 39.94401425399701,
+      "source_fingerprint": "1a540a6c3fa4548b7cdbe7636f456ae1384cf0bc58901947c56106cb9cb787c6",
+      "path": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r1"
+    },
+    {
+      "id": "new-night-r1",
+      "period": "night",
+      "cases": [
+        "baseline",
+        "plain_sky"
+      ],
+      "instrumented_cpu": false,
+      "original": false,
+      "passed": true,
+      "elapsed_s": 75.44575587900181,
+      "source_fingerprint": "694a5de78fb64f0152956df73d585b1b8b59980daecee2e23820cac0b31b1c6f",
+      "path": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r1"
+    },
+    {
+      "id": "new-night-r2",
+      "period": "night",
+      "cases": [
+        "plain_sky",
+        "baseline"
+      ],
+      "instrumented_cpu": false,
+      "original": false,
+      "passed": true,
+      "elapsed_s": 75.34477338400029,
+      "source_fingerprint": "694a5de78fb64f0152956df73d585b1b8b59980daecee2e23820cac0b31b1c6f",
+      "path": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r2"
+    },
+    {
+      "id": "old-night-r2",
+      "period": "night",
+      "cases": [
+        "baseline"
+      ],
+      "instrumented_cpu": false,
+      "original": true,
+      "passed": true,
+      "elapsed_s": 39.988674519001506,
+      "source_fingerprint": "1a540a6c3fa4548b7cdbe7636f456ae1384cf0bc58901947c56106cb9cb787c6",
+      "path": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r2"
+    },
+    {
+      "id": "old-night-r3",
+      "period": "night",
+      "cases": [
+        "baseline"
+      ],
+      "instrumented_cpu": false,
+      "original": true,
+      "passed": true,
+      "elapsed_s": 39.93597609900462,
+      "source_fingerprint": "1a540a6c3fa4548b7cdbe7636f456ae1384cf0bc58901947c56106cb9cb787c6",
+      "path": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r3"
+    },
+    {
+      "id": "new-night-r3",
+      "period": "night",
+      "cases": [
+        "baseline",
+        "plain_sky"
+      ],
+      "instrumented_cpu": false,
+      "original": false,
+      "passed": true,
+      "elapsed_s": 75.1854876139987,
+      "source_fingerprint": "694a5de78fb64f0152956df73d585b1b8b59980daecee2e23820cac0b31b1c6f",
+      "path": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r3"
+    },
+    {
+      "id": "cpu-night-r1",
+      "period": "night",
+      "cases": [
+        "baseline"
+      ],
+      "instrumented_cpu": true,
+      "original": false,
+      "passed": true,
+      "elapsed_s": 39.33663351499854,
+      "source_fingerprint": "694a5de78fb64f0152956df73d585b1b8b59980daecee2e23820cac0b31b1c6f",
+      "path": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r1"
+    },
+    {
+      "id": "cpu-night-r2",
+      "period": "night",
+      "cases": [
+        "baseline"
+      ],
+      "instrumented_cpu": true,
+      "original": false,
+      "passed": true,
+      "elapsed_s": 39.29039665000164,
+      "source_fingerprint": "694a5de78fb64f0152956df73d585b1b8b59980daecee2e23820cac0b31b1c6f",
+      "path": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r2"
+    },
+    {
+      "id": "cpu-night-r3",
+      "period": "night",
+      "cases": [
+        "baseline"
+      ],
+      "instrumented_cpu": true,
+      "original": false,
+      "passed": true,
+      "elapsed_s": 39.33586117999948,
+      "source_fingerprint": "694a5de78fb64f0152956df73d585b1b8b59980daecee2e23820cac0b31b1c6f",
+      "path": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r3"
+    }
+  ]
+}

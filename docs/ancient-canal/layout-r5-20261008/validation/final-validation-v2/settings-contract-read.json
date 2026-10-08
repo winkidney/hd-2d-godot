@@ -1,0 +1,48 @@
+{
+  "checks": [
+    {
+      "passed": true,
+      "scope": "reader process loads v2"
+    },
+    {
+      "passed": true,
+      "scope": "different process restores active variant and inactive profile"
+    },
+    {
+      "passed": true,
+      "scope": "different process restores native Color"
+    },
+    {
+      "passed": true,
+      "scope": "different process retains explicit night background despite custom lighting"
+    },
+    {
+      "passed": true,
+      "scope": "different process restores six-layer requested profile"
+    },
+    {
+      "passed": true,
+      "scope": "different process restores single-lamp scalar and native Color"
+    },
+    {
+      "passed": true,
+      "scope": "load candidate leaves scene pose untouched until explicit application"
+    },
+    {
+      "passed": true,
+      "scope": "fully validated candidate applies controller states once"
+    },
+    {
+      "passed": true,
+      "scope": "applied controller values match independent process snapshot"
+    }
+  ],
+  "failures": [],
+  "mode": "reader",
+  "passed": true,
+  "scope": "Headless settings, real camera/profile and Light3D controls; no visual or performance claim.",
+  "runtime_fingerprint": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_before": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_after": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_unchanged": true
+}

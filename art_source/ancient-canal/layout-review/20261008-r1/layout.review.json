@@ -1,0 +1,415 @@
+{
+  "schema_version": 1,
+  "status": "draft_for_user_review",
+  "id": "ancient-horizontal-layout-r1",
+  "units": "metres",
+  "coordinates": "Godot X right, Y up, Z toward front bank; top-view page up is -Z",
+  "source_layout_sha256": "601cd2c8bf4c79b4b284f9d4e671b69d06ca77ff997ef8ac76182c260f073557",
+  "map": {
+    "x": [
+      -26,
+      26
+    ],
+    "z": [
+      -16,
+      14
+    ]
+  },
+  "river": {
+    "z": [
+      -0.1,
+      5.1
+    ],
+    "center_z": 2.5,
+    "water_y": -0.62
+  },
+  "bridge": {
+    "center": [
+      1.2,
+      0,
+      2.5
+    ],
+    "walk_width": 2.8,
+    "span": 8.4,
+    "max_deck_y": 0.6,
+    "yaw_deg": 90,
+    "model_bounds": {
+      "min": [
+        -4.339999675750732,
+        -1.1399999856948853,
+        -1.6450001001358032
+      ],
+      "max": [
+        4.339999675750732,
+        1.6299999952316284,
+        1.6450001001358032
+      ]
+    }
+  },
+  "dock": {
+    "center": [
+      -12,
+      -0.32,
+      1.2
+    ],
+    "deck_size_xz": [
+      2,
+      3
+    ],
+    "ramp_z": [
+      -1.6,
+      -0.3
+    ],
+    "ramp_width": 1.65,
+    "approach_clear_street_width": 2.2
+  },
+  "boat": {
+    "center": [
+      -8.4,
+      -0.62,
+      1.5
+    ],
+    "yaw_deg": 90,
+    "model_bounds": {
+      "min": [
+        -0.7800000309944153,
+        0.03999999910593033,
+        -2.240000009536743
+      ],
+      "max": [
+        1.3088409900665283,
+        1.1973457336425781,
+        2.384371519088745
+      ]
+    }
+  },
+  "streets": {
+    "rear": {
+      "x": [
+        -24.8,
+        24.8
+      ],
+      "z": [
+        -3.8,
+        -1
+      ],
+      "route_center_z": -2.4,
+      "nominal_clear_width": 2.8
+    },
+    "front": {
+      "x": [
+        -24.8,
+        24.8
+      ],
+      "z": [
+        6.4,
+        10.6
+      ],
+      "route_center_z": 8.5,
+      "nominal_clear_width": 4.2
+    },
+    "bridge_alley": {
+      "x": [
+        -2.2,
+        4.6
+      ],
+      "z": [
+        -15,
+        -3.8
+      ],
+      "clear_width": 6.8
+    },
+    "rear_service": {
+      "x": [
+        -24.8,
+        24.8
+      ],
+      "z": [
+        -15.5,
+        -14.5
+      ],
+      "clear_width": 1
+    }
+  },
+  "tavern_forecourt": {
+    "x": [
+      -13.4,
+      -5.6
+    ],
+    "z": [
+      -6.5,
+      -3.8
+    ]
+  },
+  "stall_waiting_strip": {
+    "z": [
+      -4.6,
+      -3.8
+    ],
+    "depth": 0.8
+  },
+  "objects": [
+    {
+      "id": "H1",
+      "asset": "house",
+      "label": "民居一",
+      "position": [
+        -19,
+        0,
+        -11
+      ],
+      "yaw_deg": 0,
+      "model_bounds": {
+        "min": [
+          -2.6472389698028564,
+          0.0,
+          -2.2300002574920654
+        ],
+        "max": [
+          2.6472389698028564,
+          4.187370777130127,
+          2.430000066757202
+        ]
+      },
+      "collision_size": [
+        4.4,
+        4.2,
+        3.6
+      ]
+    },
+    {
+      "id": "T1",
+      "asset": "tavern",
+      "label": "桥头酒肆",
+      "position": [
+        -9.5,
+        0,
+        -10
+      ],
+      "yaw_deg": 0,
+      "model_bounds": {
+        "min": [
+          -3.4472391605377197,
+          0.0,
+          -2.9300003051757812
+        ],
+        "max": [
+          3.4472391605377197,
+          5.987370491027832,
+          3.5
+        ]
+      },
+      "collision_size": [
+        6,
+        6,
+        5
+      ]
+    },
+    {
+      "id": "H2",
+      "asset": "house",
+      "label": "民居二",
+      "position": [
+        7.8,
+        0,
+        -10.8
+      ],
+      "yaw_deg": 0,
+      "model_bounds": {
+        "min": [
+          -2.6472389698028564,
+          0.0,
+          -2.2300002574920654
+        ],
+        "max": [
+          2.6472389698028564,
+          4.187370777130127,
+          2.430000066757202
+        ]
+      },
+      "collision_size": [
+        4.4,
+        4.2,
+        3.6
+      ]
+    },
+    {
+      "id": "H3",
+      "asset": "house",
+      "label": "民居三",
+      "position": [
+        17.8,
+        0,
+        -11.8
+      ],
+      "yaw_deg": 0,
+      "model_bounds": {
+        "min": [
+          -2.6472389698028564,
+          0.0,
+          -2.2300002574920654
+        ],
+        "max": [
+          2.6472389698028564,
+          4.187370777130127,
+          2.430000066757202
+        ]
+      },
+      "collision_size": [
+        4.4,
+        4.2,
+        3.6
+      ]
+    },
+    {
+      "id": "S1",
+      "asset": "cloth_stall",
+      "label": "布摊",
+      "position": [
+        -16.5,
+        0,
+        -5.7
+      ],
+      "yaw_deg": 0,
+      "model_bounds": {
+        "min": [
+          -1.4900000095367432,
+          0.0,
+          -1.059999942779541
+        ],
+        "max": [
+          1.4900000095367432,
+          2.4000000953674316,
+          1.090000033378601
+        ]
+      },
+      "collision_size": [
+        2.7,
+        2.4,
+        1.8
+      ]
+    },
+    {
+      "id": "S2",
+      "asset": "food_stall",
+      "label": "食摊",
+      "position": [
+        11.8,
+        0,
+        -5.7
+      ],
+      "yaw_deg": 0,
+      "model_bounds": {
+        "min": [
+          -1.4900000095367432,
+          0.0,
+          -1.059999942779541
+        ],
+        "max": [
+          1.4900000095367432,
+          2.4000000953674316,
+          1.090000033378601
+        ]
+      },
+      "collision_size": [
+        2.7,
+        2.4,
+        1.8
+      ]
+    },
+    {
+      "id": "S3",
+      "asset": "food_stall",
+      "label": "茶摊",
+      "position": [
+        21.2,
+        0,
+        -5.7
+      ],
+      "yaw_deg": 0,
+      "model_bounds": {
+        "min": [
+          -1.4900000095367432,
+          0.0,
+          -1.059999942779541
+        ],
+        "max": [
+          1.4900000095367432,
+          2.4000000953674316,
+          1.090000033378601
+        ]
+      },
+      "collision_size": [
+        2.7,
+        2.4,
+        1.8
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "id": "innkeeper",
+      "label": "掌柜",
+      "position": [
+        -8,
+        0,
+        -5.1
+      ]
+    },
+    {
+      "id": "vendor",
+      "label": "布摊主",
+      "position": [
+        -14.6,
+        0,
+        -4.7
+      ]
+    },
+    {
+      "id": "food_vendor",
+      "label": "食摊主",
+      "position": [
+        13.7,
+        0,
+        -4.7
+      ]
+    },
+    {
+      "id": "tea_guest",
+      "label": "茶客",
+      "position": [
+        19.2,
+        0,
+        -4.3
+      ]
+    },
+    {
+      "id": "boatman",
+      "label": "船工",
+      "position": [
+        -12,
+        -0.32,
+        1.1
+      ]
+    }
+  ],
+  "willows": [
+    [
+      -23.2,
+      0,
+      -4.8
+    ],
+    [
+      -24,
+      0,
+      12
+    ],
+    [
+      24,
+      0,
+      12
+    ]
+  ],
+  "rear_background": "Existing six parallax layers remain behind the playable boundary; their decorative placement is not approved by this drawing.",
+  "policy": "Review diagram only. Runtime layout, assets and archived profiling are unchanged. After approval these exact object centers can be used for placement."
+}

@@ -103,9 +103,9 @@ func ground_seams() -> void:
                     banks.append(collision_bounds)
             elif not child is StaticBody3D and part is MeshInstance3D:
                 var visual_bounds: AABB = part.global_transform*part.get_aabb()
-                if absf(visual_bounds.end.y-surface_y)<.001 and visual_bounds.position.z>=minimum_z-.001 and visual_bounds.end.z<=maximum_z+.001:
+                if absf(visual_bounds.end.y-surface_y)<.001 and (visual_bounds.end.x<=-float(scene.layout.banks.outer_x)+.001 or visual_bounds.position.x>=float(scene.layout.banks.outer_x)-.001) and visual_bounds.position.z>=minimum_z-.001 and visual_bounds.end.z<=maximum_z+.001:
                     streets.append(visual_bounds)
-    check(streets.size()==2 and banks.size()>=2,"real_bank_and_decorative_street_bounds_exist")
+    check(streets.size()==4 and banks.size()>=2,"real_bank_and_decorative_street_bounds_exist")
     for index in streets.size():
         var adjacent := false
         for bank in banks:
@@ -113,12 +113,11 @@ func ground_seams() -> void:
             check(overlap.size.x*overlap.size.y*overlap.size.z<.0001,"street_"+str(index)+"_no_ground_volume_overlap_"+str(banks.find(bank)))
             if absf(streets[index].position.x-bank.end.x)<.001 or absf(streets[index].end.x-bank.position.x)<.001: adjacent = true
         check(adjacent,"street_"+str(index)+"_touches_actual_bank_edge")
-    var side_items := 0
+    var background_items := 0
     for child in scene.farfield.layers.near_town.get_children():
-        if absf(child.position.x)>13.0 and child.position.z>=float(scene.layout.banks.min_z):
-            side_items += 1
-            check(absf(child.position.x)>float(scene.layout.banks.outer_x)+2.0,"side_decoration_outside_boundary_"+str(side_items),{"position":point(child.position)})
-    check(side_items>=4,"side_town_and_willow_items_still_present")
+        background_items += 1
+        check(child.position.z<float(scene.layout.banks.min_z),"background_item_behind_playable_bank_"+str(background_items),{"position":point(child.position)})
+    check(background_items==11,"six_background_houses_and_five_flat_willows_present")
 
 func camera_edges() -> void:
     scene.player.paused = true
@@ -158,9 +157,9 @@ func run() -> void:
     check(DisplayServer.get_name()=="headless","headless_scope_only")
     ground_seams()
     for side in [-1.0,1.0]:
-        await push_against_wall("lateral_"+str(side),Vector3(side*11.0,0,9.0),Vector2(side,0),0,side*float(scene.layout.banks.outer_x),460)
+        await push_against_wall("lateral_"+str(side),Vector3(side*11.0,0,12.0),Vector2(side,0),0,side*float(scene.layout.banks.outer_x),460)
         for z in [float(scene.layout.banks.min_z),float(scene.layout.banks.max_z)]:
-            await push_against_wall("end_"+str(side)+"_"+str(z),Vector3(side*24.0,0,0),Vector2(0,signf(z)),2,z,460)
+            await push_against_wall("end_"+str(side)+"_"+str(z),Vector3(side*24.0,0,-3 if z<0 else 7),Vector2(0,signf(z)),2,z,460)
     await camera_edges()
     var report := {"passed":failures.is_empty(),"entry":ENTRY,"runtime_fingerprint":fingerprint,"checks":checks,"failures":failures,"traversals":traversals,"camera_cases":camera_cases,"scope":"Headless actual CharacterBody3D collisions/grounding and Camera3D alpha-bounds projection. User performs visual validation; no rendered appearance or GPU acceptance claimed. Launch timing is recorded by the wrapper: OS.get_cmdline_args() may omit processed engine flags, so CLI token visibility does not determine whether fixed-fps was enabled.","display_backend":DisplayServer.get_name(),"fixed_fps_cli_token_visible":OS.get_cmdline_args().has("--fixed-fps"),"physics_hz":Engine.physics_ticks_per_second,"time_scale":Engine.time_scale}
     DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(destination.get_base_dir()))

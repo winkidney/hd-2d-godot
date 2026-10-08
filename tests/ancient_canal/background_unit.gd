@@ -169,7 +169,7 @@ func collision_and_layout_checks() -> void:
     var shadows := 0
     for lamp in world.streetlamp_definitions:
         if lamp.cast_shadow: shadows += 1
-        check(is_equal_approx(lamp.light_position[1],2.2),"lamp light is paper centre " + lamp.id)
+        check(is_equal_approx(lamp.light_position[1],float(lamp.foot_position[1])+2.2),"lamp light is paper centre " + lamp.id)
         var pole := world.get_node(lamp.id)
         check(pole is StaticBody3D and pole.get_child(0).shape is CylinderShape3D,"real cylinder body " + lamp.id)
         check(is_equal_approx(pole.get_child(0).shape.radius,.12) and is_equal_approx(pole.get_child(0).shape.height,2.6),"pole collider dimensions " + lamp.id)
@@ -180,12 +180,12 @@ func collision_and_layout_checks() -> void:
     var background := Background.new()
     root.add_child(background)
     background.configure(world,layout)
-    var expected_counts := {"near_town":23,"far_town":8,"near_hills":1,"far_mountains":1,"near_clouds":4,"far_clouds":4}
+    var expected_counts := {"near_town":11,"far_town":9,"near_hills":1,"far_mountains":1,"near_clouds":4,"far_clouds":4}
     check(background.layers.size()==6,"all six actual layers configured")
     for id in expected_counts:
         check(background.layers[id].get_child_count()==expected_counts[id],"actual model/card count " + id)
     check(world.find_children("*","CollisionShape3D",true,false).size()==collision_count,"background never expands playable collision")
-    check(world.water.mesh.size.is_equal_approx(Vector2(5.2,340)) and is_equal_approx(world.water.position.z,-124),"continuous water spans rear horizon to south background")
+    check(world.water.mesh.size.is_equal_approx(Vector2(340,5.2)) and is_equal_approx(world.water.position.z,2.5),"continuous water spans rear horizon to south background")
     south_foundation_checks(world,layout)
     check(background.layers.near_hills.get_child(0).position.is_equal_approx(Vector3(0,-2,-67)),"near hill recipe placement")
     check(background.layers.far_mountains.get_child(0).scale.is_equal_approx(Vector3(.44,.45,.30)),"far mountains reuse non-snowy middle ridge")
@@ -207,41 +207,35 @@ func collision_and_layout_checks() -> void:
 func south_foundation_checks(world: Node3D, layout: Dictionary) -> void:
     var ground: Array[AABB] = []
     for node in world.get_children():
+        var found_collision := false
+        for child in node.get_children():
+            if child is CollisionShape3D and child.shape is BoxShape3D:
+                var size: Vector3 = child.shape.size
+                var bounds: AABB = child.global_transform * AABB(-size/2,size)
+                if is_equal_approx(bounds.end.y,0.0) and is_equal_approx(bounds.size.y,1.0):
+                    ground.append(bounds)
+                    found_collision = true
+        if found_collision: continue
         for child in node.get_children():
             if child is MeshInstance3D and child.mesh is BoxMesh:
                 var bounds: AABB = child.global_transform * child.get_aabb()
                 if is_equal_approx(bounds.end.y,0.0) and is_equal_approx(bounds.size.y,1.0):
                     ground.append(bounds)
-    var south_bounds: Array[AABB] = []
-    var half: float = layout.river.half_width
-    for id in ["SouthBankLeft","SouthBankRight"]:
-        var node: Node3D = world.get_node(id)
-        check(not node is CollisionObject3D and node.find_children("*","CollisionShape3D",true,false).is_empty(),"south foundation is decorative " + id)
-        check(node.get_child_count()==1 and node.get_child(0) is MeshInstance3D,"south foundation has one visible mesh " + id)
-        var mesh: MeshInstance3D = node.get_child(0)
-        var bounds: AABB = mesh.global_transform * mesh.get_aabb()
-        var left: bool = id=="SouthBankLeft"
-        check(is_equal_approx(bounds.position.x,-52.0 if left else half) and is_equal_approx(bounds.end.x,-half if left else 52.0),"south foundation preserves river gap and outer coverage " + id)
-        check(is_equal_approx(bounds.position.z,layout.banks.max_z) and is_equal_approx(bounds.end.z,46.0),"south foundation spans map boundary to 46 metres " + id)
-        check(is_equal_approx(bounds.end.y,0.0),"south foundation top stays level with bank " + id)
-        var seam_neighbours := 0
-        for other in ground:
-            if bounds.is_equal_approx(other): continue
-            var x_overlap := minf(bounds.end.x,other.end.x)-maxf(bounds.position.x,other.position.x)
-            var z_overlap := minf(bounds.end.z,other.end.z)-maxf(bounds.position.z,other.position.z)
-            check(not (x_overlap>0.00001 and z_overlap>0.00001),"south foundation has no coplanar area overlap " + id + " " + str(other))
-            if x_overlap>0.00001 and is_equal_approx(other.end.z,bounds.position.z): seam_neighbours += 1
-        check(seam_neighbours>=2,"south foundation meets playable bank and outer street " + id)
-        south_bounds.append(bounds)
     var water_bounds: AABB = world.water.global_transform * world.water.get_aabb()
-    check(is_equal_approx(water_bounds.position.z,-294.0) and is_equal_approx(water_bounds.end.z,46.0),"water keeps original rear end and reaches south end")
-    check(is_equal_approx(water_bounds.position.x,-half) and is_equal_approx(water_bounds.end.x,half),"water and south banks meet exactly at river edge")
-    for x in [-51.9,-26.0,-half-.01,half+.01,26.0,51.9]:
-        for z in [14.01,30.0,45.99]:
+    check(is_equal_approx(water_bounds.position.x,-170) and is_equal_approx(water_bounds.end.x,170),"horizontal water spans both side horizons")
+    check(is_equal_approx(water_bounds.position.z,-.1) and is_equal_approx(water_bounds.end.z,5.1),"water width matches horizontal river")
+    for x in [-160.0,-25.0,25.0,160.0]:
+        for z in [-15.0,13.0,40.0]:
             var covered := false
-            for bounds in south_bounds:
-                covered = covered or bounds.has_point(Vector3(x,-.1,z))
-            check(covered,"south foreground coverage " + str([x,z]))
+            for bounds in ground: covered = covered or bounds.has_point(Vector3(x,-.1,z))
+            check(covered,"horizontal foreground coverage " + str([x,z]))
+    for i in ground.size():
+        for j in range(i+1,ground.size()):
+            var first := ground[i]
+            var second := ground[j]
+            var overlap_x := minf(first.end.x,second.end.x)-maxf(first.position.x,second.position.x)
+            var overlap_z := minf(first.end.z,second.end.z)-maxf(first.position.z,second.position.z)
+            check(not (overlap_x>.00001 and overlap_z>.00001),"ground rectangles never overlap coplanar area")
 
 func run() -> void:
     profile_checks()

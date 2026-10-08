@@ -1,0 +1,197 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "id": "H1",
+      "passed": true
+    },
+    {
+      "id": "T1",
+      "passed": true
+    },
+    {
+      "id": "H2",
+      "passed": true
+    },
+    {
+      "id": "H3",
+      "passed": true
+    },
+    {
+      "id": "S1",
+      "passed": true
+    },
+    {
+      "id": "S2",
+      "passed": true
+    },
+    {
+      "id": "S3",
+      "passed": true
+    },
+    {
+      "id": "BR1",
+      "passed": true
+    },
+    {
+      "id": "D1",
+      "passed": true
+    },
+    {
+      "id": "BO1",
+      "passed": true
+    },
+    {
+      "id": "wine_jar_15",
+      "passed": true
+    },
+    {
+      "id": "wine_jar_16",
+      "passed": true
+    },
+    {
+      "id": "cloth_banner_17",
+      "passed": true
+    },
+    {
+      "id": "E1",
+      "passed": true
+    },
+    {
+      "id": "E2",
+      "passed": true
+    },
+    {
+      "id": "E3",
+      "passed": true
+    },
+    {
+      "id": "E4",
+      "passed": true
+    },
+    {
+      "id": "E5",
+      "passed": true
+    },
+    {
+      "id": "E6",
+      "passed": true
+    },
+    {
+      "id": "B1",
+      "passed": true
+    },
+    {
+      "id": "B2",
+      "passed": true
+    },
+    {
+      "id": "B3",
+      "passed": true
+    },
+    {
+      "id": "B4",
+      "passed": true
+    },
+    {
+      "id": "B5",
+      "passed": true
+    },
+    {
+      "id": "B6",
+      "passed": true
+    },
+    {
+      "id": "F1",
+      "passed": true
+    },
+    {
+      "id": "F2",
+      "passed": true
+    },
+    {
+      "id": "F3",
+      "passed": true
+    },
+    {
+      "id": "F4",
+      "passed": true
+    },
+    {
+      "id": "P1",
+      "passed": true
+    },
+    {
+      "id": "P2",
+      "passed": true
+    },
+    {
+      "id": "P3",
+      "passed": true
+    },
+    {
+      "id": "P4",
+      "passed": true
+    },
+    {
+      "id": "P5",
+      "passed": true
+    },
+    {
+      "id": "P6",
+      "passed": true
+    },
+    {
+      "id": "model_bounds_H1",
+      "passed": true,
+      "error_m": 7.152557373046875e-07
+    },
+    {
+      "id": "model_bounds_T1",
+      "passed": true,
+      "error_m": 2.384185791015625e-07
+    },
+    {
+      "id": "model_bounds_H2",
+      "passed": true,
+      "error_m": 4.291534425604482e-07
+    },
+    {
+      "id": "model_bounds_H3",
+      "passed": true,
+      "error_m": 5.245208747339802e-07
+    },
+    {
+      "id": "model_bounds_S1",
+      "passed": true,
+      "error_m": 3.0994415300966693e-07
+    },
+    {
+      "id": "model_bounds_S2",
+      "passed": true,
+      "error_m": 4.2915344167226976e-07
+    },
+    {
+      "id": "model_bounds_S3",
+      "passed": true,
+      "error_m": 1.0013580329371052e-06
+    },
+    {
+      "id": "textures_packed",
+      "passed": true,
+      "count": 59
+    },
+    {
+      "id": "three_ground_batches",
+      "passed": true
+    },
+    {
+      "id": "fourteen_point_lights",
+      "passed": true
+    },
+    {
+      "id": "deleted_L5_absent",
+      "passed": true
+    }
+  ]
+}

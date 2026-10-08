@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "generator": "tools/ancient_canal/build_low_bridge.py",
+  "source": "tools/ancient_canal/build_models.py:bridge",
+  "height": 0.6,
+  "half_span": 4.2,
+  "width": 2.8,
+  "original_model_retained": true,
+  "reopened": true,
+  "model": {
+    "id": "bridge_low",
+    "blend": "art_source/ancient-canal/blender/low-bridge/bridge_low.blend",
+    "glb": "assets/ancient-canal/models/bridge_low.glb",
+    "vertices": 1636,
+    "triangles": 2500,
+    "material_meshes": 1,
+    "glb_sha256": "3e90196a85dbc6d1c0b102b300488c7ceeee343bffe3b3fb369985341142b507",
+    "blend_sha256": "59cbd1341c632192728a1ca65bf407ba7c98006a48ddbf750ee84da070d4338a",
+    "bounds_min": [
+      -4.339999675750732,
+      -1.1399999856948853,
+      -1.6450001001358032
+    ],
+    "bounds_max": [
+      4.339999675750732,
+      1.6299999952316284,
+      1.6450001001358032
+    ],
+    "uv_layers": 1,
+    "tangents": true,
+    "packed_texture_images": 16
+  }
+}

@@ -1,0 +1,1400 @@
+{
+  "runtime_fingerprint": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "records": [
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/final-validation-v2/blockout.json",
+      "path": "validation/final-validation-v2/blockout.json",
+      "encoding": "identity",
+      "original_sha256": "321995065cab98c5f42567ece4c7055cee796043b352116946bebdd01815e3e2",
+      "stored_sha256": "321995065cab98c5f42567ece4c7055cee796043b352116946bebdd01815e3e2",
+      "original_bytes": 24574,
+      "stored_bytes": 24574
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/final-validation-v2/blueprint-layout.json",
+      "path": "validation/final-validation-v2/blueprint-layout.json",
+      "encoding": "identity",
+      "original_sha256": "66a8b5455821acf4ad49c8984b4c957f43de8f804b629317345efd8e9a3e0b5d",
+      "stored_sha256": "66a8b5455821acf4ad49c8984b4c957f43de8f804b629317345efd8e9a3e0b5d",
+      "original_bytes": 5611,
+      "stored_bytes": 5611
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/final-validation-v2/final-headless-suite.json",
+      "path": "validation/final-validation-v2/final-headless-suite.json",
+      "encoding": "identity",
+      "original_sha256": "04b908ef96513279567d328b38f66aad46d11a8206f1a4cef87372a6d73a7159",
+      "stored_sha256": "04b908ef96513279567d328b38f66aad46d11a8206f1a4cef87372a6d73a7159",
+      "original_bytes": 6996,
+      "stored_bytes": 6996
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/final-validation-v2/headless/report.json",
+      "path": "validation/final-validation-v2/headless/report.json",
+      "encoding": "identity",
+      "original_sha256": "b562c278a2a7e69a2b9c3b70a02d05255230936fbd6ccfcadb574ca4cdc95cb3",
+      "stored_sha256": "b562c278a2a7e69a2b9c3b70a02d05255230936fbd6ccfcadb574ca4cdc95cb3",
+      "original_bytes": 655935,
+      "stored_bytes": 655935
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/final-validation-v2/horizontal-sky.json",
+      "path": "validation/final-validation-v2/horizontal-sky.json",
+      "encoding": "identity",
+      "original_sha256": "9b094260703b76388a7cfc4bdefc38baf1ac91cbcf017fac3d485569326f5731",
+      "stored_sha256": "9b094260703b76388a7cfc4bdefc38baf1ac91cbcf017fac3d485569326f5731",
+      "original_bytes": 2713,
+      "stored_bytes": 2713
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/final-validation-v2/lighting-route/lighting-route-report.json",
+      "path": "validation/final-validation-v2/lighting-route/lighting-route-report.json",
+      "encoding": "identity",
+      "original_sha256": "b509951fbf89fed1a7210c1eac9767ffb4ff60fbe7952a4c77b216353d4a0db3",
+      "stored_sha256": "b509951fbf89fed1a7210c1eac9767ffb4ff60fbe7952a4c77b216353d4a0db3",
+      "original_bytes": 3400131,
+      "stored_bytes": 3400131
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/final-validation-v2/settings-contract-read.json",
+      "path": "validation/final-validation-v2/settings-contract-read.json",
+      "encoding": "identity",
+      "original_sha256": "2e143a3a1b2557a0c8ad9b02f23646c08df3cbe9287e090faa839837837124d0",
+      "stored_sha256": "2e143a3a1b2557a0c8ad9b02f23646c08df3cbe9287e090faa839837837124d0",
+      "original_bytes": 1482,
+      "stored_bytes": 1482
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/final-validation-v2/settings-contract-write.json",
+      "path": "validation/final-validation-v2/settings-contract-write.json",
+      "encoding": "identity",
+      "original_sha256": "a1d94b7f08d5dbc51c60b5819104b7fa8339d8d20a5160167c5be5f712169360",
+      "stored_sha256": "a1d94b7f08d5dbc51c60b5819104b7fa8339d8d20a5160167c5be5f712169360",
+      "original_bytes": 622,
+      "stored_bytes": 622
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/final-validation-v2/settings-contract.json",
+      "path": "validation/final-validation-v2/settings-contract.json",
+      "encoding": "identity",
+      "original_sha256": "cee7047b633a9340e89f35077ef3641200c7676d235898cb234a749922eb9327",
+      "stored_sha256": "cee7047b633a9340e89f35077ef3641200c7676d235898cb234a749922eb9327",
+      "original_bytes": 16783,
+      "stored_bytes": 16783
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/final-validation-v2/settings-read/report.json",
+      "path": "validation/final-validation-v2/settings-read/report.json",
+      "encoding": "identity",
+      "original_sha256": "f92b54bd4364747df736a12af47a74e7495d881ca4f21dcb3fdab80eba241b85",
+      "stored_sha256": "f92b54bd4364747df736a12af47a74e7495d881ca4f21dcb3fdab80eba241b85",
+      "original_bytes": 1856,
+      "stored_bytes": 1856
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/final-validation-v2/settings-report.json",
+      "path": "validation/final-validation-v2/settings-report.json",
+      "encoding": "identity",
+      "original_sha256": "7028ffaccfdbe14ce8f8bcb10a82ab2df5c1c869023ec3c51e01f8bcf66e737e",
+      "stored_sha256": "7028ffaccfdbe14ce8f8bcb10a82ab2df5c1c869023ec3c51e01f8bcf66e737e",
+      "original_bytes": 2992,
+      "stored_bytes": 2992
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/final-validation-v2/settings-write/report.json",
+      "path": "validation/final-validation-v2/settings-write/report.json",
+      "encoding": "identity",
+      "original_sha256": "44bcfd4465d8fd2d8bd2aab38f2cd382c506a83597abc1810e54d5027c8061c1",
+      "stored_sha256": "44bcfd4465d8fd2d8bd2aab38f2cd382c506a83597abc1810e54d5027c8061c1",
+      "original_bytes": 1391,
+      "stored_bytes": 1391
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/final-validation-v2/upright-validation/upright-report.json",
+      "path": "validation/final-validation-v2/upright-validation/upright-report.json",
+      "encoding": "identity",
+      "original_sha256": "0bddc14b82e62948b90edbfe6788aba906bc734b18a94d0c12fb1e63ffb49f99",
+      "stored_sha256": "0bddc14b82e62948b90edbfe6788aba906bc734b18a94d0c12fb1e63ffb49f99",
+      "original_bytes": 193856,
+      "stored_bytes": 193856
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/camera-validation-v2/camera-suite.json",
+      "path": "validation/camera-validation-v2/camera-suite.json",
+      "encoding": "identity",
+      "original_sha256": "d65179b3fedf9e53f2098fda674d5135211de1934f6168e850974a728637f337",
+      "stored_sha256": "d65179b3fedf9e53f2098fda674d5135211de1934f6168e850974a728637f337",
+      "original_bytes": 1812,
+      "stored_bytes": 1812
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/camera-validation-v2/center-follow.json",
+      "path": "validation/camera-validation-v2/center-follow.json",
+      "encoding": "identity",
+      "original_sha256": "3bfdfd2ca6f3579f25dc86df45c9e3498193793318d94a38c342206af82d6038",
+      "stored_sha256": "3bfdfd2ca6f3579f25dc86df45c9e3498193793318d94a38c342206af82d6038",
+      "original_bytes": 530070,
+      "stored_bytes": 530070
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/camera-validation-v2/walkable-extent.json",
+      "path": "validation/camera-validation-v2/walkable-extent.json",
+      "encoding": "identity",
+      "original_sha256": "4ba3b4c9a824e41c80383afb6e09ae3acaf54ce935ef8c7024071d2210f36759",
+      "stored_sha256": "4ba3b4c9a824e41c80383afb6e09ae3acaf54ce935ef8c7024071d2210f36759",
+      "original_bytes": 136524,
+      "stored_bytes": 136524
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/input-regression-v2/input-regression-report.json",
+      "path": "validation/input-regression-v2/input-regression-report.json",
+      "encoding": "identity",
+      "original_sha256": "4b23abb51f25f4269747f06a8abbfa817ed525569470ab806b435b6a00099dbf",
+      "stored_sha256": "4b23abb51f25f4269747f06a8abbfa817ed525569470ab806b435b6a00099dbf",
+      "original_bytes": 14290,
+      "stored_bytes": 14290
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/input-regression-v2/regression/frontal/report.json",
+      "path": "validation/input-regression-v2/regression/frontal/report.json",
+      "encoding": "identity",
+      "original_sha256": "028535365eb9bfef0a7a1a155c5c2f9cf3f9e0ceee173a7e86f064674a952095",
+      "stored_sha256": "028535365eb9bfef0a7a1a155c5c2f9cf3f9e0ceee173a7e86f064674a952095",
+      "original_bytes": 311907,
+      "stored_bytes": 311907
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/input-regression-v2/regression/frontal/route-F.json",
+      "path": "validation/input-regression-v2/regression/frontal/route-F.json",
+      "encoding": "identity",
+      "original_sha256": "f48e27eac5c8de6300e83ce6bca30791be781afd4fba67f99034913a2d059621",
+      "stored_sha256": "f48e27eac5c8de6300e83ce6bca30791be781afd4fba67f99034913a2d059621",
+      "original_bytes": 76077,
+      "stored_bytes": 76077
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/input-regression-v2/regression/frontal/route-O.json",
+      "path": "validation/input-regression-v2/regression/frontal/route-O.json",
+      "encoding": "identity",
+      "original_sha256": "5f00793265f2026e58e072bde260e746ce5b073c8ba7c08bd5a577b3309f059e",
+      "stored_sha256": "5f00793265f2026e58e072bde260e746ce5b073c8ba7c08bd5a577b3309f059e",
+      "original_bytes": 78441,
+      "stored_bytes": 78441
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/input-regression-v2/regression/frontal/route-W.json",
+      "path": "validation/input-regression-v2/regression/frontal/route-W.json",
+      "encoding": "identity",
+      "original_sha256": "5176d1cf0ec44f733351c6292505b7975a87c543c11dc877eab2726100e90035",
+      "stored_sha256": "5176d1cf0ec44f733351c6292505b7975a87c543c11dc877eab2726100e90035",
+      "original_bytes": 76057,
+      "stored_bytes": 76057
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/input-regression-v2/regression/input-dispatch.json",
+      "path": "validation/input-regression-v2/regression/input-dispatch.json",
+      "encoding": "identity",
+      "original_sha256": "a324893d5c2ccab7addb8ed5782b642a6a1406b9d44da2d960120530e44e9694",
+      "stored_sha256": "a324893d5c2ccab7addb8ed5782b642a6a1406b9d44da2d960120530e44e9694",
+      "original_bytes": 93663,
+      "stored_bytes": 93663
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/input-regression-v2/regression/make-p8-headless.json",
+      "path": "validation/input-regression-v2/regression/make-p8-headless.json",
+      "encoding": "identity",
+      "original_sha256": "9c8028e90bd052a6f4757c6192e22b88a87f13afc5852fa2b1af0c36b4ccef30",
+      "stored_sha256": "9c8028e90bd052a6f4757c6192e22b88a87f13afc5852fa2b1af0c36b4ccef30",
+      "original_bytes": 42512,
+      "stored_bytes": 42512
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/input-regression-v2/regression/make-p8-settings.json",
+      "path": "validation/input-regression-v2/regression/make-p8-settings.json",
+      "encoding": "identity",
+      "original_sha256": "3009186dd6e4c22befbbb860baffade505c245b51b0be53ddb34e48f88d4abc0",
+      "stored_sha256": "3009186dd6e4c22befbbb860baffade505c245b51b0be53ddb34e48f88d4abc0",
+      "original_bytes": 1922,
+      "stored_bytes": 1922
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/input-regression-v2/regression/p9/report.json",
+      "path": "validation/input-regression-v2/regression/p9/report.json",
+      "encoding": "identity",
+      "original_sha256": "32510fbb2a25e5a14b63eb056c39c2a2f279e3239ce9e2cc6ca8668228753983",
+      "stored_sha256": "32510fbb2a25e5a14b63eb056c39c2a2f279e3239ce9e2cc6ca8668228753983",
+      "original_bytes": 17458,
+      "stored_bytes": 17458
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/input-regression-v2/regression-suite.json",
+      "path": "validation/input-regression-v2/regression-suite.json",
+      "encoding": "identity",
+      "original_sha256": "30949d0dfc6abf041676c6669e927bb14c6068004dfa1454f42aa7753c0057ee",
+      "stored_sha256": "30949d0dfc6abf041676c6669e927bb14c6068004dfa1454f42aa7753c0057ee",
+      "original_bytes": 10961,
+      "stored_bytes": 10961
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/make-test-final/report.json",
+      "path": "validation/make-test-final/report.json",
+      "encoding": "identity",
+      "original_sha256": "431fbc956749afbd87d1a85d5188fb07fc3ef1bb0e840b38562052c4553fd7a5",
+      "stored_sha256": "431fbc956749afbd87d1a85d5188fb07fc3ef1bb0e840b38562052c4553fd7a5",
+      "original_bytes": 412,
+      "stored_bytes": 412
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/source-audit.json",
+      "path": "validation/source-audit.json",
+      "encoding": "identity",
+      "original_sha256": "553af2355d315f03f0b1c9ad61ee1a4b1f8d9b8a3b752ae6821e0949fa4283af",
+      "stored_sha256": "553af2355d315f03f0b1c9ad61ee1a4b1f8d9b8a3b752ae6821e0949fa4283af",
+      "original_bytes": 281980,
+      "stored_bytes": 281980
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/cpu/actor.gd",
+      "path": "measurements/cpu/actor.gd.txt.gz",
+      "encoding": "gzip",
+      "original_sha256": "2a1e612537748f0c402a720fef42744c43842deb22bef43c6c6f301f1586b47a",
+      "stored_sha256": "055df2f44c5ff7d8251dedb7b5e4f2ae11c75132a9e992b70426d4a0c3cc5ef8",
+      "original_bytes": 5559,
+      "stored_bytes": 1826
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/cpu/background.gd",
+      "path": "measurements/cpu/background.gd.txt.gz",
+      "encoding": "gzip",
+      "original_sha256": "113a1a2984f0ea94a00e1fa6230372454298c012bc73dbd681dad706a99eee58",
+      "stored_sha256": "01253632357ca906c9e2974bc699cfcebba7ab4b888d083abb7ae4fca372822e",
+      "original_bytes": 9137,
+      "stored_bytes": 3060
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/cpu/baseline-night-samples.json",
+      "path": "measurements/cpu/baseline-night-samples.json.gz",
+      "encoding": "gzip",
+      "original_sha256": "9a80b8ea61fcd8f7242d22b1ccc35e5008bfaf3d96c7c023b42e53c5a976e227",
+      "stored_sha256": "841a0adba6480733dee2692aa228c870e588d329d05021697da59a8c17d7abc8",
+      "original_bytes": 5952987,
+      "stored_bytes": 469290
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/cpu/camera.gd",
+      "path": "measurements/cpu/camera.gd.txt.gz",
+      "encoding": "gzip",
+      "original_sha256": "fc09269202f476c7564f26325e54ef2eb63c66084325d0c6dbff9be0284ed450",
+      "stored_sha256": "b9888fec56de581b4676b10f2e043c497fdbb92a6e95d7d4c9ea3f6e8e1f95b3",
+      "original_bytes": 8331,
+      "stored_bytes": 2676
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/cpu/manifest.json",
+      "path": "measurements/cpu/manifest.json",
+      "encoding": "identity",
+      "original_sha256": "9a07b1f35e287a7cf883cb909e636b516b27e01d1f6dff2a4dc75dd2a9d7eb6d",
+      "stored_sha256": "9a07b1f35e287a7cf883cb909e636b516b27e01d1f6dff2a4dc75dd2a9d7eb6d",
+      "original_bytes": 184153,
+      "stored_bytes": 184153
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/cpu/night_sky.gd",
+      "path": "measurements/cpu/night_sky.gd.txt.gz",
+      "encoding": "gzip",
+      "original_sha256": "67cb45be09c62159ee59061302df50fae5767fc31dd133f242ab63b70147bca3",
+      "stored_sha256": "bb92c0a62ea2cabfb0e64c7a851279bc43940e9502e8ccc492a85550600f29a0",
+      "original_bytes": 2596,
+      "stored_bytes": 1049
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/cpu/parallax.gd",
+      "path": "measurements/cpu/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_sha256": "25ea4dd6766d0efd49c4a016bdc50ecd64d7dca4fa8869320905d7b19d56b402",
+      "stored_sha256": "65b3ca8618e6d3114f832cef9d882bc2aade82f96f8f15a0db04bd3f885cd71a",
+      "original_bytes": 8669,
+      "stored_bytes": 2800
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/cpu/performance-report.json",
+      "path": "measurements/cpu/performance-report.json",
+      "encoding": "identity",
+      "original_sha256": "6e0baa4217abfe62fe3e316255f3d7dd2cb25ae3c65b1872981445c125e2db54",
+      "stored_sha256": "6e0baa4217abfe62fe3e316255f3d7dd2cb25ae3c65b1872981445c125e2db54",
+      "original_bytes": 5904,
+      "stored_bytes": 5904
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/cpu/probe.gd",
+      "path": "measurements/cpu/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_sha256": "615cc6345737e2e8161265f2078ede0932b38233a4286e22a1e8687eb13b05be",
+      "stored_sha256": "0db961eb1f922e56a7a058c86af5c97dfb598eb1f11fd53a93111179987a3056",
+      "original_bytes": 30415,
+      "stored_bytes": 8512
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/cpu/scene.gd",
+      "path": "measurements/cpu/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_sha256": "b7c6da402c033ac34eee1dce26ca7a5cc0fefa18fd1f5d75c235c000051823d8",
+      "stored_sha256": "9e36308abfc13ab88bcc1d8894c9aa1df6baf1fa15a71610a8bea7ee2618f070",
+      "original_bytes": 36671,
+      "stored_bytes": 9637
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/cpu/sky_focus.gd",
+      "path": "measurements/cpu/sky_focus.gd.txt.gz",
+      "encoding": "gzip",
+      "original_sha256": "06f07934609d3e51d90049b9fc7faa90d8179ca5efb1253672eca5ff8f81eb23",
+      "stored_sha256": "994640144aef2249c7266f49b3cae335f57e5f65dac47ef570ad62ff4f22c92c",
+      "original_bytes": 3502,
+      "stored_bytes": 1551
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r1/baseline-night-samples.json",
+      "path": "measurements/gpu-r1/baseline-night-samples.json.gz",
+      "encoding": "gzip",
+      "original_sha256": "dfcab85794d51c6671593fde504a6950d1662bec0af6708756e636a55c28c3ba",
+      "stored_sha256": "27e11416d06b5570637e853d8f90e167d5e191576b4be025b4e5f0f32d9f722d",
+      "original_bytes": 22364635,
+      "stored_bytes": 1617004
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r1/manifest.json",
+      "path": "measurements/gpu-r1/manifest.json",
+      "encoding": "identity",
+      "original_sha256": "e0056b38c0c9a11f56609f0c9366baeecd76792d35ee648deb359eda5f7d6cd2",
+      "stored_sha256": "e0056b38c0c9a11f56609f0c9366baeecd76792d35ee648deb359eda5f7d6cd2",
+      "original_bytes": 183732,
+      "stored_bytes": 183732
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r1/parallax.gd",
+      "path": "measurements/gpu-r1/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d",
+      "original_bytes": 8240,
+      "stored_bytes": 2687
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r1/performance-report.json",
+      "path": "measurements/gpu-r1/performance-report.json",
+      "encoding": "identity",
+      "original_sha256": "158ccc8e5ce5ca31a08e8bca7b49632307ce497618a4be411146ae38f7f9507d",
+      "stored_sha256": "158ccc8e5ce5ca31a08e8bca7b49632307ce497618a4be411146ae38f7f9507d",
+      "original_bytes": 10389,
+      "stored_bytes": 10389
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r1/plain_sky-night-samples.json",
+      "path": "measurements/gpu-r1/plain_sky-night-samples.json.gz",
+      "encoding": "gzip",
+      "original_sha256": "f790e73720226a1f2f368592105b6ec899a31b6f0d9915fcdfcbac66227ec99e",
+      "stored_sha256": "3f02bbc2c0e2c3115b565dc577bbc98e163121f55c87b92909a5122ae55c91b3",
+      "original_bytes": 22478337,
+      "stored_bytes": 1612653
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r1/probe.gd",
+      "path": "measurements/gpu-r1/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_sha256": "8c320813ea2154ab0cf2d7c437bc9e0f71dc16fd52268df02f6181485dad360f",
+      "stored_sha256": "edbb8a98e2799f89524090e3b46d42ffa9374a55e7c70d044bad616c7b2e15af",
+      "original_bytes": 29816,
+      "stored_bytes": 8388
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r1/scene.gd",
+      "path": "measurements/gpu-r1/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_sha256": "7d5be6a62a5dcd7829deb90ed071441390b6d5ca1ff50959f487d0290470ec06",
+      "stored_sha256": "4cd90c8bf60440b5b7ae5fa13c2f4c8931059a1ac72af5c9d61773f82c4e6ea1",
+      "original_bytes": 35167,
+      "stored_bytes": 9428
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r2/baseline-night-samples.json",
+      "path": "measurements/gpu-r2/baseline-night-samples.json.gz",
+      "encoding": "gzip",
+      "original_sha256": "fe7559ce3f9ca7224beb3c917dc9b19f3746fbee15a7e782a619ebb5d4cb3faa",
+      "stored_sha256": "1446f4aa7d259484c7c375d96d79b5c92d6172b341942c955c46493d09731540",
+      "original_bytes": 22393858,
+      "stored_bytes": 1611624
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r2/manifest.json",
+      "path": "measurements/gpu-r2/manifest.json",
+      "encoding": "identity",
+      "original_sha256": "2da2a141bb4a6adfef6657194033a2c04c7b7786f60d8beed2ab93c4b7b5faee",
+      "stored_sha256": "2da2a141bb4a6adfef6657194033a2c04c7b7786f60d8beed2ab93c4b7b5faee",
+      "original_bytes": 183732,
+      "stored_bytes": 183732
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r2/parallax.gd",
+      "path": "measurements/gpu-r2/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d",
+      "original_bytes": 8240,
+      "stored_bytes": 2687
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r2/performance-report.json",
+      "path": "measurements/gpu-r2/performance-report.json",
+      "encoding": "identity",
+      "original_sha256": "fa7d5a27b7ae0fad1ae9fdf1a2be87d16435dd0850cf65584d796ea856a7d694",
+      "stored_sha256": "fa7d5a27b7ae0fad1ae9fdf1a2be87d16435dd0850cf65584d796ea856a7d694",
+      "original_bytes": 10381,
+      "stored_bytes": 10381
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r2/plain_sky-night-samples.json",
+      "path": "measurements/gpu-r2/plain_sky-night-samples.json.gz",
+      "encoding": "gzip",
+      "original_sha256": "93cd08d676eeeb9ae0540260aee7c104659a4e6832741ded19cd6b9e4f4c5472",
+      "stored_sha256": "30a6e008c5948d8e144e76f47920b8e3543fc612fa0fa1b16f5f1f9ebe9fde5c",
+      "original_bytes": 22420806,
+      "stored_bytes": 1610818
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r2/probe.gd",
+      "path": "measurements/gpu-r2/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_sha256": "57d64c649230c199398c040efd21b8c385a41b1d24966e8279e8ff7a5d624f8b",
+      "stored_sha256": "efb3a4b5f7a2efe7cc419fb4187158c1e023257de1b357c73d53867f08938d7f",
+      "original_bytes": 29816,
+      "stored_bytes": 8388
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r2/scene.gd",
+      "path": "measurements/gpu-r2/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_sha256": "4b6e227e6ee4355eb35ea83fcd2352ed035fedc11adbdc184ccf338610747ca1",
+      "stored_sha256": "78a669aee0bd3630895688301e0c21118401ee43f285aae3cf41b27f946c42bb",
+      "original_bytes": 35167,
+      "stored_bytes": 9428
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r3/baseline-night-samples.json",
+      "path": "measurements/gpu-r3/baseline-night-samples.json.gz",
+      "encoding": "gzip",
+      "original_sha256": "d390e2a4a758ea97b11042158346858b7e20a81210bc65540c65496559469e12",
+      "stored_sha256": "195562474f92f90c63fa8fdc5bcafe84a961c5794d2a1d511c0cd66c10188afd",
+      "original_bytes": 22314831,
+      "stored_bytes": 1617992
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r3/manifest.json",
+      "path": "measurements/gpu-r3/manifest.json",
+      "encoding": "identity",
+      "original_sha256": "0a9eb4b227da6983b9bb2d5041a725dbbeb1e23f33ff4338fcbb2ecaf775f16a",
+      "stored_sha256": "0a9eb4b227da6983b9bb2d5041a725dbbeb1e23f33ff4338fcbb2ecaf775f16a",
+      "original_bytes": 183732,
+      "stored_bytes": 183732
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r3/parallax.gd",
+      "path": "measurements/gpu-r3/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d",
+      "original_bytes": 8240,
+      "stored_bytes": 2687
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r3/performance-report.json",
+      "path": "measurements/gpu-r3/performance-report.json",
+      "encoding": "identity",
+      "original_sha256": "47b50a3af03719cdaeb73a20904e05ae40bfdf80a83127fd7eb67b2136e58f7a",
+      "stored_sha256": "47b50a3af03719cdaeb73a20904e05ae40bfdf80a83127fd7eb67b2136e58f7a",
+      "original_bytes": 10385,
+      "stored_bytes": 10385
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r3/plain_sky-night-samples.json",
+      "path": "measurements/gpu-r3/plain_sky-night-samples.json.gz",
+      "encoding": "gzip",
+      "original_sha256": "1d88a679a395f41a1dfaa21e810d514cfddf9695892080ebfabd537f61344b28",
+      "stored_sha256": "4c5680370fab91b37567c26efda717d7ad3c5cd8b35f3f1495f40f3a46d96c22",
+      "original_bytes": 22465207,
+      "stored_bytes": 1607599
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r3/probe.gd",
+      "path": "measurements/gpu-r3/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_sha256": "9bab4b51bc3e2370487db92d8937e95568139fa372ab275d99f2e896440fa1ff",
+      "stored_sha256": "40cdfd5deef47c6be254884871371df43897e3192707c9061a6f6eaae571ea5a",
+      "original_bytes": 29816,
+      "stored_bytes": 8388
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/gpu-r3/scene.gd",
+      "path": "measurements/gpu-r3/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_sha256": "9dc0fc808ff1ec9f959c8bdb1e5436c297bfe8202538a6860cfea778c2de119e",
+      "stored_sha256": "fdd0f84ab38f1b719230a01e0c99945c85811a4073f686fd186093dda74e8ffe",
+      "original_bytes": 35167,
+      "stored_bytes": 9428
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/measurements/run-order.json",
+      "path": "measurements/run-order.json",
+      "encoding": "identity",
+      "original_sha256": "99b161239637846107ead373e0f60f96e8cc6e341eb96bf23631b7c9803fe5c0",
+      "stored_sha256": "99b161239637846107ead373e0f60f96e8cc6e341eb96bf23631b7c9803fe5c0",
+      "original_bytes": 1026,
+      "stored_bytes": 1026
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/day-F.png",
+      "path": "render/day-F.png",
+      "encoding": "identity",
+      "original_sha256": "b00f789712a11cb19109cc6e370ba7c0f50b2706bf0149bf6b851ad23d8d9d75",
+      "stored_sha256": "b00f789712a11cb19109cc6e370ba7c0f50b2706bf0149bf6b851ad23d8d9d75",
+      "original_bytes": 1640894,
+      "stored_bytes": 1640894
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/day-W.png",
+      "path": "render/day-W.png",
+      "encoding": "identity",
+      "original_sha256": "f6f53e2ab2e86c4f6525308b3c7e4b81f968b3582941421ac71b65e03f5a4583",
+      "stored_sha256": "f6f53e2ab2e86c4f6525308b3c7e4b81f968b3582941421ac71b65e03f5a4583",
+      "original_bytes": 1572111,
+      "stored_bytes": 1572111
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dusk-F.png",
+      "path": "render/dusk-F.png",
+      "encoding": "identity",
+      "original_sha256": "25447e73cdc4728bc6dd02c95723d68c9d17c29913cd4d74aeda196d94f5e579",
+      "stored_sha256": "25447e73cdc4728bc6dd02c95723d68c9d17c29913cd4d74aeda196d94f5e579",
+      "original_bytes": 1543016,
+      "stored_bytes": 1543016
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dusk-W.png",
+      "path": "render/dusk-W.png",
+      "encoding": "identity",
+      "original_sha256": "d048ea6618ffd0f4a3ceebf5f154abba07068469591d17cde0008e0f426e1069",
+      "stored_sha256": "d048ea6618ffd0f4a3ceebf5f154abba07068469591d17cde0008e0f426e1069",
+      "original_bytes": 1452876,
+      "stored_bytes": 1452876
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/night-F.png",
+      "path": "render/night-F.png",
+      "encoding": "identity",
+      "original_sha256": "f65f4b03e4b1a61eba4c509ade83038a83833f82da4366189dbe01c70de47122",
+      "stored_sha256": "f65f4b03e4b1a61eba4c509ade83038a83833f82da4366189dbe01c70de47122",
+      "original_bytes": 1326173,
+      "stored_bytes": 1326173
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/night-W.png",
+      "path": "render/night-W.png",
+      "encoding": "identity",
+      "original_sha256": "dc74dff6912e59290e4cae34392076ff976be65b1d7b01ccbaa05d1d30c33127",
+      "stored_sha256": "dc74dff6912e59290e4cae34392076ff976be65b1d7b01ccbaa05d1d30c33127",
+      "original_bytes": 1323585,
+      "stored_bytes": 1323585
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/night-still-a.png",
+      "path": "render/night-still-a.png",
+      "encoding": "identity",
+      "original_sha256": "f65f4b03e4b1a61eba4c509ade83038a83833f82da4366189dbe01c70de47122",
+      "stored_sha256": "f65f4b03e4b1a61eba4c509ade83038a83833f82da4366189dbe01c70de47122",
+      "original_bytes": 1326173,
+      "stored_bytes": 1326173
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/night-still-b.png",
+      "path": "render/night-still-b.png",
+      "encoding": "identity",
+      "original_sha256": "f65f4b03e4b1a61eba4c509ade83038a83833f82da4366189dbe01c70de47122",
+      "stored_sha256": "f65f4b03e4b1a61eba4c509ade83038a83833f82da4366189dbe01c70de47122",
+      "original_bytes": 1326173,
+      "stored_bytes": 1326173
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/night-no-dof.png",
+      "path": "render/night-no-dof.png",
+      "encoding": "identity",
+      "original_sha256": "b0ae04029910b20772243b1de7f7b05bf672b80ba03520af3957fbcde6a98642",
+      "stored_sha256": "b0ae04029910b20772243b1de7f7b05bf672b80ba03520af3957fbcde6a98642",
+      "original_bytes": 1381971,
+      "stored_bytes": 1381971
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/night-route-left.png",
+      "path": "render/night-route-left.png",
+      "encoding": "identity",
+      "original_sha256": "78302543ae88369c221aeedf8f80115b2ed068f1c381549a012e6df78cc6d81c",
+      "stored_sha256": "78302543ae88369c221aeedf8f80115b2ed068f1c381549a012e6df78cc6d81c",
+      "original_bytes": 1299470,
+      "stored_bytes": 1299470
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/night-route-right.png",
+      "path": "render/night-route-right.png",
+      "encoding": "identity",
+      "original_sha256": "9fccc821ae1492f0bbbf232b080b0e356ca5f72b7dcb7f50b71fc37b27916c07",
+      "stored_sha256": "9fccc821ae1492f0bbbf232b080b0e356ca5f72b7dcb7f50b71fc37b27916c07",
+      "original_bytes": 1266156,
+      "stored_bytes": 1266156
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/npc-innkeeper.png",
+      "path": "render/npc-innkeeper.png",
+      "encoding": "identity",
+      "original_sha256": "85af829bfda036c8b422f583b4f1a412ac97a06e44d574e9ab871a0aa50eb9e1",
+      "stored_sha256": "85af829bfda036c8b422f583b4f1a412ac97a06e44d574e9ab871a0aa50eb9e1",
+      "original_bytes": 1744491,
+      "stored_bytes": 1744491
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/npc-vendor.png",
+      "path": "render/npc-vendor.png",
+      "encoding": "identity",
+      "original_sha256": "19c533eb111e9bf8a584d6274bf839f6439783e781d50835b3da684005fdfeca",
+      "stored_sha256": "19c533eb111e9bf8a584d6274bf839f6439783e781d50835b3da684005fdfeca",
+      "original_bytes": 1565493,
+      "stored_bytes": 1565493
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/npc-boatman.png",
+      "path": "render/npc-boatman.png",
+      "encoding": "identity",
+      "original_sha256": "930f4c476ee3ece2332c7f7fb2472a5023ac94ea8e1cf26ee50c517804d8d79b",
+      "stored_sha256": "930f4c476ee3ece2332c7f7fb2472a5023ac94ea8e1cf26ee50c517804d8d79b",
+      "original_bytes": 1431415,
+      "stored_bytes": 1431415
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/npc-food_vendor.png",
+      "path": "render/npc-food_vendor.png",
+      "encoding": "identity",
+      "original_sha256": "3c41b2fd0cfda31ab5a47ac860dbb871e140a5e2068f81f991b6e9f93ca4dd44",
+      "stored_sha256": "3c41b2fd0cfda31ab5a47ac860dbb871e140a5e2068f81f991b6e9f93ca4dd44",
+      "original_bytes": 1448247,
+      "stored_bytes": 1448247
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/npc-tea_guest.png",
+      "path": "render/npc-tea_guest.png",
+      "encoding": "identity",
+      "original_sha256": "b5ea6efc32c2a4246c2ee92e0675e02fde0cafc9e34748501812713794bb0a94",
+      "stored_sha256": "b5ea6efc32c2a4246c2ee92e0675e02fde0cafc9e34748501812713794bb0a94",
+      "original_bytes": 1437871,
+      "stored_bytes": 1437871
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/actual-top-layout.png",
+      "path": "render/actual-top-layout.png",
+      "encoding": "identity",
+      "original_sha256": "80a986444440a86eff25c1b925cb1e042137910600e9b591925d7ad329247a6a",
+      "stored_sha256": "80a986444440a86eff25c1b925cb1e042137910600e9b591925d7ad329247a6a",
+      "original_bytes": 1979436,
+      "stored_bytes": 1979436
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/actual-side-layout.png",
+      "path": "render/actual-side-layout.png",
+      "encoding": "identity",
+      "original_sha256": "c1b6f6da03b5837fd9ded60b755fee1b4822c99e1b3a4334c0c766d543158672",
+      "stored_sha256": "c1b6f6da03b5837fd9ded60b755fee1b4822c99e1b3a4334c0c766d543158672",
+      "original_bytes": 827300,
+      "stored_bytes": 827300
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-00.png",
+      "path": "render/dock-micro-F-00.png",
+      "encoding": "identity",
+      "original_sha256": "311a128a884578b5f11bdfa3785455ddbaed61c1f2e5492bf2a47e89f7831bac",
+      "stored_sha256": "311a128a884578b5f11bdfa3785455ddbaed61c1f2e5492bf2a47e89f7831bac",
+      "original_bytes": 1638588,
+      "stored_bytes": 1638588
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-01.png",
+      "path": "render/dock-micro-F-01.png",
+      "encoding": "identity",
+      "original_sha256": "27dc14cc9b6777145f49fbcef40fd89d154cb637348279df98c1fec96d9840f5",
+      "stored_sha256": "27dc14cc9b6777145f49fbcef40fd89d154cb637348279df98c1fec96d9840f5",
+      "original_bytes": 1637364,
+      "stored_bytes": 1637364
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-02.png",
+      "path": "render/dock-micro-F-02.png",
+      "encoding": "identity",
+      "original_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "stored_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "original_bytes": 1641599,
+      "stored_bytes": 1641599
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-03.png",
+      "path": "render/dock-micro-F-03.png",
+      "encoding": "identity",
+      "original_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "stored_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "original_bytes": 1639326,
+      "stored_bytes": 1639326
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-04.png",
+      "path": "render/dock-micro-F-04.png",
+      "encoding": "identity",
+      "original_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "stored_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "original_bytes": 1641599,
+      "stored_bytes": 1641599
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-05.png",
+      "path": "render/dock-micro-F-05.png",
+      "encoding": "identity",
+      "original_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "stored_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "original_bytes": 1639326,
+      "stored_bytes": 1639326
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-06.png",
+      "path": "render/dock-micro-F-06.png",
+      "encoding": "identity",
+      "original_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "stored_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "original_bytes": 1641599,
+      "stored_bytes": 1641599
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-07.png",
+      "path": "render/dock-micro-F-07.png",
+      "encoding": "identity",
+      "original_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "stored_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "original_bytes": 1639326,
+      "stored_bytes": 1639326
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-08.png",
+      "path": "render/dock-micro-F-08.png",
+      "encoding": "identity",
+      "original_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "stored_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "original_bytes": 1641599,
+      "stored_bytes": 1641599
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-09.png",
+      "path": "render/dock-micro-F-09.png",
+      "encoding": "identity",
+      "original_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "stored_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "original_bytes": 1639326,
+      "stored_bytes": 1639326
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-10.png",
+      "path": "render/dock-micro-F-10.png",
+      "encoding": "identity",
+      "original_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "stored_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "original_bytes": 1641599,
+      "stored_bytes": 1641599
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-11.png",
+      "path": "render/dock-micro-F-11.png",
+      "encoding": "identity",
+      "original_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "stored_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "original_bytes": 1639326,
+      "stored_bytes": 1639326
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-12.png",
+      "path": "render/dock-micro-F-12.png",
+      "encoding": "identity",
+      "original_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "stored_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "original_bytes": 1641599,
+      "stored_bytes": 1641599
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-13.png",
+      "path": "render/dock-micro-F-13.png",
+      "encoding": "identity",
+      "original_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "stored_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "original_bytes": 1639326,
+      "stored_bytes": 1639326
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-14.png",
+      "path": "render/dock-micro-F-14.png",
+      "encoding": "identity",
+      "original_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "stored_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "original_bytes": 1641599,
+      "stored_bytes": 1641599
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-15.png",
+      "path": "render/dock-micro-F-15.png",
+      "encoding": "identity",
+      "original_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "stored_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "original_bytes": 1639326,
+      "stored_bytes": 1639326
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-16.png",
+      "path": "render/dock-micro-F-16.png",
+      "encoding": "identity",
+      "original_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "stored_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "original_bytes": 1641599,
+      "stored_bytes": 1641599
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-17.png",
+      "path": "render/dock-micro-F-17.png",
+      "encoding": "identity",
+      "original_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "stored_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "original_bytes": 1639326,
+      "stored_bytes": 1639326
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-18.png",
+      "path": "render/dock-micro-F-18.png",
+      "encoding": "identity",
+      "original_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "stored_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "original_bytes": 1641599,
+      "stored_bytes": 1641599
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-19.png",
+      "path": "render/dock-micro-F-19.png",
+      "encoding": "identity",
+      "original_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "stored_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "original_bytes": 1639326,
+      "stored_bytes": 1639326
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-20.png",
+      "path": "render/dock-micro-F-20.png",
+      "encoding": "identity",
+      "original_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "stored_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "original_bytes": 1641599,
+      "stored_bytes": 1641599
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-21.png",
+      "path": "render/dock-micro-F-21.png",
+      "encoding": "identity",
+      "original_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "stored_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "original_bytes": 1639326,
+      "stored_bytes": 1639326
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-22.png",
+      "path": "render/dock-micro-F-22.png",
+      "encoding": "identity",
+      "original_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "stored_sha256": "d3808d05bfbb34b4e09c55511b19930fe68964b74e4445fe6e0ad5573bb6cac7",
+      "original_bytes": 1641599,
+      "stored_bytes": 1641599
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-F-23.png",
+      "path": "render/dock-micro-F-23.png",
+      "encoding": "identity",
+      "original_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "stored_sha256": "55947cff2fa46a4bacde0ef88543191df47f37bd609e6dd7b585867a94f31641",
+      "original_bytes": 1639326,
+      "stored_bytes": 1639326
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-00.png",
+      "path": "render/dock-micro-W-00.png",
+      "encoding": "identity",
+      "original_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "stored_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "original_bytes": 1573104,
+      "stored_bytes": 1573104
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-01.png",
+      "path": "render/dock-micro-W-01.png",
+      "encoding": "identity",
+      "original_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "stored_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "original_bytes": 1573448,
+      "stored_bytes": 1573448
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-02.png",
+      "path": "render/dock-micro-W-02.png",
+      "encoding": "identity",
+      "original_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "stored_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "original_bytes": 1573104,
+      "stored_bytes": 1573104
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-03.png",
+      "path": "render/dock-micro-W-03.png",
+      "encoding": "identity",
+      "original_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "stored_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "original_bytes": 1573448,
+      "stored_bytes": 1573448
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-04.png",
+      "path": "render/dock-micro-W-04.png",
+      "encoding": "identity",
+      "original_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "stored_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "original_bytes": 1573104,
+      "stored_bytes": 1573104
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-05.png",
+      "path": "render/dock-micro-W-05.png",
+      "encoding": "identity",
+      "original_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "stored_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "original_bytes": 1573448,
+      "stored_bytes": 1573448
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-06.png",
+      "path": "render/dock-micro-W-06.png",
+      "encoding": "identity",
+      "original_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "stored_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "original_bytes": 1573104,
+      "stored_bytes": 1573104
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-07.png",
+      "path": "render/dock-micro-W-07.png",
+      "encoding": "identity",
+      "original_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "stored_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "original_bytes": 1573448,
+      "stored_bytes": 1573448
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-08.png",
+      "path": "render/dock-micro-W-08.png",
+      "encoding": "identity",
+      "original_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "stored_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "original_bytes": 1573104,
+      "stored_bytes": 1573104
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-09.png",
+      "path": "render/dock-micro-W-09.png",
+      "encoding": "identity",
+      "original_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "stored_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "original_bytes": 1573448,
+      "stored_bytes": 1573448
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-10.png",
+      "path": "render/dock-micro-W-10.png",
+      "encoding": "identity",
+      "original_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "stored_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "original_bytes": 1573104,
+      "stored_bytes": 1573104
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-11.png",
+      "path": "render/dock-micro-W-11.png",
+      "encoding": "identity",
+      "original_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "stored_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "original_bytes": 1573448,
+      "stored_bytes": 1573448
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-12.png",
+      "path": "render/dock-micro-W-12.png",
+      "encoding": "identity",
+      "original_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "stored_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "original_bytes": 1573104,
+      "stored_bytes": 1573104
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-13.png",
+      "path": "render/dock-micro-W-13.png",
+      "encoding": "identity",
+      "original_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "stored_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "original_bytes": 1573448,
+      "stored_bytes": 1573448
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-14.png",
+      "path": "render/dock-micro-W-14.png",
+      "encoding": "identity",
+      "original_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "stored_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "original_bytes": 1573104,
+      "stored_bytes": 1573104
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-15.png",
+      "path": "render/dock-micro-W-15.png",
+      "encoding": "identity",
+      "original_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "stored_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "original_bytes": 1573448,
+      "stored_bytes": 1573448
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-16.png",
+      "path": "render/dock-micro-W-16.png",
+      "encoding": "identity",
+      "original_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "stored_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "original_bytes": 1573104,
+      "stored_bytes": 1573104
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-17.png",
+      "path": "render/dock-micro-W-17.png",
+      "encoding": "identity",
+      "original_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "stored_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "original_bytes": 1573448,
+      "stored_bytes": 1573448
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-18.png",
+      "path": "render/dock-micro-W-18.png",
+      "encoding": "identity",
+      "original_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "stored_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "original_bytes": 1573104,
+      "stored_bytes": 1573104
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-19.png",
+      "path": "render/dock-micro-W-19.png",
+      "encoding": "identity",
+      "original_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "stored_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "original_bytes": 1573448,
+      "stored_bytes": 1573448
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-20.png",
+      "path": "render/dock-micro-W-20.png",
+      "encoding": "identity",
+      "original_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "stored_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "original_bytes": 1573104,
+      "stored_bytes": 1573104
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-21.png",
+      "path": "render/dock-micro-W-21.png",
+      "encoding": "identity",
+      "original_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "stored_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "original_bytes": 1573448,
+      "stored_bytes": 1573448
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-22.png",
+      "path": "render/dock-micro-W-22.png",
+      "encoding": "identity",
+      "original_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "stored_sha256": "7b274acb34b17c3e20efb2dec9383a2369e4617d4789f7fb935221457cf71215",
+      "original_bytes": 1573104,
+      "stored_bytes": 1573104
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/dock-micro-W-23.png",
+      "path": "render/dock-micro-W-23.png",
+      "encoding": "identity",
+      "original_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "stored_sha256": "90d0a0bd0cf5cdc4837ce1447841d69e7ff84e8a2919285052123ee1c8aa849d",
+      "original_bytes": 1573448,
+      "stored_bytes": 1573448
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/horizontal-capture.json",
+      "path": "render/horizontal-capture.json",
+      "encoding": "identity",
+      "original_sha256": "42c63ba95d0e89d03b3251f484ff0e186114d7eb87ec5c8279bd7db09afda9a3",
+      "stored_sha256": "42c63ba95d0e89d03b3251f484ff0e186114d7eb87ec5c8279bd7db09afda9a3",
+      "original_bytes": 252081,
+      "stored_bytes": 252081
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/layout-review.json",
+      "path": "render/layout-review.json",
+      "encoding": "identity",
+      "original_sha256": "1e20d1c1eaa240fd99ea814bcaa62f23c6420a5f7c4767431f98abbb425f37e1",
+      "stored_sha256": "1e20d1c1eaa240fd99ea814bcaa62f23c6420a5f7c4767431f98abbb425f37e1",
+      "original_bytes": 4020,
+      "stored_bytes": 4020
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/night-timing.json",
+      "path": "render/night-timing.json",
+      "encoding": "identity",
+      "original_sha256": "8313d37b5447a3d946086da3d9afb082fd773e8ed8628383d381c10d11f79cc2",
+      "stored_sha256": "8313d37b5447a3d946086da3d9afb082fd773e8ed8628383d381c10d11f79cc2",
+      "original_bytes": 39625,
+      "stored_bytes": 39625
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/route-timing.json",
+      "path": "render/route-timing.json",
+      "encoding": "identity",
+      "original_sha256": "1e68f90ab78842cbb145ac9f6c484d0255c439f901388dc8560f6e0e920b3888",
+      "stored_sha256": "1e68f90ab78842cbb145ac9f6c484d0255c439f901388dc8560f6e0e920b3888",
+      "original_bytes": 327096,
+      "stored_bytes": 327096
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/visual-review.json",
+      "path": "render/visual-review.json",
+      "encoding": "identity",
+      "original_sha256": "a8db880ec07a914c530920894e8df390c6b34e95606045ea9a90190ed05d05ad",
+      "stored_sha256": "a8db880ec07a914c530920894e8df390c6b34e95606045ea9a90190ed05d05ad",
+      "original_bytes": 1746,
+      "stored_bytes": 1746
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/route.mp4",
+      "path": "render/route.mp4",
+      "encoding": "chunked",
+      "original_sha256": "e2fd4e9e0ef6aa2f8ad691a71f8869c12d4bdd35e9b8fdcbfe12247a5f89b0ab",
+      "stored_sha256": "e2fd4e9e0ef6aa2f8ad691a71f8869c12d4bdd35e9b8fdcbfe12247a5f89b0ab",
+      "original_bytes": 125323505,
+      "stored_bytes": 125323505,
+      "chunks": [
+        {
+          "path": "render/route.mp4.part-001",
+          "bytes": 52428800,
+          "sha256": "7b5975332dc45a949c6da8ea9aba8195783b879a91950a9b3901637dfa1237b2"
+        },
+        {
+          "path": "render/route.mp4.part-002",
+          "bytes": 52428800,
+          "sha256": "5b51851f9c5fe26e5cc3bd53bacfcbba2967d0241049b84b550d299383c30c81"
+        },
+        {
+          "path": "render/route.mp4.part-003",
+          "bytes": 20465905,
+          "sha256": "c3360eddb46e7389fe1b435b46616511f5fbf7b985cf80cb157b2292fea11302"
+        }
+      ]
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/night.mp4",
+      "path": "render/night.mp4",
+      "encoding": "identity",
+      "original_sha256": "2f7d1cc7d606fc954fb3c9fedc112b5b3fb31abd3057f6a48db9ac3441ac874c",
+      "stored_sha256": "2f7d1cc7d606fc954fb3c9fedc112b5b3fb31abd3057f6a48db9ac3441ac874c",
+      "original_bytes": 9934417,
+      "stored_bytes": 9934417
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/route-contact.png",
+      "path": "render/route-contact.png",
+      "encoding": "identity",
+      "original_sha256": "e65255dc2cd44e66985f26000ebbdf3cb63bb53ea494cc3f05e19d58cbe40995",
+      "stored_sha256": "e65255dc2cd44e66985f26000ebbdf3cb63bb53ea494cc3f05e19d58cbe40995",
+      "original_bytes": 1887556,
+      "stored_bytes": 1887556
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/night-contact.png",
+      "path": "render/night-contact.png",
+      "encoding": "identity",
+      "original_sha256": "1be55fa9257873c88cdfddc72097c9598097e687b4c135c17879701a466261a7",
+      "stored_sha256": "1be55fa9257873c88cdfddc72097c9598097e687b4c135c17879701a466261a7",
+      "original_bytes": 727706,
+      "stored_bytes": 727706
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/render-v2/npc-contact.png",
+      "path": "render/npc-contact.png",
+      "encoding": "identity",
+      "original_sha256": "00d710bffb523df1e30141adda5764ee5fb8f351112ccd7bcb0a26bc438ade65",
+      "stored_sha256": "00d710bffb523df1e30141adda5764ee5fb8f351112ccd7bcb0a26bc438ade65",
+      "original_bytes": 821877,
+      "stored_bytes": 821877
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/construction-views/actual-side-layout.png",
+      "path": "construction-views/actual-side-layout.png",
+      "encoding": "identity",
+      "original_sha256": "e3b7496d9e58d82eed2dc801cdfadbfed29a887b8bfe18569d2aaf9a8dfea597",
+      "stored_sha256": "e3b7496d9e58d82eed2dc801cdfadbfed29a887b8bfe18569d2aaf9a8dfea597",
+      "original_bytes": 177119,
+      "stored_bytes": 177119
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/construction-views/actual-top-layout.png",
+      "path": "construction-views/actual-top-layout.png",
+      "encoding": "identity",
+      "original_sha256": "7a2f06a02152c51f995dec350ada19040161008d35713c9c6f4c5891ac7cc57b",
+      "stored_sha256": "7a2f06a02152c51f995dec350ada19040161008d35713c9c6f4c5891ac7cc57b",
+      "original_bytes": 1962413,
+      "stored_bytes": 1962413
+    },
+    {
+      "source": "build/ancient-canal/layout-r5-20261008/construction-views/construction-capture.json",
+      "path": "construction-views/construction-capture.json",
+      "encoding": "identity",
+      "original_sha256": "21a8e501153f4914e5934f0f8f8ef970d98ad8f75a1357de722941b87f10bf5d",
+      "stored_sha256": "21a8e501153f4914e5934f0f8f8ef970d98ad8f75a1357de722941b87f10bf5d",
+      "original_bytes": 787,
+      "stored_bytes": 787
+    },
+    {
+      "source": "resources/ancient-canal/layout.json",
+      "path": "sources/resources/ancient-canal/layout.json",
+      "encoding": "identity",
+      "original_sha256": "094ee5a945a25e89dd42f669e344d5dd251164de3e8877dc9ee3bef162b1a3e7",
+      "stored_sha256": "094ee5a945a25e89dd42f669e344d5dd251164de3e8877dc9ee3bef162b1a3e7",
+      "original_bytes": 26537,
+      "stored_bytes": 26537
+    },
+    {
+      "source": "scripts/ancient_canal/world.gd",
+      "path": "sources/scripts/ancient_canal/world.gd.txt",
+      "encoding": "identity",
+      "original_sha256": "05798ca18570a642f2bd0c01eecf53cfe28c8ae0505f0db9b24430d233811e21",
+      "stored_sha256": "05798ca18570a642f2bd0c01eecf53cfe28c8ae0505f0db9b24430d233811e21",
+      "original_bytes": 15203,
+      "stored_bytes": 15203
+    },
+    {
+      "source": "scripts/ancient_canal/background.gd",
+      "path": "sources/scripts/ancient_canal/background.gd.txt",
+      "encoding": "identity",
+      "original_sha256": "e5d321241fa5cbe55898a5cb445139a27901512e481b7b11095a6ac8890a4993",
+      "stored_sha256": "e5d321241fa5cbe55898a5cb445139a27901512e481b7b11095a6ac8890a4993",
+      "original_bytes": 8734,
+      "stored_bytes": 8734
+    },
+    {
+      "source": "scripts/ancient_canal/scene.gd",
+      "path": "sources/scripts/ancient_canal/scene.gd.txt",
+      "encoding": "identity",
+      "original_sha256": "425a335d199abe4e165abe54fc37684dd40bbdc537b12b4f7f21190304aeb015",
+      "stored_sha256": "425a335d199abe4e165abe54fc37684dd40bbdc537b12b4f7f21190304aeb015",
+      "original_bytes": 35130,
+      "stored_bytes": 35130
+    },
+    {
+      "source": "tests/ancient_canal/blueprint_layout.gd",
+      "path": "sources/tests/ancient_canal/blueprint_layout.gd.txt",
+      "encoding": "identity",
+      "original_sha256": "398aa2bdbfeec26d3033d3add5ad068ae365b7a544bd9f9aed245938128781f4",
+      "stored_sha256": "398aa2bdbfeec26d3033d3add5ad068ae365b7a544bd9f9aed245938128781f4",
+      "original_bytes": 4961,
+      "stored_bytes": 4961
+    },
+    {
+      "source": "tools/ancient_canal/build_layout.py",
+      "path": "sources/tools/ancient_canal/build_layout.py",
+      "encoding": "identity",
+      "original_sha256": "273c97842ecfc15ecd5fb5c7ad2f80554d0e09328ae68828b6d567990fa47258",
+      "stored_sha256": "273c97842ecfc15ecd5fb5c7ad2f80554d0e09328ae68828b6d567990fa47258",
+      "original_bytes": 6619,
+      "stored_bytes": 6619
+    },
+    {
+      "source": "tools/ancient_canal/build_layout_assembly.py",
+      "path": "sources/tools/ancient_canal/build_layout_assembly.py",
+      "encoding": "identity",
+      "original_sha256": "39209f4ef9edf3fd2e9fd72a0585e8a89ce251c7bd14a73008a46c2272ae6a66",
+      "stored_sha256": "39209f4ef9edf3fd2e9fd72a0585e8a89ce251c7bd14a73008a46c2272ae6a66",
+      "original_bytes": 7618,
+      "stored_bytes": 7618
+    },
+    {
+      "source": "tools/ancient_canal/capture_layout.gd",
+      "path": "sources/tools/ancient_canal/capture_layout.gd.txt",
+      "encoding": "identity",
+      "original_sha256": "628a489b51ace3b9e7129dfa5a8931dfd8db90f8e41a824c84e1704aea2e0205",
+      "stored_sha256": "628a489b51ace3b9e7129dfa5a8931dfd8db90f8e41a824c84e1704aea2e0205",
+      "original_bytes": 10026,
+      "stored_bytes": 10026
+    },
+    {
+      "source": "tools/ancient_canal/profile.py",
+      "path": "sources/tools/ancient_canal/profile.py",
+      "encoding": "identity",
+      "original_sha256": "47985f2edc7f94a4f2ed4b11065a74d5f6061dbc60b11b8e7393a4d3edb4fbdf",
+      "stored_sha256": "47985f2edc7f94a4f2ed4b11065a74d5f6061dbc60b11b8e7393a4d3edb4fbdf",
+      "original_bytes": 18173,
+      "stored_bytes": 18173
+    },
+    {
+      "source": "tools/ancient_canal/benchmark.gd",
+      "path": "sources/tools/ancient_canal/benchmark.gd.txt",
+      "encoding": "identity",
+      "original_sha256": "30bfb1d7c8169baa49d7ba1371b9b720bd1acb9e17d06fe91ac28a0cd0071e1d",
+      "stored_sha256": "30bfb1d7c8169baa49d7ba1371b9b720bd1acb9e17d06fe91ac28a0cd0071e1d",
+      "original_bytes": 22005,
+      "stored_bytes": 22005
+    },
+    {
+      "source": "tools/ancient_canal/measure_layout.py",
+      "path": "sources/tools/ancient_canal/measure_layout.py",
+      "encoding": "identity",
+      "original_sha256": "e927143dc027c0661fb6b277a1302829eaa39b15556b0e17f5ee5c7460feeed9",
+      "stored_sha256": "e927143dc027c0661fb6b277a1302829eaa39b15556b0e17f5ee5c7460feeed9",
+      "original_bytes": 1749,
+      "stored_bytes": 1749
+    },
+    {
+      "source": "tools/ancient_canal/review_layout.py",
+      "path": "sources/tools/ancient_canal/review_layout.py",
+      "encoding": "identity",
+      "original_sha256": "d25347e3a48c07895ad4b083ecae31bc01d7cb7c9ec0c0e6fbb35ee628db6c59",
+      "stored_sha256": "d25347e3a48c07895ad4b083ecae31bc01d7cb7c9ec0c0e6fbb35ee628db6c59",
+      "original_bytes": 3617,
+      "stored_bytes": 3617
+    },
+    {
+      "source": "tools/ancient_canal/archive_layout.py",
+      "path": "sources/tools/ancient_canal/archive_layout.py",
+      "encoding": "identity",
+      "original_sha256": "1348b803128b597a1ae5c5f1a325a1099cf0c88bec71162dcc9da072e83b21d2",
+      "stored_sha256": "1348b803128b597a1ae5c5f1a325a1099cf0c88bec71162dcc9da072e83b21d2",
+      "original_bytes": 11797,
+      "stored_bytes": 11797
+    }
+  ],
+  "policy": "Source bytes and compressed samples retained losslessly. Large videos use 50 MiB chunks with complete and per-chunk SHA256. Build logs and ordinary user settings stay local; use restore_layout_media.py to restore complete media. Historical archives remain unchanged."
+}

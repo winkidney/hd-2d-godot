@@ -1,0 +1,3566 @@
+{
+  "button_boundary": "Button.pressed signal; not a physical mouse click. Separate real-window mouse tests are required.",
+  "checks": [
+    {
+      "details": {},
+      "name": "waystation.tscn: scene starts with panels closed and movement enabled",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: initial process frames preserve usable controls",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: scene installs one close-request handler",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: P opens parallax and locks movement",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: echo and release do not toggle again",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: second P closes once",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: O replaces P exclusively",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: P replaces O exclusively",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: C is a no-op without camera variants",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: ctrl+E does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: ctrl+T does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: ctrl+1 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: ctrl+2 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: ctrl+3 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: ctrl+G does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: ctrl+V does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: ctrl+F does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: ctrl+B does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: ctrl+O does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: ctrl+P does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: ctrl+K does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: ctrl+H does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: ctrl+J does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: ctrl+C does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: ctrl+Escape does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: alt+E does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: alt+T does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: alt+1 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: alt+2 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: alt+3 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: alt+G does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: alt+V does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: alt+F does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: alt+B does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: alt+O does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: alt+P does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: alt+K does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: alt+H does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: alt+J does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: alt+C does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: alt+Escape does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: meta+E does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: meta+T does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: meta+1 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: meta+2 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: meta+3 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: meta+G does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: meta+V does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: meta+F does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: meta+B does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: meta+O does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: meta+P does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: meta+K does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: meta+H does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: meta+J does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: meta+C does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: meta+Escape does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: shift+E does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: shift+T does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: shift+1 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: shift+2 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: shift+3 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: shift+G does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: shift+V does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: shift+F does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: shift+B does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: shift+O does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: shift+P does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: shift+K does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: shift+H does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: shift+J does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: shift+C does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: shift+Escape does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: F2 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: F3 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: F4 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: F5 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: F6 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: F7 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: F8 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: F9 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: F12 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: Tab does not hide gameplay UI",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: G activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: G echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: G second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: V activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: V echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: V second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: F activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: F echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: F second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: B activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: B echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: B second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: K activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: K echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: K second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: H activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: H echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: H second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: plain 1 selects dusk",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: plain 2 selects night",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: plain 3 selects day",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: plain T cycles to dusk",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: plain T cycles to night",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: plain T cycles to day",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: parallax exposes a real SpinBox",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: SpinBox LineEdit owns real GUI focus",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: editing E does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: editing T does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: editing 1 does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: editing 2 does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: editing 3 does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: editing G does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: editing V does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: editing F does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: editing B does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: editing O does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: editing P does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: editing K does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: editing H does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: editing J does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: editing C does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {
+        "text": "2"
+      },
+      "name": "waystation.tscn: Ctrl+A and numeric entry stay in LineEdit",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: editing arrows do not enable walking",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: Tab stays within active panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: T remains usable with panel open outside text editing",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: preview button signal starts comparison",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: real embedded preset popup is open",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: Esc dismisses popup before preview or panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: next Esc stops preview only",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: next Esc closes panel only",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: Esc closes dialogue without exit request",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: bare Esc asks for confirmation and locks movement",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: quit confirmation defaults to Keep playing",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: default Enter cancels confirmation without quitting",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: reopened confirmation still defaults to Keep playing",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: echo cannot dismiss or accept exit confirmation",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: Esc cancels confirmation without quitting",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: toolbar dof pressed signal opens panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: toolbar dof pressed signal closes panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: toolbar parallax pressed signal opens panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: toolbar parallax pressed signal closes panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: camera toolbar hidden or disabled without variants",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: quit toolbar pressed signal requires confirmation",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: toolbar quit confirmation also defaults to Keep playing",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: cancel button signal preserves running scene",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "waystation.tscn: freeing scene removes its close-request handler",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: scene starts with panels closed and movement enabled",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: initial process frames preserve usable controls",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: scene installs one close-request handler",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: P opens parallax and locks movement",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: echo and release do not toggle again",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: second P closes once",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: O replaces P exclusively",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: P replaces O exclusively",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: C opens camera panel and locks movement",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: P replaces C exclusively",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: C replaces P exclusively",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: ctrl+E does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: ctrl+T does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: ctrl+1 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: ctrl+2 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: ctrl+3 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: ctrl+G does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: ctrl+V does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: ctrl+F does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: ctrl+B does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: ctrl+O does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: ctrl+P does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: ctrl+K does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: ctrl+H does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: ctrl+J does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: ctrl+C does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: ctrl+Escape does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: alt+E does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: alt+T does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: alt+1 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: alt+2 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: alt+3 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: alt+G does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: alt+V does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: alt+F does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: alt+B does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: alt+O does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: alt+P does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: alt+K does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: alt+H does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: alt+J does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: alt+C does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: alt+Escape does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: meta+E does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: meta+T does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: meta+1 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: meta+2 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: meta+3 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: meta+G does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: meta+V does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: meta+F does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: meta+B does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: meta+O does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: meta+P does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: meta+K does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: meta+H does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: meta+J does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: meta+C does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: meta+Escape does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: shift+E does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: shift+T does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: shift+1 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: shift+2 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: shift+3 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: shift+G does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: shift+V does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: shift+F does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: shift+B does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: shift+O does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: shift+P does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: shift+K does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: shift+H does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: shift+J does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: shift+C does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: shift+Escape does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: F2 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: F3 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: F4 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: F5 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: F6 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: F7 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: F8 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: F9 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: F12 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: Tab does not hide gameplay UI",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: G activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: G echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: G second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: V activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: V echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: V second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: F activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: F echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: F second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: B activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: B echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: B second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: K activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: K echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: K second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: H activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: H echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: H second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: plain 1 selects dusk",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: plain 2 selects night",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: plain 3 selects day",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: plain T cycles to dusk",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: plain T cycles to night",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: plain T cycles to day",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: parallax exposes a real SpinBox",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: SpinBox LineEdit owns real GUI focus",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: editing E does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: editing T does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: editing 1 does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: editing 2 does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: editing 3 does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: editing G does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: editing V does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: editing F does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: editing B does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: editing O does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: editing P does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: editing K does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: editing H does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: editing J does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: editing C does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {
+        "text": "2"
+      },
+      "name": "reference_scene.tscn: Ctrl+A and numeric entry stay in LineEdit",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: editing arrows do not enable walking",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: Tab stays within active panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: T remains usable with panel open outside text editing",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: preview button signal starts comparison",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: real embedded preset popup is open",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: Esc dismisses popup before preview or panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: next Esc stops preview only",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: next Esc closes panel only",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: Esc closes dialogue without exit request",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: bare Esc asks for confirmation and locks movement",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: quit confirmation defaults to Keep playing",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: default Enter cancels confirmation without quitting",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: reopened confirmation still defaults to Keep playing",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: echo cannot dismiss or accept exit confirmation",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: Esc cancels confirmation without quitting",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: toolbar dof pressed signal opens panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: toolbar dof pressed signal closes panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: toolbar parallax pressed signal opens panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: toolbar parallax pressed signal closes panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: toolbar camera pressed signal opens panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: toolbar camera pressed signal closes panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: quit toolbar pressed signal requires confirmation",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: toolbar quit confirmation also defaults to Keep playing",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: cancel button signal preserves running scene",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: route prevents E shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: route prevents T shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: route prevents 1 shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: route prevents 2 shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: route prevents 3 shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: route prevents G shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: route prevents V shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: route prevents F shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: route prevents B shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: route prevents O shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: route prevents P shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: route prevents K shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: route prevents H shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: route prevents J shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: route prevents C shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: ctrl+Esc does not cancel route or request exit",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: alt+Esc does not cancel route or request exit",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: meta+Esc does not cancel route or request exit",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: shift+Esc does not cancel route or request exit",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: Esc echo and release do not cancel route",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: window close signal cannot interrupt route",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: plain Esc cancels route without quit dialog",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene.tscn: freeing scene removes its close-request handler",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: scene starts with panels closed and movement enabled",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: initial process frames preserve usable controls",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: scene installs one close-request handler",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: P opens parallax and locks movement",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: echo and release do not toggle again",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: second P closes once",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: O replaces P exclusively",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: P replaces O exclusively",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: C opens camera panel and locks movement",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: P replaces C exclusively",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: C replaces P exclusively",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: ctrl+E does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: ctrl+T does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: ctrl+1 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: ctrl+2 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: ctrl+3 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: ctrl+G does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: ctrl+V does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: ctrl+F does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: ctrl+B does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: ctrl+O does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: ctrl+P does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: ctrl+K does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: ctrl+H does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: ctrl+J does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: ctrl+C does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: ctrl+Escape does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: alt+E does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: alt+T does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: alt+1 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: alt+2 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: alt+3 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: alt+G does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: alt+V does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: alt+F does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: alt+B does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: alt+O does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: alt+P does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: alt+K does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: alt+H does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: alt+J does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: alt+C does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: alt+Escape does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: meta+E does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: meta+T does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: meta+1 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: meta+2 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: meta+3 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: meta+G does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: meta+V does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: meta+F does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: meta+B does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: meta+O does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: meta+P does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: meta+K does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: meta+H does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: meta+J does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: meta+C does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: meta+Escape does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: shift+E does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: shift+T does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: shift+1 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: shift+2 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: shift+3 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: shift+G does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: shift+V does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: shift+F does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: shift+B does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: shift+O does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: shift+P does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: shift+K does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: shift+H does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: shift+J does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: shift+C does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: shift+Escape does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: F2 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: F3 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: F4 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: F5 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: F6 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: F7 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: F8 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: F9 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: F12 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: Tab does not hide gameplay UI",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: G activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: G echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: G second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: V activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: V echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: V second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: F activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: F echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: F second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: B activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: B echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: B second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: K activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: K echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: K second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: H activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: H echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: H second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: plain 1 selects dusk",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: plain 2 selects night",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: plain 3 selects day",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: plain T cycles to dusk",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: plain T cycles to night",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: plain T cycles to day",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: parallax exposes a real SpinBox",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: SpinBox LineEdit owns real GUI focus",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: editing E does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: editing T does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: editing 1 does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: editing 2 does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: editing 3 does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: editing G does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: editing V does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: editing F does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: editing B does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: editing O does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: editing P does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: editing K does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: editing H does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: editing J does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: editing C does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {
+        "text": "2"
+      },
+      "name": "reference_scene_graybox.tscn: Ctrl+A and numeric entry stay in LineEdit",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: editing arrows do not enable walking",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: Tab stays within active panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: T remains usable with panel open outside text editing",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: preview button signal starts comparison",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: real embedded preset popup is open",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: Esc dismisses popup before preview or panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: next Esc stops preview only",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: next Esc closes panel only",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: Esc closes dialogue without exit request",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: bare Esc asks for confirmation and locks movement",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: quit confirmation defaults to Keep playing",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: default Enter cancels confirmation without quitting",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: reopened confirmation still defaults to Keep playing",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: echo cannot dismiss or accept exit confirmation",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: Esc cancels confirmation without quitting",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: toolbar dof pressed signal opens panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: toolbar dof pressed signal closes panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: toolbar parallax pressed signal opens panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: toolbar parallax pressed signal closes panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: toolbar camera pressed signal opens panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: toolbar camera pressed signal closes panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: quit toolbar pressed signal requires confirmation",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: toolbar quit confirmation also defaults to Keep playing",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: cancel button signal preserves running scene",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: route prevents E shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: route prevents T shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: route prevents 1 shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: route prevents 2 shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: route prevents 3 shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: route prevents G shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: route prevents V shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: route prevents F shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: route prevents B shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: route prevents O shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: route prevents P shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: route prevents K shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: route prevents H shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: route prevents J shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: route prevents C shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: ctrl+Esc does not cancel route or request exit",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: alt+Esc does not cancel route or request exit",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: meta+Esc does not cancel route or request exit",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: shift+Esc does not cancel route or request exit",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: Esc echo and release do not cancel route",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: window close signal cannot interrupt route",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: plain Esc cancels route without quit dialog",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "reference_scene_graybox.tscn: freeing scene removes its close-request handler",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: scene starts with panels closed and movement enabled",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: initial process frames preserve usable controls",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: scene installs one close-request handler",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: P opens parallax and locks movement",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: echo and release do not toggle again",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: second P closes once",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: O replaces P exclusively",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: P replaces O exclusively",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: C opens camera panel and locks movement",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: P replaces C exclusively",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: C replaces P exclusively",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: ctrl+E does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: ctrl+T does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: ctrl+1 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: ctrl+2 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: ctrl+3 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: ctrl+G does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: ctrl+V does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: ctrl+F does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: ctrl+B does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: ctrl+O does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: ctrl+P does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: ctrl+K does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: ctrl+H does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: ctrl+J does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: ctrl+C does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: ctrl+Escape does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: alt+E does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: alt+T does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: alt+1 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: alt+2 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: alt+3 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: alt+G does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: alt+V does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: alt+F does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: alt+B does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: alt+O does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: alt+P does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: alt+K does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: alt+H does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: alt+J does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: alt+C does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: alt+Escape does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: meta+E does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: meta+T does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: meta+1 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: meta+2 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: meta+3 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: meta+G does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: meta+V does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: meta+F does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: meta+B does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: meta+O does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: meta+P does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: meta+K does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: meta+H does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: meta+J does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: meta+C does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: meta+Escape does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: shift+E does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: shift+T does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: shift+1 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: shift+2 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: shift+3 does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: shift+G does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: shift+V does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: shift+F does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: shift+B does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: shift+O does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: shift+P does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: shift+K does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: shift+H does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: shift+J does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: shift+C does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: shift+Escape does not trigger plain action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: F2 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: F3 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: F4 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: F5 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: F6 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: F7 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: F8 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: F9 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: F12 is not a game action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: Tab does not hide gameplay UI",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: G activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: G echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: G second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: V activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: V echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: V second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: F activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: F echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: F second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: B activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: B echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: B second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: K activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: K echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: K second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: H activates its documented toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: H echo does not repeat toggle",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: H second press restores prior state",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: plain 1 selects dusk",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: plain 2 selects night",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: plain 3 selects day",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: plain T cycles to dusk",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: plain T cycles to night",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: plain T cycles to day",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: parallax exposes a real SpinBox",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: SpinBox LineEdit owns real GUI focus",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: editing E does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: editing T does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: editing 1 does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: editing 2 does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: editing 3 does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: editing G does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: editing V does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: editing F does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: editing B does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: editing O does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: editing P does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: editing K does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: editing H does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: editing J does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: editing C does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {
+        "text": "2"
+      },
+      "name": "frontal_canal.tscn: Ctrl+A and numeric entry stay in LineEdit",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: editing arrows do not enable walking",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: Tab stays within active panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: T remains usable with panel open outside text editing",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: radius lens LineEdit owns real GUI focus",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: radius editing E does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: radius editing T does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: radius editing 1 does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: radius editing 2 does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: radius editing 3 does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: radius editing G does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: radius editing V does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: radius editing F does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: radius editing B does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: radius editing O does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: radius editing P does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: radius editing K does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: radius editing H does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: radius editing J does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: radius editing C does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: radius Enter commits typed number to real lens",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: radius Tab retains camera panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: fov lens LineEdit owns real GUI focus",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: fov editing E does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: fov editing T does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: fov editing 1 does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: fov editing 2 does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: fov editing 3 does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: fov editing G does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: fov editing V does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: fov editing F does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: fov editing B does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: fov editing O does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: fov editing P does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: fov editing K does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: fov editing H does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: fov editing J does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: fov editing C does not dispatch scene action",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: fov Enter commits typed number to real lens",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: fov Tab retains camera panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: preview button signal starts comparison",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: real embedded preset popup is open",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: Esc dismisses popup before preview or panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: next Esc stops preview only",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: next Esc closes panel only",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: Esc closes dialogue without exit request",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: bare Esc asks for confirmation and locks movement",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: quit confirmation defaults to Keep playing",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: default Enter cancels confirmation without quitting",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: reopened confirmation still defaults to Keep playing",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: echo cannot dismiss or accept exit confirmation",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: Esc cancels confirmation without quitting",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: toolbar dof pressed signal opens panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: toolbar dof pressed signal closes panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: toolbar parallax pressed signal opens panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: toolbar parallax pressed signal closes panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: toolbar camera pressed signal opens panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: toolbar camera pressed signal closes panel",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: quit toolbar pressed signal requires confirmation",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: toolbar quit confirmation also defaults to Keep playing",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: cancel button signal preserves running scene",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: route prevents E shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: route prevents T shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: route prevents 1 shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: route prevents 2 shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: route prevents 3 shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: route prevents G shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: route prevents V shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: route prevents F shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: route prevents B shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: route prevents O shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: route prevents P shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: route prevents K shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: route prevents H shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: route prevents J shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: route prevents C shortcut",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: ctrl+Esc does not cancel route or request exit",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: alt+Esc does not cancel route or request exit",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: meta+Esc does not cancel route or request exit",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: shift+Esc does not cancel route or request exit",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: Esc echo and release do not cancel route",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: window close signal cannot interrupt route",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: plain Esc cancels route without quit dialog",
+      "passed": true
+    },
+    {
+      "details": {},
+      "name": "frontal_canal.tscn: freeing scene removes its close-request handler",
+      "passed": true
+    }
+  ],
+  "complete": true,
+  "display": "headless",
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "input_boundary": "Input.parse_input_event with press/release/echo, native GUI focus and embedded PopupMenu.",
+  "passed": true,
+  "scenes": [
+    "res://scenes/waystation.tscn",
+    "res://scenes/reference_scene.tscn",
+    "res://scenes/reference_scene_graybox.tscn",
+    "res://scenes/frontal_canal.tscn"
+  ],
+  "schema": 1,
+  "scope": "Runtime dispatch only. Headless cannot reproduce the editor host's F8 stop shortcut or prove physical desktop key delivery.",
+  "runtime_fingerprint": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_before": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_after": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_unchanged": true
+}

@@ -1,0 +1,1372 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "scope": "PNG-to-video temporal fidelity only; source GPU rendering is proved by the separate capture report",
+  "source_report": "layout-r5-20261008/render-v2/horizontal-capture.json",
+  "source_report_sha256": "42c63ba95d0e89d03b3251f484ff0e186114d7eb87ec5c8279bd7db09afda9a3",
+  "video": "layout-r5-20261008/render-v2/night.mp4",
+  "time_base": "1/1000",
+  "frames": [
+    {
+      "packet": 0,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00000.png",
+      "source_png_sha256": "9a1ca531d4981a5de6177c5acb944b328217a32d37518ca72e044a84d61bff12",
+      "pts_ms": 0,
+      "duration_ms": 154,
+      "producer_png_sha256": "9a1ca531d4981a5de6177c5acb944b328217a32d37518ca72e044a84d61bff12",
+      "foot": [
+        -6.57333374023438,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000678351323585957
+    },
+    {
+      "packet": 1,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00001.png",
+      "source_png_sha256": "63fad39551f63e6c09cc95e193307564acd8a5dbf02a4b37a2130ca85c64aefe",
+      "pts_ms": 154,
+      "duration_ms": 106,
+      "producer_png_sha256": "63fad39551f63e6c09cc95e193307564acd8a5dbf02a4b37a2130ca85c64aefe",
+      "foot": [
+        -6.09333419799805,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.00064577191369608
+    },
+    {
+      "packet": 2,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00002.png",
+      "source_png_sha256": "d76141cb94c8b1ccee9760890c15c2c806686ae9977e7e76082266bd2edd9222",
+      "pts_ms": 260,
+      "duration_ms": 119,
+      "producer_png_sha256": "d76141cb94c8b1ccee9760890c15c2c806686ae9977e7e76082266bd2edd9222",
+      "foot": [
+        -5.40000152587891,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000585267203859985
+    },
+    {
+      "packet": 3,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00003.png",
+      "source_png_sha256": "8d072f411e683986558190394c5c7c179ce598a8b9a7e38a81c09ad2104bf3f7",
+      "pts_ms": 379,
+      "duration_ms": 119,
+      "producer_png_sha256": "8d072f411e683986558190394c5c7c179ce598a8b9a7e38a81c09ad2104bf3f7",
+      "foot": [
+        -5.02666854858398,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000543379341252148
+    },
+    {
+      "packet": 4,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00004.png",
+      "source_png_sha256": "9bf15bae5e81b6297274efb90f198036d03b83a27e1f6b1c8c65422474844822",
+      "pts_ms": 498,
+      "duration_ms": 120,
+      "producer_png_sha256": "9bf15bae5e81b6297274efb90f198036d03b83a27e1f6b1c8c65422474844822",
+      "foot": [
+        -4.65333557128906,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.00051545409951359
+    },
+    {
+      "packet": 5,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00005.png",
+      "source_png_sha256": "fa3a78c122a89d851529ceaf4590922c9f9305b3b48798fffeb2f868e53a4e90",
+      "pts_ms": 618,
+      "duration_ms": 119,
+      "producer_png_sha256": "fa3a78c122a89d851529ceaf4590922c9f9305b3b48798fffeb2f868e53a4e90",
+      "foot": [
+        -4.28000259399414,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000487528857775033
+    },
+    {
+      "packet": 6,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00006.png",
+      "source_png_sha256": "582159604bd18dc47e750dae68f1174eee4da1e92a74d93bc1c60331f0458381",
+      "pts_ms": 737,
+      "duration_ms": 120,
+      "producer_png_sha256": "582159604bd18dc47e750dae68f1174eee4da1e92a74d93bc1c60331f0458381",
+      "foot": [
+        -3.90666961669922,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000445640966063365
+    },
+    {
+      "packet": 7,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00007.png",
+      "source_png_sha256": "5000c1d4936306257967d08a1be04857272ecf80ee36c6d191348bcad87a420b",
+      "pts_ms": 857,
+      "duration_ms": 118,
+      "producer_png_sha256": "5000c1d4936306257967d08a1be04857272ecf80ee36c6d191348bcad87a420b",
+      "foot": [
+        -3.5333366394043,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000417715724324808
+    },
+    {
+      "packet": 8,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00008.png",
+      "source_png_sha256": "712e094763816a2b7e30cb41fa64861954d6ff2043427762825f9cb146ebf79c",
+      "pts_ms": 975,
+      "duration_ms": 120,
+      "producer_png_sha256": "712e094763816a2b7e30cb41fa64861954d6ff2043427762825f9cb146ebf79c",
+      "foot": [
+        -3.16000366210938,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.00038979048258625
+    },
+    {
+      "packet": 9,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00009.png",
+      "source_png_sha256": "e805431f9bd8e03d9b263419fc7e47e1f083ecf43a1b3e93a0bbf62989fcdb03",
+      "pts_ms": 1095,
+      "duration_ms": 118,
+      "producer_png_sha256": "e805431f9bd8e03d9b263419fc7e47e1f083ecf43a1b3e93a0bbf62989fcdb03",
+      "foot": [
+        -2.78667068481445,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000347902649082243
+    },
+    {
+      "packet": 10,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00010.png",
+      "source_png_sha256": "c63b64eaadb1850ef1f6681b9c2ef58ae1abbfb2dafe92b26fa1decb5d5fb55e",
+      "pts_ms": 1213,
+      "duration_ms": 119,
+      "producer_png_sha256": "c63b64eaadb1850ef1f6681b9c2ef58ae1abbfb2dafe92b26fa1decb5d5fb55e",
+      "foot": [
+        -2.36000442504883,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000319977407343686
+    },
+    {
+      "packet": 11,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00011.png",
+      "source_png_sha256": "42cd8bf3e8f4d5022b1203e81f671e3366cba2543e1fd8e7cd2ebc074c5823fc",
+      "pts_ms": 1332,
+      "duration_ms": 120,
+      "producer_png_sha256": "42cd8bf3e8f4d5022b1203e81f671e3366cba2543e1fd8e7cd2ebc074c5823fc",
+      "foot": [
+        -1.98667144775391,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000278089544735849
+    },
+    {
+      "packet": 12,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00012.png",
+      "source_png_sha256": "bb56b4159a2d5bb7e205f7864b2f612d8b62c41017e260bc87ca40fdbefc94b0",
+      "pts_ms": 1452,
+      "duration_ms": 125,
+      "producer_png_sha256": "bb56b4159a2d5bb7e205f7864b2f612d8b62c41017e260bc87ca40fdbefc94b0",
+      "foot": [
+        -1.61333847045898,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000250164302997291
+    },
+    {
+      "packet": 13,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00013.png",
+      "source_png_sha256": "c84918b64881635e6e63fdf8a0b48b27587816bc5c03c3f59076ead49a118591",
+      "pts_ms": 1577,
+      "duration_ms": 114,
+      "producer_png_sha256": "c84918b64881635e6e63fdf8a0b48b27587816bc5c03c3f59076ead49a118591",
+      "foot": [
+        -1.24000549316406,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000222239061258733
+    },
+    {
+      "packet": 14,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00014.png",
+      "source_png_sha256": "fd1eb6269aff180061aa5f1ee1ccf24f7f25718504ec1c69e3a80188bd83368c",
+      "pts_ms": 1691,
+      "duration_ms": 119,
+      "producer_png_sha256": "fd1eb6269aff180061aa5f1ee1ccf24f7f25718504ec1c69e3a80188bd83368c",
+      "foot": [
+        -0.866672337055206,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000180351184098981
+    },
+    {
+      "packet": 15,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00015.png",
+      "source_png_sha256": "3ed6d8a590918844a0a4af0cdb6a56be08803614cdb410825b8ba31ea40ddb2e",
+      "pts_ms": 1810,
+      "duration_ms": 118,
+      "producer_png_sha256": "3ed6d8a590918844a0a4af0cdb6a56be08803614cdb410825b8ba31ea40ddb2e",
+      "foot": [
+        -0.493338942527771,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000152425927808508
+    },
+    {
+      "packet": 16,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00016.png",
+      "source_png_sha256": "0f0f70d4355d727ede7cd940d9f97cd82cf527878053f971435119b91ce00e38",
+      "pts_ms": 1928,
+      "duration_ms": 122,
+      "producer_png_sha256": "0f0f70d4355d727ede7cd940d9f97cd82cf527878053f971435119b91ce00e38",
+      "foot": [
+        -0.120005548000336,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000124500642414205
+    },
+    {
+      "packet": 17,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00017.png",
+      "source_png_sha256": "2b4949a78057a125af25099337d2b576a1baaa7c7bb3afac4e7d2e72ffd71cb7",
+      "pts_ms": 2050,
+      "duration_ms": 121,
+      "producer_png_sha256": "2b4949a78057a125af25099337d2b576a1baaa7c7bb3afac4e7d2e72ffd71cb7",
+      "foot": [
+        0.253327816724777,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 8.26127361506224e-05
+    },
+    {
+      "packet": 18,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00018.png",
+      "source_png_sha256": "d80b02744a3b733faa7c8709cd83079d8f058544ef2ba5d58aa4a1865f62d962",
+      "pts_ms": 2171,
+      "duration_ms": 117,
+      "producer_png_sha256": "d80b02744a3b733faa7c8709cd83079d8f058544ef2ba5d58aa4a1865f62d962",
+      "foot": [
+        0.62666118144989,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 5.46874653082341e-05
+    },
+    {
+      "packet": 19,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00019.png",
+      "source_png_sha256": "c33dcff4e9dbd2a22fbdaf7b56f2532be64fd26038c48284db2d6837d78e88c2",
+      "pts_ms": 2288,
+      "duration_ms": 121,
+      "producer_png_sha256": "c33dcff4e9dbd2a22fbdaf7b56f2532be64fd26038c48284db2d6837d78e88c2",
+      "foot": [
+        1.05332791805267,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 2.21079826587811e-05
+    },
+    {
+      "packet": 20,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00020.png",
+      "source_png_sha256": "92e7d3ac9244b47921dc37b2c195db4f2e908821e4f295ef0326b914035721a4",
+      "pts_ms": 2409,
+      "duration_ms": 117,
+      "producer_png_sha256": "92e7d3ac9244b47921dc37b2c195db4f2e908821e4f295ef0326b914035721a4",
+      "foot": [
+        1.4266608953476,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -1.9779890862992e-05
+    },
+    {
+      "packet": 21,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00021.png",
+      "source_png_sha256": "226e01c66fc49105df333512e8a8cc90474485b9d7cc1810cf026c928a909bb9",
+      "pts_ms": 2526,
+      "duration_ms": 119,
+      "producer_png_sha256": "226e01c66fc49105df333512e8a8cc90474485b9d7cc1810cf026c928a909bb9",
+      "foot": [
+        1.79999387264252,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -4.77051326015498e-05
+    },
+    {
+      "packet": 22,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00022.png",
+      "source_png_sha256": "4af05b0b83d4d81d1a5e941676c2a0b3c05739c72e05d73049937edf1a38767e",
+      "pts_ms": 2645,
+      "duration_ms": 121,
+      "producer_png_sha256": "4af05b0b83d4d81d1a5e941676c2a0b3c05739c72e05d73049937edf1a38767e",
+      "foot": [
+        2.17332696914673,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -7.56303852540441e-05
+    },
+    {
+      "packet": 23,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00023.png",
+      "source_png_sha256": "9d6b229ccb4e05cb9b686d4e911b8b716aaa9513e0b8fcdc318b2288669f18b6",
+      "pts_ms": 2766,
+      "duration_ms": 118,
+      "producer_png_sha256": "9d6b229ccb4e05cb9b686d4e911b8b716aaa9513e0b8fcdc318b2288669f18b6",
+      "foot": [
+        2.54665994644165,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000117518247861881
+    },
+    {
+      "packet": 24,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00024.png",
+      "source_png_sha256": "b31b85c998dd2c0914d55dcfb6f6ac5f34da17154db5efb7ec84304ec361b9a1",
+      "pts_ms": 2884,
+      "duration_ms": 120,
+      "producer_png_sha256": "b31b85c998dd2c0914d55dcfb6f6ac5f34da17154db5efb7ec84304ec361b9a1",
+      "foot": [
+        2.91999292373657,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000145443482324481
+    },
+    {
+      "packet": 25,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00025.png",
+      "source_png_sha256": "2a31dd30381d496f92c16bd61b54de12d39444aa435472b2a410e294e22739b3",
+      "pts_ms": 3004,
+      "duration_ms": 118,
+      "producer_png_sha256": "2a31dd30381d496f92c16bd61b54de12d39444aa435472b2a410e294e22739b3",
+      "foot": [
+        3.29332590103149,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000173368724063039
+    },
+    {
+      "packet": 26,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00026.png",
+      "source_png_sha256": "dfe1702434572488b84b235ad5ccc7f65b21b1cd81726513cedac5492f6015f5",
+      "pts_ms": 3122,
+      "duration_ms": 121,
+      "producer_png_sha256": "dfe1702434572488b84b235ad5ccc7f65b21b1cd81726513cedac5492f6015f5",
+      "foot": [
+        3.66665887832642,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000215256586670876
+    },
+    {
+      "packet": 27,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00027.png",
+      "source_png_sha256": "c5993886b9ed04ba344b823501da96d3b1633379bfedf7c71e626a7836965d85",
+      "pts_ms": 3243,
+      "duration_ms": 119,
+      "producer_png_sha256": "c5993886b9ed04ba344b823501da96d3b1633379bfedf7c71e626a7836965d85",
+      "foot": [
+        4.09332513809204,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000243181828409433
+    },
+    {
+      "packet": 28,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00028.png",
+      "source_png_sha256": "b0246756f67f5b5f03026c5a58dcbb543541d6e84950bf81867fe661965a350e",
+      "pts_ms": 3362,
+      "duration_ms": 119,
+      "producer_png_sha256": "b0246756f67f5b5f03026c5a58dcbb543541d6e84950bf81867fe661965a350e",
+      "foot": [
+        4.46665811538696,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.00028506969101727
+    },
+    {
+      "packet": 29,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00029.png",
+      "source_png_sha256": "cb68e2492ee8d80358c4f98cb86177f903f160d614504cd850002baa02033870",
+      "pts_ms": 3481,
+      "duration_ms": 119,
+      "producer_png_sha256": "cb68e2492ee8d80358c4f98cb86177f903f160d614504cd850002baa02033870",
+      "foot": [
+        4.83999109268188,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000312994932755828
+    },
+    {
+      "packet": 30,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00030.png",
+      "source_png_sha256": "dbac5d40c2e7d235dfbc1ba87730f83eeebfdef8c3f93b3ef6d9d040bd151ad1",
+      "pts_ms": 3600,
+      "duration_ms": 119,
+      "producer_png_sha256": "dbac5d40c2e7d235dfbc1ba87730f83eeebfdef8c3f93b3ef6d9d040bd151ad1",
+      "foot": [
+        5.21332406997681,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000340920174494386
+    },
+    {
+      "packet": 31,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00031.png",
+      "source_png_sha256": "46ee63873a8f187c16dc5cfe00c4d26998880cda5fbabfe54428de1812bf0db6",
+      "pts_ms": 3719,
+      "duration_ms": 121,
+      "producer_png_sha256": "46ee63873a8f187c16dc5cfe00c4d26998880cda5fbabfe54428de1812bf0db6",
+      "foot": [
+        5.58665704727173,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000382808007998392
+    },
+    {
+      "packet": 32,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00032.png",
+      "source_png_sha256": "3824d32e5b0cbe9e2483321d3b184c4a2a1e23b0a8fdfa30315b745df380e225",
+      "pts_ms": 3840,
+      "duration_ms": 119,
+      "producer_png_sha256": "3824d32e5b0cbe9e2483321d3b184c4a2a1e23b0a8fdfa30315b745df380e225",
+      "foot": [
+        5.95999002456665,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.00041073324973695
+    },
+    {
+      "packet": 33,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00033.png",
+      "source_png_sha256": "00068053340d04bcc2cdda7c01d4cfd2e2ac360168b91f59225b2b43fc640dce",
+      "pts_ms": 3959,
+      "duration_ms": 118,
+      "producer_png_sha256": "00068053340d04bcc2cdda7c01d4cfd2e2ac360168b91f59225b2b43fc640dce",
+      "foot": [
+        6.33332300186157,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000438658491475508
+    },
+    {
+      "packet": 34,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00034.png",
+      "source_png_sha256": "4bbd716ccce8b1850734972199e0ab58d9aefcbc539648283aea47ad510e9ace",
+      "pts_ms": 4077,
+      "duration_ms": 121,
+      "producer_png_sha256": "4bbd716ccce8b1850734972199e0ab58d9aefcbc539648283aea47ad510e9ace",
+      "foot": [
+        6.70665597915649,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000480546354083344
+    },
+    {
+      "packet": 35,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00035.png",
+      "source_png_sha256": "a178332a5a49718c65fe4b0640023a781a59703c323c4ec8041f67a131469227",
+      "pts_ms": 4198,
+      "duration_ms": 118,
+      "producer_png_sha256": "a178332a5a49718c65fe4b0640023a781a59703c323c4ec8041f67a131469227",
+      "foot": [
+        6.54665613174438,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000466583733214065
+    },
+    {
+      "packet": 36,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00036.png",
+      "source_png_sha256": "72daf4c58f6fc962616da796249ad981a99d6608300aa27f16a057552581cef4",
+      "pts_ms": 4316,
+      "duration_ms": 119,
+      "producer_png_sha256": "72daf4c58f6fc962616da796249ad981a99d6608300aa27f16a057552581cef4",
+      "foot": [
+        6.11998987197876,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000438658491475508
+    },
+    {
+      "packet": 37,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00037.png",
+      "source_png_sha256": "1cba6649ac6af2d8655393b0db5927563b1d51c7b8684589b19e2072da0c84cc",
+      "pts_ms": 4435,
+      "duration_ms": 120,
+      "producer_png_sha256": "1cba6649ac6af2d8655393b0db5927563b1d51c7b8684589b19e2072da0c84cc",
+      "foot": [
+        5.74665689468384,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000396770628867671
+    },
+    {
+      "packet": 38,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00038.png",
+      "source_png_sha256": "7989197184cd0bebc8b9569ba71e1094a01d94950e353db2549102f41ebc0891",
+      "pts_ms": 4555,
+      "duration_ms": 120,
+      "producer_png_sha256": "7989197184cd0bebc8b9569ba71e1094a01d94950e353db2549102f41ebc0891",
+      "foot": [
+        5.37332391738892,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000368845387129113
+    },
+    {
+      "packet": 39,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00039.png",
+      "source_png_sha256": "fabfaf1a5ba611ab79154f7ee4f2c7810ad12de0f6bcbfcb3f50df213a843bee",
+      "pts_ms": 4675,
+      "duration_ms": 117,
+      "producer_png_sha256": "fabfaf1a5ba611ab79154f7ee4f2c7810ad12de0f6bcbfcb3f50df213a843bee",
+      "foot": [
+        4.99999094009399,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000340920174494386
+    },
+    {
+      "packet": 40,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00040.png",
+      "source_png_sha256": "a7b00ebead1103ebd498688a8bc94216ce19e5988608afc6c4b2b0d81b0c08e9",
+      "pts_ms": 4792,
+      "duration_ms": 119,
+      "producer_png_sha256": "a7b00ebead1103ebd498688a8bc94216ce19e5988608afc6c4b2b0d81b0c08e9",
+      "foot": [
+        4.62665796279907,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000299032311886549
+    },
+    {
+      "packet": 41,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00041.png",
+      "source_png_sha256": "31f3b09d5ea02353f61880061f6cbfcfa02a885d464db67503c0e234d3222759",
+      "pts_ms": 4911,
+      "duration_ms": 119,
+      "producer_png_sha256": "31f3b09d5ea02353f61880061f6cbfcfa02a885d464db67503c0e234d3222759",
+      "foot": [
+        4.25332498550415,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000271107070147991
+    },
+    {
+      "packet": 42,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00042.png",
+      "source_png_sha256": "3e07160b5b36398c067a2f1f01364e2d7378b7065405c00d28403b2e6852103c",
+      "pts_ms": 5030,
+      "duration_ms": 121,
+      "producer_png_sha256": "3e07160b5b36398c067a2f1f01364e2d7378b7065405c00d28403b2e6852103c",
+      "foot": [
+        3.87999200820923,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000243181828409433
+    },
+    {
+      "packet": 43,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00043.png",
+      "source_png_sha256": "b8e5396b04718742b86ebe17ba12a1ce387f32486c2124599bf80b25d7137e23",
+      "pts_ms": 5151,
+      "duration_ms": 121,
+      "producer_png_sha256": "b8e5396b04718742b86ebe17ba12a1ce387f32486c2124599bf80b25d7137e23",
+      "foot": [
+        3.50665903091431,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000201293965801597
+    },
+    {
+      "packet": 44,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00044.png",
+      "source_png_sha256": "ec418c41dae13d124fbb2cf62a8b362a587d90f3a59653db537dcdd1939fc9c9",
+      "pts_ms": 5272,
+      "duration_ms": 117,
+      "producer_png_sha256": "ec418c41dae13d124fbb2cf62a8b362a587d90f3a59653db537dcdd1939fc9c9",
+      "foot": [
+        3.07999277114868,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000173368724063039
+    },
+    {
+      "packet": 45,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00045.png",
+      "source_png_sha256": "6f90bbcc0bd72eea7e974c990631a32ee0052923f4b6a485ae8331f2d9d02d03",
+      "pts_ms": 5389,
+      "duration_ms": 122,
+      "producer_png_sha256": "6f90bbcc0bd72eea7e974c990631a32ee0052923f4b6a485ae8331f2d9d02d03",
+      "foot": [
+        2.70665979385376,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000131480861455202
+    },
+    {
+      "packet": 46,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00046.png",
+      "source_png_sha256": "792a2327adf44fc002b8275e838a484f7c576568e905491cebfa0355a4bbadca",
+      "pts_ms": 5511,
+      "duration_ms": 118,
+      "producer_png_sha256": "792a2327adf44fc002b8275e838a484f7c576568e905491cebfa0355a4bbadca",
+      "foot": [
+        2.33332681655884,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -0.000103555626992602
+    },
+    {
+      "packet": 47,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00047.png",
+      "source_png_sha256": "42861f49949441792feadfc2eb4c550bbfed641df8c7bac34b394ff8539b8348",
+      "pts_ms": 5629,
+      "duration_ms": 119,
+      "producer_png_sha256": "42861f49949441792feadfc2eb4c550bbfed641df8c7bac34b394ff8539b8348",
+      "foot": [
+        1.95999383926392,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -7.56303852540441e-05
+    },
+    {
+      "packet": 48,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00048.png",
+      "source_png_sha256": "95f9e904373b04353fd16cc3da16db0b59443773af688e2b241c27c05c221179",
+      "pts_ms": 5748,
+      "duration_ms": 118,
+      "producer_png_sha256": "95f9e904373b04353fd16cc3da16db0b59443773af688e2b241c27c05c221179",
+      "foot": [
+        1.58666086196899,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -3.37425226462074e-05
+    },
+    {
+      "packet": 49,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00049.png",
+      "source_png_sha256": "af819a09884b83d0e685ee87c2270783df9d7f2fc36bde27e24ae04116e4b156",
+      "pts_ms": 5866,
+      "duration_ms": 120,
+      "producer_png_sha256": "af819a09884b83d0e685ee87c2270783df9d7f2fc36bde27e24ae04116e4b156",
+      "foot": [
+        1.21332788467407,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": -5.81727999815485e-06
+    },
+    {
+      "packet": 50,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00050.png",
+      "source_png_sha256": "5425ef5cfc8e1346225e211bc99b380d1eb3f0d359e148a490520f4c43d89371",
+      "pts_ms": 5986,
+      "duration_ms": 119,
+      "producer_png_sha256": "5425ef5cfc8e1346225e211bc99b380d1eb3f0d359e148a490520f4c43d89371",
+      "foot": [
+        0.839994668960571,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 2.21079717448447e-05
+    },
+    {
+      "packet": 51,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00051.png",
+      "source_png_sha256": "c4f00cb0638b21f0c72142d812126c7a7d53dda28a2b5525c1f51d6932779dcd",
+      "pts_ms": 6105,
+      "duration_ms": 119,
+      "producer_png_sha256": "c4f00cb0638b21f0c72142d812126c7a7d53dda28a2b5525c1f51d6932779dcd",
+      "foot": [
+        0.466661274433136,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 6.39958816464059e-05
+    },
+    {
+      "packet": 52,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00052.png",
+      "source_png_sha256": "ff63047c7ae04ef164b494675f028534537f6319350cd949861d957c021640f8",
+      "pts_ms": 6224,
+      "duration_ms": 121,
+      "producer_png_sha256": "ff63047c7ae04ef164b494675f028534537f6319350cd949861d957c021640f8",
+      "foot": [
+        0.0399945415556431,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 9.19211452128366e-05
+    },
+    {
+      "packet": 53,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00053.png",
+      "source_png_sha256": "8430fdea762b97dcf1959fe96257788db6f24ae21a45df6a26b471e13c641e82",
+      "pts_ms": 6345,
+      "duration_ms": 117,
+      "producer_png_sha256": "8430fdea762b97dcf1959fe96257788db6f24ae21a45df6a26b471e13c641e82",
+      "foot": [
+        -0.33333882689476,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000133809066028334
+    },
+    {
+      "packet": 54,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00054.png",
+      "source_png_sha256": "068548da81930c21d91dee0d97c52a7dd00dbad682a8f39f177075b4618ceb79",
+      "pts_ms": 6462,
+      "duration_ms": 119,
+      "producer_png_sha256": "068548da81930c21d91dee0d97c52a7dd00dbad682a8f39f177075b4618ceb79",
+      "foot": [
+        -0.706672191619873,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000161734336870722
+    },
+    {
+      "packet": 55,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00055.png",
+      "source_png_sha256": "21f632f8ff63fed4741e2343081dfed22133fbc33168ca900b69a9a1e7131cc4",
+      "pts_ms": 6581,
+      "duration_ms": 121,
+      "producer_png_sha256": "21f632f8ff63fed4741e2343081dfed22133fbc33168ca900b69a9a1e7131cc4",
+      "foot": [
+        -1.08000552654266,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000189659593161196
+    },
+    {
+      "packet": 56,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00056.png",
+      "source_png_sha256": "480272b660a1e157886cd8c772366d6ac6770b9b959ff23a230b81d0ed0c5d34",
+      "pts_ms": 6702,
+      "duration_ms": 120,
+      "producer_png_sha256": "480272b660a1e157886cd8c772366d6ac6770b9b959ff23a230b81d0ed0c5d34",
+      "foot": [
+        -1.45333850383759,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000231547455769032
+    },
+    {
+      "packet": 57,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00057.png",
+      "source_png_sha256": "ca2f1a1eb5aedf804fd95f54b07176b7b03efef7c0194deb527559f49d94bd9d",
+      "pts_ms": 6822,
+      "duration_ms": 120,
+      "producer_png_sha256": "ca2f1a1eb5aedf804fd95f54b07176b7b03efef7c0194deb527559f49d94bd9d",
+      "foot": [
+        -1.82667148113251,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.00025947269750759
+    },
+    {
+      "packet": 58,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00058.png",
+      "source_png_sha256": "95e86946216e809d58d1d47e729821179363dd45cbd8f801f4fb044ab8a6b555",
+      "pts_ms": 6942,
+      "duration_ms": 117,
+      "producer_png_sha256": "95e86946216e809d58d1d47e729821179363dd45cbd8f801f4fb044ab8a6b555",
+      "foot": [
+        -2.20000457763672,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000287397968349978
+    },
+    {
+      "packet": 59,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00059.png",
+      "source_png_sha256": "1b3f758a28933930d963f02f6ca690b449c6b4824ecbe8f370caf88943e6af16",
+      "pts_ms": 7059,
+      "duration_ms": 120,
+      "producer_png_sha256": "1b3f758a28933930d963f02f6ca690b449c6b4824ecbe8f370caf88943e6af16",
+      "foot": [
+        -2.57333755493164,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000329285830957815
+    },
+    {
+      "packet": 60,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00060.png",
+      "source_png_sha256": "a3974db390c28acb6873eec2b84b45cab828e5be82e49a1380c2c1f0764c0e33",
+      "pts_ms": 7179,
+      "duration_ms": 121,
+      "producer_png_sha256": "a3974db390c28acb6873eec2b84b45cab828e5be82e49a1380c2c1f0764c0e33",
+      "foot": [
+        -2.94667053222656,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000357211043592542
+    },
+    {
+      "packet": 61,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00061.png",
+      "source_png_sha256": "daa6617f1f71332544c54c1db3c323880eeef59b43e22a152ff75faf04533c28",
+      "pts_ms": 7300,
+      "duration_ms": 119,
+      "producer_png_sha256": "daa6617f1f71332544c54c1db3c323880eeef59b43e22a152ff75faf04533c28",
+      "foot": [
+        -3.37333679199219,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000399098906200379
+    },
+    {
+      "packet": 62,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00062.png",
+      "source_png_sha256": "4a3cf1c67ed78903a41937361f48291b02a5d5a761441bcfe7db1a1c376d5ce9",
+      "pts_ms": 7419,
+      "duration_ms": 122,
+      "producer_png_sha256": "4a3cf1c67ed78903a41937361f48291b02a5d5a761441bcfe7db1a1c376d5ce9",
+      "foot": [
+        -3.74666976928711,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000427024147938937
+    },
+    {
+      "packet": 63,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00063.png",
+      "source_png_sha256": "26c9980eea1e80c4a68ac3cb47fa41ba85233dfa8c688f14bdba9205c34226f4",
+      "pts_ms": 7541,
+      "duration_ms": 119,
+      "producer_png_sha256": "26c9980eea1e80c4a68ac3cb47fa41ba85233dfa8c688f14bdba9205c34226f4",
+      "foot": [
+        -4.12000274658203,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000454949418781325
+    },
+    {
+      "packet": 64,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00064.png",
+      "source_png_sha256": "ce63b3665d1d42e154fd82dc39edf9f5a54f02143bf40e9a4cb4a018344fee2e",
+      "pts_ms": 7660,
+      "duration_ms": 119,
+      "producer_png_sha256": "ce63b3665d1d42e154fd82dc39edf9f5a54f02143bf40e9a4cb4a018344fee2e",
+      "foot": [
+        -4.49333572387695,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000496837252285331
+    },
+    {
+      "packet": 65,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00065.png",
+      "source_png_sha256": "02da8c5ea804da472409947613a2bff062341dc8f3f6261bff4c8a30e1ae2dcf",
+      "pts_ms": 7779,
+      "duration_ms": 120,
+      "producer_png_sha256": "02da8c5ea804da472409947613a2bff062341dc8f3f6261bff4c8a30e1ae2dcf",
+      "foot": [
+        -4.86666870117188,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000524762494023889
+    },
+    {
+      "packet": 66,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00066.png",
+      "source_png_sha256": "db594b73aac9ae318e9f489c65b806d8fcb6332cfd90fa52f20eb0e613493d58",
+      "pts_ms": 7899,
+      "duration_ms": 118,
+      "producer_png_sha256": "db594b73aac9ae318e9f489c65b806d8fcb6332cfd90fa52f20eb0e613493d58",
+      "foot": [
+        -5.2400016784668,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000552687735762447
+    },
+    {
+      "packet": 67,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00067.png",
+      "source_png_sha256": "1b707af9878655c4ca42901a87bc2673e79073cad8da3412116b661937448bbe",
+      "pts_ms": 8017,
+      "duration_ms": 119,
+      "producer_png_sha256": "1b707af9878655c4ca42901a87bc2673e79073cad8da3412116b661937448bbe",
+      "foot": [
+        -5.61333465576172,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000594575598370284
+    },
+    {
+      "packet": 68,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00068.png",
+      "source_png_sha256": "f4708fbf509287cd0d336ffc3146f80cb9844bc1acda78bea7e2ef765b230529",
+      "pts_ms": 8136,
+      "duration_ms": 121,
+      "producer_png_sha256": "f4708fbf509287cd0d336ffc3146f80cb9844bc1acda78bea7e2ef765b230529",
+      "foot": [
+        -5.98666763305664,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000622500840108842
+    },
+    {
+      "packet": 69,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00069.png",
+      "source_png_sha256": "8c1ba461d09731b0ab903ffccd296de2a4252492cb035eebca5597d0a8586400",
+      "pts_ms": 8257,
+      "duration_ms": 119,
+      "producer_png_sha256": "8c1ba461d09731b0ab903ffccd296de2a4252492cb035eebca5597d0a8586400",
+      "foot": [
+        -6.41333389282227,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000664388702716678
+    },
+    {
+      "packet": 70,
+      "source_png": "layout-r5-20261008/render-v2/night-frames/00070.png",
+      "source_png_sha256": "6b4e26b011112af609492c94f22a531b550b6e1d2d97370c3081d29243efbb41",
+      "pts_ms": 8376,
+      "duration_ms": 119,
+      "producer_png_sha256": "6b4e26b011112af609492c94f22a531b550b6e1d2d97370c3081d29243efbb41",
+      "foot": [
+        -6.78666687011719,
+        0.0,
+        8.5
+      ],
+      "sky_yaw": 0.000692313944455236
+    }
+  ],
+  "packets": [
+    {
+      "packet": 0,
+      "pts_ms": 0.0,
+      "duration_ms": 154.0
+    },
+    {
+      "packet": 1,
+      "pts_ms": 154.0,
+      "duration_ms": 106.0
+    },
+    {
+      "packet": 2,
+      "pts_ms": 260.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 3,
+      "pts_ms": 379.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 4,
+      "pts_ms": 498.0,
+      "duration_ms": 120.0
+    },
+    {
+      "packet": 5,
+      "pts_ms": 618.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 6,
+      "pts_ms": 737.0,
+      "duration_ms": 120.0
+    },
+    {
+      "packet": 7,
+      "pts_ms": 857.0,
+      "duration_ms": 118.0
+    },
+    {
+      "packet": 8,
+      "pts_ms": 975.0,
+      "duration_ms": 120.0
+    },
+    {
+      "packet": 9,
+      "pts_ms": 1095.0,
+      "duration_ms": 118.0
+    },
+    {
+      "packet": 10,
+      "pts_ms": 1213.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 11,
+      "pts_ms": 1332.0,
+      "duration_ms": 120.0
+    },
+    {
+      "packet": 12,
+      "pts_ms": 1452.0,
+      "duration_ms": 125.0
+    },
+    {
+      "packet": 13,
+      "pts_ms": 1577.0,
+      "duration_ms": 114.0
+    },
+    {
+      "packet": 14,
+      "pts_ms": 1691.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 15,
+      "pts_ms": 1810.0,
+      "duration_ms": 118.0
+    },
+    {
+      "packet": 16,
+      "pts_ms": 1928.0,
+      "duration_ms": 122.0
+    },
+    {
+      "packet": 17,
+      "pts_ms": 2050.0,
+      "duration_ms": 121.0
+    },
+    {
+      "packet": 18,
+      "pts_ms": 2171.0,
+      "duration_ms": 117.0
+    },
+    {
+      "packet": 19,
+      "pts_ms": 2288.0,
+      "duration_ms": 121.0
+    },
+    {
+      "packet": 20,
+      "pts_ms": 2409.0,
+      "duration_ms": 117.0
+    },
+    {
+      "packet": 21,
+      "pts_ms": 2526.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 22,
+      "pts_ms": 2645.0,
+      "duration_ms": 121.0
+    },
+    {
+      "packet": 23,
+      "pts_ms": 2766.0,
+      "duration_ms": 118.0
+    },
+    {
+      "packet": 24,
+      "pts_ms": 2884.0,
+      "duration_ms": 120.0
+    },
+    {
+      "packet": 25,
+      "pts_ms": 3004.0,
+      "duration_ms": 118.0
+    },
+    {
+      "packet": 26,
+      "pts_ms": 3122.0,
+      "duration_ms": 121.0
+    },
+    {
+      "packet": 27,
+      "pts_ms": 3243.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 28,
+      "pts_ms": 3362.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 29,
+      "pts_ms": 3481.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 30,
+      "pts_ms": 3600.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 31,
+      "pts_ms": 3719.0,
+      "duration_ms": 121.0
+    },
+    {
+      "packet": 32,
+      "pts_ms": 3840.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 33,
+      "pts_ms": 3959.0,
+      "duration_ms": 118.0
+    },
+    {
+      "packet": 34,
+      "pts_ms": 4077.0,
+      "duration_ms": 121.0
+    },
+    {
+      "packet": 35,
+      "pts_ms": 4198.0,
+      "duration_ms": 118.0
+    },
+    {
+      "packet": 36,
+      "pts_ms": 4316.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 37,
+      "pts_ms": 4435.0,
+      "duration_ms": 120.0
+    },
+    {
+      "packet": 38,
+      "pts_ms": 4555.0,
+      "duration_ms": 120.0
+    },
+    {
+      "packet": 39,
+      "pts_ms": 4675.0,
+      "duration_ms": 117.0
+    },
+    {
+      "packet": 40,
+      "pts_ms": 4792.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 41,
+      "pts_ms": 4911.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 42,
+      "pts_ms": 5030.0,
+      "duration_ms": 121.0
+    },
+    {
+      "packet": 43,
+      "pts_ms": 5151.0,
+      "duration_ms": 121.0
+    },
+    {
+      "packet": 44,
+      "pts_ms": 5272.0,
+      "duration_ms": 117.0
+    },
+    {
+      "packet": 45,
+      "pts_ms": 5389.0,
+      "duration_ms": 122.0
+    },
+    {
+      "packet": 46,
+      "pts_ms": 5511.0,
+      "duration_ms": 118.0
+    },
+    {
+      "packet": 47,
+      "pts_ms": 5629.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 48,
+      "pts_ms": 5748.0,
+      "duration_ms": 118.0
+    },
+    {
+      "packet": 49,
+      "pts_ms": 5866.0,
+      "duration_ms": 120.0
+    },
+    {
+      "packet": 50,
+      "pts_ms": 5986.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 51,
+      "pts_ms": 6105.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 52,
+      "pts_ms": 6224.0,
+      "duration_ms": 121.0
+    },
+    {
+      "packet": 53,
+      "pts_ms": 6345.0,
+      "duration_ms": 117.0
+    },
+    {
+      "packet": 54,
+      "pts_ms": 6462.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 55,
+      "pts_ms": 6581.0,
+      "duration_ms": 121.0
+    },
+    {
+      "packet": 56,
+      "pts_ms": 6702.0,
+      "duration_ms": 120.0
+    },
+    {
+      "packet": 57,
+      "pts_ms": 6822.0,
+      "duration_ms": 120.0
+    },
+    {
+      "packet": 58,
+      "pts_ms": 6942.0,
+      "duration_ms": 117.0
+    },
+    {
+      "packet": 59,
+      "pts_ms": 7059.0,
+      "duration_ms": 120.0
+    },
+    {
+      "packet": 60,
+      "pts_ms": 7179.0,
+      "duration_ms": 121.0
+    },
+    {
+      "packet": 61,
+      "pts_ms": 7300.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 62,
+      "pts_ms": 7419.0,
+      "duration_ms": 122.0
+    },
+    {
+      "packet": 63,
+      "pts_ms": 7541.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 64,
+      "pts_ms": 7660.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 65,
+      "pts_ms": 7779.0,
+      "duration_ms": 120.0
+    },
+    {
+      "packet": 66,
+      "pts_ms": 7899.0,
+      "duration_ms": 118.0
+    },
+    {
+      "packet": 67,
+      "pts_ms": 8016.999999999999,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 68,
+      "pts_ms": 8135.999999999999,
+      "duration_ms": 121.0
+    },
+    {
+      "packet": 69,
+      "pts_ms": 8257.0,
+      "duration_ms": 119.0
+    },
+    {
+      "packet": 70,
+      "pts_ms": 8376.0,
+      "duration_ms": 119.0
+    }
+  ],
+  "frame_count": 71,
+  "duration_ms": 8495,
+  "no_duplicate_or_interpolated_frames": true,
+  "source_pngs_unmodified": true,
+  "encoder": "H.264 libx264 CRF14, VFR, no B frames, original 1080p, yuv420p",
+  "metadata": {
+    "terminal_duration_inferred": true,
+    "terminal_method": "Median observed interval; no interpolated frames",
+    "throughput_benchmark": false
+  }
+}

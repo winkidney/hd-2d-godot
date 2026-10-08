@@ -6,3 +6,9 @@ __pycache__/
 *.blend2
 .env
 .DS_Store
+
+# Restored large media and local process logs; verified chunks are versioned.
+docs/ancient-canal/layout-r5-20261008/render/route.mp4
+docs/ancient-canal/layout-r5-20261008/validation/make-test-final/transcript.txt.gz
+# Godot creates these beside historical profiler snapshots during import.
+docs/ancient-canal/profiling/20261008/**/*.gd.uid

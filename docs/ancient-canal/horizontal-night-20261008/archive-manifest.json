@@ -1,0 +1,2394 @@
+{
+  "schema_version": 1,
+  "original_commit": "b80ed88a2b644ca9e3c4b0246cfd9db1d17f795d",
+  "runtime_fingerprint": "694a5de78fb64f0152956df73d585b1b8b59980daecee2e23820cac0b31b1c6f",
+  "original_runtime_fingerprint": "1a540a6c3fa4548b7cdbe7636f456ae1384cf0bc58901947c56106cb9cb787c6",
+  "records": [
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/run-order.json",
+      "path": "data/run-order.json",
+      "encoding": "identity",
+      "original_bytes": 9001,
+      "stored_bytes": 9001,
+      "original_sha256": "eec1c8923eba001c0c0c1473c28d96ad74c6b1a1a81bd3e2329bf9dcce3eeade",
+      "stored_sha256": "eec1c8923eba001c0c0c1473c28d96ad74c6b1a1a81bd3e2329bf9dcce3eeade"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r1/baseline-day-samples.json",
+      "path": "data/old-day-r1/baseline-day-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 25241276,
+      "stored_bytes": 1732920,
+      "original_sha256": "c604d412e289a1abc1624828800c0da0404dc01331f3f95bb73004db1047f613",
+      "stored_sha256": "6bd26326993cafc6fd6588e56a1c2f7c0730862565099eb32bd91bbe4fb1f9ae"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r1/manifest.json",
+      "path": "data/old-day-r1/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 179517,
+      "stored_bytes": 179517,
+      "original_sha256": "56d3dc6d0dafd436c7d5a803d966a4b0504319c174b0ac4ba01f9f8242338f19",
+      "stored_sha256": "56d3dc6d0dafd436c7d5a803d966a4b0504319c174b0ac4ba01f9f8242338f19"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r1/performance-report.json",
+      "path": "data/old-day-r1/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 5765,
+      "stored_bytes": 5765,
+      "original_sha256": "e43a44d147970003aa5d2a5536125c2e7e02b879be95c63ec030ce6de874b87a",
+      "stored_sha256": "e43a44d147970003aa5d2a5536125c2e7e02b879be95c63ec030ce6de874b87a"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r1/parallax.gd",
+      "path": "probes/old-day-r1/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8240,
+      "stored_bytes": 2687,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r1/probe.gd",
+      "path": "probes/old-day-r1/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 28395,
+      "stored_bytes": 8112,
+      "original_sha256": "f7f65bf927300a32b1c5c483c991c2decbf2797102ff8a04f546a1bcfc92dfbf",
+      "stored_sha256": "d7e8f94e4cc244da4bc13e25ee64c80d40584e908fba87b65dcd40639fff5f47"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r1/scene.gd",
+      "path": "probes/old-day-r1/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 35325,
+      "stored_bytes": 9433,
+      "original_sha256": "33104c6572b4871850d7725eaaba32edbc89e495a7d254b1c5b57a558ca16555",
+      "stored_sha256": "7fe7e4fdf344f9728517dffbb13d8cc3b11a2ec7b43c156de7204b28c9e7b30b"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r1/baseline-day-samples.json",
+      "path": "data/new-day-r1/baseline-day-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 27326599,
+      "stored_bytes": 1881594,
+      "original_sha256": "689a122399659070a2301fa2ae9e232e83bcf8e2b74ae73450a7532326cda76e",
+      "stored_sha256": "98caef7291d7b578d7adc6f8b58a9c8f8ca2da8cc0054a7b2be26aaba62f4dc5"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r1/manifest.json",
+      "path": "data/new-day-r1/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 183493,
+      "stored_bytes": 183493,
+      "original_sha256": "f8f4249dfdbaad1118864f12a85c1234ea7f8e9689decc59bf3c5a186bb649d4",
+      "stored_sha256": "f8f4249dfdbaad1118864f12a85c1234ea7f8e9689decc59bf3c5a186bb649d4"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r1/performance-report.json",
+      "path": "data/new-day-r1/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 5912,
+      "stored_bytes": 5912,
+      "original_sha256": "36a878936ec928009ba6cc74ca931452ff819f76d919e83e4475a05b0f9af515",
+      "stored_sha256": "36a878936ec928009ba6cc74ca931452ff819f76d919e83e4475a05b0f9af515"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r1/parallax.gd",
+      "path": "probes/new-day-r1/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8240,
+      "stored_bytes": 2687,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r1/probe.gd",
+      "path": "probes/new-day-r1/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 29806,
+      "stored_bytes": 8387,
+      "original_sha256": "264b4760f58cbb732ecc9f3151771b292a1cc9188458cf3ddbfa0e4e7d746b67",
+      "stored_sha256": "fd1b7b57ba2efce7cda4b0fd20c7659acd78361005012265a3d4eb6c9616801d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r1/scene.gd",
+      "path": "probes/new-day-r1/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 35069,
+      "stored_bytes": 9413,
+      "original_sha256": "21f91d9cb2feed87dd271e47b3c9dcef01f55b288954fe088ab92fc7200b9adc",
+      "stored_sha256": "e81cf63a4c979ef490c5831aec3581526693a28c6ee314a40e4ccaf2695d88ef"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r2/baseline-day-samples.json",
+      "path": "data/new-day-r2/baseline-day-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 27326263,
+      "stored_bytes": 1880711,
+      "original_sha256": "649e1ae0637923972118500685a0c54e8993bffdd10af2db9c7c0d4af6b6dfa9",
+      "stored_sha256": "20dea6205d131b244ac18e09a578350b0e28ebe12ce606fee5d5d3e7022e8909"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r2/manifest.json",
+      "path": "data/new-day-r2/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 183493,
+      "stored_bytes": 183493,
+      "original_sha256": "7fb03c2ba62b4f360f9925f34b289d4dbc0883a994fd0d901bfd4a696eea04f1",
+      "stored_sha256": "7fb03c2ba62b4f360f9925f34b289d4dbc0883a994fd0d901bfd4a696eea04f1"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r2/performance-report.json",
+      "path": "data/new-day-r2/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 5914,
+      "stored_bytes": 5914,
+      "original_sha256": "f01c305f69c6e5690394d83c1e1b2491f3f8ff1a039a75968f61d92782840034",
+      "stored_sha256": "f01c305f69c6e5690394d83c1e1b2491f3f8ff1a039a75968f61d92782840034"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r2/parallax.gd",
+      "path": "probes/new-day-r2/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8240,
+      "stored_bytes": 2687,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r2/probe.gd",
+      "path": "probes/new-day-r2/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 29806,
+      "stored_bytes": 8387,
+      "original_sha256": "d2cc0b263f2da1ad7e480db39c50b2ad07b47f769fd77af612421f5611ae4783",
+      "stored_sha256": "8f5eba3d31df9a08b5ed44e6f5b04a097b8309dfa7a0fc4a67214da1cda8f9bd"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r2/scene.gd",
+      "path": "probes/new-day-r2/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 35069,
+      "stored_bytes": 9413,
+      "original_sha256": "813f4301a6730b5aeb8dda14bcf5948d17976dd87bcf83749f81513f53b13e83",
+      "stored_sha256": "391f9293b6add9335ffbcae1b1f491f269d32800c5a96af9a25b3b19ffc838e8"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r2/baseline-day-samples.json",
+      "path": "data/old-day-r2/baseline-day-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 24768607,
+      "stored_bytes": 1706928,
+      "original_sha256": "9830a6992dea3c9b8dc4b7c95a6e200a2d355c2e655b8f4159174b70db34369a",
+      "stored_sha256": "7e42b8298ce6cbba198df595eb33a4fcd17ffc3249313bca090c15ba31bdb16d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r2/manifest.json",
+      "path": "data/old-day-r2/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 179517,
+      "stored_bytes": 179517,
+      "original_sha256": "400e55a7d969a18d4037af0ffb0a6fa10bd91ab695d1741e6317e562a191510f",
+      "stored_sha256": "400e55a7d969a18d4037af0ffb0a6fa10bd91ab695d1741e6317e562a191510f"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r2/performance-report.json",
+      "path": "data/old-day-r2/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 5767,
+      "stored_bytes": 5767,
+      "original_sha256": "71a07e30794a05beeb88a54f1ac0994c32d148fbef708a0abdd69b76dff0842f",
+      "stored_sha256": "71a07e30794a05beeb88a54f1ac0994c32d148fbef708a0abdd69b76dff0842f"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r2/parallax.gd",
+      "path": "probes/old-day-r2/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8240,
+      "stored_bytes": 2687,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r2/probe.gd",
+      "path": "probes/old-day-r2/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 28395,
+      "stored_bytes": 8112,
+      "original_sha256": "829b6ee9f54317f7b288940fabe8f9e3236a8df56fd32efec8ab7821449eb2b5",
+      "stored_sha256": "2f536c8f064b19af7f7564bb3d506ec4b2cf77953a0b7d09b9a83d37ae790bac"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r2/scene.gd",
+      "path": "probes/old-day-r2/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 35325,
+      "stored_bytes": 9433,
+      "original_sha256": "8274db153ea23aa4a33a751c12c69c9c61fadd2ab4e13db43ae639cb765cd92f",
+      "stored_sha256": "370c1a098acbaf5584b7660474d5ed7f4f52a8c477297edeacd8ab2ec44ea985"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r3/baseline-day-samples.json",
+      "path": "data/old-day-r3/baseline-day-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 25116677,
+      "stored_bytes": 1725562,
+      "original_sha256": "e5bba8fc924ca8990e7a926d771cc2f3b2821f83fc73188c1c61098c2792164a",
+      "stored_sha256": "63402907ce88f8ebc7826e0f04946958fc311a4d1d0087f4fe7d8a7080e17881"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r3/manifest.json",
+      "path": "data/old-day-r3/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 179517,
+      "stored_bytes": 179517,
+      "original_sha256": "0cd89629dbbbf28ad8e03ae9ecb96c2d9bd1514006cf80aeda645d78e939e58c",
+      "stored_sha256": "0cd89629dbbbf28ad8e03ae9ecb96c2d9bd1514006cf80aeda645d78e939e58c"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r3/performance-report.json",
+      "path": "data/old-day-r3/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 5765,
+      "stored_bytes": 5765,
+      "original_sha256": "c916dea74d6bc011b967f451d7474bd7c46506691378c9070fdcdeebb30ea3bb",
+      "stored_sha256": "c916dea74d6bc011b967f451d7474bd7c46506691378c9070fdcdeebb30ea3bb"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r3/parallax.gd",
+      "path": "probes/old-day-r3/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8240,
+      "stored_bytes": 2687,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r3/probe.gd",
+      "path": "probes/old-day-r3/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 28395,
+      "stored_bytes": 8112,
+      "original_sha256": "35b466a38b679447fdfa22a8a7b8547954701c52d84921848570e0649a50a863",
+      "stored_sha256": "ce25ecfc5ab73b083c209890dd75ee82a315efabe2183807c0f16042870ebc6f"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-day-r3/scene.gd",
+      "path": "probes/old-day-r3/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 35325,
+      "stored_bytes": 9433,
+      "original_sha256": "0fd6d3897dd10c683a6b23958afbf7ed3e4097abad9fffd6392958639150ca16",
+      "stored_sha256": "794e2be935f7f68f95f56ad31da1cdf31fdc7486abbbc59ce1e8e0554816b06f"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r3/baseline-day-samples.json",
+      "path": "data/new-day-r3/baseline-day-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 27267315,
+      "stored_bytes": 1880108,
+      "original_sha256": "1f5111f342409f02d1e5654d5f5259e7412581d78e13650b1cf13ac5a5a57409",
+      "stored_sha256": "50290ef61eb32cc9407fc92e695089b634cffb3910fcba9a1f2bcc963881c8f6"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r3/manifest.json",
+      "path": "data/new-day-r3/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 183493,
+      "stored_bytes": 183493,
+      "original_sha256": "079ddebaa30933404a4f6916c2084dd66dcd021dda00de352044675ef5ae698e",
+      "stored_sha256": "079ddebaa30933404a4f6916c2084dd66dcd021dda00de352044675ef5ae698e"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r3/performance-report.json",
+      "path": "data/new-day-r3/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 5912,
+      "stored_bytes": 5912,
+      "original_sha256": "4ef147f09737e2152d77cebaf756f35045d3985f83903416b49ce99b1e78ef50",
+      "stored_sha256": "4ef147f09737e2152d77cebaf756f35045d3985f83903416b49ce99b1e78ef50"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r3/parallax.gd",
+      "path": "probes/new-day-r3/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8240,
+      "stored_bytes": 2687,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r3/probe.gd",
+      "path": "probes/new-day-r3/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 29806,
+      "stored_bytes": 8387,
+      "original_sha256": "71a066c5852b80224a47ef59e972f8f9d5929934f943f7769d67189863d8783f",
+      "stored_sha256": "9c9de8eb5f7256d888cf5b16075c5dfb0d5935faadd39d0e127a02d9cf6dfa08"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-day-r3/scene.gd",
+      "path": "probes/new-day-r3/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 35069,
+      "stored_bytes": 9413,
+      "original_sha256": "0da82de1f7dadb02085adbd3d0e65ec3bd757a1928f7530576694beda11e7f4a",
+      "stored_sha256": "6fc68c10cee64cc053f798ece7911362360cd2b6382ef570a23e8b08ceefef3e"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r1/baseline-dusk-samples.json",
+      "path": "data/old-dusk-r1/baseline-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 25002186,
+      "stored_bytes": 1730172,
+      "original_sha256": "7d4f86831c2b8695dcbdde56a412650b6ebd83316869a9646741a8ad314c48da",
+      "stored_sha256": "1e839b369fbe85ab44858b0dcbf2f56cfeb59ac83f4f5e3b32833a706bf0b79a"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r1/manifest.json",
+      "path": "data/old-dusk-r1/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 179519,
+      "stored_bytes": 179519,
+      "original_sha256": "3f671a79b31f487e84b81f00dff128be238c5c875a0b800ffd5c72478a39a9d9",
+      "stored_sha256": "3f671a79b31f487e84b81f00dff128be238c5c875a0b800ffd5c72478a39a9d9"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r1/performance-report.json",
+      "path": "data/old-dusk-r1/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 5769,
+      "stored_bytes": 5769,
+      "original_sha256": "12a2994fdd86d3172e301cec57159ac28f815781a8a7e1ced57519774f71c7d3",
+      "stored_sha256": "12a2994fdd86d3172e301cec57159ac28f815781a8a7e1ced57519774f71c7d3"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r1/parallax.gd",
+      "path": "probes/old-dusk-r1/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8240,
+      "stored_bytes": 2687,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r1/probe.gd",
+      "path": "probes/old-dusk-r1/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 28397,
+      "stored_bytes": 8114,
+      "original_sha256": "1c4c082a43829badfbe4d0f7b618c127a11164860cf6e85e8fa7a2de9005e16d",
+      "stored_sha256": "cabdb179b0fa44cfa39ff93b3020f6885bac8c98dee0cf0c223491d29a312ae0"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r1/scene.gd",
+      "path": "probes/old-dusk-r1/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 35326,
+      "stored_bytes": 9432,
+      "original_sha256": "fc6ab97de4e7a4c6617021ac119d2b9be23b200c07a0075617fb25a93b59d01a",
+      "stored_sha256": "471c34144881bca4ae484303dfb72802e65cf2524254a26a751701525cb83ba4"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r1/baseline-dusk-samples.json",
+      "path": "data/new-dusk-r1/baseline-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 27316390,
+      "stored_bytes": 1881810,
+      "original_sha256": "60eb4ed95b8d633f7759ff130ad4994cfc9769abf52d60bc6f729db9b7afb3f5",
+      "stored_sha256": "c3d1393cac6e7656912dc935fa3e7cf3ea31abc2c1185537631420e701e58116"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r1/manifest.json",
+      "path": "data/new-dusk-r1/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 183495,
+      "stored_bytes": 183495,
+      "original_sha256": "03e8c96eea6c8176fec0cc10ce4d4037801831d3b857d3b1ec9fd3928feddcca",
+      "stored_sha256": "03e8c96eea6c8176fec0cc10ce4d4037801831d3b857d3b1ec9fd3928feddcca"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r1/performance-report.json",
+      "path": "data/new-dusk-r1/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 5915,
+      "stored_bytes": 5915,
+      "original_sha256": "588ba211af3b856b3f5ca9b7fdcdb8c4d3d350ba2e3ed67dda310f1c8575fe58",
+      "stored_sha256": "588ba211af3b856b3f5ca9b7fdcdb8c4d3d350ba2e3ed67dda310f1c8575fe58"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r1/parallax.gd",
+      "path": "probes/new-dusk-r1/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8240,
+      "stored_bytes": 2687,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r1/probe.gd",
+      "path": "probes/new-dusk-r1/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 29808,
+      "stored_bytes": 8389,
+      "original_sha256": "cf5178ff2badeae7afd457b020fc29c600800e05f3907c4ec4a5b25dda72b994",
+      "stored_sha256": "d98e74edcd45aae8081c17cdbc9594890d32d2735312ee38b0a32eedd9aa777a"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r1/scene.gd",
+      "path": "probes/new-dusk-r1/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 35070,
+      "stored_bytes": 9413,
+      "original_sha256": "82417ad0a4bfaa2d036259269087e2791d8f1a6a1ce8db5dd00ca1650a384c7d",
+      "stored_sha256": "4c8ae513e1f917bd8566c727fa94156e44499102550504dd36cb10e0afae2c6d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r2/baseline-dusk-samples.json",
+      "path": "data/new-dusk-r2/baseline-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 27244404,
+      "stored_bytes": 1879952,
+      "original_sha256": "88e56e5a0a2719cfd76dd46b551c770a3681183a2f749f5801e87bdfe9dabde0",
+      "stored_sha256": "eeafb0dd5f10ed96291205845e7207b4dfb4c579fffa178a383ece99bc573f5f"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r2/manifest.json",
+      "path": "data/new-dusk-r2/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 183495,
+      "stored_bytes": 183495,
+      "original_sha256": "7471680751907b67a9b544989fbfc8a604a4f7fb77931c7ddfdd25ef092802dd",
+      "stored_sha256": "7471680751907b67a9b544989fbfc8a604a4f7fb77931c7ddfdd25ef092802dd"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r2/performance-report.json",
+      "path": "data/new-dusk-r2/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 5914,
+      "stored_bytes": 5914,
+      "original_sha256": "6944f68800639e3ec644bc8fc9fbc6e42fcda0a3bfbf2c63c448f61f74d2f988",
+      "stored_sha256": "6944f68800639e3ec644bc8fc9fbc6e42fcda0a3bfbf2c63c448f61f74d2f988"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r2/parallax.gd",
+      "path": "probes/new-dusk-r2/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8240,
+      "stored_bytes": 2687,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r2/probe.gd",
+      "path": "probes/new-dusk-r2/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 29808,
+      "stored_bytes": 8389,
+      "original_sha256": "ed6f440d6208f409ebe6b648a046531a1a78226bb49963b8f34937c8353b2822",
+      "stored_sha256": "b8468d6b45c8c2dde4184c470e6d6c06bfabf70a31470b988ea8e67da356af08"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r2/scene.gd",
+      "path": "probes/new-dusk-r2/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 35070,
+      "stored_bytes": 9413,
+      "original_sha256": "97f9c1f82d7189bfbc6cbced41a8f3b1d7ae9e6eed27487c00a16cc41d85d389",
+      "stored_sha256": "68b416e4bf1c6e5875fb84244b7b16aef71ef5aea2ea2c9bc4b459d2b4b33437"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r2/baseline-dusk-samples.json",
+      "path": "data/old-dusk-r2/baseline-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 25036152,
+      "stored_bytes": 1721543,
+      "original_sha256": "a800a5e814fed422276cedde4fcad251ba12eefa77ba174fdf701ebdb9f914a9",
+      "stored_sha256": "c3afafa956ef3e677acd032a75fae917110e547490bca12a324f2f7e40963aa5"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r2/manifest.json",
+      "path": "data/old-dusk-r2/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 179519,
+      "stored_bytes": 179519,
+      "original_sha256": "4be9fa9af9ac36a1828e150327055a494e5cfe8b6b2e01a0b6b4cbe91a434aae",
+      "stored_sha256": "4be9fa9af9ac36a1828e150327055a494e5cfe8b6b2e01a0b6b4cbe91a434aae"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r2/performance-report.json",
+      "path": "data/old-dusk-r2/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 5765,
+      "stored_bytes": 5765,
+      "original_sha256": "3cb4fa38021cc1f7fbdcc0c8afafd1c61a46b859ae868209c4f4143468e0c815",
+      "stored_sha256": "3cb4fa38021cc1f7fbdcc0c8afafd1c61a46b859ae868209c4f4143468e0c815"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r2/parallax.gd",
+      "path": "probes/old-dusk-r2/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8240,
+      "stored_bytes": 2687,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r2/probe.gd",
+      "path": "probes/old-dusk-r2/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 28397,
+      "stored_bytes": 8114,
+      "original_sha256": "ef4409c272f1b7b7da0b79fd9be7b330fa9273cb3833022b5540c6d7454b52ec",
+      "stored_sha256": "a099d63052c9828b8a3b41316a357f1c527786e6a79dd0f16572eae55085d488"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r2/scene.gd",
+      "path": "probes/old-dusk-r2/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 35326,
+      "stored_bytes": 9432,
+      "original_sha256": "636d576eda4d03be7372af20b76a7a25816b045fd5fa04d0e003c58a26daa474",
+      "stored_sha256": "022115bfdf3d0e1cddcd5adc113a6a6c8a0df1acd8350ec68ff330b3342bdb4e"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r3/baseline-dusk-samples.json",
+      "path": "data/old-dusk-r3/baseline-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 25034585,
+      "stored_bytes": 1720681,
+      "original_sha256": "ef21a15e44520b393ac160d85d4b5afd142e7b0e9b4f0a4463935142782aebb0",
+      "stored_sha256": "8980028abd46e76ac3632d80e3f0fc39774e4d820320c3aac4f86d62e5b91979"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r3/manifest.json",
+      "path": "data/old-dusk-r3/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 179519,
+      "stored_bytes": 179519,
+      "original_sha256": "d76779ef125a38231c1c46a7c25326f82d4bac3dfc33fa18e2cf2aa5cd93794e",
+      "stored_sha256": "d76779ef125a38231c1c46a7c25326f82d4bac3dfc33fa18e2cf2aa5cd93794e"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r3/performance-report.json",
+      "path": "data/old-dusk-r3/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 5767,
+      "stored_bytes": 5767,
+      "original_sha256": "1af2f753d29c21e84d31ff4d202feac7417661f678aa362b84ef6f16752a10fd",
+      "stored_sha256": "1af2f753d29c21e84d31ff4d202feac7417661f678aa362b84ef6f16752a10fd"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r3/parallax.gd",
+      "path": "probes/old-dusk-r3/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8240,
+      "stored_bytes": 2687,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r3/probe.gd",
+      "path": "probes/old-dusk-r3/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 28397,
+      "stored_bytes": 8114,
+      "original_sha256": "8aee163e2ec3e7a4334bcb622fa91df4af350df0dadc2d5dabe7c553dab5ce78",
+      "stored_sha256": "d8b4816b877c450cd3247de9aa5fcb81fe95ea22cfb19cc08b88f8fbf4d27d98"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-dusk-r3/scene.gd",
+      "path": "probes/old-dusk-r3/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 35326,
+      "stored_bytes": 9432,
+      "original_sha256": "1a1937708f6122878a449f110bbbd8e8b82f2f52b8cd7459a5f4547ef8835887",
+      "stored_sha256": "ec4ac7d849f55c4ab9f419f24e4e16dea4d6c2a52c15927b99422a829e2f181a"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r3/baseline-dusk-samples.json",
+      "path": "data/new-dusk-r3/baseline-dusk-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 27200255,
+      "stored_bytes": 1877003,
+      "original_sha256": "42ddb7779180585d0efdfa86fc8bb5bc8bf2e5841bcf64564b0e6cf03e827026",
+      "stored_sha256": "141bae2db6c2ec63af4f60bff5266ec0b7d44aa59e22b403a39496dadf3faee7"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r3/manifest.json",
+      "path": "data/new-dusk-r3/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 183495,
+      "stored_bytes": 183495,
+      "original_sha256": "e37eb5582e4544571ca2f1f13660a00f2332a2a4187b76382417669b97a4dd83",
+      "stored_sha256": "e37eb5582e4544571ca2f1f13660a00f2332a2a4187b76382417669b97a4dd83"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r3/performance-report.json",
+      "path": "data/new-dusk-r3/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 5916,
+      "stored_bytes": 5916,
+      "original_sha256": "a89eb30a243a232b05c5478c89a81e4f23f39c6a78ea541a9092e9d0b6472e93",
+      "stored_sha256": "a89eb30a243a232b05c5478c89a81e4f23f39c6a78ea541a9092e9d0b6472e93"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r3/parallax.gd",
+      "path": "probes/new-dusk-r3/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8240,
+      "stored_bytes": 2687,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r3/probe.gd",
+      "path": "probes/new-dusk-r3/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 29808,
+      "stored_bytes": 8389,
+      "original_sha256": "a5edfb6dc9bc9f2c1fb3433b2b83e67453ec074f987e958d391aa102f1602a0b",
+      "stored_sha256": "13eb700476dff50682abdea7a3d2844002a45555b7b4a3005a21a1f621e687d2"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-dusk-r3/scene.gd",
+      "path": "probes/new-dusk-r3/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 35070,
+      "stored_bytes": 9413,
+      "original_sha256": "baac2dfd65b8cd71560644c828602b96f1f53d56ca8b99dadc0fa05e725b1b4b",
+      "stored_sha256": "439f9c9fcf85c98a5521ea0da035bfc76dd04102cf95bbd696b9a884bdc8f13b"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r1/baseline-night-samples.json",
+      "path": "data/old-night-r1/baseline-night-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 25062546,
+      "stored_bytes": 1723015,
+      "original_sha256": "4a2473caeaf301aaea3fd46367c993358bd79929d247bbe75544111f59f59bbc",
+      "stored_sha256": "a3b0c8ae3e02f506443a002cb67efbede60d1f4e544576941b69799c3d0e67fd"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r1/manifest.json",
+      "path": "data/old-night-r1/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 179521,
+      "stored_bytes": 179521,
+      "original_sha256": "0c9b769c0e715047f1c228207158912ff5c6b863da2fb6ff1747144fa740a3c5",
+      "stored_sha256": "0c9b769c0e715047f1c228207158912ff5c6b863da2fb6ff1747144fa740a3c5"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r1/performance-report.json",
+      "path": "data/old-night-r1/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 5772,
+      "stored_bytes": 5772,
+      "original_sha256": "804e719fe71b11020d568db9dfb77cd8a1c27e01b164dd531f27bd5cb4c7c0c1",
+      "stored_sha256": "804e719fe71b11020d568db9dfb77cd8a1c27e01b164dd531f27bd5cb4c7c0c1"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r1/parallax.gd",
+      "path": "probes/old-night-r1/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8240,
+      "stored_bytes": 2687,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r1/probe.gd",
+      "path": "probes/old-night-r1/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 28399,
+      "stored_bytes": 8113,
+      "original_sha256": "bc1b99d8b003a2a28c05f3f9969fc0d5c287c89605a51d03d68e72902117a0ee",
+      "stored_sha256": "930715b24f772712b471d8d615ed54bedc4a98ae574bd2bf037a411a2fcb4d0d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r1/scene.gd",
+      "path": "probes/old-night-r1/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 35327,
+      "stored_bytes": 9433,
+      "original_sha256": "500edede8b540f63fee8e08334abe88e0531d097fab3abd761d8a1c5659486c6",
+      "stored_sha256": "3d084c5327208518f553f1cf19b62801b0a760b9269f3ab84028c482cb4d43d0"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r1/baseline-night-samples.json",
+      "path": "data/new-night-r1/baseline-night-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 26876605,
+      "stored_bytes": 1881783,
+      "original_sha256": "92cf2eaaa95241bb67ea10c1620021b470f97b0830d437b9676ae2647faf5580",
+      "stored_sha256": "f04ec0bbace5a5b4d1e61dea5fcdfca379e337c96239a15dea1a42ac7db1dad0"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r1/manifest.json",
+      "path": "data/new-night-r1/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 183507,
+      "stored_bytes": 183507,
+      "original_sha256": "46171a9b7f3e9dfc2cf599466da0a85270e5694b00fe99db417e22f44c6921ba",
+      "stored_sha256": "46171a9b7f3e9dfc2cf599466da0a85270e5694b00fe99db417e22f44c6921ba"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r1/performance-report.json",
+      "path": "data/new-night-r1/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 10416,
+      "stored_bytes": 10416,
+      "original_sha256": "4622634ed5253b98b10e34418a455baffff3dd18d9c8d47c9f981c88c02bf1c7",
+      "stored_sha256": "4622634ed5253b98b10e34418a455baffff3dd18d9c8d47c9f981c88c02bf1c7"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r1/plain_sky-night-samples.json",
+      "path": "data/new-night-r1/plain_sky-night-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 27091517,
+      "stored_bytes": 1880550,
+      "original_sha256": "86401e26734b911754c870e595f1af1bd7623ba1f6d9174ea1d3b7fc89e7f5d7",
+      "stored_sha256": "3f513881c1f5f94c438fbb556bc37aa796e4007f11bc9c19e718d1771b040b43"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r1/parallax.gd",
+      "path": "probes/new-night-r1/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8240,
+      "stored_bytes": 2687,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r1/probe.gd",
+      "path": "probes/new-night-r1/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 29829,
+      "stored_bytes": 8392,
+      "original_sha256": "fe6008c305360bc8f383876e8c422674c212b2e5acd38132d1b92fc35d7aa9ef",
+      "stored_sha256": "85bd4b6b738683b943fab47adbc5e460d0bb3d914bd347eba3d8bba7649caf5f"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r1/scene.gd",
+      "path": "probes/new-night-r1/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 35071,
+      "stored_bytes": 9410,
+      "original_sha256": "e3af49388d0d4c0462113b59df7bedbe2335ba44384e87cbe29a2f1adffbcb69",
+      "stored_sha256": "b52b035ea1d73ece61591462659d16c33ec28b989e12355b3bb843f5b8033b1e"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r2/baseline-night-samples.json",
+      "path": "data/new-night-r2/baseline-night-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 27003494,
+      "stored_bytes": 1877036,
+      "original_sha256": "294fc9786259eb4882e47febc59cf959d09342c80040cfd3d784bee799399f2a",
+      "stored_sha256": "ab68e6401e3e777646bf33a81e8209e58b34a91305ccac2415771eaad8fec6f2"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r2/manifest.json",
+      "path": "data/new-night-r2/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 183507,
+      "stored_bytes": 183507,
+      "original_sha256": "03849a22136250191c1ab4b05459592a7d95170a93029808f9b5f211354e12d1",
+      "stored_sha256": "03849a22136250191c1ab4b05459592a7d95170a93029808f9b5f211354e12d1"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r2/performance-report.json",
+      "path": "data/new-night-r2/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 10410,
+      "stored_bytes": 10410,
+      "original_sha256": "6fd25bd5c3d0e0bdab51538e526171b55b7f4ce6a65f947140e40ccdc89ed198",
+      "stored_sha256": "6fd25bd5c3d0e0bdab51538e526171b55b7f4ce6a65f947140e40ccdc89ed198"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r2/plain_sky-night-samples.json",
+      "path": "data/new-night-r2/plain_sky-night-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 27149055,
+      "stored_bytes": 1882838,
+      "original_sha256": "de97041702b7f0e3ebaca4db23b0dccec863f60744511126c67065ae22d82967",
+      "stored_sha256": "12cb9135e7fb8229969afe2b8b9c7f814067b6538e895cb5c8e0e6e769087706"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r2/parallax.gd",
+      "path": "probes/new-night-r2/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8240,
+      "stored_bytes": 2687,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r2/probe.gd",
+      "path": "probes/new-night-r2/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 29829,
+      "stored_bytes": 8392,
+      "original_sha256": "ead6825dedb94806f8dc3ae47ed24b66d168241af23e4f6b2c949a8a95a5bc15",
+      "stored_sha256": "02f340f885ef552ae87c606dce36461389561de88a66a685fbcefc90872b4d1f"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r2/scene.gd",
+      "path": "probes/new-night-r2/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 35071,
+      "stored_bytes": 9410,
+      "original_sha256": "15de5f54768fff9b1b4bd2a1fe0a974fde899e3491ca5b524b2070bde657221c",
+      "stored_sha256": "e76b403d14430e5cebf4010e90d9918747dcde44f79bb212e49655442ff18064"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r2/baseline-night-samples.json",
+      "path": "data/old-night-r2/baseline-night-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 24951825,
+      "stored_bytes": 1718129,
+      "original_sha256": "5f6efcc036c65121161a52aeb34f1d0eeaa69a6e6c66317bf7887046b4a0a7fe",
+      "stored_sha256": "356dd82006936c583e7b7d9fdfe8c43be0c7b564bc23f2c7a3b92a03e337427e"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r2/manifest.json",
+      "path": "data/old-night-r2/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 179521,
+      "stored_bytes": 179521,
+      "original_sha256": "9567161b08687d403f8152730a56260140f0a536b349d9145d5ccd872022e744",
+      "stored_sha256": "9567161b08687d403f8152730a56260140f0a536b349d9145d5ccd872022e744"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r2/performance-report.json",
+      "path": "data/old-night-r2/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 5756,
+      "stored_bytes": 5756,
+      "original_sha256": "d38fb3ef6a89639ad2c1dc9979104cbc6510b336858365d78d46cb0303270a8e",
+      "stored_sha256": "d38fb3ef6a89639ad2c1dc9979104cbc6510b336858365d78d46cb0303270a8e"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r2/parallax.gd",
+      "path": "probes/old-night-r2/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8240,
+      "stored_bytes": 2687,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r2/probe.gd",
+      "path": "probes/old-night-r2/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 28399,
+      "stored_bytes": 8113,
+      "original_sha256": "cf13895d608a995f40df9451733bee49255c3a559908107d18d472ede3a60b51",
+      "stored_sha256": "e4fd0f2e47647a2aa49fdd8b39d2679415b4f96159c04d6e1198bb1d3f00e14d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r2/scene.gd",
+      "path": "probes/old-night-r2/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 35327,
+      "stored_bytes": 9433,
+      "original_sha256": "913a6aeb8ad69c60ea8b6e989a6084190f947325101a80fba631b4b5efa0ab9d",
+      "stored_sha256": "50c29c36de6af4ad661663dd4d4e2087bfeb47a271a88e954b19cf0116bfc7f0"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r3/baseline-night-samples.json",
+      "path": "data/old-night-r3/baseline-night-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 24925646,
+      "stored_bytes": 1713883,
+      "original_sha256": "552f205e7a9414e5d18884cbdfabbec39e235d17e90115a5bb1acfb58fc0ce39",
+      "stored_sha256": "d472f255115ccb4fae1d9b6eac67a743d589229bf781482d9682d0df55baafbc"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r3/manifest.json",
+      "path": "data/old-night-r3/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 179521,
+      "stored_bytes": 179521,
+      "original_sha256": "5ce9acb6e7b6b7bffe3312bd8750a1f8abbefeee72718d303ff29f26ea606f50",
+      "stored_sha256": "5ce9acb6e7b6b7bffe3312bd8750a1f8abbefeee72718d303ff29f26ea606f50"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r3/performance-report.json",
+      "path": "data/old-night-r3/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 5770,
+      "stored_bytes": 5770,
+      "original_sha256": "bbf407caa10f47a1664b0029810d3a0e00f1ef28385f888f146fdf0c1a236f1f",
+      "stored_sha256": "bbf407caa10f47a1664b0029810d3a0e00f1ef28385f888f146fdf0c1a236f1f"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r3/parallax.gd",
+      "path": "probes/old-night-r3/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8240,
+      "stored_bytes": 2687,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r3/probe.gd",
+      "path": "probes/old-night-r3/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 28399,
+      "stored_bytes": 8113,
+      "original_sha256": "170e19928805b2c09cef32de5643392bba2423c29278fe24cb9f87c0a577d99b",
+      "stored_sha256": "a093b7ebd368dcbe323aed4bee7fb8ae043be3794cd9b143d92cabddfa7ececa"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/old-night-r3/scene.gd",
+      "path": "probes/old-night-r3/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 35327,
+      "stored_bytes": 9433,
+      "original_sha256": "23510815da34de7ee4a42bbdcf9e31b3f73c70c7c67a4030f4bcac0029105708",
+      "stored_sha256": "6300083110bff91993bba4bbc3f69bd0c4d71c32a2e3d0a46aa14af36aab7dd1"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r3/baseline-night-samples.json",
+      "path": "data/new-night-r3/baseline-night-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 26937675,
+      "stored_bytes": 1864688,
+      "original_sha256": "66c0356216b7d152def1f2347e552ec6b2ef6f29d7bf266f1f8f8ed27ae5e114",
+      "stored_sha256": "2a9f06b4e0f811ffee1211138d02af13fc6f4738e94c43668a729560bd4db7f9"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r3/manifest.json",
+      "path": "data/new-night-r3/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 183507,
+      "stored_bytes": 183507,
+      "original_sha256": "7492a3dd918bda87a2ff45e4de6b3d50b49c488d88141f3dfefa121d5e1fb107",
+      "stored_sha256": "7492a3dd918bda87a2ff45e4de6b3d50b49c488d88141f3dfefa121d5e1fb107"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r3/performance-report.json",
+      "path": "data/new-night-r3/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 10415,
+      "stored_bytes": 10415,
+      "original_sha256": "74203505683397d8c512515d37dd396c7aa9acc1f1c1f76001f68cf8eb049731",
+      "stored_sha256": "74203505683397d8c512515d37dd396c7aa9acc1f1c1f76001f68cf8eb049731"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r3/plain_sky-night-samples.json",
+      "path": "data/new-night-r3/plain_sky-night-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 27132315,
+      "stored_bytes": 1862812,
+      "original_sha256": "aa3177cacf0715f27e23b7ed3945df0cffdc7bf1790288d83b1fea3a22e839b4",
+      "stored_sha256": "ebf2c2c5b681b5a8f7bf5b2e93d8adafb9ee7b792889626ff72153d02db006cc"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r3/parallax.gd",
+      "path": "probes/new-night-r3/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8240,
+      "stored_bytes": 2687,
+      "original_sha256": "7dd082bd39a064d30c731c0f812a60bb5adfd0493fcfd8f6d6e761470cf0cce9",
+      "stored_sha256": "369409bade3a70c5029d5bc71712fa37ab3f5faaade58124bca9056f1346511d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r3/probe.gd",
+      "path": "probes/new-night-r3/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 29829,
+      "stored_bytes": 8392,
+      "original_sha256": "8f9130ba88fadc1e50f61f622a3de19e9b5b238bcd8c54520475686d4b1f5110",
+      "stored_sha256": "d4f4f21a78ac407556640319b0cb1f1158ded9707056c336deb1990be7ae937f"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/new-night-r3/scene.gd",
+      "path": "probes/new-night-r3/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 35071,
+      "stored_bytes": 9410,
+      "original_sha256": "9fd7534c8af4e57d50e9557e706cfb223edecc3e44b1de6dea372479f93b9fe9",
+      "stored_sha256": "4784dedaf3e5cc217637fe3161bc87eeae2c3e28c880397ccb87a600d6970d80"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r1/baseline-night-samples.json",
+      "path": "data/cpu-night-r1/baseline-night-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 5349981,
+      "stored_bytes": 433562,
+      "original_sha256": "e0f546e107812aab6b3dce7b8d7bad0b82ae51d0313ac387010873b13345afc6",
+      "stored_sha256": "5aadac97aeb4bd2c8447919f0968af064c03bb75fe328be59b4d75c955b52bdb"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r1/manifest.json",
+      "path": "data/cpu-night-r1/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 183931,
+      "stored_bytes": 183931,
+      "original_sha256": "4ca2f5974e0142aa2f503117c05ce80eb30b3c620c6363a87dbc657acf378b4f",
+      "stored_sha256": "4ca2f5974e0142aa2f503117c05ce80eb30b3c620c6363a87dbc657acf378b4f"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r1/performance-report.json",
+      "path": "data/cpu-night-r1/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 5918,
+      "stored_bytes": 5918,
+      "original_sha256": "49913071b0c486ffdf8908ffcb7848aad3bf79ec02111f73f280c20615ff3b0f",
+      "stored_sha256": "49913071b0c486ffdf8908ffcb7848aad3bf79ec02111f73f280c20615ff3b0f"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r1/actor.gd",
+      "path": "probes/cpu-night-r1/actor.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 5559,
+      "stored_bytes": 1826,
+      "original_sha256": "2a1e612537748f0c402a720fef42744c43842deb22bef43c6c6f301f1586b47a",
+      "stored_sha256": "055df2f44c5ff7d8251dedb7b5e4f2ae11c75132a9e992b70426d4a0c3cc5ef8"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r1/background.gd",
+      "path": "probes/cpu-night-r1/background.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8357,
+      "stored_bytes": 2900,
+      "original_sha256": "66b544758bddcab04d30624c74503c2c4208ce5d3f2a865814ba81fbc3d4674f",
+      "stored_sha256": "11a9267bb75bef8bed76e6470543772c37aa9366b1ac506ec1be85c226e71930"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r1/camera.gd",
+      "path": "probes/cpu-night-r1/camera.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8331,
+      "stored_bytes": 2676,
+      "original_sha256": "fc09269202f476c7564f26325e54ef2eb63c66084325d0c6dbff9be0284ed450",
+      "stored_sha256": "b9888fec56de581b4676b10f2e043c497fdbb92a6e95d7d4c9ea3f6e8e1f95b3"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r1/night_sky.gd",
+      "path": "probes/cpu-night-r1/night_sky.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 2612,
+      "stored_bytes": 1051,
+      "original_sha256": "1d63bb666af9960358871992ffba9d3c754b5db52edba88fb682b12c952718bb",
+      "stored_sha256": "7a3dbffff7bc30da30fe93fb416cca09431d03d2c5978be6ff653465e1ce2924"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r1/parallax.gd",
+      "path": "probes/cpu-night-r1/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8669,
+      "stored_bytes": 2800,
+      "original_sha256": "25ea4dd6766d0efd49c4a016bdc50ecd64d7dca4fa8869320905d7b19d56b402",
+      "stored_sha256": "65b3ca8618e6d3114f832cef9d882bc2aade82f96f8f15a0db04bd3f885cd71a"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r1/probe.gd",
+      "path": "probes/cpu-night-r1/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 30431,
+      "stored_bytes": 8518,
+      "original_sha256": "d7a1577e51d42c501326d6887b880b5691a44d98d98ac1234ebbca15000c6210",
+      "stored_sha256": "98562ff954dc335c2c59a47ba533f389cacdd42f8c1b45d3a427a71f20eb0039"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r1/scene.gd",
+      "path": "probes/cpu-night-r1/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 36642,
+      "stored_bytes": 9622,
+      "original_sha256": "f1d3ca66d7ec7eabc7db32f348fe082abfa320b11f32d8061fbb6ccd144c4073",
+      "stored_sha256": "16817446c9aea7d10436ae60c4533f920cfe71961fde406a7d24eb02a9c3c368"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r1/sky_focus.gd",
+      "path": "probes/cpu-night-r1/sky_focus.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 3502,
+      "stored_bytes": 1551,
+      "original_sha256": "06f07934609d3e51d90049b9fc7faa90d8179ca5efb1253672eca5ff8f81eb23",
+      "stored_sha256": "994640144aef2249c7266f49b3cae335f57e5f65dac47ef570ad62ff4f22c92c"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r2/baseline-night-samples.json",
+      "path": "data/cpu-night-r2/baseline-night-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 5353749,
+      "stored_bytes": 446389,
+      "original_sha256": "de10e0b274547829d0963b03f135e752fa2afdb16693962bffa49c7a81efbad8",
+      "stored_sha256": "623b9c0789145ce8afab5360c6d39cd197d2fe866d11985568d34a4873436c89"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r2/manifest.json",
+      "path": "data/cpu-night-r2/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 183931,
+      "stored_bytes": 183931,
+      "original_sha256": "322615b59f32e1a0dce7b2f08482bd4989fa5cfb051894f7f7b5509a8fa9f391",
+      "stored_sha256": "322615b59f32e1a0dce7b2f08482bd4989fa5cfb051894f7f7b5509a8fa9f391"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r2/performance-report.json",
+      "path": "data/cpu-night-r2/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 5917,
+      "stored_bytes": 5917,
+      "original_sha256": "1a2da5f15e4f429b2ece3b30d70a5a2a1b54bbb0419fed45f0d5a194ac3ac5fb",
+      "stored_sha256": "1a2da5f15e4f429b2ece3b30d70a5a2a1b54bbb0419fed45f0d5a194ac3ac5fb"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r2/actor.gd",
+      "path": "probes/cpu-night-r2/actor.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 5559,
+      "stored_bytes": 1826,
+      "original_sha256": "2a1e612537748f0c402a720fef42744c43842deb22bef43c6c6f301f1586b47a",
+      "stored_sha256": "055df2f44c5ff7d8251dedb7b5e4f2ae11c75132a9e992b70426d4a0c3cc5ef8"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r2/background.gd",
+      "path": "probes/cpu-night-r2/background.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8357,
+      "stored_bytes": 2900,
+      "original_sha256": "66b544758bddcab04d30624c74503c2c4208ce5d3f2a865814ba81fbc3d4674f",
+      "stored_sha256": "11a9267bb75bef8bed76e6470543772c37aa9366b1ac506ec1be85c226e71930"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r2/camera.gd",
+      "path": "probes/cpu-night-r2/camera.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8331,
+      "stored_bytes": 2676,
+      "original_sha256": "fc09269202f476c7564f26325e54ef2eb63c66084325d0c6dbff9be0284ed450",
+      "stored_sha256": "b9888fec56de581b4676b10f2e043c497fdbb92a6e95d7d4c9ea3f6e8e1f95b3"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r2/night_sky.gd",
+      "path": "probes/cpu-night-r2/night_sky.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 2612,
+      "stored_bytes": 1051,
+      "original_sha256": "3cad6464ea2492b4437df2f3025f8c9514aa91488effb68011f99cfd7b8aca91",
+      "stored_sha256": "2837ff2a3752e14b513c16d690f65d741a883bb73f6d08506bd0f57ce798df7f"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r2/parallax.gd",
+      "path": "probes/cpu-night-r2/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8669,
+      "stored_bytes": 2800,
+      "original_sha256": "25ea4dd6766d0efd49c4a016bdc50ecd64d7dca4fa8869320905d7b19d56b402",
+      "stored_sha256": "65b3ca8618e6d3114f832cef9d882bc2aade82f96f8f15a0db04bd3f885cd71a"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r2/probe.gd",
+      "path": "probes/cpu-night-r2/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 30431,
+      "stored_bytes": 8518,
+      "original_sha256": "7fe00a16de39c9d94d250dd48f9dd740e9ed953f9e56c97738f65799c21f6f6e",
+      "stored_sha256": "4b91285b82218d3055ecf8bc63f82595ee13cc9be0d38fee74577d9a17d18e3f"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r2/scene.gd",
+      "path": "probes/cpu-night-r2/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 36642,
+      "stored_bytes": 9622,
+      "original_sha256": "27ca877de4ec8d86358a9f2c762e900f4e6cbd20e7f39cf47ff3673b31d71cf0",
+      "stored_sha256": "9511c4988df8bf069c40d1bc75259ea19264b7e45f9e93c189ef85ee833236e8"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r2/sky_focus.gd",
+      "path": "probes/cpu-night-r2/sky_focus.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 3502,
+      "stored_bytes": 1551,
+      "original_sha256": "06f07934609d3e51d90049b9fc7faa90d8179ca5efb1253672eca5ff8f81eb23",
+      "stored_sha256": "994640144aef2249c7266f49b3cae335f57e5f65dac47ef570ad62ff4f22c92c"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r3/baseline-night-samples.json",
+      "path": "data/cpu-night-r3/baseline-night-samples.json.gz",
+      "encoding": "gzip",
+      "original_bytes": 5343996,
+      "stored_bytes": 432657,
+      "original_sha256": "5e40ceac935cbb9a005e54aa81265170a0dcf05ce0c4c61410fc618c0afc91bb",
+      "stored_sha256": "1efa2550f8db8f97fb2b0e769caa0a05b965114c4808ac573be827a4c1823b2c"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r3/manifest.json",
+      "path": "data/cpu-night-r3/manifest.json",
+      "encoding": "identity",
+      "original_bytes": 183931,
+      "stored_bytes": 183931,
+      "original_sha256": "46fe73a92c0e216f2e7538476e41993d1b3d8fdf04688df079c02086bece26ae",
+      "stored_sha256": "46fe73a92c0e216f2e7538476e41993d1b3d8fdf04688df079c02086bece26ae"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r3/performance-report.json",
+      "path": "data/cpu-night-r3/performance-report.json",
+      "encoding": "identity",
+      "original_bytes": 5918,
+      "stored_bytes": 5918,
+      "original_sha256": "f854fd33addb82b98dd8aef4a1a679d3bb270960ba7b10f3c69f75e639e2707c",
+      "stored_sha256": "f854fd33addb82b98dd8aef4a1a679d3bb270960ba7b10f3c69f75e639e2707c"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r3/actor.gd",
+      "path": "probes/cpu-night-r3/actor.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 5559,
+      "stored_bytes": 1826,
+      "original_sha256": "2a1e612537748f0c402a720fef42744c43842deb22bef43c6c6f301f1586b47a",
+      "stored_sha256": "055df2f44c5ff7d8251dedb7b5e4f2ae11c75132a9e992b70426d4a0c3cc5ef8"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r3/background.gd",
+      "path": "probes/cpu-night-r3/background.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8357,
+      "stored_bytes": 2900,
+      "original_sha256": "66b544758bddcab04d30624c74503c2c4208ce5d3f2a865814ba81fbc3d4674f",
+      "stored_sha256": "11a9267bb75bef8bed76e6470543772c37aa9366b1ac506ec1be85c226e71930"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r3/camera.gd",
+      "path": "probes/cpu-night-r3/camera.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8331,
+      "stored_bytes": 2676,
+      "original_sha256": "fc09269202f476c7564f26325e54ef2eb63c66084325d0c6dbff9be0284ed450",
+      "stored_sha256": "b9888fec56de581b4676b10f2e043c497fdbb92a6e95d7d4c9ea3f6e8e1f95b3"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r3/night_sky.gd",
+      "path": "probes/cpu-night-r3/night_sky.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 2612,
+      "stored_bytes": 1052,
+      "original_sha256": "153ce5591f03753d4c478cfdb5b52c2f3eab10ebb2dd528d73b973e66fdd8525",
+      "stored_sha256": "e8b3dd72b7bd935694ad5b7ff92c5ff799d4d1167c3b80a91c0d13b9f13325c7"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r3/parallax.gd",
+      "path": "probes/cpu-night-r3/parallax.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 8669,
+      "stored_bytes": 2800,
+      "original_sha256": "25ea4dd6766d0efd49c4a016bdc50ecd64d7dca4fa8869320905d7b19d56b402",
+      "stored_sha256": "65b3ca8618e6d3114f832cef9d882bc2aade82f96f8f15a0db04bd3f885cd71a"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r3/probe.gd",
+      "path": "probes/cpu-night-r3/probe.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 30431,
+      "stored_bytes": 8518,
+      "original_sha256": "f9f3db2a20092094b9dda599f07de7797b028c0577696780cb5afbe7c4d67556",
+      "stored_sha256": "f81ec245b33c7ae40a0b1f8b185c805a67d5b942d8412ac358f11fd68b60fbde"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r3/scene.gd",
+      "path": "probes/cpu-night-r3/scene.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 36642,
+      "stored_bytes": 9622,
+      "original_sha256": "f1bb456a0ff7f6052169f6727f239c9d8cab7ea94c3b25ef5faee22acf1d6113",
+      "stored_sha256": "8005f8ccb0bebd68a106c6a750793b4e7459d29d783e223656817a289f9026b9"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/measurements/cpu-night-r3/sky_focus.gd",
+      "path": "probes/cpu-night-r3/sky_focus.gd.txt.gz",
+      "encoding": "gzip",
+      "original_bytes": 3502,
+      "stored_bytes": 1551,
+      "original_sha256": "06f07934609d3e51d90049b9fc7faa90d8179ca5efb1253672eca5ff8f81eb23",
+      "stored_sha256": "994640144aef2249c7266f49b3cae335f57e5f65dac47ef570ad62ff4f22c92c"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation/blockout.json",
+      "path": "validation/validation/blockout.json",
+      "encoding": "identity",
+      "original_bytes": 14926,
+      "stored_bytes": 14926,
+      "original_sha256": "8af57bf2e3dabca37389b5abcf7f110c79965c0e59f9a5803b97dcf4a83fb823",
+      "stored_sha256": "8af57bf2e3dabca37389b5abcf7f110c79965c0e59f9a5803b97dcf4a83fb823"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation/final-headless-suite.json",
+      "path": "validation/validation/final-headless-suite.json",
+      "encoding": "identity",
+      "original_bytes": 6479,
+      "stored_bytes": 6479,
+      "original_sha256": "9e14a42b0f41c13714750ed0404945638f8f561100bed36f308a65f2850c9edc",
+      "stored_sha256": "9e14a42b0f41c13714750ed0404945638f8f561100bed36f308a65f2850c9edc"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation/headless/report.json",
+      "path": "validation/validation/headless/report.json",
+      "encoding": "identity",
+      "original_bytes": 461703,
+      "stored_bytes": 461703,
+      "original_sha256": "fcbbc9b29a69f13c18a3dc82620b5b491ff11acdd2c91e13b48b8583292c2214",
+      "stored_sha256": "fcbbc9b29a69f13c18a3dc82620b5b491ff11acdd2c91e13b48b8583292c2214"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation/horizontal-sky.json",
+      "path": "validation/validation/horizontal-sky.json",
+      "encoding": "identity",
+      "original_bytes": 2700,
+      "stored_bytes": 2700,
+      "original_sha256": "162c3e09e06cac0831598b0bc53f806d88d5785878e9cb8b9e8f80c46aa03c7c",
+      "stored_sha256": "162c3e09e06cac0831598b0bc53f806d88d5785878e9cb8b9e8f80c46aa03c7c"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation/lighting-route/lighting-route-report.json",
+      "path": "validation/validation/lighting-route/lighting-route-report.json",
+      "encoding": "identity",
+      "original_bytes": 1900990,
+      "stored_bytes": 1900990,
+      "original_sha256": "ff4e178b789a0a75089ad1d568fb63f334cacfc3c2b57426ca76b5ba6d551734",
+      "stored_sha256": "ff4e178b789a0a75089ad1d568fb63f334cacfc3c2b57426ca76b5ba6d551734"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation/settings-contract-read.json",
+      "path": "validation/validation/settings-contract-read.json",
+      "encoding": "identity",
+      "original_bytes": 1482,
+      "stored_bytes": 1482,
+      "original_sha256": "c4731aa689827e6b0e7067057d3a703210a2f5e43782c4889e7e1873d7ca157b",
+      "stored_sha256": "c4731aa689827e6b0e7067057d3a703210a2f5e43782c4889e7e1873d7ca157b"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation/settings-contract-write.json",
+      "path": "validation/validation/settings-contract-write.json",
+      "encoding": "identity",
+      "original_bytes": 622,
+      "stored_bytes": 622,
+      "original_sha256": "053264e2424e5495760d6c34a86e37b931f902d74fcf17a161f907fad9913b06",
+      "stored_sha256": "053264e2424e5495760d6c34a86e37b931f902d74fcf17a161f907fad9913b06"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation/settings-contract.json",
+      "path": "validation/validation/settings-contract.json",
+      "encoding": "identity",
+      "original_bytes": 16783,
+      "stored_bytes": 16783,
+      "original_sha256": "67b2636884c5242ab4bba546b73790993a92aee9d65c192f970ec71b8e359f2a",
+      "stored_sha256": "67b2636884c5242ab4bba546b73790993a92aee9d65c192f970ec71b8e359f2a"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation/settings-read/report.json",
+      "path": "validation/validation/settings-read/report.json",
+      "encoding": "identity",
+      "original_bytes": 1856,
+      "stored_bytes": 1856,
+      "original_sha256": "257efb3c0778811cf5ff5329af54d22c6c64f6922d78e599d403f0c166ee1314",
+      "stored_sha256": "257efb3c0778811cf5ff5329af54d22c6c64f6922d78e599d403f0c166ee1314"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation/settings-report.json",
+      "path": "validation/validation/settings-report.json",
+      "encoding": "identity",
+      "original_bytes": 2992,
+      "stored_bytes": 2992,
+      "original_sha256": "211e039e86583d5d923b36b17a4e92ed321775313dc2a742b77b0c3386c7b7e7",
+      "stored_sha256": "211e039e86583d5d923b36b17a4e92ed321775313dc2a742b77b0c3386c7b7e7"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation/settings-write/report.json",
+      "path": "validation/validation/settings-write/report.json",
+      "encoding": "identity",
+      "original_bytes": 1391,
+      "stored_bytes": 1391,
+      "original_sha256": "8e06a1e8e8fce87da5bf03f5ff31681014c28f1be1cff7674a3f867ab5ab4764",
+      "stored_sha256": "8e06a1e8e8fce87da5bf03f5ff31681014c28f1be1cff7674a3f867ab5ab4764"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation/source-check.json",
+      "path": "validation/validation/source-check.json",
+      "encoding": "identity",
+      "original_bytes": 281980,
+      "stored_bytes": 281980,
+      "original_sha256": "4df5159ad6e0d0c809c5e321783bc2ce8b12c3b75709c2990aea7e2c75c57765",
+      "stored_sha256": "4df5159ad6e0d0c809c5e321783bc2ce8b12c3b75709c2990aea7e2c75c57765"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation/upright-validation/upright-report.json",
+      "path": "validation/validation/upright-validation/upright-report.json",
+      "encoding": "identity",
+      "original_bytes": 193782,
+      "stored_bytes": 193782,
+      "original_sha256": "24c97bcf2523c99200fbbff46b6037053d910f4f225e8a00a5a657212e500333",
+      "stored_sha256": "24c97bcf2523c99200fbbff46b6037053d910f4f225e8a00a5a657212e500333"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation-camera/camera-suite.json",
+      "path": "validation/validation-camera/camera-suite.json",
+      "encoding": "identity",
+      "original_bytes": 1810,
+      "stored_bytes": 1810,
+      "original_sha256": "0ceca96baeb2da8f13d2eaf0afb9c3d1cfe5fc715e444d11bce15c14e281edb0",
+      "stored_sha256": "0ceca96baeb2da8f13d2eaf0afb9c3d1cfe5fc715e444d11bce15c14e281edb0"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation-camera/center-follow.json",
+      "path": "validation/validation-camera/center-follow.json",
+      "encoding": "identity",
+      "original_bytes": 530214,
+      "stored_bytes": 530214,
+      "original_sha256": "6b77bddf37c1a4d0eaeb4234a233d3505aa710cadcb43205dfb68a992a9c0ea8",
+      "stored_sha256": "6b77bddf37c1a4d0eaeb4234a233d3505aa710cadcb43205dfb68a992a9c0ea8"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation-camera/walkable-extent.json",
+      "path": "validation/validation-camera/walkable-extent.json",
+      "encoding": "identity",
+      "original_bytes": 120328,
+      "stored_bytes": 120328,
+      "original_sha256": "d8b1ddaae9fab6939faff6f0aefca02e90106f369aef4c3cd8158e48cb77038c",
+      "stored_sha256": "d8b1ddaae9fab6939faff6f0aefca02e90106f369aef4c3cd8158e48cb77038c"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation-regression/input-regression-report.json",
+      "path": "validation/validation-regression/input-regression-report.json",
+      "encoding": "identity",
+      "original_bytes": 14286,
+      "stored_bytes": 14286,
+      "original_sha256": "59c57e9c42506232bdae6f41d70015365296cca265e1096b08e6778979d9be9d",
+      "stored_sha256": "59c57e9c42506232bdae6f41d70015365296cca265e1096b08e6778979d9be9d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation-regression/regression/frontal/report.json",
+      "path": "validation/validation-regression/regression/frontal/report.json",
+      "encoding": "identity",
+      "original_bytes": 311880,
+      "stored_bytes": 311880,
+      "original_sha256": "610e04ba3b808aef7239306aa7e3605d86c14333ef67ed08e728185cf658ddd9",
+      "stored_sha256": "610e04ba3b808aef7239306aa7e3605d86c14333ef67ed08e728185cf658ddd9"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation-regression/regression/frontal/route-F.json",
+      "path": "validation/validation-regression/regression/frontal/route-F.json",
+      "encoding": "identity",
+      "original_bytes": 76053,
+      "stored_bytes": 76053,
+      "original_sha256": "0bc5d87141f9c4938b1111671e1f3691e81d7b79cf6a66c141c1b24942e1ce61",
+      "stored_sha256": "0bc5d87141f9c4938b1111671e1f3691e81d7b79cf6a66c141c1b24942e1ce61"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation-regression/regression/frontal/route-O.json",
+      "path": "validation/validation-regression/regression/frontal/route-O.json",
+      "encoding": "identity",
+      "original_bytes": 78433,
+      "stored_bytes": 78433,
+      "original_sha256": "0e550903141d9c1c8698bd3cb9c019bb3f06e10d2de42fb718bf5d77ee6a5818",
+      "stored_sha256": "0e550903141d9c1c8698bd3cb9c019bb3f06e10d2de42fb718bf5d77ee6a5818"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation-regression/regression/frontal/route-W.json",
+      "path": "validation/validation-regression/regression/frontal/route-W.json",
+      "encoding": "identity",
+      "original_bytes": 76062,
+      "stored_bytes": 76062,
+      "original_sha256": "bbdeb50dcf8ca98f62c300d5a17aae3f574abb892554d9234f351e6ebb47d216",
+      "stored_sha256": "bbdeb50dcf8ca98f62c300d5a17aae3f574abb892554d9234f351e6ebb47d216"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation-regression/regression/input-dispatch.json",
+      "path": "validation/validation-regression/regression/input-dispatch.json",
+      "encoding": "identity",
+      "original_bytes": 93663,
+      "stored_bytes": 93663,
+      "original_sha256": "6112d336f407aa351ca5315ec11d0ca36cf201e56794ff7be2d721698524aa2b",
+      "stored_sha256": "6112d336f407aa351ca5315ec11d0ca36cf201e56794ff7be2d721698524aa2b"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation-regression/regression/make-p8-headless.json",
+      "path": "validation/validation-regression/regression/make-p8-headless.json",
+      "encoding": "identity",
+      "original_bytes": 42512,
+      "stored_bytes": 42512,
+      "original_sha256": "c2e8c1465fceec77d31606219e7de5274267d38a08cebc9178b83d95ca7d2c65",
+      "stored_sha256": "c2e8c1465fceec77d31606219e7de5274267d38a08cebc9178b83d95ca7d2c65"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation-regression/regression/make-p8-settings.json",
+      "path": "validation/validation-regression/regression/make-p8-settings.json",
+      "encoding": "identity",
+      "original_bytes": 1922,
+      "stored_bytes": 1922,
+      "original_sha256": "2b45e957e66605583840009c62c88f8446b98b86c373c224291ac7b3f180c669",
+      "stored_sha256": "2b45e957e66605583840009c62c88f8446b98b86c373c224291ac7b3f180c669"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation-regression/regression/p9/report.json",
+      "path": "validation/validation-regression/regression/p9/report.json",
+      "encoding": "identity",
+      "original_bytes": 17458,
+      "stored_bytes": 17458,
+      "original_sha256": "14a4d2e507de712861b6e755edd88e5607a1ece7308b870e2a6fcabb5868efc8",
+      "stored_sha256": "14a4d2e507de712861b6e755edd88e5607a1ece7308b870e2a6fcabb5868efc8"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/validation-regression/regression-suite.json",
+      "path": "validation/validation-regression/regression-suite.json",
+      "encoding": "identity",
+      "original_bytes": 10957,
+      "stored_bytes": 10957,
+      "original_sha256": "1e6a8c1ecb6c180048a80cbc7c801c916c54c22c3d8b835427fca508e5f84dc5",
+      "stored_sha256": "1e6a8c1ecb6c180048a80cbc7c801c916c54c22c3d8b835427fca508e5f84dc5"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/make-test-complete/report.json",
+      "path": "validation/make-test-complete/report.json",
+      "encoding": "identity",
+      "original_bytes": 438,
+      "stored_bytes": 438,
+      "original_sha256": "081b95ba783a6c8f19580459cb8079888fe19a118eba43b80b15091368a0432b",
+      "stored_sha256": "081b95ba783a6c8f19580459cb8079888fe19a118eba43b80b15091368a0432b"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/build/ancient-canal/baseline-route-proof/lighting-route-report.json",
+      "path": "validation/original-route/lighting-route-report.json",
+      "encoding": "identity",
+      "original_bytes": 1030599,
+      "stored_bytes": 1030599,
+      "original_sha256": "93dce2159b97b15402d6d227d1ecb7483de7ea33852bf816473fc01eaefea650",
+      "stored_sha256": "93dce2159b97b15402d6d227d1ecb7483de7ea33852bf816473fc01eaefea650"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/horizontal-capture.json",
+      "path": "render/horizontal-capture.json",
+      "encoding": "identity",
+      "original_bytes": 165264,
+      "stored_bytes": 165264,
+      "original_sha256": "cb63f0e7f0668e5d905d3dfada542a06abafc71a747a71e35b12d1bc3eade016",
+      "stored_sha256": "cb63f0e7f0668e5d905d3dfada542a06abafc71a747a71e35b12d1bc3eade016"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/day-F.png",
+      "path": "render/day-F.png",
+      "encoding": "identity",
+      "original_bytes": 1717722,
+      "stored_bytes": 1717722,
+      "original_sha256": "dc5c8341c7aa2a853da2188399525678e4aec2e8d5d500db745b3f95a61421b6",
+      "stored_sha256": "dc5c8341c7aa2a853da2188399525678e4aec2e8d5d500db745b3f95a61421b6"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/day-W.png",
+      "path": "render/day-W.png",
+      "encoding": "identity",
+      "original_bytes": 1626997,
+      "stored_bytes": 1626997,
+      "original_sha256": "703d455d50400f19c664040d30a55b5dcb0e3ddc537ada94f1b8e641dd5b61f0",
+      "stored_sha256": "703d455d50400f19c664040d30a55b5dcb0e3ddc537ada94f1b8e641dd5b61f0"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dusk-F.png",
+      "path": "render/dusk-F.png",
+      "encoding": "identity",
+      "original_bytes": 1617462,
+      "stored_bytes": 1617462,
+      "original_sha256": "27c13bd06f613e08fe4dd8dd09fb4d5d566a45ce487e57b94d548085cab3a34c",
+      "stored_sha256": "27c13bd06f613e08fe4dd8dd09fb4d5d566a45ce487e57b94d548085cab3a34c"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dusk-W.png",
+      "path": "render/dusk-W.png",
+      "encoding": "identity",
+      "original_bytes": 1517210,
+      "stored_bytes": 1517210,
+      "original_sha256": "eb7c4e46097e6c82951e68150cf82daf057408e53d0644abbcdf5daf807674f6",
+      "stored_sha256": "eb7c4e46097e6c82951e68150cf82daf057408e53d0644abbcdf5daf807674f6"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/night-F.png",
+      "path": "render/night-F.png",
+      "encoding": "identity",
+      "original_bytes": 1393770,
+      "stored_bytes": 1393770,
+      "original_sha256": "2e00e08e5b864893dc682b1af62ef3eb9fd02a53f1d512b2665e6b44dcae24c7",
+      "stored_sha256": "2e00e08e5b864893dc682b1af62ef3eb9fd02a53f1d512b2665e6b44dcae24c7"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/night-W.png",
+      "path": "render/night-W.png",
+      "encoding": "identity",
+      "original_bytes": 1379519,
+      "stored_bytes": 1379519,
+      "original_sha256": "59a18654372eb6e5efd7f5e3f26ef2ab2359a414aa2cd95cf0818c3127435e02",
+      "stored_sha256": "59a18654372eb6e5efd7f5e3f26ef2ab2359a414aa2cd95cf0818c3127435e02"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/night-still-a.png",
+      "path": "render/night-still-a.png",
+      "encoding": "identity",
+      "original_bytes": 1393770,
+      "stored_bytes": 1393770,
+      "original_sha256": "2e00e08e5b864893dc682b1af62ef3eb9fd02a53f1d512b2665e6b44dcae24c7",
+      "stored_sha256": "2e00e08e5b864893dc682b1af62ef3eb9fd02a53f1d512b2665e6b44dcae24c7"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/night-still-b.png",
+      "path": "render/night-still-b.png",
+      "encoding": "identity",
+      "original_bytes": 1393770,
+      "stored_bytes": 1393770,
+      "original_sha256": "2e00e08e5b864893dc682b1af62ef3eb9fd02a53f1d512b2665e6b44dcae24c7",
+      "stored_sha256": "2e00e08e5b864893dc682b1af62ef3eb9fd02a53f1d512b2665e6b44dcae24c7"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/night-no-dof.png",
+      "path": "render/night-no-dof.png",
+      "encoding": "identity",
+      "original_bytes": 1413572,
+      "stored_bytes": 1413572,
+      "original_sha256": "32dfa0fdecae2fd82d18628fefd2247996eca2b64b1769e4cb7cb6fddf75f743",
+      "stored_sha256": "32dfa0fdecae2fd82d18628fefd2247996eca2b64b1769e4cb7cb6fddf75f743"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/night-route-left.png",
+      "path": "render/night-route-left.png",
+      "encoding": "identity",
+      "original_bytes": 1412166,
+      "stored_bytes": 1412166,
+      "original_sha256": "6f1bd6c9fcf3ac9e734ac158beb2badd63ce426d9e3bd442bc0bb5a204117d9d",
+      "stored_sha256": "6f1bd6c9fcf3ac9e734ac158beb2badd63ce426d9e3bd442bc0bb5a204117d9d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/night-route-right.png",
+      "path": "render/night-route-right.png",
+      "encoding": "identity",
+      "original_bytes": 1377541,
+      "stored_bytes": 1377541,
+      "original_sha256": "f1ba25e83c323dbc9705230cb8cb4fec4676bee20228e39d6951e927cfd8c407",
+      "stored_sha256": "f1ba25e83c323dbc9705230cb8cb4fec4676bee20228e39d6951e927cfd8c407"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/npc-innkeeper.png",
+      "path": "render/npc-innkeeper.png",
+      "encoding": "identity",
+      "original_bytes": 1727574,
+      "stored_bytes": 1727574,
+      "original_sha256": "e6e1c08ae8ba3f80d6ae7bd8b11e88cfbe9fda61c26697f8f86047ae40e7b5b1",
+      "stored_sha256": "e6e1c08ae8ba3f80d6ae7bd8b11e88cfbe9fda61c26697f8f86047ae40e7b5b1"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/npc-vendor.png",
+      "path": "render/npc-vendor.png",
+      "encoding": "identity",
+      "original_bytes": 1550841,
+      "stored_bytes": 1550841,
+      "original_sha256": "a151de46fb18f1660cd82bdc6536bae213be0e9f1597baaef21d187ff52921b6",
+      "stored_sha256": "a151de46fb18f1660cd82bdc6536bae213be0e9f1597baaef21d187ff52921b6"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/npc-boatman.png",
+      "path": "render/npc-boatman.png",
+      "encoding": "identity",
+      "original_bytes": 1547897,
+      "stored_bytes": 1547897,
+      "original_sha256": "3c45050ea2d4fb08efe50c63794b674a3f677a06c6360adf76f46988dddf3129",
+      "stored_sha256": "3c45050ea2d4fb08efe50c63794b674a3f677a06c6360adf76f46988dddf3129"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/npc-food_vendor.png",
+      "path": "render/npc-food_vendor.png",
+      "encoding": "identity",
+      "original_bytes": 1666783,
+      "stored_bytes": 1666783,
+      "original_sha256": "d3ebbed3afd52f4abc344b089fde723c6f830f3cfee8c53adfae4afe43c79e78",
+      "stored_sha256": "d3ebbed3afd52f4abc344b089fde723c6f830f3cfee8c53adfae4afe43c79e78"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/npc-tea_guest.png",
+      "path": "render/npc-tea_guest.png",
+      "encoding": "identity",
+      "original_bytes": 1505580,
+      "stored_bytes": 1505580,
+      "original_sha256": "706cbf621003265f7078b4b74813d3c2dbca7c685b4fab795522b57850ab0f99",
+      "stored_sha256": "706cbf621003265f7078b4b74813d3c2dbca7c685b4fab795522b57850ab0f99"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-00.png",
+      "path": "render/dock-micro-F-00.png",
+      "encoding": "identity",
+      "original_bytes": 1787762,
+      "stored_bytes": 1787762,
+      "original_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7",
+      "stored_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-01.png",
+      "path": "render/dock-micro-F-01.png",
+      "encoding": "identity",
+      "original_bytes": 1788146,
+      "stored_bytes": 1788146,
+      "original_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3",
+      "stored_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-02.png",
+      "path": "render/dock-micro-F-02.png",
+      "encoding": "identity",
+      "original_bytes": 1787762,
+      "stored_bytes": 1787762,
+      "original_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7",
+      "stored_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-03.png",
+      "path": "render/dock-micro-F-03.png",
+      "encoding": "identity",
+      "original_bytes": 1788146,
+      "stored_bytes": 1788146,
+      "original_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3",
+      "stored_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-04.png",
+      "path": "render/dock-micro-F-04.png",
+      "encoding": "identity",
+      "original_bytes": 1787762,
+      "stored_bytes": 1787762,
+      "original_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7",
+      "stored_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-05.png",
+      "path": "render/dock-micro-F-05.png",
+      "encoding": "identity",
+      "original_bytes": 1788146,
+      "stored_bytes": 1788146,
+      "original_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3",
+      "stored_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-06.png",
+      "path": "render/dock-micro-F-06.png",
+      "encoding": "identity",
+      "original_bytes": 1787762,
+      "stored_bytes": 1787762,
+      "original_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7",
+      "stored_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-07.png",
+      "path": "render/dock-micro-F-07.png",
+      "encoding": "identity",
+      "original_bytes": 1788146,
+      "stored_bytes": 1788146,
+      "original_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3",
+      "stored_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-08.png",
+      "path": "render/dock-micro-F-08.png",
+      "encoding": "identity",
+      "original_bytes": 1787762,
+      "stored_bytes": 1787762,
+      "original_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7",
+      "stored_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-09.png",
+      "path": "render/dock-micro-F-09.png",
+      "encoding": "identity",
+      "original_bytes": 1788146,
+      "stored_bytes": 1788146,
+      "original_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3",
+      "stored_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-10.png",
+      "path": "render/dock-micro-F-10.png",
+      "encoding": "identity",
+      "original_bytes": 1787762,
+      "stored_bytes": 1787762,
+      "original_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7",
+      "stored_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-11.png",
+      "path": "render/dock-micro-F-11.png",
+      "encoding": "identity",
+      "original_bytes": 1788146,
+      "stored_bytes": 1788146,
+      "original_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3",
+      "stored_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-12.png",
+      "path": "render/dock-micro-F-12.png",
+      "encoding": "identity",
+      "original_bytes": 1787762,
+      "stored_bytes": 1787762,
+      "original_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7",
+      "stored_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-13.png",
+      "path": "render/dock-micro-F-13.png",
+      "encoding": "identity",
+      "original_bytes": 1788146,
+      "stored_bytes": 1788146,
+      "original_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3",
+      "stored_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-14.png",
+      "path": "render/dock-micro-F-14.png",
+      "encoding": "identity",
+      "original_bytes": 1787762,
+      "stored_bytes": 1787762,
+      "original_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7",
+      "stored_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-15.png",
+      "path": "render/dock-micro-F-15.png",
+      "encoding": "identity",
+      "original_bytes": 1788146,
+      "stored_bytes": 1788146,
+      "original_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3",
+      "stored_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-16.png",
+      "path": "render/dock-micro-F-16.png",
+      "encoding": "identity",
+      "original_bytes": 1787762,
+      "stored_bytes": 1787762,
+      "original_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7",
+      "stored_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-17.png",
+      "path": "render/dock-micro-F-17.png",
+      "encoding": "identity",
+      "original_bytes": 1788146,
+      "stored_bytes": 1788146,
+      "original_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3",
+      "stored_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-18.png",
+      "path": "render/dock-micro-F-18.png",
+      "encoding": "identity",
+      "original_bytes": 1787762,
+      "stored_bytes": 1787762,
+      "original_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7",
+      "stored_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-19.png",
+      "path": "render/dock-micro-F-19.png",
+      "encoding": "identity",
+      "original_bytes": 1788146,
+      "stored_bytes": 1788146,
+      "original_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3",
+      "stored_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-20.png",
+      "path": "render/dock-micro-F-20.png",
+      "encoding": "identity",
+      "original_bytes": 1787762,
+      "stored_bytes": 1787762,
+      "original_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7",
+      "stored_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-21.png",
+      "path": "render/dock-micro-F-21.png",
+      "encoding": "identity",
+      "original_bytes": 1788146,
+      "stored_bytes": 1788146,
+      "original_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3",
+      "stored_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-22.png",
+      "path": "render/dock-micro-F-22.png",
+      "encoding": "identity",
+      "original_bytes": 1787762,
+      "stored_bytes": 1787762,
+      "original_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7",
+      "stored_sha256": "657afd82db4c41ecc7db78723072b5b5f88dc0e705a8945bb41f6a491c9f18d7"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-F-23.png",
+      "path": "render/dock-micro-F-23.png",
+      "encoding": "identity",
+      "original_bytes": 1788146,
+      "stored_bytes": 1788146,
+      "original_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3",
+      "stored_sha256": "6dc77716907aa9ff104d661ff1d22e8dda2da28d19e86b1d73a64cd2716962c3"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-00.png",
+      "path": "render/dock-micro-W-00.png",
+      "encoding": "identity",
+      "original_bytes": 1753062,
+      "stored_bytes": 1753062,
+      "original_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57",
+      "stored_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-01.png",
+      "path": "render/dock-micro-W-01.png",
+      "encoding": "identity",
+      "original_bytes": 1754425,
+      "stored_bytes": 1754425,
+      "original_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8",
+      "stored_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-02.png",
+      "path": "render/dock-micro-W-02.png",
+      "encoding": "identity",
+      "original_bytes": 1753062,
+      "stored_bytes": 1753062,
+      "original_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57",
+      "stored_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-03.png",
+      "path": "render/dock-micro-W-03.png",
+      "encoding": "identity",
+      "original_bytes": 1754425,
+      "stored_bytes": 1754425,
+      "original_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8",
+      "stored_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-04.png",
+      "path": "render/dock-micro-W-04.png",
+      "encoding": "identity",
+      "original_bytes": 1753062,
+      "stored_bytes": 1753062,
+      "original_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57",
+      "stored_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-05.png",
+      "path": "render/dock-micro-W-05.png",
+      "encoding": "identity",
+      "original_bytes": 1754425,
+      "stored_bytes": 1754425,
+      "original_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8",
+      "stored_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-06.png",
+      "path": "render/dock-micro-W-06.png",
+      "encoding": "identity",
+      "original_bytes": 1753062,
+      "stored_bytes": 1753062,
+      "original_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57",
+      "stored_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-07.png",
+      "path": "render/dock-micro-W-07.png",
+      "encoding": "identity",
+      "original_bytes": 1754425,
+      "stored_bytes": 1754425,
+      "original_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8",
+      "stored_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-08.png",
+      "path": "render/dock-micro-W-08.png",
+      "encoding": "identity",
+      "original_bytes": 1753062,
+      "stored_bytes": 1753062,
+      "original_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57",
+      "stored_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-09.png",
+      "path": "render/dock-micro-W-09.png",
+      "encoding": "identity",
+      "original_bytes": 1754425,
+      "stored_bytes": 1754425,
+      "original_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8",
+      "stored_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-10.png",
+      "path": "render/dock-micro-W-10.png",
+      "encoding": "identity",
+      "original_bytes": 1753062,
+      "stored_bytes": 1753062,
+      "original_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57",
+      "stored_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-11.png",
+      "path": "render/dock-micro-W-11.png",
+      "encoding": "identity",
+      "original_bytes": 1754425,
+      "stored_bytes": 1754425,
+      "original_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8",
+      "stored_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-12.png",
+      "path": "render/dock-micro-W-12.png",
+      "encoding": "identity",
+      "original_bytes": 1753062,
+      "stored_bytes": 1753062,
+      "original_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57",
+      "stored_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-13.png",
+      "path": "render/dock-micro-W-13.png",
+      "encoding": "identity",
+      "original_bytes": 1754425,
+      "stored_bytes": 1754425,
+      "original_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8",
+      "stored_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-14.png",
+      "path": "render/dock-micro-W-14.png",
+      "encoding": "identity",
+      "original_bytes": 1753062,
+      "stored_bytes": 1753062,
+      "original_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57",
+      "stored_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-15.png",
+      "path": "render/dock-micro-W-15.png",
+      "encoding": "identity",
+      "original_bytes": 1754425,
+      "stored_bytes": 1754425,
+      "original_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8",
+      "stored_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-16.png",
+      "path": "render/dock-micro-W-16.png",
+      "encoding": "identity",
+      "original_bytes": 1753062,
+      "stored_bytes": 1753062,
+      "original_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57",
+      "stored_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-17.png",
+      "path": "render/dock-micro-W-17.png",
+      "encoding": "identity",
+      "original_bytes": 1754425,
+      "stored_bytes": 1754425,
+      "original_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8",
+      "stored_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-18.png",
+      "path": "render/dock-micro-W-18.png",
+      "encoding": "identity",
+      "original_bytes": 1753062,
+      "stored_bytes": 1753062,
+      "original_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57",
+      "stored_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-19.png",
+      "path": "render/dock-micro-W-19.png",
+      "encoding": "identity",
+      "original_bytes": 1754425,
+      "stored_bytes": 1754425,
+      "original_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8",
+      "stored_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-20.png",
+      "path": "render/dock-micro-W-20.png",
+      "encoding": "identity",
+      "original_bytes": 1753062,
+      "stored_bytes": 1753062,
+      "original_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57",
+      "stored_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-21.png",
+      "path": "render/dock-micro-W-21.png",
+      "encoding": "identity",
+      "original_bytes": 1754425,
+      "stored_bytes": 1754425,
+      "original_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8",
+      "stored_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-22.png",
+      "path": "render/dock-micro-W-22.png",
+      "encoding": "identity",
+      "original_bytes": 1753062,
+      "stored_bytes": 1753062,
+      "original_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57",
+      "stored_sha256": "99a84dc477fa1e907e68529f3ea93d34ba8067696450e97839ebe0ba8a1eea57"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-micro-W-23.png",
+      "path": "render/dock-micro-W-23.png",
+      "encoding": "identity",
+      "original_bytes": 1754425,
+      "stored_bytes": 1754425,
+      "original_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8",
+      "stored_sha256": "f7055bb6e5c4e3cb16b6b344bff4793d9b7007871cd98b8eef580037878503a8"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/dock-stability-summary.json",
+      "path": "render/dock-stability-summary.json",
+      "encoding": "identity",
+      "original_bytes": 962,
+      "stored_bytes": 962,
+      "original_sha256": "9020548fe5ef686444fd25ee884b07b37ab26c43a6b992b5a50753b1459e6c2b",
+      "stored_sha256": "9020548fe5ef686444fd25ee884b07b37ab26c43a6b992b5a50753b1459e6c2b"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/route.mp4",
+      "path": "render/route.mp4",
+      "encoding": "identity",
+      "original_bytes": 40789465,
+      "stored_bytes": 40789465,
+      "original_sha256": "12c8ef405508e7c63e8e1d6f875a7628de1673862a3317d50f1012b1aa496e3b",
+      "stored_sha256": "12c8ef405508e7c63e8e1d6f875a7628de1673862a3317d50f1012b1aa496e3b"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/night.mp4",
+      "path": "render/night.mp4",
+      "encoding": "identity",
+      "original_bytes": 5161707,
+      "stored_bytes": 5161707,
+      "original_sha256": "d159572e27db794bba5d8c23a27b0bc590926a8e2aefd1e3ad407cda5a8799a1",
+      "stored_sha256": "d159572e27db794bba5d8c23a27b0bc590926a8e2aefd1e3ad407cda5a8799a1"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/route-video.json",
+      "path": "render/route-video.json",
+      "encoding": "identity",
+      "original_bytes": 282,
+      "stored_bytes": 282,
+      "original_sha256": "d1c219aba317d75969011a3cad4d23b847386fc7c0c6c754a4ba939d6c91a49a",
+      "stored_sha256": "d1c219aba317d75969011a3cad4d23b847386fc7c0c6c754a4ba939d6c91a49a"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/night-video.json",
+      "path": "render/night-video.json",
+      "encoding": "identity",
+      "original_bytes": 276,
+      "stored_bytes": 276,
+      "original_sha256": "db3cfbc9da4069724bb03870645a44ba5acb34c30e6127ec61fc527f06b17d09",
+      "stored_sha256": "db3cfbc9da4069724bb03870645a44ba5acb34c30e6127ec61fc527f06b17d09"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/visual-review.json",
+      "path": "render/visual-review.json",
+      "encoding": "identity",
+      "original_bytes": 1746,
+      "stored_bytes": 1746,
+      "original_sha256": "f51fd6b021e62f502691e4ec99f6338d124c42420f9e1d9fd5facc2b90cf076d",
+      "stored_sha256": "f51fd6b021e62f502691e4ec99f6338d124c42420f9e1d9fd5facc2b90cf076d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/route-contact.png",
+      "path": "render/route-contact.png",
+      "encoding": "identity",
+      "original_bytes": 1544192,
+      "stored_bytes": 1544192,
+      "original_sha256": "2c381999d2cc2ee078265490f1ffc81deca86db9324df2a1b1a2c0865dd70c1d",
+      "stored_sha256": "2c381999d2cc2ee078265490f1ffc81deca86db9324df2a1b1a2c0865dd70c1d"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/night-contact.png",
+      "path": "render/night-contact.png",
+      "encoding": "identity",
+      "original_bytes": 658909,
+      "stored_bytes": 658909,
+      "original_sha256": "8611a4e234f37e00e2b44b60efd8326d54ebc39cbbb72aa47ad6b8d53cd071cf",
+      "stored_sha256": "8611a4e234f37e00e2b44b60efd8326d54ebc39cbbb72aa47ad6b8d53cd071cf"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/accepted-render-v2/npc-contact.png",
+      "path": "render/npc-contact.png",
+      "encoding": "identity",
+      "original_bytes": 791930,
+      "stored_bytes": 791930,
+      "original_sha256": "69a4e94acc8d81d986b686d0a55ea046d591d91c236e5664498d044fa1171b85",
+      "stored_sha256": "69a4e94acc8d81d986b686d0a55ea046d591d91c236e5664498d044fa1171b85"
+    },
+    {
+      "source": "tools/ancient_canal/profile.py",
+      "path": "sources/profile.py",
+      "encoding": "identity",
+      "original_bytes": 18173,
+      "stored_bytes": 18173,
+      "original_sha256": "47985f2edc7f94a4f2ed4b11065a74d5f6061dbc60b11b8e7393a4d3edb4fbdf",
+      "stored_sha256": "47985f2edc7f94a4f2ed4b11065a74d5f6061dbc60b11b8e7393a4d3edb4fbdf"
+    },
+    {
+      "source": "tools/ancient_canal/benchmark.gd",
+      "path": "sources/benchmark.gd.txt",
+      "encoding": "identity",
+      "original_bytes": 22005,
+      "stored_bytes": 22005,
+      "original_sha256": "30bfb1d7c8169baa49d7ba1371b9b720bd1acb9e17d06fe91ac28a0cd0071e1d",
+      "stored_sha256": "30bfb1d7c8169baa49d7ba1371b9b720bd1acb9e17d06fe91ac28a0cd0071e1d"
+    },
+    {
+      "source": "tools/ancient_canal/measure_horizontal.py",
+      "path": "sources/measure_horizontal.py",
+      "encoding": "identity",
+      "original_bytes": 3194,
+      "stored_bytes": 3194,
+      "original_sha256": "cde749463d4a54d3a6be488de99a7cd1e9ccd4ca55fd8793a575882811649e9d",
+      "stored_sha256": "cde749463d4a54d3a6be488de99a7cd1e9ccd4ca55fd8793a575882811649e9d"
+    },
+    {
+      "source": "tools/ancient_canal/capture_horizontal.gd",
+      "path": "sources/capture_horizontal.gd.txt",
+      "encoding": "identity",
+      "original_bytes": 8080,
+      "stored_bytes": 8080,
+      "original_sha256": "33e88cff0702cdbd8d50882a7bd532cf79b7822b0008c5e7895a61e3e0ba1786",
+      "stored_sha256": "33e88cff0702cdbd8d50882a7bd532cf79b7822b0008c5e7895a61e3e0ba1786"
+    },
+    {
+      "source": "tools/ancient_canal/archive_horizontal.py",
+      "path": "sources/archive_horizontal.py",
+      "encoding": "identity",
+      "original_bytes": 17913,
+      "stored_bytes": 17913,
+      "original_sha256": "6a28649e5a39cc617e4dfd709e21487bcdc6b2097fd021ea72a9ae444573051c",
+      "stored_sha256": "6a28649e5a39cc617e4dfd709e21487bcdc6b2097fd021ea72a9ae444573051c"
+    },
+    {
+      "source": "tools/ancient_canal/build_scenery.py",
+      "path": "sources/build_scenery.py",
+      "encoding": "identity",
+      "original_bytes": 5592,
+      "stored_bytes": 5592,
+      "original_sha256": "716d720ebb6c97f35f74992e99aadbd077121895593f2232545e338b05cf98b2",
+      "stored_sha256": "716d720ebb6c97f35f74992e99aadbd077121895593f2232545e338b05cf98b2"
+    },
+    {
+      "source": "tools/ancient_canal/build_low_bridge.py",
+      "path": "sources/build_low_bridge.py",
+      "encoding": "identity",
+      "original_bytes": 1220,
+      "stored_bytes": 1220,
+      "original_sha256": "ba5ce1054ad65ef5792fa6ef03987a7b181e5c9f117b25d65209c6afe21b4a65",
+      "stored_sha256": "ba5ce1054ad65ef5792fa6ef03987a7b181e5c9f117b25d65209c6afe21b4a65"
+    },
+    {
+      "source": "tools/ancient_canal/build_extra_npcs.py",
+      "path": "sources/build_extra_npcs.py",
+      "encoding": "identity",
+      "original_bytes": 2443,
+      "stored_bytes": 2443,
+      "original_sha256": "05fa8438afffadfb8e0d62e5909b10c383a81a1ca87292f62bdf3b47c4d14a41",
+      "stored_sha256": "05fa8438afffadfb8e0d62e5909b10c383a81a1ca87292f62bdf3b47c4d14a41"
+    },
+    {
+      "source": "tools/ancient_canal/review_horizontal.py",
+      "path": "sources/review_horizontal.py",
+      "encoding": "identity",
+      "original_bytes": 3440,
+      "stored_bytes": 3440,
+      "original_sha256": "761de9b440268bf3e21e7137aeed08c223ceab2a30072c0edbc80c1d293bf37f",
+      "stored_sha256": "761de9b440268bf3e21e7137aeed08c223ceab2a30072c0edbc80c1d293bf37f"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/tools/ancient_canal/profile.py",
+      "path": "sources/original/profile.py",
+      "encoding": "identity",
+      "original_bytes": 15808,
+      "stored_bytes": 15808,
+      "original_sha256": "520df36f9c3a4dba78da718a01ca9319f0fdfbdde8288dec28cf9f6aba2d783a",
+      "stored_sha256": "520df36f9c3a4dba78da718a01ca9319f0fdfbdde8288dec28cf9f6aba2d783a"
+    },
+    {
+      "source": "build/ancient-canal/horizontal-night-20261008/original/tools/ancient_canal/benchmark.gd",
+      "path": "sources/original/benchmark.gd.txt",
+      "encoding": "identity",
+      "original_bytes": 22005,
+      "stored_bytes": 22005,
+      "original_sha256": "30bfb1d7c8169baa49d7ba1371b9b720bd1acb9e17d06fe91ac28a0cd0071e1d",
+      "stored_sha256": "30bfb1d7c8169baa49d7ba1371b9b720bd1acb9e17d06fe91ac28a0cd0071e1d"
+    },
+    {
+      "source": "resources/ancient-canal/layout.json",
+      "path": "sources/resources/ancient-canal/layout.json",
+      "encoding": "identity",
+      "original_bytes": 9974,
+      "stored_bytes": 9974,
+      "original_sha256": "601cd2c8bf4c79b4b284f9d4e671b69d06ca77ff997ef8ac76182c260f073557",
+      "stored_sha256": "601cd2c8bf4c79b4b284f9d4e671b69d06ca77ff997ef8ac76182c260f073557"
+    },
+    {
+      "source": "scripts/ancient_canal/night_sky.gd",
+      "path": "sources/scripts/ancient_canal/night_sky.gd.txt",
+      "encoding": "identity",
+      "original_bytes": 2157,
+      "stored_bytes": 2157,
+      "original_sha256": "a72aa5164b4c063428f10a62717fc3bea0e92059b7a6a05e7f0604fbb2b27868",
+      "stored_sha256": "a72aa5164b4c063428f10a62717fc3bea0e92059b7a6a05e7f0604fbb2b27868"
+    },
+    {
+      "source": "scripts/ancient_canal/sky_focus.gd",
+      "path": "sources/scripts/ancient_canal/sky_focus.gd.txt",
+      "encoding": "identity",
+      "original_bytes": 3052,
+      "stored_bytes": 3052,
+      "original_sha256": "9fc8eb0e6f0144542d25db21ba19a949432e37ca9b91101f53e476d27c0c9ef0",
+      "stored_sha256": "9fc8eb0e6f0144542d25db21ba19a949432e37ca9b91101f53e476d27c0c9ef0"
+    },
+    {
+      "source": "shaders/ancient_canal/night_sky.gdshader",
+      "path": "sources/shaders/ancient_canal/night_sky.gdshader.txt",
+      "encoding": "identity",
+      "original_bytes": 487,
+      "stored_bytes": 487,
+      "original_sha256": "2e296a34461f7154663b01ec192efff13c60f6ebaa7cb3d2133a21076d09b24a",
+      "stored_sha256": "2e296a34461f7154663b01ec192efff13c60f6ebaa7cb3d2133a21076d09b24a"
+    },
+    {
+      "source": "art_source/ancient-canal/scenery/recipe.json",
+      "path": "sources/art_source/ancient-canal/scenery/recipe.json",
+      "encoding": "identity",
+      "original_bytes": 981,
+      "stored_bytes": 981,
+      "original_sha256": "8b4b72137c158cf5a22f7d6a47a9ebc9c6bef0a5daacb2129d3b902403fae1e3",
+      "stored_sha256": "8b4b72137c158cf5a22f7d6a47a9ebc9c6bef0a5daacb2129d3b902403fae1e3"
+    },
+    {
+      "source": "art_source/ancient-canal/blender/low-bridge/recipe.json",
+      "path": "sources/art_source/ancient-canal/blender/low-bridge/recipe.json",
+      "encoding": "identity",
+      "original_bytes": 946,
+      "stored_bytes": 946,
+      "original_sha256": "b4be274acf5a4c4c5af0f94980f059cfaf7f8aaf2385bde37e9f85daa88698d3",
+      "stored_sha256": "b4be274acf5a4c4c5af0f94980f059cfaf7f8aaf2385bde37e9f85daa88698d3"
+    },
+    {
+      "source": "docs/ancient-canal/horizontal-night-20261008/source-fingerprint.json",
+      "path": "source-fingerprint.json",
+      "encoding": "identity",
+      "original_bytes": 179634,
+      "stored_bytes": 179634,
+      "original_sha256": "ebcc21f6257ef9961c5d380edc27310614e8efbf258014185abd751c4306a822",
+      "stored_sha256": "ebcc21f6257ef9961c5d380edc27310614e8efbf258014185abd751c4306a822"
+    }
+  ],
+  "policy": "Original bytes and stored bytes are checked independently. Runtime caches, preferences and local process logs are excluded. PNG sequences remain ignored; frame hashes, timestamps and encoded videos are retained."
+}

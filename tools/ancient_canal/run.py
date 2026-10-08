@@ -36,9 +36,10 @@ def main():
         subprocess.run(base+['res://scenes/ancient_canal.tscn'],cwd=ROOT,env=desktop_environment(),check=True)
     elif action=='headless':
         run(base+['--headless','--fixed-fps','60','--script','res://tests/ancient_canal/validation.gd','--','--ignore-user-settings'],'headless')
-    elif action in ('calibration','normals','route','benchmark','upright','dock-stability'):
-        scripts={'calibration':'tests/ancient_canal/calibration.gd','normals':'tools/ancient_canal/capture_normals.gd','route':'tools/ancient_canal/capture_route.gd','benchmark':'tools/ancient_canal/benchmark.gd','upright':'tests/ancient_canal/upright_validation.gd','dock-stability':'tools/ancient_canal/capture_dock_stability.gd'}
+    elif action in ('calibration','normals','route','benchmark','upright','dock-stability','horizontal'):
+        scripts={'calibration':'tests/ancient_canal/calibration.gd','normals':'tools/ancient_canal/capture_normals.gd','route':'tools/ancient_canal/capture_route.gd','benchmark':'tools/ancient_canal/benchmark.gd','upright':'tests/ancient_canal/upright_validation.gd','dock-stability':'tools/ancient_canal/capture_dock_stability.gd','horizontal':'tools/ancient_canal/capture_horizontal.gd'}
         extra=['--upright-gpu','--upright-output=res://build/ancient-canal/upright-validation-gpu'] if action=='upright' else []
+        if action=='horizontal': extra=['--canal-output=res://build/ancient-canal/horizontal-night-20261008/render']+sys.argv[2:]
         run(base+['--display-driver','x11','--position','10000,10000','--audio-driver','Dummy','--disable-render-loop','--script','res://'+scripts[action],'--','--ignore-user-settings','--canal-fingerprint='+fingerprint(ROOT)['sha256']]+extra,action,True,timeout=900)
     else: raise SystemExit('Unknown action '+action)
 

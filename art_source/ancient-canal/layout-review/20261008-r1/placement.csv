@@ -1,0 +1,8 @@
+id,asset,label,x_m,y_m,z_m,yaw_deg
+H1,house,民居一,-19,0,-11,0
+T1,tavern,桥头酒肆,-9.5,0,-10,0
+H2,house,民居二,7.8,0,-10.8,0
+H3,house,民居三,17.8,0,-11.8,0
+S1,cloth_stall,布摊,-16.5,0,-5.7,0
+S2,food_stall,食摊,11.8,0,-5.7,0
+S3,food_stall,茶摊,21.2,0,-5.7,0

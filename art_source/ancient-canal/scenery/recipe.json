@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "seed": 20261008,
+  "generator": "tools/ancient_canal/build_scenery.py",
+  "source_type": "original deterministic procedural pixel art",
+  "willow": {
+    "pivot": [
+      96,
+      248
+    ],
+    "world_height": 6.4,
+    "sampling": "nearest with mipmaps, alpha discard, fixed Y billboard"
+  },
+  "sky": {
+    "size": [
+      4096,
+      2048
+    ],
+    "stars": 18000,
+    "moon_azimuth_deg": 15,
+    "moon_elevation_deg": 2.5,
+    "moon_diameter_deg": 0.75,
+    "runtime": "one static RGB panorama, no temporal noise"
+  },
+  "outputs": [
+    {
+      "path": "assets/ancient-canal/scenery/willow.png",
+      "size": [
+        192,
+        256
+      ],
+      "sha256": "2d76b5e25f3afdf07951263435828d37a1229319fa6b0dfbab639af1bc63c523"
+    },
+    {
+      "path": "assets/ancient-canal/scenery/night-panorama.png",
+      "size": [
+        4096,
+        2048
+      ],
+      "sha256": "2f4dc120c75d21a51b467ff2c9b9f7700f8f491246bcdf4056eaf667b7911a8a"
+    }
+  ]
+}

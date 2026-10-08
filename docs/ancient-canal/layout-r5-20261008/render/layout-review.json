@@ -1,0 +1,140 @@
+{
+  "passed": true,
+  "runtime_fingerprint": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "dock_micro": [
+    {
+      "lens": "F",
+      "metrics": {
+        "pixel_count": 154,
+        "pair_count": 23,
+        "mean_step_255": 0.18238283455674761,
+        "p99_step_255": 3.0,
+        "max_step_255": 4,
+        "fraction_above_16": 0.0,
+        "max_pair_fraction_above_16": 0.0,
+        "pair_fractions_above_16": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fraction_range_above_32": 0.0
+      },
+      "passed": true
+    },
+    {
+      "lens": "W",
+      "metrics": {
+        "pixel_count": 128,
+        "pair_count": 23,
+        "mean_step_255": 0.0546875,
+        "p99_step_255": 1.0,
+        "max_step_255": 2,
+        "fraction_above_16": 0.0,
+        "max_pair_fraction_above_16": 0.0,
+        "pair_fractions_above_16": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fraction_range_above_32": 0.0
+      },
+      "passed": true
+    }
+  ],
+  "criterion": {
+    "delta_255": 16,
+    "max_fraction": 0.01,
+    "camera_offset_m": 0.0005
+  },
+  "static_sky_top_30_rows_max_delta_255": 0,
+  "videos": [
+    {
+      "path": "layout-r5-20261008/render-v2/route.mp4",
+      "sha256": "e2fd4e9e0ef6aa2f8ad691a71f8869c12d4bdd35e9b8fdcbfe12247a5f89b0ab",
+      "scope": "Actual R5 GPU route with observed wall timing",
+      "coverage": [
+        "route"
+      ],
+      "viewport": [
+        1920,
+        1080
+      ],
+      "codec": "h264",
+      "time_base": "1/1000",
+      "duration_s": 69.46,
+      "frame_count": 582,
+      "timing_exact_ms": true,
+      "timing_report": "layout-r5-20261008/render-v2/route-timing.json",
+      "timing_report_sha256": "1e68f90ab78842cbb145ac9f6c484d0255c439f901388dc8560f6e0e920b3888",
+      "concat_source": "layout-r5-20261008/render-v2/route.ffconcat",
+      "concat_source_sha256": "fb48860d5cb36d1bc6667cc54d51f03496dc6872a63bebd71148b2676d00cbba",
+      "source_report": "layout-r5-20261008/render-v2/horizontal-capture.json",
+      "source_report_sha256": "42c63ba95d0e89d03b3251f484ff0e186114d7eb87ec5c8279bd7db09afda9a3"
+    },
+    {
+      "path": "layout-r5-20261008/render-v2/night.mp4",
+      "sha256": "2f7d1cc7d606fc954fb3c9fedc112b5b3fb31abd3057f6a48db9ac3441ac874c",
+      "scope": "Actual R5 GPU route with observed wall timing",
+      "coverage": [
+        "night"
+      ],
+      "viewport": [
+        1920,
+        1080
+      ],
+      "codec": "h264",
+      "time_base": "1/1000",
+      "duration_s": 8.495,
+      "frame_count": 71,
+      "timing_exact_ms": true,
+      "timing_report": "layout-r5-20261008/render-v2/night-timing.json",
+      "timing_report_sha256": "8313d37b5447a3d946086da3d9afb082fd773e8ed8628383d381c10d11f79cc2",
+      "concat_source": "layout-r5-20261008/render-v2/night.ffconcat",
+      "concat_source_sha256": "502294a35951043654c28551e9ec07768d7db0c210aa1949f0805786ce85f70b",
+      "source_report": "layout-r5-20261008/render-v2/horizontal-capture.json",
+      "source_report_sha256": "42c63ba95d0e89d03b3251f484ff0e186114d7eb87ec5c8279bd7db09afda9a3"
+    }
+  ],
+  "visual_notes": "Actual top view shows vertical billboard trees edge-on. Side view projects objects at different X together. Original default F/W framing gives a narrow sky strip; clouds can partly cover the small crescent. Contact sheets cover the entire new route.",
+  "source_pngs_unmodified": true
+}

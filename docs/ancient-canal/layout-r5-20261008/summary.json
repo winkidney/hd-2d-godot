@@ -1,0 +1,6540 @@
+{
+  "passed": true,
+  "runtime_fingerprint": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "archive_records": 153,
+  "validation": {
+    "final-validation-v2": {
+      "passed": true,
+      "processes": 12
+    },
+    "camera-validation-v2": {
+      "passed": true,
+      "processes": 2
+    },
+    "input-regression-v2": {
+      "passed": true,
+      "processes": 7
+    },
+    "make-test-final": {
+      "passed": true,
+      "processes": 1
+    }
+  },
+  "cases": [
+    {
+      "run": "gpu-r1",
+      "case": "baseline/night",
+      "metrics": {
+        "gpu": {
+          "sample_count": 16628,
+          "mean_ms": 1.7165607419586364,
+          "p50_ms": 1.66600000858307,
+          "p95_ms": 2.02300000190735,
+          "p99_ms": 2.1827300429344207
+        },
+        "cpu": {
+          "sample_count": 16628,
+          "mean_ms": 0.28433197002704685,
+          "p50_ms": 0.264999985694885,
+          "p95_ms": 0.49099999666214,
+          "p99_ms": 0.5827300077676766
+        },
+        "wall": {
+          "sample_count": 16628,
+          "mean_ms": 1.804250360837142,
+          "p50_ms": 1.729,
+          "p95_ms": 2.2526499999999996,
+          "p99_ms": 2.45
+        }
+      },
+      "route_extent_xyz_m": [
+        [
+          -9.48001861572266,
+          23.2799797058105
+        ],
+        [
+          -0.000134262372739613,
+          0.60029536485672
+        ],
+        [
+          -4.77899742126465,
+          8.5
+        ]
+      ],
+      "completed_routes": 0,
+      "gpu_stages": [
+        {
+          "name": "Depth of Field",
+          "samples": 1662,
+          "max_gpu_ms": 1.29024,
+          "max_cpu_ms": 0.043,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.5084973092659446,
+            "p50_ms": 0.482304,
+            "p95_ms": 0.7382559999999998,
+            "p99_ms": 0.8801715199999999
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0025150421179302045,
+            "p50_ms": 0.002,
+            "p95_ms": 0.003,
+            "p99_ms": 0.004
+          }
+        },
+        {
+          "name": "Render Opaque Pass",
+          "samples": 1662,
+          "max_gpu_ms": 0.68608,
+          "max_cpu_ms": 0.069,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.3475666714801444,
+            "p50_ms": 0.34304,
+            "p95_ms": 0.393216,
+            "p99_ms": 0.39936
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.028095066185318894,
+            "p50_ms": 0.028,
+            "p95_ms": 0.035,
+            "p99_ms": 0.049
+          }
+        },
+        {
+          "name": "Process SSR",
+          "samples": 1662,
+          "max_gpu_ms": 0.591104,
+          "max_cpu_ms": 0.03,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.144996678700361,
+            "p50_ms": 0.144384,
+            "p95_ms": 0.149504,
+            "p99_ms": 0.15821823999999884
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.013209987966305656,
+            "p50_ms": 0.013,
+            "p95_ms": 0.016,
+            "p99_ms": 0.02
+          }
+        },
+        {
+          "name": "Render Depth Pre-Pass",
+          "samples": 1662,
+          "max_gpu_ms": 0.158176,
+          "max_cpu_ms": 0.219,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.11547509987966306,
+            "p50_ms": 0.114736,
+            "p95_ms": 0.128096,
+            "p99_ms": 0.14087935999999987
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.03182310469314079,
+            "p50_ms": 0.031,
+            "p95_ms": 0.039,
+            "p99_ms": 0.05038999999999987
+          }
+        },
+        {
+          "name": "Glow",
+          "samples": 1662,
+          "max_gpu_ms": 0.13504,
+          "max_cpu_ms": 0.01,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.09479969193742478,
+            "p50_ms": 0.094368,
+            "p95_ms": 0.096256,
+            "p99_ms": 0.099328
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.002451263537906137,
+            "p50_ms": 0.002,
+            "p95_ms": 0.003,
+            "p99_ms": 0.004
+          }
+        },
+        {
+          "name": "Render OmniLight Shadows",
+          "samples": 1047,
+          "max_gpu_ms": 0.218112,
+          "max_cpu_ms": 0.231,
+          "gpu": {
+            "sample_count": 1047,
+            "mean_ms": 0.09191451384909265,
+            "p50_ms": 0.069632,
+            "p95_ms": 0.175104,
+            "p99_ms": 0.21252095999999995
+          },
+          "cpu": {
+            "sample_count": 1047,
+            "mean_ms": 0.06782712511938872,
+            "p50_ms": 0.046,
+            "p95_ms": 0.151,
+            "p99_ms": 0.18453999999999995
+          }
+        },
+        {
+          "name": "Process SSAO",
+          "samples": 1662,
+          "max_gpu_ms": 0.123904,
+          "max_cpu_ms": 0.034,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.08499446450060169,
+            "p50_ms": 0.084992,
+            "p95_ms": 0.08704,
+            "p99_ms": 0.088064
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.008063778580024068,
+            "p50_ms": 0.008,
+            "p95_ms": 0.01,
+            "p99_ms": 0.013
+          }
+        },
+        {
+          "name": "Tonemap",
+          "samples": 1662,
+          "max_gpu_ms": 0.115712,
+          "max_cpu_ms": 0.011,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.07064702767749699,
+            "p50_ms": 0.074368,
+            "p95_ms": 0.0764464,
+            "p99_ms": 0.078848
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0028862815884476535,
+            "p50_ms": 0.003,
+            "p95_ms": 0.004,
+            "p99_ms": 0.005
+          }
+        },
+        {
+          "name": "Resolve",
+          "samples": 1662,
+          "max_gpu_ms": 0.4352,
+          "max_cpu_ms": 0.008,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0532174055354994,
+            "p50_ms": 0.049152,
+            "p95_ms": 0.054272,
+            "p99_ms": 0.19595263999999687
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0011395908543922985,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Render Directional/SpotLight Shadows",
+          "samples": 1662,
+          "max_gpu_ms": 0.285696,
+          "max_cpu_ms": 0.064,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.04202589651022864,
+            "p50_ms": 0.043008,
+            "p95_ms": 0.05632,
+            "p99_ms": 0.058368
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.030706979542719615,
+            "p50_ms": 0.03,
+            "p95_ms": 0.03994999999999982,
+            "p99_ms": 0.05
+          }
+        },
+        {
+          "name": "Resolve Depth Pre-Pass (MSAA)",
+          "samples": 1662,
+          "max_gpu_ms": 0.331776,
+          "max_cpu_ms": 0.009,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.030103605294825513,
+            "p50_ms": 0.029696,
+            "p95_ms": 0.03072,
+            "p99_ms": 0.03184
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0019320096269554753,
+            "p50_ms": 0.002,
+            "p95_ms": 0.002,
+            "p99_ms": 0.003
+          }
+        },
+        {
+          "name": "Process Post Transparent Compositor Effects",
+          "samples": 1662,
+          "max_gpu_ms": 0.428032,
+          "max_cpu_ms": 0.026,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.021235273164861613,
+            "p50_ms": 0.01872,
+            "p95_ms": 0.019456,
+            "p99_ms": 0.020504959999999992
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.008176895306859206,
+            "p50_ms": 0.008,
+            "p95_ms": 0.009,
+            "p99_ms": 0.012389999999999873
+          }
+        },
+        {
+          "name": "Copy Final Framebuffer (SSIL/SSR)",
+          "samples": 1662,
+          "max_gpu_ms": 0.429056,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.019128259927797833,
+            "p50_ms": 0.017408,
+            "p95_ms": 0.017662399999999995,
+            "p99_ms": 0.02798495999999989
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0008393501805054152,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Render CanvasItems",
+          "samples": 1662,
+          "max_gpu_ms": 0.027840000000000004,
+          "max_cpu_ms": 0.05,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.014259619735258725,
+            "p50_ms": 0.013312,
+            "p95_ms": 0.017598399999999993,
+            "p99_ms": 0.018303999999999997
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.008886883273164862,
+            "p50_ms": 0.009000000000000001,
+            "p95_ms": 0.011,
+            "p99_ms": 0.014000000000000002
+          }
+        },
+        {
+          "name": "Prepare Depth for SSAO/SSIL",
+          "samples": 1662,
+          "max_gpu_ms": 0.253952,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.014108110709987966,
+            "p50_ms": 0.014336,
+            "p95_ms": 0.01536,
+            "p99_ms": 0.016384
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0014338146811070998,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Render 3D Transparent Pass",
+          "samples": 1662,
+          "max_gpu_ms": 0.26624,
+          "max_cpu_ms": 0.015,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.013876986762936222,
+            "p50_ms": 0.008192,
+            "p95_ms": 0.025548799999999816,
+            "p99_ms": 0.026624
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.004247292418772563,
+            "p50_ms": 0.004,
+            "p95_ms": 0.005,
+            "p99_ms": 0.008
+          }
+        },
+        {
+          "name": "Render Sky",
+          "samples": 1662,
+          "max_gpu_ms": 0.697344,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.012390276774969915,
+            "p50_ms": 0.007168,
+            "p95_ms": 0.007168,
+            "p99_ms": 0.248832
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0015108303249097472,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Render 3D Cluster Elements",
+          "samples": 1662,
+          "max_gpu_ms": 0.014816,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.00824465944645006,
+            "p50_ms": 0.008032,
+            "p95_ms": 0.009696,
+            "p99_ms": 0.010016
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0008417569193742479,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Pack 3D Cluster Elements",
+          "samples": 1662,
+          "max_gpu_ms": 0.02048,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.006995889290012033,
+            "p50_ms": 0.007168,
+            "p95_ms": 0.008192,
+            "p99_ms": 0.008192
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.00029061371841155237,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Setup Shadows",
+          "samples": 1662,
+          "max_gpu_ms": 0.017408,
+          "max_cpu_ms": 0.009,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.005867821901323706,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.01536,
+            "p99_ms": 0.01536
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0010914560770156438,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Pre Opaque Render",
+          "samples": 1662,
+          "max_gpu_ms": 0.009664,
+          "max_cpu_ms": 0.014,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.003694517448856799,
+            "p50_ms": 0.00288,
+            "p95_ms": 0.005888,
+            "p99_ms": 0.006508479999999996
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.003630565583634176,
+            "p50_ms": 0.004,
+            "p95_ms": 0.004,
+            "p99_ms": 0.005
+          }
+        },
+        {
+          "name": "Prepare Render Frame",
+          "samples": 1662,
+          "max_gpu_ms": 0.01552,
+          "max_cpu_ms": 0.049,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.002242156438026474,
+            "p50_ms": 0.00224,
+            "p95_ms": 0.003232,
+            "p99_ms": 0.003456
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.008736462093862815,
+            "p50_ms": 0.007,
+            "p95_ms": 0.02394999999999982,
+            "p99_ms": 0.031
+          }
+        },
+        {
+          "name": "Setup 3D Scene",
+          "samples": 1662,
+          "max_gpu_ms": 0.00304,
+          "max_cpu_ms": 0.046,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0021035475330926593,
+            "p50_ms": 0.002016,
+            "p95_ms": 0.002526399999999994,
+            "p99_ms": 0.002752
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.014166666666666666,
+            "p50_ms": 0.013,
+            "p95_ms": 0.02,
+            "p99_ms": 0.024
+          }
+        },
+        {
+          "name": "Setup Sky",
+          "samples": 1662,
+          "max_gpu_ms": 0.0024,
+          "max_cpu_ms": 0.037,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0017926546329723224,
+            "p50_ms": 0.00176,
+            "p95_ms": 0.001984,
+            "p99_ms": 0.002048
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.001335740072202166,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 3",
+          "samples": 1047,
+          "max_gpu_ms": 0.008480000000000001,
+          "max_cpu_ms": 0.030000000000000002,
+          "gpu": {
+            "sample_count": 1047,
+            "mean_ms": 0.0017187392550143267,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037760000000000003,
+            "p99_ms": 0.004529279999999999
+          },
+          "cpu": {
+            "sample_count": 1047,
+            "mean_ms": 0.007838586437440306,
+            "p50_ms": 0.006,
+            "p95_ms": 0.019,
+            "p99_ms": 0.023
+          }
+        },
+        {
+          "name": "Cull CanvasItem Tree",
+          "samples": 1662,
+          "max_gpu_ms": 0.003648,
+          "max_cpu_ms": 0.042,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0017139638989169673,
+            "p50_ms": 0.0015999999999999999,
+            "p95_ms": 0.002656,
+            "p99_ms": 0.0026880000000000003
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.009634175691937426,
+            "p50_ms": 0.009000000000000001,
+            "p95_ms": 0.012,
+            "p99_ms": 0.017
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 4",
+          "samples": 1047,
+          "max_gpu_ms": 0.007744000000000001,
+          "max_cpu_ms": 0.03,
+          "gpu": {
+            "sample_count": 1047,
+            "mean_ms": 0.001713360076408787,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037760000000000003,
+            "p99_ms": 0.004561279999999999
+          },
+          "cpu": {
+            "sample_count": 1047,
+            "mean_ms": 0.00851002865329513,
+            "p50_ms": 0.006,
+            "p95_ms": 0.02,
+            "p99_ms": 0.024
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 1",
+          "samples": 1047,
+          "max_gpu_ms": 0.007392000000000001,
+          "max_cpu_ms": 0.037,
+          "gpu": {
+            "sample_count": 1047,
+            "mean_ms": 0.0017121069723018147,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037760000000000003,
+            "p99_ms": 0.0046303999999999955
+          },
+          "cpu": {
+            "sample_count": 1047,
+            "mean_ms": 0.010342884431709647,
+            "p50_ms": 0.007,
+            "p95_ms": 0.02469999999999993,
+            "p99_ms": 0.03
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 2",
+          "samples": 1047,
+          "max_gpu_ms": 0.00848,
+          "max_cpu_ms": 0.037000000000000005,
+          "gpu": {
+            "sample_count": 1047,
+            "mean_ms": 0.001711984718242598,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037760000000000003,
+            "p99_ms": 0.004608
+          },
+          "cpu": {
+            "sample_count": 1047,
+            "mean_ms": 0.010814708691499524,
+            "p50_ms": 0.007,
+            "p95_ms": 0.026699999999999932,
+            "p99_ms": 0.031539999999999964
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 5",
+          "samples": 1047,
+          "max_gpu_ms": 0.008768,
+          "max_cpu_ms": 0.029,
+          "gpu": {
+            "sample_count": 1047,
+            "mean_ms": 0.0017095396370582618,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037663999999999983,
+            "p99_ms": 0.004593279999999999
+          },
+          "cpu": {
+            "sample_count": 1047,
+            "mean_ms": 0.008701050620821394,
+            "p50_ms": 0.006,
+            "p95_ms": 0.02069999999999993,
+            "p99_ms": 0.025539999999999966
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 0",
+          "samples": 1047,
+          "max_gpu_ms": 0.0066879999999999995,
+          "max_cpu_ms": 0.04,
+          "gpu": {
+            "sample_count": 1047,
+            "mean_ms": 0.0017022043935052533,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037760000000000003,
+            "p99_ms": 0.004546559999999998
+          },
+          "cpu": {
+            "sample_count": 1047,
+            "mean_ms": 0.012336198662846227,
+            "p50_ms": 0.009000000000000001,
+            "p95_ms": 0.028,
+            "p99_ms": 0.03253999999999996
+          }
+        },
+        {
+          "name": "Cull 2D Lights",
+          "samples": 1662,
+          "max_gpu_ms": 0.004096,
+          "max_cpu_ms": 0.002,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0011127220216606499,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.002048,
+            "p99_ms": 0.002048
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0009043321299638989,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Frame Begin",
+          "samples": 1662,
+          "max_gpu_ms": 0.006784,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.001053150421179302,
+            "p50_ms": 0.001056,
+            "p95_ms": 0.001248,
+            "p99_ms": 0.001408
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.00023345367027677498,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Update Visibility Dependencies",
+          "samples": 1662,
+          "max_gpu_ms": 0.001312,
+          "max_cpu_ms": 0.005,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0006214777376654633,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000832,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 9.927797833935018e-05,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Update Occlusion Buffer",
+          "samples": 1662,
+          "max_gpu_ms": 0.001376,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0005968904933814682,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000704,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0010866425992779784,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 2",
+          "samples": 1662,
+          "max_gpu_ms": 0.001216,
+          "max_cpu_ms": 0.009,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0005929241877256318,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000704,
+            "p99_ms": 0.000896
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.000720216606498195,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 0",
+          "samples": 1662,
+          "max_gpu_ms": 0.001248,
+          "max_cpu_ms": 0.006,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0005925391095066185,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000672,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.001250300842358604,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 3",
+          "samples": 1662,
+          "max_gpu_ms": 0.001056,
+          "max_cpu_ms": 0.636,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0005925198555956679,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.0007023999999999942,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.014879061371841156,
+            "p50_ms": 0.014,
+            "p95_ms": 0.017,
+            "p99_ms": 0.021
+          }
+        },
+        {
+          "name": "Cull 3D Scene",
+          "samples": 1662,
+          "max_gpu_ms": 0.001184,
+          "max_cpu_ms": 0.45,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0005918459687123947,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000672,
+            "p99_ms": 0.000992
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0028904933814681106,
+            "p50_ms": 0.002,
+            "p95_ms": 0.003,
+            "p99_ms": 0.003
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 1",
+          "samples": 1662,
+          "max_gpu_ms": 0.00112,
+          "max_cpu_ms": 0.462,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.000589612515042118,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.0006383999999999943,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0012966305655836342,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Resolve MSAA",
+          "samples": 1662,
+          "max_gpu_ms": 0.009216,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0005883995186522262,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.00011793020457280385,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Prepare 3D Scene",
+          "samples": 1662,
+          "max_gpu_ms": 0.000896,
+          "max_cpu_ms": 0.022,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.000588129963898917,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.00064,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0007689530685920578,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Render 3D Scene",
+          "samples": 1662,
+          "max_gpu_ms": 0.000896,
+          "max_cpu_ms": 0.005,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.000585569193742479,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000608,
+            "p99_ms": 0.000832
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0008291215403128761,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Post Sky Compositor Effects",
+          "samples": 1662,
+          "max_gpu_ms": 0.006144,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0005816221419975932,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0001835138387484958,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Update Volumetric Fog",
+          "samples": 1662,
+          "max_gpu_ms": 0.003072,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0005689338146811071,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.00045667870036101085,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Post Opaque Compositor Effects",
+          "samples": 1662,
+          "max_gpu_ms": 0.003072,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.0005538965102286402,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.00016726835138387486,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Pre Transparent Compositor Effects",
+          "samples": 1662,
+          "max_gpu_ms": 0.001024,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.000529251504211793,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.00012033694344163659,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Pre Opaque Compositor Effects",
+          "samples": 1662,
+          "max_gpu_ms": 0.00512,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.000521049338146811,
+            "p50_ms": 0.000704,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1662,
+            "mean_ms": 0.000450661853188929,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        }
+      ],
+      "inventory": {
+        "background_sleep_usec": 0,
+        "dof": true,
+        "dof_jitter": false,
+        "dof_quality": 2,
+        "main_shadow": true,
+        "mesh_instances": 203,
+        "msaa_3d": 1,
+        "night_sky": true,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "sky_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 203,
+        "triangles": 136803,
+        "unique_materials": 203,
+        "unique_meshes": 68,
+        "workload_phase_reset": true
+      }
+    },
+    {
+      "run": "gpu-r1",
+      "case": "plain_sky/night",
+      "metrics": {
+        "gpu": {
+          "sample_count": 16681,
+          "mean_ms": 1.7195014688695809,
+          "p50_ms": 1.66100001335144,
+          "p95_ms": 2.05900001525879,
+          "p99_ms": 2.24600005149841
+        },
+        "cpu": {
+          "sample_count": 16681,
+          "mean_ms": 0.28022798386654063,
+          "p50_ms": 0.257999986410141,
+          "p95_ms": 0.499000012874603,
+          "p99_ms": 0.6447999954223663
+        },
+        "wall": {
+          "sample_count": 16681,
+          "mean_ms": 1.7984643007013967,
+          "p50_ms": 1.727,
+          "p95_ms": 2.226,
+          "p99_ms": 2.395200000000001
+        }
+      },
+      "route_extent_xyz_m": [
+        [
+          -9.48001861572266,
+          23.2799797058105
+        ],
+        [
+          -0.000134262372739613,
+          0.60029536485672
+        ],
+        [
+          -4.78377771377563,
+          8.5
+        ]
+      ],
+      "completed_routes": 0,
+      "gpu_stages": [
+        {
+          "name": "Depth of Field",
+          "samples": 1668,
+          "max_gpu_ms": 1.017856,
+          "max_cpu_ms": 0.01,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.5283617649880096,
+            "p50_ms": 0.49152,
+            "p95_ms": 0.758784,
+            "p99_ms": 0.8901939199999999
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.002378297362110312,
+            "p50_ms": 0.002,
+            "p95_ms": 0.003,
+            "p99_ms": 0.004
+          }
+        },
+        {
+          "name": "Render Opaque Pass",
+          "samples": 1668,
+          "max_gpu_ms": 0.569344,
+          "max_cpu_ms": 0.082,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.3491011223021583,
+            "p50_ms": 0.344064,
+            "p95_ms": 0.395264,
+            "p99_ms": 0.39969791999999993
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.028355515587529977,
+            "p50_ms": 0.028,
+            "p95_ms": 0.037,
+            "p99_ms": 0.051
+          }
+        },
+        {
+          "name": "Process SSR",
+          "samples": 1668,
+          "max_gpu_ms": 0.530432,
+          "max_cpu_ms": 0.036,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.14532003836930454,
+            "p50_ms": 0.144384,
+            "p95_ms": 0.149312,
+            "p99_ms": 0.161792
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.01339148681055156,
+            "p50_ms": 0.013,
+            "p95_ms": 0.017,
+            "p99_ms": 0.021
+          }
+        },
+        {
+          "name": "Render Depth Pre-Pass",
+          "samples": 1668,
+          "max_gpu_ms": 0.161152,
+          "max_cpu_ms": 0.103,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.11484209112709833,
+            "p50_ms": 0.11424,
+            "p95_ms": 0.12670879999999998,
+            "p99_ms": 0.12903456
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.031962230215827336,
+            "p50_ms": 0.031,
+            "p95_ms": 0.04,
+            "p99_ms": 0.05032999999999993
+          }
+        },
+        {
+          "name": "Glow",
+          "samples": 1668,
+          "max_gpu_ms": 0.484352,
+          "max_cpu_ms": 0.01,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.09653385131894485,
+            "p50_ms": 0.095232,
+            "p95_ms": 0.097664,
+            "p99_ms": 0.10133312
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.002468824940047962,
+            "p50_ms": 0.002,
+            "p95_ms": 0.003,
+            "p99_ms": 0.004
+          }
+        },
+        {
+          "name": "Render OmniLight Shadows",
+          "samples": 1049,
+          "max_gpu_ms": 0.346112,
+          "max_cpu_ms": 0.303,
+          "gpu": {
+            "sample_count": 1049,
+            "mean_ms": 0.09161139370829362,
+            "p50_ms": 0.068608,
+            "p95_ms": 0.176128,
+            "p99_ms": 0.210944
+          },
+          "cpu": {
+            "sample_count": 1049,
+            "mean_ms": 0.06917445185891324,
+            "p50_ms": 0.046,
+            "p95_ms": 0.166,
+            "p99_ms": 0.2191199999999999
+          }
+        },
+        {
+          "name": "Process SSAO",
+          "samples": 1668,
+          "max_gpu_ms": 0.467968,
+          "max_cpu_ms": 0.033,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.08744915107913669,
+            "p50_ms": 0.084992,
+            "p95_ms": 0.0872,
+            "p99_ms": 0.11419487999999994
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.00818705035971223,
+            "p50_ms": 0.008,
+            "p95_ms": 0.01,
+            "p99_ms": 0.014
+          }
+        },
+        {
+          "name": "Tonemap",
+          "samples": 1668,
+          "max_gpu_ms": 0.108544,
+          "max_cpu_ms": 0.01,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.07490094964028776,
+            "p50_ms": 0.07542399999999999,
+            "p95_ms": 0.0768,
+            "p99_ms": 0.07782399999999999
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.002908872901678657,
+            "p50_ms": 0.003,
+            "p95_ms": 0.004,
+            "p99_ms": 0.005
+          }
+        },
+        {
+          "name": "Resolve",
+          "samples": 1668,
+          "max_gpu_ms": 0.436224,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.05338388489208633,
+            "p50_ms": 0.050176,
+            "p95_ms": 0.055296,
+            "p99_ms": 0.08947999999999971
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0011211031175059952,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Render Directional/SpotLight Shadows",
+          "samples": 1668,
+          "max_gpu_ms": 0.412672,
+          "max_cpu_ms": 0.109,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0429343309352518,
+            "p50_ms": 0.044032,
+            "p95_ms": 0.05632,
+            "p99_ms": 0.058368
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.030934052757793765,
+            "p50_ms": 0.03,
+            "p95_ms": 0.041,
+            "p99_ms": 0.059329999999999924
+          }
+        },
+        {
+          "name": "Resolve Depth Pre-Pass (MSAA)",
+          "samples": 1668,
+          "max_gpu_ms": 0.050176,
+          "max_cpu_ms": 0.009,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.03000516067146283,
+            "p50_ms": 0.029696,
+            "p95_ms": 0.03072,
+            "p99_ms": 0.031744
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.001971822541966427,
+            "p50_ms": 0.002,
+            "p95_ms": 0.002,
+            "p99_ms": 0.003
+          }
+        },
+        {
+          "name": "Copy Final Framebuffer (SSIL/SSR)",
+          "samples": 1668,
+          "max_gpu_ms": 0.394016,
+          "max_cpu_ms": 0.009,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.01967242206235012,
+            "p50_ms": 0.017408,
+            "p95_ms": 0.017568,
+            "p99_ms": 0.031744
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0008669064748201439,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Prepare Depth for SSAO/SSIL",
+          "samples": 1668,
+          "max_gpu_ms": 0.393216,
+          "max_cpu_ms": 0.009,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.01596076738609113,
+            "p50_ms": 0.014336,
+            "p95_ms": 0.01536,
+            "p99_ms": 0.019456
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0014688249400479616,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.003
+          }
+        },
+        {
+          "name": "Render CanvasItems",
+          "samples": 1668,
+          "max_gpu_ms": 0.24454399999999998,
+          "max_cpu_ms": 0.027000000000000003,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.013753016786570744,
+            "p50_ms": 0.012896,
+            "p95_ms": 0.015134399999999987,
+            "p99_ms": 0.01709856
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.008918465227817746,
+            "p50_ms": 0.009000000000000001,
+            "p95_ms": 0.012,
+            "p99_ms": 0.014329999999999928
+          }
+        },
+        {
+          "name": "Render Sky",
+          "samples": 1668,
+          "max_gpu_ms": 0.403456,
+          "max_cpu_ms": 0.008,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.010853908872901679,
+            "p50_ms": 0.007168,
+            "p95_ms": 0.007168,
+            "p99_ms": 0.242688
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0015167865707434052,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.003
+          }
+        },
+        {
+          "name": "Render 3D Transparent Pass",
+          "samples": 1668,
+          "max_gpu_ms": 0.401408,
+          "max_cpu_ms": 0.031,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.009680729016786571,
+            "p50_ms": 0.008192,
+            "p95_ms": 0.00988159999999986,
+            "p99_ms": 0.024576
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.004287170263788969,
+            "p50_ms": 0.004,
+            "p95_ms": 0.005,
+            "p99_ms": 0.008
+          }
+        },
+        {
+          "name": "Render 3D Cluster Elements",
+          "samples": 1668,
+          "max_gpu_ms": 0.253792,
+          "max_cpu_ms": 0.008,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.008915203836930456,
+            "p50_ms": 0.008032,
+            "p95_ms": 0.009856,
+            "p99_ms": 0.011541119999999997
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0008627098321342926,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Pack 3D Cluster Elements",
+          "samples": 1668,
+          "max_gpu_ms": 0.252928,
+          "max_cpu_ms": 0.006,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.007311865707434053,
+            "p50_ms": 0.007168,
+            "p95_ms": 0.008192,
+            "p99_ms": 0.008202559999999998
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0003045563549160672,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Setup Shadows",
+          "samples": 1668,
+          "max_gpu_ms": 0.019456,
+          "max_cpu_ms": 0.016,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.005920537170263789,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.01536,
+            "p99_ms": 0.01536
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.001170263788968825,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.003
+          }
+        },
+        {
+          "name": "Pre Opaque Render",
+          "samples": 1668,
+          "max_gpu_ms": 0.010784,
+          "max_cpu_ms": 0.013,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0036983980815347723,
+            "p50_ms": 0.00288,
+            "p95_ms": 0.005856,
+            "p99_ms": 0.006250559999999998
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0036648681055155875,
+            "p50_ms": 0.004,
+            "p95_ms": 0.005,
+            "p99_ms": 0.006
+          }
+        },
+        {
+          "name": "Prepare Render Frame",
+          "samples": 1668,
+          "max_gpu_ms": 0.004256,
+          "max_cpu_ms": 0.051,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0022774292565947243,
+            "p50_ms": 0.00224,
+            "p95_ms": 0.003296,
+            "p99_ms": 0.0034985599999999978
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.008779976019184652,
+            "p50_ms": 0.007,
+            "p95_ms": 0.024,
+            "p99_ms": 0.033
+          }
+        },
+        {
+          "name": "Setup 3D Scene",
+          "samples": 1668,
+          "max_gpu_ms": 0.009248,
+          "max_cpu_ms": 0.044,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.002113400479616307,
+            "p50_ms": 0.002016,
+            "p95_ms": 0.002528,
+            "p99_ms": 0.002858559999999998
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.014299760191846523,
+            "p50_ms": 0.013,
+            "p95_ms": 0.02,
+            "p99_ms": 0.026
+          }
+        },
+        {
+          "name": "Setup Sky",
+          "samples": 1668,
+          "max_gpu_ms": 0.008352,
+          "max_cpu_ms": 0.008,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.00180842206235012,
+            "p50_ms": 0.00176,
+            "p95_ms": 0.001984,
+            "p99_ms": 0.002048
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0015731414868105516,
+            "p50_ms": 0.002,
+            "p95_ms": 0.002,
+            "p99_ms": 0.003
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 1",
+          "samples": 1049,
+          "max_gpu_ms": 0.006432,
+          "max_cpu_ms": 0.054,
+          "gpu": {
+            "sample_count": 1049,
+            "mean_ms": 0.001735809342230696,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037440000000000004,
+            "p99_ms": 0.004640000000000001
+          },
+          "cpu": {
+            "sample_count": 1049,
+            "mean_ms": 0.01048045757864633,
+            "p50_ms": 0.007,
+            "p95_ms": 0.027,
+            "p99_ms": 0.034
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 3",
+          "samples": 1049,
+          "max_gpu_ms": 0.005184,
+          "max_cpu_ms": 0.04300000000000001,
+          "gpu": {
+            "sample_count": 1049,
+            "mean_ms": 0.0017337959961868446,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.003827199999999997,
+            "p99_ms": 0.004640000000000001
+          },
+          "cpu": {
+            "sample_count": 1049,
+            "mean_ms": 0.008027645376549094,
+            "p50_ms": 0.005,
+            "p95_ms": 0.020999999999999998,
+            "p99_ms": 0.027
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 4",
+          "samples": 1049,
+          "max_gpu_ms": 0.00496,
+          "max_cpu_ms": 0.037,
+          "gpu": {
+            "sample_count": 1049,
+            "mean_ms": 0.0017315996186844614,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037760000000000007,
+            "p99_ms": 0.004656639999999999
+          },
+          "cpu": {
+            "sample_count": 1049,
+            "mean_ms": 0.008681601525262154,
+            "p50_ms": 0.006,
+            "p95_ms": 0.021,
+            "p99_ms": 0.027000000000000003
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 2",
+          "samples": 1049,
+          "max_gpu_ms": 0.005024000000000001,
+          "max_cpu_ms": 0.048,
+          "gpu": {
+            "sample_count": 1049,
+            "mean_ms": 0.0017276339370829363,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0038080000000000006,
+            "p99_ms": 0.004673279999999998
+          },
+          "cpu": {
+            "sample_count": 1049,
+            "mean_ms": 0.010987607244995234,
+            "p50_ms": 0.007,
+            "p95_ms": 0.027000000000000003,
+            "p99_ms": 0.037
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 5",
+          "samples": 1049,
+          "max_gpu_ms": 0.0050880000000000005,
+          "max_cpu_ms": 0.041999999999999996,
+          "gpu": {
+            "sample_count": 1049,
+            "mean_ms": 0.001727481410867493,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0038080000000000006,
+            "p99_ms": 0.0046412799999999985
+          },
+          "cpu": {
+            "sample_count": 1049,
+            "mean_ms": 0.008927550047664443,
+            "p50_ms": 0.006,
+            "p95_ms": 0.02259999999999991,
+            "p99_ms": 0.029
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 0",
+          "samples": 1049,
+          "max_gpu_ms": 0.008128,
+          "max_cpu_ms": 0.051,
+          "gpu": {
+            "sample_count": 1049,
+            "mean_ms": 0.0017199771210676836,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037760000000000003,
+            "p99_ms": 0.004640000000000001
+          },
+          "cpu": {
+            "sample_count": 1049,
+            "mean_ms": 0.012607244995233555,
+            "p50_ms": 0.009000000000000001,
+            "p95_ms": 0.029599999999999908,
+            "p99_ms": 0.039519999999999986
+          }
+        },
+        {
+          "name": "Cull CanvasItem Tree",
+          "samples": 1668,
+          "max_gpu_ms": 0.0032639999999999995,
+          "max_cpu_ms": 0.049,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0017058225419664267,
+            "p50_ms": 0.0015999999999999999,
+            "p95_ms": 0.002656,
+            "p99_ms": 0.002784
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.009707434052757794,
+            "p50_ms": 0.009000000000000001,
+            "p95_ms": 0.013000000000000001,
+            "p99_ms": 0.020329999999999928
+          }
+        },
+        {
+          "name": "Cull 2D Lights",
+          "samples": 1668,
+          "max_gpu_ms": 0.004096,
+          "max_cpu_ms": 0.038,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0011302062350119903,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.002048,
+            "p99_ms": 0.002048
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0009562350119904077,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Frame Begin",
+          "samples": 1668,
+          "max_gpu_ms": 0.001824,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0010686043165467627,
+            "p50_ms": 0.001056,
+            "p95_ms": 0.00128,
+            "p99_ms": 0.001472
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.00022122302158273383,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Update Visibility Dependencies",
+          "samples": 1668,
+          "max_gpu_ms": 0.001344,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0006174772182254197,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.0008,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 8.752997601918466e-05,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Post Transparent Compositor Effects",
+          "samples": 1668,
+          "max_gpu_ms": 0.009216,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0005992517985611511,
+            "p50_ms": 0.00064,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.00512
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0001774580335731415,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Update Occlusion Buffer",
+          "samples": 1668,
+          "max_gpu_ms": 0.001312,
+          "max_cpu_ms": 0.01,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0005988105515587531,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000704,
+            "p99_ms": 0.0010345599999999977
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.001092326139088729,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Cull 3D Scene",
+          "samples": 1668,
+          "max_gpu_ms": 0.00128,
+          "max_cpu_ms": 0.009,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0005964700239808154,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000704,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.002446043165467626,
+            "p50_ms": 0.002,
+            "p95_ms": 0.003,
+            "p99_ms": 0.004
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 0",
+          "samples": 1668,
+          "max_gpu_ms": 0.00176,
+          "max_cpu_ms": 0.008,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0005944364508393286,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000672,
+            "p99_ms": 0.000992
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0012859712230215827,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 2",
+          "samples": 1668,
+          "max_gpu_ms": 0.002944,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0005941103117505995,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000704,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0007446043165467626,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 1",
+          "samples": 1668,
+          "max_gpu_ms": 0.001824,
+          "max_cpu_ms": 0.002,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0005923645083932854,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.00064,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0007931654676258993,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Prepare 3D Scene",
+          "samples": 1668,
+          "max_gpu_ms": 0.001504,
+          "max_cpu_ms": 0.013,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0005909832134292566,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.00064,
+            "p99_ms": 0.0008425599999999976
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0007338129496402878,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Render 3D Scene",
+          "samples": 1668,
+          "max_gpu_ms": 0.001888,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0005905035971223022,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.00064,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0008357314148681055,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.0013299999999999272
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 3",
+          "samples": 1668,
+          "max_gpu_ms": 0.001344,
+          "max_cpu_ms": 0.037,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0005901007194244604,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.00064,
+            "p99_ms": 0.000832
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.014571942446043165,
+            "p50_ms": 0.014,
+            "p95_ms": 0.018,
+            "p99_ms": 0.02132999999999993
+          }
+        },
+        {
+          "name": "Update Volumetric Fog",
+          "samples": 1668,
+          "max_gpu_ms": 0.001024,
+          "max_cpu_ms": 0.006,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0005562014388489208,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0004550359712230216,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Post Sky Compositor Effects",
+          "samples": 1668,
+          "max_gpu_ms": 0.001024,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0005531318944844124,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0001918465227817746,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Resolve MSAA",
+          "samples": 1668,
+          "max_gpu_ms": 0.00512,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.000551904076738609,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0001091127098321343,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Pre Transparent Compositor Effects",
+          "samples": 1668,
+          "max_gpu_ms": 0.007168,
+          "max_cpu_ms": 0.004,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.000550062350119904,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.00013249400479616307,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Post Opaque Compositor Effects",
+          "samples": 1668,
+          "max_gpu_ms": 0.001024,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0005469928057553956,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.00020563549160671464,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Pre Opaque Compositor Effects",
+          "samples": 1668,
+          "max_gpu_ms": 0.004096,
+          "max_cpu_ms": 0.008,
+          "gpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0005368057553956834,
+            "p50_ms": 0.000768,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1668,
+            "mean_ms": 0.0004436450839328537,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        }
+      ],
+      "inventory": {
+        "background_sleep_usec": 0,
+        "dof": true,
+        "dof_jitter": false,
+        "dof_quality": 2,
+        "main_shadow": true,
+        "mesh_instances": 203,
+        "msaa_3d": 1,
+        "night_sky": false,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "sky_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 203,
+        "triangles": 136803,
+        "unique_materials": 203,
+        "unique_meshes": 68,
+        "workload_phase_reset": true
+      }
+    },
+    {
+      "run": "gpu-r2",
+      "case": "baseline/night",
+      "metrics": {
+        "gpu": {
+          "sample_count": 16597,
+          "mean_ms": 1.7288338859203227,
+          "p50_ms": 1.67299997806549,
+          "p95_ms": 2.04900002479553,
+          "p99_ms": 2.2400400066375714
+        },
+        "cpu": {
+          "sample_count": 16597,
+          "mean_ms": 0.2850656141642311,
+          "p50_ms": 0.26800000667572,
+          "p95_ms": 0.497000008821487,
+          "p99_ms": 0.583999991416931
+        },
+        "wall": {
+          "sample_count": 16597,
+          "mean_ms": 1.8075772730011448,
+          "p50_ms": 1.737,
+          "p95_ms": 2.219,
+          "p99_ms": 2.412
+        }
+      },
+      "route_extent_xyz_m": [
+        [
+          -9.48001861572266,
+          23.2799797058105
+        ],
+        [
+          -0.000134262372739613,
+          0.60029536485672
+        ],
+        [
+          -4.78377771377563,
+          8.5
+        ]
+      ],
+      "completed_routes": 0,
+      "gpu_stages": [
+        {
+          "name": "Depth of Field",
+          "samples": 1659,
+          "max_gpu_ms": 1.108992,
+          "max_cpu_ms": 0.037,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.5127317757685352,
+            "p50_ms": 0.487424,
+            "p95_ms": 0.740352,
+            "p99_ms": 0.88064
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0024026522001205546,
+            "p50_ms": 0.002,
+            "p95_ms": 0.003,
+            "p99_ms": 0.004
+          }
+        },
+        {
+          "name": "Render Opaque Pass",
+          "samples": 1659,
+          "max_gpu_ms": 0.442368,
+          "max_cpu_ms": 0.112,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.3491796793248945,
+            "p50_ms": 0.344064,
+            "p95_ms": 0.39424,
+            "p99_ms": 0.39936
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.02821458710066305,
+            "p50_ms": 0.028,
+            "p95_ms": 0.034,
+            "p99_ms": 0.04284000000000015
+          }
+        },
+        {
+          "name": "Process SSR",
+          "samples": 1659,
+          "max_gpu_ms": 0.535552,
+          "max_cpu_ms": 0.041,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.14573455816757083,
+            "p50_ms": 0.145088,
+            "p95_ms": 0.148912,
+            "p99_ms": 0.1538444800000001
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.013280289330922242,
+            "p50_ms": 0.013,
+            "p95_ms": 0.015,
+            "p99_ms": 0.02
+          }
+        },
+        {
+          "name": "Render Depth Pre-Pass",
+          "samples": 1659,
+          "max_gpu_ms": 0.1672,
+          "max_cpu_ms": 0.399,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.11501320795660036,
+            "p50_ms": 0.114304,
+            "p95_ms": 0.1266912,
+            "p99_ms": 0.12898688
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.032,
+            "p50_ms": 0.032,
+            "p95_ms": 0.038,
+            "p99_ms": 0.045
+          }
+        },
+        {
+          "name": "Glow",
+          "samples": 1659,
+          "max_gpu_ms": 0.520192,
+          "max_cpu_ms": 0.01,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.09643170102471368,
+            "p50_ms": 0.095232,
+            "p95_ms": 0.097248,
+            "p99_ms": 0.100352
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.002405666063893912,
+            "p50_ms": 0.002,
+            "p95_ms": 0.003,
+            "p99_ms": 0.004
+          }
+        },
+        {
+          "name": "Render OmniLight Shadows",
+          "samples": 1048,
+          "max_gpu_ms": 0.212992,
+          "max_cpu_ms": 0.213,
+          "gpu": {
+            "sample_count": 1048,
+            "mean_ms": 0.09047548091603054,
+            "p50_ms": 0.068608,
+            "p95_ms": 0.171008,
+            "p99_ms": 0.20901887999999988
+          },
+          "cpu": {
+            "sample_count": 1048,
+            "mean_ms": 0.06797996183206106,
+            "p50_ms": 0.046,
+            "p95_ms": 0.15064999999999998,
+            "p99_ms": 0.18652999999999997
+          }
+        },
+        {
+          "name": "Process SSAO",
+          "samples": 1659,
+          "max_gpu_ms": 0.492544,
+          "max_cpu_ms": 0.018,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.08648056901748041,
+            "p50_ms": 0.085088,
+            "p95_ms": 0.08726719999999999,
+            "p99_ms": 0.089088
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.008200120554550935,
+            "p50_ms": 0.008,
+            "p95_ms": 0.009,
+            "p99_ms": 0.012
+          }
+        },
+        {
+          "name": "Tonemap",
+          "samples": 1659,
+          "max_gpu_ms": 0.106496,
+          "max_cpu_ms": 0.009,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.07520877637130802,
+            "p50_ms": 0.07536,
+            "p95_ms": 0.0768,
+            "p99_ms": 0.080896
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0029053646775165764,
+            "p50_ms": 0.003,
+            "p95_ms": 0.004,
+            "p99_ms": 0.005
+          }
+        },
+        {
+          "name": "Resolve",
+          "samples": 1659,
+          "max_gpu_ms": 0.34304,
+          "max_cpu_ms": 0.009,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.05179806630500301,
+            "p50_ms": 0.049536,
+            "p95_ms": 0.055296,
+            "p99_ms": 0.07216576000000008
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0011078963230861966,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Render Directional/SpotLight Shadows",
+          "samples": 1659,
+          "max_gpu_ms": 0.439296,
+          "max_cpu_ms": 0.383,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.04270184930681133,
+            "p50_ms": 0.045056,
+            "p95_ms": 0.054374399999999906,
+            "p99_ms": 0.058368
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.030880650994575046,
+            "p50_ms": 0.03,
+            "p95_ms": 0.039,
+            "p99_ms": 0.045
+          }
+        },
+        {
+          "name": "Resolve Depth Pre-Pass (MSAA)",
+          "samples": 1659,
+          "max_gpu_ms": 0.355328,
+          "max_cpu_ms": 0.028,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.031078481012658227,
+            "p50_ms": 0.03072,
+            "p95_ms": 0.031744,
+            "p99_ms": 0.032768
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.001965641952983725,
+            "p50_ms": 0.002,
+            "p95_ms": 0.002,
+            "p99_ms": 0.003
+          }
+        },
+        {
+          "name": "Process Post Transparent Compositor Effects",
+          "samples": 1659,
+          "max_gpu_ms": 0.398336,
+          "max_cpu_ms": 0.02,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.021076465340566605,
+            "p50_ms": 0.019136,
+            "p95_ms": 0.019456,
+            "p99_ms": 0.020222080000000017
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.008204942736588306,
+            "p50_ms": 0.008,
+            "p95_ms": 0.009,
+            "p99_ms": 0.014
+          }
+        },
+        {
+          "name": "Copy Final Framebuffer (SSIL/SSR)",
+          "samples": 1659,
+          "max_gpu_ms": 0.399744,
+          "max_cpu_ms": 0.022,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.01951739602169982,
+            "p50_ms": 0.017408,
+            "p95_ms": 0.017792,
+            "p99_ms": 0.028078080000000075
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0008824593128390597,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Render CanvasItems",
+          "samples": 1659,
+          "max_gpu_ms": 0.440544,
+          "max_cpu_ms": 0.027000000000000003,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.015498724532851116,
+            "p50_ms": 0.012831999999999998,
+            "p95_ms": 0.014336,
+            "p99_ms": 0.019830400000000314
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.009152501506931887,
+            "p50_ms": 0.009000000000000001,
+            "p95_ms": 0.011,
+            "p99_ms": 0.015
+          }
+        },
+        {
+          "name": "Prepare Depth for SSAO/SSIL",
+          "samples": 1659,
+          "max_gpu_ms": 0.311296,
+          "max_cpu_ms": 0.016,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.014524065099457504,
+            "p50_ms": 0.013696,
+            "p95_ms": 0.01536,
+            "p99_ms": 0.01656576000000001
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0014213381555153708,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Render Sky",
+          "samples": 1659,
+          "max_gpu_ms": 0.39424,
+          "max_cpu_ms": 0.008,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.011908397830018083,
+            "p50_ms": 0.007168,
+            "p95_ms": 0.007168,
+            "p99_ms": 0.244736
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0015105485232067512,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Render 3D Cluster Elements",
+          "samples": 1659,
+          "max_gpu_ms": 0.20752,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.009578377335744424,
+            "p50_ms": 0.008096,
+            "p95_ms": 0.009792,
+            "p99_ms": 0.014312320000000007
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0008493068113321278,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Render 3D Transparent Pass",
+          "samples": 1659,
+          "max_gpu_ms": 0.027648,
+          "max_cpu_ms": 0.012,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.008527160940325497,
+            "p50_ms": 0.008192,
+            "p95_ms": 0.009216,
+            "p99_ms": 0.024576
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.004241109101868596,
+            "p50_ms": 0.004,
+            "p95_ms": 0.005,
+            "p99_ms": 0.007
+          }
+        },
+        {
+          "name": "Pack 3D Cluster Elements",
+          "samples": 1659,
+          "max_gpu_ms": 0.013312,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.007042411091018686,
+            "p50_ms": 0.007168,
+            "p95_ms": 0.008192,
+            "p99_ms": 0.008192
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0003068113321277878,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Setup Shadows",
+          "samples": 1659,
+          "max_gpu_ms": 0.054272,
+          "max_cpu_ms": 0.009,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.005874266425557565,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.01536,
+            "p99_ms": 0.01536
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0011705846895720313,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.003
+          }
+        },
+        {
+          "name": "Pre Opaque Render",
+          "samples": 1659,
+          "max_gpu_ms": 0.009504,
+          "max_cpu_ms": 0.025,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.003658396624472574,
+            "p50_ms": 0.002848,
+            "p95_ms": 0.005824,
+            "p99_ms": 0.006112
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.003801084990958409,
+            "p50_ms": 0.004,
+            "p95_ms": 0.005,
+            "p99_ms": 0.007
+          }
+        },
+        {
+          "name": "Prepare Render Frame",
+          "samples": 1659,
+          "max_gpu_ms": 0.005664,
+          "max_cpu_ms": 0.046,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0022163327305605787,
+            "p50_ms": 0.002208,
+            "p95_ms": 0.0032,
+            "p99_ms": 0.003437440000000002
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.008690777576853527,
+            "p50_ms": 0.007,
+            "p95_ms": 0.022,
+            "p99_ms": 0.03
+          }
+        },
+        {
+          "name": "Setup 3D Scene",
+          "samples": 1659,
+          "max_gpu_ms": 0.007584,
+          "max_cpu_ms": 0.048,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0021133694996986136,
+            "p50_ms": 0.002016,
+            "p95_ms": 0.002528,
+            "p99_ms": 0.002797440000000002
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.014071127185051236,
+            "p50_ms": 0.013,
+            "p95_ms": 0.02,
+            "p99_ms": 0.023
+          }
+        },
+        {
+          "name": "Setup Sky",
+          "samples": 1659,
+          "max_gpu_ms": 0.007584,
+          "max_cpu_ms": 0.006,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0018101506931886679,
+            "p50_ms": 0.00176,
+            "p95_ms": 0.001984,
+            "p99_ms": 0.002048
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0012814948764315853,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 1",
+          "samples": 1048,
+          "max_gpu_ms": 0.007520000000000001,
+          "max_cpu_ms": 0.034999999999999996,
+          "gpu": {
+            "sample_count": 1048,
+            "mean_ms": 0.0017226870229007634,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037440000000000004,
+            "p99_ms": 0.004592959999999999
+          },
+          "cpu": {
+            "sample_count": 1048,
+            "mean_ms": 0.0101793893129771,
+            "p50_ms": 0.007,
+            "p95_ms": 0.026,
+            "p99_ms": 0.029
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 4",
+          "samples": 1048,
+          "max_gpu_ms": 0.008032,
+          "max_cpu_ms": 0.042,
+          "gpu": {
+            "sample_count": 1048,
+            "mean_ms": 0.0017206412213740458,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.003744000000000001,
+            "p99_ms": 0.004560959999999999
+          },
+          "cpu": {
+            "sample_count": 1048,
+            "mean_ms": 0.008497137404580152,
+            "p50_ms": 0.006,
+            "p95_ms": 0.02,
+            "p99_ms": 0.02452999999999997
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 3",
+          "samples": 1048,
+          "max_gpu_ms": 0.005856,
+          "max_cpu_ms": 0.030000000000000002,
+          "gpu": {
+            "sample_count": 1048,
+            "mean_ms": 0.0017173740458015269,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037440000000000004,
+            "p99_ms": 0.004592959999999999
+          },
+          "cpu": {
+            "sample_count": 1048,
+            "mean_ms": 0.007836832061068702,
+            "p50_ms": 0.006,
+            "p95_ms": 0.019000000000000003,
+            "p99_ms": 0.023
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 2",
+          "samples": 1048,
+          "max_gpu_ms": 0.006464,
+          "max_cpu_ms": 0.039999999999999994,
+          "gpu": {
+            "sample_count": 1048,
+            "mean_ms": 0.001712702290076336,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037327999999999992,
+            "p99_ms": 0.004609919999999998
+          },
+          "cpu": {
+            "sample_count": 1048,
+            "mean_ms": 0.010725190839694657,
+            "p50_ms": 0.007,
+            "p95_ms": 0.027,
+            "p99_ms": 0.03152999999999997
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 5",
+          "samples": 1048,
+          "max_gpu_ms": 0.008064,
+          "max_cpu_ms": 0.031,
+          "gpu": {
+            "sample_count": 1048,
+            "mean_ms": 0.0017117251908396948,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037440000000000004,
+            "p99_ms": 0.00459296
+          },
+          "cpu": {
+            "sample_count": 1048,
+            "mean_ms": 0.008634541984732824,
+            "p50_ms": 0.006,
+            "p95_ms": 0.020999999999999998,
+            "p99_ms": 0.026000000000000002
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 0",
+          "samples": 1048,
+          "max_gpu_ms": 0.006752,
+          "max_cpu_ms": 0.037,
+          "gpu": {
+            "sample_count": 1048,
+            "mean_ms": 0.0017069618320610688,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037007999999999993,
+            "p99_ms": 0.004592959999999999
+          },
+          "cpu": {
+            "sample_count": 1048,
+            "mean_ms": 0.01226526717557252,
+            "p50_ms": 0.009000000000000001,
+            "p95_ms": 0.028,
+            "p99_ms": 0.03352999999999997
+          }
+        },
+        {
+          "name": "Cull CanvasItem Tree",
+          "samples": 1659,
+          "max_gpu_ms": 0.004672,
+          "max_cpu_ms": 0.051000000000000004,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0016915635925256176,
+            "p50_ms": 0.0015999999999999999,
+            "p95_ms": 0.002656,
+            "p99_ms": 0.00272
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.009539481615430983,
+            "p50_ms": 0.009000000000000001,
+            "p95_ms": 0.012,
+            "p99_ms": 0.020420000000000077
+          }
+        },
+        {
+          "name": "Cull 2D Lights",
+          "samples": 1659,
+          "max_gpu_ms": 0.004096,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0011023893911995177,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.002048,
+            "p99_ms": 0.002048
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0009620253164556962,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Frame Begin",
+          "samples": 1659,
+          "max_gpu_ms": 0.003744,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.001077314044605184,
+            "p50_ms": 0.001056,
+            "p95_ms": 0.00128,
+            "p99_ms": 0.001472
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.00023086196503918022,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Resolve MSAA",
+          "samples": 1659,
+          "max_gpu_ms": 0.009216,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.000628966847498493,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.00012236286919831225,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Update Visibility Dependencies",
+          "samples": 1659,
+          "max_gpu_ms": 0.003904,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0006133429776974081,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000832,
+            "p99_ms": 0.001056
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 8.378541289933695e-05,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Post Opaque Compositor Effects",
+          "samples": 1659,
+          "max_gpu_ms": 0.00512,
+          "max_cpu_ms": 0.003,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0006085979505726341,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0001790235081374322,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Update Occlusion Buffer",
+          "samples": 1659,
+          "max_gpu_ms": 0.003872,
+          "max_cpu_ms": 0.008,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.000603216395418927,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000736,
+            "p99_ms": 0.001056
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0010831826401446654,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Prepare 3D Scene",
+          "samples": 1659,
+          "max_gpu_ms": 0.003872,
+          "max_cpu_ms": 0.008,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0006002266425557565,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000768,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0007637130801687764,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 0",
+          "samples": 1659,
+          "max_gpu_ms": 0.003904,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.000598664255575648,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000704,
+            "p99_ms": 0.0010054400000000024
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.001267631103074141,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Cull 3D Scene",
+          "samples": 1659,
+          "max_gpu_ms": 0.002848,
+          "max_cpu_ms": 0.048,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0005966389391199518,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000672,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0024448462929475587,
+            "p50_ms": 0.002,
+            "p95_ms": 0.003,
+            "p99_ms": 0.003
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 2",
+          "samples": 1659,
+          "max_gpu_ms": 0.003328,
+          "max_cpu_ms": 0.005,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0005958481012658228,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000739199999999997,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.00075708257986739,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 1",
+          "samples": 1659,
+          "max_gpu_ms": 0.003264,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0005948450874020495,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000672,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0007962628089210368,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Render 3D Scene",
+          "samples": 1659,
+          "max_gpu_ms": 0.003392,
+          "max_cpu_ms": 0.003,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0005941892706449669,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000672,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0008221820373719108,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 3",
+          "samples": 1659,
+          "max_gpu_ms": 0.00336,
+          "max_cpu_ms": 0.047,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0005920482218203738,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.00064,
+            "p99_ms": 0.0008454400000000023
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.014508740204942737,
+            "p50_ms": 0.014,
+            "p95_ms": 0.017,
+            "p99_ms": 0.02
+          }
+        },
+        {
+          "name": "Process Pre Transparent Compositor Effects",
+          "samples": 1659,
+          "max_gpu_ms": 0.003072,
+          "max_cpu_ms": 0.008,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0005616877637130801,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0001301989150090416,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Update Volumetric Fog",
+          "samples": 1659,
+          "max_gpu_ms": 0.009216,
+          "max_cpu_ms": 0.008,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0005535286317058469,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0004707655213984328,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Pre Opaque Compositor Effects",
+          "samples": 1659,
+          "max_gpu_ms": 0.001024,
+          "max_cpu_ms": 0.03,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0005457745629897529,
+            "p50_ms": 0.0008,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0004448462929475588,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Post Sky Compositor Effects",
+          "samples": 1659,
+          "max_gpu_ms": 0.009216,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.0005413188667872212,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1659,
+            "mean_ms": 0.00017239300783604582,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        }
+      ],
+      "inventory": {
+        "background_sleep_usec": 0,
+        "dof": true,
+        "dof_jitter": false,
+        "dof_quality": 2,
+        "main_shadow": true,
+        "mesh_instances": 203,
+        "msaa_3d": 1,
+        "night_sky": true,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "sky_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 203,
+        "triangles": 136803,
+        "unique_materials": 203,
+        "unique_meshes": 68,
+        "workload_phase_reset": true
+      }
+    },
+    {
+      "run": "gpu-r2",
+      "case": "plain_sky/night",
+      "metrics": {
+        "gpu": {
+          "sample_count": 16678,
+          "mean_ms": 1.7173352330147555,
+          "p50_ms": 1.66799998283386,
+          "p95_ms": 2.0241499543189994,
+          "p99_ms": 2.2409999370575
+        },
+        "cpu": {
+          "sample_count": 16678,
+          "mean_ms": 0.28014204336976045,
+          "p50_ms": 0.25900000333786,
+          "p95_ms": 0.493000000715256,
+          "p99_ms": 0.597000002861023
+        },
+        "wall": {
+          "sample_count": 16678,
+          "mean_ms": 1.7988042331214773,
+          "p50_ms": 1.732,
+          "p95_ms": 2.235,
+          "p99_ms": 2.446
+        }
+      },
+      "route_extent_xyz_m": [
+        [
+          -9.48001861572266,
+          23.2799797058105
+        ],
+        [
+          -0.000134262372739613,
+          0.60029536485672
+        ],
+        [
+          -4.78377771377563,
+          8.5
+        ]
+      ],
+      "completed_routes": 0,
+      "gpu_stages": [
+        {
+          "name": "Depth of Field",
+          "samples": 1667,
+          "max_gpu_ms": 1.472512,
+          "max_cpu_ms": 0.011,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.5243477384523095,
+            "p50_ms": 0.49152,
+            "p95_ms": 0.74752,
+            "p99_ms": 0.8904153599999999
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0023335332933413317,
+            "p50_ms": 0.002,
+            "p95_ms": 0.003,
+            "p99_ms": 0.004
+          }
+        },
+        {
+          "name": "Render Opaque Pass",
+          "samples": 1667,
+          "max_gpu_ms": 0.664576,
+          "max_cpu_ms": 0.109,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.3500765446910618,
+            "p50_ms": 0.344064,
+            "p95_ms": 0.395264,
+            "p99_ms": 0.4041523199999998
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.02848890221955609,
+            "p50_ms": 0.028,
+            "p95_ms": 0.036,
+            "p99_ms": 0.051
+          }
+        },
+        {
+          "name": "Process SSR",
+          "samples": 1667,
+          "max_gpu_ms": 0.301056,
+          "max_cpu_ms": 0.045,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.14520438632273544,
+            "p50_ms": 0.145408,
+            "p95_ms": 0.149504,
+            "p99_ms": 0.151552
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.013313137372525494,
+            "p50_ms": 0.013,
+            "p95_ms": 0.016,
+            "p99_ms": 0.02
+          }
+        },
+        {
+          "name": "Render Depth Pre-Pass",
+          "samples": 1667,
+          "max_gpu_ms": 0.367552,
+          "max_cpu_ms": 0.181,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.11564778884223155,
+            "p50_ms": 0.114944,
+            "p95_ms": 0.127392,
+            "p99_ms": 0.14071359999999988
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.032100779844031195,
+            "p50_ms": 0.031,
+            "p95_ms": 0.04,
+            "p99_ms": 0.052
+          }
+        },
+        {
+          "name": "Glow",
+          "samples": 1667,
+          "max_gpu_ms": 0.135168,
+          "max_cpu_ms": 0.011,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.09556791361727654,
+            "p50_ms": 0.095232,
+            "p95_ms": 0.096448,
+            "p99_ms": 0.101376
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.002409718056388722,
+            "p50_ms": 0.002,
+            "p95_ms": 0.003,
+            "p99_ms": 0.004
+          }
+        },
+        {
+          "name": "Render OmniLight Shadows",
+          "samples": 1057,
+          "max_gpu_ms": 0.47616,
+          "max_cpu_ms": 0.284,
+          "gpu": {
+            "sample_count": 1057,
+            "mean_ms": 0.09308034058656575,
+            "p50_ms": 0.068608,
+            "p95_ms": 0.173056,
+            "p99_ms": 0.22167552000000096
+          },
+          "cpu": {
+            "sample_count": 1057,
+            "mean_ms": 0.06924597918637654,
+            "p50_ms": 0.047,
+            "p95_ms": 0.15679999999999972,
+            "p99_ms": 0.20764000000000032
+          }
+        },
+        {
+          "name": "Process SSAO",
+          "samples": 1667,
+          "max_gpu_ms": 0.326944,
+          "max_cpu_ms": 0.134,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0856570125974805,
+            "p50_ms": 0.084992,
+            "p95_ms": 0.087104,
+            "p99_ms": 0.08846976
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.008385122975404918,
+            "p50_ms": 0.008,
+            "p95_ms": 0.01,
+            "p99_ms": 0.013
+          }
+        },
+        {
+          "name": "Tonemap",
+          "samples": 1667,
+          "max_gpu_ms": 0.10742399999999999,
+          "max_cpu_ms": 0.012,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.07419847870425915,
+            "p50_ms": 0.074752,
+            "p95_ms": 0.0768,
+            "p99_ms": 0.07782399999999999
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0028668266346730652,
+            "p50_ms": 0.003,
+            "p95_ms": 0.004,
+            "p99_ms": 0.005
+          }
+        },
+        {
+          "name": "Resolve",
+          "samples": 1667,
+          "max_gpu_ms": 0.43632,
+          "max_cpu_ms": 0.01,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.05423733173365327,
+            "p50_ms": 0.050176,
+            "p95_ms": 0.055296,
+            "p99_ms": 0.091136
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.00113377324535093,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Render Directional/SpotLight Shadows",
+          "samples": 1667,
+          "max_gpu_ms": 0.439296,
+          "max_cpu_ms": 0.081,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.042353180563887226,
+            "p50_ms": 0.045056,
+            "p95_ms": 0.05632,
+            "p99_ms": 0.058368
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.031061787642471507,
+            "p50_ms": 0.03,
+            "p95_ms": 0.041,
+            "p99_ms": 0.053
+          }
+        },
+        {
+          "name": "Resolve Depth Pre-Pass (MSAA)",
+          "samples": 1667,
+          "max_gpu_ms": 0.336896,
+          "max_cpu_ms": 0.009,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.030978994601079786,
+            "p50_ms": 0.03072,
+            "p95_ms": 0.031744,
+            "p99_ms": 0.032768
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0019736052789442113,
+            "p50_ms": 0.002,
+            "p95_ms": 0.002,
+            "p99_ms": 0.003
+          }
+        },
+        {
+          "name": "Copy Final Framebuffer (SSIL/SSR)",
+          "samples": 1667,
+          "max_gpu_ms": 0.395264,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.019494315536892622,
+            "p50_ms": 0.017408,
+            "p95_ms": 0.0176,
+            "p99_ms": 0.031744
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0008728254349130174,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Prepare Depth for SSAO/SSIL",
+          "samples": 1667,
+          "max_gpu_ms": 0.40448,
+          "max_cpu_ms": 0.201,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.014132271145770845,
+            "p50_ms": 0.013664,
+            "p95_ms": 0.01536,
+            "p99_ms": 0.018432
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0015464907018596281,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Render CanvasItems",
+          "samples": 1667,
+          "max_gpu_ms": 0.038304,
+          "max_cpu_ms": 0.137,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.013324765446910618,
+            "p50_ms": 0.012863999999999999,
+            "p95_ms": 0.016704,
+            "p99_ms": 0.018154879999999998
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.00920755848830234,
+            "p50_ms": 0.009000000000000001,
+            "p95_ms": 0.011,
+            "p99_ms": 0.015339999999999918
+          }
+        },
+        {
+          "name": "Render Sky",
+          "samples": 1667,
+          "max_gpu_ms": 0.442368,
+          "max_cpu_ms": 0.015,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.010229557288542291,
+            "p50_ms": 0.007168,
+            "p95_ms": 0.007168,
+            "p99_ms": 0.24066047999999973
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0015098980203959208,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Render 3D Transparent Pass",
+          "samples": 1667,
+          "max_gpu_ms": 0.386048,
+          "max_cpu_ms": 0.024,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.009858533893221355,
+            "p50_ms": 0.008192,
+            "p95_ms": 0.024576,
+            "p99_ms": 0.0256
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0042999400119976,
+            "p50_ms": 0.004,
+            "p95_ms": 0.005,
+            "p99_ms": 0.009
+          }
+        },
+        {
+          "name": "Render 3D Cluster Elements",
+          "samples": 1667,
+          "max_gpu_ms": 0.015616,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.008328062387522496,
+            "p50_ms": 0.008064,
+            "p95_ms": 0.009792,
+            "p99_ms": 0.010997759999999994
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.000874625074985003,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Pack 3D Cluster Elements",
+          "samples": 1667,
+          "max_gpu_ms": 0.021504,
+          "max_cpu_ms": 0.006,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.007036275944811037,
+            "p50_ms": 0.007168,
+            "p95_ms": 0.007782399999999965,
+            "p99_ms": 0.008192
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.00032273545290941813,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Setup Shadows",
+          "samples": 1667,
+          "max_gpu_ms": 0.037888,
+          "max_cpu_ms": 0.012,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.005823347330533893,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.01536,
+            "p99_ms": 0.01536
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0011481703659268147,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.003
+          }
+        },
+        {
+          "name": "Pre Opaque Render",
+          "samples": 1667,
+          "max_gpu_ms": 0.009728,
+          "max_cpu_ms": 0.013,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0036609574085182963,
+            "p50_ms": 0.002848,
+            "p95_ms": 0.005856,
+            "p99_ms": 0.006315519999999989
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0037366526694661067,
+            "p50_ms": 0.004,
+            "p95_ms": 0.005,
+            "p99_ms": 0.006
+          }
+        },
+        {
+          "name": "Prepare Render Frame",
+          "samples": 1667,
+          "max_gpu_ms": 0.003936,
+          "max_cpu_ms": 0.05,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.002202855428914217,
+            "p50_ms": 0.002208,
+            "p95_ms": 0.0032,
+            "p99_ms": 0.0034668799999999973
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.008872225554889023,
+            "p50_ms": 0.007,
+            "p95_ms": 0.024,
+            "p99_ms": 0.03133999999999992
+          }
+        },
+        {
+          "name": "Setup 3D Scene",
+          "samples": 1667,
+          "max_gpu_ms": 0.00784,
+          "max_cpu_ms": 0.051,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0021220203959208157,
+            "p50_ms": 0.002016,
+            "p95_ms": 0.002528,
+            "p99_ms": 0.0028268799999999973
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.014306538692261547,
+            "p50_ms": 0.013,
+            "p95_ms": 0.02,
+            "p99_ms": 0.026
+          }
+        },
+        {
+          "name": "Setup Sky",
+          "samples": 1667,
+          "max_gpu_ms": 0.00752,
+          "max_cpu_ms": 0.008,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.001809871625674865,
+            "p50_ms": 0.00176,
+            "p95_ms": 0.001984,
+            "p99_ms": 0.002048
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.001555488902219556,
+            "p50_ms": 0.002,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 4",
+          "samples": 1057,
+          "max_gpu_ms": 0.004896,
+          "max_cpu_ms": 0.04,
+          "gpu": {
+            "sample_count": 1057,
+            "mean_ms": 0.0017177672658467362,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.003744,
+            "p99_ms": 0.004540160000000004
+          },
+          "cpu": {
+            "sample_count": 1057,
+            "mean_ms": 0.008557237464522234,
+            "p50_ms": 0.006,
+            "p95_ms": 0.02,
+            "p99_ms": 0.026000000000000002
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 2",
+          "samples": 1057,
+          "max_gpu_ms": 0.00512,
+          "max_cpu_ms": 0.057999999999999996,
+          "gpu": {
+            "sample_count": 1057,
+            "mean_ms": 0.0017152544938505204,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037760000000000003,
+            "p99_ms": 0.004444160000000004
+          },
+          "cpu": {
+            "sample_count": 1057,
+            "mean_ms": 0.010897824030274362,
+            "p50_ms": 0.007,
+            "p95_ms": 0.027000000000000003,
+            "p99_ms": 0.03444000000000006
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 3",
+          "samples": 1057,
+          "max_gpu_ms": 0.004992000000000001,
+          "max_cpu_ms": 0.038000000000000006,
+          "gpu": {
+            "sample_count": 1057,
+            "mean_ms": 0.0017126508987701042,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037440000000000004,
+            "p99_ms": 0.004416
+          },
+          "cpu": {
+            "sample_count": 1057,
+            "mean_ms": 0.007945127719962157,
+            "p50_ms": 0.006,
+            "p95_ms": 0.019999999999999997,
+            "p99_ms": 0.024999999999999998
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 1",
+          "samples": 1057,
+          "max_gpu_ms": 0.005184,
+          "max_cpu_ms": 0.053000000000000005,
+          "gpu": {
+            "sample_count": 1057,
+            "mean_ms": 0.0017119545884578997,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037760000000000003,
+            "p99_ms": 0.004430080000000002
+          },
+          "cpu": {
+            "sample_count": 1057,
+            "mean_ms": 0.010517502365184485,
+            "p50_ms": 0.007,
+            "p95_ms": 0.02519999999999993,
+            "p99_ms": 0.03344000000000005
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 5",
+          "samples": 1057,
+          "max_gpu_ms": 0.005248,
+          "max_cpu_ms": 0.044999999999999984,
+          "gpu": {
+            "sample_count": 1057,
+            "mean_ms": 0.001710864711447493,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037440000000000004,
+            "p99_ms": 0.004486400000000009
+          },
+          "cpu": {
+            "sample_count": 1057,
+            "mean_ms": 0.008884578997161779,
+            "p50_ms": 0.006,
+            "p95_ms": 0.021,
+            "p99_ms": 0.03
+          }
+        },
+        {
+          "name": "Cull CanvasItem Tree",
+          "samples": 1667,
+          "max_gpu_ms": 0.00752,
+          "max_cpu_ms": 0.042,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0017100899820035992,
+            "p50_ms": 0.0015999999999999999,
+            "p95_ms": 0.002656,
+            "p99_ms": 0.002784
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.009682663467306538,
+            "p50_ms": 0.009000000000000001,
+            "p95_ms": 0.013000000000000001,
+            "p99_ms": 0.022
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 0",
+          "samples": 1057,
+          "max_gpu_ms": 0.004928,
+          "max_cpu_ms": 0.04899999999999999,
+          "gpu": {
+            "sample_count": 1057,
+            "mean_ms": 0.0017047492904446548,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037760000000000003,
+            "p99_ms": 0.004398080000000002
+          },
+          "cpu": {
+            "sample_count": 1057,
+            "mean_ms": 0.012445600756859035,
+            "p50_ms": 0.009000000000000001,
+            "p95_ms": 0.028999999999999998,
+            "p99_ms": 0.036440000000000056
+          }
+        },
+        {
+          "name": "Cull 2D Lights",
+          "samples": 1667,
+          "max_gpu_ms": 0.00512,
+          "max_cpu_ms": 0.009999999999999998,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0011431697660467905,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.002048,
+            "p99_ms": 0.002048
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.000943011397720456,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Frame Begin",
+          "samples": 1667,
+          "max_gpu_ms": 0.003904,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0010595320935812837,
+            "p50_ms": 0.001056,
+            "p95_ms": 0.00128,
+            "p99_ms": 0.00144
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.000235752849430114,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Post Transparent Compositor Effects",
+          "samples": 1667,
+          "max_gpu_ms": 0.006144,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0006763575284943011,
+            "p50_ms": 0.0008,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.00512
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.00017456508698260347,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Update Visibility Dependencies",
+          "samples": 1667,
+          "max_gpu_ms": 0.003264,
+          "max_cpu_ms": 0.006,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0006113593281343731,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000832,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 8.698260347930414e-05,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Update Occlusion Buffer",
+          "samples": 1667,
+          "max_gpu_ms": 0.003424,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005995728854229155,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000704,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0010725854829034193,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 0",
+          "samples": 1667,
+          "max_gpu_ms": 0.001536,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005973269346130774,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000736,
+            "p99_ms": 0.000992
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0012993401319736054,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Cull 3D Scene",
+          "samples": 1667,
+          "max_gpu_ms": 0.003008,
+          "max_cpu_ms": 0.011,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005957912417516497,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000672,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.002433113377324535,
+            "p50_ms": 0.002,
+            "p95_ms": 0.003,
+            "p99_ms": 0.003
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 2",
+          "samples": 1667,
+          "max_gpu_ms": 0.001632,
+          "max_cpu_ms": 0.013,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005941787642471506,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000736,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0007648470305938812,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Render 3D Scene",
+          "samples": 1667,
+          "max_gpu_ms": 0.000896,
+          "max_cpu_ms": 0.006,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005936988602279544,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000736,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0008392321535692862,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Prepare 3D Scene",
+          "samples": 1667,
+          "max_gpu_ms": 0.001376,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005932381523695261,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000704,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.000758248350329934,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Resolve MSAA",
+          "samples": 1667,
+          "max_gpu_ms": 0.009216,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005921631673665267,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.00011457708458308339,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 1",
+          "samples": 1667,
+          "max_gpu_ms": 0.0032,
+          "max_cpu_ms": 0.002,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.00059151049790042,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.00064,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0007840431913617277,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 3",
+          "samples": 1667,
+          "max_gpu_ms": 0.000992,
+          "max_cpu_ms": 0.061,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005898020395920816,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.00064,
+            "p99_ms": 0.000832
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.014719256148770246,
+            "p50_ms": 0.014,
+            "p95_ms": 0.018,
+            "p99_ms": 0.022
+          }
+        },
+        {
+          "name": "Process Post Opaque Compositor Effects",
+          "samples": 1667,
+          "max_gpu_ms": 0.003072,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005682063587282544,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0001847630473905219,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Update Volumetric Fog",
+          "samples": 1667,
+          "max_gpu_ms": 0.004096,
+          "max_cpu_ms": 0.01,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005667666466706658,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.000489502099580084,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Pre Transparent Compositor Effects",
+          "samples": 1667,
+          "max_gpu_ms": 0.007168,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005620635872825435,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.00013857228554289142,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Pre Opaque Compositor Effects",
+          "samples": 1667,
+          "max_gpu_ms": 0.002048,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005543083383323335,
+            "p50_ms": 0.000832,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0004427114577084583,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Post Sky Compositor Effects",
+          "samples": 1667,
+          "max_gpu_ms": 0.008192,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005344211157768446,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.00017696460707858428,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        }
+      ],
+      "inventory": {
+        "background_sleep_usec": 0,
+        "dof": true,
+        "dof_jitter": false,
+        "dof_quality": 2,
+        "main_shadow": true,
+        "mesh_instances": 203,
+        "msaa_3d": 1,
+        "night_sky": false,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "sky_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 203,
+        "triangles": 136803,
+        "unique_materials": 203,
+        "unique_meshes": 68,
+        "workload_phase_reset": true
+      }
+    },
+    {
+      "run": "gpu-r3",
+      "case": "baseline/night",
+      "metrics": {
+        "gpu": {
+          "sample_count": 16585,
+          "mean_ms": 1.7289822727073414,
+          "p50_ms": 1.67400002479553,
+          "p95_ms": 2.02999997138977,
+          "p99_ms": 2.33299994468689
+        },
+        "cpu": {
+          "sample_count": 16585,
+          "mean_ms": 0.29034103098352665,
+          "p50_ms": 0.270000010728836,
+          "p95_ms": 0.499000012874603,
+          "p99_ms": 0.5981599879264832
+        },
+        "wall": {
+          "sample_count": 16585,
+          "mean_ms": 1.8089633403678023,
+          "p50_ms": 1.739,
+          "p95_ms": 2.238,
+          "p99_ms": 2.431
+        }
+      },
+      "route_extent_xyz_m": [
+        [
+          -9.48001861572266,
+          23.2799797058105
+        ],
+        [
+          -0.000134262372739613,
+          0.60029536485672
+        ],
+        [
+          -4.78377771377563,
+          8.5
+        ]
+      ],
+      "completed_routes": 0,
+      "gpu_stages": [
+        {
+          "name": "Depth of Field",
+          "samples": 1658,
+          "max_gpu_ms": 0.989184,
+          "max_cpu_ms": 0.016,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.5130750687575392,
+            "p50_ms": 0.484352,
+            "p95_ms": 0.7435775999999998,
+            "p99_ms": 0.8723046400000001
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0025277442702050664,
+            "p50_ms": 0.002,
+            "p95_ms": 0.003,
+            "p99_ms": 0.004
+          }
+        },
+        {
+          "name": "Render Opaque Pass",
+          "samples": 1658,
+          "max_gpu_ms": 0.78848,
+          "max_cpu_ms": 0.071,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.34966758986731,
+            "p50_ms": 0.344064,
+            "p95_ms": 0.395264,
+            "p99_ms": 0.39980032000000004
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.028932448733413753,
+            "p50_ms": 0.028,
+            "p95_ms": 0.038,
+            "p99_ms": 0.053
+          }
+        },
+        {
+          "name": "Process SSR",
+          "samples": 1658,
+          "max_gpu_ms": 0.40032,
+          "max_cpu_ms": 0.039,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.1465735681544029,
+            "p50_ms": 0.145408,
+            "p95_ms": 0.150528,
+            "p99_ms": 0.1636553600000001
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.013461399276236428,
+            "p50_ms": 0.013,
+            "p95_ms": 0.018,
+            "p99_ms": 0.02
+          }
+        },
+        {
+          "name": "Render Depth Pre-Pass",
+          "samples": 1658,
+          "max_gpu_ms": 0.508672,
+          "max_cpu_ms": 0.088,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.11671505910735826,
+            "p50_ms": 0.114704,
+            "p95_ms": 0.12848,
+            "p99_ms": 0.14487424000000004
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.03213811821471653,
+            "p50_ms": 0.032,
+            "p95_ms": 0.041,
+            "p99_ms": 0.052
+          }
+        },
+        {
+          "name": "Glow",
+          "samples": 1658,
+          "max_gpu_ms": 0.131072,
+          "max_cpu_ms": 0.01,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.09526990591073582,
+            "p50_ms": 0.095232,
+            "p95_ms": 0.096256,
+            "p99_ms": 0.100352
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0025018094089264173,
+            "p50_ms": 0.002,
+            "p95_ms": 0.003,
+            "p99_ms": 0.004
+          }
+        },
+        {
+          "name": "Render OmniLight Shadows",
+          "samples": 1042,
+          "max_gpu_ms": 0.326656,
+          "max_cpu_ms": 0.235,
+          "gpu": {
+            "sample_count": 1042,
+            "mean_ms": 0.0918376660268714,
+            "p50_ms": 0.069632,
+            "p95_ms": 0.17198079999999993,
+            "p99_ms": 0.205905919999999
+          },
+          "cpu": {
+            "sample_count": 1042,
+            "mean_ms": 0.06891362763915547,
+            "p50_ms": 0.047,
+            "p95_ms": 0.1588499999999998,
+            "p99_ms": 0.18858999999999992
+          }
+        },
+        {
+          "name": "Process SSAO",
+          "samples": 1658,
+          "max_gpu_ms": 0.455328,
+          "max_cpu_ms": 0.019,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.08657397346200241,
+            "p50_ms": 0.084992,
+            "p95_ms": 0.08704,
+            "p99_ms": 0.08912928
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.00831966224366707,
+            "p50_ms": 0.008,
+            "p95_ms": 0.01,
+            "p99_ms": 0.013
+          }
+        },
+        {
+          "name": "Tonemap",
+          "samples": 1658,
+          "max_gpu_ms": 0.1024,
+          "max_cpu_ms": 0.01,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.06889078890229192,
+            "p50_ms": 0.073728,
+            "p95_ms": 0.0768,
+            "p99_ms": 0.078848
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0029535585042219543,
+            "p50_ms": 0.003,
+            "p95_ms": 0.004,
+            "p99_ms": 0.005
+          }
+        },
+        {
+          "name": "Resolve",
+          "samples": 1658,
+          "max_gpu_ms": 0.4352,
+          "max_cpu_ms": 0.008,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.05360968878166466,
+            "p50_ms": 0.049152,
+            "p95_ms": 0.053248,
+            "p99_ms": 0.29067264000000015
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0011531966224366708,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Render Directional/SpotLight Shadows",
+          "samples": 1658,
+          "max_gpu_ms": 0.429056,
+          "max_cpu_ms": 0.065,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.042656579010856455,
+            "p50_ms": 0.041984,
+            "p95_ms": 0.05632,
+            "p99_ms": 0.059392
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.031270205066344994,
+            "p50_ms": 0.031,
+            "p95_ms": 0.041,
+            "p99_ms": 0.054
+          }
+        },
+        {
+          "name": "Resolve Depth Pre-Pass (MSAA)",
+          "samples": 1658,
+          "max_gpu_ms": 0.446464,
+          "max_cpu_ms": 0.01,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.030972680337756332,
+            "p50_ms": 0.029984,
+            "p95_ms": 0.031744,
+            "p99_ms": 0.032768
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0019065138721351025,
+            "p50_ms": 0.002,
+            "p95_ms": 0.002,
+            "p99_ms": 0.003
+          }
+        },
+        {
+          "name": "Process Post Transparent Compositor Effects",
+          "samples": 1658,
+          "max_gpu_ms": 0.39936,
+          "max_cpu_ms": 0.022,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.02141602895054282,
+            "p50_ms": 0.0192,
+            "p95_ms": 0.019456,
+            "p99_ms": 0.020920320000000065
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.008305790108564536,
+            "p50_ms": 0.008,
+            "p95_ms": 0.01,
+            "p99_ms": 0.012430000000000064
+          }
+        },
+        {
+          "name": "Copy Final Framebuffer (SSIL/SSR)",
+          "samples": 1658,
+          "max_gpu_ms": 0.40448,
+          "max_cpu_ms": 0.002,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.02044595416164053,
+            "p50_ms": 0.017408,
+            "p95_ms": 0.01837759999999999,
+            "p99_ms": 0.20721088000000476
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0008594692400482509,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Render 3D Transparent Pass",
+          "samples": 1658,
+          "max_gpu_ms": 0.295936,
+          "max_cpu_ms": 0.023,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.01619315802171291,
+            "p50_ms": 0.009216,
+            "p95_ms": 0.0256,
+            "p99_ms": 0.026624
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.004311821471652593,
+            "p50_ms": 0.004,
+            "p95_ms": 0.005,
+            "p99_ms": 0.007
+          }
+        },
+        {
+          "name": "Render CanvasItems",
+          "samples": 1658,
+          "max_gpu_ms": 0.43184000000000006,
+          "max_cpu_ms": 0.045,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.01550496501809409,
+            "p50_ms": 0.014367999999999999,
+            "p95_ms": 0.017888,
+            "p99_ms": 0.018683520000000002
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.009166465621230399,
+            "p50_ms": 0.009000000000000001,
+            "p95_ms": 0.012,
+            "p99_ms": 0.015
+          }
+        },
+        {
+          "name": "Prepare Depth for SSAO/SSIL",
+          "samples": 1658,
+          "max_gpu_ms": 0.388096,
+          "max_cpu_ms": 0.006,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.014517867310012063,
+            "p50_ms": 0.014336,
+            "p95_ms": 0.01536,
+            "p99_ms": 0.016384
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0014234016887816647,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.003
+          }
+        },
+        {
+          "name": "Render Sky",
+          "samples": 1658,
+          "max_gpu_ms": 0.396288,
+          "max_cpu_ms": 0.009,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.009735411338962606,
+            "p50_ms": 0.006144,
+            "p95_ms": 0.007168,
+            "p99_ms": 0.23377920000000066
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0015241254523522317,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.003
+          }
+        },
+        {
+          "name": "Render 3D Cluster Elements",
+          "samples": 1658,
+          "max_gpu_ms": 0.035776,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.008255845597104945,
+            "p50_ms": 0.007968,
+            "p95_ms": 0.009696,
+            "p99_ms": 0.011063040000000008
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0008642943305186972,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Pack 3D Cluster Elements",
+          "samples": 1658,
+          "max_gpu_ms": 0.018432,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0070076718938480095,
+            "p50_ms": 0.007168,
+            "p95_ms": 0.008192,
+            "p99_ms": 0.00833376
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0003184559710494572,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Setup Shadows",
+          "samples": 1658,
+          "max_gpu_ms": 0.016384,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.005863604342581423,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.01536,
+            "p99_ms": 0.01536
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.001097708082026538,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.003
+          }
+        },
+        {
+          "name": "Pre Opaque Render",
+          "samples": 1658,
+          "max_gpu_ms": 0.010016,
+          "max_cpu_ms": 0.044,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0036845355850422196,
+            "p50_ms": 0.00288,
+            "p95_ms": 0.00592,
+            "p99_ms": 0.006253760000000002
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0037521109770808202,
+            "p50_ms": 0.004,
+            "p95_ms": 0.005,
+            "p99_ms": 0.006
+          }
+        },
+        {
+          "name": "Prepare Render Frame",
+          "samples": 1658,
+          "max_gpu_ms": 0.005824,
+          "max_cpu_ms": 0.052,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0022501133896260556,
+            "p50_ms": 0.00224,
+            "p95_ms": 0.0032687999999999958,
+            "p99_ms": 0.003456
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.008971049457177322,
+            "p50_ms": 0.007,
+            "p95_ms": 0.025,
+            "p99_ms": 0.034430000000000065
+          }
+        },
+        {
+          "name": "Setup 3D Scene",
+          "samples": 1658,
+          "max_gpu_ms": 0.008736,
+          "max_cpu_ms": 0.041,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.00210929794933655,
+            "p50_ms": 0.002016,
+            "p95_ms": 0.002528,
+            "p99_ms": 0.002797760000000002
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.014704463208685162,
+            "p50_ms": 0.014,
+            "p95_ms": 0.021,
+            "p99_ms": 0.027
+          }
+        },
+        {
+          "name": "Setup Sky",
+          "samples": 1658,
+          "max_gpu_ms": 0.007392,
+          "max_cpu_ms": 0.014,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0018115705669481303,
+            "p50_ms": 0.00176,
+            "p95_ms": 0.001984,
+            "p99_ms": 0.00208
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0013196622436670688,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Cull CanvasItem Tree",
+          "samples": 1658,
+          "max_gpu_ms": 0.007744,
+          "max_cpu_ms": 0.025,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0017410084439083231,
+            "p50_ms": 0.001632,
+            "p95_ms": 0.002656,
+            "p99_ms": 0.0027155200000000042
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.009827503015681544,
+            "p50_ms": 0.01,
+            "p95_ms": 0.013000000000000001,
+            "p99_ms": 0.016
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 2",
+          "samples": 1042,
+          "max_gpu_ms": 0.007808000000000001,
+          "max_cpu_ms": 0.045,
+          "gpu": {
+            "sample_count": 1042,
+            "mean_ms": 0.0017316238003838773,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.003806399999999998,
+            "p99_ms": 0.004576
+          },
+          "cpu": {
+            "sample_count": 1042,
+            "mean_ms": 0.011027831094049905,
+            "p50_ms": 0.007,
+            "p95_ms": 0.027000000000000003,
+            "p99_ms": 0.03258999999999992
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 4",
+          "samples": 1042,
+          "max_gpu_ms": 0.005248,
+          "max_cpu_ms": 0.046,
+          "gpu": {
+            "sample_count": 1042,
+            "mean_ms": 0.0017301190019193859,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037440000000000004,
+            "p99_ms": 0.004645759999999995
+          },
+          "cpu": {
+            "sample_count": 1042,
+            "mean_ms": 0.008661228406909789,
+            "p50_ms": 0.006,
+            "p95_ms": 0.02,
+            "p99_ms": 0.026999999999999996
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 3",
+          "samples": 1042,
+          "max_gpu_ms": 0.010016,
+          "max_cpu_ms": 0.034,
+          "gpu": {
+            "sample_count": 1042,
+            "mean_ms": 0.0017270479846449138,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.003806399999999998,
+            "p99_ms": 0.004696639999999992
+          },
+          "cpu": {
+            "sample_count": 1042,
+            "mean_ms": 0.008036468330134357,
+            "p50_ms": 0.006,
+            "p95_ms": 0.02,
+            "p99_ms": 0.024589999999999917
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 1",
+          "samples": 1042,
+          "max_gpu_ms": 0.0104,
+          "max_cpu_ms": 0.046,
+          "gpu": {
+            "sample_count": 1042,
+            "mean_ms": 0.0017220729366602687,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037760000000000003,
+            "p99_ms": 0.00453503999999998
+          },
+          "cpu": {
+            "sample_count": 1042,
+            "mean_ms": 0.010610364683301343,
+            "p50_ms": 0.007,
+            "p95_ms": 0.026000000000000002,
+            "p99_ms": 0.032
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 5",
+          "samples": 1042,
+          "max_gpu_ms": 0.006752,
+          "max_cpu_ms": 0.041,
+          "gpu": {
+            "sample_count": 1042,
+            "mean_ms": 0.0017142725527831094,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037423999999999977,
+            "p99_ms": 0.0046137599999999945
+          },
+          "cpu": {
+            "sample_count": 1042,
+            "mean_ms": 0.009047984644913628,
+            "p50_ms": 0.006,
+            "p95_ms": 0.022000000000000002,
+            "p99_ms": 0.028999999999999998
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 0",
+          "samples": 1042,
+          "max_gpu_ms": 0.00768,
+          "max_cpu_ms": 0.049000000000000016,
+          "gpu": {
+            "sample_count": 1042,
+            "mean_ms": 0.001713904030710173,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037760000000000007,
+            "p99_ms": 0.004568639999999993
+          },
+          "cpu": {
+            "sample_count": 1042,
+            "mean_ms": 0.012607485604606526,
+            "p50_ms": 0.009000000000000001,
+            "p95_ms": 0.029,
+            "p99_ms": 0.035
+          }
+        },
+        {
+          "name": "Cull 2D Lights",
+          "samples": 1658,
+          "max_gpu_ms": 0.004096,
+          "max_cpu_ms": 0.003,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.001119112183353438,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.002048,
+            "p99_ms": 0.002048
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0009686369119420989,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Frame Begin",
+          "samples": 1658,
+          "max_gpu_ms": 0.006464,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.001067966224366707,
+            "p50_ms": 0.001056,
+            "p95_ms": 0.001312,
+            "p99_ms": 0.001504
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.00022135102533172497,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Update Visibility Dependencies",
+          "samples": 1658,
+          "max_gpu_ms": 0.003552,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0006097370325693607,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000832,
+            "p99_ms": 0.001056
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 9.951749095295538e-05,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Cull 3D Scene",
+          "samples": 1658,
+          "max_gpu_ms": 0.00384,
+          "max_cpu_ms": 0.009,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0006024800965018094,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.0007727999999999957,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0024354644149577804,
+            "p50_ms": 0.002,
+            "p95_ms": 0.003,
+            "p99_ms": 0.003
+          }
+        },
+        {
+          "name": "Update Occlusion Buffer",
+          "samples": 1658,
+          "max_gpu_ms": 0.003456,
+          "max_cpu_ms": 0.008,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0006014764776839566,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000704,
+            "p99_ms": 0.001056
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0010874547647768396,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 3",
+          "samples": 1658,
+          "max_gpu_ms": 0.003424,
+          "max_cpu_ms": 0.028,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0006002991556091677,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000736,
+            "p99_ms": 0.000832
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.01475633293124246,
+            "p50_ms": 0.014,
+            "p95_ms": 0.019,
+            "p99_ms": 0.021430000000000064
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 0",
+          "samples": 1658,
+          "max_gpu_ms": 0.00336,
+          "max_cpu_ms": 0.012,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0005994113389626056,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000672,
+            "p99_ms": 0.001005760000000002
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.001293124246079614,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Prepare 3D Scene",
+          "samples": 1658,
+          "max_gpu_ms": 0.00352,
+          "max_cpu_ms": 0.003,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0005977708082026539,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000736,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0007876960193003619,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 2",
+          "samples": 1658,
+          "max_gpu_ms": 0.003744,
+          "max_cpu_ms": 0.004,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0005976357056694813,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000704,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0007786489746682751,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 1",
+          "samples": 1658,
+          "max_gpu_ms": 0.003392,
+          "max_cpu_ms": 0.006,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0005975585042219542,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000736,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.000816043425814234,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Render 3D Scene",
+          "samples": 1658,
+          "max_gpu_ms": 0.00352,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0005949529553679132,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.00064,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0008232810615199035,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Post Opaque Compositor Effects",
+          "samples": 1658,
+          "max_gpu_ms": 0.00512,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0005688202653799759,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.00020386007237635707,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Resolve MSAA",
+          "samples": 1658,
+          "max_gpu_ms": 0.009216,
+          "max_cpu_ms": 0.002,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0005675850422195416,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.00011942098914354644,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Update Volumetric Fog",
+          "samples": 1658,
+          "max_gpu_ms": 0.003072,
+          "max_cpu_ms": 0.002,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0005666779252110976,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0004891435464414958,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Post Sky Compositor Effects",
+          "samples": 1658,
+          "max_gpu_ms": 0.007168,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0005583208685162847,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.00020506634499396865,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Pre Transparent Compositor Effects",
+          "samples": 1658,
+          "max_gpu_ms": 0.002048,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.000555232810615199,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0001332931242460796,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Pre Opaque Compositor Effects",
+          "samples": 1658,
+          "max_gpu_ms": 0.00512,
+          "max_cpu_ms": 0.002,
+          "gpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.0005335392038600724,
+            "p50_ms": 0.000768,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1658,
+            "mean_ms": 0.00044451145958986733,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        }
+      ],
+      "inventory": {
+        "background_sleep_usec": 0,
+        "dof": true,
+        "dof_jitter": false,
+        "dof_quality": 2,
+        "main_shadow": true,
+        "mesh_instances": 203,
+        "msaa_3d": 1,
+        "night_sky": true,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "sky_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 203,
+        "triangles": 136803,
+        "unique_materials": 203,
+        "unique_meshes": 68,
+        "workload_phase_reset": true
+      }
+    },
+    {
+      "run": "gpu-r3",
+      "case": "plain_sky/night",
+      "metrics": {
+        "gpu": {
+          "sample_count": 16676,
+          "mean_ms": 1.712803610425168,
+          "p50_ms": 1.66299998760223,
+          "p95_ms": 2.00300002098083,
+          "p99_ms": 2.1532500982284577
+        },
+        "cpu": {
+          "sample_count": 16676,
+          "mean_ms": 0.277917366179989,
+          "p50_ms": 0.2604999989271165,
+          "p95_ms": 0.486999988555908,
+          "p99_ms": 0.5812499821186065
+        },
+        "wall": {
+          "sample_count": 16676,
+          "mean_ms": 1.7990087550971456,
+          "p50_ms": 1.727,
+          "p95_ms": 2.231,
+          "p99_ms": 2.406
+        }
+      },
+      "route_extent_xyz_m": [
+        [
+          -9.48001861572266,
+          23.2799797058105
+        ],
+        [
+          -0.000134262372739613,
+          0.60029536485672
+        ],
+        [
+          -4.78377771377563,
+          8.5
+        ]
+      ],
+      "completed_routes": 0,
+      "gpu_stages": [
+        {
+          "name": "Depth of Field",
+          "samples": 1667,
+          "max_gpu_ms": 0.951296,
+          "max_cpu_ms": 0.011,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.5240709298140372,
+            "p50_ms": 0.493568,
+            "p95_ms": 0.754688,
+            "p99_ms": 0.8966963199999999
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.002397120575884823,
+            "p50_ms": 0.002,
+            "p95_ms": 0.003,
+            "p99_ms": 0.004
+          }
+        },
+        {
+          "name": "Render Opaque Pass",
+          "samples": 1667,
+          "max_gpu_ms": 0.438272,
+          "max_cpu_ms": 0.075,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.349672350329934,
+            "p50_ms": 0.345088,
+            "p95_ms": 0.395264,
+            "p99_ms": 0.39936
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.02841871625674865,
+            "p50_ms": 0.028,
+            "p95_ms": 0.035,
+            "p99_ms": 0.047
+          }
+        },
+        {
+          "name": "Process SSR",
+          "samples": 1667,
+          "max_gpu_ms": 0.177152,
+          "max_cpu_ms": 0.048,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.14525444991001799,
+            "p50_ms": 0.145408,
+            "p95_ms": 0.149504,
+            "p99_ms": 0.15193791999999998
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.013319136172765447,
+            "p50_ms": 0.013,
+            "p95_ms": 0.016,
+            "p99_ms": 0.020339999999999917
+          }
+        },
+        {
+          "name": "Render Depth Pre-Pass",
+          "samples": 1667,
+          "max_gpu_ms": 0.163328,
+          "max_cpu_ms": 0.101,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.11504433833233353,
+            "p50_ms": 0.11424,
+            "p95_ms": 0.1270208,
+            "p99_ms": 0.12966464
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.031634073185362925,
+            "p50_ms": 0.031,
+            "p95_ms": 0.038,
+            "p99_ms": 0.047
+          }
+        },
+        {
+          "name": "Glow",
+          "samples": 1667,
+          "max_gpu_ms": 0.133024,
+          "max_cpu_ms": 0.02,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0959414901019796,
+            "p50_ms": 0.095488,
+            "p95_ms": 0.09728,
+            "p99_ms": 0.10129088
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0024307138572285543,
+            "p50_ms": 0.002,
+            "p95_ms": 0.003,
+            "p99_ms": 0.004
+          }
+        },
+        {
+          "name": "Render OmniLight Shadows",
+          "samples": 1052,
+          "max_gpu_ms": 0.216064,
+          "max_cpu_ms": 0.226,
+          "gpu": {
+            "sample_count": 1052,
+            "mean_ms": 0.0907515133079848,
+            "p50_ms": 0.068608,
+            "p95_ms": 0.17408,
+            "p99_ms": 0.20833280000000004
+          },
+          "cpu": {
+            "sample_count": 1052,
+            "mean_ms": 0.06811216730038022,
+            "p50_ms": 0.046,
+            "p95_ms": 0.15244999999999992,
+            "p99_ms": 0.18698
+          }
+        },
+        {
+          "name": "Process SSAO",
+          "samples": 1667,
+          "max_gpu_ms": 0.126016,
+          "max_cpu_ms": 0.028,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.08560019196160767,
+            "p50_ms": 0.084992,
+            "p95_ms": 0.087744,
+            "p99_ms": 0.089088
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.008213557288542292,
+            "p50_ms": 0.008,
+            "p95_ms": 0.01,
+            "p99_ms": 0.012
+          }
+        },
+        {
+          "name": "Tonemap",
+          "samples": 1667,
+          "max_gpu_ms": 0.110592,
+          "max_cpu_ms": 0.009999999999999998,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.07484130053989202,
+            "p50_ms": 0.074752,
+            "p95_ms": 0.0768,
+            "p99_ms": 0.07782399999999999
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0028944211157768446,
+            "p50_ms": 0.003,
+            "p95_ms": 0.004,
+            "p99_ms": 0.005
+          }
+        },
+        {
+          "name": "Resolve",
+          "samples": 1667,
+          "max_gpu_ms": 0.564224,
+          "max_cpu_ms": 0.009,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.05249136412717457,
+            "p50_ms": 0.050176,
+            "p95_ms": 0.055296,
+            "p99_ms": 0.07685439999999999
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0011211757648470306,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Render Directional/SpotLight Shadows",
+          "samples": 1667,
+          "max_gpu_ms": 0.461824,
+          "max_cpu_ms": 0.08,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.04183657348530294,
+            "p50_ms": 0.044032,
+            "p95_ms": 0.052224,
+            "p99_ms": 0.058368
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.030726454709058187,
+            "p50_ms": 0.03,
+            "p95_ms": 0.04,
+            "p99_ms": 0.048
+          }
+        },
+        {
+          "name": "Resolve Depth Pre-Pass (MSAA)",
+          "samples": 1667,
+          "max_gpu_ms": 0.068608,
+          "max_cpu_ms": 0.01,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.030329146970605878,
+            "p50_ms": 0.03072,
+            "p95_ms": 0.031744,
+            "p99_ms": 0.03176576
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.001922015596880624,
+            "p50_ms": 0.002,
+            "p95_ms": 0.002,
+            "p99_ms": 0.003
+          }
+        },
+        {
+          "name": "Copy Final Framebuffer (SSIL/SSR)",
+          "samples": 1667,
+          "max_gpu_ms": 0.44032,
+          "max_cpu_ms": 0.008,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.020075037792441512,
+            "p50_ms": 0.017408,
+            "p95_ms": 0.017664,
+            "p99_ms": 0.03731455999999866
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0008668266346730654,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Prepare Depth for SSAO/SSIL",
+          "samples": 1667,
+          "max_gpu_ms": 0.03392,
+          "max_cpu_ms": 0.014,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.014024791841631674,
+            "p50_ms": 0.014336,
+            "p95_ms": 0.01536,
+            "p99_ms": 0.015488
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0014427114577084583,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Render CanvasItems",
+          "samples": 1667,
+          "max_gpu_ms": 0.032192000000000005,
+          "max_cpu_ms": 0.028,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.013178509898020396,
+            "p50_ms": 0.012896,
+            "p95_ms": 0.014870399999999995,
+            "p99_ms": 0.017088
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.008949010197960409,
+            "p50_ms": 0.009000000000000001,
+            "p95_ms": 0.011,
+            "p99_ms": 0.015
+          }
+        },
+        {
+          "name": "Render Sky",
+          "samples": 1667,
+          "max_gpu_ms": 0.39424,
+          "max_cpu_ms": 0.009,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.012003589682063586,
+            "p50_ms": 0.007168,
+            "p95_ms": 0.007168,
+            "p99_ms": 0.2481561599999999
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0015176964607078584,
+            "p50_ms": 0.002,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Render 3D Transparent Pass",
+          "samples": 1667,
+          "max_gpu_ms": 0.25088,
+          "max_cpu_ms": 0.031,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.00901820275944811,
+            "p50_ms": 0.008192,
+            "p95_ms": 0.009216,
+            "p99_ms": 0.0256
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.004242351529694061,
+            "p50_ms": 0.004,
+            "p95_ms": 0.005,
+            "p99_ms": 0.008
+          }
+        },
+        {
+          "name": "Render 3D Cluster Elements",
+          "samples": 1667,
+          "max_gpu_ms": 0.015456,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.008301629274145171,
+            "p50_ms": 0.008,
+            "p95_ms": 0.009728,
+            "p99_ms": 0.011338879999999997
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0008392321535692862,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Pack 3D Cluster Elements",
+          "samples": 1667,
+          "max_gpu_ms": 0.022528,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.007112503899220156,
+            "p50_ms": 0.007168,
+            "p95_ms": 0.008192,
+            "p99_ms": 0.009216
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0002975404919016197,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Setup Shadows",
+          "samples": 1667,
+          "max_gpu_ms": 0.018432,
+          "max_cpu_ms": 0.008,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.005868189562087582,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.01536,
+            "p99_ms": 0.01536
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0011523695260947811,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.003
+          }
+        },
+        {
+          "name": "Pre Opaque Render",
+          "samples": 1667,
+          "max_gpu_ms": 0.010464,
+          "max_cpu_ms": 0.021,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0036734541091781644,
+            "p50_ms": 0.00288,
+            "p95_ms": 0.005856,
+            "p99_ms": 0.006197759999999995
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.003692861427714457,
+            "p50_ms": 0.004,
+            "p95_ms": 0.005,
+            "p99_ms": 0.007
+          }
+        },
+        {
+          "name": "Prepare Render Frame",
+          "samples": 1667,
+          "max_gpu_ms": 0.014464,
+          "max_cpu_ms": 0.054,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.002263476904619076,
+            "p50_ms": 0.00224,
+            "p95_ms": 0.003286399999999994,
+            "p99_ms": 0.003456
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.008776844631073786,
+            "p50_ms": 0.007,
+            "p95_ms": 0.023,
+            "p99_ms": 0.03
+          }
+        },
+        {
+          "name": "Setup 3D Scene",
+          "samples": 1667,
+          "max_gpu_ms": 0.00304,
+          "max_cpu_ms": 0.365,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0020980635872825436,
+            "p50_ms": 0.002016,
+            "p95_ms": 0.002528,
+            "p99_ms": 0.0027948799999999974
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.014610677864427114,
+            "p50_ms": 0.014,
+            "p95_ms": 0.02,
+            "p99_ms": 0.025
+          }
+        },
+        {
+          "name": "Setup Sky",
+          "samples": 1667,
+          "max_gpu_ms": 0.0024,
+          "max_cpu_ms": 0.008,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0018044007198560288,
+            "p50_ms": 0.00176,
+            "p95_ms": 0.001984,
+            "p99_ms": 0.002048
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0015488902219556089,
+            "p50_ms": 0.002,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 4",
+          "samples": 1052,
+          "max_gpu_ms": 0.0064,
+          "max_cpu_ms": 0.028999999999999995,
+          "gpu": {
+            "sample_count": 1052,
+            "mean_ms": 0.0017281216730038024,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.003836799999999996,
+            "p99_ms": 0.004576
+          },
+          "cpu": {
+            "sample_count": 1052,
+            "mean_ms": 0.008499049429657795,
+            "p50_ms": 0.006,
+            "p95_ms": 0.019000000000000003,
+            "p99_ms": 0.024
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 1",
+          "samples": 1052,
+          "max_gpu_ms": 0.00528,
+          "max_cpu_ms": 0.161,
+          "gpu": {
+            "sample_count": 1052,
+            "mean_ms": 0.0017248365019011409,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.003808,
+            "p99_ms": 0.0045753600000000005
+          },
+          "cpu": {
+            "sample_count": 1052,
+            "mean_ms": 0.010527566539923955,
+            "p50_ms": 0.007,
+            "p95_ms": 0.026,
+            "p99_ms": 0.031
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 3",
+          "samples": 1052,
+          "max_gpu_ms": 0.0064,
+          "max_cpu_ms": 0.028,
+          "gpu": {
+            "sample_count": 1052,
+            "mean_ms": 0.0017184182509505704,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037760000000000003,
+            "p99_ms": 0.004559680000000001
+          },
+          "cpu": {
+            "sample_count": 1052,
+            "mean_ms": 0.008067490494296578,
+            "p50_ms": 0.006,
+            "p95_ms": 0.019999999999999997,
+            "p99_ms": 0.024
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 2",
+          "samples": 1052,
+          "max_gpu_ms": 0.006816,
+          "max_cpu_ms": 0.047,
+          "gpu": {
+            "sample_count": 1052,
+            "mean_ms": 0.0017176882129277568,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037760000000000003,
+            "p99_ms": 0.004608
+          },
+          "cpu": {
+            "sample_count": 1052,
+            "mean_ms": 0.010846958174904943,
+            "p50_ms": 0.007,
+            "p95_ms": 0.027,
+            "p99_ms": 0.032
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 5",
+          "samples": 1052,
+          "max_gpu_ms": 0.006304000000000001,
+          "max_cpu_ms": 0.032,
+          "gpu": {
+            "sample_count": 1052,
+            "mean_ms": 0.0017176577946768062,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037760000000000003,
+            "p99_ms": 0.004591680000000001
+          },
+          "cpu": {
+            "sample_count": 1052,
+            "mean_ms": 0.008895437262357414,
+            "p50_ms": 0.006,
+            "p95_ms": 0.020999999999999998,
+            "p99_ms": 0.02849000000000001
+          }
+        },
+        {
+          "name": "Cull OmniLight3D Shadow Cube, Side 0",
+          "samples": 1052,
+          "max_gpu_ms": 0.006112,
+          "max_cpu_ms": 0.037000000000000005,
+          "gpu": {
+            "sample_count": 1052,
+            "mean_ms": 0.001714555133079848,
+            "p50_ms": 0.0011840000000000002,
+            "p95_ms": 0.0037903999999999985,
+            "p99_ms": 0.004559040000000001
+          },
+          "cpu": {
+            "sample_count": 1052,
+            "mean_ms": 0.012499049429657795,
+            "p50_ms": 0.009000000000000001,
+            "p95_ms": 0.028,
+            "p99_ms": 0.034999999999999996
+          }
+        },
+        {
+          "name": "Cull CanvasItem Tree",
+          "samples": 1667,
+          "max_gpu_ms": 0.005984,
+          "max_cpu_ms": 0.028,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0016745194961007798,
+            "p50_ms": 0.0015999999999999999,
+            "p95_ms": 0.002656,
+            "p99_ms": 0.002656
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.00977744451109778,
+            "p50_ms": 0.01,
+            "p95_ms": 0.012,
+            "p99_ms": 0.018019999999999755
+          }
+        },
+        {
+          "name": "Cull 2D Lights",
+          "samples": 1667,
+          "max_gpu_ms": 0.004096,
+          "max_cpu_ms": 0.008,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0010952561487702459,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.002048,
+            "p99_ms": 0.002048
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0009364127174565087,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Frame Begin",
+          "samples": 1667,
+          "max_gpu_ms": 0.006688,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0010737180563887222,
+            "p50_ms": 0.001056,
+            "p95_ms": 0.00128,
+            "p99_ms": 0.001408
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.00023095380923815237,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Post Transparent Compositor Effects",
+          "samples": 1667,
+          "max_gpu_ms": 0.00512,
+          "max_cpu_ms": 0.005,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0006382339532093581,
+            "p50_ms": 0.000704,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.00512
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.00016436712657468507,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Update Visibility Dependencies",
+          "samples": 1667,
+          "max_gpu_ms": 0.003424,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0006149298140371925,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000864,
+            "p99_ms": 0.001056
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 9.718056388722256e-05,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 0",
+          "samples": 1667,
+          "max_gpu_ms": 0.002848,
+          "max_cpu_ms": 0.01,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0006025482903419317,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000768,
+            "p99_ms": 0.0010028799999999974
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0012843431313737253,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Update Occlusion Buffer",
+          "samples": 1667,
+          "max_gpu_ms": 0.002848,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.000601377324535093,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000768,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0010971805638872226,
+            "p50_ms": 0.001,
+            "p95_ms": 0.002,
+            "p99_ms": 0.002
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 2",
+          "samples": 1667,
+          "max_gpu_ms": 0.003808,
+          "max_cpu_ms": 0.018,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0006005518896220756,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000768,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0007636472705458908,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Cull 3D Scene",
+          "samples": 1667,
+          "max_gpu_ms": 0.002816,
+          "max_cpu_ms": 0.052,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0006003983203359328,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000736,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0024727054589082182,
+            "p50_ms": 0.002,
+            "p95_ms": 0.003,
+            "p99_ms": 0.003339999999999918
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 1",
+          "samples": 1667,
+          "max_gpu_ms": 0.003904,
+          "max_cpu_ms": 0.005,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005970581883623275,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000704,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0007924415116976604,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001339999999999918
+          }
+        },
+        {
+          "name": "Cull DirectionalLight3D, Split 3",
+          "samples": 1667,
+          "max_gpu_ms": 0.00368,
+          "max_cpu_ms": 0.061,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005952345530893822,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000704,
+            "p99_ms": 0.0008
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.014667066586682664,
+            "p50_ms": 0.014,
+            "p95_ms": 0.018,
+            "p99_ms": 0.021
+          }
+        },
+        {
+          "name": "Prepare 3D Scene",
+          "samples": 1667,
+          "max_gpu_ms": 0.001184,
+          "max_cpu_ms": 0.025,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005945626874625075,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000768,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0007558488302339532,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Render 3D Scene",
+          "samples": 1667,
+          "max_gpu_ms": 0.000896,
+          "max_cpu_ms": 0.004,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005912033593281344,
+            "p50_ms": 0.000576,
+            "p95_ms": 0.000672,
+            "p99_ms": 0.000864
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0008104379124175165,
+            "p50_ms": 0.001,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Resolve MSAA",
+          "samples": 1667,
+          "max_gpu_ms": 0.009216,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005909346130773845,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0001205758848230354,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Post Opaque Compositor Effects",
+          "samples": 1667,
+          "max_gpu_ms": 0.003072,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005553065386922616,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.00016676664667066588,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Pre Opaque Compositor Effects",
+          "samples": 1667,
+          "max_gpu_ms": 0.001024,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005524079184163167,
+            "p50_ms": 0.000864,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.00041211757648470306,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Pre Transparent Compositor Effects",
+          "samples": 1667,
+          "max_gpu_ms": 0.007168,
+          "max_cpu_ms": 0.001,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.000551620875824835,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0001205758848230354,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Process Post Sky Compositor Effects",
+          "samples": 1667,
+          "max_gpu_ms": 0.007168,
+          "max_cpu_ms": 0.007,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005497780443911218,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0001949610077984403,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        },
+        {
+          "name": "Update Volumetric Fog",
+          "samples": 1667,
+          "max_gpu_ms": 0.003072,
+          "max_cpu_ms": 0.006,
+          "gpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0005399496100779844,
+            "p50_ms": 0.001024,
+            "p95_ms": 0.001024,
+            "p99_ms": 0.001024
+          },
+          "cpu": {
+            "sample_count": 1667,
+            "mean_ms": 0.0004823035392921416,
+            "p50_ms": 0.0,
+            "p95_ms": 0.001,
+            "p99_ms": 0.001
+          }
+        }
+      ],
+      "inventory": {
+        "background_sleep_usec": 0,
+        "dof": true,
+        "dof_jitter": false,
+        "dof_quality": 2,
+        "main_shadow": true,
+        "mesh_instances": 203,
+        "msaa_3d": 1,
+        "night_sky": false,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "sky_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 203,
+        "triangles": 136803,
+        "unique_materials": 203,
+        "unique_meshes": 68,
+        "workload_phase_reset": true
+      }
+    },
+    {
+      "run": "cpu",
+      "case": "baseline/night",
+      "metrics": {
+        "gpu": {
+          "sample_count": 17210,
+          "mean_ms": 1.666864381468206,
+          "p50_ms": 1.61000001430511,
+          "p95_ms": 1.9745500028133411,
+          "p99_ms": 2.17799997329712
+        },
+        "cpu": {
+          "sample_count": 17210,
+          "mean_ms": 0.27780883196548695,
+          "p50_ms": 0.25900000333786,
+          "p95_ms": 0.48199999332428,
+          "p99_ms": 0.559000015258789
+        },
+        "wall": {
+          "sample_count": 17210,
+          "mean_ms": 1.7432625798954096,
+          "p50_ms": 1.665,
+          "p95_ms": 2.1725499999999993,
+          "p99_ms": 2.35791
+        }
+      },
+      "route_extent_xyz_m": [
+        [
+          -9.47520065307617,
+          23.2799797058105
+        ],
+        [
+          -0.000134262372739613,
+          0.60029536485672
+        ],
+        [
+          -4.78377771377563,
+          8.5
+        ]
+      ],
+      "completed_routes": 0,
+      "gpu_stages": [],
+      "inventory": {
+        "background_sleep_usec": 0,
+        "dof": true,
+        "dof_jitter": false,
+        "dof_quality": 2,
+        "main_shadow": true,
+        "mesh_instances": 203,
+        "msaa_3d": 1,
+        "night_sky": true,
+        "scaling_3d_scale": 1.0,
+        "shadow_lights": 10,
+        "sky_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ssao": true,
+        "ssr": true,
+        "surfaces": 203,
+        "triangles": 136803,
+        "unique_materials": 203,
+        "unique_meshes": 68,
+        "workload_phase_reset": true
+      }
+    }
+  ],
+  "night_budget": {
+    "gpu_mean_delta_ms": 0.008245529425598678,
+    "gpu_p95_delta_ms": 0.005283335844676884,
+    "sky_control_cpu_mean_ms": 0.0010667054038349796,
+    "conservative_sky_and_existing_focus_ms": 0.011304183614177805,
+    "texture_mipmap_upper_bound_mib": 42.666666666666664,
+    "rounds": [
+      {
+        "round": 1,
+        "gpu_mean_delta_ms": -0.002940726910944491,
+        "gpu_p95_delta_ms": -0.036000013351439986
+      },
+      {
+        "round": 2,
+        "gpu_mean_delta_ms": 0.011498652905567175,
+        "gpu_p95_delta_ms": 0.02485007047653065
+      },
+      {
+        "round": 3,
+        "gpu_mean_delta_ms": 0.01617866228217335,
+        "gpu_p95_delta_ms": 0.026999950408939988
+      }
+    ],
+    "gpu_rounds": 3,
+    "cpu_rounds": 1,
+    "passed": true
+  },
+  "cpu": [
+    {
+      "sky_control_mean_ms": 0.0010667054038349796,
+      "conservative_sky_and_existing_focus_mean_ms": 0.011304183614177805,
+      "samples": 17210
+    }
+  ],
+  "transitions": [
+    {
+      "run": "gpu-r1",
+      "case": "baseline/night",
+      "apply_preset_cpu_ms": 0.365,
+      "max_initial_viewport_gpu_ms": 2.77600002288818,
+      "initial_setup_sky": {
+        "name": "Setup Sky",
+        "samples": 120,
+        "max_gpu_ms": 0.658208,
+        "max_cpu_ms": 9.371,
+        "gpu": {
+          "sample_count": 120,
+          "mean_ms": 0.014233066666666667,
+          "p50_ms": 0.00176,
+          "p95_ms": 0.11097279999999998,
+          "p99_ms": 0.136112
+        },
+        "cpu": {
+          "sample_count": 120,
+          "mean_ms": 0.07985833333333334,
+          "p50_ms": 0.001,
+          "p95_ms": 0.009,
+          "p99_ms": 0.015480000000000018
+        }
+      }
+    },
+    {
+      "run": "gpu-r1",
+      "case": "plain_sky/night",
+      "apply_preset_cpu_ms": 0.143,
+      "max_initial_viewport_gpu_ms": 3.07500004768372,
+      "initial_setup_sky": {
+        "name": "Setup Sky",
+        "samples": 120,
+        "max_gpu_ms": 0.678336,
+        "max_cpu_ms": 0.075,
+        "gpu": {
+          "sample_count": 120,
+          "mean_ms": 0.0144864,
+          "p50_ms": 0.001776,
+          "p95_ms": 0.11081119999999997,
+          "p99_ms": 0.1382368
+        },
+        "cpu": {
+          "sample_count": 120,
+          "mean_ms": 0.0025416666666666665,
+          "p50_ms": 0.002,
+          "p95_ms": 0.008,
+          "p99_ms": 0.010620000000000004
+        }
+      }
+    },
+    {
+      "run": "gpu-r2",
+      "case": "baseline/night",
+      "apply_preset_cpu_ms": 0.143,
+      "max_initial_viewport_gpu_ms": 2.57100009918213,
+      "initial_setup_sky": {
+        "name": "Setup Sky",
+        "samples": 120,
+        "max_gpu_ms": 0.672096,
+        "max_cpu_ms": 8.656,
+        "gpu": {
+          "sample_count": 120,
+          "mean_ms": 0.014450666666666667,
+          "p50_ms": 0.00176,
+          "p95_ms": 0.11219039999999997,
+          "p99_ms": 0.13630464000000003
+        },
+        "cpu": {
+          "sample_count": 120,
+          "mean_ms": 0.07390000000000001,
+          "p50_ms": 0.001,
+          "p95_ms": 0.007049999999999997,
+          "p99_ms": 0.013050000000000011
+        }
+      }
+    },
+    {
+      "run": "gpu-r2",
+      "case": "plain_sky/night",
+      "apply_preset_cpu_ms": 0.404,
+      "max_initial_viewport_gpu_ms": 2.79200005531311,
+      "initial_setup_sky": {
+        "name": "Setup Sky",
+        "samples": 120,
+        "max_gpu_ms": 0.67216,
+        "max_cpu_ms": 0.069,
+        "gpu": {
+          "sample_count": 120,
+          "mean_ms": 0.0144952,
+          "p50_ms": 0.00176,
+          "p95_ms": 0.11217439999999997,
+          "p99_ms": 0.13782496
+        },
+        "cpu": {
+          "sample_count": 120,
+          "mean_ms": 0.0026,
+          "p50_ms": 0.001,
+          "p95_ms": 0.008049999999999998,
+          "p99_ms": 0.01405000000000001
+        }
+      }
+    },
+    {
+      "run": "gpu-r3",
+      "case": "baseline/night",
+      "apply_preset_cpu_ms": 0.402,
+      "max_initial_viewport_gpu_ms": 2.79999995231628,
+      "initial_setup_sky": {
+        "name": "Setup Sky",
+        "samples": 120,
+        "max_gpu_ms": 0.671008,
+        "max_cpu_ms": 8.888,
+        "gpu": {
+          "sample_count": 120,
+          "mean_ms": 0.014367466666666667,
+          "p50_ms": 0.00176,
+          "p95_ms": 0.11251039999999998,
+          "p99_ms": 0.1354208
+        },
+        "cpu": {
+          "sample_count": 120,
+          "mean_ms": 0.076,
+          "p50_ms": 0.001,
+          "p95_ms": 0.009,
+          "p99_ms": 0.015860000000000013
+        }
+      }
+    },
+    {
+      "run": "gpu-r3",
+      "case": "plain_sky/night",
+      "apply_preset_cpu_ms": 0.143,
+      "max_initial_viewport_gpu_ms": 2.56399989128113,
+      "initial_setup_sky": {
+        "name": "Setup Sky",
+        "samples": 120,
+        "max_gpu_ms": 0.681248,
+        "max_cpu_ms": 0.072,
+        "gpu": {
+          "sample_count": 120,
+          "mean_ms": 0.014571466666666666,
+          "p50_ms": 0.00176,
+          "p95_ms": 0.11185599999999997,
+          "p99_ms": 0.1380496
+        },
+        "cpu": {
+          "sample_count": 120,
+          "mean_ms": 0.0024749999999999998,
+          "p50_ms": 0.002,
+          "p95_ms": 0.006,
+          "p99_ms": 0.008620000000000004
+        }
+      }
+    }
+  ],
+  "render": {
+    "screenshots": 66,
+    "route_elapsed_s": 71.96138,
+    "route_frames": 582,
+    "night_frames": 71,
+    "dock_micro": [
+      {
+        "lens": "F",
+        "metrics": {
+          "pixel_count": 154,
+          "pair_count": 23,
+          "mean_step_255": 0.18238283455674761,
+          "p99_step_255": 3.0,
+          "max_step_255": 4,
+          "fraction_above_16": 0.0,
+          "max_pair_fraction_above_16": 0.0,
+          "pair_fractions_above_16": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fraction_range_above_32": 0.0
+        },
+        "passed": true
+      },
+      {
+        "lens": "W",
+        "metrics": {
+          "pixel_count": 128,
+          "pair_count": 23,
+          "mean_step_255": 0.0546875,
+          "p99_step_255": 1.0,
+          "max_step_255": 2,
+          "fraction_above_16": 0.0,
+          "max_pair_fraction_above_16": 0.0,
+          "pair_fractions_above_16": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fraction_range_above_32": 0.0
+        },
+        "passed": true
+      }
+    ],
+    "static_sky_top_30_rows_max_delta_255": 0
+  },
+  "scope": "R5 layout assembly and current same-layout night-sky A/B. CPU instrumentation is a separate one-round sanity check. Earlier original-versus-horizontal measurements remain historical; these runs do not isolate the cost of each newly moved building. Offscreen GPU times exclude desktop presentation and recording costs."
+}

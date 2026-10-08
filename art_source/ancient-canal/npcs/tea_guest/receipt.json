@@ -1,0 +1,11 @@
+{
+  "tool": "builtin image_gen",
+  "calls": 1,
+  "seed": null,
+  "original_bytes_preserved": true,
+  "transparent_background": true,
+  "no_walk_animation": true,
+  "original_sha256": "b8b96886b87cda2a278697c6c760dc4ba5f291b148fc754ed8da3f7340a75718",
+  "original": "mother.png",
+  "prompt": "prompt.txt"
+}

@@ -111,6 +111,9 @@ def main():
     if selected('blockout'):
         runs.append(run('final-blockout', 'res://tests/ancient_canal/blockout.gd', ['--blockout-output='+resource(OUT/'blockout.json')], OUT/'blockout.json'))
     if args.mode == 'all':
+        runs.append(run('blueprint-layout', 'res://tests/ancient_canal/blueprint_layout.gd', ['--report='+resource(OUT/'blueprint-layout.json')], OUT/'blueprint-layout.json'))
+        runs.append(run('horizontal-sky', 'res://tests/ancient_canal/horizontal_sky.gd', ['--report='+resource(OUT/'horizontal-sky.json')], OUT/'horizontal-sky.json'))
+        runs.append(run('lighting-route', 'res://tests/ancient_canal/lighting_route.gd', ['--lighting-output='+resource(OUT/'lighting-route')], OUT/'lighting-route/lighting-route-report.json', fixed_fps=True))
         runs.append(run('background-unit', 'res://tests/ancient_canal/background_unit.gd', []))
         runs.append(run('upright-validation', 'res://tests/ancient_canal/upright_validation.gd', ['--upright-output='+resource(OUT/'upright-validation'), '--canal-fingerprint='+fingerprint(ROOT)['sha256']], OUT/'upright-validation/upright-report.json'))
     if selected('settings'):

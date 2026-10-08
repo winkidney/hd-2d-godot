@@ -1,0 +1,3328 @@
+{
+  "cancelled": false,
+  "frames": 2253,
+  "passed": true,
+  "period_changes": [],
+  "recording": false,
+  "recoveries": 0,
+  "side_observations": {
+    "view_center": {
+      "actor_in_viewport": true,
+      "actor_rays": [
+        {
+          "clear": true,
+          "height": 0.9,
+          "occluder": ""
+        },
+        {
+          "clear": true,
+          "height": 1.7,
+          "occluder": ""
+        }
+      ],
+      "actor_sightline_clear": true,
+      "camera": {
+        "camera_position": [
+          3.9989869594574,
+          11.2576570510864,
+          30.1089153289795
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -0.000117954172310419,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 0.0,
+        "variant": "O",
+        "yaw_degrees": -0.00176170784752549
+      },
+      "camera_x": 3.9989869594574,
+      "foot_pixel": [
+        955.034912109375,
+        797.81689453125
+      ],
+      "front": {
+        "area_px": 120880.0078125,
+        "corners": [
+          "(787.8118, 502.8139)",
+          "(1132.175, 502.8116)",
+          "(1140.714, 160.2822)",
+          "(779.2718, 160.2825)"
+        ],
+        "visible_area_px": 120880.0078125,
+        "width_px": 361.442565917969
+      },
+      "geometric_angle_degrees": -0.00144713331383681,
+      "left": {
+        "area_px": 7297.5234375,
+        "corners": [
+          "(808.8656, 455.1338)",
+          "(787.8118, 502.8139)",
+          "(779.2718, 160.2825)",
+          "(802.3262, 154.2472)"
+        ],
+        "visible_area_px": 7297.5234375,
+        "width_px": 29.5938110351562
+      },
+      "left_wall_x": 0.149999999999999,
+      "player": [
+        3.92458128929138,
+        1.20021903514862,
+        5.90078687667847
+      ],
+      "right": {
+        "area_px": 7301.234375,
+        "corners": [
+          "(1132.175, 502.8116)",
+          "(1111.11, 455.132)",
+          "(1117.648, 154.2471)",
+          "(1140.714, 160.2822)"
+        ],
+        "visible_area_px": 7301.234375,
+        "width_px": 29.6046142578125
+      },
+      "right_wall_x": 7.85,
+      "scope": "Projected body-wall polygons are clipped to the viewport. Sightlines test physical colliders, excluding invisible movement barriers; rendered visual occlusion still requires image review.",
+      "side_large_enough": false,
+      "visible_side": "front_only"
+    },
+    "view_left": {
+      "actor_in_viewport": true,
+      "actor_rays": [
+        {
+          "clear": true,
+          "height": 0.9,
+          "occluder": ""
+        },
+        {
+          "clear": true,
+          "height": 1.7,
+          "occluder": ""
+        }
+      ],
+      "actor_sightline_clear": true,
+      "camera": {
+        "camera_position": [
+          -11.236231803894,
+          11.2576570510864,
+          29.7129707336426
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -13.2057132720947,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000021202151,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -4.0,
+        "variant": "O",
+        "yaw_degrees": -3.99997224359803
+      },
+      "camera_x": -11.236231803894,
+      "foot_pixel": [
+        563.112854003906,
+        747.552978515625
+      ],
+      "front": {
+        "area_px": 114391.7265625,
+        "corners": [
+          "(1349.625, 499.7914)",
+          "(1680.754, 494.6377)",
+          "(1715.715, 159.2423)",
+          "(1368.792, 159.8977)"
+        ],
+        "visible_area_px": 114391.7265625,
+        "width_px": 366.090209960938
+      },
+      "geometric_angle_degrees": -20.9897517811912,
+      "left": {
+        "area_px": 21117.421875,
+        "corners": [
+          "(1287.434, 452.9038)",
+          "(1349.625, 499.7914)",
+          "(1368.792, 159.8977)",
+          "(1301.505, 153.9668)"
+        ],
+        "visible_area_px": 21117.421875,
+        "width_px": 81.357666015625
+      },
+      "left_wall_x": 0.149999999999999,
+      "player": [
+        -15.8672113418579,
+        1.20000004768372,
+        3.00002217292786
+      ],
+      "right": {
+        "area_px": 34052.8203125,
+        "corners": [
+          "(1680.754, 494.6377)",
+          "(1579.625, 448.9174)",
+          "(1605.927, 153.4657)",
+          "(1715.715, 159.2423)"
+        ],
+        "visible_area_px": 34052.8203125,
+        "width_px": 136.09033203125
+      },
+      "right_wall_x": 7.85,
+      "scope": "Projected body-wall polygons are clipped to the viewport. Sightlines test physical colliders, excluding invisible movement barriers; rendered visual occlusion still requires image review.",
+      "side_large_enough": true,
+      "visible_side": "left"
+    },
+    "view_right": {
+      "actor_in_viewport": true,
+      "actor_rays": [
+        {
+          "clear": true,
+          "height": 0.9,
+          "occluder": ""
+        },
+        {
+          "clear": true,
+          "height": 1.7,
+          "occluder": ""
+        }
+      ],
+      "actor_sightline_clear": true,
+      "camera": {
+        "camera_position": [
+          14.293116569519,
+          11.2576570510864,
+          29.7150783538818
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          8.29306602478027,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000021202151,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 3.94972038269043,
+        "variant": "O",
+        "yaw_degrees": 3.93985795908648
+      },
+      "camera_x": 14.293116569519,
+      "foot_pixel": [
+        1227.07690429688,
+        744.236572265625
+      ],
+      "front": {
+        "area_px": 117534.75,
+        "corners": [
+          "(448.92, 498.0268)",
+          "(785.9471, 503.1933)",
+          "(777.3058, 160.3308)",
+          "(423.8985, 159.6732)"
+        ],
+        "visible_area_px": 117534.75,
+        "width_px": 362.048645019531
+      },
+      "geometric_angle_degrees": 14.5298788089469,
+      "left": {
+        "area_px": 25885.974609375,
+        "corners": [
+          "(525.3049, 451.5374)",
+          "(448.92, 498.0268)",
+          "(423.8985, 159.6732)",
+          "(506.7026, 153.795)"
+        ],
+        "visible_area_px": 25885.974609375,
+        "width_px": 101.406372070312
+      },
+      "left_wall_x": 0.149999999999999,
+      "player": [
+        16.8491611480713,
+        1.20000004768372,
+        2.99999833106995
+      ],
+      "right": {
+        "area_px": 12255.5390625,
+        "corners": [
+          "(785.9471, 503.1933)",
+          "(822.0602, 455.5251)",
+          "(816.0847, 154.2965)",
+          "(777.3058, 160.3308)"
+        ],
+        "visible_area_px": 12255.5390625,
+        "width_px": 44.7543334960938
+      },
+      "right_wall_x": 7.85,
+      "scope": "Projected body-wall polygons are clipped to the viewport. Sightlines test physical colliders, excluding invisible movement barriers; rendered visual occlusion still requires image review.",
+      "side_large_enough": true,
+      "visible_side": "right"
+    }
+  },
+  "speed_m_s": 3.2,
+  "steps": [
+    {
+      "actual": [
+        4.0,
+        1.20000004768372,
+        5.80000019073486
+      ],
+      "id": "spawn",
+      "kind": "view_center",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        4.0,
+        1.20000004768372,
+        5.80000019073486
+      ]
+    },
+    {
+      "actual": [
+        0.505802989006042,
+        1.20000004768372,
+        3.08229160308838
+      ],
+      "id": "bridge_east",
+      "kind": "bridge",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        0.400000005960464,
+        1.20000004768372,
+        3.0
+      ]
+    },
+    {
+      "actual": [
+        -10.3738832473755,
+        1.20000004768372,
+        3.00094294548035
+      ],
+      "id": "bridge_west",
+      "kind": "bridge",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        -10.5,
+        1.20000004768372,
+        3.0
+      ]
+    },
+    {
+      "actual": [
+        -15.8672113418579,
+        1.20000004768372,
+        3.00002217292786
+      ],
+      "id": "observe_left",
+      "kind": "view_left",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        -16.0,
+        1.20000004768372,
+        3.0
+      ]
+    },
+    {
+      "actual": [
+        -13.1089563369751,
+        1.20000004768372,
+        2.71140122413635
+      ],
+      "id": "bakery_talk",
+      "interaction": true,
+      "kind": "interaction",
+      "nearest_id": "baker",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        -13.0,
+        1.20000004768372,
+        2.70000004768372
+      ]
+    },
+    {
+      "actual": [
+        -10.6174869537354,
+        1.20000004768372,
+        2.98700404167175
+      ],
+      "id": "bridge_return_west",
+      "kind": "bridge",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        -10.5,
+        1.20000004768372,
+        3.0
+      ]
+    },
+    {
+      "actual": [
+        0.262508034706116,
+        1.20000004768372,
+        2.99983811378479
+      ],
+      "id": "bridge_return_east",
+      "kind": "bridge",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        0.400000005960464,
+        1.20000004768372,
+        3.0
+      ]
+    },
+    {
+      "actual": [
+        16.8491611480713,
+        1.20000004768372,
+        2.99999833106995
+      ],
+      "id": "observe_right",
+      "kind": "view_right",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        17.0,
+        1.20000004768372,
+        3.0
+      ]
+    },
+    {
+      "actual": [
+        10.1469144821167,
+        1.20000004768372,
+        2.02144980430603
+      ],
+      "id": "stair_approach",
+      "kind": "walk",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        10.0,
+        1.20000004768372,
+        2.0
+      ]
+    },
+    {
+      "actual": [
+        10.013635635376,
+        1.20000004768372,
+        0.6412034034729
+      ],
+      "id": "stair_bottom",
+      "kind": "stairs",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        10.0,
+        1.20000004768372,
+        0.5
+      ]
+    },
+    {
+      "actual": [
+        10.0002746582031,
+        2.80056524276733,
+        -6.45153999328613
+      ],
+      "id": "stair_top",
+      "kind": "stairs",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        10.0,
+        2.79999995231628,
+        -6.59999990463257
+      ]
+    },
+    {
+      "actual": [
+        7.12182235717773,
+        2.80056524276733,
+        -6.54600238800049
+      ],
+      "id": "terrace_talk",
+      "interaction": true,
+      "kind": "interaction",
+      "nearest_id": "noble",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        7.0,
+        2.79999995231628,
+        -6.55000019073486
+      ]
+    },
+    {
+      "actual": [
+        9.84133338928223,
+        2.80056524276733,
+        -6.59702301025391
+      ],
+      "id": "terrace_return",
+      "kind": "walk",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        10.0,
+        2.79999995231628,
+        -6.59999990463257
+      ]
+    },
+    {
+      "actual": [
+        9.99285793304443,
+        2.80056524276733,
+        -9.84681701660156
+      ],
+      "id": "upper_side",
+      "kind": "upper",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        10.0,
+        2.79999995231628,
+        -10.0
+      ]
+    },
+    {
+      "actual": [
+        9.99966144561768,
+        2.80056524276733,
+        -6.75348663330078
+      ],
+      "id": "upper_return",
+      "kind": "walk",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        10.0,
+        2.79999995231628,
+        -6.59999990463257
+      ]
+    },
+    {
+      "actual": [
+        9.99999332427979,
+        1.19992744922638,
+        0.350674033164978
+      ],
+      "id": "stair_descend",
+      "kind": "stairs",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        10.0,
+        1.20000004768372,
+        0.5
+      ]
+    },
+    {
+      "actual": [
+        9.99999904632568,
+        1.19992744922638,
+        6.37733602523804
+      ],
+      "id": "dock_approach_east",
+      "kind": "walk",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        10.0,
+        1.20000004768372,
+        6.5
+      ]
+    },
+    {
+      "actual": [
+        1.14385628700256,
+        1.19992744922638,
+        9.94209480285645
+      ],
+      "id": "dock_sign_read",
+      "interaction": true,
+      "kind": "interaction",
+      "nearest_id": "dock_sign",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        1.0,
+        1.20000004768372,
+        10.0
+      ]
+    },
+    {
+      "actual": [
+        -0.348551422357559,
+        1.19992744922638,
+        9.99466609954834
+      ],
+      "id": "dock_stair_top",
+      "kind": "stairs",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        -0.5,
+        1.20000004768372,
+        10.0
+      ]
+    },
+    {
+      "actual": [
+        -3.28576445579529,
+        0.101306475698948,
+        9.99980068206787
+      ],
+      "id": "dock_stair_bottom",
+      "kind": "stairs",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        -3.40000009536743,
+        0.0299999993294477,
+        10.0
+      ]
+    },
+    {
+      "actual": [
+        -4.29010725021362,
+        0.030212726444006,
+        10.3605298995972
+      ],
+      "id": "landing",
+      "kind": "dock",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        -4.40000009536743,
+        0.0299999993294477,
+        10.3999996185303
+      ]
+    },
+    {
+      "actual": [
+        -3.49918818473816,
+        0.030212726444006,
+        10.0401744842529
+      ],
+      "id": "dock_return_bottom",
+      "kind": "stairs",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        -3.40000009536743,
+        0.0299999993294477,
+        10.0
+      ]
+    },
+    {
+      "actual": [
+        -0.636279821395874,
+        1.20021903514862,
+        10.0017499923706
+      ],
+      "id": "dock_return_top",
+      "kind": "stairs",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        -0.5,
+        1.20000004768372,
+        10.0
+      ]
+    },
+    {
+      "actual": [
+        0.857054233551025,
+        1.20021903514862,
+        10.0001516342163
+      ],
+      "id": "return_bank",
+      "kind": "walk",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        1.0,
+        1.20000004768372,
+        10.0
+      ]
+    },
+    {
+      "actual": [
+        3.92458128929138,
+        1.20021903514862,
+        5.90078687667847
+      ],
+      "id": "return_spawn",
+      "kind": "view_center",
+      "on_floor": true,
+      "passed": true,
+      "period": "dusk",
+      "target": [
+        4.0,
+        1.20000004768372,
+        5.80000019073486
+      ]
+    }
+  ],
+  "teleports": "Initial spawn reset and final state restoration only. Every route stop is reached with CharacterBody3D.move_and_slide.",
+  "trajectory": [
+    {
+      "camera": {
+        "camera_position": [
+          3.95653367042542,
+          11.2576570510864,
+          30.1088714599609
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -0.0374934040009975,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0000019073486,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -0.0876542727152507,
+        "variant": "O",
+        "yaw_degrees": -0.0117566035527825
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 30,
+      "period": "dusk",
+      "position": [
+        2.73703718185425,
+        1.20000004768372,
+        4.8176965713501
+      ],
+      "screen": [
+        881.533874511719,
+        711.079284667969
+      ],
+      "stop": "bridge_east"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          3.18925380706787,
+          11.2576570510864,
+          30.0644073486328
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -0.682200968265533,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 13.9999994804828,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -0.508641878763835,
+        "variant": "O",
+        "yaw_degrees": -0.253020047034038
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 60,
+      "period": "dusk",
+      "position": [
+        1.4740743637085,
+        1.20000004768372,
+        3.83539295196533
+      ],
+      "screen": [
+        846.519592285156,
+        691.543090820312
+      ],
+      "stop": "bridge_east"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          1.95291292667389,
+          11.2576570510864,
+          29.8328685760498
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -1.68515753746033,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -0.955839951833089,
+        "variant": "O",
+        "yaw_degrees": -0.712413953234334
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 90,
+      "period": "dusk",
+      "position": [
+        0.132480025291443,
+        1.20000004768372,
+        3.07949948310852
+      ],
+      "screen": [
+        828.90234375,
+        681.414184570312
+      ],
+      "stop": "bridge_west"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          0.809153258800507,
+          11.2576570510864,
+          29.8005867004395
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -2.62009716033936,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -1.48916180928548,
+        "variant": "O",
+        "yaw_degrees": -1.12349381905033
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 120,
+      "period": "dusk",
+      "position": [
+        -1.46748518943787,
+        1.20000004768372,
+        3.06753492355347
+      ],
+      "screen": [
+        789.211059570312,
+        682.305725097656
+      ],
+      "stop": "bridge_west"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -0.52812922000885,
+          11.2576570510864,
+          29.7881698608398
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -3.70646333694458,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0000019073486,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -2.02248032887777,
+        "variant": "O",
+        "yaw_degrees": -1.61752193685038
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 150,
+      "period": "dusk",
+      "position": [
+        -3.06744074821472,
+        1.20000004768372,
+        3.05557227134705
+      ],
+      "screen": [
+        758.943786621094,
+        682.955749511719
+      ],
+      "stop": "bridge_west"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -1.91996848583221,
+          11.2576570510864,
+          29.7758979797363
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -4.8308482170105,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000038800366,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -2.55579884847005,
+        "variant": "O",
+        "yaw_degrees": -2.14424539107272
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 180,
+      "period": "dusk",
+      "position": [
+        -4.667396068573,
+        1.20000004768372,
+        3.04360961914062
+      ],
+      "screen": [
+        730.983154296875,
+        683.735412597656
+      ],
+      "stop": "bridge_west"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -3.29897403717041,
+          11.2576570510864,
+          29.761625289917
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -5.94250202178955,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0000019073486,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -3.0891170501709,
+        "variant": "O",
+        "yaw_degrees": -2.67094801271872
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 210,
+      "period": "dusk",
+      "position": [
+        -6.26735162734985,
+        1.20000004768372,
+        3.0316469669342
+      ],
+      "screen": [
+        702.118286132812,
+        684.689208984375
+      ],
+      "stop": "bridge_west"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -4.68920421600342,
+          11.2576570510864,
+          29.7447643280029
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -7.0625433921814,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0000019073486,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -3.62243588765462,
+        "variant": "O",
+        "yaw_degrees": -3.20346948337663
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 240,
+      "period": "dusk",
+      "position": [
+        -7.86730718612671,
+        1.20000004768372,
+        3.01968431472778
+      ],
+      "screen": [
+        673.637145996094,
+        685.819946289062
+      ],
+      "stop": "bridge_west"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -6.06522941589355,
+          11.2576570510864,
+          29.7262897491455
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -8.18224334716797,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -4.0,
+        "variant": "O",
+        "yaw_degrees": -3.70892201055343
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 270,
+      "period": "dusk",
+      "position": [
+        -9.46724987030029,
+        1.20000004768372,
+        3.00772166252136
+      ],
+      "screen": [
+        644.921691894531,
+        687.0810546875
+      ],
+      "stop": "bridge_west"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -7.43961906433105,
+          11.2576570510864,
+          29.7152271270752
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -9.4345064163208,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000021202151,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -4.0,
+        "variant": "O",
+        "yaw_degrees": -3.94984534978476
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 300,
+      "period": "dusk",
+      "position": [
+        -11.0672159194946,
+        1.20000004768372,
+        3.00082683563232
+      ],
+      "screen": [
+        623.7783203125,
+        687.911743164062
+      ],
+      "stop": "observe_left"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -8.46246147155762,
+          11.2576570510864,
+          29.7136840820312
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -10.4392757415771,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -4.0,
+        "variant": "O",
+        "yaw_degrees": -3.9855046017609
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 330,
+      "period": "dusk",
+      "position": [
+        -12.6672143936157,
+        1.20000004768372,
+        3.00055861473083
+      ],
+      "screen": [
+        586.728210449219,
+        688.811645507812
+      ],
+      "stop": "observe_left"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -9.58088397979736,
+          11.2576570510864,
+          29.7132205963135
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -11.5524387359619,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 13.9999994804828,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -4.0,
+        "variant": "O",
+        "yaw_degrees": -3.99588223213488
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 360,
+      "period": "dusk",
+      "position": [
+        -14.2672128677368,
+        1.20000004768372,
+        3.00029039382935
+      ],
+      "screen": [
+        556.309204101562,
+        689.513854980469
+      ],
+      "stop": "observe_left"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -10.6916255950928,
+          11.2576570510864,
+          29.7130451202393
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -12.661696434021,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -4.0,
+        "variant": "O",
+        "yaw_degrees": -3.99880990726074
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 390,
+      "period": "dusk",
+      "position": [
+        -15.8672113418579,
+        1.20000004768372,
+        3.00002217292786
+      ],
+      "screen": [
+        525.560302734375,
+        690.207824707031
+      ],
+      "stop": "observe_left"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -10.5928993225098,
+          11.2576570510864,
+          29.6888847351074
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -12.5623712539673,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000030001259,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -4.0,
+        "variant": "O",
+        "yaw_degrees": -3.99999197801005
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 420,
+      "period": "dusk",
+      "position": [
+        -14.2759103775024,
+        1.20000004768372,
+        2.83351063728333
+      ],
+      "screen": [
+        619.911193847656,
+        685.276306152344
+      ],
+      "stop": "bakery_talk"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -9.36778450012207,
+          11.2576570510864,
+          29.6489238739014
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -11.3372535705566,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000030001259,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -4.0,
+        "variant": "O",
+        "yaw_degrees": -3.99999861775842
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 450,
+      "period": "dusk",
+      "position": [
+        -12.6848764419556,
+        1.20000004768372,
+        2.75831246376038
+      ],
+      "screen": [
+        642.807312011719,
+        684.07275390625
+      ],
+      "stop": "bridge_return_west"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -8.41496562957764,
+          11.2576570510864,
+          29.6774921417236
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -10.3844337463379,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000030001259,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -4.0,
+        "variant": "O",
+        "yaw_degrees": -3.99999960051277
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 480,
+      "period": "dusk",
+      "position": [
+        -11.0945768356323,
+        1.20000004768372,
+        2.93422961235046
+      ],
+      "screen": [
+        681.350341796875,
+        686.109252929688
+      ],
+      "stop": "bridge_return_west"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -7.2421932220459,
+          11.2576570510864,
+          29.7076740264893
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -9.21166133880615,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000030001259,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -4.0,
+        "variant": "O",
+        "yaw_degrees": -3.99999993116573
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 510,
+      "period": "dusk",
+      "position": [
+        -9.49748802185059,
+        1.20000004768372,
+        2.98832583427429
+      ],
+      "screen": [
+        707.490844726562,
+        685.994812011719
+      ],
+      "stop": "bridge_return_east"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -6.13096141815186,
+          11.2576570510864,
+          29.71435546875
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -8.16382217407227,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 13.9999994804828,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -3.63249651590983,
+        "variant": "O",
+        "yaw_degrees": -3.87492665482538
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 540,
+      "period": "dusk",
+      "position": [
+        -7.89748954772949,
+        1.20000004768372,
+        2.99021410942078
+      ],
+      "screen": [
+        741.310974121094,
+        685.065246582031
+      ],
+      "stop": "bridge_return_east"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -4.80462741851807,
+          11.2576570510864,
+          29.7284145355225
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -7.04527807235718,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -3.0991636912028,
+        "variant": "O",
+        "yaw_degrees": -3.46508669928344
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 570,
+      "period": "dusk",
+      "position": [
+        -6.2974910736084,
+        1.20000004768372,
+        2.99210238456726
+      ],
+      "screen": [
+        770.000854492188,
+        684.003845214844
+      ],
+      "stop": "bridge_return_east"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -3.44276475906372,
+          11.2576570510864,
+          29.7430019378662
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -5.93393039703369,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -2.56583086649577,
+        "variant": "O",
+        "yaw_degrees": -2.97121082672491
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 600,
+      "period": "dusk",
+      "position": [
+        -4.6974925994873,
+        1.20000004768372,
+        2.99399065971375
+      ],
+      "screen": [
+        798.822387695312,
+        683.000061035156
+      ],
+      "stop": "bridge_return_east"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -2.04827690124512,
+          11.2576570510864,
+          29.7561206817627
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -4.8066291809082,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -2.03249804178874,
+        "variant": "O",
+        "yaw_degrees": -2.44471088108097
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 630,
+      "period": "dusk",
+      "position": [
+        -3.09749412536621,
+        1.20000004768372,
+        2.99587893486023
+      ],
+      "screen": [
+        826.488952636719,
+        682.151184082031
+      ],
+      "stop": "bridge_return_east"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -0.668326616287231,
+          11.2576570510864,
+          29.7667751312256
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -3.69411587715149,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000030001259,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -1.49916521708171,
+        "variant": "O",
+        "yaw_degrees": -1.91792358858384
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 660,
+      "period": "dusk",
+      "position": [
+        -1.49749565124512,
+        1.20000004768372,
+        2.99776482582092
+      ],
+      "screen": [
+        854.975708007812,
+        681.461242675781
+      ],
+      "stop": "bridge_return_east"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          0.730661749839783,
+          11.2576570510864,
+          29.775089263916
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -2.56725478172302,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000021202151,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -0.965830643971761,
+        "variant": "O",
+        "yaw_degrees": -1.3820639040517
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 690,
+      "period": "dusk",
+      "position": [
+        0.102508157491684,
+        1.20000004768372,
+        2.99964952468872
+      ],
+      "screen": [
+        882.500366210938,
+        680.947143554688
+      ],
+      "stop": "bridge_return_east"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          2.18798732757568,
+          11.2576570510864,
+          29.7809829711914
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -1.4059294462204,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -0.432497501373291,
+        "variant": "O",
+        "yaw_degrees": -0.799330090543886
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 720,
+      "period": "dusk",
+      "position": [
+        1.70250749588013,
+        1.20000004768372,
+        2.99985098838806
+      ],
+      "screen": [
+        907.768310546875,
+        680.570495605469
+      ],
+      "stop": "observe_right"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          3.47701835632324,
+          11.2576570510864,
+          29.7833976745605
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -0.363443970680237,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 0.0,
+        "variant": "O",
+        "yaw_degrees": -0.314024216057197
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 750,
+      "period": "dusk",
+      "position": [
+        3.30250597000122,
+        1.20000004768372,
+        2.99986529350281
+      ],
+      "screen": [
+        940.471069335938,
+        680.366882324219
+      ],
+      "stop": "observe_right"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          3.90401315689087,
+          11.2576570510864,
+          29.7838020324707
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -0.0498778522014618,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 0.0,
+        "variant": "O",
+        "yaw_degrees": -0.0907574083147916
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 780,
+      "period": "dusk",
+      "position": [
+        4.90250444412231,
+        1.20000004768372,
+        2.99987959861755
+      ],
+      "screen": [
+        1018.10333251953,
+        680.302490234375
+      ],
+      "stop": "observe_right"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          4.67444133758545,
+          11.2576570510864,
+          29.7836933135986
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          0.580917179584503,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 0.500834306081136,
+        "variant": "O",
+        "yaw_degrees": 0.184086147132923
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 810,
+      "period": "dusk",
+      "position": [
+        6.50250291824341,
+        1.20000004768372,
+        2.9998939037323
+      ],
+      "screen": [
+        1076.35754394531,
+        680.452514648438
+      ],
+      "stop": "observe_right"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          5.96111631393433,
+          11.2576570510864,
+          29.7820129394531
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          1.63436472415924,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000030001259,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.03416728973389,
+        "variant": "O",
+        "yaw_degrees": 0.643167510411613
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 840,
+      "period": "dusk",
+      "position": [
+        8.10250186920166,
+        1.20000004768372,
+        2.99990820884705
+      ],
+      "screen": [
+        1108.55053710938,
+        680.871215820312
+      ],
+      "stop": "observe_right"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          7.34256935119629,
+          11.2576570510864,
+          29.7778930664062
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          2.75371932983398,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 13.9999994804828,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.56750011444092,
+        "variant": "O",
+        "yaw_degrees": 1.15912816733402
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 870,
+      "period": "dusk",
+      "position": [
+        9.70250034332275,
+        1.20000004768372,
+        2.99992251396179
+      ],
+      "screen": [
+        1136.68200683594,
+        681.490966796875
+      ],
+      "stop": "observe_right"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          8.71915245056152,
+          11.2576570510864,
+          29.7713031768799
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.86442565917969,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 2.10083293914795,
+        "variant": "O",
+        "yaw_degrees": 1.68262465453703
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 900,
+      "period": "dusk",
+      "position": [
+        11.3024988174438,
+        1.20000004768372,
+        2.99993681907654
+      ],
+      "screen": [
+        1165.42260742188,
+        682.292053222656
+      ],
+      "stop": "observe_right"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          10.1188154220581,
+          11.2576570510864,
+          29.7620506286621
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          4.99227380752563,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 2.63416576385498,
+        "variant": "O",
+        "yaw_degrees": 2.21795691443698
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 930,
+      "period": "dusk",
+      "position": [
+        12.9024972915649,
+        1.20000004768372,
+        2.99995422363281
+      ],
+      "screen": [
+        1193.20520019531,
+        683.270446777344
+      ],
+      "stop": "observe_right"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          11.4993057250977,
+          11.2576570510864,
+          29.7504138946533
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          6.10422611236572,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 3.16749858856201,
+        "variant": "O",
+        "yaw_degrees": 2.74702532912876
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 960,
+      "period": "dusk",
+      "position": [
+        14.502495765686,
+        1.20000004768372,
+        2.99997210502625
+      ],
+      "screen": [
+        1222.11145019531,
+        684.428344726562
+      ],
+      "stop": "observe_right"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          12.8997421264648,
+          11.2576570510864,
+          29.7360668182373
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          7.23224449157715,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 3.70083173116048,
+        "variant": "O",
+        "yaw_degrees": 3.28397916931875
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 990,
+      "period": "dusk",
+      "position": [
+        16.1024951934814,
+        1.20000004768372,
+        2.99998998641968
+      ],
+      "screen": [
+        1250.16674804688,
+        685.760559082031
+      ],
+      "stop": "observe_right"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          14.0160284042358,
+          11.2576570510864,
+          29.7051887512207
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          8.05424499511719,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000021202151,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 3.66825675964355,
+        "variant": "O",
+        "yaw_degrees": 3.86435995658489
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1020,
+      "period": "dusk",
+      "position": [
+        16.0047702789307,
+        1.20000004768372,
+        2.87671494483948
+      ],
+      "screen": [
+        1191.68493652344,
+        683.287536621094
+      ],
+      "stop": "stair_approach"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          12.887020111084,
+          11.2576570510864,
+          29.6681289672852
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          7.11270570755005,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000021202151,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 3.14052200317383,
+        "variant": "O",
+        "yaw_degrees": 3.49459740091774
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1050,
+      "period": "dusk",
+      "position": [
+        14.4215660095215,
+        1.20000004768372,
+        2.64555859565735
+      ],
+      "screen": [
+        1152.5703125,
+        678.485534667969
+      ],
+      "stop": "stair_approach"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          11.5466499328613,
+          11.2576570510864,
+          29.6251125335693
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          6.01903438568115,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 2.6127872467041,
+        "variant": "O",
+        "yaw_degrees": 3.00822945100033
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1080,
+      "period": "dusk",
+      "position": [
+        12.8383617401123,
+        1.20000004768372,
+        2.41440677642822
+      ],
+      "screen": [
+        1123.37841796875,
+        674.120910644531
+      ],
+      "stop": "stair_approach"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          10.189154624939,
+          11.2576570510864,
+          29.5803394317627
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          4.92109823226929,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 2.08505249023438,
+        "variant": "O",
+        "yaw_degrees": 2.49673966044197
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1110,
+      "period": "dusk",
+      "position": [
+        11.2551574707031,
+        1.20000004768372,
+        2.18325567245483
+      ],
+      "screen": [
+        1094.75390625,
+        669.962707519531
+      ],
+      "stop": "stair_approach"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          8.68312931060791,
+          11.2576570510864,
+          29.4977722167969
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.72604298591614,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0000019073486,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.70026016235352,
+        "variant": "O",
+        "yaw_degrees": 1.88419903227095
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1140,
+      "period": "dusk",
+      "position": [
+        10.1007804870605,
+        1.20000004768372,
+        1.54367220401764
+      ],
+      "screen": [
+        1096.75500488281,
+        659.474914550781
+      ],
+      "stop": "stair_bottom"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          8.39451217651367,
+          11.2576570510864,
+          29.1523189544678
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.52557587623596,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.67078081766764,
+        "variant": "O",
+        "yaw_degrees": 1.71060592427434
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1170,
+      "period": "dusk",
+      "position": [
+        10.0123424530029,
+        1.22227776050568,
+        -0.0462916120886803
+      ],
+      "screen": [
+        1099.94323730469,
+        636.606750488281
+      ],
+      "stop": "stair_top"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          8.36399269104004,
+          11.2576570510864,
+          28.811450958252
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.50974655151367,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.6698366800944,
+        "variant": "O",
+        "yaw_degrees": 1.68167747636602
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1200,
+      "period": "dusk",
+      "position": [
+        10.0095100402832,
+        1.62063086032867,
+        -1.5400630235672
+      ],
+      "screen": [
+        1097.94494628906,
+        597.267639160156
+      ],
+      "stop": "stair_top"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          8.35570240020752,
+          11.2576570510864,
+          28.4452323913574
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.50594067573547,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000021202151,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.66889413197835,
+        "variant": "O",
+        "yaw_degrees": 1.67284769055644
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1230,
+      "period": "dusk",
+      "position": [
+        10.0066823959351,
+        2.01896286010742,
+        -3.03383731842041
+      ],
+      "screen": [
+        1095.48583984375,
+        560.745483398438
+      ],
+      "stop": "stair_top"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          8.35181427001953,
+          11.2576570510864,
+          28.0699825286865
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.50369954109192,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.66795635223389,
+        "variant": "O",
+        "yaw_degrees": 1.66960325907835
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1260,
+      "period": "dusk",
+      "position": [
+        10.0038690567017,
+        2.41729378700256,
+        -4.52761077880859
+      ],
+      "screen": [
+        1093.11535644531,
+        526.509521484375
+      ],
+      "stop": "stair_top"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          8.34902381896973,
+          11.2576570510864,
+          27.699089050293
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.50171136856079,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.66702016194661,
+        "variant": "O",
+        "yaw_degrees": 1.66802378854749
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1290,
+      "period": "dusk",
+      "position": [
+        10.0010604858398,
+        2.80056524276733,
+        -6.02487373352051
+      ],
+      "screen": [
+        1090.83764648438,
+        494.885375976562
+      ],
+      "stop": "stair_top"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          7.87113809585571,
+          11.2576570510864,
+          27.4252071380615
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.09562969207764,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.27585728963216,
+        "variant": "O",
+        "yaw_degrees": 1.52663456324907
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1320,
+      "period": "dusk",
+      "position": [
+        8.82757186889648,
+        2.80056524276733,
+        -6.49002552032471
+      ],
+      "screen": [
+        1051.85046386719,
+        492.575744628906
+      ],
+      "stop": "terrace_talk"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          6.65799713134766,
+          11.2576570510864,
+          27.4015998840332
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          2.09121608734131,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 0.742810567220052,
+        "variant": "O",
+        "yaw_degrees": 1.11568103790264
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1350,
+      "period": "dusk",
+      "position": [
+        7.22843170166016,
+        2.80056524276733,
+        -6.54250383377075
+      ],
+      "screen": [
+        1020.73010253906,
+        492.057525634766
+      ],
+      "stop": "terrace_talk"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          6.60549592971802,
+          11.2576570510864,
+          27.3897533416748
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          2.10441327095032,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0000019073486,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.20496241251628,
+        "variant": "O",
+        "yaw_degrees": 0.986343599041471
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1380,
+      "period": "dusk",
+      "position": [
+        8.61488723754883,
+        2.80056524276733,
+        -6.57401371002197
+      ],
+      "screen": [
+        1087.94213867188,
+        492.083190917969
+      ],
+      "stop": "terrace_return"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          7.99148225784302,
+          11.2576570510864,
+          27.3540153503418
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.24889159202576,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.61957454681396,
+        "variant": "O",
+        "yaw_degrees": 1.46181912528601
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1410,
+      "period": "dusk",
+      "position": [
+        9.85872364044189,
+        2.80056524276733,
+        -6.96995210647583
+      ],
+      "screen": [
+        1093.99108886719,
+        488.504486083984
+      ],
+      "stop": "upper_side"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          8.21564292907715,
+          11.2576570510864,
+          27.1467971801758
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.41053342819214,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0000019073486,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.64441553751628,
+        "variant": "O",
+        "yaw_degrees": 1.58492114638941
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1440,
+      "period": "dusk",
+      "position": [
+        9.93324661254883,
+        2.80056524276733,
+        -8.56821441650391
+      ],
+      "screen": [
+        1087.26672363281,
+        474.603363037109
+      ],
+      "stop": "upper_side"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          8.32384777069092,
+          11.2576570510864,
+          27.0997695922852
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.48655152320862,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.66452058156331,
+        "variant": "O",
+        "yaw_degrees": 1.64830143323687
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1470,
+      "period": "dusk",
+      "position": [
+        9.99356174468994,
+        2.80056524276733,
+        -9.52681732177734
+      ],
+      "screen": [
+        1085.0712890625,
+        466.042907714844
+      ],
+      "stop": "upper_return"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          8.33911323547363,
+          11.2576570510864,
+          27.097053527832
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.49569773674011,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000021202151,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.66569360097249,
+        "variant": "O",
+        "yaw_degrees": 1.66034960761162
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1500,
+      "period": "dusk",
+      "position": [
+        9.99708080291748,
+        2.80056524276733,
+        -7.92681884765625
+      ],
+      "screen": [
+        1088.09350585938,
+        481.406494140625
+      ],
+      "stop": "upper_return"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          8.34537124633789,
+          11.2576570510864,
+          27.326099395752
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.49939298629761,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.66656144460042,
+        "variant": "O",
+        "yaw_degrees": 1.66539650060288
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1530,
+      "period": "dusk",
+      "position": [
+        9.99968433380127,
+        2.80056524276733,
+        -6.32682037353516
+      ],
+      "screen": [
+        1091.033203125,
+        495.649810791016
+      ],
+      "stop": "stair_descend"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          8.34616565704346,
+          11.2576570510864,
+          27.6570377349854
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.499760389328,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 13.9999994804828,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.66658878326416,
+        "variant": "O",
+        "yaw_degrees": 1.66623718463503
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1560,
+      "period": "dusk",
+      "position": [
+        9.99976634979248,
+        2.46936345100403,
+        -4.72439384460449
+      ],
+      "screen": [
+        1093.66223144531,
+        526.508178710938
+      ],
+      "stop": "stair_descend"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          8.34639453887939,
+          11.2576570510864,
+          28.0513973236084
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.4998562335968,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.66661262512207,
+        "variant": "O",
+        "yaw_degrees": 1.666499655311
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1590,
+      "period": "dusk",
+      "position": [
+        9.99983787536621,
+        2.04177474975586,
+        -3.12120151519775
+      ],
+      "screen": [
+        1096.23132324219,
+        563.704528808594
+      ],
+      "stop": "stair_descend"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          8.34649467468262,
+          11.2576570510864,
+          28.4480609893799
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.4999098777771,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 13.9999994804828,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.66663678487142,
+        "variant": "O",
+        "yaw_degrees": 1.66659060966454
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1620,
+      "period": "dusk",
+      "position": [
+        9.99991035461426,
+        1.61418604850769,
+        -1.51854765415192
+      ],
+      "screen": [
+        1098.970703125,
+        603.414001464844
+      ],
+      "stop": "stair_descend"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          8.3465690612793,
+          11.2576570510864,
+          28.8513374328613
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.49996209144592,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.66666062672933,
+        "variant": "O",
+        "yaw_degrees": 1.66663419497914
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1650,
+      "period": "dusk",
+      "position": [
+        9.99998188018799,
+        1.19992744922638,
+        0.0840073227882385
+      ],
+      "screen": [
+        1101.90014648438,
+        645.100769042969
+      ],
+      "stop": "stair_descend"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          8.3466100692749,
+          11.2576570510864,
+          29.268928527832
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.49999094009399,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000021202151,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.66666444142659,
+        "variant": "O",
+        "yaw_degrees": 1.66665908516441
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1680,
+      "period": "dusk",
+      "position": [
+        9.99999332427979,
+        1.19992744922638,
+        1.68400681018829
+      ],
+      "screen": [
+        1105.49206542969,
+        666.216857910156
+      ],
+      "stop": "dock_approach_east"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          8.34661197662354,
+          11.2576570510864,
+          29.6543102264404
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.49999094009399,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.66666444142659,
+        "variant": "O",
+        "yaw_degrees": 1.66666291985099
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1710,
+      "period": "dusk",
+      "position": [
+        9.99999332427979,
+        1.19992744922638,
+        3.28400540351868
+      ],
+      "screen": [
+        1109.49243164062,
+        689.727294921875
+      ],
+      "stop": "dock_approach_east"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          8.34661293029785,
+          11.2576570510864,
+          30.0035533905029
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.49999094009399,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.66666444142659,
+        "variant": "O",
+        "yaw_degrees": 1.66666400166988
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1740,
+      "period": "dusk",
+      "position": [
+        9.99999332427979,
+        1.19992744922638,
+        4.88400411605835
+      ],
+      "screen": [
+        1113.9833984375,
+        716.121154785156
+      ],
+      "stop": "dock_approach_east"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          8.33829212188721,
+          11.2576570510864,
+          30.0910110473633
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          3.4927830696106,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0000019073486,
+        "pitch_degrees": 14.0000021202151,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.633682568868,
+        "variant": "O",
+        "yaw_degrees": 1.66447211147615
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1770,
+      "period": "dusk",
+      "position": [
+        9.901047706604,
+        1.19992744922638,
+        6.41716527938843
+      ],
+      "screen": [
+        1113.45764160156,
+        749.739807128906
+      ],
+      "stop": "dock_sign_read"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          7.56000757217407,
+          11.2576570510864,
+          30.0991039276123
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          2.83612561225891,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 1.1389258702596,
+        "variant": "O",
+        "yaw_degrees": 1.42498384028558
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1800,
+      "period": "dusk",
+      "position": [
+        8.41677761077881,
+        1.19992744922638,
+        7.01461124420166
+      ],
+      "screen": [
+        1059.74926757812,
+        763.886779785156
+      ],
+      "stop": "dock_sign_read"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          6.35008001327515,
+          11.2576570510864,
+          30.1360530853271
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          1.84195530414581,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000021202151,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 0.644169171651204,
+        "variant": "O",
+        "yaw_degrees": 1.00020693893608
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1830,
+      "period": "dusk",
+      "position": [
+        6.93250751495361,
+        1.19992744922638,
+        7.61205720901489
+      ],
+      "screen": [
+        1029.51818847656,
+        778.225891113281
+      ],
+      "stop": "dock_sign_read"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          5.08576059341431,
+          11.2576570510864,
+          30.2659797668457
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          0.816768527030945,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 0.149412473042806,
+        "variant": "O",
+        "yaw_degrees": 0.529471747494518
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1860,
+      "period": "dusk",
+      "position": [
+        5.44823741912842,
+        1.19992744922638,
+        8.20950126647949
+      ],
+      "screen": [
+        1001.11560058594,
+        790.764587402344
+      ],
+      "stop": "dock_sign_read"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          4.20349931716919,
+          11.2576570510864,
+          30.4144840240479
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          0.12294290214777,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 0.0,
+        "variant": "O",
+        "yaw_degrees": 0.158561751167385
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1890,
+      "period": "dusk",
+      "position": [
+        3.96396732330322,
+        1.19992744922638,
+        8.80694007873535
+      ],
+      "screen": [
+        946.707397460938,
+        803.375427246094
+      ],
+      "stop": "dock_sign_read"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          3.91164684295654,
+          11.2576570510864,
+          30.5625629425049
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -0.0935020074248314,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 13.9999994804828,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -0.173434257507324,
+        "variant": "O",
+        "yaw_degrees": 0.0101345730449241
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1920,
+      "period": "dusk",
+      "position": [
+        2.47969722747803,
+        1.19992744922638,
+        9.40438652038574
+      ],
+      "screen": [
+        852.345703125,
+        816.633666992188
+      ],
+      "stop": "dock_sign_read"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          2.62471508979797,
+          11.2576570510864,
+          30.7423667907715
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -1.14541685581207,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -0.672014872233073,
+        "variant": "O",
+        "yaw_degrees": -0.452460329085536
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1950,
+      "period": "dusk",
+      "position": [
+        0.983955502510071,
+        1.19992744922638,
+        9.94772815704346
+      ],
+      "screen": [
+        821.721496582031,
+        828.15966796875
+      ],
+      "stop": "dock_stair_top"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          1.29655277729034,
+          11.2576570510864,
+          30.7750358581543
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -2.21854090690613,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -1.20507256189982,
+        "variant": "O",
+        "yaw_degrees": -0.954498432077929
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 1980,
+      "period": "dusk",
+      "position": [
+        -0.615217626094818,
+        1.19992744922638,
+        9.99513339996338
+      ],
+      "screen": [
+        786.766296386719,
+        829.274719238281
+      ],
+      "stop": "dock_stair_bottom"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          0.167032837867737,
+          11.2576570510864,
+          30.7742824554443
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -3.13825583457947,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -1.73922888437907,
+        "variant": "O",
+        "yaw_degrees": -1.36754899334363
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 2010,
+      "period": "dusk",
+      "position": [
+        -2.21768641471863,
+        0.556323528289795,
+        9.99793720245361
+      ],
+      "screen": [
+        740.252685546875,
+        875.899169921875
+      ],
+      "stop": "dock_stair_bottom"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -1.38001012802124,
+          11.2576570510864,
+          30.7797451019287
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -4.37968349456787,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 13.9999994804828,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -2.26272217432658,
+        "variant": "O",
+        "yaw_degrees": -1.96935779779856
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 2040,
+      "period": "dusk",
+      "position": [
+        -3.78816652297974,
+        0.030212726444006,
+        10.1802492141724
+      ],
+      "screen": [
+        721.538757324219,
+        919.985595703125
+      ],
+      "stop": "landing"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -1.7363795042038,
+          11.2576570510864,
+          30.7859745025635
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -4.61695432662964,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000003603936,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -2.10389105478923,
+        "variant": "O",
+        "yaw_degrees": -2.2039382807198
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 2070,
+      "period": "dusk",
+      "position": [
+        -3.31167316436768,
+        0.0909257009625435,
+        10.0376262664795
+      ],
+      "screen": [
+        779.588256835938,
+        909.916198730469
+      ],
+      "stop": "dock_return_top"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          -0.877483606338501,
+          11.2576570510864,
+          30.7759857177734
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -3.89500188827515,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000021202151,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -1.65234263737996,
+        "variant": "O",
+        "yaw_degrees": -1.93421257691103
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 2100,
+      "period": "dusk",
+      "position": [
+        -1.95702803134918,
+        0.667311072349548,
+        10.0193128585815
+      ],
+      "screen": [
+        824.023559570312,
+        868.2412109375
+      ],
+      "stop": "dock_return_top"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          0.551960527896881,
+          11.2576570510864,
+          30.7765693664551
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -2.73417139053345,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -1.19431495666504,
+        "variant": "O",
+        "yaw_degrees": -1.40526668422564
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 2130,
+      "period": "dusk",
+      "position": [
+        -0.582944929599762,
+        1.20021903514862,
+        10.0016927719116
+      ],
+      "screen": [
+        833.825439453125,
+        829.39013671875
+      ],
+      "stop": "return_bank"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          1.86912512779236,
+          11.2576570510864,
+          30.7766189575195
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -1.67339444160461,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0,
+        "pitch_degrees": 14.0000021202151,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -0.682361920674642,
+        "variant": "O",
+        "yaw_degrees": -0.900508270808738
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 2160,
+      "period": "dusk",
+      "position": [
+        0.952914237976074,
+        1.20021903514862,
+        9.87204647064209
+      ],
+      "screen": [
+        865.084533691406,
+        824.846557617188
+      ],
+      "stop": "return_spawn"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          2.6218090057373,
+          11.2576570510864,
+          30.5665187835693
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -1.0721230506897,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0000019073486,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -0.362828572591146,
+        "variant": "O",
+        "yaw_degrees": -0.602452899382806
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 2190,
+      "period": "dusk",
+      "position": [
+        1.91151428222656,
+        1.20021903514862,
+        8.5909948348999
+      ],
+      "screen": [
+        891.413513183594,
+        793.132507324219
+      ],
+      "stop": "return_spawn"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          3.43595170974731,
+          11.2576570510864,
+          30.264440536499
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -0.415771782398224,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 29.9999980926514,
+        "pitch_degrees": 14.0000021202151,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": -0.0432952245076497,
+        "variant": "O",
+        "yaw_degrees": -0.291858235225916
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 2220,
+      "period": "dusk",
+      "position": [
+        2.87011432647705,
+        1.20021903514862,
+        7.30994319915771
+      ],
+      "screen": [
+        912.195617675781,
+        766.571594238281
+      ],
+      "stop": "return_spawn"
+    },
+    {
+      "camera": {
+        "camera_position": [
+          3.9005389213562,
+          11.2576570510864,
+          30.12965965271
+        ],
+        "fov": 35.0,
+        "horizontal_follow": [
+          -0.0569034777581692,
+          0.0,
+          0.0
+        ],
+        "orbit_radius": 30.0000019073486,
+        "pitch_degrees": 14.0000012403043,
+        "projection": "perspective",
+        "supported": true,
+        "target_yaw_degrees": 0.0,
+        "variant": "O",
+        "yaw_degrees": -0.0837673829231654
+      },
+      "cloud_time": 0.511601888888888,
+      "frame": 2250,
+      "period": "dusk",
+      "position": [
+        3.8287205696106,
+        1.20021903514862,
+        6.02889156341553
+      ],
+      "screen": [
+        952.831237792969,
+        738.073486328125
+      ],
+      "stop": "return_spawn"
+    }
+  ],
+  "variant": "O"
+}

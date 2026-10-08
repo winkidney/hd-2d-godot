@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "revision": "R3",
+  "date": "2026-10-08",
+  "status": "draft_for_user_review",
+  "previous_revision": "20261008-r2",
+  "source": "layout.review.json",
+  "runtime_applied": false,
+  "checks_passed": true,
+  "previous_revision_preserved": true,
+  "coordinate_rows": 42,
+  "image_dimensions": {
+    "far-town.png": [
+      2560,
+      800
+    ],
+    "front-view.png": [
+      3200,
+      800
+    ],
+    "full-top-view.png": [
+      2880,
+      3360
+    ],
+    "layout-review.png": [
+      3600,
+      3600
+    ],
+    "top-view.png": [
+      2880,
+      2560
+    ]
+  },
+  "counts": {
+    "foreground_buildings_and_stalls": 7,
+    "riverbank_willows": 5,
+    "background_houses": 10,
+    "background_tree_groups": 10,
+    "broad_lights": 2,
+    "npcs": 5
+  },
+  "files": {
+    "README.md": "1e0e18a25d3bd52ee5d986afdce1db6d21b5e1cfc03bd0b84542496dbea40755",
+    "draw.py": "3a3776842f3f3c75a40b4994cd6132deb99996c0318ed6648fc3b1060bb71278",
+    "far-town.png": "d7b73edd3bb5585c79435e7ea73aeefe22b4509ae1b9de3dc74ff3ac26a88209",
+    "front-view.png": "bf42e565149bffa5c7643f6f81d8eb194d03ae1571f1ad7eefa5b65b1e477b1e",
+    "full-top-view.png": "3b9a926dc00bc6a19bb93a7f54b78747530514e7c9bbc3ed147784456b338615",
+    "layout-review.pdf": "d69ad727a036ef1b37a3f6909e1c7e21416d199b83ab869c151b42e09f0514a7",
+    "layout-review.png": "9d5395e7396d8a68a97fcf15c90a02f088a52984c0cc0028adb57262f612ba85",
+    "layout-review.svg": "c40c2ab2c6859ac6f3f461803d17f2bd1148d509ad8e0ea57d79491d0b3006ab",
+    "layout.review.json": "20493f71099f4f74c5e1b899f792e66e144c581329a160a8d4c9c8ec94e2587e",
+    "placement.csv": "44430a7bd9462859a873afe4d1c351a5552cd1abd2f2193653363d39a1b87169",
+    "review-checks.json": "2b5cabc979a4991d974fb66ad3b27fe45a37d9d7c7d0daf1f9927739b62fe7c4",
+    "runtime-before.json": "7e529094465c9711fe55f1ee372a45cf50deb14209bff3837a025ff1e307002c",
+    "top-view.png": "d01c1fb61f6e6c01b7cf023169b0e9be195dd1042bb3d6936a5642aa0329a58e"
+  }
+}

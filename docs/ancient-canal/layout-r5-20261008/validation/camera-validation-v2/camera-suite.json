@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "passed": true,
+  "complete": true,
+  "mode": "camera",
+  "runtime_fingerprint": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_before": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_after": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_unchanged": true,
+  "changed_files": [],
+  "headless": true,
+  "fixed_fps": true,
+  "import_performed": false,
+  "time_scale": 1,
+  "physics_ticks_per_second": 60,
+  "runs": [
+    {
+      "label": "center-follow",
+      "returncode": 0,
+      "passed": true,
+      "elapsed_s": 3.3183049189974554,
+      "fixed_fps": true,
+      "import_performed": false,
+      "errors": [],
+      "log": "logs/center-follow.log",
+      "runtime_fingerprint_before": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+      "runtime_fingerprint_after": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+      "runtime_unchanged": true,
+      "import": false
+    },
+    {
+      "label": "walkable-extent",
+      "returncode": 0,
+      "passed": true,
+      "elapsed_s": 1.7662820590048796,
+      "fixed_fps": true,
+      "import_performed": false,
+      "errors": [],
+      "log": "logs/walkable-extent.log",
+      "runtime_fingerprint_before": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+      "runtime_fingerprint_after": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+      "runtime_unchanged": true,
+      "import": false
+    }
+  ],
+  "scope": "Actual current scene/settings/layout contract checks. Each run records before/after fingerprints; a source drift prevents a frozen pass. No GPU, screenshot, window-focus or performance claim.",
+  "import": false
+}

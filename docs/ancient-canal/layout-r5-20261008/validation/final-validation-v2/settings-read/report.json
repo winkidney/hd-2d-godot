@@ -1,0 +1,65 @@
+{
+  "checks": [
+    {
+      "detail": {},
+      "name": "ignore_everyday_preferences",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "real_scene_and_collision_world",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "one_exit_signal_handler",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "cross_process_settings_loaded",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "cross_process_real_properties_restored",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "cross_process_all_lens_profiles_restored",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "cross_process_six_layer_requested_profile_restored",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "cross_process_single_light_actual_override_restored",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "cross_process_custom_night_background_applies_actual_layer_colors",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "freed_scene_disconnects_exit_handler",
+      "passed": true
+    }
+  ],
+  "complete": true,
+  "entry": "res://scenes/ancient_canal.tscn",
+  "failures": [],
+  "headless": true,
+  "passed": true,
+  "schema_version": 1,
+  "scope": "Actual scene API, effective material/light/camera/environment properties, synthesized GUI input and physical traversal. Does not prove GPU visual quality, actual rendered effects, native window/editor delivery, screenshots, or 1080p performance.",
+  "runtime_fingerprint": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_before": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_after": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_unchanged": true
+}

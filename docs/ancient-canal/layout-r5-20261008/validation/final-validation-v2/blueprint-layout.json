@@ -1,0 +1,306 @@
+{
+  "checks": [
+    {
+      "id": "drawing_source_hash",
+      "passed": true
+    },
+    {
+      "id": "model_origin_H1",
+      "passed": true
+    },
+    {
+      "id": "model_origin_T1",
+      "passed": true
+    },
+    {
+      "id": "model_origin_H2",
+      "passed": true
+    },
+    {
+      "id": "model_origin_H3",
+      "passed": true
+    },
+    {
+      "id": "model_origin_S1",
+      "passed": true
+    },
+    {
+      "id": "model_origin_S2",
+      "passed": true
+    },
+    {
+      "id": "model_origin_S3",
+      "passed": true
+    },
+    {
+      "id": "waterfront_model_BR1",
+      "passed": true
+    },
+    {
+      "id": "waterfront_model_D1",
+      "passed": true
+    },
+    {
+      "id": "waterfront_model_BO1",
+      "passed": true
+    },
+    {
+      "id": "npc_foot_innkeeper",
+      "passed": true
+    },
+    {
+      "id": "npc_foot_vendor",
+      "passed": true
+    },
+    {
+      "id": "npc_foot_food_vendor",
+      "passed": true
+    },
+    {
+      "id": "npc_foot_tea_guest",
+      "passed": true
+    },
+    {
+      "id": "npc_foot_boatman",
+      "passed": true
+    },
+    {
+      "id": "willow_foot_L1",
+      "passed": true
+    },
+    {
+      "id": "willow_foot_L2",
+      "passed": true
+    },
+    {
+      "id": "willow_foot_L3",
+      "passed": true
+    },
+    {
+      "id": "willow_foot_L4",
+      "passed": true
+    },
+    {
+      "id": "willow_foot_L6",
+      "passed": true
+    },
+    {
+      "id": "removed_tavern_front_tree_stays_absent",
+      "passed": true
+    },
+    {
+      "id": "background_position_B1",
+      "passed": true
+    },
+    {
+      "id": "background_position_B2",
+      "passed": true
+    },
+    {
+      "id": "background_position_B3",
+      "passed": true
+    },
+    {
+      "id": "background_position_B4",
+      "passed": true
+    },
+    {
+      "id": "background_position_B5",
+      "passed": true
+    },
+    {
+      "id": "background_position_B6",
+      "passed": true
+    },
+    {
+      "id": "background_position_F1",
+      "passed": true
+    },
+    {
+      "id": "background_position_F2",
+      "passed": true
+    },
+    {
+      "id": "background_position_F3",
+      "passed": true
+    },
+    {
+      "id": "background_position_F4",
+      "passed": true
+    },
+    {
+      "id": "background_position_TN1",
+      "passed": true
+    },
+    {
+      "id": "background_position_TN2",
+      "passed": true
+    },
+    {
+      "id": "background_position_TN3",
+      "passed": true
+    },
+    {
+      "id": "background_position_TN4",
+      "passed": true
+    },
+    {
+      "id": "background_position_TN5",
+      "passed": true
+    },
+    {
+      "id": "background_position_TF1",
+      "passed": true
+    },
+    {
+      "id": "background_position_TF2",
+      "passed": true
+    },
+    {
+      "id": "background_position_TF3",
+      "passed": true
+    },
+    {
+      "id": "background_position_TF4",
+      "passed": true
+    },
+    {
+      "id": "background_position_TF5",
+      "passed": true
+    },
+    {
+      "id": "fourteen_control_ids",
+      "passed": true
+    },
+    {
+      "id": "light_emitter_C1",
+      "passed": true
+    },
+    {
+      "id": "light_emitter_W1",
+      "passed": true
+    },
+    {
+      "id": "light_emitter_P1",
+      "passed": true
+    },
+    {
+      "id": "pole_foot_P1",
+      "passed": true
+    },
+    {
+      "id": "light_emitter_P2",
+      "passed": true
+    },
+    {
+      "id": "pole_foot_P2",
+      "passed": true
+    },
+    {
+      "id": "light_emitter_P3",
+      "passed": true
+    },
+    {
+      "id": "pole_foot_P3",
+      "passed": true
+    },
+    {
+      "id": "light_emitter_P4",
+      "passed": true
+    },
+    {
+      "id": "pole_foot_P4",
+      "passed": true
+    },
+    {
+      "id": "light_emitter_P5",
+      "passed": true
+    },
+    {
+      "id": "pole_foot_P5",
+      "passed": true
+    },
+    {
+      "id": "light_emitter_P6",
+      "passed": true
+    },
+    {
+      "id": "pole_foot_P6",
+      "passed": true
+    },
+    {
+      "id": "light_emitter_E1",
+      "passed": true
+    },
+    {
+      "id": "light_emitter_E2",
+      "passed": true
+    },
+    {
+      "id": "light_emitter_E3",
+      "passed": true
+    },
+    {
+      "id": "light_emitter_E4",
+      "passed": true
+    },
+    {
+      "id": "light_emitter_E5",
+      "passed": true
+    },
+    {
+      "id": "light_emitter_E6",
+      "passed": true
+    },
+    {
+      "id": "dock_warm_lamp_range_and_shadow",
+      "passed": true
+    },
+    {
+      "id": "dock_single_lamp_isolation",
+      "passed": true
+    },
+    {
+      "id": "dock_lamp_layout_default_restored",
+      "passed": true
+    },
+    {
+      "id": "road_height_[-23.5, 8.5]",
+      "passed": true
+    },
+    {
+      "id": "road_height_[23.5, 8.5]",
+      "passed": true
+    },
+    {
+      "id": "road_height_[-23.5, -2.4]",
+      "passed": true
+    },
+    {
+      "id": "road_height_[23.5, -2.4]",
+      "passed": true
+    },
+    {
+      "id": "road_height_[1.2, -12]",
+      "passed": true
+    },
+    {
+      "id": "dock_collision_top_minus_032",
+      "passed": true
+    },
+    {
+      "id": "ramp_midpoint_minus_016",
+      "passed": true
+    },
+    {
+      "id": "three_batched_ground_surfaces",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "scope": "Independent drawing against actual instantiated models, lights, background, roads and dock ramp physics.",
+  "runtime_fingerprint": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_before": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_after": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_unchanged": true
+}

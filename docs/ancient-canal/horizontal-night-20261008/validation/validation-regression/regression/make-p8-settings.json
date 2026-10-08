@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "processes": {
+    "save": {
+      "load_attempted": true,
+      "message": "Saved to user://settings/parallax.cfg",
+      "passed": true,
+      "snapshot": {
+        "clouds_far": 1.0,
+        "clouds_near": 1.0,
+        "global_strength": 1.25,
+        "horizontal_dead_zone": 0.8,
+        "horizontal_follow_gain": 0.45,
+        "horizontal_max_offset": 7.5,
+        "mode": "artistic",
+        "ridge_far": 0.5,
+        "ridge_mid": 1.0,
+        "ridge_near": 1.0,
+        "smoothing_rate": 4.0,
+        "transition_time": 0.2,
+        "wind_enabled": true,
+        "wind_far": 0.25,
+        "wind_near": 0.6
+      }
+    },
+    "reload": {
+      "load_attempted": true,
+      "message": "Loaded preferences.",
+      "passed": true,
+      "snapshot": {
+        "clouds_far": 1.0,
+        "clouds_near": 1.0,
+        "global_strength": 1.25,
+        "horizontal_dead_zone": 0.8,
+        "horizontal_follow_gain": 0.45,
+        "horizontal_max_offset": 7.5,
+        "mode": "artistic",
+        "ridge_far": 0.5,
+        "ridge_mid": 1.0,
+        "ridge_near": 1.0,
+        "smoothing_rate": 4.0,
+        "transition_time": 0.2,
+        "wind_enabled": true,
+        "wind_far": 0.25,
+        "wind_near": 0.6
+      }
+    },
+    "ignore": {
+      "load_attempted": false,
+      "message": "",
+      "passed": true,
+      "snapshot": {
+        "clouds_far": 1.0,
+        "clouds_near": 1.0,
+        "global_strength": 1.0,
+        "horizontal_dead_zone": 0.8,
+        "horizontal_follow_gain": 0.45,
+        "horizontal_max_offset": 7.5,
+        "mode": "natural",
+        "ridge_far": 1.0,
+        "ridge_mid": 1.0,
+        "ridge_near": 1.0,
+        "smoothing_rate": 4.0,
+        "transition_time": 0.2,
+        "wind_enabled": true,
+        "wind_far": 0.25,
+        "wind_near": 0.6
+      }
+    }
+  },
+  "runtime_fingerprint": "0c7c9ca421fd34979cb34562e720d71dce0c997d6d2833ce2eaf4a3aadaf3d3a"
+}

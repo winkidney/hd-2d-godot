@@ -1,0 +1,65 @@
+{
+  "revision": "R5",
+  "status": "implemented_from_measured_top_and_side",
+  "runtime_applied": true,
+  "previous_revision": "20261008-r4",
+  "historical_revision_checks": {
+    "20261008-r1": true,
+    "20261008-r2": true,
+    "20261008-r3": true,
+    "20261008-r4": true
+  },
+  "source": "layout.review.json",
+  "coordinate_rows": 54,
+  "light_rows": 14,
+  "files": {
+    "README.md": "193612142914814948e9d1a77b6d9d6d554790963d691399a1fbdab745ad1f15",
+    "draw.py": "3ad83e9e5940921cec534d688b0756dea18b47c5a7e479017aecc1282b6c124f",
+    "far-town.png": "d7b73edd3bb5585c79435e7ea73aeefe22b4509ae1b9de3dc74ff3ac26a88209",
+    "front-view.png": "a69ed090c951990241407a559bacd7adb6b58b16af406a39a84ff3dc683e33bb",
+    "full-top-view.png": "093a2aa54c462ec13a284fde2646001e83f55520e77334084f02adba3d02eddb",
+    "layout-review.pdf": "f84dbb6cec2c9327f86b510987e1529fb1aebac33a7b0554c269aaad41ac82d5",
+    "layout-review.png": "9315cad830dd6d551a0609dc4893c0415f7b01aac6bf4e87f7eda9b67770252a",
+    "layout-review.svg": "8cca18ea5d963215e902ed70f54f1a134c25006eb71f9ab9d83ad1774a28c1f4",
+    "layout.review.json": "efab51740abbdbf3c8330159b636bcebae5af2668492a95363728ebb13be0a8d",
+    "lighting-plan.png": "d09b4c221fab60b8d781a65a9edde4814b989405d8cf93439c378f34114574a8",
+    "lights.csv": "65f53784e99c5c7f3bbd51495404e7b0c3978a9bc69bcb452393baf023c2fc92",
+    "placement.csv": "903aa6e3a5a98ccb765eaa15d420721fb750fef7adece514809997b91cd44a20",
+    "review-checks.json": "c2bc4ae27b81a203274bc4717ee16822660545cc25867af33888a19ca4a47e39",
+    "runtime-before.json": "7e529094465c9711fe55f1ee372a45cf50deb14209bff3837a025ff1e307002c",
+    "side-view.pdf": "68c6302c6ded1813dba1f5a317f377ad7597209525b13be576b5484be67e71c7",
+    "side-view.png": "93a44bbf922a8e3ebd10d2a18e63d6272d7f8724f3047782adc1029a0804d331",
+    "side-view.svg": "476e692551b747c841512ceb4d2d06ecd2abb47f8979c3661369bde74f9944d2",
+    "top-view.png": "192b04e3575b672eacf0874dae593a03f3def04882c1b75301b40e4c89635c05"
+  },
+  "image_dimensions": {
+    "layout-review.png": [
+      3600,
+      3600
+    ],
+    "far-town.png": [
+      2560,
+      800
+    ],
+    "front-view.png": [
+      3200,
+      800
+    ],
+    "full-top-view.png": [
+      2880,
+      3360
+    ],
+    "lighting-plan.png": [
+      3600,
+      2250
+    ],
+    "side-view.png": [
+      3600,
+      1500
+    ],
+    "top-view.png": [
+      2880,
+      2560
+    ]
+  }
+}

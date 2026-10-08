@@ -1,0 +1,15 @@
+diagram_id,control_id,label,kind,light_x,light_y,light_z,fixture_x,fixture_y,fixture_z,range_m,cast_shadow,red,green,blue
+C1,broad_cloth_cool,桥心冷光,broad,1.2,2.4,2.5,,,,7,True,0.35,0.62,1
+W1,broad_tavern_warm,酒肆暖光,broad,-9.5,1.8,-4.8,,,,7,True,1,0.58,0.24
+P1,streetlamp_left_front,桥前西灯,streetlamp,-1,2.2,7.36,-1,0,7,4.0,True,1,0.68,0.38
+P2,streetlamp_left_back,后街西灯,streetlamp,-1,2.2,-1.14,-1,0,-1.5,4.0,False,1,0.68,0.38
+P3,streetlamp_right_front,桥前东灯,streetlamp,3.4,2.2,7.36,3.4,0,7,4.0,True,1,0.68,0.38
+P4,streetlamp_right_back,后街东灯,streetlamp,3.4,2.2,-1.14,3.4,0,-1.5,4.0,False,1,0.68,0.38
+P5,streetlamp_cloth_entry,布摊街灯,streetlamp,-18.2,2.2,-0.94,-18.2,0,-1.3,4.0,False,1,0.68,0.38
+P6,streetlamp_dock_south,码头暖灯,streetlamp,-12.78,1.88,5.26,-12.78,-0.32,4.9,4.5,False,1,0.68,0.38
+E1,lantern_0,酒肆檐灯西,lantern,-11.7,3.7,-7.16,-11.7,4.1,-7.4,4.5,True,1.0,0.42,0.16
+E2,lantern_1,酒肆檐灯东,lantern,-7.3,3.7,-7.16,-7.3,4.1,-7.4,4.5,True,1.0,0.42,0.16
+E3,lantern_2,民居二檐灯西,lantern,6.6,2.5,-8.61,6.6,2.9,-8.85,4.5,True,1.0,0.42,0.16
+E4,lantern_3,民居二檐灯东,lantern,9,2.5,-8.61,9,2.9,-8.85,4.5,True,1.0,0.42,0.16
+E5,lantern_4,酒肆门灯西,lantern,-10.3,2.2,-6.08,-10.3,2.6,-6.32,4.5,True,1.0,0.42,0.16
+E6,lantern_5,酒肆门灯东,lantern,-8.7,2.2,-6.08,-8.7,2.6,-6.32,4.5,True,1.0,0.42,0.16

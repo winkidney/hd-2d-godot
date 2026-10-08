@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "runtime_fingerprint": "694a5de78fb64f0152956df73d585b1b8b59980daecee2e23820cac0b31b1c6f",
+  "original_frames": [
+    {
+      "kind": "route_frames",
+      "frames": 322,
+      "all_original_png_bytes_match": true
+    },
+    {
+      "kind": "night_frames",
+      "frames": 71,
+      "all_original_png_bytes_match": true
+    }
+  ],
+  "video_decodes": [
+    {
+      "video": "route.mp4",
+      "sha256": "12c8ef405508e7c63e8e1d6f875a7628de1673862a3317d50f1012b1aa496e3b",
+      "returncode": 0,
+      "error_output_empty": true,
+      "scope": "Decode the entire encoded stream"
+    },
+    {
+      "video": "night.mp4",
+      "sha256": "d159572e27db794bba5d8c23a27b0bc590926a8e2aefd1e3ad407cda5a8799a1",
+      "returncode": 0,
+      "error_output_empty": true,
+      "scope": "Decode the entire encoded stream"
+    }
+  ],
+  "review_sheets": [
+    {
+      "path": "route-contact.png",
+      "sha256": "2c381999d2cc2ee078265490f1ffc81deca86db9324df2a1b1a2c0865dd70c1d",
+      "sample_spacing_s": 7
+    },
+    {
+      "path": "night-contact.png",
+      "sha256": "8611a4e234f37e00e2b44b60efd8326d54ebc39cbbb72aa47ad6b8d53cd071cf",
+      "sample_spacing_s": 3
+    },
+    {
+      "path": "npc-contact.png",
+      "sha256": "69a4e94acc8d81d986b686d0a55ea046d591d91c236e5664498d044fa1171b85"
+    }
+  ],
+  "visual_scope": "Contact sheets assist human review; full-resolution source captures remain authoritative. They do not measure runtime FPS or replace the complete video.",
+  "known_visibility": "The small natural crescent is partly occluded by clouds in default F; clouds can cover it in W. Milky Way contrast is intentionally faint. Default F has a narrow visible sky strip because the original camera framing is preserved."
+}

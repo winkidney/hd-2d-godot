@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "revision": "R2",
+  "date": "2026-10-08",
+  "status": "draft_for_user_review",
+  "source": "layout.review.json",
+  "runtime_applied": false,
+  "checks_passed": true,
+  "image_dimensions": {
+    "far-town.png": [
+      2560,
+      800
+    ],
+    "front-view.png": [
+      3200,
+      800
+    ],
+    "full-top-view.png": [
+      2880,
+      3360
+    ],
+    "layout-review.png": [
+      3600,
+      3600
+    ],
+    "top-view.png": [
+      2880,
+      2560
+    ]
+  },
+  "coordinate_rows": 40,
+  "counts": {
+    "foreground_buildings_and_stalls": 7,
+    "riverbank_willows": 6,
+    "background_houses": 10,
+    "background_tree_groups": 10,
+    "broad_lights": 2,
+    "npcs": 5
+  },
+  "files": {
+    "README.md": "1e2b5df5852def21c8c748c8605024a9c273c11b5796560e7dfed10e699a852e",
+    "draw.py": "fde6f2cc1489d0eebd208af234510cfe0534d4df56b6106abaf5d2a19a829f30",
+    "far-town.png": "d7b73edd3bb5585c79435e7ea73aeefe22b4509ae1b9de3dc74ff3ac26a88209",
+    "front-view.png": "68668b8f1f644e51b88548cd474f8bb730b585232a09077852433872128f5da6",
+    "full-top-view.png": "55b1bbc7cce7538299318643c0dc32be05020c438f4497e8cb0108bce07a647f",
+    "layout-review.pdf": "32c2d6a755a5855e05dc23b25accb680d55555250550f68ba6805525773c3247",
+    "layout-review.png": "c938850ed34aba2d5ced769c2b06f58bff650e0fb030e86a987d58513ef7f6b9",
+    "layout-review.svg": "ca02ea7481492f3a5e897e740398a33cba1b22aa55542b089e1f5f1b8b965e25",
+    "layout.review.json": "f32348a94248a57d9f417410d752739748f9300e4479f1e2b27d4faa687cdeb3",
+    "placement.csv": "957d32273206896779ec2bbd293842b11631b17655eb69fde192ff4677f8eff6",
+    "review-checks.json": "8c07b08f6bd446ab06dab4104832896c015e4fb0b0f4e2368f231e6437105d67",
+    "runtime-before.json": "7e529094465c9711fe55f1ee372a45cf50deb14209bff3837a025ff1e307002c",
+    "top-view.png": "5bf211d1cf40c0a4242f17ce49c277cb058969a743ce7b50dd3e0c41d9dc534b"
+  }
+}

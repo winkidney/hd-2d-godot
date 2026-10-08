@@ -52,11 +52,11 @@ func run() -> void:
     for entry in layout.npcs:
         check(float(npc_distances.get(entry.id,INF))<.8,"npc_reachable:"+entry.id)
     # Try to enter water well away from the bridge and dock.
-    player.position = Vector3(-4,0.2,9)
+    player.position = Vector3(22,.2,7)
     player.velocity = Vector3.ZERO
-    player.scripted_direction = Vector2.RIGHT
+    player.scripted_direction = Vector2(0,-1)
     for i in range(140): await physics_frame
-    check(player.position.x < -2.6,"river_blocked")
+    check(player.position.z > 5.1,"river_blocked")
     check(player.position.y > -.1,"river_block_floor")
     report["passed"] = failures.is_empty()
     report["failures"] = failures

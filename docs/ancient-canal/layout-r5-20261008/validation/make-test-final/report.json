@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "returncode": 0,
+  "elapsed_s": 9.240040301010595,
+  "runtime_fingerprint_before": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_after": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_unchanged": true,
+  "scope": "Actual full make test with isolated preferences; complete original process transcript retained."
+}

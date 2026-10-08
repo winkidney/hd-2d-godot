@@ -1,0 +1,16 @@
+{
+  "checks": [
+    {
+      "passed": true,
+      "scope": "writer process stores canonical multi-lens profile and overrides"
+    }
+  ],
+  "failures": [],
+  "mode": "writer",
+  "passed": true,
+  "scope": "Headless settings, real camera/profile and Light3D controls; no visual or performance claim.",
+  "runtime_fingerprint": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_before": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_after": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_unchanged": true
+}

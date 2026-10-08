@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "revision": "R4",
+  "date": "2026-10-08",
+  "status": "draft_for_user_review",
+  "previous_revision": "20261008-r3",
+  "source": "layout.review.json",
+  "runtime_applied": false,
+  "checks_passed": true,
+  "previous_revision_preserved": true,
+  "coordinate_rows": 54,
+  "light_rows": 14,
+  "additional_light_nodes": 0,
+  "additional_shadow_maps": 0,
+  "image_dimensions": {
+    "far-town.png": [
+      2560,
+      800
+    ],
+    "front-view.png": [
+      3200,
+      800
+    ],
+    "full-top-view.png": [
+      2880,
+      3360
+    ],
+    "layout-review.png": [
+      3600,
+      3600
+    ],
+    "lighting-plan.png": [
+      3600,
+      2250
+    ],
+    "top-view.png": [
+      2880,
+      2560
+    ]
+  },
+  "counts": {
+    "foreground_buildings_and_stalls": 7,
+    "riverbank_willows": 5,
+    "background_houses": 10,
+    "background_tree_groups": 10,
+    "lights": 14,
+    "npcs": 5
+  },
+  "files": {
+    "README.md": "8eb4ab49a5895753c9d5aa46c9528611ac087ed821d8f6fedcb06fe02f4b67ff",
+    "draw.py": "fb0123b10acd2a5fa3552c701acefb141e938c41cf7e0b4293e060c7f9d1509b",
+    "far-town.png": "d7b73edd3bb5585c79435e7ea73aeefe22b4509ae1b9de3dc74ff3ac26a88209",
+    "front-view.png": "a69ed090c951990241407a559bacd7adb6b58b16af406a39a84ff3dc683e33bb",
+    "full-top-view.png": "093a2aa54c462ec13a284fde2646001e83f55520e77334084f02adba3d02eddb",
+    "layout-review.pdf": "8de113820c2e0a47333ba20965d860edaee6d8cac6143dc6bf4839d72114853c",
+    "layout-review.png": "ae2a1b1d006baced38cbeef9e35bcf1a8e6106632edc78378eac1bb2f3b18ca3",
+    "layout-review.svg": "8118d07af64bb7cd0244c02fce305653ab0a1c45fba4849b9dfa14cd9f9eba3c",
+    "layout.review.json": "b1ca85efaae9afaee768ed8a20ee76d9bfddd9ff66e86d4bbdcc3d0c26037524",
+    "lighting-plan.png": "60ad8b2d00df844e75853e4122e98a533d999eef0199cc95a1a7e99f1dbd00cc",
+    "lights.csv": "65f53784e99c5c7f3bbd51495404e7b0c3978a9bc69bcb452393baf023c2fc92",
+    "placement.csv": "903aa6e3a5a98ccb765eaa15d420721fb750fef7adece514809997b91cd44a20",
+    "review-checks.json": "c2bc4ae27b81a203274bc4717ee16822660545cc25867af33888a19ca4a47e39",
+    "runtime-before.json": "7e529094465c9711fe55f1ee372a45cf50deb14209bff3837a025ff1e307002c",
+    "top-view.png": "192b04e3575b672eacf0874dae593a03f3def04882c1b75301b40e4c89635c05"
+  }
+}

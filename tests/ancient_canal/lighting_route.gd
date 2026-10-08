@@ -3,7 +3,7 @@ extends SceneTree
 ## Headless distances and frame bindings do not claim rendered brightness.
 const ENTRY := "res://scenes/ancient_canal.tscn"
 const BROAD_IDS := ["broad_tavern_warm", "broad_cloth_cool"]
-const EXPECTED_POSITIONS := [Vector3(7.3,1.8,-.4), Vector3(-6.7,1.8,3.2)]
+const EXPECTED_POSITIONS := [Vector3(-9.5,1.8,-4.8), Vector3(1.2,2.4,2.5)]
 var scene: Node3D
 var output := "res://build/ancient-canal/tavern-lighting-20261007"
 var runtime_fingerprint := ""
@@ -57,7 +57,7 @@ func lights_and_controls() -> void:
     check(lantern_models.size()==6,"six_visible_hanging_lantern_models")
     for index in range(2):
         var model_point: Vector3 = scene.vec(lantern_models[4+index].position)
-        var wanted := Vector3(6.0 if index==0 else 7.6,2.6,-2.32)
+        var wanted := Vector3(-10.3 if index==0 else -8.7,2.6,-6.32)
         check(model_point.distance_to(wanted)<.001,"new_lantern_flanks_tavern_door_"+str(index),{"model_position":vector_array(model_point)})
         var lamp: OmniLight3D = scene.lamp_nodes["lantern_"+str(4+index)]
         check(lamp.global_position.distance_to(wanted+Vector3(0,-.4,.24))<.001,"new_lantern_model_light_alignment_"+str(index))
@@ -69,6 +69,8 @@ func lights_and_controls() -> void:
         check(equal_value(lamp.omni_range,7.0) and lamp.shadow_enabled,"broad_default_large_range_and_shadow_"+id)
     check(scene.lamp_nodes[BROAD_IDS[0]].light_color.r>scene.lamp_nodes[BROAD_IDS[0]].light_color.b,"tavern_light_is_warm")
     check(scene.lamp_nodes[BROAD_IDS[1]].light_color.b>scene.lamp_nodes[BROAD_IDS[1]].light_color.r,"cloth_light_is_cool")
+    var dock_lamp: OmniLight3D = scene.lamp_nodes.streetlamp_dock_south
+    check(dock_lamp.position.is_equal_approx(Vector3(-12.78,1.88,5.26)) and equal_value(dock_lamp.omni_range,4.5) and not dock_lamp.shadow_enabled,"dock_lamp_matches_plan_without_shadow")
     for period in ["day","dusk","night"]:
         scene.apply_time_preset(period)
         var wanted_energy: float = {"day":.1,"dusk":1.7,"night":2.6}[period]
@@ -182,7 +184,7 @@ func actual_route() -> void:
         high = maxf(high,sample.foot[1])
         all_directions[sample.direction] = true
         frame_ids[str(sample.physics_frame)] = true
-    check(low<-.24 and high>1.1,"actual_route_visits_lower_dock_and_bridge",{"minimum_foot_y":low,"maximum_foot_y":high})
+    check(low<-.24 and high>.5,"actual_route_visits_lower_dock_and_bridge",{"minimum_foot_y":low,"maximum_foot_y":high})
     check(all_directions.size()==4,"actual_route_displays_all_four_directions",{"directions":all_directions.keys()})
     check(frame_ids.size()==samples.size() and samples.size()>600,"route_samples_are_unique_actual_physics_frames",{"sample_count":samples.size()})
     for id in BROAD_IDS:

@@ -1,0 +1,894 @@
+{
+  "captures": [],
+  "checks": [
+    {
+      "name": "independent_layout",
+      "passed": true
+    },
+    {
+      "name": "isolated_default_A_preferences",
+      "passed": true
+    },
+    {
+      "name": "tests_ignore_preferences",
+      "passed": true
+    },
+    {
+      "name": "crescent_traveler_connected",
+      "passed": true
+    },
+    {
+      "name": "character_frame_contract",
+      "passed": true
+    },
+    {
+      "name": "central_stair_collider",
+      "passed": true
+    },
+    {
+      "name": "market_stair_collider",
+      "passed": true
+    },
+    {
+      "name": "dock_stair_collider",
+      "passed": true
+    },
+    {
+      "name": "spawn_to_bridge_approach",
+      "passed": true
+    },
+    {
+      "name": "enter_bridge",
+      "passed": true
+    },
+    {
+      "name": "west_extension",
+      "passed": true
+    },
+    {
+      "name": "bridge_return",
+      "passed": true
+    },
+    {
+      "name": "east_extension",
+      "passed": true
+    },
+    {
+      "name": "central_stair_bottom",
+      "passed": true
+    },
+    {
+      "name": "central_stair_up",
+      "passed": true
+    },
+    {
+      "name": "upper_square",
+      "passed": true
+    },
+    {
+      "name": "upper_npc_dialogue",
+      "passed": true
+    },
+    {
+      "name": "central_stair_return",
+      "passed": true
+    },
+    {
+      "name": "central_stair_down",
+      "passed": true
+    },
+    {
+      "name": "market_stair_bottom",
+      "passed": true
+    },
+    {
+      "name": "market_stair_up",
+      "passed": true
+    },
+    {
+      "name": "market_stair_down",
+      "passed": true
+    },
+    {
+      "name": "merchant_approach",
+      "passed": true
+    },
+    {
+      "name": "merchant_dialogue",
+      "passed": true
+    },
+    {
+      "name": "dock_approach",
+      "passed": true
+    },
+    {
+      "name": "dock_stair_approach",
+      "passed": true
+    },
+    {
+      "name": "dock_down",
+      "passed": true
+    },
+    {
+      "name": "dock_up",
+      "passed": true
+    },
+    {
+      "name": "return_spawn_area",
+      "passed": true
+    },
+    {
+      "name": "no_fall_recovery_used_for_routes",
+      "passed": true
+    },
+    {
+      "name": "player_finishes_grounded",
+      "passed": true
+    },
+    {
+      "name": "time_day",
+      "passed": true
+    },
+    {
+      "name": "time_dusk",
+      "passed": true
+    },
+    {
+      "name": "time_night",
+      "passed": true
+    },
+    {
+      "name": "presets_preserve_actor",
+      "passed": true
+    },
+    {
+      "name": "global_bypass",
+      "passed": true
+    },
+    {
+      "name": "global_restore_preserves_dof_choice",
+      "passed": true
+    },
+    {
+      "name": "shared_dof_soft",
+      "passed": true
+    },
+    {
+      "name": "shared_dof_standard",
+      "passed": true
+    },
+    {
+      "name": "shared_dof_strong",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_near_0.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_near_0.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_mid_0.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_mid_0.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_far_0.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_far_0.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_clouds_near_0.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_clouds_near_0.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_clouds_far_0.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_clouds_far_0.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_near_0.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_near_0.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_mid_0.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_mid_0.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_far_0.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_far_0.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_clouds_near_0.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_clouds_near_0.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_clouds_far_0.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_clouds_far_0.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_near_0.5_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_near_0.5_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_mid_0.5_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_mid_0.5_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_far_0.5_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_far_0.5_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_clouds_near_0.5_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_clouds_near_0.5_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_clouds_far_0.5_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_clouds_far_0.5_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_near_0.5_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_near_0.5_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_mid_0.5_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_mid_0.5_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_far_0.5_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_far_0.5_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_clouds_near_0.5_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_clouds_near_0.5_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_clouds_far_0.5_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_clouds_far_0.5_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_near_1.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_near_1.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_mid_1.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_mid_1.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_far_1.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_far_1.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_clouds_near_1.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_clouds_near_1.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_clouds_far_1.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_clouds_far_1.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_near_1.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_near_1.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_mid_1.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_mid_1.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_far_1.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_far_1.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_clouds_near_1.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_clouds_near_1.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_clouds_far_1.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_clouds_far_1.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_near_1.5_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_near_1.5_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_mid_1.5_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_mid_1.5_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_far_1.5_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_far_1.5_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_clouds_near_1.5_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_clouds_near_1.5_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_clouds_far_1.5_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_clouds_far_1.5_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_near_1.5_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_near_1.5_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_mid_1.5_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_mid_1.5_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_far_1.5_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_far_1.5_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_clouds_near_1.5_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_clouds_near_1.5_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_clouds_far_1.5_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_clouds_far_1.5_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_near_2.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_near_2.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_mid_2.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_mid_2.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_far_2.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_far_2.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_clouds_near_2.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_clouds_near_2.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_clouds_far_2.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_clouds_far_2.0_-2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_near_2.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_near_2.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_mid_2.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_mid_2.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_ridge_far_2.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_ridge_far_2.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_clouds_near_2.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_clouds_near_2.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_ratio_clouds_far_2.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "layer_depth_clouds_far_2.0_2.0",
+      "passed": true
+    },
+    {
+      "name": "natural_restores_ridge_near",
+      "passed": true
+    },
+    {
+      "name": "natural_restores_ridge_mid",
+      "passed": true
+    },
+    {
+      "name": "natural_restores_ridge_far",
+      "passed": true
+    },
+    {
+      "name": "natural_restores_clouds_near",
+      "passed": true
+    },
+    {
+      "name": "natural_restores_clouds_far",
+      "passed": true
+    },
+    {
+      "name": "parallax_panel_input_lock",
+      "passed": true
+    },
+    {
+      "name": "exclusive_panels",
+      "passed": true
+    },
+    {
+      "name": "panel_close_releases_input",
+      "passed": true
+    },
+    {
+      "name": "new_scene_save",
+      "passed": true
+    },
+    {
+      "name": "new_scene_reload",
+      "passed": true
+    },
+    {
+      "name": "old_scene_preferences_untouched",
+      "passed": true
+    }
+  ],
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "input_scope": "Direct panel calls verify state and input locks, not native-window/editor shortcut delivery.",
+  "passed": true,
+  "real_gpu": false,
+  "renderer": "forward_plus",
+  "route": [
+    {
+      "actual": [
+        3.0,
+        1.20029318332672,
+        3.60666942596436
+      ],
+      "reached": true,
+      "step": "spawn_to_bridge_approach",
+      "target": [
+        3.0,
+        1.20000004768372,
+        3.5
+      ]
+    },
+    {
+      "actual": [
+        -6.86611890792847,
+        1.20029318332672,
+        3.5014283657074
+      ],
+      "reached": true,
+      "step": "enter_bridge",
+      "target": [
+        -7.0,
+        1.20000004768372,
+        3.5
+      ]
+    },
+    {
+      "actual": [
+        -19.8794403076172,
+        1.20029318332672,
+        3.50001311302185
+      ],
+      "reached": true,
+      "step": "west_extension",
+      "target": [
+        -20.0,
+        1.20000004768372,
+        3.5
+      ]
+    },
+    {
+      "actual": [
+        2.84054040908813,
+        1.20029318332672,
+        3.50000023841858
+      ],
+      "reached": true,
+      "step": "bridge_return",
+      "target": [
+        3.0,
+        1.20000004768372,
+        3.5
+      ]
+    },
+    {
+      "actual": [
+        21.8805236816406,
+        1.20029318332672,
+        3.50000023841858
+      ],
+      "reached": true,
+      "step": "east_extension",
+      "target": [
+        22.0,
+        1.20000004768372,
+        3.5
+      ]
+    },
+    {
+      "actual": [
+        2.13465690612793,
+        1.20029318332672,
+        0.321674644947052
+      ],
+      "reached": true,
+      "step": "central_stair_bottom",
+      "target": [
+        2.0,
+        1.20000004768372,
+        0.300000011920929
+      ]
+    },
+    {
+      "actual": [
+        2.0029981136322,
+        4.0007700920105,
+        -5.65759706497192
+      ],
+      "reached": true,
+      "step": "central_stair_up",
+      "target": [
+        2.0,
+        4.0,
+        -5.80000019073486
+      ]
+    },
+    {
+      "actual": [
+        5.28883647918701,
+        4.0007700920105,
+        -6.76261568069458
+      ],
+      "reached": true,
+      "step": "upper_square",
+      "target": [
+        5.40000009536743,
+        4.0,
+        -6.80000019073486
+      ]
+    },
+    {
+      "actual": [
+        2.11530804634094,
+        4.0007700920105,
+        -5.83374929428101
+      ],
+      "reached": true,
+      "step": "central_stair_return",
+      "target": [
+        2.0,
+        4.0,
+        -5.80000019073486
+      ]
+    },
+    {
+      "actual": [
+        2.0028223991394,
+        1.20033967494965,
+        0.149857640266418
+      ],
+      "reached": true,
+      "step": "central_stair_down",
+      "target": [
+        2.0,
+        1.20000004768372,
+        0.300000011920929
+      ]
+    },
+    {
+      "actual": [
+        17.387638092041,
+        1.20033967494965,
+        3.17788529396057
+      ],
+      "reached": true,
+      "step": "market_stair_bottom",
+      "target": [
+        17.5,
+        1.20000004768372,
+        3.20000004768372
+      ]
+    },
+    {
+      "actual": [
+        17.4974632263184,
+        4.00044012069702,
+        -2.85479640960693
+      ],
+      "reached": true,
+      "step": "market_stair_up",
+      "target": [
+        17.5,
+        4.0,
+        -3.0
+      ]
+    },
+    {
+      "actual": [
+        17.4999485015869,
+        1.2000949382782,
+        3.07581758499146
+      ],
+      "reached": true,
+      "step": "market_stair_down",
+      "target": [
+        17.5,
+        1.20000004768372,
+        3.20000004768372
+      ]
+    },
+    {
+      "actual": [
+        8.1122522354126,
+        1.2000949382782,
+        0.826890885829926
+      ],
+      "reached": true,
+      "step": "merchant_approach",
+      "target": [
+        8.0,
+        1.20000004768372,
+        0.800000011920929
+      ]
+    },
+    {
+      "actual": [
+        0.0972291827201843,
+        1.2000949382782,
+        9.39605045318604
+      ],
+      "reached": true,
+      "step": "dock_approach",
+      "target": [
+        0.0,
+        1.20000004768372,
+        9.5
+      ]
+    },
+    {
+      "actual": [
+        0.00568781327456236,
+        1.2000949382782,
+        11.8476705551147
+      ],
+      "reached": true,
+      "step": "dock_stair_approach",
+      "target": [
+        0.0,
+        1.20000004768372,
+        12.0
+      ]
+    },
+    {
+      "actual": [
+        -5.17182683944702,
+        -0.299538642168045,
+        11.9963207244873
+      ],
+      "reached": true,
+      "step": "dock_down",
+      "target": [
+        -5.30000019073486,
+        -0.300000011920929,
+        12.0
+      ]
+    },
+    {
+      "actual": [
+        -0.138933405280113,
+        1.2004200220108,
+        11.9999017715454
+      ],
+      "reached": true,
+      "step": "dock_up",
+      "target": [
+        0.0,
+        1.20000004768372,
+        12.0
+      ]
+    },
+    {
+      "actual": [
+        2.93221187591553,
+        1.2004200220108,
+        6.81445598602295
+      ],
+      "reached": true,
+      "step": "return_spawn_area",
+      "target": [
+        3.0,
+        1.20000004768372,
+        6.69999980926514
+      ]
+    }
+  ],
+  "scene": "lantern-canal-v1",
+  "schema": 1,
+  "utc": "2026-10-08T04:44:46",
+  "viewport": [
+    64,
+    64
+  ],
+  "runtime_fingerprint": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_before": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_fingerprint_after": "459a003a58228b4de28d55791712cc3198b45b8ef6229ca2fdbf9a7ff881d0f3",
+  "runtime_unchanged": true
+}
